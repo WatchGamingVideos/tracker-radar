@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "statics"
     ],
@@ -73,7 +73,8 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -134,6 +135,28 @@
             ]
         },
         {
+            "rule": "apreslachat\\.com\\/wiservices\\/v3\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "statics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darty.com",
+                "sav.darty.com"
+            ]
+        },
+        {
             "rule": "apreslachat\\.com\\/merchants\\/wiservice-v3\\.darty-JZ4NQT\\.fr\\/js\\/_custom\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -156,25 +179,28 @@
             ]
         },
         {
-            "rule": "apreslachat\\.com\\/wiservices\\/v3\\/fonts\\/fontawesome-webfont\\.woff2",
+            "rule": "apreslachat\\.com\\/public\\/wpl\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "statics"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+                "5db3c9119152042c0843ff0f5539e7b384fdf9b23f15b779022f1db668bd2eac"
             ],
-            "type": "Font",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "darty.com",
-                "sav.darty.com"
+                "krups.de",
+                "www.krups.de",
+                "www.krupsusa.com"
             ]
         }
     ],
@@ -182,7 +208,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8,
+        "Script": 11,
         "Stylesheet": 4,
         "Font": 2
     },

@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000761,
+    "sites": 11,
     "subdomains": [
+        "charter",
         "teamviewer",
         "edmunds",
         "madeformums",
         "dawgnation",
+        "pennyarcade",
         "themix"
     ],
     "cnames": [
@@ -29,10 +31,34 @@
         {
             "original": "forums.edmunds.com",
             "resolved": "edmunds.vanillacommunities.com"
+        },
+        {
+            "original": "forums.penny-arcade.com",
+            "resolved": "pennyarcade.vanillacommunities.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "vanillacommunities\\.com\\/addons\\/themes\\/charter\\/design\\/images\\/footer\\/Charter_DarkUI\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "charter"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spectrum.net",
+                "community.spectrum.net"
+            ]
+        },
         {
             "rule": "vanillacommunities\\.com\\/addons\\/themes\\/teamviewer\\/design\\/icons\\/facebook\\.svg",
             "cookies": 0,
@@ -165,7 +191,7 @@
                 }
             ],
             "responseHashes": [
-                "ff4fdc7bdb5cce2de02b569593e9cfcb4303904422cfd201f425ba9d70b1a623"
+                "a2a575f3cb4d7ea5dcbabdaab93b20c481c89de8c49b650a8d8ad8f69fa7ceed"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -4241,7 +4267,7 @@
         },
         {
             "rule": "vanillacommunities\\.com\\/settings\\/analyticstick\\.json",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "edmunds",
@@ -4250,7 +4276,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "forums.edmunds.com",
@@ -4266,8 +4292,8 @@
                 }
             ],
             "responseHashes": [
-                "f32f256012f55c717dcfa13e5c7b3c206cae3490d80d0eb34142ca35666fd057",
-                "7eaafccb5c77017719b10b8373a8c5dea5feb84fc4894b3cb00f886abcf39d01"
+                "ccbe48f2889ea6709294c3189ecc2a013a2523d811ca71a5358da45be84db259",
+                "cb7b883d0d3e357eb5886801c7e191f19e4d1d412b8aec670b86fab794e270a6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -4285,11 +4311,12 @@
             "subdomains": [
                 "dawgnation",
                 "madeformums",
+                "pennyarcade",
                 "themix"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [
                 {
                     "original": "forum.dawgnation.com",
@@ -4298,6 +4325,10 @@
                 {
                     "original": "forum.madeformums.com",
                     "resolved": "madeformums.vanillacommunities.com"
+                },
+                {
+                    "original": "forums.penny-arcade.com",
+                    "resolved": "pennyarcade.vanillacommunities.com"
                 },
                 {
                     "original": "community.themix.org.uk",
@@ -4313,6 +4344,7 @@
             "exampleSites": [
                 "dawgnation.com",
                 "www.madeformums.com",
+                "www.penny-arcade.com",
                 "www.themix.org.uk"
             ]
         },
@@ -4354,15 +4386,20 @@
             "fingerprinting": 1,
             "subdomains": [
                 "madeformums",
+                "pennyarcade",
                 "themix"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "forum.madeformums.com",
                     "resolved": "madeformums.vanillacommunities.com"
+                },
+                {
+                    "original": "forums.penny-arcade.com",
+                    "resolved": "pennyarcade.vanillacommunities.com"
                 },
                 {
                     "original": "community.themix.org.uk",
@@ -4377,6 +4414,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "madeformums.com",
+                "www.penny-arcade.com",
                 "www.themix.org.uk"
             ]
         },
@@ -4411,16 +4449,48 @@
                 "madeformums.com",
                 "www.themix.org.uk"
             ]
+        },
+        {
+            "rule": "vanillacommunities\\.com\\/js\\/library\\/jquery\\.appear\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pennyarcade",
+                "themix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "forums.penny-arcade.com",
+                    "resolved": "pennyarcade.vanillacommunities.com"
+                },
+                {
+                    "original": "community.themix.org.uk",
+                    "resolved": "themix.vanillacommunities.com"
+                }
+            ],
+            "responseHashes": [
+                "8c0c3ce3813a55767d1e9b9d6b9579e45fd8fd60e5434eba4a8b204b7725e12c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "penny-arcade.com",
+                "www.themix.org.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000208,
     "types": {
-        "Image": 14,
+        "Image": 16,
         "Document": 2,
-        "Stylesheet": 31,
-        "Script": 228,
+        "Stylesheet": 32,
+        "Script": 231,
         "XHR": 3
     },
     "nameservers": [

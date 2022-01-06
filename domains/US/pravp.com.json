@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
         "avp",
         "insight",
@@ -51,7 +51,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -72,7 +72,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -136,11 +136,11 @@
                 "avp"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1,
-                "window.sessionStorage": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -155,16 +155,64 @@
                 "jamesonwhiskey.com",
                 "www.jamesonwhiskey.com"
             ]
+        },
+        {
+            "rule": "pravp\\.com\\/kahlua-gcms",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avp"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f608ca4d6c7bcf0f51e0764dab77cfd9e2ffd8bc65e77021adc55abf48d0325d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kahlua.com",
+                "www.kahlua.com"
+            ]
+        },
+        {
+            "rule": "pravp\\.com\\/api\\/static\\/kahlua-gcms\\/druk-bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-avp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fd1f6e5b279c698b9f36fb843384d6a82cbb37deac7cef63e65c59c77761eca4"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kahlua.com",
+                "www.kahlua.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
+        "Script": 6,
         "Preflight": 3,
         "Fetch": 3,
-        "Font": 4
+        "Font": 6
     },
     "nameservers": [
         "a8-67.akam.net",

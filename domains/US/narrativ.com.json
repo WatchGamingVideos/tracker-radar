@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00109,
-    "sites": 158,
+    "prevalence": 0.00116,
+    "sites": 167,
     "subdomains": [
         "static",
-        "events.release"
+        "events.release",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -221,6 +222,73 @@
             ]
         },
         {
+            "rule": "narrativ\\.com\\/tags\\/levoit\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a9350515b2d88d63e3bf68f0a5c776199753eaeca8c885e3324d06ae85e3600e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosori.com",
+                "levoit.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1373\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosori.com",
+                "levoit.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1373\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosori.com",
+                "levoit.com"
+            ]
+        },
+        {
             "rule": "narrativ\\.com\\/tags\\/es\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -243,34 +311,32 @@
             ]
         },
         {
-            "rule": "narrativ\\.com\\/tags\\/future\\.js",
+            "rule": "narrativ\\.com\\/tags\\/gizmodo\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
             "apis": {
-                "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 3
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "fa7e2ca241f6fc4b551254492242eb7f72791c83ce93dd95e81e4c5bc7823097"
+                "920f81ce63ed8dbfecd40a07c308a94494c3f5cf9e80f4ce3a70c11a964c9ce8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techradar.com",
-                "www.laptopmag.com",
-                "www.techradar.com",
-                "www.tomsguide.com"
+                "gizmodo.com",
+                "io9.gizmodo.com"
             ]
         },
         {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1254\\/impressions\\/page_impression\\/",
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1123\\/impressions\\/page_impression\\/",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -287,12 +353,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techradar.com",
-                "www.techradar.com"
+                "gizmodo.com",
+                "io9.gizmodo.com"
             ]
         },
         {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1254\\/impressions\\/page_impression\\/",
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1123\\/impressions\\/page_impression\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -307,8 +373,36 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "gizmodo.com",
+                "io9.gizmodo.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/tags\\/future\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "fa7e2ca241f6fc4b551254492242eb7f72791c83ce93dd95e81e4c5bc7823097"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "techradar.com",
-                "www.techradar.com"
+                "global.techradar.com",
+                "www.laptopmag.com",
+                "www.techradar.com",
+                "www.tomsguide.com"
             ]
         },
         {
@@ -353,7 +447,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e4ab00c9915b93545f044d0b12187482035e79c88f79bff73ecf6402e716ebaa"
@@ -369,14 +463,14 @@
         },
         {
             "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1023\\/impressions\\/page_impression\\/",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "events.release"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -399,7 +493,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -423,7 +517,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "6765d24aec101eefc71bf7e91fdf9d49392a4b5c04eea2c61731eac857f5bc66"
@@ -439,14 +533,14 @@
         },
         {
             "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1008\\/impressions\\/page_impression\\/",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "events.release"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -469,7 +563,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1043,6 +1137,48 @@
             ]
         },
         {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1328\\/smart_links\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "732692225f9cb738c27aec958cbba8cbcc0b3dceb15fde9ada2b60b4c3bc672e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gottabemobile.com",
+                "www.gottabemobile.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1328\\/smart_links\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gottabemobile.com",
+                "www.gottabemobile.com"
+            ]
+        },
+        {
             "rule": "narrativ\\.com\\/tags\\/iherb\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1117,8 +1253,8 @@
                 "static"
             ],
             "apis": {
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -1174,6 +1310,48 @@
             "exampleSites": [
                 "insidehook.com",
                 "www.insidehook.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1254\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laptopmag.com",
+                "www.techradar.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1254\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laptopmag.com",
+                "www.techradar.com"
             ]
         },
         {
@@ -1318,7 +1496,7 @@
                 "static"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.localStorage": 1,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
@@ -1375,31 +1553,6 @@
             "exampleSites": [
                 "makeuseof.com",
                 "www.makeuseof.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/tags\\/motorola\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44f4fe6b247c05cc66e8b32a6c976487953b51c05e819caa77370e5fa33e8d2c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "motorola.com",
-                "www.motorola.com"
             ]
         },
         {
@@ -1470,6 +1623,28 @@
             ]
         },
         {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1126\\/impressions\\/bam_link_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newbeauty.com",
+                "www.newbeauty.com"
+            ]
+        },
+        {
             "rule": "narrativ\\.com\\/tags\\/one37pm\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1529,28 +1704,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "one37pm.com",
-                "www.one37pm.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1128\\/impressions\\/bam_link_impression\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.release"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1651,6 +1804,73 @@
             ]
         },
         {
+            "rule": "narrativ\\.com\\/tags\\/pcguide\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "54fada982f020591533d8193d01f016957751f038bd48c05af80a057e5333398"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pcguide.com",
+                "www.pcguide.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1735\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pcguide.com",
+                "www.pcguide.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1735\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pcguide.com",
+                "www.pcguide.com"
+            ]
+        },
+        {
             "rule": "narrativ\\.com\\/tags\\/polygon\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1677,26 +1897,6 @@
         },
         {
             "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1324\\/impressions\\/page_impression\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.release"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "polygon.com",
-                "www.polygon.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1324\\/impressions\\/page_impression\\/",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -1710,6 +1910,26 @@
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polygon.com",
+                "www.polygon.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1324\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1919,32 +2139,7 @@
             ]
         },
         {
-            "rule": "narrativ\\.com\\/tags\\/sheknows\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "42d65111ea1181db18c1bc701e265c7c8680f4345383f0f9463eafa9147cccf9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheknows.com",
-                "www.sheknows.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1165\\/impressions\\/page_impression\\/",
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1081\\/impressions\\/page_impression\\/",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -1961,12 +2156,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sheknows.com",
-                "www.sheknows.com"
+                "shefinds.com",
+                "www.shefinds.com"
             ]
         },
         {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1165\\/impressions\\/page_impression\\/",
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1081\\/impressions\\/page_impression\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1981,8 +2176,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sheknows.com",
-                "www.sheknows.com"
+                "shefinds.com",
+                "www.shefinds.com"
             ]
         },
         {
@@ -2117,73 +2312,6 @@
             "exampleSites": [
                 "skinstore.com",
                 "www.skinstore.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/tags\\/thedigitalfix\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "332ab9ce1d9124b8ada434908a8aded353211a3c8fa53bea3555cfe0ccf0e3c2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thedigitalfix.com",
-                "www.thedigitalfix.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1718\\/impressions\\/page_impression\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.release"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thedigitalfix.com",
-                "www.thedigitalfix.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1718\\/impressions\\/page_impression\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.release"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thedigitalfix.com",
-                "www.thedigitalfix.com"
             ]
         },
         {
@@ -2328,7 +2456,7 @@
                 "static"
             ],
             "apis": {
-                "window.localStorage": 1,
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
@@ -2338,6 +2466,28 @@
                 "36c9f0360e15e3ab27e39a77def32d2d042c5e1e6a3b872017ab644133693d29"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theverge.com",
+                "www.theverge.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1323\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2366,7 +2516,32 @@
             ]
         },
         {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1323\\/impressions\\/page_impression\\/",
+            "rule": "narrativ\\.com\\/tags\\/toryburch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a7e1b4594e91096eb84d1286fa4edec30ec1d482041862f3bbe351ea5dfdfc3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toryburch.com",
+                "www.toryburch.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1249\\/impressions\\/page_impression\\/",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -2383,8 +2558,162 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "theverge.com",
-                "www.theverge.com"
+                "toryburch.com",
+                "www.toryburch.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/merchants\\/1249\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toryburch.com",
+                "www.toryburch.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/tags\\/wargamer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "747cc883fac81b083d870a10c4779347915d6a0715f3935c6bb21b1bdcf8d1db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wargamer.com",
+                "www.wargamer.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1687\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wargamer.com",
+                "www.wargamer.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1687\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wargamer.com",
+                "www.wargamer.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/tags\\/wellandgood\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "315804a30750646bcbcc7b8bc9910c0457280b1c0454d3a4fc60dc4e44d34641"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wellandgood.com",
+                "www.wellandgood.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1221\\/impressions\\/page_impression\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wellandgood.com",
+                "www.wellandgood.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1221\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wellandgood.com",
+                "www.wellandgood.com"
             ]
         },
         {
@@ -2414,26 +2743,6 @@
         },
         {
             "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1208\\/impressions\\/page_impression\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.release"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wisebread.com",
-                "www.wisebread.com"
-            ]
-        },
-        {
-            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1208\\/impressions\\/page_impression\\/",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -2447,6 +2756,26 @@
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wisebread.com",
+                "www.wisebread.com"
+            ]
+        },
+        {
+            "rule": "narrativ\\.com\\/api\\/v0\\/publishers\\/1208\\/impressions\\/page_impression\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.release"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2658,16 +2987,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000926,
+    "cookies": 0.000996,
     "types": {
-        "Script": 94,
-        "XHR": 80,
-        "Preflight": 78
+        "Script": 101,
+        "XHR": 92,
+        "Preflight": 90
     },
     "nameservers": [
-        "ns-539.awsdns-03.net",
-        "ns-482.awsdns-60.com",
+        "ns-1471.awsdns-55.org",
         "ns-1907.awsdns-46.co.uk",
-        "ns-1471.awsdns-55.org"
+        "ns-482.awsdns-60.com",
+        "ns-539.awsdns-03.net"
     ]
 }

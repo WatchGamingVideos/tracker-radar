@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000131,
-    "sites": 19,
+    "prevalence": 0.000145,
+    "sites": 21,
     "subdomains": [
-        "wsi",
-        "truyoproductionuscdn",
+        "dev-wilton",
         "staterbros",
-        "truyoproduction"
+        "truyoproduction",
+        "wsi",
+        "truyoproductionuscdn"
     ],
     "cnames": [
         {
@@ -21,6 +22,101 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/cookie-plugin\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dev-wilton",
+                "staterbros",
+                "truyoproduction"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "privacy.wilton.com",
+                    "resolved": "truyoproduction.truyo.com"
+                }
+            ],
+            "responseHashes": [
+                "62b83bf9f52dc06f382f52700a752f428ffacde75264b18026358f6fd44bf18f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wilton.com",
+                "blog.wilton.com",
+                "www.staterbros.com",
+                "www.wilton.com"
+            ]
+        },
+        {
+            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/js\\.cookie\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dev-wilton",
+                "truyoproduction"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "privacy.wilton.com",
+                    "resolved": "truyoproduction.truyo.com"
+                }
+            ],
+            "responseHashes": [
+                "85e74cf367fdd70c3bdbb603df85574f4f7e9a99b6f77c3e0b4cee1c9fe5105c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wilton.com",
+                "blog.wilton.com",
+                "www.wilton.com"
+            ]
+        },
+        {
+            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/cookie-plugin\\.php",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dev-wilton",
+                "staterbros",
+                "truyoproduction"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "privacy.wilton.com",
+                    "resolved": "truyoproduction.truyo.com"
+                }
+            ],
+            "responseHashes": [
+                "40246f6fa2f6b4590a6627979f65dd7d2cca31dcd40df4398dede92abf7b05ef",
+                "98aadac9ac6f31da3c5d97b58128ddb0a88c05be4ab35bcd64d00793437a6658",
+                "16878c3cb38a5c8a7d1557293a645de3137c2b51280f944182b264a6ee3abb8e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wilton.com",
+                "blog.wilton.com",
+                "www.staterbros.com",
+                "www.wilton.com"
+            ]
+        },
+        {
             "rule": "truyo\\.com\\/api\\/v1\\/consent\\/public\\/JJ2PHKG484N5P\\/consumercookies\\/opt-out-urls",
             "cookies": 0,
             "fingerprinting": 0,
@@ -29,18 +125,18 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.0000691,
+            "prevalence": 0.0000692,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "svi_dec": 0.00006913525621525953,
-                "spot_dt": 0.000013827051243051907
+                "svi_dec": 0.00006917925729149372,
+                "spot_dt": 0.000013835851458298743
             },
             "exampleSites": [
-                "potterybarnkids.com",
                 "potterybarn.com",
+                "potterybarnkids.com",
                 "westelm.com",
                 "williams-sonoma.com",
                 "www.markandgraham.com",
@@ -60,7 +156,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.0000691,
+            "prevalence": 0.0000692,
             "cnames": [],
             "responseHashes": [
                 "19abd85f71c558794871ddfdf8e405856dd395a41fe57fdceb5384e33d846473"
@@ -68,12 +164,12 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "svi_dec": 0.00006913525621525953,
-                "spot_dt": 0.000013827051243051907
+                "svi_dec": 0.00006917925729149372,
+                "spot_dt": 0.000013835851458298743
             },
             "exampleSites": [
-                "potterybarnkids.com",
                 "potterybarn.com",
+                "potterybarnkids.com",
                 "westelm.com",
                 "williams-sonoma.com",
                 "www.markandgraham.com",
@@ -123,14 +219,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "75de13037441747fadd9e3c84f758eef67300416f8861c74330adb35c833c7fd"
+                "47bfdb1b32b7eb55aa578de73694788fa5d1321ca7deb0f4c8d9b0b54941a018"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "truyoConsent": {
-                    "ttl": 3153600006,
+                    "ttl": 3153600005,
                     "length": 2,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -139,102 +235,16 @@
                 "staterbros.com",
                 "www.staterbros.com"
             ]
-        },
-        {
-            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/cookie-plugin\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "staterbros",
-                "truyoproduction"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "privacy.wilton.com",
-                    "resolved": "truyoproduction.truyo.com"
-                }
-            ],
-            "responseHashes": [
-                "62b83bf9f52dc06f382f52700a752f428ffacde75264b18026358f6fd44bf18f"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "staterbros.com",
-                "www.staterbros.com",
-                "www.wilton.com"
-            ]
-        },
-        {
-            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/cookie-plugin\\.php",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "staterbros",
-                "truyoproduction"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "privacy.wilton.com",
-                    "resolved": "truyoproduction.truyo.com"
-                }
-            ],
-            "responseHashes": [
-                "98aadac9ac6f31da3c5d97b58128ddb0a88c05be4ab35bcd64d00793437a6658",
-                "16878c3cb38a5c8a7d1557293a645de3137c2b51280f944182b264a6ee3abb8e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "staterbros.com",
-                "www.staterbros.com",
-                "www.wilton.com"
-            ]
-        },
-        {
-            "rule": "truyo\\.com\\/consumer\\/consent\\/plugin\\/js\\.cookie\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "truyoproduction"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "privacy.wilton.com",
-                    "resolved": "truyoproduction.truyo.com"
-                }
-            ],
-            "responseHashes": [
-                "85e74cf367fdd70c3bdbb603df85574f4f7e9a99b6f77c3e0b4cee1c9fe5105c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wilton.com",
-                "www.wilton.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000277,
+    "cookies": 0.0000415,
     "types": {
-        "Preflight": 10,
-        "XHR": 13,
-        "Script": 6,
-        "Stylesheet": 3
+        "Stylesheet": 4,
+        "Script": 7,
+        "XHR": 14,
+        "Preflight": 10
     },
     "nameservers": [
         "pdns11.domaincontrol.com",

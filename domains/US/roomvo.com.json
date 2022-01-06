@@ -4,15 +4,54 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000187,
-    "sites": 27,
+    "prevalence": 0.000152,
+    "sites": 22,
     "subdomains": [
-        "www",
-        "cdn"
+        "cdn",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "roomvo\\.com\\/static\\/scripts\\/b2b\\/lumber_liquidators\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "59870d712520fa107a5c2e7666fb9e36455e9048c692afd7a65d6bc0ce95c020"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ffvisitorids": {
+                    "ttl": 251763448353,
+                    "length": 57,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "ffvendorids": {
+                    "ttl": 251763448353,
+                    "length": 57,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llflooring.com",
+                "www.llflooring.com"
+            ]
+        },
         {
             "rule": "roomvo\\.com\\/api\\/visitors\\/",
             "cookies": 0,
@@ -21,41 +60,23 @@
                 "www"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000104,
+            "sites": 12,
+            "prevalence": 0.000083,
             "cnames": [],
-            "responseHashes": [
-                "f3477c691d86468910a78bda4575341550bebeb4c0f1dfb66a158c44dc660810",
-                "78498beb79774864c26100b258fcce32a019ba77e846e68f0a609e7f24ed92dc",
-                "29423238f7c4633c123989ebf6008f3f8c5b155a43712f4c7e2470c894a421d4",
-                "07500bad07d9285adb1cb45447c2e342541fa20032263d40bcbbe6666d097eb5",
-                "822a0a8356f7405d4376cce2916c0271edad1c601c9173259e8adda99b5302b2",
-                "2e80585f76db63ffd8dcc2c70962f57838304b985e60be26429a9ba7d8581e86",
-                "86c2d5771a01633c685e281f71dc0d5a856fe2b40242c4a3d077d54e6bcc3053",
-                "6629fa6f9229a1bfd8dc4828cfbdda97b45c5f036ab7679039cd7f9928f54fde",
-                "26e1fee654087b88dd9ebd628911e324e66dc73d365b8ea1553a9d903ebff82a",
-                "ec969d7e1aece8d0403113af2c9194e4c9f7c67590bd8ad6f14a65ece5652628",
-                "3ec037a28cf8e98c6b80565e58a569b41326f3591efd197fc28afc7392f5b851",
-                "bcfea3026df1ae58e5b90a709a581eb37d115a2a89b1750ba34fb283db9273d7",
-                "80fcb75cbf0f431d1e2853845dc476485d9c53d99699cbf507bcea87a08f5fbf",
-                "09c41dad94fa47a04fdfa6e14278c1f67ca46737a856b59abfacc715728a306d"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flooringliquidators.net",
+                "llflooring.com",
                 "www.bestlaminate.com",
                 "www.builddirect.com",
                 "www.carpetright.co.uk",
                 "www.ethanallen.com",
-                "www.greenbuildingsupply.com",
+                "www.harveynorman.ie",
                 "www.homeoutlet.com",
                 "www.llflooring.com",
-                "www.msisurfaces.com",
                 "www.nfm.com",
-                "www.pointp.fr",
-                "www.rugsusa.com",
                 "www.rugs-direct.com",
                 "www.tilebar.com",
                 "www.toppstiles.co.uk"
@@ -69,26 +90,35 @@
                 "www"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000104,
+            "sites": 12,
+            "prevalence": 0.000083,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "280f9e68a78a2751899de12be06c2c8827e8fd4a559735fbd1e2688ec63e2d8c",
+                "248d628f1e8a6bef0f4bce676e5400485ab9d66348aeef11861051298da7cc40",
+                "5050bc296c901051c205f208ff71c8a9907184337a87fe4044ea03af63170c87",
+                "4c3274e63e99f850b0e0b75f9e55171362cdf53f042c7a3c800471f3babaa47a",
+                "43bc2e489547918068b3863917c4d4902a8bba914b6c824d4c72b56a39bdd9dc",
+                "5b764c3a618d46a19b27d6c0c3eaa65da4d3ac618371bb88bfda2e74f2402dbf",
+                "dd63c4c5bf5503574e8b068b71d1e209b6ee4efca69c48ac304313c362149b40",
+                "1d602aad2f4994c2022331607d6e4e693189729a9b4023a8f473e9c643ac27bd",
+                "2f6de05f52a60249f814d203eaeef0e17aea98f0d22885f211fa8c5c1482805c",
+                "feac4548a07de886289385424be4f6c0b609ddf30bca8d583d36db89a4d346ff",
+                "ada8d7c23f5f2888685aa6338d1d2da5a4966fa1026cf38f3922e1a9387df891"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flooringliquidators.net",
+                "llflooring.com",
                 "www.bestlaminate.com",
                 "www.builddirect.com",
                 "www.carpetright.co.uk",
                 "www.ethanallen.com",
-                "www.greenbuildingsupply.com",
+                "www.harveynorman.ie",
                 "www.homeoutlet.com",
                 "www.llflooring.com",
-                "www.msisurfaces.com",
                 "www.nfm.com",
-                "www.pointp.fr",
-                "www.rugsusa.com",
                 "www.rugs-direct.com",
                 "www.tilebar.com",
                 "www.toppstiles.co.uk"
@@ -106,7 +136,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "90cab3f05321158dc5c7ebc0d0d0bdad718ac212c58c17b98d76e02e6df2ed36"
+                "34db4c299d867b96ca2798baa31bbc97f104fdbb7a6571af2128b4265cae2eeb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,26 +154,22 @@
                 "www"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-                "58e989c0fe046f109d9902326f7409ee29dd5ee910a95b9d097d5eb209e2b0fe",
-                "9f4fef37cc16c2f07efbb3148212b634b81d3817ec854052e317ce8ce4910578",
                 "ae3cbdeb34e146faf155a7cb204ebf09df39a10e9248a522ebbb0c64bb9e9288",
                 "07ea5808578577d9ef46919be2c5482b992d9892177e48861e2f1a38ef348e0f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ssViewedProducts": 0.000006913525621525954
+                "ssViewedProducts": 0.000006917925729149372
             },
             "exampleSites": [
                 "rugs.com",
                 "www.bestlaminate.com",
-                "www.msisurfaces.com",
-                "www.rugsusa.com",
                 "www.tilebar.com",
                 "www.toppstiles.co.uk"
             ]
@@ -169,15 +195,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763075894,
+                    "ttl": 251763420729,
                     "length": 52,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763075894,
+                    "ttl": 251763420729,
                     "length": 52,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -196,7 +222,8 @@
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -207,15 +234,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763074266,
+                    "ttl": 251763417824,
                     "length": 50,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763074266,
+                    "ttl": 251763417824,
                     "length": 50,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -226,45 +253,6 @@
             ]
         },
         {
-            "rule": "roomvo\\.com\\/static\\/scripts\\/b2b\\/greenbuildingsupply\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "75c79ef5992a2a4eb8af32d139d38a6bcdb8208010e0d095e956f17174917023"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ffvisitorids": {
-                    "ttl": 251763062872,
-                    "length": 58,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "ffvendorids": {
-                    "ttl": 251763062872,
-                    "length": 58,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "greenbuildingsupply.com",
-                "www.greenbuildingsupply.com"
-            ]
-        },
-        {
             "rule": "roomvo\\.com\\/static\\/scripts\\/b2b\\/homeoutletcom\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
@@ -272,7 +260,7 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
@@ -285,15 +273,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763061319,
+                    "ttl": 251763386818,
                     "length": 52,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763061319,
+                    "ttl": 251763386818,
                     "length": 52,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -301,45 +289,6 @@
             "exampleSites": [
                 "homeoutlet.com",
                 "www.homeoutlet.com"
-            ]
-        },
-        {
-            "rule": "roomvo\\.com\\/static\\/scripts\\/b2b\\/lumber_liquidators\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "59870d712520fa107a5c2e7666fb9e36455e9048c692afd7a65d6bc0ce95c020"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ffvisitorids": {
-                    "ttl": 251763055966,
-                    "length": 57,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "ffvendorids": {
-                    "ttl": 251763055966,
-                    "length": 57,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "llflooring.com",
-                "www.llflooring.com"
             ]
         },
         {
@@ -363,9 +312,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763054757,
+                    "ttl": 251763371188,
                     "length": 53,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -396,15 +345,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763051035,
+                    "ttl": 251763363133,
                     "length": 42,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763051035,
+                    "ttl": 251763363133,
                     "length": 42,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -435,15 +384,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763044649,
+                    "ttl": 251763348367,
                     "length": 50,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763044649,
+                    "ttl": 251763348367,
                     "length": 50,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -474,15 +423,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ffvisitorids": {
-                    "ttl": 251763038216,
+                    "ttl": 251763333219,
                     "length": 46,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "ffvendorids": {
-                    "ttl": 251763038216,
+                    "ttl": 251763333219,
                     "length": 46,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -495,11 +444,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000173,
+    "cookies": 0.000145,
     "types": {
-        "XHR": 23,
-        "Preflight": 15,
-        "Script": 18
+        "Script": 16,
+        "Preflight": 12,
+        "XHR": 18
     },
     "nameservers": [
         "ns-597.awsdns-10.net",

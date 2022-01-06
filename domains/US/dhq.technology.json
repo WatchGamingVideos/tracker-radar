@@ -15,11 +15,13 @@
         {
             "rule": "dhq\\.technology\\/www\\.flooringstores\\.com\\/public\\/main\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -36,14 +38,17 @@
         },
         {
             "rule": "dhq\\.technology\\/www\\.flooringstores\\.com\\/public\\/vendors~traffic-source-tracking\\.510af56a\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Document.cookie setter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -52,7 +57,50 @@
                 "8df585e6495f05f31a83d0104ae34ce5b6b922fc1ffd527abb3715e0fc859e83"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "sbjs_migrations": {
+                    "ttl": 15552001,
+                    "length": 17,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "sbjs_current_add": {
+                    "ttl": 15552001,
+                    "length": 396,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "sbjs_first_add": {
+                    "ttl": 15552001,
+                    "length": 396,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "sbjs_current": {
+                    "ttl": 15552001,
+                    "length": 125,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "sbjs_first": {
+                    "ttl": 15552001,
+                    "length": 125,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "sbjs_udata": {
+                    "ttl": 15552001,
+                    "length": 211,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "sbjs_session": {
+                    "ttl": 1801,
+                    "length": 350,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "flooringstores.com",
@@ -84,14 +132,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Script": 6
     },
     "nameservers": [
+        "ns-cloud-d1.googledomains.com",
         "ns-cloud-d2.googledomains.com",
         "ns-cloud-d3.googledomains.com",
-        "ns-cloud-d4.googledomains.com",
-        "ns-cloud-d1.googledomains.com"
+        "ns-cloud-d4.googledomains.com"
     ]
 }

@@ -7,24 +7,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
-        "js"
+        "js",
+        "pci-connect",
+        "connect"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "squareup\\.com\\/v2\\/paymentform",
-            "cookies": 0.0000138,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "js"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "bf6ae86e2e041abfafcba3d76be94310ebc521f7fc2379d89eb2805f90ef074b"
@@ -34,15 +36,171 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "plandemicvideo.com",
+                "www.collegefootballnow.org",
                 "www.schedulicity.com"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/v2\\/v",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pci-connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/v2\\/iframe",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pci-connect"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b59a25183e1d1f81d153840655819b8da471577e3e3ba2f58caecd5ba82353a7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/v2\\/v",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pci-connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/payments\\/data\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c0068630dd863f6eb72a36e0e2785b8b4e4847b96eefbeb2c769e88140d8b688"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/payments\\/data\\/frame\\.html",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.availHeight": 1,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.doNotTrack": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.productSub": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9fb5ae6cc8023b5c9a7e30cc67b5816f88bb41387673414e87aaaa3aba53deb1"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
+            ]
+        },
+        {
+            "rule": "squareup\\.com\\/v2\\/analytics\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8227b96a723c573bdffcc942b2a753410e6dd61b5eab65d04573d14b5866084d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plandemicvideo.com",
+                "www.collegefootballnow.org"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000277,
+    "cookies": 0.0000346,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Preflight": 2,
+        "Document": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-1248.awsdns-28.org",

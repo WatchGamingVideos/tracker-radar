@@ -4,14 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000083,
-    "sites": 12,
+    "prevalence": 0.000111,
+    "sites": 16,
     "subdomains": [
         "embed",
         "detection-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "myadvocado\\.com\\/khDzdgmuLCcbD4OilNOxxUmmcPtkMSH3\\/page\\.js",
@@ -33,6 +33,59 @@
             "exampleSites": [
                 "sallybeauty.com",
                 "www.sallybeauty.com"
+            ]
+        },
+        {
+            "rule": "myadvocado\\.com\\/track\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "detection-api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_szl_instant_merchant_domain": 0.000006917925729149372,
+                "_shopify_sa_p": 0.000013835851458298743,
+                "_ga": 0.00003458962864574686
+            },
+            "exampleSites": [
+                "sleepsutera.com",
+                "www.blueshieldca.com",
+                "www.brava.com",
+                "www.flemingssteakhouse.com",
+                "www.livingspaces.com"
+            ]
+        },
+        {
+            "rule": "myadvocado\\.com\\/track\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "detection-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sleepsutera.com",
+                "www.blueshieldca.com",
+                "www.brava.com",
+                "www.flemingssteakhouse.com"
             ]
         },
         {
@@ -58,51 +111,56 @@
             ]
         },
         {
-            "rule": "myadvocado\\.com\\/track\\/view",
+            "rule": "myadvocado\\.com\\/q1AtYqgDOLiazXGIm8AYlkbzKcOBkohj\\/page\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "detection-api"
+                "embed"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.00003456762810762977
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Document.cookie getter": 2
             },
-            "exampleSites": [
-                "blueshieldca.com",
-                "www.flemingssteakhouse.com",
-                "www.livingspaces.com"
-            ]
-        },
-        {
-            "rule": "myadvocado\\.com\\/track\\/activity",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "detection-api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+                "963472ca2a78fe7b3c0629763c58baa90600870fd42dfa1b5a10e7dca024ffb5"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blueshieldca.com",
-                "www.blueshieldca.com",
-                "www.flemingssteakhouse.com"
+                "www.blueshieldca.com"
+            ]
+        },
+        {
+            "rule": "myadvocado\\.com\\/q1AtYqgDOLiazXGIm8AYlkbzKcOBkohj\\/iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "016f2e16ee1dd8140935d9aa1274bb5b6a29ee4480796867758c9a8fd1a644fc"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blueshieldca.com",
+                "www.blueshieldca.com"
             ]
         },
         {
@@ -216,9 +274,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8,
-        "XHR": 6,
-        "Document": 4
+        "Script": 10,
+        "XHR": 9,
+        "Document": 6
     },
     "nameservers": [
         "luke.ns.cloudflare.com",

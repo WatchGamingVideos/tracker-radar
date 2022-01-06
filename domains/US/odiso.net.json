@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000111,
-    "sites": 16,
+    "prevalence": 0.000125,
+    "sites": 18,
     "subdomains": [
         "czproxy",
         "dkoproxy",
@@ -14,9 +14,14 @@
         "rtlportailsproxy",
         "turproxy",
         "psproxy",
-        "magproxy"
+        "magproxy",
+        "picwictoysproxy"
     ],
     "cnames": [
+        {
+            "original": "api.picwictoys.com",
+            "resolved": "picwictoysproxy.odiso.net"
+        },
         {
             "original": "cdn.cuisineaz.com",
             "resolved": "czproxy.odiso.net"
@@ -60,6 +65,10 @@
         {
             "original": "matomo.turbo.fr",
             "resolved": "turproxy.odiso.net"
+        },
+        {
+            "original": "media.picwictoys.com",
+            "resolved": "picwictoysproxy.odiso.net"
         }
     ],
     "fingerprinting": 2,
@@ -941,114 +950,6 @@
             ]
         },
         {
-            "rule": "odiso\\.net\\/img\\/nl\\/nl_ico\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "psproxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cdn.passeportsante.net",
-                    "resolved": "psproxy.odiso.net"
-                }
-            ],
-            "responseHashes": [
-                "c9b3a3e8130c87dfcbc51ed94b6c568ff5b9b255ecdf6af03cf9895e2c2adddd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "passeportsante.net",
-                "www.passeportsante.net"
-            ]
-        },
-        {
-            "rule": "odiso\\.net\\/img\\/nl\\/nl_arrow\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "psproxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cdn.passeportsante.net",
-                    "resolved": "psproxy.odiso.net"
-                }
-            ],
-            "responseHashes": [
-                "ab23bd19431a87a461f6e66a3cb4fc6a80f3ea398580d571d834d1b735f62ed7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "passeportsante.net",
-                "www.passeportsante.net"
-            ]
-        },
-        {
-            "rule": "odiso\\.net\\/img\\/nl\\/nl_ebook19_200\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "psproxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cdn.passeportsante.net",
-                    "resolved": "psproxy.odiso.net"
-                }
-            ],
-            "responseHashes": [
-                "43a7779c5ca2c7c1b46c47b175c74d86bb3c8998d8a66bcfad25bec516fa21ff"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "passeportsante.net",
-                "www.passeportsante.net"
-            ]
-        },
-        {
-            "rule": "odiso\\.net\\/img\\/nl\\/nl_cadeaux\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "psproxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cdn.passeportsante.net",
-                    "resolved": "psproxy.odiso.net"
-                }
-            ],
-            "responseHashes": [
-                "53d2a2e88fce5595d84e58be25b964b94aa8216e127951b503bfd98f43428407"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "passeportsante.net",
-                "www.passeportsante.net"
-            ]
-        },
-        {
             "rule": "odiso\\.net\\/img\\/footer\\/adtrust\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1398,17 +1299,152 @@
                 "passeportsante.net",
                 "www.passeportsante.net"
             ]
+        },
+        {
+            "rule": "odiso\\.net\\/api\\/stores",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "09c88a1041f70da613921729ec8879917d71f8db4454b4e06e9fedad1bde6283"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
+        },
+        {
+            "rule": "odiso\\.net\\/api\\/menu\\/links",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "93b10d15e9229d170262a6d625184cf7207e00e4a9fda5c05ae55cd5b8f92ffe"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
+        },
+        {
+            "rule": "odiso\\.net\\/api\\/installments_payment_information",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
+        },
+        {
+            "rule": "odiso\\.net\\/api\\/installments_payment_information",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "ac3b9b4ff4f5ea2edfadcf68693f063456390893c65046813a2ef2ba3ac9f72b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
+        },
+        {
+            "rule": "odiso\\.net\\/emerch\\/logo\\/PicWicToys_Logo_RVB\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "picwictoysproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "media.picwictoys.com",
+                    "resolved": "picwictoysproxy.odiso.net"
+                }
+            ],
+            "responseHashes": [
+                "9787399b6e46bc32878030d5d4423d7677553b23660472f130d3fc719d31a3b5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picwictoys.com",
+                "www.picwictoys.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000968,
+    "cookies": 0.0000969,
     "types": {
-        "Image": 70,
+        "Image": 64,
         "Font": 10,
         "Stylesheet": 4,
         "Script": 13,
-        "Ping": 8
+        "Ping": 8,
+        "Fetch": 6,
+        "Preflight": 2
     },
     "nameservers": []
 }

@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "cloud",
-        "cloudcdn"
+        "cloudcdn",
+        "tva"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,17 +17,17 @@
         {
             "rule": "chatbeacon\\.io\\/chatbeacon\\/scripts\\/chatbeacon\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cloud"
             ],
             "apis": {
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -35,26 +36,6 @@
                 "2b836671a65ee90c93971b736031bdc2c2eb1d5740f2bc1f8f89ea8dc10d1136"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "speedymetals.com",
-                "www.speedymetals.com"
-            ]
-        },
-        {
-            "rule": "chatbeacon\\.io\\/chatbeacon\\/api\\/v2\\/account\\/184\\/visitor\\/site\\/219\\/session",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -139,8 +120,28 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "speedymetals.com",
+                "www.speedymetals.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/api\\/v2\\/account\\/184\\/visitor\\/site\\/219\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
             "responseHashes": [
-                "0c46d3103c4455c27cccb69bceeab3511266124015061592c56c43e05f324fb9"
+                "6ac4856836816822da3930c144108feb89c7452217553c117d7ba2308c612bc9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -162,7 +163,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4c45b31fdfd378fd49970d8f673d84972fd010fa9677edf3f55e72dac35109fa"
+                "d3d237fbe4632d064efcbad4077810750687dde3695e6a6f121a362843cc1329"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -245,8 +246,10 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "3259db40cb162ca6e815c861969c5077ec90d435b75e75e9769bdd23e377de48"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -265,10 +268,8 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "3259db40cb162ca6e815c861969c5077ec90d435b75e75e9769bdd23e377de48"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -287,7 +288,9 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "f9410aac11d79a514ee56fce0f77dd52bc6e279f66043a3bdac025cdf72d81c5"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -370,7 +373,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a68b40676c197cd701894d56a4da60749ba99f0bd563dc23a3908a7ce528ff5a"
+                "6182c1d62da6ea443330cf7607b1a8c2a27ddd83d47a4a5ac877746ccc3e9c26"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -578,7 +581,7 @@
                 "cloud"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 1
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -624,7 +627,9 @@
                 "cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -949,28 +954,6 @@
             ]
         },
         {
-            "rule": "chatbeacon\\.io\\/chatbeacon\\/api\\/v1\\/template\\/Speedy_Metals_Slim\\/segments",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "553891332bf8b68089601c077ad208a0dd2effa29fdad6d50e43deee06aefc02"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "speedymetals.com",
-                "www.speedymetals.com"
-            ]
-        },
-        {
             "rule": "chatbeacon\\.io\\/chatbeacon\\/api\\/v1\\/template\\/Speedy_Metals_frame\\/button",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1013,6 +996,28 @@
             ]
         },
         {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/api\\/v1\\/template\\/Speedy_Metals_Slim\\/segments",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "553891332bf8b68089601c077ad208a0dd2effa29fdad6d50e43deee06aefc02"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "speedymetals.com",
+                "www.speedymetals.com"
+            ]
+        },
+        {
             "rule": "chatbeacon\\.io\\/chatbeacon\\/content\\/images\\/Speedy_Metals2\\/pattern\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1046,7 +1051,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "72456515be3db7aced4157e3e1af05ebe9de21b1c17fbfa586c93b0c379e103c"
+                "1f6f210e22d7b8d3982e3adaeb8bc825ca629f103393cfd09fc1d55f86505bf3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1077,18 +1082,349 @@
                 "speedymetals.com",
                 "www.speedymetals.com"
             ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/scripts\\/chatbeacon\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fa2ac6c754af09a3bf10c96edca46b64d491160c4bfdc499c4b00b8fdc2e91b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/scripts\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c52a0547f585d77ada486bc79ac29537b113de06b2537524fa09f725202294f9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/css\\/chatbeacon\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ce02ab22a4ef14dc0c12ce4d5c2166248431c4c0bcf2766fc413bcd64857cedb"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/css\\/custom\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e676198a99ba42a2f1ee27595338aa98d3f71d4a36a74803f38accebb782fec2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/valid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "af5fd803088fcdc627e5cd97fb88d7fcbbb02a705f38fd48b1ab5f4ffca50ae8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/valid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dd255b9137d2bd88d64d8cc787b0c38474606c4aceb58e377c6efa2d998a07ca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/variables",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/variables",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f09474180fcef1b996b434f66759e906bf0832cd204c43ec7f71f865a3d5aee0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/api\\/visitor\\/account\\/site\\/session\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
+        },
+        {
+            "rule": "chatbeacon\\.io\\/chatbeacon\\/tvacreditunion\\/1\\/imgs\\/online\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "51cd5ba371e6eab654421d894ed8dda1aeee82bf588d44711fc1b2daa3be12cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tvacreditunion.com",
+                "www.tvacreditunion.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 10,
-        "Preflight": 22,
-        "Stylesheet": 12,
-        "XHR": 30,
+        "Script": 14,
+        "Stylesheet": 16,
+        "Preflight": 32,
+        "XHR": 40,
         "Document": 2,
-        "Image": 20,
+        "Image": 22,
         "Media": 2
     },
     "nameservers": [

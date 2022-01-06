@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
         "dualstack"
     ],
@@ -30,10 +30,51 @@
         {
             "original": "qsdw1.ai.agatameble.pl",
             "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
+        },
+        {
+            "original": "qsdw1.qon.4f.com.pl",
+            "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "alb-ir-first-party-1961909777\\.eu-west-1\\.elb\\.amazonaws\\.com\\/creation\\/snippetHtml",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dualstack"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "qsdw1.qon.4f.com.pl",
+                    "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
+                },
+                {
+                    "original": "qsdw1.ai.agatameble.pl",
+                    "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
+                },
+                {
+                    "original": "qsdw1.5a655e345c3ac9f9.helikon-tex.com",
+                    "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "06714c81ac070849abedfae56705308fb344790d9023d3ad4b29802b511bce6d",
+                "fd14a5710a114eca8b974fc9f381d1d06dd466549071d91087582eac6b77ac41"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4f.com.pl",
+                "www.agatameble.pl",
+                "www.helikon-tex.com"
+            ]
+        },
         {
             "rule": "alb-ir-first-party-1961909777\\.eu-west-1\\.elb\\.amazonaws\\.com\\/qjs\\/ec23bbea17040941\\.js",
             "cookies": 0.0000138,
@@ -51,7 +92,7 @@
                 }
             ],
             "responseHashes": [
-                "b89c8273b37464d73f6df41ebfbd15941397683fd2d6b945f889e3371069f170"
+                "7ddcbcc2f8c294e602bc9c5e8276fc8ceda3ccdbb44a95a908d925d60c27dc33"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -59,37 +100,6 @@
             "exampleSites": [
                 "agatameble.pl",
                 "www.agatameble.pl"
-            ]
-        },
-        {
-            "rule": "alb-ir-first-party-1961909777\\.eu-west-1\\.elb\\.amazonaws\\.com\\/creation\\/snippetHtml",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "dualstack"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "qsdw1.ai.agatameble.pl",
-                    "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
-                },
-                {
-                    "original": "qsdw1.5a655e345c3ac9f9.helikon-tex.com",
-                    "resolved": "dualstack.alb-ir-first-party-1961909777.eu-west-1.elb.amazonaws.com"
-                }
-            ],
-            "responseHashes": [
-                "5aa1bfe5fd29c1c83f73e0e7e3f98fd87f6d4f6db02e5e79deb8eecfc820633c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "agatameble.pl",
-                "www.helikon-tex.com"
             ]
         },
         {
@@ -124,9 +134,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000277,
+    "cookies": 0.0000415,
     "types": {
-        "Script": 6
+        "Script": 7
     },
     "nameservers": []
 }

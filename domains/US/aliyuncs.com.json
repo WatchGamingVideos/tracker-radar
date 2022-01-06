@@ -7,26 +7,30 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000283,
-    "sites": 41,
+    "prevalence": 0.000291,
+    "sites": 42,
     "subdomains": [
         "wx-analytics.cn-hongkong.log",
         "csdn.cn-beijing.log",
-        "public-prakerja.oss-ap-southeast-5",
         "p-wonderidea-rdr.us-east-1.log",
         "retcode-us-west-1.arms",
         "arms-retcode",
+        "tineco-gjgw-us.oss-accelerate",
         "aukeyoss.oss-us-west-1",
-        "upload-hotbit-io.oss-accelerate",
+        "chitubox-web-tracking-sz.cn-shenzhen.log",
         "tap-snow-hk.cn-hongkong.log"
     ],
     "cnames": [
         {
             "original": "event.csdn.net",
             "resolved": "csdn.cn-beijing.log.aliyuncs.com"
+        },
+        {
+            "original": "static-ussite.tineco.com",
+            "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "aliyuncs\\.com\\/logstores\\/hawkeye\\/track_ua\\.gif",
@@ -36,23 +40,26 @@
                 "wx-analytics.cn-hongkong.log"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
                 "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "apptype": 0.00004150755437489623
+            },
             "exampleSites": [
                 "airmore.com",
+                "beecut.com",
                 "gitmind.com",
                 "letsview.com",
-                "screenshot.net",
+                "lightmv.com",
                 "www.apowersoft.com",
-                "www.apowersoft.jp",
-                "www.videograbber.net"
+                "www.apowersoft.fr",
+                "www.apowersoft.jp"
             ]
         },
         {
@@ -77,9 +84,9 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "c_first_ref": 0.000006913525621525954,
-                "c_page_id": 0.000006913525621525954,
-                "dc_session_id": 0.000006913525621525954
+                "c_first_ref": 0.000013835851458298743,
+                "c_page_id": 0.000013835851458298743,
+                "dc_session_id": 0.000013835851458298743
             },
             "exampleSites": [
                 "csdn.net",
@@ -139,28 +146,6 @@
             ]
         },
         {
-            "rule": "aliyuncs\\.com\\/public-prakerja\\/styles\\/shaka\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "public-prakerja.oss-ap-southeast-5"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3661ef0fc9f0d3414566b5345f3906b00c595f30422b3eacb1dfd80564cb9d63"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "prakerja.go.id",
-                "dashboard.prakerja.go.id"
-            ]
-        },
-        {
             "rule": "aliyuncs\\.com\\/logstores\\/fh5-logstore\\/track",
             "cookies": 0,
             "fingerprinting": 0,
@@ -168,8 +153,8 @@
                 "p-wonderidea-rdr.us-east-1.log"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -179,7 +164,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fliphtml5.com",
-                "www.myhorrynews.com",
                 "www.thelightinthedarkplace.com"
             ]
         },
@@ -199,9 +183,12 @@
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_uetsid": 0.000013827051243051907,
-                "_uetvid": 0.000013827051243051907,
-                "_bl_uid": 0.00003456762810762977
+                "Hm_lvt_960ef17df44dacb2a038ecfdc57c6bf5": 0.000006917925729149372,
+                "Hm_lpvt_960ef17df44dacb2a038ecfdc57c6bf5": 0.000006917925729149372,
+                "_bl_uid": 0.00003458962864574686,
+                "_uetsid": 0.000006917925729149372,
+                "_uetvid": 0.000006917925729149372,
+                "_ttgclid": 0.000013835851458298743
             },
             "exampleSites": [
                 "gitmind.com",
@@ -229,7 +216,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_bl_uid": 0.00003456762810762977
+                "_bl_uid": 0.00003458962864574686,
+                "_ttgclid": 0.000013835851458298743
             },
             "exampleSites": [
                 "gitmind.com",
@@ -237,6 +225,735 @@
                 "www.dji.com",
                 "www.insta360.com",
                 "www.seeedstudio.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Wet%20Dry%20Vacuums1\\.svg_8f43d5de-e\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "2c2d87498d6204a5192e854a02c98d6c54ac7b2efb39fd71446cb9eb3665b606"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Wet%20Dry%20Vacuums2\\.svg_2c0e7bac-7\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "ce5a76cff60fc812caafe4f917353280b96f725c129412858df6e067a8395c99"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Smart%20Vacuums\\.svg_236ed992-c\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "079d36708b7d3ed77838513658b1325a43307b5da6cd7ce729ba75e473c0bff6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Smart%20Vacuums2\\.svg_7746221f-8\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "1d45028aa4399664d9edbe7e0344a29e6d5969cd4a9b7f2136ebcbde0b8599f5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Cordless%20Vacuums1\\.svg_32f62b5d-b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "2b1abb9c7d5cded4f7c3e8ca59197f7f7788298d189516f4dfe9629212b5d131"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Cordless%20Vacuums2\\.svg_8356fdfe-1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "c96086b32e2ad1ae329cde2819719fa1327ff712786bc736d5925270aa9596a8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Smart%20Hair%20Dryers\\.svg_a021a38f-7\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "fc6e4f4310c80b0f4d663694d9fe971d12ad6c3d42f8d4e0f343e5a80e1892af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/Smart%20Hair%20Dryers2\\.svg_6b7b573a-c\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "e83eaf26817c7e6cb2303cff00e4985a47cfadb24bab318a474caef8aa0eb6f9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/accessories-cion\\.svg_84331ea8-4\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "9af0611cb5a9ef6e32c14873c3286bacbb23aca27edc0f70cb60f8219f9b7cab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/accessories-icon-active\\.svg_666170d9-b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "a13b9244e7f2ca9f77a559b77e0ad2c544cc6db5e3577fcb2e24ad09da2cb479"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/55656306-73c2-4321-baf2-8b75236d7149\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "86b456b3e93587b41ecc095d7f1fb972ce417c3c0a2571ef4954d58ed9d62d0b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/c745081f-3c8e-4866-a876-fa2de1caef86\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "17c9a096232989dd8a0ad259f3eec9c3295749ef0bb13a938d7691685f4b24f8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/9a65f31c-a139-4e48-82c4-7573af9ad1a8\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "e4fb99616e7745a213581b0f8604cd89ef75e0eba7e4e1d4b8bcaaba49ffdb41"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/b489963d-7a8c-4c8d-a709-11d9b600602d\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "50807bcc755d93f7e950c74bd43a0faef3b8bdb006a505fdd09fa8028284e9f9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/ea53a366-8d06-4e58-bba6-e58d4a09e928\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "821a7b6949a5d3f0b2b125cd163072b1b6b2a555ab296961ba3c3bf774ec17e3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/13a0d533-5a9e-4403-aa84-23b9017bb5e6\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "d39abc29f34ace2ceb88ec78ba81857452ba9f03f0602cf840e321f49d22a180"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/1d9d2cba-1d1c-41aa-abdc-4a0899cb2a5f\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "1d7541f18ea1e7c5f05d36705f9a583f91e76f011563e685ad581ebf80083754"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/1c3aab12-def4-48bb-ac4c-a09501b0c5e3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "3e6973cca908165c4eab1bcca95b3f0c91e4f769782623a48474635e563d4b13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/9a2dba15-a53a-47f4-ad5a-3578a26ab035\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "c1efc83277c3beeaf62864dcc97559f05a7ede8db204f4510515571dbf65d7f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/10ece10b-2268-436d-9e60-4b357b4a8364\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "fae2245554d6054415307958cb37fa7b2440067284979301014c1edc4c47b490"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/15d1a88c-48cd-43c6-ae16-d081433d9c33\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "9e43c6318a29677c0ba5fbe65706b22c112f851e5fe877c2dfbb1510826437b2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/0e30281f-3d78-4692-a17e-a34f20b6b146\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "ad6453fdc3b2c9b7623640efc28fcdb2a92b8960e5b5bec55a639eb7227986b6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/e4b5539e-5742-427b-b6c4-55c8e7f3cc85\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "c3ca49956b8c69f8ed090b8b05d2b4456807cd836ed904de31e4637a68c2bdd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/c988b6b4-470e-465b-97ea-fb0b8191e048\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "a02aece1afc2775608e6e276eb0fff420128f739ba9d46edc432366bf3ac9b57"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/1ec4e473-6d5f-413f-97a8-cd6ce960ea91\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "40ae0b40da07d2d21c408a40e931fd0da6f12581a3f4f2207ed485bedf254601"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/247ea779-eaf2-45df-bc55-1490a8168072\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "e6f485301515d784cad2e1cd16639e7d164ed2008df28eaf80c994ad780da415"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
+            ]
+        },
+        {
+            "rule": "aliyuncs\\.com\\/dfcbcb2c-67df-478d-932e-98d7fbd7850e\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tineco-gjgw-us.oss-accelerate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "static-ussite.tineco.com",
+                    "resolved": "tineco-gjgw-us.oss-accelerate.aliyuncs.com"
+                }
+            ],
+            "responseHashes": [
+                "7bc4b6ebae7e37863d9320516652b3ae5540331365f3cef0803755b78b127f63"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tineco.com",
+                "us.tineco.com"
             ]
         },
         {
@@ -284,246 +1001,25 @@
             ]
         },
         {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/js\\/plugins\\/loghub-tracking\\.js",
+            "rule": "aliyuncs\\.com\\/logstores\\/chitubox-web-tracking-sz-store\\/track_ua\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
+                "chitubox-web-tracking-sz.cn-shenzhen.log"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3a601a99d9ff997e5faff9d7500f318e92442d512f8bde3548283c1856e087ff"
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/riseType\\/color2\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "de05de836f64666d991ada1bee99a720ccb8ed7478342023da4eb9bf1fbf5044"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/css\\/app\\.1639108016419\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bd08374044a3c09dfbef594c5d65237106c93215f5b615066509cd7a247a8299"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/js\\/manifest\\.1639108016419\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2feebfb06fff3a7bb397d6984d21552d46778a6d755303f761c78580d436361c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/js\\/vendor\\.1639108016419\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "window.devicePixelRatio": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cc19923c761920865d5c5b3640acb315667d1da7939fb1ac52cc7f52fca4c98a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/js\\/app\\.1639108016419\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.language": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9264f3b92a37419a9634f9380b3ad7ba7f50274d465f714d5d3c796f9668e227"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "lang": {
-                    "ttl": 2592001,
-                    "length": 5,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/fonts\\/OPENSANS-REGULAR\\.629a55a\\.TTF",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "664bc86a83c449f366975cf98dbd56bc3ae1de3b6780060384737f96b94e9791"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/resource\\/static\\/fonts\\/fontawesome-webfont\\.af7ae50\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/globalconfig\\/markets\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "25d4eaf7ddf7647cbc493c1c4b397897f3633b1589cf7509355c51d727ab3217"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
-            ]
-        },
-        {
-            "rule": "aliyuncs\\.com\\/globalconfig\\/vcoin2\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "upload-hotbit-io.oss-accelerate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bea7a5e8b9d4a21c951611676ad9b00d8ca81537752b393eecf4c0b99b970ea1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hotbit.io",
-                "www.hotbit.io"
+                "chitubox.com",
+                "www.chitubox.com"
             ]
         },
         {
@@ -551,15 +1047,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0,
     "types": {
-        "XHR": 23,
+        "XHR": 19,
         "Preflight": 2,
-        "Stylesheet": 6,
         "Fetch": 5,
-        "Font": 6,
-        "Image": 4,
-        "Script": 8
+        "Image": 60,
+        "Font": 2
     },
     "nameservers": [
         "ns3.aliyun.com",

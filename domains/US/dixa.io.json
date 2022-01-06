@@ -8,7 +8,8 @@
     "sites": 8,
     "subdomains": [
         "widget",
-        "api"
+        "api",
+        "sockets"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +22,8 @@
                 "widget"
             ],
             "apis": {
-                "window.localStorage": 5
+                "window.localStorage": 5,
+                "Navigator.prototype.language": 1
             },
             "sites": 5,
             "prevalence": 0.0000346,
@@ -52,7 +54,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c34ef751d875805cc0e1b9d773be24ab358c0bc1e626261f7434ddf980b16c3a"
+                "a7c74f009af89d0cde9ea6e13d621fa7e9b72dfa134a5f6ed1819684d1e36b87"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -83,6 +85,98 @@
             ]
         },
         {
+            "rule": "dixa\\.io\\/assets\\/scripts\\/javascript\\/main\\.c47e4836\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2,
+                "console.memory": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3e5ec3e527caa1896ac6f980503bd7b8b8a55303cf8860caef32bf2876d5ddc5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rapha.cc",
+                "www.rapha.cc"
+            ]
+        },
+        {
+            "rule": "dixa\\.io\\/assets\\/scripts\\/javascript\\/dixa-icon-modern\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2539fd669612ad4c6d22514f7a9271ef03d513a50f4944c0a148686408cb0d4b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rapha.cc",
+                "www.rapha.cc"
+            ]
+        },
+        {
+            "rule": "dixa\\.io\\/v1\\/enduser\\/1fdb9487-a3ec-42d8-8f0f-a0e462ad485b\\/widget\\/0a6018bf-16bd-4ea3-8eb8-eec946400ac0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sockets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rapha.cc",
+                "www.rapha.cc"
+            ]
+        },
+        {
+            "rule": "dixa\\.io\\/assets\\/scripts\\/javascript\\/new-message\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6b1754fa35d14c1531e93fbd6bc66e17c84f390d954c8d624745dbf67b53885c"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rapha.cc",
+                "www.rapha.cc"
+            ]
+        },
+        {
             "rule": "dixa\\.io\\/v1\\/widgets\\/651d5742-9d56-4017-bc81-df97e7b6d77d\\/settings",
             "cookies": 0,
             "fingerprinting": 0,
@@ -94,7 +188,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "f92d8b635155881dc4a88e0fe0dfd2e14983ac1bdf7ec8741262bcc68acce915"
+                "7974564151dee8e3a0b6106bf83201d476546b2fc31c9b0153ee9761a6142b66"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -136,7 +230,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0573046d26ea53532621a1b68250f017dc82facfbb2696374dea15e753eb3c5e"
+                "e0797ab5922dbce3471b686179df68c6df2e6986c7d5df0ef9b5e4e9cc21c834"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -171,9 +265,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5,
+        "Script": 7,
         "XHR": 6,
-        "Preflight": 6
+        "Preflight": 6,
+        "Font": 2,
+        "WebSocket": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns-356.awsdns-44.com",

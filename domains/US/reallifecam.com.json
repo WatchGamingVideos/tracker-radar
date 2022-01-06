@@ -10,7 +10,8 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "adt"
+        "adt",
+        "hls.static"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -72,10 +73,8 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -94,8 +93,32 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alllesbianvideos.com",
+                "palmtube.com"
+            ]
+        },
+        {
+            "rule": "reallifecam\\.com\\/hola\\/static\\/resources\\/28_43\\/1622292726\\/thumbnail\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hls.static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9a1098388569ca9541b7e84f233d9e63101cb6fd48a4112d889bdf0d688c5550"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -110,7 +133,8 @@
     "types": {
         "Script": 2,
         "XHR": 4,
-        "Preflight": 2
+        "Preflight": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns1dns.name.com",

@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000484,
+    "sites": 7,
     "subdomains": [
-        "chuknu"
+        "chuknu",
+        "tracking"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "sokrati\\.com\\/22623\\/tracker\\.js",
@@ -46,7 +47,35 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "162beec9b2305c70f6afdbbd6d924839713caab7ee6f70915155f960c1be0452"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ajio.com",
+                "www.ajio.com"
+            ]
+        },
+        {
+            "rule": "sokrati\\.com\\/javascripts\\/tracker\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9c323578357e9e2e0c365f1a8ae5800f4febfabcc8edc317c32ddcf3cf283b81"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -80,7 +109,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6
+        "Script": 8
     },
     "nameservers": [
         "ns1.p19.dynect.net",

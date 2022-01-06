@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
-    "sites": 5,
+    "prevalence": 0.0000484,
+    "sites": 7,
     "subdomains": [
         "cdn03",
-        "statistic"
+        "statistic",
+        "cdn07"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,7 +26,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "86ae304773afeb5f58fa6ca7228f54095e5a442e57e4cc1cd82da1a3e4bb229e"
+                "56dfe188a06118c994622d386d18aac658d2334de238857770022b49aca59a35"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -43,9 +44,9 @@
                 "cdn03"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.userAgent": 1
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -69,7 +70,7 @@
                 "cdn03"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -94,7 +95,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -115,7 +116,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -128,6 +129,31 @@
                 "www.alphapaw.com",
                 "www.bridgecomsystems.com"
             ]
+        },
+        {
+            "rule": "zipify\\.com\\/axios\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn07"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ef957ab41b6fcfd944fea0d81111c3b8c60d17059ebdb32537062b6d2c145831"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "herbalmana.com",
+                "www.safesleevecases.com"
+            ]
         }
     ],
     "categories": [],
@@ -135,13 +161,14 @@
     "cookies": 0,
     "types": {
         "Stylesheet": 2,
-        "Script": 4,
+        "Script": 6,
         "Preflight": 3,
         "XHR": 3
     },
     "nameservers": [
-        "ns-679.awsdns-20.net",
+        "ns-1041.awsdns-02.org",
+        "ns-1936.awsdns-50.co.uk",
         "ns-261.awsdns-32.com",
-        "ns-1041.awsdns-02.org"
+        "ns-679.awsdns-20.net"
     ]
 }

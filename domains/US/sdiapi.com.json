@@ -7,26 +7,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000311,
-    "sites": 45,
+    "prevalence": 0.000304,
+    "sites": 44,
     "subdomains": [
-        "vice-prod",
         "services",
-        "eif-chipotle",
-        "reports",
         "eif-menards",
+        "reports",
+        "vice-prod",
         "eif-callawaygolf",
         "eif-callawaygolfpreowned",
         "eif-hydroflask",
         "eif-mucinex",
         "eif-nutribullet",
+        "eif-ogio",
         "eif-oxo",
         "eif-partycity",
-        "eif-pur",
         "eif-robertdyas",
-        "eif-ryman",
         "eif-sig01",
-        "eif-stevemadden"
+        "eif-stevemadden",
+        "eif-travismathew"
     ],
     "cnames": [
         {
@@ -36,10 +35,6 @@
         {
             "original": "vice01.callawaygolfpreowned.com",
             "resolved": "eif-callawaygolfpreowned.sdiapi.com"
-        },
-        {
-            "original": "vice01.chipotle.com",
-            "resolved": "eif-chipotle.sdiapi.com"
         },
         {
             "original": "vice01.hydroflask.com",
@@ -58,6 +53,10 @@
             "resolved": "eif-nutribullet.sdiapi.com"
         },
         {
+            "original": "vice01.ogio.com",
+            "resolved": "eif-ogio.sdiapi.com"
+        },
+        {
             "original": "vice01.oxo.com",
             "resolved": "eif-oxo.sdiapi.com"
         },
@@ -66,452 +65,24 @@
             "resolved": "eif-partycity.sdiapi.com"
         },
         {
-            "original": "vice01.pur.com",
-            "resolved": "eif-pur.sdiapi.com"
-        },
-        {
             "original": "vice01.robertdyas.co.uk",
             "resolved": "eif-robertdyas.sdiapi.com"
         },
         {
-            "original": "vice01.ryman.co.uk",
-            "resolved": "eif-ryman.sdiapi.com"
-        },
-        {
             "original": "vice01.stevemadden.com",
             "resolved": "eif-stevemadden.sdiapi.com"
+        },
+        {
+            "original": "vice01.travismathew.com",
+            "resolved": "eif-travismathew.sdiapi.com"
+        },
+        {
+            "original": "vice02.travismathew.com",
+            "resolved": "eif-travismathew.sdiapi.com"
         }
     ],
     "fingerprinting": 3,
     "resources": [
-        {
-            "rule": "sdiapi\\.com\\/vice_loader\\/chipotle\\/chipotle",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "window.localStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d26de7917235dac83814b0e1afbcb13186ed3b1121299bd43764b4f13e24113f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/bolt\\/1\\.0\\.3\\.1\\/bolt\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "services"
-            ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 21,
-                "Navigator.prototype.vendor": 21,
-                "Navigator.prototype.platform": 21
-            },
-            "sites": 21,
-            "prevalence": 0.000145,
-            "cnames": [],
-            "responseHashes": [
-                "e19db3a5d5037a16ae4b34187d0e9aa28052b4e574d2a4825efc2424eb28b48f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.stevemadden.com",
-                "www.partycity.com",
-                "www.pur.com",
-                "chipotle.com",
-                "www.callawaygolf.com",
-                "www.nutribullet.com",
-                "www.oxo.com",
-                "www.ishares.com",
-                "www.skechers.com",
-                "www.sigsauer.com",
-                "skechers.com",
-                "www.jack-wolfskin.de",
-                "www.ryman.co.uk",
-                "www.bouxavenue.com",
-                "www.blackrock.com",
-                "www.big5sportinggoods.com",
-                "www.robertdyas.co.uk",
-                "www.mucinex.com",
-                "www.hydroflask.com",
-                "www.callawaygolfpreowned.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/vicePrm\\/chipotle\\/chipotle",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d162557fe09ec19b770c8b2ad90313eac54eb293805c892bcb3e798c0d74cafa"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/vice_release\\/1\\.21\\.9\\.1",
-            "cookies": 0.0000899,
-            "fingerprinting": 2,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 16,
-                "PerformanceTiming.prototype.navigationStart": 17,
-                "Date.prototype.getTime": 17,
-                "Date.prototype.getTimezoneOffset": 17,
-                "window.name": 15,
-                "window.localStorage": 15,
-                "window.sessionStorage": 15,
-                "Document.cookie getter": 15,
-                "Document.cookie setter": 13,
-                "Event.prototype.timeStamp": 15
-            },
-            "sites": 17,
-            "prevalence": 0.000118,
-            "cnames": [],
-            "responseHashes": [
-                "6a5cf786f293f7c2f4f0d7ada24e8df83f917b88d66221b48bd813dbd822818f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_scid": {
-                    "ttl": 34186711,
-                    "length": 36,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "_fbp": {
-                    "ttl": 7776015,
-                    "length": 28,
-                    "prevalence": 0.00008987583307983739,
-                    "uniqueness": 1
-                },
-                "_pin_unauth": {
-                    "ttl": null,
-                    "length": 70,
-                    "prevalence": 0.00004839467935068167,
-                    "uniqueness": 1
-                },
-                "_sctr": {
-                    "ttl": 34186718,
-                    "length": 15,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "FPC": {
-                    "ttl": 63113860,
-                    "length": 2,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "xdVisitorId": {
-                    "ttl": null,
-                    "length": 51,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "atgRecVisitorId": {
-                    "ttl": 506676729,
-                    "length": 51,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "atgRecSessionId": {
-                    "ttl": null,
-                    "length": 73,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "avmws": {
-                    "ttl": 63072019,
-                    "length": 78,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_li_dcdm_c": {
-                    "ttl": null,
-                    "length": 16,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_lc2_fpi": {
-                    "ttl": 63072011,
-                    "length": 40,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "IR_gbd": {
-                    "ttl": null,
-                    "length": 7,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "IR_9558": {
-                    "ttl": null,
-                    "length": 39,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_derived_epik": {
-                    "ttl": null,
-                    "length": 5,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "ats-cid-AM-141629-sid": {
-                    "ttl": null,
-                    "length": 8,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "stc112360": {
-                    "ttl": 31536365,
-                    "length": 260,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.big5sportinggoods.com",
-                "www.bouxavenue.com",
-                "www.callawaygolf.com",
-                "www.callawaygolfpreowned.com",
-                "www.chipotle.com",
-                "www.hydroflask.com",
-                "www.jack-wolfskin.de",
-                "www.mucinex.com",
-                "www.nutribullet.com",
-                "www.oxo.com",
-                "www.partycity.com",
-                "www.pur.com",
-                "www.robertdyas.co.uk",
-                "www.ryman.co.uk",
-                "www.sigsauer.com",
-                "www.stevemadden.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/chipotle\\/chipotle\\/1\\.21\\.9\\.1\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "eif-chipotle"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "vice01.chipotle.com",
-                    "resolved": "eif-chipotle.sdiapi.com"
-                }
-            ],
-            "responseHashes": [
-                "6c2d507ddc003b569a76f5f65be669bb14651f26e0ab5be0a187c22d583bb3b1"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/service\\/viceEvent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "reports"
-            ],
-            "apis": {},
-            "sites": 25,
-            "prevalence": 0.000173,
-            "cnames": [],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.lowes.com",
-                "www.ryman.co.uk",
-                "www.partycity.com",
-                "www.mucinex.com",
-                "www.callawaygolfpreowned.com",
-                "chipotle.com",
-                "www.ishares.com",
-                "www.big5sportinggoods.com",
-                "www.robertdyas.co.uk",
-                "skechers.com",
-                "www.horizonblue.com",
-                "www.nutribullet.com",
-                "www.skechers.com",
-                "www.callawaygolf.com",
-                "www.sigsauer.com",
-                "www.bouxavenue.com",
-                "www.menards.com",
-                "shop.menards.com",
-                "www.chipotle.com",
-                "www.oxo.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services"
-            ],
-            "apis": {},
-            "sites": 21,
-            "prevalence": 0.000145,
-            "cnames": [],
-            "responseHashes": [
-                "c4077609f98f376dd3159c9ccd1d7f298c14449baf14f215e644f50a7eecc792"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.pur.com",
-                "www.partycity.com",
-                "chipotle.com",
-                "www.callawaygolfpreowned.com",
-                "www.hydroflask.com",
-                "www.oxo.com",
-                "www.callawaygolf.com",
-                "skechers.com",
-                "www.ryman.co.uk",
-                "www.chipotle.com",
-                "www.big5sportinggoods.com",
-                "www.robertdyas.co.uk",
-                "www.blackrock.com",
-                "www.sigsauer.com",
-                "www.jack-wolfskin.de",
-                "www.skechers.com",
-                "www.nutribullet.com",
-                "www.bouxavenue.com",
-                "www.stevemadden.com",
-                "www.mucinex.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "services"
-            ],
-            "apis": {},
-            "sites": 21,
-            "prevalence": 0.000145,
-            "cnames": [],
-            "responseHashes": [
-                "0ddb197c040ceb4d9265073a4e6e33fe1e89ac219c10b24c0607447fd2641aa9"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.callawaygolf.com",
-                "www.callawaygolfpreowned.com",
-                "www.big5sportinggoods.com",
-                "www.hydroflask.com",
-                "www.partycity.com",
-                "www.pur.com",
-                "www.oxo.com",
-                "www.nutribullet.com",
-                "www.robertdyas.co.uk",
-                "www.ryman.co.uk",
-                "www.sigsauer.com",
-                "www.stevemadden.com",
-                "chipotle.com",
-                "www.mucinex.com",
-                "www.blackrock.com",
-                "www.skechers.com",
-                "www.jack-wolfskin.de",
-                "skechers.com",
-                "www.ishares.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/receiver\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "services"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 15,
-                "SharedWorker.prototype.constructor": 12
-            },
-            "sites": 21,
-            "prevalence": 0.000145,
-            "cnames": [],
-            "responseHashes": [
-                "04d41517bb53b987e7324dbb58659cd20872d9fbff6c7e7ec0a04e4416104daf"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.callawaygolf.com",
-                "skechers.com",
-                "www.sigsauer.com",
-                "www.blackrock.com",
-                "www.mucinex.com",
-                "www.bouxavenue.com",
-                "www.chipotle.com",
-                "www.partycity.com",
-                "www.ishares.com",
-                "www.pur.com",
-                "www.ryman.co.uk",
-                "chipotle.com",
-                "www.callawaygolfpreowned.com",
-                "www.skechers.com",
-                "www.jack-wolfskin.de",
-                "www.hydroflask.com",
-                "www.robertdyas.co.uk",
-                "www.nutribullet.com",
-                "www.big5sportinggoods.com",
-                "www.oxo.com"
-            ]
-        },
         {
             "rule": "sdiapi\\.com\\/bolt\\/1\\.0\\.1\\/bolt\\.js",
             "cookies": 0,
@@ -549,7 +120,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "vice01.menards.com",
@@ -576,8 +147,8 @@
                 "services"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "b3de2acd49ccb38d12c64910036bfd956acf8e35977b22010f506ff6e1e4ceaa"
@@ -589,7 +160,6 @@
                 "menards.com",
                 "shop.menards.com",
                 "www.horizonblue.com",
-                "www.lowes.com",
                 "www.menards.com"
             ]
         },
@@ -601,8 +171,8 @@
                 "services"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "9e5e4828f9163348f86cb92f32fef448104c95f9d6ef03f67427578d80fcb7c7"
@@ -614,22 +184,22 @@
                 "menards.com",
                 "shop.menards.com",
                 "www.horizonblue.com",
-                "www.lowes.com",
                 "www.menards.com"
             ]
         },
         {
             "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.2\\/receiver\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 3,
             "subdomains": [
                 "services"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 3,
+                "SharedWorker.prototype.constructor": 3
             },
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "3107dca5911a47e442355de0495243c328696cf09740744c72b275f9f20284b1"
@@ -641,7 +211,6 @@
                 "menards.com",
                 "shop.menards.com",
                 "www.horizonblue.com",
-                "www.lowes.com",
                 "www.menards.com"
             ]
         },
@@ -653,8 +222,215 @@
                 "reports"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000968,
+            "sites": 24,
+            "prevalence": 0.000166,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "menards.com",
+                "www.robertdyas.co.uk",
+                "www.travismathew.com",
+                "www.callawaygolfpreowned.com",
+                "www.bouxavenue.com",
+                "www.menards.com",
+                "www.horizonblue.com",
+                "www.partycity.com",
+                "shop.menards.com",
+                "www.chipotle.com",
+                "www.nutribullet.com",
+                "www.big5sportinggoods.com",
+                "www.sigsauer.com",
+                "www.hydroflask.com",
+                "skechers.com",
+                "www.callawaygolf.com",
+                "www.blackrock.com",
+                "www.ryman.co.uk",
+                "www.ogio.com",
+                "www.oxo.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/bolt\\/1\\.0\\.3\\.1\\/bolt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 21,
+                "Navigator.prototype.vendor": 21,
+                "Navigator.prototype.platform": 20
+            },
+            "sites": 21,
+            "prevalence": 0.000145,
+            "cnames": [],
+            "responseHashes": [
+                "e19db3a5d5037a16ae4b34187d0e9aa28052b4e574d2a4825efc2424eb28b48f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.callawaygolf.com",
+                "www.bouxavenue.com",
+                "www.blackrock.com",
+                "www.ogio.com",
+                "www.jack-wolfskin.de",
+                "www.chipotle.com",
+                "www.stevemadden.com",
+                "www.ishares.com",
+                "www.skechers.com",
+                "www.ryman.co.uk",
+                "www.big5sportinggoods.com",
+                "www.hydroflask.com",
+                "www.callawaygolfpreowned.com",
+                "www.robertdyas.co.uk",
+                "www.nutribullet.com",
+                "www.oxo.com",
+                "www.mucinex.com",
+                "www.sigsauer.com",
+                "skechers.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 20,
+            "prevalence": 0.000138,
+            "cnames": [],
+            "responseHashes": [
+                "c4077609f98f376dd3159c9ccd1d7f298c14449baf14f215e644f50a7eecc792"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skechers.com",
+                "www.big5sportinggoods.com",
+                "www.blackrock.com",
+                "www.bouxavenue.com",
+                "www.callawaygolf.com",
+                "www.callawaygolfpreowned.com",
+                "www.chipotle.com",
+                "www.hydroflask.com",
+                "www.jack-wolfskin.de",
+                "www.mucinex.com",
+                "www.nutribullet.com",
+                "www.ogio.com",
+                "www.oxo.com",
+                "www.partycity.com",
+                "www.robertdyas.co.uk",
+                "www.ryman.co.uk",
+                "www.sigsauer.com",
+                "www.skechers.com",
+                "www.stevemadden.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/reporter\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 20,
+            "prevalence": 0.000138,
+            "cnames": [],
+            "responseHashes": [
+                "0ddb197c040ceb4d9265073a4e6e33fe1e89ac219c10b24c0607447fd2641aa9"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skechers.com",
+                "www.big5sportinggoods.com",
+                "www.blackrock.com",
+                "www.bouxavenue.com",
+                "www.callawaygolf.com",
+                "www.callawaygolfpreowned.com",
+                "www.chipotle.com",
+                "www.hydroflask.com",
+                "www.jack-wolfskin.de",
+                "www.mucinex.com",
+                "www.nutribullet.com",
+                "www.ogio.com",
+                "www.oxo.com",
+                "www.partycity.com",
+                "www.robertdyas.co.uk",
+                "www.ryman.co.uk",
+                "www.sigsauer.com",
+                "www.skechers.com",
+                "www.stevemadden.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/reporter\\/1\\.0\\.7\\.4\\/receiver\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 16,
+                "SharedWorker.prototype.constructor": 16
+            },
+            "sites": 20,
+            "prevalence": 0.000138,
+            "cnames": [],
+            "responseHashes": [
+                "04d41517bb53b987e7324dbb58659cd20872d9fbff6c7e7ec0a04e4416104daf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skechers.com",
+                "www.big5sportinggoods.com",
+                "www.blackrock.com",
+                "www.bouxavenue.com",
+                "www.callawaygolf.com",
+                "www.callawaygolfpreowned.com",
+                "www.chipotle.com",
+                "www.hydroflask.com",
+                "www.jack-wolfskin.de",
+                "www.mucinex.com",
+                "www.nutribullet.com",
+                "www.ogio.com",
+                "www.oxo.com",
+                "www.partycity.com",
+                "www.robertdyas.co.uk",
+                "www.ryman.co.uk",
+                "www.sigsauer.com",
+                "www.skechers.com",
+                "www.stevemadden.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/service\\/viceEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "reports"
+            ],
+            "apis": {},
+            "sites": 18,
+            "prevalence": 0.000125,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -664,19 +440,198 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "skechers.com",
+                "www.big5sportinggoods.com",
+                "www.blackrock.com",
                 "www.bouxavenue.com",
+                "www.callawaygolf.com",
                 "www.callawaygolfpreowned.com",
-                "www.chipotle.com",
-                "www.ishares.com",
+                "www.hydroflask.com",
+                "www.jack-wolfskin.de",
                 "www.mucinex.com",
                 "www.nutribullet.com",
-                "www.oxo.com",
+                "www.ogio.com",
                 "www.partycity.com",
-                "www.pur.com",
                 "www.robertdyas.co.uk",
                 "www.ryman.co.uk",
+                "www.sigsauer.com",
                 "www.skechers.com",
-                "www.stevemadden.com"
+                "www.stevemadden.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/vice_release\\/1\\.21\\.9\\.1",
+            "cookies": 0.0000899,
+            "fingerprinting": 2,
+            "subdomains": [
+                "vice-prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 17,
+                "PerformanceTiming.prototype.navigationStart": 17,
+                "Date.prototype.getTime": 17,
+                "Date.prototype.getTimezoneOffset": 17,
+                "window.name": 15,
+                "window.localStorage": 15,
+                "window.sessionStorage": 15,
+                "Document.cookie getter": 15,
+                "Event.prototype.timeStamp": 15,
+                "Document.cookie setter": 13
+            },
+            "sites": 17,
+            "prevalence": 0.000118,
+            "cnames": [],
+            "responseHashes": [
+                "6a5cf786f293f7c2f4f0d7ada24e8df83f917b88d66221b48bd813dbd822818f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_fbc": {
+                    "ttl": 7776010,
+                    "length": 27,
+                    "prevalence": 0.00008993303447894183,
+                    "uniqueness": 1
+                },
+                "_fbp": {
+                    "ttl": 7776010,
+                    "length": 28,
+                    "prevalence": 0.00008993303447894183,
+                    "uniqueness": 1
+                },
+                "FPC": {
+                    "ttl": 63113861,
+                    "length": 2,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_scid": {
+                    "ttl": 34186707,
+                    "length": 36,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_pin_unauth": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.00004150755437489623,
+                    "uniqueness": 1
+                },
+                "_sctr": {
+                    "ttl": 34186717,
+                    "length": 15,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "xdVisitorId": {
+                    "ttl": null,
+                    "length": 51,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "atgRecVisitorId": {
+                    "ttl": 507001417,
+                    "length": 51,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "atgRecSessionId": {
+                    "ttl": null,
+                    "length": 75,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "avmws": {
+                    "ttl": 63072018,
+                    "length": 77,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_li_dcdm_c": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_lc2_fpi": {
+                    "ttl": 63072008,
+                    "length": 40,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "IR_gbd": {
+                    "ttl": null,
+                    "length": 12,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "IR_9558": {
+                    "ttl": null,
+                    "length": 39,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_derived_epik": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "ats-cid-AM-141629-sid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "stc112360": {
+                    "ttl": 31536364,
+                    "length": 211,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "IR_12280": {
+                    "ttl": null,
+                    "length": 39,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_br_uid_2": {
+                    "ttl": 3153600008,
+                    "length": 60,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "stc113540": {
+                    "ttl": 31536368,
+                    "length": 211,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "outbrain_cid_fetch": {
+                    "ttl": 309,
+                    "length": 4,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "big5sportinggoods.com",
+                "www.bouxavenue.com",
+                "www.callawaygolf.com",
+                "www.callawaygolfpreowned.com",
+                "www.chipotle.com",
+                "www.hydroflask.com",
+                "www.jack-wolfskin.de",
+                "www.mucinex.com",
+                "www.nutribullet.com",
+                "www.ogio.com",
+                "www.oxo.com",
+                "www.partycity.com",
+                "www.robertdyas.co.uk",
+                "www.ryman.co.uk",
+                "www.sigsauer.com",
+                "www.stevemadden.com",
+                "www.travismathew.com"
             ]
         },
         {
@@ -687,9 +642,9 @@
                 "vice-prod"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.userAgent": 1
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -735,10 +690,10 @@
                 "vice-prod"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -778,7 +733,7 @@
         },
         {
             "rule": "sdiapi\\.com\\/callawaygolf\\/callawaygolf\\/1\\.21\\.9\\.1\\/",
-            "cookies": 0.00000691,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "eif-callawaygolf"
@@ -811,7 +766,7 @@
                 "vice-prod"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2
             },
@@ -929,7 +884,7 @@
         },
         {
             "rule": "sdiapi\\.com\\/vice_release\\/1\\.20\\.0\\.3",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 2,
             "subdomains": [
                 "vice-prod"
@@ -943,8 +898,8 @@
                 "window.localStorage": 1,
                 "window.sessionStorage": 1,
                 "Document.cookie getter": 1,
-                "Event.prototype.timeStamp": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 1,
+                "Event.prototype.timeStamp": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -955,15 +910,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "reese84": {
-                    "ttl": 2592007,
+                    "ttl": 2592005,
                     "length": 24,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_fbc": {
+                    "ttl": 7776006,
+                    "length": 27,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "_fbp": {
-                    "ttl": 7776008,
-                    "length": 28,
-                    "prevalence": 0.000006913525621525954,
+                    "ttl": 7776006,
+                    "length": 29,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -1023,7 +984,7 @@
         },
         {
             "rule": "sdiapi\\.com\\/helenoftroy\\/hydroflask\\/1\\.21\\.9\\.1\\/",
-            "cookies": 0.00000691,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "eif-hydroflask"
@@ -1056,9 +1017,9 @@
                 "vice-prod"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.userAgent": 1
+                "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -1131,8 +1092,10 @@
                 "vice-prod"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
+                "window.localStorage": 2,
                 "window.name": 2,
                 "Document.cookie getter": 2
             },
@@ -1200,6 +1163,81 @@
             ]
         },
         {
+            "rule": "sdiapi\\.com\\/vice_loader\\/callawaygolf\\/ogio",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vice-prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "be91e3c6cc3f5008ed6c1c10fba37bdbc76a1c8ef441e565d35c24bdb2d19629"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ogio.com",
+                "www.ogio.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/vicePrm\\/callawaygolf\\/ogio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vice-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9104541af6aba7695f1e96d04b5409850debbf64aa14d49f25ef66162d6b8cf5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ogio.com",
+                "www.ogio.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/callawaygolf\\/ogio\\/1\\.21\\.9\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "eif-ogio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "vice01.ogio.com",
+                    "resolved": "eif-ogio.sdiapi.com"
+                }
+            ],
+            "responseHashes": [
+                "b90e40a058700ec55c288ec8c500db33392c47e8f376d84275b3165be81263de"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ogio.com",
+                "www.ogio.com"
+            ]
+        },
+        {
             "rule": "sdiapi\\.com\\/vice_loader\\/helenoftroy\\/oxo",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1207,6 +1245,7 @@
                 "vice-prod"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "window.localStorage": 2
@@ -1349,81 +1388,6 @@
             ]
         },
         {
-            "rule": "sdiapi\\.com\\/vice_loader\\/helenoftroy\\/pur",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "88a212b6de3da113e608bd9e630ac3c7a354de6f0f00b7f8a27f70c9c1c4c993"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pur.com",
-                "www.pur.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/vicePrm\\/helenoftroy\\/pur",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cafe4de44686c5612e330c0c8094cd9063cb543ca17ce20175c40b6d9a66207d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pur.com",
-                "www.pur.com"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/helenoftroy\\/pur\\/1\\.21\\.9\\.1\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "eif-pur"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "vice01.pur.com",
-                    "resolved": "eif-pur.sdiapi.com"
-                }
-            ],
-            "responseHashes": [
-                "f8c5b9158147b1dc46b74ea614763ef4a0848a53adf058f4dd0d66fdefb6c187"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pur.com",
-                "www.pur.com"
-            ]
-        },
-        {
             "rule": "sdiapi\\.com\\/vice_loader\\/tprg\\/robertdyas",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1500,81 +1464,6 @@
             ]
         },
         {
-            "rule": "sdiapi\\.com\\/vice_loader\\/tprg\\/ryman",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "706db5befa480d9928dd96e54c29e47587a940de05e4f368e2661d0b244a028a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ryman.co.uk",
-                "www.ryman.co.uk"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/vicePrm\\/tprg\\/ryman",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vice-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "57d4545bfd2e440f0ab8746e73a50ab3d85ccc1936af3d1f6e5ed3052be09f76"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ryman.co.uk",
-                "www.ryman.co.uk"
-            ]
-        },
-        {
-            "rule": "sdiapi\\.com\\/tprg\\/ryman\\/1\\.21\\.9\\.1\\/",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "eif-ryman"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "vice01.ryman.co.uk",
-                    "resolved": "eif-ryman.sdiapi.com"
-                }
-            ],
-            "responseHashes": [
-                "27bec5386fcca77d82b23d41e42291ff91b5c39f5e5ef3cf3161309cb56d7abf"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ryman.co.uk",
-                "www.ryman.co.uk"
-            ]
-        },
-        {
             "rule": "sdiapi\\.com\\/vice_loader\\/sigsauer\\/sigsauer",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1631,11 +1520,12 @@
                 "eif-sig01"
             ],
             "apis": {
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
-                "Event.prototype.timeStamp": 2,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.userAgent": 1
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -1724,21 +1614,103 @@
                 "stevemadden.com",
                 "www.stevemadden.com"
             ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/vice_loader\\/callawaygolf\\/travismathew",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "vice-prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6b5c4c500d2960aac1b30b16c35a38246b1cfe8a19c01729d6a9584d75cbe34f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travismathew.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/vicePrm\\/callawaygolf\\/travismathew",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vice-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4c2b691f9dfc9614b37545bbc4494225da88f433770b6daeca456e3f418f1596"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travismathew.com",
+                "www.travismathew.com"
+            ]
+        },
+        {
+            "rule": "sdiapi\\.com\\/callawaygolf\\/travismathew\\/1\\.21\\.9\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "eif-travismathew"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "vice01.travismathew.com",
+                    "resolved": "eif-travismathew.sdiapi.com"
+                },
+                {
+                    "original": "vice02.travismathew.com",
+                    "resolved": "eif-travismathew.sdiapi.com"
+                }
+            ],
+            "responseHashes": [
+                "33c6ae61597504f0cda82adb6065347a8d3463463284fc2639c2d040eed2fea0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travismathew.com",
+                "www.travismathew.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.000166,
     "types": {
-        "Script": 126,
-        "XHR": 55,
-        "Document": 55,
-        "Fetch": 14
+        "Script": 120,
+        "Document": 51,
+        "XHR": 52,
+        "Fetch": 18
     },
     "nameservers": [
-        "ns1024.ui-dns.org",
+        "ns1024.ui-dns.de",
         "ns1024.ui-dns.biz",
-        "ns1024.ui-dns.com",
-        "ns1024.ui-dns.de"
+        "ns1024.ui-dns.org",
+        "ns1024.ui-dns.com"
     ]
 }

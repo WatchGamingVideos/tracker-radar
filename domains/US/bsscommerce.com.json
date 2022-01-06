@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000553,
+    "sites": 8,
     "subdomains": [
         "bloop-loyalty",
         "product-labels-pro"
@@ -24,10 +24,8 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "c4bd12bf621e859eaf073c9fd7cb686d69093ebd768083cf44b3bdf3b2d46586"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -46,8 +44,10 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "5e58b213515c63635c9bff5e2cde76d3ba016ba20decd56a97757b04f4573e1e"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -98,7 +98,7 @@
             ]
         },
         {
-            "rule": "bsscommerce\\.com\\/js\\/product_label_log\\.js",
+            "rule": "bsscommerce\\.com\\/css\\/style\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -109,13 +109,36 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
+                "1883deb8a24b0c7d063bb1fd5f722fa0870593d8028f53193790a6b9d8315d35"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opinel-usa.com",
+                "www.opinel-usa.com"
+            ]
+        },
+        {
+            "rule": "bsscommerce\\.com\\/js\\/product_label_log\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product-labels-pro"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
                 "b67dd7eb839443df788705081252bd44770c1660dc85b7d738b81bd1b8f0a17a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "toyworld.co.nz",
+                "sealskinz.com",
+                "www.sealskinz.com",
                 "www.toyworld.co.nz"
             ]
         }
@@ -124,9 +147,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4,
         "Preflight": 4,
-        "Script": 2
+        "XHR": 4,
+        "Stylesheet": 2,
+        "Script": 3
     },
     "nameservers": [
         "elinore.ns.cloudflare.com",

@@ -9,14 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000622,
+    "prevalence": 0.0000623,
     "sites": 9,
     "subdomains": [
         "www",
         "adservice"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "google\\.ca\\/cse\\/brand",
@@ -41,41 +41,19 @@
             ]
         },
         {
-            "rule": "google\\.ca\\/adsid\\/integrator\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adservice"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nationalobserver.com",
-                "www.nationalobserver.com"
-            ]
-        },
-        {
             "rule": "google\\.ca\\/jsapi",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "297577d52fce5df45a53b1d2e06469f65ee1dcf2e9bfbc8e2f45dbd06a0de8b4"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -109,13 +87,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6,
+        "Script": 4,
         "Fetch": 2
     },
     "nameservers": [
+        "ns1.google.com",
         "ns2.google.com",
         "ns3.google.com",
-        "ns4.google.com",
-        "ns1.google.com"
+        "ns4.google.com"
     ]
 }

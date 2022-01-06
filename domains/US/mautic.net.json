@@ -4,13 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000622,
-    "sites": 9,
+    "prevalence": 0.0000761,
+    "sites": 11,
     "subdomains": [
         "cvs-health",
-        "costa-rica-tourism"
+        "gitcoin-5fd8db9bd56c8",
+        "costa-rica-tourism",
+        "shakeshack"
     ],
     "cnames": [
+        {
+            "original": "engage.gitcoin.co",
+            "resolved": ".mautic.net"
+        },
         {
             "original": "mtc.farmanddairy.com",
             "resolved": ".mautic.net"
@@ -24,24 +30,25 @@
     "resources": [
         {
             "rule": "mautic\\.net\\/mtc\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.0000208,
             "fingerprinting": 2,
             "subdomains": [
                 "cvs-health",
+                "gitcoin-5fd8db9bd56c8",
                 "costa-rica-tourism"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "window.localStorage": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [
                 {
                     "original": "your.etsu.edu",
@@ -53,7 +60,8 @@
                 }
             ],
             "responseHashes": [
-                "8de6e09a803328e8441ae72385b2ccaf199f3130a6ea1b56df122619fd74f310",
+                "8936b4e690f1210f6296be63c2f1de58f0ade12d7e3978831ce521baadfe0f97",
+                "a3913c0df3c84d4c070adfd20420ece369d4c63e4cd66b05a0bc8c74c9d7e17b",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
@@ -61,25 +69,26 @@
                 "mtc_id": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "mtc_sid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "mautic_device_id": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cvshealth.com",
+                "gitcoin.co",
                 "www.etsu.edu",
                 "www.farmanddairy.com",
                 "www.visitcostarica.com"
@@ -87,28 +96,34 @@
         },
         {
             "rule": "mautic\\.net\\/mtc\\/event",
-            "cookies": 0.0000138,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "cvs-health"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [
+                {
+                    "original": "engage.gitcoin.co",
+                    "resolved": ".mautic.net"
+                },
                 {
                     "original": "your.etsu.edu",
                     "resolved": ".mautic.net"
                 }
             ],
             "responseHashes": [
-                "8a2d723670dedf87e4c23e0b65feb1541adfbccfdd76de33be83fd1b065dab8e"
+                "cd30cf6b81b3987e1e134af66e9ebf78aabde056ad0bdeb6d090d1b410278274",
+                "6083ab3907b3ee6a0a597693844fe83db3370cac91fdbd00f1ec577d52a7686b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cvshealth.com",
+                "gitcoin.co",
                 "www.etsu.edu"
             ]
         },
@@ -120,9 +135,13 @@
                 "cvs-health"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [
+                {
+                    "original": "engage.gitcoin.co",
+                    "resolved": ".mautic.net"
+                },
                 {
                     "original": "your.etsu.edu",
                     "resolved": ".mautic.net"
@@ -134,17 +153,73 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cvshealth.com",
+                "gitcoin.co",
                 "www.etsu.edu"
+            ]
+        },
+        {
+            "rule": "mautic\\.net\\/mautic\\/media\\/js\\/mautic-form\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shakeshack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "engage.gitcoin.co",
+                    "resolved": ".mautic.net"
+                }
+            ],
+            "responseHashes": [
+                "9010bc8b7549d33aa128daa8798f37c835fc45df83ff09c7f16491e3a5ffb601"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gitcoin.co",
+                "shakeshack.com"
+            ]
+        },
+        {
+            "rule": "mautic\\.net\\/mautic\\/media\\/css\\/modal\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shakeshack"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "engage.gitcoin.co",
+                    "resolved": ".mautic.net"
+                }
+            ],
+            "responseHashes": [
+                "456abdf681ebc4caac61d7eb6635e21a81d1dcc10f730b98719a65c2a88fe7ee"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gitcoin.co",
+                "shakeshack.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000346,
     "types": {
-        "Script": 4,
-        "XHR": 2,
-        "Preflight": 2
+        "Script": 7,
+        "XHR": 3,
+        "Preflight": 3,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",

@@ -4,15 +4,52 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000553,
+    "sites": 8,
     "subdomains": [
-        "eu2",
-        "eu1"
+        "eu1",
+        "eu2"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "snoobi\\.com\\/snoop\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "eu1"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.plugins": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "f3792bcf1d14a2ca7adb5afd7cb61acac89dcf0407123ebe05b05c892c916870"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asiakastieto.fi",
+                "www.asiakastieto.fi",
+                "www.jouluradio.fi",
+                "www.kysy.fi"
+            ]
+        },
         {
             "rule": "snoobi\\.com\\/",
             "cookies": 0,
@@ -50,65 +87,78 @@
         },
         {
             "rule": "snoobi\\.com\\/snoop2\\.php",
-            "cookies": 0.0000277,
+            "cookies": 0.0000346,
             "fingerprinting": 1,
             "subdomains": [
                 "eu2",
                 "eu1"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "2fce7d6ba827c4e0fd795aca651888380a4a3f9981b6db54933952e1cd08154a",
-                "5eca85a83165fc183e8b829d272e78ffb5439583698a1e68f8535f58ff6ab036"
+                "71b81762f7267103ac376b46424fcf84a0a30861b8f7cf9caaf99778927e902b",
+                "2d668e914648d587b1680b545f2c1ffd833df79c245aed0c2d8cb50c258af4f8",
+                "c73d5f7133ab15e834e7ac69eaf2810837fd8fec07f6673b016996f7365fe0c7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "Snoobisession_fimea_fi": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "Snoobi30minute_fimea_fi": {
-                    "ttl": 1803,
+                    "ttl": 1801,
                     "length": 8,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "SnoobiID": {
-                    "ttl": 63072003,
+                    "ttl": 63072002,
                     "length": 42,
-                    "prevalence": 0.000027654102486103815,
+                    "prevalence": 0.00003458962864574686,
                     "uniqueness": 1
                 },
                 "Snoobisession_helmet_fi": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "Snoobi30minute_helmet_fi": {
                     "ttl": 1802,
                     "length": 8,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "Snoobisession_mestat_fi": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "Snoobi30minute_mestat_fi": {
+                    "ttl": 1802,
+                    "length": 7,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "Snoobisession_helsingin_kirjasto_kysy_fi": {
                     "ttl": null,
                     "length": 8,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "Snoobi30minute_helsingin_kirjasto_kysy_fi": {
-                    "ttl": 1801,
+                    "ttl": 1802,
                     "length": 8,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -117,6 +167,7 @@
                 "fimea.fi",
                 "www.fimea.fi",
                 "www.helmet.fi",
+                "www.jouluradio.fi",
                 "www.kysy.fi"
             ]
         },
@@ -154,48 +205,13 @@
                 "helmet.fi",
                 "www.helmet.fi"
             ]
-        },
-        {
-            "rule": "snoobi\\.com\\/snoop\\.php",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "eu1"
-            ],
-            "apis": {
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.platform": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Navigator.prototype.plugins": 1,
-                "window.sessionStorage": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bfad073f25ef20ad52b058a09d7af6c36429245a04bfe0d837a517dfe8070f02"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kysy.fi",
-                "www.kysy.fi"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000484,
     "types": {
-        "Script": 10
+        "Script": 13
     },
     "nameservers": [
         "ns-589.awsdns-09.net",

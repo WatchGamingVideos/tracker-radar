@@ -7,38 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000622,
+    "prevalence": 0.0000623,
     "sites": 9,
     "subdomains": [
-        "plankton-gtm.a"
+        "plankton-gtm.a",
+        "listing-search.api"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "autoscout24\\.com\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "plankton-gtm.a"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "autoscout24.be",
-                "www.autoscout24.be",
-                "www.autoscout24.es",
-                "www.autoscout24.fr",
-                "www.autoscout24.de",
-                "www.gebrauchtwagen.at"
-            ]
-        },
         {
             "rule": "autoscout24\\.com\\/events",
             "cookies": 0,
@@ -59,10 +36,76 @@
             "exampleSites": [
                 "autoscout24.be",
                 "www.autoscout24.be",
+                "www.autoscout24.de",
                 "www.autoscout24.es",
                 "www.autoscout24.fr",
-                "www.autoscout24.de",
                 "www.gebrauchtwagen.at"
+            ]
+        },
+        {
+            "rule": "autoscout24\\.com\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plankton-gtm.a"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000415,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoscout24.be",
+                "www.autoscout24.be",
+                "www.autoscout24.de",
+                "www.autoscout24.es",
+                "www.autoscout24.fr",
+                "www.gebrauchtwagen.at"
+            ]
+        },
+        {
+            "rule": "autoscout24\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "listing-search.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoscout24.de",
+                "www.autoscout24.de"
+            ]
+        },
+        {
+            "rule": "autoscout24\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "listing-search.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4425cfc166dfc1fd4ec0ad80d5c53758b96d149125b5ef76edc05824feda94d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autoscout24.de",
+                "www.autoscout24.de"
             ]
         }
     ],
@@ -70,8 +113,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 6,
-        "XHR": 6
+        "XHR": 6,
+        "Preflight": 8,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-210.awsdns-26.com",

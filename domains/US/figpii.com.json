@@ -4,19 +4,169 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000484,
-    "sites": 7,
+    "prevalence": 0.0000623,
+    "sites": 9,
     "subdomains": [
-        "tracking-cdn",
         "rr",
         "statics-cdn",
-        "variations-cdn",
         "analytics",
+        "tracking-cdn",
+        "variations-cdn",
         "tdh"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "figpii\\.com\\/visitor\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rr"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decked.com",
+                "softsurroundings.com",
+                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/visitor\\/register",
+            "cookies": 0.0000346,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rr"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "338b51d9f0755123c5b88816d936f122f2e6e5fa4505e216888daa691beddfb7",
+                "2fa3480bcc147504d9bda1cd824976ba722db321c62f77fd9c577e5a91fd4975",
+                "3f27230d2c3783778e89b1a9f64d322058e33ee418711e5521085d54a7b78a9b",
+                "6f4e9513898defc5b498320ad796582e1429e996ce7d1eba6ea8308eaf26d7a1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decked.com",
+                "softsurroundings.com",
+                "startuptalky.com",
+                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/figtr\\.min\\.js",
+            "cookies": 0.0000277,
+            "fingerprinting": 2,
+            "subdomains": [
+                "statics-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.mimeTypes": 5,
+                "Navigator.prototype.javaEnabled": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.platform": 4,
+                "Document.cookie setter": 4,
+                "window.name": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "757fac883aadb6360957ed083c3c54f4adabe0b581c48f77e1b03d577fd4363e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_FPAC": {
+                    "ttl": 33955202,
+                    "length": 17,
+                    "prevalence": 0.000027671702916597487,
+                    "uniqueness": 0.75
+                },
+                "_FPAC_S": {
+                    "ttl": 1802,
+                    "length": 18,
+                    "prevalence": 0.000027671702916597487,
+                    "uniqueness": 0.75
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decked.com",
+                "softsurroundings.com",
+                "startuptalky.com",
+                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/visitor\\/traffic",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rr"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decked.com",
+                "softsurroundings.com",
+                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/tracker\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decked.com",
+                "softsurroundings.com",
+                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
         {
             "rule": "figpii\\.com\\/9c3fdba750ef0feb602be0c4a82622b9\\.js",
             "cookies": 0.0000138,
@@ -41,148 +191,26 @@
                 "Document.cookie setter": 2,
                 "Navigator.prototype.permissions": 2,
                 "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3a3b052b551f00f531de0dfe678b9dee714592a752507ed1732bb4379fef13ac"
+                "d5a4143ec20e87e7a6d725a12b03669ba83d357d14b9be98631e6d1449134dd9"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_FPCI": {
-                    "ttl": 31536001,
+                    "ttl": 31536006,
                     "length": 241,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "softsurroundings.com",
-                "www.softsurroundings.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/visitor\\/info",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rr"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "softsurroundings.com",
-                "www.blublox.com",
-                "www.softsurroundings.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/visitor\\/register",
-            "cookies": 0.0000277,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rr"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "1897291f24c30bfb5f2e340f0a6d233bf4279f18d6581c9c906afd8d49690f0c",
-                "b79c42cd646109067d276b06831c817fa94695d4f7a168c1fa35c4226e119810",
-                "0c67451a12580a9f2724c419667b07fe26579749fc17cbba54173be9bfe2b893"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "softsurroundings.com",
-                "startuptalky.com",
-                "www.blublox.com",
-                "www.softsurroundings.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/figtr\\.min\\.js",
-            "cookies": 0.0000207,
-            "fingerprinting": 2,
-            "subdomains": [
-                "statics-cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.mimeTypes": 4,
-                "Navigator.prototype.javaEnabled": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "Date.prototype.getTime": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.platform": 3,
-                "Document.cookie setter": 3,
-                "window.name": 3
-            },
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "757fac883aadb6360957ed083c3c54f4adabe0b581c48f77e1b03d577fd4363e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_FPAC": {
-                    "ttl": 33955202,
-                    "length": 17,
-                    "prevalence": 0.00002074057686457786,
-                    "uniqueness": 0.6666666666666666
-                },
-                "_FPAC_S": {
-                    "ttl": 1802,
-                    "length": 18,
-                    "prevalence": 0.00002074057686457786,
-                    "uniqueness": 0.6666666666666666
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "softsurroundings.com",
-                "startuptalky.com",
-                "www.blublox.com",
-                "www.softsurroundings.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/visitor\\/traffic",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rr"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "softsurroundings.com",
-                "www.blublox.com",
                 "www.softsurroundings.com"
             ]
         },
@@ -365,25 +393,48 @@
             ]
         },
         {
-            "rule": "figpii\\.com\\/tracker\\.php",
+            "rule": "figpii\\.com\\/js\\/te_page_ext_js_322566_13841_1638655401\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "analytics"
+                "variations-cdn"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "01c0a01878264fb797bee93c90281ee73aa337161bd1a9339c2bd4838870b1d8"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "softsurroundings.com",
-                "www.blublox.com",
+                "www.softsurroundings.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/css\\/te_page_ext_css_322566_13841_1638655401\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "variations-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "832afbd3996e06b4f461d5561828f6c75627aa0562bcda7704891ab7d92149a1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "softsurroundings.com",
                 "www.softsurroundings.com"
             ]
         },
@@ -440,14 +491,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "11d7960c6c80ab08f881f1255e69797b80b6b09f5daf92b779b40dd33975cea4"
+                "4b8125598a09e56db5abc29af1fd0244915b885c4e3d4e2b1fddb8d6a0260837"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_FPCI": {
                     "ttl": 31536001,
                     "length": 241,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "FIGPII_TE-322486": {
+                    "ttl": 31536002,
+                    "length": 5,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -468,7 +525,9 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "879f29eef220e59edf88b4ff09ffa16966b77f7d199fdce291e72ec2fc4697bb"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -488,7 +547,9 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -518,58 +579,14 @@
                 "blublox.com",
                 "www.blublox.com"
             ]
-        },
-        {
-            "rule": "figpii\\.com\\/js\\/te_page_ext_js_322486_13615_1637965195\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "variations-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cf090b90f65154800fc986c9b1529905ca5c31c16ee48ed09bedb712fa94a377"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/css\\/te_page_ext_css_322486_13615_1637936521\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "variations-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4d3ecdd0239413e75ebcbe90afc93ec85eade8d7aedae961a650c72e0dca9f0a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000484,
+    "cookies": 0.0000623,
     "types": {
-        "Script": 20,
-        "XHR": 15,
+        "XHR": 19,
+        "Script": 21,
         "Stylesheet": 12,
         "Font": 2
     },

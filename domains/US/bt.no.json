@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
-        "cmmnts-api.i"
+        "cmmnts-api.i",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,8 +21,8 @@
                 "cmmnts-api.i"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "88a14fd6c61a62a3eab1c919d8ccf5fe4499fcd5ca0838d94b62c634d17a24bb"
@@ -31,7 +32,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "e24.no",
+                "www.aftenbladet.no",
                 "www.aftenposten.no"
+            ]
+        },
+        {
+            "rule": "bt\\.no\\/rnd\\/ansvarsmerke-hvitt\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fd2f166ca098d5be0d07e50425f42ac7d7aac9fdff7506b34b0fb475679a2b9c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftenbladet.no",
+                "www.aftenposten.no"
+            ]
+        },
+        {
+            "rule": "bt\\.no\\/v1\\/publications\\/sa\\/article:sa:zgGjzv\\/comments",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmmnts-api.i"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e5a1a31ae9051e2509727dd6e0309addb3e1685fbfc1fdc1383ed8f3079b1485"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftenbladet.no",
+                "www.aftenbladet.no"
             ]
         },
         {
@@ -61,14 +107,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4
+        "XHR": 7,
+        "Image": 2
     },
     "nameservers": [
-        "ns-zoo.linpro.net",
+        "ns-foo.linpro.net",
+        "ns-bar.linpro.net",
+        "nsu.dnsnode.net",
         "nsb.dnsnode.net",
         "nsp.dnsnode.net",
-        "nsu.dnsnode.net",
-        "ns-bar.linpro.net",
-        "ns-foo.linpro.net"
+        "ns-zoo.linpro.net"
     ]
 }

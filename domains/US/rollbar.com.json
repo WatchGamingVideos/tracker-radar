@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00106,
-    "sites": 153,
+    "prevalence": 0.00105,
+    "sites": 152,
     "subdomains": [
         "cdn",
         "api"
@@ -17,6 +17,43 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.22\\.0\\/rollbar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 14,
+                "console.memory": 9
+            },
+            "sites": 14,
+            "prevalence": 0.0000969,
+            "cnames": [],
+            "responseHashes": [
+                "0ab9ea97ad1657ded657a3c43151458c928e4dfc6c28869ce4fba1efa64b802b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alchemyofhealing.com",
+                "biselliano.info",
+                "brandfolder.com",
+                "gunivore.com",
+                "howiecarrshow.com",
+                "rakuten.tv",
+                "theferalirishman.blogspot.com",
+                "wowa.ca",
+                "www.battlbox.com",
+                "www.chirpbooks.com",
+                "www.fullyliveacademy.com",
+                "www.opinionstage.com",
+                "www.quimbee.com",
+                "www.solasalonstudios.com"
+            ]
+        },
+        {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.19\\.2\\/rollbar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -24,7 +61,7 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 3,
+                "console.memory": 4,
                 "Date.prototype.getTime": 4
             },
             "sites": 4,
@@ -44,43 +81,97 @@
             ]
         },
         {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.22\\.0\\/rollbar\\.min\\.js",
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "api"
             ],
-            "apis": {
-                "Date.prototype.getTime": 11,
-                "console.memory": 7,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.plugins": 1
-            },
-            "sites": 11,
-            "prevalence": 0.000076,
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000145,
             "cnames": [],
-            "responseHashes": [
-                "0ab9ea97ad1657ded657a3c43151458c928e4dfc6c28869ce4fba1efa64b802b"
-            ],
-            "type": "Script",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "biselliano.info",
-                "brandfolder.com",
-                "gunivore.com",
-                "howiecarrshow.com",
+                "www.metaldetector.com",
+                "st.benesse.ne.jp",
+                "www.worthy.com",
+                "jg-tc.com",
+                "ridge.com",
+                "www.goo-net.com",
+                "rvshare.com",
                 "rakuten.tv",
-                "wowa.ca",
-                "www.battlbox.com",
-                "www.chirpbooks.com",
-                "www.opinionstage.com",
-                "www.quimbee.com",
-                "www.solasalonstudios.com"
+                "www.catch.com.au",
+                "vistaprint.com",
+                "www.touchofmodern.com",
+                "m.rctiplus.com",
+                "www.vistaprint.com.au",
+                "www.airtable.com",
+                "www.toronto.com",
+                "www.4statetrucks.com",
+                "www.shipt.com",
+                "better.com",
+                "www.vistaprint.de",
+                "www.vistaprint.com"
+            ]
+        },
+        {
+            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000145,
+            "cnames": [],
+            "responseHashes": [
+                "c5185ec854b7e5d69edb2ea7b8dbc0404762fb6ae4ecc2493695ac7b0ef98c34",
+                "a46e9d6f080a0943963454b9a39174ead0ee54c3574df967ad70d4694543b5ff",
+                "58dda8198db60cf1028298b1c360baf690fa852adeb67294e8c9c09ceaac3d0b",
+                "725325fa7e5935236fd2142eeef038072ed2086f7278573b44ed042263a9cb2e",
+                "347f42934f5901d65cedc735e61b930cfda20cfdea13cc8ddf20031a8de2fd19",
+                "8e1932d5f436616f9e6b92543750e6505772543bc7829b93f22c5f3b702c4004",
+                "6ade1009ee557e3e07406b09463e5a7c3c2bd60aeb5a860059e1f98a6934f2f8",
+                "bd738140f40f9e6125b909947bd39a416c338ae4a99ea2ed33a9acebcad0bad0",
+                "b7ae4a077edef74bb695d97411238b33e51ec94e39726cfbc9210b28b6da70ec",
+                "5d844aaa752f10794504879649c33452379c685186efa7d951197102d9d83f90",
+                "c7027fbc66b72f87d063ff40475c88dddf060322d957c55ba112b2bba216576a",
+                "118f2412e81551b4cfc85ec4260437d478d0d9c63da84fd890deea54c1c402da",
+                "4d34131661cd6259e7e1950919cb32ee2a3ca2683a048cf3071d2b7998690677",
+                "16679e2acb78c635dc77467cde385e9b766ecf10b9924b28475c886d02eb7ae7",
+                "6eff50ab07064715d22e1524e7f765a61a057d87583c03581e4b51d7c4f67d7d",
+                "8987bcbb6b3366af10e634d605a1ea9a74bc2136007a16fa7038d2ef74e82cf2",
+                "a2afeede3e54353d95ea8ec9d61401b9c97b4ea7552ff318dcd220e863d997cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jg-tc.com",
+                "www.vistaprint.de",
+                "vistaprint.com",
+                "www.goo-net.com",
+                "m.rctiplus.com",
+                "www.catch.com.au",
+                "rakuten.tv",
+                "www.vistaprint.com",
+                "better.com",
+                "www.4statetrucks.com",
+                "www.toronto.com",
+                "www.vistaprint.com.au",
+                "www.worthy.com",
+                "www.zaxbys.com",
+                "rvshare.com",
+                "www.touchofmodern.com",
+                "www.metaldetector.com",
+                "ridge.com",
+                "st.benesse.ne.jp",
+                "www.airtable.com"
             ]
         },
         {
@@ -91,8 +182,14 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 11,
-                "Date.prototype.getTime": 13
+                "Date.prototype.getTime": 13,
+                "console.memory": 10,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.plugins": 1
             },
             "sites": 13,
             "prevalence": 0.0000899,
@@ -104,9 +201,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "columbia.edu",
-                "bootcamp.cvn.columbia.edu",
+                "berkeley.edu",
                 "bootcamp.berkeley.edu",
+                "crowdworks.jp",
                 "goldbelly.com",
                 "koinly.io",
                 "mixkit.co",
@@ -127,11 +224,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 2,
+                "console.memory": 3,
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "38432b35025b5dcf719312ce2b21ce21fcfcc4d33cd095cc87d165e2f29ec0de"
@@ -153,8 +250,8 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 9,
-                "Date.prototype.getTime": 11,
+                "console.memory": 11,
+                "Date.prototype.getTime": 13,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -162,8 +259,8 @@
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.plugins": 2
             },
-            "sites": 11,
-            "prevalence": 0.000076,
+            "sites": 13,
+            "prevalence": 0.0000899,
             "cnames": [],
             "responseHashes": [
                 "c25355cf2e7bec93c43a0ab8bd19ba779ba9cc901924cbc9312d1c6de8c04c8e"
@@ -174,6 +271,8 @@
             "exampleSites": [
                 "t-mobile.com",
                 "community.t-mobile.com",
+                "dexscreener.com",
+                "form.run",
                 "www.4900.co.jp",
                 "www.4statetrucks.com",
                 "www.calm.com",
@@ -193,11 +292,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 2,
+                "console.memory": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "e1df55dbade9723e534375a6ba415c6e849ad2d5263d8408e13964168771af6a"
@@ -207,8 +306,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "databox.com",
-                "www.spareroom.co.uk",
-                "www.spareroom.com"
+                "www.spareroom.co.uk"
             ]
         },
         {
@@ -219,11 +317,11 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 10,
-                "console.memory": 8
+                "console.memory": 10,
+                "Date.prototype.getTime": 10
             },
             "sites": 10,
-            "prevalence": 0.0000691,
+            "prevalence": 0.0000692,
             "cnames": [],
             "responseHashes": [
                 "5aded642b1abb82543fe9109e8941ecf20187725e620f653e5a4493f98bfd682"
@@ -236,7 +334,7 @@
                 "querobolsa.com.br",
                 "quizlet.com",
                 "summitracing.com",
-                "www.bennadel.com",
+                "thegrommet.com",
                 "www.dxengineering.com",
                 "www.freeagent.com",
                 "www.summitracing.com",
@@ -247,22 +345,22 @@
         {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.19\\.3\\/rollbar\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "console.memory": 6,
-                "Date.prototype.getTime": 6,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.plugins": 2
+                "console.memory": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.plugins": 1
             },
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "525609b83b7b7a940bcbc35fd786bb68d5eb2c654c9cf32fa81b45be9978afb0"
@@ -271,108 +369,11 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "freedom.to",
                 "gamefound.com",
                 "rvshare.com",
                 "www.litcharts.com",
                 "www.purplecarrot.com",
                 "www.ricksteves.com"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 27,
-            "prevalence": 0.000187,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.shipt.com",
-                "www.taosnews.com",
-                "www.catch.com.au",
-                "www.touchofmodern.com",
-                "www.airtable.com",
-                "rakuten.tv",
-                "www.cafeappliances.com",
-                "www.worthy.com",
-                "my.wealthsimple.com",
-                "www.zaxbys.com",
-                "getcerebral.com",
-                "rvshare.com",
-                "hitosara.com",
-                "www.vistaprint.fr",
-                "www.rctiplus.com",
-                "www.vistaprint.com.au",
-                "www.flyhomes.com",
-                "vistaprint.com",
-                "www.toronto.com",
-                "st.benesse.ne.jp"
-            ]
-        },
-        {
-            "rule": "rollbar\\.com\\/api\\/1\\/item\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 27,
-            "prevalence": 0.000187,
-            "cnames": [],
-            "responseHashes": [
-                "725325fa7e5935236fd2142eeef038072ed2086f7278573b44ed042263a9cb2e",
-                "b7ae4a077edef74bb695d97411238b33e51ec94e39726cfbc9210b28b6da70ec",
-                "ef30e77106be1bd8f98d00eec87bed30afa9911167b6df41d91ad063587c4549",
-                "06231ed361a86e3a26d02fa6173d1eb67da8802b501f4062420c0c5ae386e2cc",
-                "d38d233c7d307b849de17e6eac2a3c291f5fbb0c80f44cab07230ca44ae662f8",
-                "8e1932d5f436616f9e6b92543750e6505772543bc7829b93f22c5f3b702c4004",
-                "745d3e6ff87e216109921186c7f30e42d26ddc155eb74836c5723c47d5811793",
-                "3e377c8e4cef89c17adf3ec4f318a230a32cae03ea231ce8073f9724e16e73c6",
-                "e3d0eabcb5f1aad6457736e98ae0286ef9601ec8dd635ecdc5f96b339587f91a",
-                "815179359b83190fa9e0ff528f87672fa39ad339867ebc1bbd46c93de01bad15",
-                "741d770aed4afb8cf10fbacf088098f5a01d27be51396abe3d1e1ecd8d531c03",
-                "b53e1b992d0958e328b13793bbf4adb2906b59836022e2913d41c54f43101ba7",
-                "0358f5abfa8d0662df360e13876e432cecd571a780dbd3defe6a1d3649620137",
-                "3fc57a2aad5d846105111aa739e42f392539f8305b2e8a83c7d7feba30d31454",
-                "f1b8c36fceedd3b3ccd1276fc28c8c5f632b84c84dcbcd398354093241ce13b7",
-                "f8082c9ae9f5383f8a091e717514ce68994419051bc5bdf1fce03b8ead3fb061",
-                "45275d9e954f6bc6ca688aa1fb105a6a516c5428c3d465c4512353028a477e75",
-                "f4f493fe8e116dd9b24234507b0c98d18947a12d511a32802935755624282c91",
-                "a2afeede3e54353d95ea8ec9d61401b9c97b4ea7552ff318dcd220e863d997cf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.metaldetector.com",
-                "www.cafeappliances.com",
-                "www.taosnews.com",
-                "my.wealthsimple.com",
-                "www.vistaprint.com",
-                "www.vistaprint.com.au",
-                "www.rctiplus.com",
-                "rakuten.tv",
-                "www.toronto.com",
-                "www.goo-net.com",
-                "hitosara.com",
-                "vistaprint.com",
-                "kifaru.net",
-                "www.gog.com",
-                "st.benesse.ne.jp",
-                "www.flyhomes.com",
-                "www.airtable.com",
-                "www.lovecrafts.com",
-                "www.worthy.com",
-                "www.zaxbys.com"
             ]
         },
         {
@@ -383,11 +384,11 @@
                 "cdn"
             ],
             "apis": {
-                "console.memory": 9,
+                "console.memory": 11,
                 "Date.prototype.getTime": 11
             },
             "sites": 11,
-            "prevalence": 0.000076,
+            "prevalence": 0.0000761,
             "cnames": [],
             "responseHashes": [
                 "e44570df12ef26021ef499b28c93e110bd53b31c29cae5206064d0a01b7faae2"
@@ -410,49 +411,43 @@
             ]
         },
         {
-            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.19\\.0\\/rollbar\\.min\\.js",
+            "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.15\\.1\\/rollbar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "console.memory": 1
+                "console.memory": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "976276e6b8e6b093abfe1a756a4efec5b0faec3710523c28ddaeff6a0dd6ec0a"
+                "59578557a8c9bb856abd74b7342cd6227f0b7dd3e67def02033d4c6353abdd10"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "psu.edu",
-                "plantvillage.psu.edu"
+                "burpple.com",
+                "www.burpple.com"
             ]
         },
         {
             "rule": "rollbar\\.com\\/rollbarjs\\/refs\\/tags\\/v2\\.17\\.0\\/rollbar\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "console.memory": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.plugins": 1
+                "console.memory": 3,
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "a843234d112a3206209048491c2aef37fe0893d2c7d9d39894f62d002ea41fe1"
@@ -461,7 +456,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wallstreetzen.com",
+                "myposter.de",
+                "www.myposter.de",
                 "www.wallstreetzen.com"
             ]
         }
@@ -470,9 +466,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 76,
-        "Preflight": 27,
-        "XHR": 27
+        "Script": 80,
+        "Preflight": 21,
+        "XHR": 21
     },
     "nameservers": [
         "ns-112.awsdns-14.com",

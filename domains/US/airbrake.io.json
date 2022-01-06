@@ -7,15 +7,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000124,
-    "sites": 18,
+    "prevalence": 0.000145,
+    "sites": 21,
     "subdomains": [
         "notifier-configs",
         "ssljscdn",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "airbrake\\.io\\/2020-06-18\\/config\\/131537\\/config\\.json",
@@ -60,15 +60,59 @@
             ]
         },
         {
-            "rule": "airbrake\\.io\\/0\\.3\\/airbrake\\.min\\.js",
+            "rule": "airbrake\\.io\\/2020-06-18\\/config\\/111510\\/config\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ssljscdn"
+                "notifier-configs"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bd25b48f2801fcab340be79030b35c5f50ac728c1445e103c1ce00167c5ef341"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rivals.com",
+                "nebraska.rivals.com"
+            ]
+        },
+        {
+            "rule": "airbrake\\.io\\/2020-06-18\\/config\\/111510\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "notifier-configs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rivals.com",
+                "nebraska.rivals.com"
+            ]
+        },
+        {
+            "rule": "airbrake\\.io\\/0\\.3\\/airbrake\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssljscdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "28bf1831bae5505b67f60de6dd320444192c0d1787ed56cf5c4b9db13afaa7f6"
@@ -77,7 +121,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ooma.com",
+                "nfhsnetwork.com",
+                "member.nfhsnetwork.com",
                 "my.ooma.com"
             ]
         },
@@ -93,7 +138,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5a2c2af6faa6ac14de33372fd96144ba31731bb64c0129bb29620b4804854ca9"
+                "d03420319e426d19cf73c825b805fb84eeb1484fe45724512b81ce69353e912c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -230,6 +275,28 @@
             ]
         },
         {
+            "rule": "airbrake\\.io\\/api\\/v3\\/projects\\/107495\\/notices",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8781707fca72fb2167a81ee87a92d06fc54e2e236830c28680cc2cc2e20d4a1b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spokeo.com",
+                "www.spokeo.com"
+            ]
+        },
+        {
             "rule": "airbrake\\.io\\/api\\/v3\\/projects\\/320390\\/notices",
             "cookies": 0,
             "fingerprinting": 0,
@@ -256,14 +323,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 12,
-        "Preflight": 8,
-        "Script": 2
+        "XHR": 16,
+        "Preflight": 10,
+        "Script": 3
     },
     "nameservers": [
-        "ns4.dnsimple.com",
-        "ns3.dnsimple.com",
         "ns1.dnsimple.com",
-        "ns2.dnsimple.com"
+        "ns2.dnsimple.com",
+        "ns3.dnsimple.com",
+        "ns4.dnsimple.com"
     ]
 }

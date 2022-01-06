@@ -4,21 +4,27 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000131,
-    "sites": 19,
+    "prevalence": 0.000125,
+    "sites": 18,
     "subdomains": [
         "alpharank",
         "monroehinge",
         "w3w",
         "cbr",
         "broadcastmed",
-        "fastmail",
-        "einkaufsbahnhof",
+        "web",
         "etfprod",
+        "fastmail",
+        "berrythompson",
         "cdn",
         "thunderbird"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "demo-web.matomo.org",
+            "resolved": "web.innocraft.cloud"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
@@ -30,28 +36,61 @@
                 "monroehinge",
                 "w3w",
                 "cbr",
-                "broadcastmed",
-                "fastmail"
+                "broadcastmed"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000553,
+            "sites": 6,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Ping",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "gclid": 0.000006917925729149372
+            },
             "exampleSites": [
                 "daytradingz.com",
                 "monroeengineering.com",
                 "what3words.com",
                 "www.cbr.nl",
                 "www.cedars-sinai.org",
-                "www.chkd.org",
-                "www.emoryhealthcare.org",
-                "www.fastmail.help"
+                "www.emoryhealthcare.org"
+            ]
+        },
+        {
+            "rule": "innocraft\\.cloud\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web",
+                "etfprod",
+                "fastmail",
+                "berrythompson"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "demo-web.matomo.org",
+                    "resolved": "web.innocraft.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "matomo.org",
+                "www.etf.com",
+                "www.fastmail.com",
+                "www.wentworthpuzzles.com"
             ]
         },
         {
@@ -59,32 +98,40 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "web",
                 "monroehinge",
                 "cbr",
                 "broadcastmed",
-                "fastmail"
+                "berrythompson"
             ],
             "apis": {},
             "sites": 6,
             "prevalence": 0.0000415,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "demo-web.matomo.org",
+                    "resolved": "web.innocraft.cloud"
+                }
+            ],
             "responseHashes": [
-                "31c854cf1d04d9b75d60e1ffa9e2a966bf52196790a2cc704ade2beaf6d1f5cd",
-                "14f50a2fec5965a0a671278c4b12f2410e1184e08ad63edf336a36d60dd16b73",
-                "f36cc141a09f4b09cea345637f240ebde00fe17d1841c70e8aaeeb570e6b41b3",
-                "6645d10f42d9710c758e31626ca8c94d44c75b62933393f91a60162797601023",
-                "877983866e8820ff6ffdb50d2603b493b417bffa83afa60c40a817ee4c77dd7a"
+                "e57ae58a0cf10a68a03999199732eb7ff77edbbc5919780d86bf16990eee785b",
+                "029f036ddda0eadab40b92f52ccd9d41a222cd9c2ec50537522c6ff2624cca0d",
+                "7fe08412c8687a3d152c651fb3cace77e587bda7e32e43b12988ff379efbdd83",
+                "4dc1696f03a699869f7b1e91e8834726de9fcabdf254bab26f19d5187d3f428e",
+                "c703ba753527791c338d74e179cb3e2219bc1bce81ba1f859090151eb7976949"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "gclid": 0.000006917925729149372
+            },
             "exampleSites": [
+                "matomo.org",
                 "monroeengineering.com",
                 "www.cbr.nl",
                 "www.cedars-sinai.org",
-                "www.chkd.org",
                 "www.emoryhealthcare.org",
-                "www.fastmail.help"
+                "www.wentworthpuzzles.com"
             ]
         },
         {
@@ -93,12 +140,12 @@
             "fingerprinting": 2,
             "subdomains": [
                 "w3w",
-                "einkaufsbahnhof",
-                "etfprod"
+                "etfprod",
+                "berrythompson"
             ],
             "apis": {
                 "Date.prototype.getTime": 3,
-                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.vendor": 2,
                 "Document.cookie getter": 3,
                 "window.name": 3,
                 "Navigator.prototype.userAgent": 3,
@@ -111,43 +158,44 @@
                 "Document.cookie setter": 2
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "0ce713b6cef25179719f242dcfa4ed9e985f1443257722299df2768deeb5ab6e"
+                "0ce713b6cef25179719f242dcfa4ed9e985f1443257722299df2768deeb5ab6e",
+                "5451bff18543efba22114d9bf0b483dbe1e973a022162b8b78e9414c8868f285"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pk_id.1.d83c": {
+                "_pk_id.3.5465": {
                     "ttl": 33955201,
                     "length": 28,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_ses.1.d83c": {
-                    "ttl": 1800,
-                    "length": 1,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_id.3.5465": {
-                    "ttl": 33955203,
-                    "length": 28,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "_pk_ses.3.5465": {
-                    "ttl": 1802,
+                    "ttl": 1800,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_pk_id.7.a070": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_pk_ses.7.a070": {
+                    "ttl": 1801,
+                    "length": 1,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "what3words.com",
-                "www.einkaufsbahnhof.de",
-                "www.etf.com"
+                "www.etf.com",
+                "www.wentworthpuzzles.com"
             ]
         },
         {
@@ -181,15 +229,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.1.d2ba": {
-                    "ttl": 33955208,
+                    "ttl": 33955210,
                     "length": 28,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_pk_ses.1.d2ba": {
-                    "ttl": 1807,
+                    "ttl": 1810,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -201,27 +249,27 @@
         },
         {
             "rule": "innocraft\\.cloud\\/broadcastmed\\.innocraft\\.cloud\\/matomo\\.js",
-            "cookies": 0.0000277,
+            "cookies": 0.0000208,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.vendor": 4,
-                "Document.cookie getter": 4,
-                "window.name": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Navigator.prototype.mimeTypes": 4,
-                "Navigator.prototype.javaEnabled": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "Navigator.prototype.platform": 4,
-                "Document.cookie setter": 4
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.vendor": 3,
+                "Document.cookie getter": 3,
+                "window.name": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.platform": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "5451bff18543efba22114d9bf0b483dbe1e973a022162b8b78e9414c8868f285"
@@ -229,39 +277,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pk_id.95.bb45": {
-                    "ttl": 33955203,
+                    "ttl": 33955205,
                     "length": 28,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_pk_ses.95.bb45": {
-                    "ttl": 1802,
+                    "ttl": 1805,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
-                "_pk_id.78.7d32": {
+                "_pk_id.73.0690": {
                     "ttl": 33955201,
                     "length": 28,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_ses.78.7d32": {
-                    "ttl": 1800,
-                    "length": 1,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_id.73.0690": {
-                    "ttl": 33955202,
-                    "length": 28,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "_pk_ses.73.0690": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -269,84 +305,7 @@
             "exampleSites": [
                 "cedars-sinai.org",
                 "www.cedars-sinai.org",
-                "www.chkd.org",
                 "www.emoryhealthcare.org"
-            ]
-        },
-        {
-            "rule": "innocraft\\.cloud\\/piwik\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "einkaufsbahnhof",
-                "etfprod",
-                "fastmail"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "einkaufsbahnhof.de",
-                "www.einkaufsbahnhof.de",
-                "www.etf.com",
-                "www.fastmail.com"
-            ]
-        },
-        {
-            "rule": "innocraft\\.cloud\\/fastmail\\.innocraft\\.cloud\\/matomo\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.vendor": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "window.name": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Navigator.prototype.mimeTypes": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Navigator.prototype.platform": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e2c595e25fc23d85265628c4fd6646cc5b46c1304210adea4908551c8ebe5b02"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pk_id.8.e903": {
-                    "ttl": 33955206,
-                    "length": 28,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_ses.8.e903": {
-                    "ttl": 1806,
-                    "length": 1,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fastmail.help",
-                "www.fastmail.help"
             ]
         },
         {
@@ -374,16 +333,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000083,
+    "cookies": 0.0000692,
     "types": {
-        "Ping": 12,
-        "Script": 17,
+        "Ping": 10,
+        "Script": 14,
         "Image": 2
     },
     "nameservers": [
+        "ns-1863.awsdns-40.co.uk",
         "ns-1312.awsdns-36.org",
-        "ns-914.awsdns-50.net",
         "ns-190.awsdns-23.com",
-        "ns-1863.awsdns-40.co.uk"
+        "ns-914.awsdns-50.net"
     ]
 }

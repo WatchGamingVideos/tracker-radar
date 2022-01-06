@@ -11,12 +11,11 @@
     "sites": 26,
     "subdomains": [
         "cdn",
-        "live",
         "api",
         "scripts"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "luigisbox\\.com\\/autocomplete\\.js",
@@ -26,13 +25,14 @@
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 5,
-                "window.sessionStorage": 4
+                "window.sessionStorage": 5,
+                "Date.prototype.getTime": 5
             },
             "sites": 5,
             "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
+                "0f6bc7990538cd3a8e750fe238679dbb2ece0b05582b72dc2a9959e2ba1f499e",
                 "eb49811ba1f1b7636767848306f65335d4d5692c010de640a39fb1dcb1ba672d"
             ],
             "type": "Script",
@@ -78,16 +78,16 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Event.prototype.timeStamp": 1,
-                "Navigator.prototype.product": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5ea75202cd237d9c567774b2aba8f41f6def64f9f69c7ffb126fe870bddf2c97"
+                "1d393d4e90e44816d8198553cc1fdb0fe05d0de54c5c0f7675dfe67abd79de90"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -144,48 +144,6 @@
             ]
         },
         {
-            "rule": "luigisbox\\.com\\/voice",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "live"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "botland.com.pl",
-                "korona.gov.sk"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/voice",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "live"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "botland.com.pl",
-                "korona.gov.sk"
-            ]
-        },
-        {
             "rule": "luigisbox\\.com\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -194,39 +152,7 @@
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.0000968,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "botland.com.pl",
-                "czechcasting.com",
-                "korona.gov.sk",
-                "pittsburghsprayequip.com",
-                "www.alza.hu",
-                "www.apetitonline.cz",
-                "www.benu.cz",
-                "www.brw.pl",
-                "www.datart.sk",
-                "www.datart.cz",
-                "www.lekarna.cz",
-                "www.martinus.sk",
-                "www.megaknihy.cz",
-                "www.nay.sk"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000968,
+            "prevalence": 0.0000969,
             "cnames": [],
             "responseHashes": [
                 "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570"
@@ -239,15 +165,47 @@
                 "czechcasting.com",
                 "korona.gov.sk",
                 "pittsburghsprayequip.com",
+                "www.alza.de",
                 "www.alza.hu",
                 "www.apetitonline.cz",
                 "www.benu.cz",
                 "www.brw.pl",
-                "www.datart.sk",
                 "www.datart.cz",
+                "www.datart.sk",
                 "www.lekarna.cz",
                 "www.martinus.sk",
-                "www.megaknihy.cz",
+                "www.nay.sk"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000969,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botland.com.pl",
+                "czechcasting.com",
+                "korona.gov.sk",
+                "pittsburghsprayequip.com",
+                "www.alza.de",
+                "www.alza.hu",
+                "www.apetitonline.cz",
+                "www.benu.cz",
+                "www.brw.pl",
+                "www.datart.cz",
+                "www.datart.sk",
+                "www.lekarna.cz",
+                "www.martinus.sk",
                 "www.nay.sk"
             ]
         },
@@ -272,9 +230,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ct": {
-                    "ttl": -1639200245,
+                    "ttl": -1638851250,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -307,9 +265,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_lb": {
-                    "ttl": 99185755,
+                    "ttl": 99534749,
                     "length": 19,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -317,6 +275,74 @@
             "exampleSites": [
                 "gov.sk",
                 "korona.gov.sk"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/LBX-240122\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "27733f2aed7ed1ceefb2be48b4c9973917c69084515c8a678d839178cc7034a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ct": {
+                    "ttl": -1638875463,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.de",
+                "www.alza.de"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/alza-cz\\.js",
+            "cookies": 0.0000208,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "window.sessionStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "7297a9bf1299c0de567ee14893a9593b99378f31d9af74796df1122cba5a710a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_lb": {
+                    "ttl": 99510536,
+                    "length": 19,
+                    "prevalence": 0.000020753777187448115,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.de",
+                "www.alza.de",
+                "www.alza.hu"
             ]
         },
         {
@@ -339,45 +365,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ct": {
-                    "ttl": -1639222289,
+                    "ttl": -1638875463,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "alza.hu",
-                "www.alza.hu"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/alza-cz\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7297a9bf1299c0de567ee14893a9593b99378f31d9af74796df1122cba5a710a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_lb": {
-                    "ttl": 99163710,
-                    "length": 19,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
@@ -406,9 +397,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ct": {
-                    "ttl": -1639222829,
+                    "ttl": -1638876460,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -441,9 +432,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_lb": {
-                    "ttl": 99163170,
+                    "ttl": 99509539,
                     "length": 19,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -473,9 +464,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ct": {
-                    "ttl": -1639224789,
+                    "ttl": -1638879860,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -508,9 +499,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_lb": {
-                    "ttl": 99161215,
+                    "ttl": 99506140,
                     "length": 19,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -518,41 +509,6 @@
             "exampleSites": [
                 "benu.cz",
                 "www.benu.cz"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/datart\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e30a48c42d0666e12ef6f8f24c525fe0194f41b4162b62e46fe93aec11689825"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_lb": {
-                    "ttl": 99155329,
-                    "length": 19,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "datart.sk",
-                "www.datart.cz"
             ]
         },
         {
@@ -575,9 +531,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ct": {
-                    "ttl": -1639230671,
+                    "ttl": -1638892445,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -588,105 +544,39 @@
             ]
         },
         {
-            "rule": "luigisbox\\.com\\/martinus-v2\\.js",
-            "cookies": 0.0000138,
+            "rule": "luigisbox\\.com\\/datart\\.js",
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "window.sessionStorage": 3,
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "fdb1a556dfd5f6a28c01e6518a5430ae792b00b282c695b2597db4d6fbb44c36"
+                "e30a48c42d0666e12ef6f8f24c525fe0194f41b4162b62e46fe93aec11689825"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_lb": {
-                    "ttl": 99140062,
+                    "ttl": 99493554,
                     "length": 19,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000020753777187448115,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "martinus.sk",
-                "www.martinus.sk"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/LBX-238224\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 1,
-            "subdomains": [
-                "scripts"
-            ],
-            "apis": {
-                "Document.cookie setter": 1,
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "03987f0d80b3f227f89aafec2d4284b382e8c282ae0c05c2683a357682be2079"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ct": {
-                    "ttl": -1639246441,
-                    "length": 1,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "megaknihy.cz",
-                "www.megaknihy.cz"
-            ]
-        },
-        {
-            "rule": "luigisbox\\.com\\/megaknihy\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b2a7b438d6ade666cb6e0c4577baffdc519944e13f740137fcf72c3b42714f2d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_lb": {
-                    "ttl": 99139558,
-                    "length": 19,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "megaknihy.cz",
-                "www.megaknihy.cz"
+                "datart.cz",
+                "www.datart.sk",
+                "www.datart.cz"
             ]
         },
         {
@@ -712,9 +602,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_lb": {
-                    "ttl": 99136909,
+                    "ttl": 99449859,
                     "length": 19,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -727,12 +617,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000159,
+    "cookies": 0.000152,
     "types": {
-        "Script": 37,
+        "Script": 35,
         "Stylesheet": 6,
-        "XHR": 16,
-        "Preflight": 16
+        "XHR": 14,
+        "Preflight": 14
     },
     "nameservers": [
         "ns-72.awsdns-09.com",

@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
+        "0a52f6e3ae3b4acf8fe24f2daf025cd6",
         "a2b05107c24a4cb385eec9c3e4ccda25",
         "733868e706dd40d3a4a0588fc39b3df8"
     ],
@@ -16,12 +17,43 @@
             "resolved": "a2b05107c24a4cb385eec9c3e4ccda25.pacloudflare.com"
         },
         {
+            "original": "t.aboutyou.at",
+            "resolved": "0a52f6e3ae3b4acf8fe24f2daf025cd6.pacloudflare.com"
+        },
+        {
             "original": "www2.deepl.com",
             "resolved": "733868e706dd40d3a4a0588fc39b3df8.pacloudflare.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "pacloudflare\\.com\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "0a52f6e3ae3b4acf8fe24f2daf025cd6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "t.aboutyou.at",
+                    "resolved": "0a52f6e3ae3b4acf8fe24f2daf025cd6.pacloudflare.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aboutyou.at",
+                "www.aboutyou.at"
+            ]
+        },
         {
             "rule": "pacloudflare\\.com\\/web\\/statistics",
             "cookies": 0,
@@ -76,6 +108,33 @@
         },
         {
             "rule": "pacloudflare\\.com\\/jsonrpc",
+            "cookies": 0.00000692,
+            "fingerprinting": 0,
+            "subdomains": [
+                "733868e706dd40d3a4a0588fc39b3df8"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "www2.deepl.com",
+                    "resolved": "733868e706dd40d3a4a0588fc39b3df8.pacloudflare.com"
+                }
+            ],
+            "responseHashes": [
+                "de2c76d8db5756f923dd6501bc1a8ce6598fed50ef820483514b571ebf0598f1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deepl.com",
+                "www.deepl.com"
+            ]
+        },
+        {
+            "rule": "pacloudflare\\.com\\/jsonrpc",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -98,41 +157,14 @@
                 "deepl.com",
                 "www.deepl.com"
             ]
-        },
-        {
-            "rule": "pacloudflare\\.com\\/jsonrpc",
-            "cookies": 0.00000691,
-            "fingerprinting": 0,
-            "subdomains": [
-                "733868e706dd40d3a4a0588fc39b3df8"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "www2.deepl.com",
-                    "resolved": "733868e706dd40d3a4a0588fc39b3df8.pacloudflare.com"
-                }
-            ],
-            "responseHashes": [
-                "e6f5641078374db9e1fb30725035dc1fa7e89869e80c896b04baf309d9448b50"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "deepl.com",
-                "www.deepl.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000691,
+    "cookies": 0.0000138,
     "types": {
-        "Preflight": 4,
-        "XHR": 4
+        "XHR": 6,
+        "Preflight": 4
     },
     "nameservers": []
 }

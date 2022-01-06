@@ -7,8 +7,8 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "forward.geo.myaccess.aws",
-        "logs.pchomenav.aws"
+        "logs.pchomenav.aws",
+        "forward.geo.myaccess.aws"
     ],
     "cnames": [
         {
@@ -22,6 +22,33 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "porsche\\.cloud\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logs.pchomenav.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "logs.nav.porsche.com",
+                    "resolved": "logs.pchomenav.aws.porsche.cloud"
+                }
+            ],
+            "responseHashes": [
+                "20a37c6e504753184e48e2b50893eca0edd920f514c59a4d1865ae35ba723084"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "porsche.com",
+                "www.porsche.com"
+            ]
+        },
         {
             "rule": "porsche\\.cloud\\/\\.well-known\\/openid-configuration",
             "cookies": 0.0000138,
@@ -67,33 +94,6 @@
             ],
             "responseHashes": [],
             "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "porsche.com",
-                "www.porsche.com"
-            ]
-        },
-        {
-            "rule": "porsche\\.cloud\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "logs.pchomenav.aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "logs.nav.porsche.com",
-                    "resolved": "logs.pchomenav.aws.porsche.cloud"
-                }
-            ],
-            "responseHashes": [
-                "20a37c6e504753184e48e2b50893eca0edd920f514c59a4d1865ae35ba723084"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [

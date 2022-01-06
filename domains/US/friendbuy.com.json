@@ -7,15 +7,163 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000498,
-    "sites": 72,
+    "prevalence": 0.000588,
+    "sites": 85,
     "subdomains": [
+        "az-cdn",
+        "az-ws",
         "cdn1",
         "ws"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "friendbuy\\.com\\/js\\/friendbuy\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "az-cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b67ab1a236147a025ab17610e8877d9fd7be44a6ac1e1aa2a64d24e017253777"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_fbuy_buckets": {
+                    "ttl": 31536000,
+                    "length": 51,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "_fbuy_Nsu-bjzU_last_popup": {
+                    "ttl": 31536000,
+                    "length": 10,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-e0622bf3-inhome\\.walmart\\.com\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "az-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "4d2a0dc90e1ca0f058c60846de47f781c4ee9e4fcaa817e957a7e19ffee54a04"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-e0622bf3-inhome\\.walmart\\.com\\/track",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "az-ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-e0622bf3-inhome\\.walmart\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "az-ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-e0622bf3-inhome\\.walmart\\.com\\/widgets\\/274520\\/references",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "az-ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-e0622bf3-inhome\\.walmart\\.com\\/widgets\\/274520\\/references",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "az-ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b03295cd7770fb022e86b4b5c103aa013cefe870282c7eee6db0c2ec76ba2aa5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "inhome.walmart.com"
+            ]
+        },
         {
             "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-871ee543-www\\.mintmobile\\.com\\.json",
             "cookies": 0,
@@ -25,7 +173,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "fa7aecf1aa97538f2ebd50c4612d64db93a3a4e45584236e2f78d2d9cdbc6dda"
@@ -33,8 +181,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00002074057686457786,
-                "_li_dcdm_c": 0.00002074057686457786
+                "IR_gbd": 0.000020753777187448115,
+                "_li_dcdm_c": 0.000020753777187448115
             },
             "exampleSites": [
                 "mintmobile.com",
@@ -66,6 +214,28 @@
         },
         {
             "rule": "friendbuy\\.com\\/site-bfe61491-www\\.afterpay\\.com\\/track",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afterpay.com",
+                "www.afterpay.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-bfe61491-www\\.afterpay\\.com\\/track",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -85,25 +255,25 @@
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/site-bfe61491-www\\.afterpay\\.com\\/track",
-            "cookies": 0.0000138,
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-2b241526-www\\.artifactuprising\\.com\\.json",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ws"
+                "cdn1"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
+                "bc92f4a4fd7fa9584a40a03ec19b150de7ecab6987e64aef12049da665976058"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "afterpay.com",
-                "www.afterpay.com"
+                "artifactuprising.com",
+                "www.artifactuprising.com"
             ]
         },
         {
@@ -236,6 +406,26 @@
         },
         {
             "rule": "friendbuy\\.com\\/site-bcc4d8ec-byteme\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "byteme.com",
+                "www.byteme.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-bcc4d8ec-byteme\\.com\\/track",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -249,26 +439,6 @@
                 "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "byteme.com",
-                "www.byteme.com"
-            ]
-        },
-        {
-            "rule": "friendbuy\\.com\\/site-bcc4d8ec-byteme\\.com\\/track",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -293,7 +463,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013827051243051907
+                "_li_dcdm_c": 0.000013835851458298743
             },
             "exampleSites": [
                 "chirpbooks.com",
@@ -301,30 +471,7 @@
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-04b71921-greenbuildingsupply\\.com\\.json",
-            "cookies": 0.00000691,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1",
-                "ws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2dd2b52e44ddd728767ff0ba60a6cb29ead025d419ea51056b07d03dc60c06f0"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "greenbuildingsupply.com",
-                "www.greenbuildingsupply.com"
-            ]
-        },
-        {
-            "rule": "friendbuy\\.com\\/widgets\\/configs\\/404\\.json",
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-66446fdb-eightsleep\\.com\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -335,18 +482,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "dd9e38a0e3f48ba81195e518f36d99b0bf5445454d08d8e529e387513b370b00"
+                "4c3228c115e0af0c82ac9d36b208434ed3ae1b77f7731fb397b4724760b9414b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
             "exampleSites": [
-                "greenbuildingsupply.com",
-                "www.greenbuildingsupply.com"
+                "eightsleep.com",
+                "www.eightsleep.com"
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/site-04b71921-greenbuildingsupply\\.com\\/track",
+            "rule": "friendbuy\\.com\\/site-66446fdb-eightsleep\\.com\\/track",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -359,14 +508,16 @@
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
             "exampleSites": [
-                "greenbuildingsupply.com",
-                "www.greenbuildingsupply.com"
+                "eightsleep.com",
+                "www.eightsleep.com"
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/site-04b71921-greenbuildingsupply\\.com\\/track",
+            "rule": "friendbuy\\.com\\/site-66446fdb-eightsleep\\.com\\/track",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -381,10 +532,12 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
             "exampleSites": [
-                "greenbuildingsupply.com",
-                "www.greenbuildingsupply.com"
+                "eightsleep.com",
+                "www.eightsleep.com"
             ]
         },
         {
@@ -443,7 +596,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "8bbfdeac1cd147a7bc4a144f726ee63bfb5e6d56109fc60c1ba54329d280aaac"
+                "9e100102b3440e9578b54df0a4b6e9316e8985ce1b59f17a031faf1caad76c72"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -477,26 +630,6 @@
         },
         {
             "rule": "friendbuy\\.com\\/site-cc4cf1dd-www\\.thirtymadison\\.com\\/widgets\\/72547\\/references",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "keeps.com",
-                "www.keeps.com"
-            ]
-        },
-        {
-            "rule": "friendbuy\\.com\\/site-cc4cf1dd-www\\.thirtymadison\\.com\\/track",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -552,6 +685,26 @@
                 "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keeps.com",
+                "www.keeps.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-cc4cf1dd-www\\.thirtymadison\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -624,28 +777,6 @@
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-9b8674a2-www\\.metromile\\.com\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3d19015977472c03278e6318c6be363c833876ce6cf4816b9ca5d054a998e55c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metromile.com",
-                "www.metromile.com"
-            ]
-        },
-        {
             "rule": "friendbuy\\.com\\/widgets\\/configs\\/www\\.meundies\\.com\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -662,7 +793,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013827051243051907
+                "_li_dcdm_c": 0.000013835851458298743
             },
             "exampleSites": [
                 "meundies.com",
@@ -809,7 +940,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5567759c8ac345899551e02d6c02a679d92a1f768eae5f2104b1738b9e6fad12"
+                "a640c953a2cfac12962e500866b852d7e6b2266c7e8e42b37d8b4c052381e12b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -836,7 +967,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013827051243051907
+                "IR_gbd": 0.000013835851458298743
             },
             "exampleSites": [
                 "onnit.com",
@@ -858,7 +989,7 @@
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013827051243051907
+                "IR_gbd": 0.000013835851458298743
             },
             "exampleSites": [
                 "onnit.com",
@@ -882,7 +1013,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013827051243051907
+                "IR_gbd": 0.000013835851458298743
             },
             "exampleSites": [
                 "onnit.com",
@@ -933,7 +1064,7 @@
         },
         {
             "rule": "friendbuy\\.com\\/site-86ed8ac1-nestle\\.com\\/track",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
                 "ws"
@@ -954,11 +1085,35 @@
             ]
         },
         {
-            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-31dd04be-www\\.shethinx\\.com\\.json",
-            "cookies": 0,
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-c5d3bce5-sheertex\\.com\\.json",
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn1"
+                "cdn1",
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "485e5a446f8ce00bb45f6faf208b7d78e9a37768f90c206f33aec4b6ee644abe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sheertex.com",
+                "www.sheertex.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-31dd04be-www\\.shethinx\\.com\\.json",
+            "cookies": 0.00000692,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1",
+                "ws"
             ],
             "apis": {},
             "sites": 2,
@@ -969,9 +1124,7 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "shethinx.com",
                 "www.shethinx.com"
@@ -991,9 +1144,7 @@
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "shethinx.com",
                 "www.shethinx.com"
@@ -1015,9 +1166,7 @@
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "shethinx.com",
                 "www.shethinx.com"
@@ -1194,6 +1343,76 @@
             ]
         },
         {
+            "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-577354cf-tunecore\\.com\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2e66d093bfc52bbb700304672aa5d9b23e2aebe3074a4803fcfc8217e14ea40a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "tunecore.com",
+                "www.tunecore.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-577354cf-tunecore\\.com\\/track",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b40291ffe4e9d9bb2e10835df039258c7d2c8e55c8a9987371e667f5c18a0352"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "tunecore.com",
+                "www.tunecore.com"
+            ]
+        },
+        {
+            "rule": "friendbuy\\.com\\/site-577354cf-tunecore\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "tunecore.com",
+                "www.tunecore.com"
+            ]
+        },
+        {
             "rule": "friendbuy\\.com\\/widgets\\/configs\\/site-514dba8b-www\\.untuckit\\.com\\.json",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1210,9 +1429,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954,
-                "_szl_instant_merchant_domain": 0.000013827051243051907,
-                "IR_gbd": 0.000006913525621525954
+                "_szl_instant_merchant_domain": 0.000013835851458298743,
+                "IR_gbd": 0.000006917925729149372
             },
             "exampleSites": [
                 "untuckit.com",
@@ -1236,9 +1454,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954,
-                "_szl_instant_merchant_domain": 0.000013827051243051907,
-                "IR_gbd": 0.000006913525621525954
+                "_szl_instant_merchant_domain": 0.000013835851458298743,
+                "IR_gbd": 0.000006917925729149372
             },
             "exampleSites": [
                 "untuckit.com",
@@ -1260,9 +1477,8 @@
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dy_fs_page": 0.000006913525621525954,
-                "_szl_instant_merchant_domain": 0.000013827051243051907,
-                "IR_gbd": 0.000006913525621525954
+                "_szl_instant_merchant_domain": 0.000013835851458298743,
+                "IR_gbd": 0.000006917925729149372
             },
             "exampleSites": [
                 "untuckit.com",
@@ -1286,7 +1502,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013827051243051907
+                "_li_dcdm_c": 0.000013835851458298743
             },
             "exampleSites": [
                 "wearfigs.com",
@@ -1308,7 +1524,7 @@
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013827051243051907
+                "_li_dcdm_c": 0.000013835851458298743
             },
             "exampleSites": [
                 "wearfigs.com",
@@ -1332,7 +1548,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000013827051243051907
+                "_li_dcdm_c": 0.000013835851458298743
             },
             "exampleSites": [
                 "wearfigs.com",
@@ -1364,15 +1580,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000318,
+    "cookies": 0.000408,
     "types": {
-        "XHR": 87,
-        "Preflight": 36
+        "Script": 2,
+        "XHR": 97,
+        "Preflight": 42
     },
     "nameservers": [
-        "ns-1098.awsdns-09.org",
-        "ns-1693.awsdns-19.co.uk",
         "ns-475.awsdns-59.com",
-        "ns-810.awsdns-37.net"
+        "ns-810.awsdns-37.net",
+        "ns-1693.awsdns-19.co.uk",
+        "ns-1098.awsdns-09.org"
     ]
 }

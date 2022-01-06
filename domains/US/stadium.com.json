@@ -4,14 +4,37 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "cpi"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "stadium\\.com\\/push\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cpi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "49ac1117133652ed5c17c790644526ccd60089d46e9d67beff855d06a1d949d8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stadium.fi",
+                "www.stadium.se",
+                "www.stadiumoutlet.se"
+            ]
+        },
         {
             "rule": "stadium\\.com\\/js\\/v4\\.2\\/stadium\\.se",
             "cookies": 0.0000138,
@@ -35,7 +58,7 @@
                 "_p2s_uvi": {
                     "ttl": 31536001,
                     "length": 39,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -46,34 +69,45 @@
             ]
         },
         {
-            "rule": "stadium\\.com\\/push\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "stadium\\.com\\/js\\/v4\\.2\\/stadiumoutlet\\.se",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
             "subdomains": [
                 "cpi"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "49ac1117133652ed5c17c790644526ccd60089d46e9d67beff855d06a1d949d8"
+                "b9750d83d905f67a3191bae86ca3c200a0b226c2b0776e6660ff634ce9d8794b"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "_p2s_uvi": {
+                    "ttl": 31536001,
+                    "length": 39,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "stadium.se",
-                "www.stadium.se"
+                "stadiumoutlet.se",
+                "www.stadiumoutlet.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000346,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "XHR": 3,
+        "Script": 4
     },
     "nameservers": [
         "a.ns14.net",

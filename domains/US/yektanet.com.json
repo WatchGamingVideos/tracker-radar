@@ -4,18 +4,154 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000484,
+    "sites": 7,
     "subdomains": [
+        "cdn",
+        "nfetch",
+        "bfetch",
         "audience",
         "ua",
-        "cdn",
-        "bfetch",
-        "nfetch"
+        "audience-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "yektanet\\.com\\/template\\/bnrs\\/yn_bnr\\.min\\.js",
+            "cookies": 0.0000208,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "0472d5334a0f24801fe04961f2815086c4f398253347382e98950c0b4947011c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "setare.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/api\\/v2\\/load",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3280b33db7c33e9eed2dc82281190593b669e5439b35a1d86aea8bfb2e81be71"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/api\\/v2\\/load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bfetch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/assets\\/vaccine\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0fdbf3f7b93f528eb3a5cfbac3528ed8be47a2b5a24c7c2fa72442c9a87a6838"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "www.varzesh3.com"
+            ]
+        },
         {
             "rule": "yektanet\\.com\\/api\\/v1\\/scripts\\/preview\\/validate\\/",
             "cookies": 0,
@@ -24,8 +160,8 @@
                 "audience"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "fcbcf165908dd18a9e49f7ff27810176db8e9f63b4352213741664245224f8aa"
@@ -34,7 +170,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "divar.ir",
+                "khabarban.com",
+                "parstoday.com",
                 "setare.com",
                 "www.tasnimnews.com",
                 "www.varzesh3.com"
@@ -42,19 +179,19 @@
         },
         {
             "rule": "yektanet\\.com\\/cookie\\/iframe\\/",
-            "cookies": 0.0000207,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "ua"
             ],
             "apis": {
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 3,
-                "window.localStorage": 3,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "47dcd0765922a10bb0d997d4b853fb66c369a76bb0f091dd4167db2c84f62d2e"
@@ -63,7 +200,62 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "divar.ir",
+                "khabarban.com",
+                "parstoday.com",
+                "setare.com",
+                "www.tasnimnews.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/__fake\\.gif",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ua"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "analytics_session_token": 0.00003458962864574686
+            },
+            "exampleSites": [
+                "khabarban.com",
+                "parstoday.com",
+                "www.tasnimnews.com",
+                "www.varzesh3.com"
+            ]
+        },
+        {
+            "rule": "yektanet\\.com\\/cookie\\/set",
+            "cookies": 0.0000346,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ua"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "0ee0b0968056c730c3d40b34929da2353ababce13ad0e71455c9d3383f8afa07",
+                "1bdc0d222772598ccdfca5eac35fafd6a21dd94eb4838d11f342e69f5360d11b",
+                "ec92bc874b1fa8c698f710061fa2f74d415f2a8a3b61fcf891dcacb855e6801a",
+                "ac3c008aad5e398f75ffe54ebc37d20ecfaba9421a620892fc97b308c9580788"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "khabarban.com",
+                "parstoday.com",
                 "setare.com",
                 "www.tasnimnews.com",
                 "www.varzesh3.com"
@@ -86,210 +278,69 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "analytics_session_token": 0.00002074057686457786
+                "analytics_session_token": 0.000027671702916597487,
+                "_yngt": 0.000006917925729149372
             },
             "exampleSites": [
-                "divar.ir",
+                "khabarban.com",
                 "setare.com"
             ]
         },
         {
-            "rule": "yektanet\\.com\\/cookie\\/set",
-            "cookies": 0.0000277,
+            "rule": "yektanet\\.com\\/static\\/preview\\/capture-clicks\\.5be058472cde73c949b0\\.js",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ua"
+                "audience-cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "323eb521708b842f12263fc6653087fb4648e24e0a0072a99debc212ebb063e1",
-                "08bb61607f38bfe862b8674d71140b4294916f92fb6480cd5e1f4771aa324b31",
-                "2c7f53f2235a646aaf8b477155881816e3ff25f8523011ec8a87bb79185c3710"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "divar.ir",
-                "setare.com",
-                "www.tasnimnews.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/template\\/bnrs\\/yn_bnr\\.min\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1
-            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0472d5334a0f24801fe04961f2815086c4f398253347382e98950c0b4947011c"
+                "2ab1fae55e71d0e20877c6160222b216ad1908295bdac933033ad0d5e60a3e2a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
+                "parstoday.com",
+                "www.tasnimnews.com"
             ]
         },
         {
-            "rule": "yektanet\\.com\\/",
+            "rule": "yektanet\\.com\\/static\\/preview\\/external-link\\.e6a48731ca4428f8ff9a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bfetch"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bfetch"
+                "audience-cdn"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+                "b70a183685a903b4c69ab393869d1ae1d1a19951315d744e968218755681dd64"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/api\\/v2\\/load",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nfetch"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8f777d6f282d2b1a03126a65c9ba883062d2a1431b5305c0ad83864661348a14"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/api\\/v2\\/load",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nfetch"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/assets\\/vaccine\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0fdbf3f7b93f528eb3a5cfbac3528ed8be47a2b5a24c7c2fa72442c9a87a6838"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "setare.com",
-                "www.varzesh3.com"
-            ]
-        },
-        {
-            "rule": "yektanet\\.com\\/__fake\\.gif",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ua"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "analytics_session_token": 0.00003456762810762977,
-                "_yngt": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "setare.com",
-                "www.tasnimnews.com",
-                "www.varzesh3.com"
+                "parstoday.com",
+                "www.tasnimnews.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000484,
     "types": {
-        "XHR": 12,
-        "Document": 4,
-        "Ping": 2,
-        "Script": 2,
+        "Script": 7,
+        "XHR": 14,
         "Preflight": 4,
-        "Image": 5
+        "Image": 6,
+        "Document": 5,
+        "Ping": 2
     },
     "nameservers": [
         "kip.ns.cloudflare.com",

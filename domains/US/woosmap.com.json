@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000249,
-    "sites": 36,
+    "prevalence": 0.00027,
+    "sites": 39,
     "subdomains": [
         "recommendation-js",
         "api",
         "sdk",
+        "data",
         "stage-sdk"
     ],
     "cnames": [],
@@ -49,7 +50,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "4a467a90feee19e8abc3a15ef0894dad0468c57e5c3b059e8e65f780244885a2"
@@ -64,6 +65,31 @@
             ]
         },
         {
+            "rule": "woosmap\\.com\\/map\\/map\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "URL.createObjectURL": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a3f2f4135ad09c7d0c7d5cb56848dff8ec74ddd42090e42fad44810f6dfa1ff2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "royalmail.com",
+                "postcodefinder.royalmail.com"
+            ]
+        },
+        {
             "rule": "woosmap\\.com\\/localities\\/localities\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -71,8 +97,8 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
                 "32231beec2de5087d68fae378d5be1adb0c4926e59e754c279f5a6b63956f305"
@@ -87,7 +113,8 @@
                 "www.doveconviene.it",
                 "www.electrodepot.fr",
                 "www.goldsmiths.co.uk",
-                "www.hollandandbarrett.nl"
+                "www.hollandandbarrett.nl",
+                "www.leroymerlin.it"
             ]
         },
         {
@@ -99,7 +126,7 @@
             ],
             "apis": {},
             "sites": 10,
-            "prevalence": 0.0000691,
+            "prevalence": 0.0000692,
             "cnames": [],
             "responseHashes": [
                 "8de395d2c6b724b52e90a2fd5e74a5d6333f26297e3bf573ab02d1e69eb89da6"
@@ -110,10 +137,10 @@
             "exampleSites": [
                 "apollo.de",
                 "www.calzedonia.com",
-                "www.halfords.com",
                 "www.howdens.com",
                 "www.hss.com",
                 "www.intimissimi.com",
+                "www.praxis.nl",
                 "www.tezenis.com",
                 "www.toolstation.com",
                 "www.toolstation.nl",
@@ -145,28 +172,6 @@
             ]
         },
         {
-            "rule": "woosmap\\.com\\/stores\\/search\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "29239d215a079300b9f09e3cea10e0f690b1dc8b28a9142f9c4b4d670defed4c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "decathlon.it",
-                "www.decathlon.ro"
-            ]
-        },
-        {
             "rule": "woosmap\\.com\\/locator\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -184,8 +189,53 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "e.leclerc",
+                "decathlon.co.uk",
                 "www.e.leclerc",
+                "www.hollandandbarrett.nl",
+                "www.howdens.com"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/locator\\/1\\.4\\/locastore\\.nojquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f22f944b722a9692f82a9db969591141472fd3be0ac42fe1a5bcc6b160ed0a88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.co.uk",
+                "www.howdens.com"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/position\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "aa9642f83ea7f9a0e7ec128d8c14e234ff45abc6c5adba6ed63e5e24c37ec263"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.co.uk",
                 "www.hollandandbarrett.nl",
                 "www.howdens.com"
             ]
@@ -240,8 +290,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 25,
-        "XHR": 9,
+        "Script": 33,
+        "XHR": 7,
         "Preflight": 2
     },
     "nameservers": [

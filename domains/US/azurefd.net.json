@@ -4,17 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0013,
-    "sites": 188,
+    "prevalence": 0.00131,
+    "sites": 190,
     "subdomains": [
         "consentdeliveryfd",
+        "consentdeliveryfd-int",
+        "fps-prod-na-frontdoor.z01",
         "origin-dwww-prod",
         "p2pcontent-fd-prod",
-        "adacb2cp",
+        "lwpixel",
         "greatlakesapi",
         "nelnetapi",
         "ocpa-mainsite-afd-standard",
-        "fps-prod-na-frontdoor.z01",
         "func-app-frnt-door-prem.z01",
         "affordablehousingequinix",
         "xp-prod-aveloair-com",
@@ -24,13 +25,11 @@
         "prod-cms-edinarealty",
         "waypoint-content-prod",
         "hbpulse",
-        "hbham-prod",
         "voilaloginseconnecter",
-        "lwpixel",
         "sd-tagging",
-        "prdnwgraph",
         "ouigo-p-window-sales-fd-01",
         "ouigo-p-window-data-fd-01",
+        "popshelf",
         "rtapi-prd",
         "cep-apim-fd-prd",
         "vivaairfd"
@@ -53,6 +52,10 @@
             "resolved": "prod-cms-edinarealty.azurefd.net"
         },
         {
+            "original": "api.popshelf.com",
+            "resolved": "popshelf.azurefd.net"
+        },
+        {
             "original": "api.vattenfall.nl",
             "resolved": "cep-apim-fd-prd.azurefd.net"
         },
@@ -63,14 +66,6 @@
         {
             "original": "book.aveloair.com",
             "resolved": "xp-prod-aveloair-com.azurefd.net"
-        },
-        {
-            "original": "graph.nationwide.co.uk",
-            "resolved": "prdnwgraph.azurefd.net"
-        },
-        {
-            "original": "login.adac.de",
-            "resolved": "adacb2cp.azurefd.net"
         },
         {
             "original": "media.drinkaware.co.uk",
@@ -113,18 +108,19 @@
     "resources": [
         {
             "rule": "azurefd\\.net\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.000422,
+            "cookies": 0.000367,
             "fingerprinting": 1,
             "subdomains": [
-                "consentdeliveryfd"
+                "consentdeliveryfd",
+                "consentdeliveryfd-int"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 9,
                 "Document.cookie getter": 9,
                 "Document.cookie setter": 9
             },
-            "sites": 63,
-            "prevalence": 0.000436,
+            "sites": 62,
+            "prevalence": 0.000429,
             "cnames": [
                 {
                     "original": "wcpstatic.microsoft.com",
@@ -139,8 +135,8 @@
                 "MSCC": {
                     "ttl": 86401,
                     "length": 2,
-                    "prevalence": 0.00020049224302425264,
-                    "uniqueness": 0.034482758620689655
+                    "prevalence": 0.00018678399468703303,
+                    "uniqueness": 0.037037037037037035
                 }
             },
             "firstPartyCookiesSent": {},
@@ -151,20 +147,188 @@
                 "social.msdn.microsoft.com",
                 "social.technet.microsoft.com",
                 "support.microsoft.com",
-                "games.msn.com",
-                "products.office.com",
-                "www.games.msn.com",
-                "blogs.windows.com",
-                "dev.azure.com",
-                "marketplace.visualstudio.com",
-                "forzamotorsport.net",
-                "www.support.xbox.com",
-                "powerapps.microsoft.com",
-                "support.xbox.com",
-                "account.microsoft.com",
-                "developer.microsoft.com",
-                "www.xbox.com",
-                "forums.ageofempires.com"
+                "news.xbox.com",
+                "www.minecraft.net",
+                "windows.microsoft.com",
+                "appsource.microsoft.com",
+                "forums.asp.net",
+                "www.answers.microsoft.com",
+                "cloudblogs.microsoft.com",
+                "account.mojang.com",
+                "devblogs.microsoft.com",
+                "social.microsoft.com",
+                "templates.office.com",
+                "techcommunity.microsoft.com",
+                "flow.microsoft.com",
+                "forzamotorsport.net"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/t1newfpsid\\/day",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [
+                "03bce6666c82449a7b826c952e310f38318ebcf3b84f2e2a7896e34c7d797dde",
+                "60588827928580129c09378ed1ed8e9e84de7247a6c0e2339ef2e59384637d91"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gt_uid": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gt_uid": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/tierdrop%7Ct1\\/day",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [
+                "07e796590f98db559a0e48e6ea248702be28004668fe12751c8c88f859309385",
+                "6f0913e155e6d5d47522cf68bf876ddef108ec514ee0192d8ede386b604d2e5c",
+                "24c75c6ea29505b68cc7d5b442c25f4dbf462e862f8f17e1031f90506ee39eb4",
+                "31d0b8d20078a53a77cd8504a550e5932c7cf578fd3f8c289fbcfe3a0676491b",
+                "d461afeedecd32a76bfcbcb31488703a70863736f5507a16b127d3b50e574f2c",
+                "eb7b830fd0c9b71825b5d8df3e82a37ecbe4fe3bb0ba5da806eee7a1f8ad9c47"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fps-prod-na-frontdoor.z01"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "shop.ford.com",
+                "www.fleet.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
             ]
         },
         {
@@ -1094,7 +1258,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9db93e73ad44bf0e07ab2af49a51ed40f7a3706ca706bf79a5db4ce5bf63b79b"
+                "903c2566fc9286f63a3dedd5862ea9332121ffdf37d09c7de6a3d8caa38c6789"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1116,7 +1280,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0d25a3ea6008067f2ec7213e511bfe9cf1e70994368ba105fdcd70f723f84e5a"
+                "f0db75bc5379000f7714fd45c8b12ff8bb12ead8b1cf17348cb18e250274f511"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1149,28 +1313,27 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/4f2d1cba-3420-443f-a69a-e55dcc3874f4\\/B2C_1A_SignUpOrSignin\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.0000138,
+            "rule": "azurefd\\.net\\/t\\/kcsteaks\\/",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "adacb2cp"
+                "lwpixel"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "login.adac.de",
-                    "resolved": "adacb2cp.azurefd.net"
-                }
+            "cnames": [],
+            "responseHashes": [
+                "a5e550ac5d78391b7a8b8938f8fde4f7c8f3a16eceb447098472ae82369f64d3"
             ],
-            "responseHashes": [],
-            "type": "Document",
+            "type": "Image",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013835851458298743
+            },
             "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
+                "kansascitysteaks.com",
+                "www.kansascitysteaks.com"
             ]
         },
         {
@@ -1186,7 +1349,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "514933c8f8579f0ea2f1ef5a98b79420e3bf90561ebbeaea72ec9ebea15c3e00"
+                "729dcf038c090405b686a4ed2b7d93be27dc9ef1cfea30b4b3c0e127a94817a6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1228,7 +1391,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4b89e52dcbe54272fb8e72cc020271ec77af4d894b351eb20a297398943aec6b"
+                "3701f3b9d5e4f93dd55b9baf56fdb4db53b6cdce18a39152a7b16bae6bfb79b0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1236,173 +1399,6 @@
             "exampleSites": [
                 "ocpafl.org",
                 "ocpaweb.ocpafl.org"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/t1newfpsid\\/day",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gt_uid": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/get",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [
-                "03bce6666c82449a7b826c952e310f38318ebcf3b84f2e2a7896e34c7d797dde",
-                "60588827928580129c09378ed1ed8e9e84de7247a6c0e2339ef2e59384637d91"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "gt_uid": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/insights\\/count\\/bytime\\/tierdrop%7Ct1\\/day",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [
-                "5b21e396224c5880a87648e0d8001d185e6b13e11df41187908ede8940bfd9dc",
-                "d957ec659bef9b2cfe44958cc15206e0f8bcc422ed55754b65e38c9ab32bb27c",
-                "7d92201fed3f25f4f6cd5da5524fd936551b6950d5964c37173011ef492bbb67",
-                "04e7e0dd7d83a045c0e5168f28124676aa8fd650292ee70ec78a98c658a73321",
-                "33eb6de83e14405e4433444b547b781034db8b8561cffb8ced9b126816e0709e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fps\\/api\\/personalization_1_8\\/set",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fps-prod-na-frontdoor.z01"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.fleet.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
             ]
         },
         {
@@ -1414,7 +1410,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "api-mktdev.solarwinds.com",
@@ -1473,6 +1469,556 @@
             "cnames": [],
             "responseHashes": [
                 "723ff39e5158d5cebb67d395da5f0afb24dfefcaeb0621bfc5f4fb7c3c3a92ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-signin\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "943758f344a6bc7ccaecbb25059a500d93fdad2f3e9f3fc4d72ba124670cd3a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-signup\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "30b19a2e096afbf64b5669ef83c4299281b73c679e8fa99fc627420daef2aca8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-ac-setting\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f108bc42c3ac16d53c5c651d583d4edb52ab2e6805753363a296dbc4ba6f4a5f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-my-app\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "726d504a5a6b4788e6709a77632f0b4f39798aa8863ab469ef43544680a5b3f4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-Inbox\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d788d560bd441efcdefaf7ab67a5c70f634e1b75f81c311f0793ec9d605c1c12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-waiting-list\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5a226a3cb2bf3bdcbafac23b5df385c0ec18fd70dc3263093bbedcc28f0a9df1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/update-application-icn\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff014e77492880b8f9dacdd73fa784768563f4d3fd8f76a9baa84d82b5773acb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-alert-preference\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b535f03065d88e4000bffb578c87231d2c35dd1808c16477531f86c6a56b3532"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-benefits\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "699c0424d4dafb81b7228665a0cda42a832aad521caf135647cf5121af3fa813"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/list\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a124fe6588a95fdff64368ae2c59a49338d0fd976071c2024f903f58d8dd69e5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/market-rent-benefits\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "97304d5078c620e00cd196dad8a6e8b9e73d7b3b681ac68d5512a23b7155703e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-home\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6806c6924548629aeadc1304e1246dd1c0a08d4c5594a13b666d37063d556a0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-dashboard\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2d8aa7983516643eda307c7322844a62186e78b9a7e2d1c718ba8be913658253"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-prospects\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "93080abf593b71b90b589f0a923fb0ffca10277b5fc1be96f899c060c205af28"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-listing\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6150645ea248152680d24b98a08a399ed4756cd7b368988ee3eac2918ae1daf1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-rent-estimates\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6e87df8217ccae9fe1622b84ebf7ca4b2d0ad0cf59448da5655862bf60396531"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-comparables\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff8ab7146ff096e61b7fcde3742ec908f38d64a032fd65acfe6918ce75df9bf5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-tenant-screening\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "445b40fd4b0b6150ae79d86f968b9006bbfbe9f628a6411aec06a9b45a58dccb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-faq\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8803edacf994ada7f4dcb565162b02b9d537b9a1cda5cdd18105ebf6f348285a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-terms\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cd8f3884797460007f34420b5937eadd43ef56a95fac0029147f8d11c68871e0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-about-us\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8145cf9b035efd0b0e516ad822be594d2f198bae0ed92392596b9aac85335dc9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-contact-us\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "71d1b6896b5cc21d1d69051b13bd1fc8ee29d77125e0b23e70e7b5ecfac49830"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-guide\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0579554efca2e826e7efab5b05cc54456bdee61cdd02acd2a50637a05bf893d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-privacy\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "79e24422b084584dd3404fccb6f80204d96a5c8446525844059ae7e769fcd9f9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-sign-out\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3186511c7a64a53aedb905e4fc93a321df458f58d0737cd306835b80cbf38ae9"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1637,72 +2183,6 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA035_263x169\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e27288f534d3f8990d7946114930c83b2216ac177ca79ec13042dd84b95f9538"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA019_263x169\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ec44b7246c4aed1222267e6f19b56ad27c3ab23d215225d10b5637248cb63a3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA028_263x169\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "77db00c5c0ec6d2faa6c70a8598b89d9f20a98409570851d2e0dbbd73f264c85"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
             "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ah-logo-wt\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1738,108 +2218,6 @@
             "responseHashes": [
                 "4f131388c1907ab2997ad1c3295a2ade80d98b03f208b907fae5fc488313b27d"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/back-btn\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/fb-icon\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/google-icon\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/duplicate-img\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0f4638076475b20c4e69b786b6202cd52ab8de80919dabfdaf0598ab9586d616"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "affordablehousing.com",
-                "www.affordablehousing.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/signup-home\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "affordablehousingequinix"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1885,6 +2263,446 @@
                 "4df28b1929946bd26c62db7bc901753ac171676e53b268adfc9b651006a34250"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-signin\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "943758f344a6bc7ccaecbb25059a500d93fdad2f3e9f3fc4d72ba124670cd3a9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-signup\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "30b19a2e096afbf64b5669ef83c4299281b73c679e8fa99fc627420daef2aca8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-ac-setting\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f108bc42c3ac16d53c5c651d583d4edb52ab2e6805753363a296dbc4ba6f4a5f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-my-app\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "726d504a5a6b4788e6709a77632f0b4f39798aa8863ab469ef43544680a5b3f4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-Inbox\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d788d560bd441efcdefaf7ab67a5c70f634e1b75f81c311f0793ec9d605c1c12"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-waiting-list\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5a226a3cb2bf3bdcbafac23b5df385c0ec18fd70dc3263093bbedcc28f0a9df1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-alert-preference\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b535f03065d88e4000bffb578c87231d2c35dd1808c16477531f86c6a56b3532"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-benefits\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "699c0424d4dafb81b7228665a0cda42a832aad521caf135647cf5121af3fa813"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/update-application-icn\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff014e77492880b8f9dacdd73fa784768563f4d3fd8f76a9baa84d82b5773acb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/list\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a124fe6588a95fdff64368ae2c59a49338d0fd976071c2024f903f58d8dd69e5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/market-rent-benefits\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "97304d5078c620e00cd196dad8a6e8b9e73d7b3b681ac68d5512a23b7155703e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-home\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6806c6924548629aeadc1304e1246dd1c0a08d4c5594a13b666d37063d556a0a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-dashboard\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2d8aa7983516643eda307c7322844a62186e78b9a7e2d1c718ba8be913658253"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-faq\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8803edacf994ada7f4dcb565162b02b9d537b9a1cda5cdd18105ebf6f348285a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-terms\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "cd8f3884797460007f34420b5937eadd43ef56a95fac0029147f8d11c68871e0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-about-us\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8145cf9b035efd0b0e516ad822be594d2f198bae0ed92392596b9aac85335dc9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-contact-us\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "71d1b6896b5cc21d1d69051b13bd1fc8ee29d77125e0b23e70e7b5ecfac49830"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-guide\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0579554efca2e826e7efab5b05cc54456bdee61cdd02acd2a50637a05bf893d7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-privacy\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "79e24422b084584dd3404fccb6f80204d96a5c8446525844059ae7e769fcd9f9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/ic-sign-out\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3186511c7a64a53aedb905e4fc93a321df458f58d0737cd306835b80cbf38ae9"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1959,6 +2777,182 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/back-btn\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1620e3882212a87b5604aeab50bfbb1eef6e756ccd9def01c2bdd16fd858eacb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/fb-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "eca7c1e52dc55f87b4bc15e4d702afde0f368401d7256e0f4d68d03358db3a29"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/google-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7237aec7125b791d4caac5a39b2c6a3117688a01664732eb23ee3b1c6097fb50"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/duplicate-img\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0f4638076475b20c4e69b786b6202cd52ab8de80919dabfdaf0598ab9586d616"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/AffordableHousing\\/signup-home\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "23b82791f301351c5a69198f6a242e190e4669ae7a8c13c626d8e66a874f1e88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA035_263x169\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e27288f534d3f8990d7946114930c83b2216ac177ca79ec13042dd84b95f9538"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA019_263x169\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ec44b7246c4aed1222267e6f19b56ad27c3ab23d215225d10b5637248cb63a3d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/Images\\/HA\\/Logos\\/263x169\\/VA028_263x169\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "affordablehousingequinix"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "77db00c5c0ec6d2faa6c70a8598b89d9f20a98409570851d2e0dbbd73f264c85"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "affordablehousing.com",
+                "www.affordablehousing.com"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/criteria-only",
             "cookies": 0,
             "fingerprinting": 1,
@@ -1974,9 +2968,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "db76355e1b83f2fe423da5e5606dac45c2ef910f4773e8f1519e331210081bd6"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2001,9 +2993,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "ae4f2e7beffe1c3e84a264f7c5b75f5d955fa9d1cc8decd27687bb31e81d0b34"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2013,7 +3003,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/app\\.3b1a9495eb3d6c37f9be\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/app\\.426d4e1343ffdbc4cade\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -2028,9 +3018,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "cd562da076ecdcad7c45d386069dce2396a65d016c9b14d444c63e3a09897000"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2040,7 +3028,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/app\\.d0536b7ab96c397b5a8c\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/app\\.075a6820811abf978551\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2055,9 +3043,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "54861046328e2d7127759c92f9125d3cc0991860b7cf4f0fc61c38cfd2e44ae5"
-            ],
+            "responseHashes": [],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2082,9 +3068,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "39acfb2d32dc76d8c6d88f0d297f8a40261fcc001aee1a1d392015b3a7c69695"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2109,9 +3093,7 @@
                     "resolved": "xp-prod-aveloair-com.azurefd.net"
                 }
             ],
-            "responseHashes": [
-                "86ded19e6cc9a5c1a3a5edac6c0fe7a1c26705f2c5c5c569ddc1a14e2fd12906"
-            ],
+            "responseHashes": [],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -2121,7 +3103,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/72\\.eca188ddc51b75bd008b\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/71\\.eca188ddc51b75bd008b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2148,7 +3130,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/72\\.ac3ed7be31a038809feb\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/71\\.5a5f57f33fc536159b02\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2164,7 +3146,7 @@
                 }
             ],
             "responseHashes": [
-                "f6c3807527f102fb83a69d139cf4e658d92088dc4ff044b5e108752359c3530e"
+                "fe24c2ea2ea4b9b09d73d90f96d66862a760d6d795399124fbb51c0c108e04f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2191,7 +3173,7 @@
                 }
             ],
             "responseHashes": [
-                "d41a071916fcc225b0d5d25ff77444183e7a324b4a9cea23d4a4d75792449ba9"
+                "40f0b002efb77627e492b3cbc40eb83ce360ca627f922a4a07b10ee3e0e86dea"
             ],
             "type": "Other",
             "firstPartyCookies": {},
@@ -2218,7 +3200,7 @@
                 }
             ],
             "responseHashes": [
-                "db76355e1b83f2fe423da5e5606dac45c2ef910f4773e8f1519e331210081bd6"
+                "6a421363b7c823303d7dc72153fbcfa382347d53879993141b99f14211a571b9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2229,7 +3211,61 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/10\\.a66d5e16c4443c9df1d6\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/10\\.618a42de6cbc745795ef\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "27fecaa00cb7ea3c674a27761e19d20f4f1616f433abcaa597c57066ecd536f1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/11\\.212fa20f2501379c1d02\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e540fdb695a16c6a97cc579885610b0ae766ec09c69e696c97e036932e26f91f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/12\\.a66d5e16c4443c9df1d6\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2256,7 +3292,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/11\\.098f1ad89331e1c41d73\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/13\\.098f1ad89331e1c41d73\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2283,7 +3319,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/12\\.a9f30f8793e83bf6daba\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/14\\.a9f30f8793e83bf6daba\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2310,7 +3346,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/13\\.b4c34976cfcb96d6355c\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/15\\.b4c34976cfcb96d6355c\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2337,34 +3373,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/15\\.016c69c1ee0dcbad8bdd\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "161b7e0ab5c97f967200952f9d06aa4b4b5348b274b7e628de739bcaf172dc62"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/16\\.2d386753bcde4a94bfa2\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/17\\.2d386753bcde4a94bfa2\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2391,7 +3400,34 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/17\\.f9f00e70cac9af6ef857\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/18\\.2b1a2d2f21ca491ccc05\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "19b476d9d98bdfe69a37e7b0584c469bd0627f6b0b95686a15f61f083de14d47"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/19\\.f9f00e70cac9af6ef857\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2418,7 +3454,34 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/18\\.03f3f245f9bb08893bb5\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/2\\.26289f78744567ab2ce3\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "508f241df16db115e2912bd6f06a1912cf737923e0e73ffbde669b581e9da0c8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/20\\.03f3f245f9bb08893bb5\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2445,34 +3508,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/2\\.035248379722972a20f5\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "c4f4797ebac4e3a78ce6cfbad9b946a0e5fa0743b910230290687f349f3dc5cd"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/20\\.10258b5fabdf0284d6c3\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/22\\.10258b5fabdf0284d6c3\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2499,7 +3535,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/21\\.1abd5d8f679ba29e3aed\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/23\\.1abd5d8f679ba29e3aed\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2526,7 +3562,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/22\\.d308c155fd83005b9762\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/24\\.d308c155fd83005b9762\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2553,7 +3589,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/24\\.6a06091bb343e0eacbcc\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/26\\.6a06091bb343e0eacbcc\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2580,7 +3616,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/25\\.3bceb5786fa31a8eb375\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/27\\.3bceb5786fa31a8eb375\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2607,7 +3643,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/27\\.f5821a31068fa45e8a76\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/29\\.f5821a31068fa45e8a76\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2634,7 +3670,34 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/28\\.665e06ccee0ac12e252b\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/3\\.55f7b51a10ec567eb300\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e11de122854b9c10146db80d62470f0efe173ad5b15cc6e85b78195c763df504"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/30\\.665e06ccee0ac12e252b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2661,7 +3724,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/29\\.2079121fbe4976145572\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/31\\.2079121fbe4976145572\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2688,34 +3751,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/3\\.e7f1dfd5a039a583918b\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "e0b9f430308f1277a954c3451fb5f2280f80b3b640fac2041ef7834ab9d399d0"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/30\\.2f101709ac4ca1ab9b7a\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/32\\.2f101709ac4ca1ab9b7a\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2742,7 +3778,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/31\\.ade924c70763465df270\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/33\\.ade924c70763465df270\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2769,34 +3805,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/33\\.fffa3728c33232122650\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "d7952265479b45234fd91d491bd623523aada06f0254a56ac4e07855b9b211fe"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/34\\.aeff6045b37bef6ca9f5\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/35\\.aeff6045b37bef6ca9f5\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2823,7 +3832,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/35\\.abf4b4565f257a29d1e6\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/36\\.abf4b4565f257a29d1e6\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2850,7 +3859,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/37\\.b14eb8054729d3fe8654\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/38\\.b14eb8054729d3fe8654\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2877,7 +3886,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/39\\.3339cdc892c3ecfc1275\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/4\\.e7f1dfd5a039a583918b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2893,7 +3902,7 @@
                 }
             ],
             "responseHashes": [
-                "c80f18aa723dc711c1e457861fb43eb0c6dfeedb24f3f84f39a68a2f1d6fe503"
+                "e0b9f430308f1277a954c3451fb5f2280f80b3b640fac2041ef7834ab9d399d0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2904,7 +3913,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/4\\.6d61c1896ebc2ca89621\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/40\\.d742ab06d0de5fefda05\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2920,7 +3929,7 @@
                 }
             ],
             "responseHashes": [
-                "70b32b3dea27d22c71fa14b072a0d213d391f92de438cc07cedde2d7a8afa5fd"
+                "3a8261da18e86b1ca0725f61d3f1509424b81238571a9df15ff76b20b2cb9ec4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2931,7 +3940,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/40\\.e57ddd34af6541c00309\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/41\\.e57ddd34af6541c00309\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2958,7 +3967,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/41\\.4637205df22f6f6f0998\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/42\\.4637205df22f6f6f0998\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2985,7 +3994,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/42\\.a174bed660818cca2662\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/43\\.a174bed660818cca2662\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3012,7 +4021,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/43\\.c04c07f80413c6aedf57\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/44\\.c04c07f80413c6aedf57\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3039,7 +4048,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/44\\.b9b00cd81eacccdf61e3\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/45\\.b9b00cd81eacccdf61e3\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3066,7 +4075,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/45\\.e6ca6bf790694abfda05\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/46\\.e6ca6bf790694abfda05\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3093,7 +4102,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/46\\.4baafd5b9b9a9e4c8ea5\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/47\\.4baafd5b9b9a9e4c8ea5\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3110,33 +4119,6 @@
             ],
             "responseHashes": [
                 "25bbefdc5309e2390e23919e73554e51aa0fbc5f4254f37b50f335cbe6afd6e2"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/47\\.dc52a5d0b7b020798feb\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "5ec05cdc8c3eb9dded01f826526bef019af1c069c960683f08face9e21bdf977"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3174,7 +4156,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/5\\.fb56da17182e18df2142\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/5\\.6d61c1896ebc2ca89621\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3190,7 +4172,7 @@
                 }
             ],
             "responseHashes": [
-                "15aabfedd7e93d87a5dcd055bec09bfd41407a96e54ad1e568b19feb01c7275d"
+                "70b32b3dea27d22c71fa14b072a0d213d391f92de438cc07cedde2d7a8afa5fd"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3309,7 +4291,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/54\\.2b3ba5e80b3688edeb2d\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/54\\.55e0a6040ed7822c3f19\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3325,7 +4307,7 @@
                 }
             ],
             "responseHashes": [
-                "21ab8bd4298abf9fc63d044e3e6e5fb82df24736629e7546eede7e9ce9a505a9"
+                "d61ac84e3203437098d6efb7d4bff251a14b5525a00f868911aeef3a279d1a99"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3417,61 +4399,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/58\\.3be0aed8ad77d07c4da0\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "a13e27e423763c37e06f87ad8f2f084088701b5c1cc05d1713a79a08b467b41d"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/6\\.8749271f001676772eef\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "3baf5ef967ae5602ba2e1bacc3566554a401e125cfa3fa95605149aa22ba1900"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/60\\.a51d0c2230aa269ef2d5\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/59\\.a51d0c2230aa269ef2d5\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3498,7 +4426,34 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/61\\.8e6361b54314a26afbc9\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/6\\.fb56da17182e18df2142\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "15aabfedd7e93d87a5dcd055bec09bfd41407a96e54ad1e568b19feb01c7275d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/60\\.8e6361b54314a26afbc9\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3525,7 +4480,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/62\\.f9de0bd01849aa80bd30\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/61\\.f9de0bd01849aa80bd30\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3542,6 +4497,33 @@
             ],
             "responseHashes": [
                 "b62966130e275f56c5a229a5fcad059d7c400780e02f7f92a5f87b589c7f1a5f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/62\\.b7608eab609970a5ac25\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "b4ab495d816d1dc82d33f92c1a797c8f81b6adf4849f36eb0daf98911797adb1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3579,34 +4561,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/64\\.b7608eab609970a5ac25\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "b4ab495d816d1dc82d33f92c1a797c8f81b6adf4849f36eb0daf98911797adb1"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/66\\.1d50639921696f8936d6\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/65\\.1d50639921696f8936d6\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3633,7 +4588,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/68\\.84e950eff95630c3a90b\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/67\\.84e950eff95630c3a90b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3660,7 +4615,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/69\\.82f56a07b2515c0f227b\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/68\\.82f56a07b2515c0f227b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3677,6 +4632,33 @@
             ],
             "responseHashes": [
                 "95e459890f6d360264f0f5777a285fa8e1f9bba82deec5811e24dc81522d0cd3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/69\\.7b797b0850cc41c66026\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "287cd3ae734ee42da2e9b63520e5ed85df429c139ebfb9b1b41f4ffb218bfdd8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3714,34 +4696,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/70\\.7b797b0850cc41c66026\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xp-prod-aveloair-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "book.aveloair.com",
-                    "resolved": "xp-prod-aveloair-com.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "287cd3ae734ee42da2e9b63520e5ed85df429c139ebfb9b1b41f4ffb218bfdd8"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aveloair.com",
-                "www.aveloair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/static\\/css\\/71\\.0a2f9a8792f509408b1a\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/70\\.0a2f9a8792f509408b1a\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3768,7 +4723,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/72\\.eca188ddc51b75bd008b\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/71\\.eca188ddc51b75bd008b\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3795,7 +4750,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/73\\.5c20a6297e75b5151fc2\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/72\\.5c20a6297e75b5151fc2\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3822,7 +4777,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/74\\.e26f58ec7491d66b762a\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/73\\.e26f58ec7491d66b762a\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3849,7 +4804,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/75\\.28673362ecf5f411eb44\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/74\\.8fd4ba8cdae836b9e2ab\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3865,7 +4820,7 @@
                 }
             ],
             "responseHashes": [
-                "0f193b17872e713391cadb735af514cd161158a651e42000da93af397da33547"
+                "a39901f9f9ba065558156ece40a0bc92e13d9fff477364f8325f6b973dc15271"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3876,7 +4831,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/76\\.c2dfeb6117469eb20d39\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/75\\.c2dfeb6117469eb20d39\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3903,7 +4858,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/77\\.6295516a8d04ea851246\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/76\\.6295516a8d04ea851246\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3930,7 +4885,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/79\\.e4963523590671781913\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/78\\.e4963523590671781913\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3984,7 +4939,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/81\\.4301e20e2a9b09953e1f\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/80\\.4301e20e2a9b09953e1f\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4011,7 +4966,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/82\\.883ba796580a92174d83\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/81\\.883ba796580a92174d83\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4038,7 +4993,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/83\\.8a29ffbba6a6b571cb6a\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/82\\.8a29ffbba6a6b571cb6a\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4065,7 +5020,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/84\\.0285509679116a2918be\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/83\\.0285509679116a2918be\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4092,7 +5047,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/86\\.9b4dd2a3fb1d9d9a4720\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/85\\.9b4dd2a3fb1d9d9a4720\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4109,6 +5064,33 @@
             ],
             "responseHashes": [
                 "f0996639490a40b5b25997d1d798f239a9ae4f4123e2442e7b774e2207dac398"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aveloair.com",
+                "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/static\\/css\\/86\\.a554213adf31e95b6548\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xp-prod-aveloair-com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "book.aveloair.com",
+                    "resolved": "xp-prod-aveloair-com.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "0de15444d4a971b237177459b612c966fe8fd1c8ad1ccfe25dcf3de67952e5fb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4200,7 +5182,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/9\\.618a42de6cbc745795ef\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/9\\.8749271f001676772eef\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4216,7 +5198,7 @@
                 }
             ],
             "responseHashes": [
-                "27fecaa00cb7ea3c674a27761e19d20f4f1616f433abcaa597c57066ecd536f1"
+                "3baf5ef967ae5602ba2e1bacc3566554a401e125cfa3fa95605149aa22ba1900"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4254,7 +5236,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/css\\/app\\.d0536b7ab96c397b5a8c\\.css",
+            "rule": "azurefd\\.net\\/static\\/css\\/app\\.075a6820811abf978551\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4270,7 +5252,7 @@
                 }
             ],
             "responseHashes": [
-                "54861046328e2d7127759c92f9125d3cc0991860b7cf4f0fc61c38cfd2e44ae5"
+                "6cda04f9eb0158070ae76aa4fa6af5cb33531172eb0baefc45cbc4af641acc1e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4335,7 +5317,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/10\\.dfbcf318206d2c442f6e\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/10\\.e7cc3fe566e6c854a5c2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4351,7 +5333,7 @@
                 }
             ],
             "responseHashes": [
-                "99a3b0a18edeac31fc59f6b3c104f585d412c3e1b2f893a66a3680150f449462"
+                "2397af1571079eefda0422f34d59755b7e4511ab617748aa21e54fa24ba39827"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4362,7 +5344,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/11\\.e3c3319e0cf07d59ae9f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/11\\.47e9a121325401e1bc10\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4378,7 +5360,7 @@
                 }
             ],
             "responseHashes": [
-                "e6f51d3e64234aa588420e37eab1d92a998396cc12b019f163751b00c1989710"
+                "e307c28764aa3e63aff36d31dc3a90929b5d945b8e825da28f14937c963f6c15"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4389,7 +5371,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/12\\.24d6059cb6c0cda6218b\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/12\\.a7b9c25a1a115cf322e9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4405,7 +5387,7 @@
                 }
             ],
             "responseHashes": [
-                "8037d947e718d68e3bd8fed02d39bc0c02f360f89b317d1cd11f45c28d50abee"
+                "1349c72e312bf18002856bf5f0025017be4dc1fcbdf534a127367e1611b5a84f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4416,7 +5398,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/13\\.97fdd8d7dc41ae9eef69\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/13\\.36a1c00943a6d03e6ae8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4432,7 +5414,7 @@
                 }
             ],
             "responseHashes": [
-                "8a95cef2c5017b160a3922922c702013c4f5cf663b40482dfd9717468b25e0c2"
+                "18448f66328c9c97a842728417360fae0f4b5c565d51da09748270c6bccf5f8c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4443,7 +5425,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/14\\.bfd946136913181c0873\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/14\\.809592579ca07a88c7b8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4459,7 +5441,7 @@
                 }
             ],
             "responseHashes": [
-                "de0f49ba2abc4a6ac4abf9e897fd359aa5d6fdb9749fac653a22f4763d509a1e"
+                "28cf4afd659852f60793654fe87089e0fbafa64240d0efa7c8e73effa3cd0d69"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4470,7 +5452,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/15\\.977588282c4b72c17464\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/15\\.bb4904cfe0c5fb5ebe5e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4486,7 +5468,7 @@
                 }
             ],
             "responseHashes": [
-                "6672cbc73b27a958459f5d1bfda644def6009cb6afe2c20fa3366fc2e9edb4ad"
+                "00459404594394cdf7ce5f940bc48a9604a808232cd07fd6c695212a989db634"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4497,7 +5479,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/16\\.3f9a2bdad8741c8e58d9\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/16\\.1269648a01b40666d397\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4513,7 +5495,7 @@
                 }
             ],
             "responseHashes": [
-                "d7fc4d5e0e15f3085c17a4705e191cb0be385040dccaa85f5530a205263ffb8c"
+                "0b9e56abc65dd7315ef4da24ec3fa39f32896fde4b6c8c173a4a0daa83821d1a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4524,7 +5506,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/17\\.bc68bfced5319741d009\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/17\\.6049318abd32336b6a7f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4540,7 +5522,7 @@
                 }
             ],
             "responseHashes": [
-                "b3ace7c3442d9f4f0943d2754a22a213d7d61195475030af789bbf7197a9afbe"
+                "3b8adff16e5d5ae0af97b6985a735cdca97edf78e0329e79886853863e18531f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4551,7 +5533,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/18\\.c3322ba56c09f5d35728\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/18\\.8d3093f360b95a8cbf04\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4567,7 +5549,7 @@
                 }
             ],
             "responseHashes": [
-                "3574d9845b6e260607bf66f2d8ed3714977bfb657c2ad060363e3b2936f4ef47"
+                "d6e590afc6108c25961713554d86e989b61c0688a6aacf914dc8c6a6be39b4e3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4578,7 +5560,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/19\\.1bf6e4fc8519150d9fbe\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/19\\.a44af5650e43186c8be0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4594,7 +5576,7 @@
                 }
             ],
             "responseHashes": [
-                "10a022e42e38129cef428d86719c8693ee80e7c99b890f596a4a5f0daa42fb71"
+                "0c2811f76bc64871e58658c29095aea7881f0150b331ab32e8876c3fc661b402"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4605,7 +5587,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/2\\.1320fa04dc9a9af9bfd1\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/2\\.35c3d43866ab4faea0e6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4621,7 +5603,7 @@
                 }
             ],
             "responseHashes": [
-                "73245f51a4daacfe3a02de106f65236e1fd0b7c95dc7e27a2dcf1a853737a015"
+                "67302a26e277ad626ff11016d869132c7896bb29dd3e63b838d991a461bcdd3d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4632,7 +5614,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/20\\.82215e82af38054c66a9\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/20\\.e6f34bbeaf7bbfdea5a5\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4648,7 +5630,7 @@
                 }
             ],
             "responseHashes": [
-                "05c78a7bf5ba3578118e7d221b4f49361e9d11922415b1fd0d3abf90115a5180"
+                "2d4fea29fbf00cef70758c18fe3a54b1b61c4385f0f45997f45ff92d5d89987c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4659,7 +5641,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/21\\.0d4c7a2964f88a8f0be8\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/21\\.a9fd90ffc4be6b1ab08b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4675,7 +5657,7 @@
                 }
             ],
             "responseHashes": [
-                "7615a6c131699c2dc23f1cb91584cf8b6613bedc7543737a46d368487590d373"
+                "b93074b877cefffcab8ab485c26ec87d42419fbc6225f3722eb0dc25ee28c300"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4686,7 +5668,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/22\\.c40f5ce06ce6b81c318b\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/22\\.b9bb0463c565d02023f8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4702,7 +5684,7 @@
                 }
             ],
             "responseHashes": [
-                "b2f12d558c077fe53a0abe63683cc2c958472bdea2765982844403ff954d00d8"
+                "ad8a9b663de2f6df4a68358670afb21f1b61550f246c3941d8830f16924690a5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4713,7 +5695,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/23\\.1a0121d81414335ade0c\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/23\\.2c38cb5732125ea76e9f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4729,7 +5711,7 @@
                 }
             ],
             "responseHashes": [
-                "86a74117df2bd7256c911b6711ccc7e087b226e82ed20396ec185a806e482fb1"
+                "88a5bfd037e11ed6a14d98875dd64b8c20418cd9436e4b1526219985f844f60b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4740,7 +5722,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/24\\.df9273ec3916e42b7cf0\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/24\\.16b890b7d6fda6ff34f6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4756,7 +5738,7 @@
                 }
             ],
             "responseHashes": [
-                "02103e0bcf0594b0a4f889f0db391b6cd1ae940c51ce35ca3f31fc3a33572ccb"
+                "fff35b29db45d8b1ce75a91b8548f00093a345c52d18453c3e11f45d469652ec"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4767,7 +5749,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/25\\.6e863310d2f1ad40582f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/25\\.5622942c73d2ce663c9a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4783,7 +5765,7 @@
                 }
             ],
             "responseHashes": [
-                "758fbe322be77024bc282e451cf8099faaae56ca088c63c9ed57824987b0beb9"
+                "2ef53fd5efde451a7c58d9b015f92ce1d57b809617daef79e23ec7ed591fb07b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4794,7 +5776,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/26\\.c48d3198bfc37ceaa119\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/26\\.0d200324c5eec80cf4d1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4810,7 +5792,7 @@
                 }
             ],
             "responseHashes": [
-                "f66828d8f6b74bd0a4ff55c9eb9beaba6385cd22ad53d00ee6171a268fc56c8c"
+                "99a3acf119a3101bb1ad369c498d3c2ea682514ec43e1055195da3164a16c439"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4821,7 +5803,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/27\\.6c6b48f3ab67a381a5c0\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/27\\.22ea3f9f98a75d93d78c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4837,7 +5819,7 @@
                 }
             ],
             "responseHashes": [
-                "42dc0a7fe85c30cd490aeebd79a58377694952278b26a925664a0fab7ae63883"
+                "4a54028691a1471cc0766d12965d550b7a6ed366d2d5eb6bc071d14cb47bb06c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4848,7 +5830,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/28\\.27295e6dcbdac9a1408b\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/28\\.4bce782c74939bb7b5c1\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4864,7 +5846,7 @@
                 }
             ],
             "responseHashes": [
-                "0f1e544f94fb109c6958bad31c7d8117173af3d63e58cd39db3214e61fc36b6e"
+                "6a8f545cbb10ef9f979f4b2ffe0becfeaa0477dab748300337d260bf99ec0a33"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4875,7 +5857,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/29\\.9a6ad6a87c94ec33fc54\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/29\\.6a33010628e8ee49d62e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4891,7 +5873,7 @@
                 }
             ],
             "responseHashes": [
-                "e9780ceaaa15bbd9e4db3a486a2fcc94327f50d96eb6899ec95efc347bf9dd73"
+                "55b6d9c011396c0d5609d34778b8f50040a6ff437c323ca5117a8b9fb8db011d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4902,7 +5884,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/3\\.46bd0b6039358d3ade3a\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/3\\.77d1b9775bf6cc5d96c7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4918,7 +5900,7 @@
                 }
             ],
             "responseHashes": [
-                "49fc09323a5564f1dd5c95a8b27d1f14d878647e5b8bcce8eb6f2f4ec96f9acd"
+                "d603b66bd87b4ebbf301b120a0a1d1a2a6b7d2a9e6992fc65cf243ad3861d0d6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4929,7 +5911,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/30\\.38689f6da9ff1978f787\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/30\\.ea96cb323694b3f86b3c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4945,7 +5927,7 @@
                 }
             ],
             "responseHashes": [
-                "40f95231c97e9efea1f954e1f855b867f01e78432b64ac22cb0de23293af4c89"
+                "ad5610a4c0aabf437edca9ec77c0dc1bddb8010c8c2a346ca84884308e239c0d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4956,7 +5938,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/31\\.d356bfff41f18b93569b\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/31\\.5d41863eb3dcede351f7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4972,7 +5954,7 @@
                 }
             ],
             "responseHashes": [
-                "f19139c7734d77d0714c2af59cfc46fe61ff00014c9e2d75446129dc2b5cc687"
+                "186881b52c11beacb5c878187d22608874411eda703a26e0eb8b8fea3c7dfe6b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -4983,7 +5965,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/32\\.2843d2685565ebd24962\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/32\\.459d4a6126fe5cec5b3f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4999,7 +5981,7 @@
                 }
             ],
             "responseHashes": [
-                "bec9e1fbcd796dd1dd1f45ab22cb97b322c45fd259a7dbfc3675e31584318e4c"
+                "6af17e008459d532a449479af856628ca0f06e7ea42aa1e30199db9b7b23b4ca"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5010,7 +5992,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/33\\.68bb036a1ed6ef5b2137\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/33\\.403cd9abc904143e9ffe\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5026,7 +6008,7 @@
                 }
             ],
             "responseHashes": [
-                "74e814f320b68007aff505cc1c618c2270d6f60d73e4ae0a893a3202eec1a97f"
+                "c5a589e6cee247904dc7eda2ae75ea97e65ea67938e28a345f69f6b7170d5c84"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5037,7 +6019,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/34\\.0313534dbd3d7cbcb006\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/34\\.321e8ff202ada78218e6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5053,7 +6035,7 @@
                 }
             ],
             "responseHashes": [
-                "b4da0f0c85a44c708e1bc4eb68a028fc7d7151d1ccc075fe4f91e979e0ac8928"
+                "2de92436cbd6cc5fc1f94ece74abd6d6e8f581250404b8105bc5dd9d8cdcd70b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5064,7 +6046,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/35\\.d1491940bea925c599e2\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/35\\.683796041e38fcccbac7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5080,7 +6062,7 @@
                 }
             ],
             "responseHashes": [
-                "e1c040f454426950e4d3227b7491ae53f2edd7f30630a6bcf69d700e576c1ef9"
+                "3aed9cbc72a7981b2505ee2da4c0ae7a869455ed07cc93855fff7b1cf30b4e2c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5091,7 +6073,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/36\\.bdd0195400a85f6bdfc4\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/36\\.1d89b82a6dade5938cff\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5107,7 +6089,7 @@
                 }
             ],
             "responseHashes": [
-                "fb876e0099af73598cd134df5af2667c7e90a7d9e2b6b0eee194822c5ca64e56"
+                "4160bdc3cdb49b941d4dae7682a7a0350dc3e0c56a902babc3f2caface2abebf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5118,7 +6100,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/37\\.349b17c60f32f6cd6b25\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/37\\.ba46d24a57d8cd70e62d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5134,7 +6116,7 @@
                 }
             ],
             "responseHashes": [
-                "303d05e1323c3500a5357b702af79e533816efc00d661d0d1ae66b3a39edf430"
+                "88efe56a214552a2b3da4b2d2f922fc735a61b7b218aa2b9c7683a89d94e557e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5145,7 +6127,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/38\\.c2d2914f4a651ff5d5ec\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/38\\.e9f6bf49494a89d1a10e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5161,7 +6143,7 @@
                 }
             ],
             "responseHashes": [
-                "dd3a22eecedd18aa9d09cba1aea2102b2378bd25a5537a2c58d65f14ac1310ef"
+                "353c29ca933c034c4b7a5d58bf90f349785457bc867c19743fbf11df36f149f2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5172,7 +6154,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/39\\.203d7189fd70eb3507f1\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/39\\.f3713e239e15e70e727d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5188,7 +6170,7 @@
                 }
             ],
             "responseHashes": [
-                "6f5c516994eddde32c3a028ec4138c46a13e4cf49b2d0404aa9e9bc87a28ad71"
+                "10a23273d688995e4562f83ac4a51f962e599be4c12ac957ddfba6c93ca1e990"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5199,7 +6181,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/4\\.053e039e9df904bbccee\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/4\\.d2ed74dc12ea9c2c15b2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5215,7 +6197,7 @@
                 }
             ],
             "responseHashes": [
-                "506a59ec61dbccfdc48dd18e8cd501ae3e562dbb0f6acc95f27955b6e4177fb2"
+                "c6242d989af87368b4f620f3429b87129a987e4db8e0fe2c2ed9a6c466c9bf2f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5226,7 +6208,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/40\\.06e83611d20dada4cde6\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/40\\.22beca204caeedd88254\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5242,7 +6224,7 @@
                 }
             ],
             "responseHashes": [
-                "f88bcf70b14212d1b98778ad6de3ba0402e2c6c001d8d4c5563b8c5a2ad7176d"
+                "32ab6eb5a035d3dcce8825c0dc58b7cc91a88e25eec5383a7fb86a27fec5ec75"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5253,7 +6235,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/41\\.84a654e94d5f22018e48\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/41\\.7cba056b7081c3db882a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5269,7 +6251,7 @@
                 }
             ],
             "responseHashes": [
-                "cc4f8e40789f289a29395b4de2d63be941dc77ff6d698e58c76b2c2e3b9dab21"
+                "d2177ddc5a3ef2d520bc85653bdc876a348536ecd1871256e2fa7a8da2731eac"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5280,7 +6262,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/42\\.5d8a08d2f1411d80e96e\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/42\\.6e678c96745619b9479a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5296,7 +6278,7 @@
                 }
             ],
             "responseHashes": [
-                "2095ae28b76834ba5c2fbc5c3ebc37b9b61a2ec5f7edf3626751cef04ea7d5ee"
+                "a567fa11615fa95026a3e70338c43a6b5c86829a99ded188149cf8fac99bf34c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5307,7 +6289,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/43\\.a1ad8f77c16d93048346\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/43\\.97c94515a3f3e16d8127\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5323,7 +6305,7 @@
                 }
             ],
             "responseHashes": [
-                "1dcc1a1d698ac3bcd12ea30073d58c876022d5b6357f2616813a77f0d13e661d"
+                "d38ac33c5f0401186378aeb482c17deb88b2b35fc5a6c51856c05de1c4bf942c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5334,7 +6316,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/44\\.5aaf3985a4987cda03ba\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/44\\.c4a979d5c3747bf5a44a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5350,7 +6332,7 @@
                 }
             ],
             "responseHashes": [
-                "77247efbd528214746f3dbb2dc2f6626b2f38e49a06088775449a386903c80b9"
+                "8d007fbfb569e2e15f125b60744e7ff0974fd6b7c0b6fd717d0180b5eb3f39f3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5361,7 +6343,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/45\\.a554ed565ced0f672e8e\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/45\\.1a87ea2afd6eb342c818\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5377,7 +6359,7 @@
                 }
             ],
             "responseHashes": [
-                "09f689e65de6529092ffac13f156cd0d9620ba4f96c85aa94f954b8c19ac5299"
+                "32fc81a70d15b0329148af7d0b4d5aae3592ad089e394d92c67c24ed2fcceee3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5388,7 +6370,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/46\\.bce7287086245c9563b4\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/46\\.1059c2e91d4801153a20\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5404,7 +6386,7 @@
                 }
             ],
             "responseHashes": [
-                "d1416d2b0cbc2019a623ec7746e477ee351b9062188e3dd0ef21c63aadc02b39"
+                "c7efff0486c03f0646f3d8d357754557a6c2049ba905f80593759d25a3105843"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5415,7 +6397,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/47\\.63e89513bb9b998e223f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/47\\.37d082ba0a29e84e08cb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5431,7 +6413,7 @@
                 }
             ],
             "responseHashes": [
-                "00849a3d92c21e54b418ddf899f9ec9bfb8e30f5a479a78c465aae73de453877"
+                "14105f7e7a800af81575daed00fd49ff4d804a1496a386514f7b77b371791b4e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5442,7 +6424,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/48\\.bf3cadeea7798d859f8d\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/48\\.48efa42a58429841d80a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5458,7 +6440,7 @@
                 }
             ],
             "responseHashes": [
-                "3f46d6edd1aee8142abb85ef6e11a6f8701fc9ddba0d87391608eca82fa5de86"
+                "8fe8fc9dfd518673f4a217f2e0b7d23a556afcd9fad0c46f019d7e656ea08c7e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5496,7 +6478,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/5\\.028bfbb80fc36383e785\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/5\\.f97f2f20c90dc472da07\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5512,7 +6494,7 @@
                 }
             ],
             "responseHashes": [
-                "8546cca26e0a842331c910e15edd74b0b9846397138b316191f028d5a6da4f7e"
+                "2505eb855fbab65ecf1b04f22577fa18fc0990be526d612a6cd05fbecc3aa4c5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5523,7 +6505,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/50\\.c759d5a1c3f21cd6d820\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/50\\.80d03bf03eb2d5df4837\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5577,7 +6559,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/52\\.778e532f1244a27c913f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/52\\.54a0fa9a21bcfa995290\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5604,7 +6586,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/53\\.448b2e73095cec672699\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/53\\.b71831e506b43770d03b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5620,7 +6602,7 @@
                 }
             ],
             "responseHashes": [
-                "25fcead73c4b4ca514916ee1c018ba52f091dd05ac03646fd3692941e3e65ad0"
+                "18dbc1368f7f8ae77879d5911204304b74d231892f371b15c948f707ec09d354"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5631,7 +6613,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/54\\.9fae9c51b21d8691b2c0\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/54\\.701c72d7c2e390025a13\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5739,7 +6721,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/58\\.2b95cb715bc4009dc395\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/58\\.3d2de5bd465196f072a6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5755,7 +6737,7 @@
                 }
             ],
             "responseHashes": [
-                "68f8fc85f3bf380f7b827a1398baf53cf9098d8e74525f0dd4ea1c36c168749c"
+                "075778d0717cfd3d88975dc2c3efdb3a59ca48aca64a61a253c8931faa964732"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5766,7 +6748,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/59\\.3e0fd3784b8c63ad596a\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/59\\.a3e275b4de71e7f8127d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5782,7 +6764,7 @@
                 }
             ],
             "responseHashes": [
-                "4ed97a44e714b21d0ccdf313c27fcba7ad988dc14f2b1e9f88e0fab86badfae2"
+                "c552276d8a0f642a5f2760be27860d4de772d3538b6955dffc35a245c1af5d72"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5793,7 +6775,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/6\\.1ba7dac6afbd04cea5f2\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/6\\.31c76e2ada38a82afc7d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5809,7 +6791,7 @@
                 }
             ],
             "responseHashes": [
-                "569b64c907d45f8f6823b0b66edb919665607c2709d8228115ac08102cf15ab5"
+                "2dbec5b01824a729b9b4cd7d83381aff4cba00ce805560cf6aa0188c0911eaf2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5820,7 +6802,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/60\\.ac2acd4daa4f0de7979a\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/60\\.fb43adc97ced9ee3a4f3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5836,7 +6818,7 @@
                 }
             ],
             "responseHashes": [
-                "197d81fa31b76e5fac9f48546a801ce10bd63f36273b4838e68711cb0dcecfad"
+                "b35b5b70666bf4061cc435f425e6609ac5e379b9f9eb01942ca2b522eb5a69a9"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5847,7 +6829,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/61\\.59eaba6329da1d40d7fe\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/61\\.f75382c0ef90d57d234d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5863,7 +6845,7 @@
                 }
             ],
             "responseHashes": [
-                "72007fcf6258c8bc7bd7b7292e12ed051e907653ee0da948c10e8ddfdd1458f9"
+                "0cfef5175d22c87350d3d60d984a1419dc6753710a783d24802bf18dac7a35b8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5874,7 +6856,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/62\\.32751d9683eb4c0e6a53\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/62\\.bb5ca817d432a7f157ad\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5890,7 +6872,7 @@
                 }
             ],
             "responseHashes": [
-                "67185d5b147912fc9bdd60842fdfcec035bd00e4822b82296946b79b4e346502"
+                "2896567511ecd5f9878c1acd89973a85d3a5dc032ff817e4e5ebd00acfce80d6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5901,7 +6883,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/63\\.cc1bd7d205bc4b2d0754\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/63\\.3c8deab5ec029e736ed0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5917,7 +6899,7 @@
                 }
             ],
             "responseHashes": [
-                "04a633fb3d468e2d5708ca2cfa262cb04a3aab69f41dadc6419c265799c0ca50"
+                "94fc118d5229b266918512716e6fb0b49ef97fcad7232300c88b1edf5ec19492"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5928,7 +6910,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/64\\.1a43a37c3a55d43bbb3a\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/64\\.bd6b4977a60a1e05044b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5944,7 +6926,7 @@
                 }
             ],
             "responseHashes": [
-                "6ecb062e9c4894196153a84216390422dacf629e8fa3a6bdc29ad1e27ab90d9a"
+                "e4d92a15bd30d55cd0b7ba52f5be113cd3afb848919cdf25f3dc7f354a3f6aec"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5955,7 +6937,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/65\\.bdf0eb893afbe444b305\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/65\\.a362d1771a0b16193460\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5971,7 +6953,7 @@
                 }
             ],
             "responseHashes": [
-                "da381eaecf9c88ddde9a7499b7b1f24874ef7a3b41d50157d8ebd7729b3e5301"
+                "154d273e4059ae6c6cf400915852711854e1beff0e267469aef511da2596c2e2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -5982,7 +6964,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/66\\.8b71ee3ff17063414285\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/66\\.d7979a0e0ae02d7a3e01\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -5998,7 +6980,7 @@
                 }
             ],
             "responseHashes": [
-                "a1f625395c3a26de242109ab1f6a99650c05f0f9f2f616cdfbe4ed5b0c4a5bad"
+                "780352217bea9963e80a2cdd0ec5a04904c7a38f321d485f0646eb12d48ae34c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6009,7 +6991,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/67\\.cc2ac22a765b105727e1\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/67\\.6b453130ebc15b25d53b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6025,7 +7007,7 @@
                 }
             ],
             "responseHashes": [
-                "fea0c0d4be15d4183a2212ec4294b750d79a912afff9f1210fd92d0fd347362e"
+                "b60b9a985ffc88b3ed473681f139e27c6c429244298ca6f083b03f76cc308bcb"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6036,7 +7018,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/68\\.f4c394847d7cafd58df6\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/68\\.a7e903fa1cd0d4d4568e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6052,7 +7034,7 @@
                 }
             ],
             "responseHashes": [
-                "639b9c74cd3482b3bd551c93d32de46655c25cf56ba35d197dcc8558183b0440"
+                "d9f7ea2a6f8edbc398c8ec65ade64ddfab03d69494961cd9f292726ca58ec162"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6063,7 +7045,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/69\\.13366fa219dcf6f238f6\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/69\\.705f5067c253dc49e5d7\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6079,7 +7061,7 @@
                 }
             ],
             "responseHashes": [
-                "8b3acee28f38b8c1e2298a1754aa0c785332a1cef5838ca689955d49a1c893f7"
+                "c09304c43eccec7c81f48b4cfd749a0116204a2300e2b338f6d2afe8549fa8e3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6090,7 +7072,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/7\\.045397dc0d2e26ed91e9\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/7\\.f09478e09fb6cf5cec69\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6106,7 +7088,7 @@
                 }
             ],
             "responseHashes": [
-                "bcf7fc5aaf3c1663e22289a6cd3007c9d5924c905e9bd6a97d848290102b6bb4"
+                "7561a4c77864eb33a21f4886004ef3a87e6cac3be81cdf6c1a8ba7ef4e817dd3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6117,7 +7099,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/70\\.9db5ae51bd61af9a756e\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/70\\.30bbe07df11bccc17d90\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6133,7 +7115,7 @@
                 }
             ],
             "responseHashes": [
-                "0b7d1ae44be7b1e0bc5e6ab8f70973d0c8333476b682232f4d49cf2c364b6000"
+                "271431e34fd3fe368c1bf25c08cadde31d8b1c2dfdd28fd22402ef8f27270dc6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6144,7 +7126,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/71\\.8540b443b7db5b19b7b8\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/71\\.5a5f57f33fc536159b02\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6160,7 +7142,7 @@
                 }
             ],
             "responseHashes": [
-                "c384deb38e091e1cf51ff977201452edf36f6d4c83d52a3c1dbb5e5cf6e59819"
+                "fe24c2ea2ea4b9b09d73d90f96d66862a760d6d795399124fbb51c0c108e04f2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6171,7 +7153,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/72\\.ac3ed7be31a038809feb\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/72\\.26a1fc5fc4bbbec93650\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6187,7 +7169,7 @@
                 }
             ],
             "responseHashes": [
-                "f6c3807527f102fb83a69d139cf4e658d92088dc4ff044b5e108752359c3530e"
+                "ec4ffdb96e4bdc980de44323e47562b875df01fecd0ac331f4de303c2af6eb7d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6198,7 +7180,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/73\\.06052a5f84835ee3398f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/73\\.48f95e14da7394d1b860\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6214,7 +7196,7 @@
                 }
             ],
             "responseHashes": [
-                "f36f0ed487fce684344015beb8a089bc7220abeab6373954a81c7caf408c4aeb"
+                "8f2f91426813be70349988bd5d2682755cb20492d1b711658ea1e6ec757ef417"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6225,7 +7207,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/74\\.ff9b04be1a8aa3d99431\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/74\\.dbec2f67eff54a65c566\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6241,7 +7223,7 @@
                 }
             ],
             "responseHashes": [
-                "e667b0783324c632a22c936a2a8e62a95aad16b2c76ebeb4c697a0d368f8d91e"
+                "c8c689a1d8ddd8139554af07d4fefaeafcf51d15464637763057eaa27f7778a1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6252,7 +7234,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/75\\.47724cd3290ae02389b6\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/75\\.3aaae09385e8d3700215\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6268,7 +7250,7 @@
                 }
             ],
             "responseHashes": [
-                "ae2b9bf924ce258f43648660448a0ccabe986d9a9b28a021a2a523ea9d72083d"
+                "eabbd942cafda44e24c055fba71660727bd356a01c3a1d674c84f165ff7afa52"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6279,7 +7261,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/76\\.ef11148d47575abd913f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/76\\.a4aaa62507205bf06d02\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6295,7 +7277,7 @@
                 }
             ],
             "responseHashes": [
-                "ce2a45b39f52e21d5f727889e4d210f05a3ebf22676473c6782c78a62e715a14"
+                "282f5e1fa25963c55bbc5fb053f344734ffd93fe6cdd4a2e13faafee2afff16b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6306,7 +7288,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/77\\.cf3a2d8eb9b76588ec15\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/77\\.52c4100820180f707129\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6322,7 +7304,7 @@
                 }
             ],
             "responseHashes": [
-                "7801bb7594691554cce3c9f236f2db8c65454b8271b8d4547557846562c79e48"
+                "922ed82b1ff4655fcf8f7e28a477c1e3f7363145d274c61a6726da5765ce480e"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6333,7 +7315,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/78\\.79af7aa77b8c1bb69be2\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/78\\.5197231514c532f98a35\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6349,7 +7331,7 @@
                 }
             ],
             "responseHashes": [
-                "174225649e5c1ddbed24a4ef2b779e7961c62f2bc73c1d89d6586a9a6f7602c6"
+                "b98709837dcd788998f62b3b28d73ed4c7309991e333152b15da868fb86b9660"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6360,7 +7342,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/79\\.4645ae923240aac7dfc7\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/79\\.c0ddf41bc889183676c8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6376,7 +7358,7 @@
                 }
             ],
             "responseHashes": [
-                "4d98c6c9c0e8736753cf2e4c817178d867cb9759bb46712e7d1a4e5dfd95ddb2"
+                "4f496dbe6b21c1fe9abbf94247209aae157d59ab3e08578a7caec1389a56365d"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6387,7 +7369,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/8\\.da3a33142e659a775d75\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/8\\.cfa3e55313c86b1a3b85\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6403,7 +7385,7 @@
                 }
             ],
             "responseHashes": [
-                "7f1b8820fe4404f6f478294d2dc9c1966130fb4c7a53324c4a55737bfde3bb3b"
+                "535758d933c1809bb2f155758ccfe5b65792996b16186e66fb3014aa4479f4b8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6414,7 +7396,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/80\\.563a4951aab335bf205c\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/80\\.69fd105a9cc56c0b40cb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6430,7 +7412,7 @@
                 }
             ],
             "responseHashes": [
-                "cede9483741d27aa5d55a5fc125dc4bc7023ab1dd39ae8ff8bed128a6cb8176c"
+                "e61e61544a54e08bdc96c27fddd60c3e330bd7f4faee9acd7936692c0bc76c9f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6441,7 +7423,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/81\\.c86d6451680ff5ded09f\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/81\\.be2a55c2bb8baa5c5134\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6457,7 +7439,7 @@
                 }
             ],
             "responseHashes": [
-                "c46285fb3013b71b0bdc6d0c6dd2c7b804293ef6df5a8abf2ab45a82a98e965b"
+                "cae8b1dd359fdeeb8ab5a29ccc57f3c7bb8b2641299016bad5751df36ee6e4ad"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6468,7 +7450,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/82\\.43ff22919041c852f0c8\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/82\\.0c04de1ac36940dd61f4\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6484,7 +7466,7 @@
                 }
             ],
             "responseHashes": [
-                "8b52db69fda96542caa3e53bc37951977e26109e38fafb6a941a25269d24238f"
+                "01d6e49f02c7ddfdcb3be05929c0dee21b3d685eee092e263e16ee5b238253b1"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6495,7 +7477,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/83\\.72d1402ced7d7a8b95eb\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/83\\.3ad7091297fb8e339ce2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6511,7 +7493,7 @@
                 }
             ],
             "responseHashes": [
-                "19c6b1d66701298ce5f0fc2d5b155e12de311055a421c9a1cd6282d3b58b6e18"
+                "4f87cb69473ca05b1f662a9b65317ef65abd424c2930d82f68d5a5758cabbb75"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6522,7 +7504,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/84\\.bd66ee150e2ef7b10f55\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/84\\.c49e155a813db149d3d2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6538,7 +7520,7 @@
                 }
             ],
             "responseHashes": [
-                "04c108017ce0221cf943e088b3f56c7a4c623c2814bfee526df54ee05b8b354a"
+                "a9322d2c5dbd109b7645aabd932ce6119a2f9995c851d33b8a5d694add86477a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6549,7 +7531,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/85\\.05966b4f01a984da9e25\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/85\\.e7dec5ef8218ffd04322\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6565,7 +7547,7 @@
                 }
             ],
             "responseHashes": [
-                "d87cfa81144b84f1a84d71b024990e7586810472a5b5556c49d330d63e77fa55"
+                "27c4658c14b9d145d66f180d950b6743a93bbf39c2b8f960dce708e3ad8ba5e5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6576,7 +7558,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/86\\.2f2fe8085bcb2f4e93f8\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/86\\.bc3ac4b40c535c7ace4b\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6592,7 +7574,7 @@
                 }
             ],
             "responseHashes": [
-                "b2ecc5c35661134a27637ffa41956e7bbc8bf80c6e6cff39ca00c50de0fd82ef"
+                "e60934680c3a0b0535ccd1478d8dcdea53e70ce21c69ccda2c6e06b49467ce75"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6684,7 +7666,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/9\\.eb28242824d18ea3011c\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/9\\.7f4c8ff3d01068902d3c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -6700,7 +7682,7 @@
                 }
             ],
             "responseHashes": [
-                "ae2010d01ddd81bfe2c575250f0cd0e32f533a040f4bf1a7e7307b0bcc37ed51"
+                "330309e78d300809fbccbd3dddd373d6359bbe01f1ec5bbf0496c7e6281db5ab"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6792,7 +7774,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/static\\/js\\/app\\.3b1a9495eb3d6c37f9be\\.js",
+            "rule": "azurefd\\.net\\/static\\/js\\/app\\.426d4e1343ffdbc4cade\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -6808,7 +7790,7 @@
                 }
             ],
             "responseHashes": [
-                "cd562da076ecdcad7c45d386069dce2396a65d016c9b14d444c63e3a09897000"
+                "ea16effd4ba506ef9e1a13569099c7a041168b4a3648c40383c7b585a620dd5b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -6816,6 +7798,54 @@
             "exampleSites": [
                 "aveloair.com",
                 "www.aveloair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/t\\/v2\\/birddogs2\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lwpixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a5e550ac5d78391b7a8b8938f8fde4f7c8f3a16eceb447098472ae82369f64d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "birddogs.com",
+                "www.birddogs.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/t\\/birddogs\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lwpixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a5e550ac5d78391b7a8b8938f8fde4f7c8f3a16eceb447098472ae82369f64d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "birddogs.com",
+                "www.birddogs.com"
             ]
         },
         {
@@ -6835,7 +7865,7 @@
                 }
             ],
             "responseHashes": [
-                "fe4ef476fc26e0bd8c9313ef76603ee0b67769d4158c4fe38b06b832c7f35bc6"
+                "47d06536882ea06dae50f0922f5cd4864933c3dc9452de0322f5df4e0a39f11f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7427,33 +8457,6 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/assets\\/fonts\\/GreycliffCF-Bold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "drinkawarefd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "media.drinkaware.co.uk",
-                    "resolved": "drinkawarefd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "efbe03b854a838e368adba5d38b8df99415606013674d3dbc58ec5965d648b4e"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drinkaware.co.uk",
-                "www.drinkaware.co.uk"
-            ]
-        },
-        {
             "rule": "azurefd\\.net\\/assets\\/scripts\\/img\\/loader\\.1de44f06\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -7473,6 +8476,33 @@
                 "0f832875bba17341595a941f53078046fe01f5ae14731e25b8e6be2decd3e6bf"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drinkaware.co.uk",
+                "www.drinkaware.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/fonts\\/GreycliffCF-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "drinkawarefd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "media.drinkaware.co.uk",
+                    "resolved": "drinkawarefd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "efbe03b854a838e368adba5d38b8df99415606013674d3dbc58ec5965d648b4e"
+            ],
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -7696,11 +8726,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "5d173bfca3910f3963ffadc454bfa730e68367acc832bb9998e9c851394eedc0",
-                "aaf68b45b74c6faa5b90b925999541f8729159224251ba8cc451cd4dc257e75e"
+                "c5d4e6b2a220c37a6807dca351d696b5770ff1dd7ebccc9c44a341f1f62691f7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -7709,72 +8738,6 @@
                 "handelsblatt.com",
                 "www.handelsblatt.com",
                 "www.wiwo.de"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/widgets\\/fonts\\/ClassicGrotesqueW05-Book\\.bc0d8152\\.bc0d8152\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbpulse"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "504a3892c73d2dab3e1fadc723a6ae2f9b1417ab44d155f91b069c2497f7b836"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "handelsblatt.com",
-                "www.handelsblatt.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/widgets\\/fonts\\/ClassicGrotesqueW05-SemiBd\\.31ff804e\\.31ff804e\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbpulse"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9f815bcc5707ca8ce38cae18c7b45ad1fff3b0b76a64c9cad209c84c08b07621"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "handelsblatt.com",
-                "www.handelsblatt.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fonts\\/376BF8_2_0\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbham-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "104ad21847e061c6fa9046bcf15ed5aa3b6a84f713725a808d86c2a3ecfeb0c6"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "honeybaked.com",
-                "www.honeybaked.com"
             ]
         },
         {
@@ -7802,9 +8765,9 @@
                 }
             ],
             "responseHashes": [
-                "0d1de1908302099ba75ff6b7a3fe990a4039f4ffe8075b81ec90ad00cd540a9e",
-                "6455a3f4db88b2772e163b557adbfe1fe12c94acb587c963f9b798baf1c7e21f",
-                "24c8279df0cba6d0eb8816a843d6ef5bf5bf745b729c75c1be16df3b1172c9da"
+                "8d1584524fa719d89940297dd50176efbe102ad80f39fa9dbc3f3050350b7103",
+                "b5f0abd7a420a32386e8606307ba88bdfe49d664fc8865770b35b0c2b7c2c41f",
+                "3f3075a4b9d1ec23e4b03cb24426b4100513742ad1f913ebfd20ec8280f184f2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -7814,30 +8777,6 @@
                 "www.iga.net",
                 "www.sobeys.com",
                 "www.thriftyfoods.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/t\\/kcsteaks\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lwpixel"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a5e550ac5d78391b7a8b8938f8fde4f7c8f3a16eceb447098472ae82369f64d3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "kansascitysteaks.com",
-                "www.kansascitysteaks.com"
             ]
         },
         {
@@ -7869,27 +8808,27 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_sda:mazda:T1:user": {
-                    "ttl": 31536007,
+                    "ttl": 31536008,
                     "length": 142,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_sda:mazda:T1:session": {
                     "ttl": null,
                     "length": 173,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_sda:mbusa:T1:user": {
-                    "ttl": 31536007,
+                    "ttl": 31536006,
                     "length": 143,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_sda:mbusa:T1:session": {
                     "ttl": null,
                     "length": 181,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -7913,9 +8852,9 @@
             "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "4ef834c594d4d1339039cb4453026600d6f451cb0ea0515f2f7a5da772b507f5",
-                "605bb5fa1a23464e488d539ce712c923f3655087b8f14f5578bfb3c20591aa59",
-                "9c145106cb8d2480d47887ef4e41c1de1caafecbca3fadc8885bb65fd3c10068"
+                "92d3b3373007391ed3452906273d866ca6580f17f1def666c1e94e8dc14f07ff",
+                "844fee81b5a104adbdff1935a21ad1b464895195d14bf176e99b638b188aff40",
+                "b425df1da74aebe5d8e996bd531f77487b0fb3df011b97c193daabe5e2cbcfd9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7939,9 +8878,8 @@
             "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "a1893b00c4e1db4c86e6982d7d366bf76adf9f8c4b2c81679c95bc7faefbfaec",
-                "a7eb4008ac0a6c23b3837c25e5a2d3190f7736afc0a44eb4073cac8eb9cd711f",
-                "23f6467254d48d050b5cb596be5eda37b58606ebf873ccde6788aee9cf7c7b9e"
+                "6adad968bf599261145499d1cff8a26fe45025052a01f2af91db00a894690196",
+                "0e735a6f0a07b423c5a0e23aa0030692057c93102db8a33a29d64dad4ab51185"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -7977,14 +8915,14 @@
         },
         {
             "rule": "azurefd\\.net\\/endpoint\\/mbusa\\/1x1\\.gif",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "sd-tagging"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "a11732bf41736baed4d00a1f73d63d0f9314f7917649d47143edc062cdc29658"
@@ -7996,58 +8934,6 @@
                 "mbusa.com",
                 "www.mbusa.com",
                 "www.mbvans.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prdnwgraph"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "graph.nationwide.co.uk",
-                    "resolved": "prdnwgraph.azurefd.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nationwide.co.uk",
-                "www.nationwide.co.uk"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prdnwgraph"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "graph.nationwide.co.uk",
-                    "resolved": "prdnwgraph.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "11b8ca7c5b7993256b00e1223965c9975830a4346991af266447e1c8b619d973"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nationwide.co.uk",
-                "www.nationwide.co.uk"
             ]
         },
         {
@@ -8119,7 +9005,7 @@
                 }
             ],
             "responseHashes": [
-                "d7629bef17ae6725b2274c42a2cfe603c4906138cd33d6e61ae43dbc1cc2cccb"
+                "2af8587d0090898360f6eb2487ba2f73d18c0c18da530dc569240d9fc4c1eff2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8275,7 +9161,7 @@
                 }
             ],
             "responseHashes": [
-                "9e606276e661370857a48ffa97b0ea20deffe1e021512f0d87223a1a0e04cfb6"
+                "8f5284520ac43dcbce6bffb83ab87fddd6a187d54d704d4a4b190b07f903550d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8390,6 +9276,164 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/api\\/admin\\/PROD\\/menu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "c992c01d5f9966951c217310a20b4e9b8e07268cd8c8232eee532453a550b0d9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/stores\\/PROD\\/store",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f6f12bbf6a95f25095c48c108b6605bfdac10c917e5ea51eef6dbf2535a7a113"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/productinfo\\/PROD\\/multipleinventory",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/productinfo\\/PROD\\/multipleinventory",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "403fa46eea897c6402e76bdc4b6610f2000118dafc399db7ce14260b929ee74f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/productinfo\\/PROD\\/sellableproducts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/productinfo\\/PROD\\/sellableproducts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popshelf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.popshelf.com",
+                    "resolved": "popshelf.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "7f9bd0fa700115331b6882bdd6c5e4f77179075d3d17e86ee93ca5b3701d57c7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popshelf.com",
+                "www.popshelf.com"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/api\\/v1\\/properties\\/202024456",
             "cookies": 0,
             "fingerprinting": 0,
@@ -8406,7 +9450,7 @@
                 }
             ],
             "responseHashes": [
-                "d6c224422a9adfe5ef818f2441eddce88052317aec698b516f44a6e621ac4023"
+                "79fa7e4f6594efb6447f8aa1178c46148a85228a5b4267b0c05df2526a9abb31"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8433,7 +9477,7 @@
                 }
             ],
             "responseHashes": [
-                "bba6c9fcd5559050918de88f90fb3f957e69de3de383f3e61321d1ffbce39f5e"
+                "1adcd5a3629492d543be8c58ce36e30c1c11c1924c75005273c17ea8606f9dc2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -8445,7 +9489,32 @@
         },
         {
             "rule": "azurefd\\.net\\/chatbot-api\\/chat\\/event\\/welcome_chat_message_default",
-            "cookies": 0.00000691,
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cep-apim-fd-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "api.vattenfall.nl",
+                    "resolved": "cep-apim-fd-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vattenfall.nl",
+                "www.vattenfall.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/chatbot-api\\/chat\\/event\\/welcome_chat_message_default",
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
                 "cep-apim-fd-prd"
@@ -8460,7 +9529,7 @@
                 }
             ],
             "responseHashes": [
-                "5ee19530aaa5018701d1a22600eb8af3495d2fc145f4062b7fee79f665c8f03c"
+                "99d8b390120d1ea4dcf928c4dd43f5aad3cd29af97124f0b4140366215a44e37"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8471,31 +9540,6 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/chatbot-api\\/chat\\/event\\/welcome_chat_message_default",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cep-apim-fd-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.vattenfall.nl",
-                    "resolved": "cep-apim-fd-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vattenfall.nl",
-                "www.vattenfall.nl"
-            ]
-        },
-        {
             "rule": "azurefd\\.net\\/chatbot-api\\/session\\/start",
             "cookies": 0,
             "fingerprinting": 0,
@@ -8522,7 +9566,7 @@
         },
         {
             "rule": "azurefd\\.net\\/chatbot-api\\/session\\/start",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
                 "cep-apim-fd-prd"
@@ -8537,7 +9581,7 @@
                 }
             ],
             "responseHashes": [
-                "f3aeb4452bd638db42837f58d68958cabadbb3c2b53b56aace02a63c0c44b4ec"
+                "4dd1a6ff44b29e9e7014077015d4a87a3a7b6dcbfc547c7c0c158dd48d80d248"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -8602,22 +9646,22 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000885,
+    "cookies": 0.000775,
     "types": {
-        "Script": 117,
+        "Script": 116,
+        "XHR": 108,
+        "Preflight": 42,
         "Stylesheet": 26,
-        "Image": 117,
-        "Font": 26,
-        "Document": 4,
-        "XHR": 68,
-        "Preflight": 40,
+        "Image": 171,
+        "Font": 20,
+        "Document": 2,
         "Other": 2,
-        "Fetch": 344
+        "Fetch": 350
     },
     "nameservers": [
+        "ns4-09.azure-dns.info",
         "ns1-09.azure-dns.com",
         "ns2-09.azure-dns.net",
-        "ns3-09.azure-dns.org",
-        "ns4-09.azure-dns.info"
+        "ns3-09.azure-dns.org"
     ]
 }

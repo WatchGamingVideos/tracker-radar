@@ -4,21 +4,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000187,
-    "sites": 27,
+    "prevalence": 0.000228,
+    "sites": 33,
     "subdomains": [
-        "dpa",
+        "spark.cloud",
         "speedcdn.cloud",
-        "cloud-dw-img",
-        "spark.cloud"
+        "dpa",
+        "extracontent",
+        "cloud-dw-img"
     ],
     "cnames": [
         {
-            "original": "files1.derwesten.de",
-            "resolved": "speedcdn.cloud.funkedigital.de"
+            "original": "extracontent.waz.de",
+            "resolved": "extracontent.funkedigital.de"
         },
         {
             "original": "img.abendblatt.de",
+            "resolved": "speedcdn.cloud.funkedigital.de"
+        },
+        {
+            "original": "img.braunschweiger-zeitung.de",
             "resolved": "speedcdn.cloud.funkedigital.de"
         },
         {
@@ -27,6 +32,10 @@
         },
         {
             "original": "img.morgenpost.de",
+            "resolved": "speedcdn.cloud.funkedigital.de"
+        },
+        {
+            "original": "img.news38.de",
             "resolved": "speedcdn.cloud.funkedigital.de"
         },
         {
@@ -40,75 +49,41 @@
         {
             "original": "img.wp.de",
             "resolved": "speedcdn.cloud.funkedigital.de"
-        },
-        {
-            "original": "interaktiv.otz.de",
-            "resolved": "speedcdn.cloud.funkedigital.de"
-        },
-        {
-            "original": "interaktiv.thueringer-allgemeine.de",
-            "resolved": "speedcdn.cloud.funkedigital.de"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "funkedigital\\.de\\/lw_rp\\/assets\\/js\\/pym\\.min\\.js",
+            "rule": "funkedigital\\.de\\/spark\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "dpa"
+                "spark.cloud"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Screen.prototype.width": 7,
+                "Document.cookie getter": 7,
+                "window.localStorage": 7
+            },
             "sites": 8,
             "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
-                "a098fcdd7db19df1de745f606763dcbcf3f4ea27376e596be036d27fae8d6703"
+                "46637d551d2fd6172ada85bf8414b5db9f212615a189c78dc52b0d65b13e5a66"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abendblatt.de",
-                "www.abendblatt.de",
-                "www.morgenpost.de",
-                "www.nrz.de",
-                "www.otz.de",
-                "www.thueringer-allgemeine.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/frontpage\\/crop234067125\\/0597358865-w488-cv3_2-q85\\/5FA71600B83323E1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.abendblatt.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.morgenpost.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "1705fba0936070779f9af8813afb213b3801a553584b9fafdcdcd7631293f501"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abendblatt.de",
-                "www.morgenpost.de"
+                "onmeda.de",
+                "fragen.onmeda.de",
+                "www.erkaeltet.info",
+                "www.futurezone.de",
+                "www.hoerzu.de",
+                "www.onmeda.de",
+                "www.tvdigital.de",
+                "www.werstreamt.es"
             ]
         },
         {
@@ -119,11 +94,15 @@
                 "speedcdn.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.abendblatt.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.braunschweiger-zeitung.de",
                     "resolved": "speedcdn.cloud.funkedigital.de"
                 },
                 {
@@ -139,11 +118,96 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abendblatt.de",
+                "www.braunschweiger-zeitung.de",
                 "www.waz.de"
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/origs234062453\\/208096647-w160-h960-q85\\/140x53-Juist\\.jpg",
+            "rule": "funkedigital\\.de\\/lw_rp\\/assets\\/js\\/pym\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dpa"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000692,
+            "cnames": [],
+            "responseHashes": [
+                "a098fcdd7db19df1de745f606763dcbcf3f4ea27376e596be036d27fae8d6703"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abendblatt.de",
+                "www.abendblatt.de",
+                "www.braunschweiger-zeitung.de",
+                "www.morgenpost.de",
+                "www.nrz.de",
+                "www.otz.de",
+                "www.thueringer-allgemeine.de",
+                "www.tlz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/nrw-waz\\/media\\/close-24px\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "extracontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "extracontent.waz.de",
+                    "resolved": "extracontent.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "20d2325b1e5d60429e036ef534094545da2a53014e5db1cc635635de768eefd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abendblatt.de",
+                "www.morgenpost.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/nrw-waz\\/media\\/arrow-alt-circle-right-solid\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "extracontent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "extracontent.waz.de",
+                    "resolved": "extracontent.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "9269619782670988b31e2f75ea3bdea385b55d23ecb170e4cc2c292f10dd6d48"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abendblatt.de",
+                "www.morgenpost.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs211274565\\/4620964112-w160-h960-q85\\/headerfeature-prospektchannel-reichweitenportal-140x52\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -159,7 +223,7 @@
                 }
             ],
             "responseHashes": [
-                "1dac247a321f82a74c15e235d9be29b0e22d5508f8c33df088f5f866c8421a67"
+                "bf9d8e0a70d9bd7bbe330f484c552e697740023e3c7971a4ee4bcbde534feded"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -170,34 +234,91 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/spark\\.js",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs211349415\\/3133447070-w960-h960-q85\\/teaser-lotto-channel03-315x80\\.jpg",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "spark.cloud"
+                "cloud-dw-img"
             ],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 6,
-                "window.localStorage": 5,
-                "Screen.prototype.width": 3
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.derwesten.de",
+                    "resolved": "cloud-dw-img.funkedigital.de"
+                }
+            ],
             "responseHashes": [
-                "46637d551d2fd6172ada85bf8414b5db9f212615a189c78dc52b0d65b13e5a66"
+                "b9d4ed434f07c35bcf6e94066411fecaf4a9acaf003d504ecc1a6762ca3cc327"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "erkaeltet.info",
-                "www.erkaeltet.info",
-                "www.hoerzu.de",
-                "www.onmeda.de",
-                "www.tvdigital.de",
-                "www.werstreamt.es"
+                "derwesten.de",
+                "www.derwesten.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs234001583\\/4493447855-w960-h960-q85\\/Gewinnspiel-derwesten\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud-dw-img",
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.derwesten.de",
+                    "resolved": "cloud-dw-img.funkedigital.de"
+                },
+                {
+                    "original": "img.news38.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "ec3517ffc74754401f2dc9b134a755b7c92b32078961bb8d91b65a5c19a36363",
+                "9c7e3f4d0f129d8059891b8d257731c327bb654febd5a06f087a370708fe209f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derwesten.de",
+                "www.derwesten.de",
+                "www.news38.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/maurer\\/crop793323449\\/770994770-w328-cv5_7-q85\\/screen29677783r-3c588f6f-73c7-93bb-e507-169083f9046c\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud-dw-img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.derwesten.de",
+                    "resolved": "cloud-dw-img.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derwesten.de",
+                "www.derwesten.de"
             ]
         },
         {
@@ -232,100 +353,15 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234029355\\/2755582830-w253-cv1_1-q85\\/d257efce-5696-11ec-a470-4fadee4f83a8\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs211222487\\/2409223163-w940-h960-q85\\/headerfeature-prospektchannel-markenportal-162x61\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "speedcdn.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.morgenpost.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "f2eb52d35f68ef5f437902ed6d761124b17a8535164aea8a59499c92b25161d9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "morgenpost.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/origs234062429\\/3339229312-w940-h960-q85\\/162x61-Juist-\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "d284152acde515f0aebcedf974a75ccd92e5d7444b7123da6306726b91596811"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.nrz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/flashmm\\/css_relaunch2016\\/custom\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "files1.derwesten.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "fc32d91bf862e15ad8f2a8bc409ee4b35260ad41e3effe73b888301ccc5acc69"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234068399\\/2726624959-w940-cv3_2-q85\\/Sebastian-Polter-VfL\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -341,7 +377,75 @@
                 }
             ],
             "responseHashes": [
-                "dd3b3994ebfa62e5d52ebadc3e6c2ee51e5773b2e231a23112fd532a793aa778"
+                "76a37a766e6f23a45b21f5f761f14c99daa3ee2d08877c070c81eebf3e7be849"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234036005\\/8856626272-w940-cv3_2-q85\\/file7imc95ftanqgazmdg88\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "1279d66a91f3feccdfc86692fb29bd1c9ddcba1183e51361896e7105c8ac6fd4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop232868305\\/9726626987-w940-cv3_2-q85\\/imago0097477544h\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "07aef662cf505e254bea6c1fb755f507539b2e0e55724ea514481fc0724677f8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -353,7 +457,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/fussball\\/crop233764473\\/7956624728-w940-cv3_2-q85\\/Sebastan-Wessling-Fussball-Kommentar\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/landespolitik\\/crop234038345\\/11902978-w313-cv16_9-q85\\/01c3721c-5767-11ec-9211-5f82c5ebf2a3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -361,7 +465,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -377,7 +481,7 @@
                 }
             ],
             "responseHashes": [
-                "d94cf164522b7f1cc152aa8d3751a3b1caeb92c5fe9b1f07de7eb304d799c3f3"
+                "f647f27a5f88c98c9aaa77648cc7ca52dc995149b70a3edd57326469e514606d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -389,7 +493,38 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234068893\\/4906628100-w940-cv3_2-q85\\/AFP-9UG38E\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/duisburg\\/crop234035085\\/0480296179-w313-cv16_9-q85\\/b52c5dac-5765-11ec-9211-5f82c5ebf2a3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "a759ca542a19157d71d7d6385e5d4396e2d11701f4ca68cffc1e78fc2c090a7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/wirtschaft\\/crop234038459\\/4140292792-w313-cv16_9-q85\\/b8c1d2d6-5782-11ec-8cc1-9feae6cb3f85\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -397,7 +532,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -413,7 +548,7 @@
                 }
             ],
             "responseHashes": [
-                "3a163e44fdbbb1e4dda3665bd3cd6b816a4fd77c9606779584aa8c5131879272"
+                "0196aa5b5293b97350025cc67a05cc7eaa933694f9dd641311d2b781f8953ec2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -425,38 +560,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234068811\\/5426624059-w940-cv3_2-q85\\/Gregor-Kobel\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "57a2c9a4cf535b2f847f9daab4871b3c065f729ff78b330aae8b341f599f81de"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/oberhausen\\/crop234061539\\/3486622137-w940-cv3_2-q85\\/file7g8zb6bh0qu9sb7vcef\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/duisburg\\/crop234035085\\/3321561156-w350-cv16_9-q85\\/b52c5dac-5765-11ec-9211-5f82c5ebf2a3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -476,7 +580,7 @@
                 }
             ],
             "responseHashes": [
-                "e68fd91aac6ff7a21c9b67874f44199769ccf53534c97468eb3186528a17e5a1"
+                "eeb00b364ce6f6be33d0a6f6952988721922c074dcfd810feed5e09753127938"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -484,563 +588,6 @@
             "exampleSites": [
                 "nrz.de",
                 "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/crop234069311\\/8320293719-w313-cv16_9-q85\\/Ein-Brand-in-einer-Umspannstation-in-Neunkirchen-Seelscheid-hatte-einen-massiven-Stromausfall-zur-Folge\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "44cda9d7c5886a83a89874427889bab773816359ac744de3eae32baf99bfc502"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234067445\\/652029159-w313-cv16_9-q85\\/5FA4DE00F191ECA0\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "b2c17fd22fde97f05fd09ec0262fb682fda5d477a20082f68f091b2dabd10d77"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/landespolitik\\/crop234060765\\/8410295464-w313-cv16_9-q85\\/file7h3jn9rxhue1h8xz64m0\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "962e6aa4641ecc59be5a6f1a55c2999c1c18abe9e7b4b52161bf05a6f4f3f086"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234059661\\/8610292459-w313-cv16_9-q85\\/32dd16ca-5995-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "2dd8e1eb16075b6cf69f16044856c5c0131b4088b44a5c871639f6fbf7b77722"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/essen\\/crop234057607\\/7930298704-w313-cv16_9-q85\\/4d6bcbe2-5906-11ec-bc4b-d80b351182ee\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "cd1eb1ad6f2ecc126da405c13b9e639f8953320f472b9734cde8fa94a6e6f8f3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234045025\\/8450295975-w313-cv16_9-q85\\/cc81fd40-58d2-11ec-919f-770b384ba4fd\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "2c6482e97a5467b0db892e154e9c2010493a5a7cfa2d9af95ebd905b29f456c7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/essen\\/crop234061489\\/0860294785-w313-cv16_9-q85\\/f24f9712-58f5-11ec-919f-770b384ba4fd\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "8095450d407cf9d48dcaf2887bc1df8aa808949ecf286d5672be27d38d5be73f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/oberhausen\\/crop234068921\\/4110298322-w313-cv16_9-q85\\/3ce90f28-5aa5-11ec-8324-da350d26152d\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "d9d9e509f150add6c02cef677498f37f8f8f910f541bb8a5dd242cb20758ead8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/duisburg\\/crop234065649\\/5690292126-w313-cv16_9-q85\\/4cedaee0-59ee-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "067d749d23693624ecea1365ad85118148241d58f988f87fefad369d60b48f9c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/essen\\/crop234047039\\/6650297655-w313-cv16_9-q85\\/ae3a7d76-58dc-11ec-919f-770b384ba4fd\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "70b39c7124c955dafe54f6aaea27414dca1c1fb7d532123cc28a9aa2e1c817a6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234043933\\/7730292316-w313-cv16_9-q85\\/619e50fa-56a7-11ec-b5e5-d70b58c89bdd\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "199937743630ede462c6f12582e9b24fd15c62de1239b5d8ca1c25d5a8fd6cfc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/crop234069311\\/8201563616-w350-cv16_9-q85\\/Ein-Brand-in-einer-Umspannstation-in-Neunkirchen-Seelscheid-hatte-einen-massiven-Stromausfall-zur-Folge\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "463074488f655a64b96a88ec8ff2b9a2558322c24da10157c9da1a181db8d67d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234069331\\/0613977508-w940-cv16_9-q85\\/Alexander-Zickler\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "4a063e1ffe7f6c57296f44ac25968fafa2d4c4eb933dc00d66d9d7cff8134f07"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234068777\\/8537953120-w470-cv16_9-q85\\/GYI-1358426348\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "38a83dc47d4896552bcce6d99173b44db1e0f8b0563e690111caf6383099f9ba"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234068839\\/3567951261-w470-cv16_9-q85\\/AFP-9UG63X\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "8fedb538b38be9081c118fa569163824aa25f39009bda2c0ea9585dd50872019"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234068685\\/8550295516-w313-cv16_9-q85\\/firo111221MSV33aj\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "7ddac7bcdc0949bd79f715f9f04fe22d70f41e0c5e88d70d4b9052aa9dbf0dba"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234068457\\/6530297451-w313-cv16_9-q85\\/GYI-1358428005\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "da2db79b2efbabf578b59db4de0907b8d6ec23abed61ae94da5ca75126da1681"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.wp.de"
             ]
         },
         {
@@ -1052,7 +599,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1088,7 +635,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1124,7 +671,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1245,366 +792,6 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233766455\\/127397509-w940-cv16_9-q85\\/75668416-3e49-11ec-b23a-d04b38a2751d\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "76241a9a575932f7d95bc234c6af1a64add8a56a29063841e8ddbf9a9e830db6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233650939\\/5943971026-w940-cv16_9-q85\\/5231b2ba-1c46-11ec-8189-251565ec1bfa\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "ada8973b659d235550bfcc891e2900f5e3901421691b112e315a554dcf23c18a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233828031\\/2883973446-w940-cv16_9-q85\\/56b7a868-4300-11ec-b316-6c82d4890857\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "195ff215e696d6229c72a1001d05b471f58ae70692ff010952187e4de97965a0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop231962325\\/1313976773-w940-cv16_9-q85\\/Urlaub-auf-dem-Bauernhof\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "3ec390a1d6ca5459c819ddc01e64b3a9394f02dff62b3cab9548409122fc07f3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/veranstaltungstipps\\/crop233576033\\/8743978953-w940-cv16_9-q85\\/6b590384-2cc1-11ec-bc35-54c1d2876ea4\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "52a169332772b91d104649bf6973408fb5cfd526361024b2e694d8b2ebc1264d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/leben\\/crop233141051\\/3853976747-w940-cv16_9-q85\\/7bf6664c-05a1-11ec-9d23-ce7da6c23960\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "f99e187628de5478111a468865ded05e11ee5986cd10a1e48c65066b2afba705"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233925235\\/9193973289-w940-cv16_9-q85\\/262b4a70-4d13-11ec-a4d6-5f355b050ea2\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "1fcf299410447ef649b9667b71f52b47cbe46a5a78bb61225ebc7ecab57f20c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233762801\\/1103974805-w940-cv16_9-q85\\/77ffcd24-3d7a-11ec-b3c7-4d3adbaffe9d\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "990bf183c4fbb7873109f9d9afd6cb52c356604e9854ff2d9287d342be7354ea"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233919529\\/1613971060-w940-cv16_9-q85\\/60c9cca2-4c4a-11ec-8f0c-32909291cad3\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "b7a3732dcee7f67e6954889230c2a7092d8908dfabb1c25484a9f799307033a3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/veranstaltungstipps\\/crop233193073\\/0283972502-w940-cv16_9-q85\\/84b3f14c-0a5a-11ec-9eb8-908fbdb21f97\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "e56af08ed94cab2f6486e4fb3affb0d4356d69891d1cec002de930fa427618ab"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
             "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233947573\\/6693978193-w940-cv16_9-q85\\/a2624dfe-4ea4-11ec-9f2a-2eb17161173f\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1613,7 +800,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1641,7 +828,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233978687\\/6793979722-w940-cv16_9-q85\\/fcd6c35a-511f-11ec-9271-e9a82b14ad03\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233762801\\/1103974805-w940-cv16_9-q85\\/77ffcd24-3d7a-11ec-b3c7-4d3adbaffe9d\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1649,7 +836,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1665,43 +852,7 @@
                 }
             ],
             "responseHashes": [
-                "33b3861c0a9a5f54c29c383001bb919722e1bf0ecce64b4aa82db33f3ecc50c0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233931081\\/9163978485-w940-cv16_9-q85\\/480d03f6-4d20-11ec-baa6-53b0cefc56b1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "7cd9225eadcc3e9d5492eaae09554a67058cfac70323bd35bee27c8e1893493c"
+                "990bf183c4fbb7873109f9d9afd6cb52c356604e9854ff2d9287d342be7354ea"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1721,7 +872,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1749,6 +900,330 @@
             ]
         },
         {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop231962325\\/1313976773-w940-cv16_9-q85\\/Urlaub-auf-dem-Bauernhof\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "3ec390a1d6ca5459c819ddc01e64b3a9394f02dff62b3cab9548409122fc07f3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/leben\\/crop233141051\\/3853976747-w940-cv16_9-q85\\/7bf6664c-05a1-11ec-9d23-ce7da6c23960\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "f99e187628de5478111a468865ded05e11ee5986cd10a1e48c65066b2afba705"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/veranstaltungstipps\\/crop233576033\\/8743978953-w940-cv16_9-q85\\/6b590384-2cc1-11ec-bc35-54c1d2876ea4\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "52a169332772b91d104649bf6973408fb5cfd526361024b2e694d8b2ebc1264d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233925235\\/9193973289-w940-cv16_9-q85\\/262b4a70-4d13-11ec-a4d6-5f355b050ea2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "1fcf299410447ef649b9667b71f52b47cbe46a5a78bb61225ebc7ecab57f20c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233978687\\/6793979722-w940-cv16_9-q85\\/fcd6c35a-511f-11ec-9271-e9a82b14ad03\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "33b3861c0a9a5f54c29c383001bb919722e1bf0ecce64b4aa82db33f3ecc50c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233919529\\/1613971060-w940-cv16_9-q85\\/60c9cca2-4c4a-11ec-8f0c-32909291cad3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "b7a3732dcee7f67e6954889230c2a7092d8908dfabb1c25484a9f799307033a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233931081\\/9163978485-w940-cv16_9-q85\\/480d03f6-4d20-11ec-baa6-53b0cefc56b1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "7cd9225eadcc3e9d5492eaae09554a67058cfac70323bd35bee27c8e1893493c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/veranstaltungstipps\\/crop233193073\\/0283972502-w940-cv16_9-q85\\/84b3f14c-0a5a-11ec-9eb8-908fbdb21f97\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "e56af08ed94cab2f6486e4fb3affb0d4356d69891d1cec002de930fa427618ab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233650939\\/5943971026-w940-cv16_9-q85\\/5231b2ba-1c46-11ec-8189-251565ec1bfa\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "ada8973b659d235550bfcc891e2900f5e3901421691b112e315a554dcf23c18a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
             "rule": "funkedigital\\.de\\/img\\/leben\\/crop233224277\\/8073975767-w940-cv16_9-q85\\/7378dc14-0ca1-11ec-b79f-e14be7652741\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1757,7 +1232,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1785,6 +1260,78 @@
             ]
         },
         {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233766455\\/127397509-w940-cv16_9-q85\\/75668416-3e49-11ec-b23a-d04b38a2751d\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "76241a9a575932f7d95bc234c6af1a64add8a56a29063841e8ddbf9a9e830db6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233828031\\/2883973446-w940-cv16_9-q85\\/56b7a868-4300-11ec-b316-6c82d4890857\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "195ff215e696d6229c72a1001d05b471f58ae70692ff010952187e4de97965a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
             "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/crop234026021\\/340029509-w313-cv16_9-q85\\/211206-MillionenKracher-Wenn-ich-eine-Million-auf-dem-Konto-haette-c-Schlag-und-Roy\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1793,7 +1340,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1821,7 +1368,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234039031\\/2980299852-w313-cv16_9-q85\\/Der-Virologe-Christian-Drosten-sorgt-sich-um-die-Omikron-Variante-in-Deutschland\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234033219\\/5690293354-w313-cv16_9-q85\\/Anteilnahme-in-Koenigs-Wusterhausen-nach-der-Tragoedie\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1829,7 +1376,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -1845,7 +1392,7 @@
                 }
             ],
             "responseHashes": [
-                "6f14f81266df36c0d5adab66439f383d0d888f95bdfa276fad398df0b6dfa31a"
+                "a98bbba405a1feb46f18c562cbd005a948bb2ed0faf96d432ac7f63ce7662322"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1857,187 +1404,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/panorama\\/crop234066075\\/3810291372-w313-cv16_9-q85\\/fb69f7c6-59b2-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "63cabfeaca826f9078c12033d9c2525e4d0f33dd4d2e0d94f9a0c0ed8dffae75"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/panorama\\/crop234064515\\/5690293040-w313-cv16_9-q85\\/8fed6d86-59c4-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "b2b7d9b2b5792cc274959895d92673651ad822921c093c2807b18d2387166228"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234065953\\/3470294529-w313-cv16_9-q85\\/6fafdffc-59a8-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "7a9ad258c0ae4f81b638ba7815ceead6d1baa5a4cabe04fb20599994632a4826"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234063413\\/2650293221-w313-cv16_9-q85\\/8ceaaf7c-59ce-11ec-9375-3cb9f60afd99\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "9a49b8fea0147be7bcc6b6f769d77b973f42da6d226424b4dcda343061d11d4d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234054833\\/593029176-w313-cv16_9-q85\\/45e6f532-5833-11ec-ab50-9c8c18a1e2a5\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "5f512e8878e3c56d9d1453c952456b5d41b5f0cc82528872127a62bc16900dd8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/essen\\/crop233848525\\/8690296304-w313-cv16_9-q85\\/e2d6107c-4617-11ec-97e6-846bfebdee61\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234036253\\/0520294241-w313-cv16_9-q85\\/imago0142446787h\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2057,7 +1424,7 @@
                 }
             ],
             "responseHashes": [
-                "a17a1efcb580c19ff98289528fe3b81dd9d6098740547ea6c6e33210b51c69b8"
+                "47a339a4dd7671395fa3a46b3a737c046891d1ce8fca2ab8d4b7de7da2b070c4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2076,7 +1443,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2104,7 +1471,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234063885\\/3240299936-w313-cv16_9-q85\\/3600bad8-59ad-11ec-a923-1d1d14a76e0a\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234029379\\/2570299464-w313-cv16_9-q85\\/219b87e8-5684-11ec-b5e5-d70b58c89bdd\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2112,7 +1479,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2128,7 +1495,7 @@
                 }
             ],
             "responseHashes": [
-                "cc2b536640cb1da508ad76684b0925b88fdc48a9903d935ded9b87d68bee732e"
+                "de8b19048be41a431c908a639ca0306ebf324bf32b5c2c694437f3d7bc58a0f8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2140,7 +1507,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234065177\\/9620291761-w313-cv16_9-q85\\/562c7532-59e3-11ec-9375-3cb9f60afd99\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234009083\\/3960292905-w313-cv16_9-q85\\/a30c0db4-5433-11ec-b48d-422c690405c0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2148,7 +1515,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2164,7 +1531,7 @@
                 }
             ],
             "responseHashes": [
-                "c65b1167ca4858c6d6885289e346243bf9f5d76324a464ed1d80ed3618c5d966"
+                "baa044a87639b750b8a20c0a1aeae2b049a1947c89a851b30569b32cb38c7f7c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2176,7 +1543,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/landespolitik\\/crop234065029\\/1510299844-w313-cv16_9-q85\\/file7irsjkdc0za18ymdg99a\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/leben\\/crop234006653\\/5780299269-w313-cv16_9-q85\\/7500006a-5433-11ec-b48d-422c690405c0\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2184,7 +1551,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2200,7 +1567,7 @@
                 }
             ],
             "responseHashes": [
-                "47054db869bb3aab3ed09bfcb7916b3a233d619ed474bdb7175e95e33e89391f"
+                "fea95ad1bb11526053e770a27e69583d460fd7b6c02fb7dc7db6e30bbc3977d4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2212,7 +1579,79 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234064093\\/391029104-w313-cv16_9-q85\\/7b4f75ba-59d6-11ec-a923-1d1d14a76e0a\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/crop233878907\\/5280294505-w313-cv16_9-q85\\/BulliStar-034\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "3ee6bb036e589ae9370cff45b9e0aea33b844a53eea0888fbf33b5b3ef8a2629"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234038929\\/2080293816-w313-cv16_9-q85\\/eef7f94e-574a-11ec-9211-5f82c5ebf2a3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "5304d20ef085324a1b8066c5c334e35f575045a961b6ec8a4b09f63b44556f45"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/duisburg\\/crop234034401\\/1650293407-w313-cv16_9-q85\\/5697dab0-575a-11ec-8cc1-9feae6cb3f85\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2232,7 +1671,7 @@
                 }
             ],
             "responseHashes": [
-                "cdac757ae1e6d44d933f29fe31ae7f7dc448133a718d6f4eab1e351c98c22553"
+                "f16b96fbbc31111bd74cfdf65ace9886833dc8682157b53a5d3fd09b10c2a559"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2243,115 +1682,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234063283\\/9070294976-w313-cv16_9-q85\\/9fbcfbee-58e0-11ec-bc4b-d80b351182ee\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "26b455e2db8f8d87f898d560711879afe6c9e9c543f7c3447801b7a2077a0ee2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234052719\\/6270292494-w313-cv16_9-q85\\/0c4feb2e-58f3-11ec-bc4b-d80b351182ee\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "af31338c44a6cc50e23f219f01b8d0f23f08e4852edfe4d70960daf294f321bc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234045513\\/6540292245-w313-cv16_9-q85\\/471419d2-583b-11ec-ab50-9c8c18a1e2a5\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "5d1e0c3e5115956c6883e4af86e2c9e1e1d126a354bc2a72b90fa88370c2941d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/wirtschaft\\/crop234064655\\/6550296272-w313-cv16_9-q85\\/be38c224-59c1-11ec-a923-1d1d14a76e0a\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234037843\\/7230297831-w313-cv16_9-q85\\/4a5ea7a8-577b-11ec-8cc1-9feae6cb3f85\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2366,23 +1697,23 @@
                     "resolved": "speedcdn.cloud.funkedigital.de"
                 },
                 {
-                    "original": "img.waz.de",
+                    "original": "img.wp.de",
                     "resolved": "speedcdn.cloud.funkedigital.de"
                 }
             ],
             "responseHashes": [
-                "1f935c1b1d0b0f8cf1467b97472df82d35ad4f889d0203964520f3bff8b37171"
+                "fba9d8e308af24a2da29a5075ce793450947e24f7556351fc5ba72b9d1241955"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nrz.de",
-                "www.waz.de"
+                "www.wp.de"
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/duisburg\\/crop234035099\\/5030291118-w313-cv16_9-q85\\/fd66c8cc-575c-11ec-8cc1-9feae6cb3f85\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234036579\\/3580299374-w313-cv16_9-q85\\/e8aad63e-5771-11ec-8cc1-9feae6cb3f85\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2397,23 +1728,23 @@
                     "resolved": "speedcdn.cloud.funkedigital.de"
                 },
                 {
-                    "original": "img.waz.de",
+                    "original": "img.wp.de",
                     "resolved": "speedcdn.cloud.funkedigital.de"
                 }
             ],
             "responseHashes": [
-                "603934199efe0d1aeec80d7e868e95b46befea9e6c91992908b9eafb0c240cac"
+                "bd6e430d17bb42d8b7642a89307a57f1e4ffd8c43e02aad17af79e956672e0f4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nrz.de",
-                "www.waz.de"
+                "www.wp.de"
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/wirtschaft\\/crop234038459\\/4140292792-w313-cv16_9-q85\\/b8c1d2d6-5782-11ec-8cc1-9feae6cb3f85\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234038309\\/4730292463-w313-cv16_9-q85\\/96769c1e-5766-11ec-9211-5f82c5ebf2a3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2421,7 +1752,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2437,7 +1768,7 @@
                 }
             ],
             "responseHashes": [
-                "0196aa5b5293b97350025cc67a05cc7eaa933694f9dd641311d2b781f8953ec2"
+                "96f174946d7575b5db99ed537ad03a7dc82050bca33b47b289bbb4c2a875e216"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2449,7 +1780,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop232032011\\/1140297497-w313-cv16_9-q85\\/082-080421-Markus-Lanz\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234028097\\/541029821-w313-cv16_9-q85\\/1b9c5b04-56ae-11ec-b5e5-d70b58c89bdd\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2457,7 +1788,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2473,7 +1804,7 @@
                 }
             ],
             "responseHashes": [
-                "d2934e807af11b24fdb6aef315a54b868dea8580c06a15ac7f2b592689cc3049"
+                "4b32ed39b2eb81dafee627e02d31c984810c272143e38c810c1a85816fd7b375"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2485,7 +1816,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234056881\\/1530293250-w313-cv16_9-q85\\/SP211209-2309-1505\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234025603\\/8720293995-w313-cv16_9-q85\\/a681c2c0-5688-11ec-b5e5-d70b58c89bdd\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2493,7 +1824,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2509,7 +1840,43 @@
                 }
             ],
             "responseHashes": [
-                "d60fefa58917a3df3d367b0bb605bf984fd4ec90f4d002cc7a36ec1c36a71212"
+                "4df62bffec81fd43c178ba65ddfdee729c576232cabe54136389ae3b7db5a8b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234018999\\/6170293382-w313-cv16_9-q85\\/5bef2c26-55e7-11ec-9c44-9750f8d732eb\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "165c09459dbe5cd7bf1786acdaf77cecdca2b21469ad83f87eb132e86254b6b1"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2529,7 +1896,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2557,69 +1924,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/essen\\/crop234065405\\/2437957775-w470-cv16_9-q85\\/45aa6fb6-59d4-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "7ae95caa028514d6067abe302c11606c27b3f2b8a1dcdc177a9e20af9c656abe"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234061229\\/8837958840-w470-cv16_9-q85\\/8ba91216-59a6-11ec-a923-1d1d14a76e0a\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "890070d3c413675451d35fe8e0dca360649ab57ae33c778b2c8f751364c65bba"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/wochenende\\/crop234063573\\/8253974382-w940-cv16_9-q85\\/c9722e58-56ad-11ec-b5e5-d70b58c89bdd\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234021729\\/834029931-w313-cv16_9-q85\\/CP3-2045\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2627,7 +1932,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2643,7 +1948,110 @@
                 }
             ],
             "responseHashes": [
-                "5c1a33c35b39362b660e589014e07a443d002ae67ecfb3bc3db7efd1826e6c40"
+                "c601d75399e1503ffddee005c7d2d8fc2da94e211967aa087804b5fb03752e82"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop233904009\\/4760293711-w313-cv16_9-q85\\/5FA6E600E89CB5DF\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "7fa3e905db989911cdba75fed1e0876440eed1cf32dbcaf43cbcb910b5aea9ea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234037243\\/881795509-w470-cv16_9-q85\\/5f3f9836-576b-11ec-8cc1-9feae6cb3f85\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "a35dc988f51018e08f4f82ffa7a4c879e3de5713e8ce66508805282ea457f1a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nrz.de",
+                "www.waz.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234009875\\/8573979376-w940-cv16_9-q85\\/032de190-46dd-11ec-842a-78db5b12ab84\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "img.nrz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "b7af1ed835fb942c2094b1ac66978e864b47c6aca04c172bb3dfe481ac6790fe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2663,7 +2071,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2691,7 +2099,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234058619\\/8810299698-w313-cv16_9-q85\\/Feuerwerk-ueber-dem-Strand-der-Copacabana-Das-soll-es-in-diesem-Jahr-wieder-geben\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234031823\\/4880298969-w313-cv16_9-q85\\/Reisende-nach-Grossbritannien-muessen-einen-negativen-Corona-Test-vorweisen-bevor-sie-ins-Land-kommen\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2699,7 +2107,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2715,7 +2123,7 @@
                 }
             ],
             "responseHashes": [
-                "0a49bfef52e097f8d1a771b1544e2f48be5c8774e2cb248fd9f16309673a6a61"
+                "a3551698027693a42dba36defa9e07f4634aa2919b242bccb2d756714e9b8c1a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2727,7 +2135,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234058369\\/8560295406-w313-cv16_9-q85\\/Reisende-kommen-am-Ben-Gurion-Flughafen-an\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234003449\\/8280294254-w313-cv16_9-q85\\/Taegliche-Berichte-vom-Lawinenwarndienst-und-angepasste-Corona-Regeln-erwarten-die-Wintersportler-und-Urlauber\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2735,7 +2143,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2751,43 +2159,7 @@
                 }
             ],
             "responseHashes": [
-                "3a9d8b1140cc5a6396570499102195b844ffb9e62a07c4391c50666f610df80c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234036997\\/5050294370-w313-cv16_9-q85\\/Skifahrer-in-Bayern-brauchen-nun-keinen-zusaetzlichen-Corona-Test\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "a96ec9ded4f2c92c37dfaf2be1f3143120eef633f383bdeb0b4b3b47abaefa90"
+                "92bd6b7e6c36dea652de2bab93f049b3f848fa611b453a572d8f73dc702e022b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2807,7 +2179,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2843,7 +2215,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2879,7 +2251,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2915,7 +2287,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -2982,7 +2354,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -3018,7 +2390,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -3054,7 +2426,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -3090,7 +2462,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.nrz.de",
@@ -3157,7 +2529,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "img.waz.de",
@@ -3177,271 +2549,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208823743\\/4604699593-w940-h960\\/icon-vereinswidget-bvb-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "ada4b84736e964d26799021c321d2aaffee010b6adb9fb5311e43cd17912d08e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208823847\\/80646911-w940-h960\\/icon-vereinswidget-fc-schalke-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "7bd1ff357627473f189e9e4daa11509dc7c5b39b6ff771ea31a5061828f786a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208825885\\/1394695008-w940-h960\\/icon-vereinswidget-moenchengladbach-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "2be932c4c1e00311a6f3938b8eacef8e6a983ce704dfee377150641766eecc55"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208823909\\/3444692549-w940-h960\\/icon-vereinswidget-msv-duisburg-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "011b383fbe3bf731f87abb8c29199af6d621e2a1d5e1e0d8b4ef9553289b148b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208823943\\/7564698819-w940-h960\\/icon-vereinswidget-rot-weiss-essen-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "0d97e2dbb743c6ebb313aa8badd6986ac4d8994bd21b30a4a32f7b69bb950bc0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs208823953\\/1364699446-w940-h960\\/icon-vereinswidget-rot-weiss-oberhausen-25x25\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "img.nrz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "6f0ded2fdba94afd9d868d2b9d0c4c04d38cbfa7419ab0d56343cd8feb9763f4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nrz.de",
-                "www.waz.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/corona-multi-teaser\\/index\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "interaktiv.otz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "interaktiv.thueringer-allgemeine.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "f4dab6c0034007d7a4d9fdd3483e54428093310b578de4bfb12981c4a6b4e4b9"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "otz.de",
-                "www.thueringer-allgemeine.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/origs211222487\\/2409223163-w940-h960-q85\\/headerfeature-prospektchannel-markenportal-162x61\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "speedcdn.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "img.waz.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                },
-                {
-                    "original": "img.wp.de",
-                    "resolved": "speedcdn.cloud.funkedigital.de"
-                }
-            ],
-            "responseHashes": [
-                "76a37a766e6f23a45b21f5f761f14c99daa3ee2d08877c070c81eebf3e7be849"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "waz.de",
-                "www.waz.de",
-                "www.wp.de"
-            ]
-        },
-        {
-            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234069345\\/9546626558-w940-cv3_2-q85\\/Sebastian-Polter\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/video\\/crop234042079\\/1123976713-w940-cv16_9-q85\\/Olaf-Scholz-ist-neuer-Bundeskanzler\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3461,7 +2569,7 @@
                 }
             ],
             "responseHashes": [
-                "46bac6674b22fc5119edaf6114560e0918c8100c652214a05824637d77cc8ead"
+                "bcea686c02fb902cf88c778e6c75ab19ff83302be3ca02e2a44cdae1e5501395"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3472,7 +2580,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/landespolitik\\/crop234059667\\/1440297692-w313-cv16_9-q85\\/file7ir2fsnz4zk15izibnkm\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/dortmund\\/crop234042491\\/673029846-w313-cv16_9-q85\\/4980b8a4-5815-11ec-ab50-9c8c18a1e2a5\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3492,7 +2600,7 @@
                 }
             ],
             "responseHashes": [
-                "78b2902ae5f2b77e2262a9e06a74f4a64a9c0f7643a7547060d5ba264f224cf3"
+                "cff474aa71867878970f389a34ab33470462f8005597cfcb5364a0bd23042f9f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3503,7 +2611,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234062519\\/3576624820-w940-cv3_2-q85\\/6e5e82f2-59c6-11ec-a923-1d1d14a76e0a\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/archiv-daten\\/crop234041559\\/0420291336-w313-cv16_9-q85\\/Corona-Impfungen-fuer-Kinder-sind-bald-in-der-Dortmunder-Thier-Galerie-moeglich-und-in-der-Warsteiner-Music-Hall-oeffnet-ein-neues-Impfzentrum-fuers-Boostern\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3523,7 +2631,7 @@
                 }
             ],
             "responseHashes": [
-                "e912aa038c7f4c03ad22c515d642534092ca8227db6ea93d867a732dd63e5bc0"
+                "5fc0d66b6484176b9d8761eb34d198ff3bbc34ef2430b0f8f4e88aecf0ce32c8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3534,7 +2642,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234043581\\/9286628048-w940-cv3_2-q85\\/c92f83a2-5827-11ec-ab50-9c8c18a1e2a5\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234029555\\/7096621579-w940-cv3_2-q85\\/Die-Testfluessigkeit-eines-Corona-Schnelltests-wird-ausgewertet\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3554,7 +2662,7 @@
                 }
             ],
             "responseHashes": [
-                "6816cd8c461db0125a67053af937031d0f61b06ac335751acee62bb654d6ba38"
+                "7d259574fb31b901dfd7db5850c5af74dc5730e0f17822957bcddbc1b376bc1a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3565,7 +2673,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234057001\\/9956628382-w940-cv3_2-q85\\/Omikron\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234034649\\/4556626431-w940-cv3_2-q85\\/In-Grossbritannien-galt-die-Coronavirus-Pandemie-bereits-als-so-gut-wie-ueberwunden\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3585,7 +2693,7 @@
                 }
             ],
             "responseHashes": [
-                "7ef3ecbfd8149bb480377414b4a7302084d56cc04be6b24e867ff4fdd2df32ed"
+                "4e69af2ff8bfd92ac335096c40543e3b73e85abb6febd975c3f65272103f4b48"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3596,7 +2704,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234055181\\/4766623099-w940-cv3_2-q85\\/5FA71200C790275D\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234039761\\/1803976962-w940-cv16_9-q85\\/AFP-9TZ3JA\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3616,7 +2724,7 @@
                 }
             ],
             "responseHashes": [
-                "060afac814a7e9574f68d11e1b9ceec9f2f88ef774be5e887f488f7e27810076"
+                "62e9d531bfc06db23d040dd3738e0b3968952c8675f531d6a9e0aa795f10dd3e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3627,7 +2735,7 @@
             ]
         },
         {
-            "rule": "funkedigital\\.de\\/img\\/politik\\/crop234063701\\/7820293061-w313-cv16_9-q85\\/f675f56a-59cd-11ec-9375-3cb9f60afd99\\.jpg",
+            "rule": "funkedigital\\.de\\/img\\/sport\\/crop234042561\\/2267951800-w470-cv16_9-q85\\/Tedesco-dpa\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3647,7 +2755,255 @@
                 }
             ],
             "responseHashes": [
-                "449a3f936308ae0d2ca5303de24fb6d1f43ee1c29b279b4fc004393f488142ad"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/bvb\\/crop234040543\\/5920298135-w313-cv16_9-q85\\/Sammer-Hummels-BVB-firo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "6a55d144498f921b85d196ea9d2b3fe80cb3865e32d4e5d656aeb490b4dbf9f2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/panorama\\/crop234041961\\/3990294463-w313-cv16_9-q85\\/f6096e5a-580f-11ec-9f9f-4cfc6da583b2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "e379dde389d7fa865a7a5546d3ae3c7de5aa1a0e952e2753148933ac2ad14f07"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/panorama\\/crop234039027\\/9280291695-w313-cv16_9-q85\\/3c555364-5762-11ec-9211-5f82c5ebf2a3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "89460cf221f2ba6f3eac85c3cea1e95efa22683393e0ff02bdf89203c6716898"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234042707\\/0250298726-w313-cv16_9-q85\\/dc1c6844-5814-11ec-ab50-9c8c18a1e2a5\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "a3bfd5fba6735955e8b3f3ab1218df046f1ab8dc07765b3b453ca59af6104e3d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234041235\\/6630299462-w313-cv16_9-q85\\/86504c60-57ff-11ec-ab50-9c8c18a1e2a5\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "6a2d301efa9ec99fd016846515e08678f02b68f0f301128fdce5d1c2ca1d6dfc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234041477\\/7320297945-w313-cv16_9-q85\\/file7if50hiyg2oaccpyaag\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "85603ed6ec724f590f42f1fdacb639cbe02cd142de3a69c6e1c4b8219358b65f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop232185633\\/7395589293-w253-cv1_1-q85\\/file7ffayuozmygkqcqf1eqe\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "32dd00462f927823b9765ff8d10c1bc85fbbbb63e67ab6bd9fb31eeddd146c4f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "waz.de",
+                "www.wp.de"
+            ]
+        },
+        {
+            "rule": "funkedigital\\.de\\/img\\/incoming\\/crop234036997\\/6360296955-w313-cv16_9-q85\\/Skifahrer-in-Bayern-brauchen-nun-keinen-zusaetzlichen-Corona-Test\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "speedcdn.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "img.waz.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                },
+                {
+                    "original": "img.wp.de",
+                    "resolved": "speedcdn.cloud.funkedigital.de"
+                }
+            ],
+            "responseHashes": [
+                "cd12a2591ed23a21c463e1e56e9b0101f2747a2792d16ca25656d90e95df6773"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -3662,14 +3018,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 16,
-        "Image": 269,
-        "Document": 2
+        "Script": 18,
+        "Image": 225
     },
     "nameservers": [
-        "ns-157.awsdns-19.com",
-        "ns-528.awsdns-02.net",
         "ns-1308.awsdns-35.org",
-        "ns-1948.awsdns-51.co.uk"
+        "ns-157.awsdns-19.com",
+        "ns-1948.awsdns-51.co.uk",
+        "ns-528.awsdns-02.net"
     ]
 }

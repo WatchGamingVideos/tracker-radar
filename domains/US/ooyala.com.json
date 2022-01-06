@@ -9,14 +9,67 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000691,
-    "sites": 10,
+    "prevalence": 0.000083,
+    "sites": 12,
     "subdomains": [
-        "player"
+        "player",
+        "analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "ooyala\\.com\\/ooyala_storage\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "window.localStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "4e6b981b4add0cf1f14b0d322ad7d5572ed5f8b310ab60fdb75456cb97c2823b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allpeoplequilt.com",
+                "www.driving.co.uk",
+                "www.jfklibrary.org",
+                "www.tetongravity.com",
+                "www.thehenryford.org"
+            ]
+        },
+        {
+            "rule": "ooyala\\.com\\/static\\/v3\\/analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "13160a4c41c7b57f5a5493fbdd7f9d3d7879619e6df1eb8b43bc3effd141d90d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allpeoplequilt.com",
+                "www.allpeoplequilt.com"
+            ]
+        },
         {
             "rule": "ooyala\\.com\\/static\\/v4\\/production\\/skin-plugin\\/html5-skin\\.min\\.css",
             "cookies": 0,
@@ -26,7 +79,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "6ef2b7af7e5c38540e0184bed258bde468b3c3b76a3b49cec96bff3622bf09ae"
@@ -42,7 +95,7 @@
         },
         {
             "rule": "ooyala\\.com\\/static\\/v4\\/production\\/core\\.min\\.js",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "player"
@@ -57,7 +110,7 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "276589f5a031ab59d3e96e9827f087a19d76c4392df719b1095a05701b15de1d"
@@ -82,7 +135,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "149a3e342ca70e4c57e69494b93ac7629ea712bf88fe61b2268c3f08579cf7bc"
@@ -98,7 +151,7 @@
         },
         {
             "rule": "ooyala\\.com\\/static\\/v4\\/production\\/video-plugin\\/main_html5\\.min\\.js",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "player"
@@ -113,7 +166,7 @@
                 "HTMLMediaElement.prototype.canPlayType": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "739e4668d020d28f8b3c274ed447faa858a5b6dc0657ffbfe67aba957b006e2f"
@@ -124,32 +177,6 @@
             "exampleSites": [
                 "driving.co.uk",
                 "www.driving.co.uk",
-                "www.thehenryford.org"
-            ]
-        },
-        {
-            "rule": "ooyala\\.com\\/ooyala_storage\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "player"
-            ],
-            "apis": {
-                "window.localStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "4e6b981b4add0cf1f14b0d322ad7d5572ed5f8b310ab60fdb75456cb97c2823b"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "driving.co.uk",
-                "www.driving.co.uk",
-                "www.jfklibrary.org",
                 "www.thehenryford.org"
             ]
         },
@@ -173,13 +200,17 @@
                 "HTMLMediaElement.prototype.canPlayType": 2,
                 "MediaSource.isTypeSupported": 2,
                 "Date.prototype.getTime": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "window.name": 1,
+                "window.devicePixelRatio": 1,
+                "window.indexedDB": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d289f20e972593d4398ac21893d4caacf8f400a2a640e4c198f533ca6de12920"
+                "bbcff0eddde9784fb2cacf1f6f279dbcba04df552270b83ed3424d6c34f6b4f3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -236,11 +267,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000484,
     "types": {
+        "Document": 5,
+        "Script": 13,
         "Stylesheet": 5,
-        "Script": 11,
-        "Document": 4,
         "Font": 2
     },
     "nameservers": [

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
-        "tracking"
+        "tracking",
+        "ssl"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "emailcli\\.com\\/Ajax\\/Scripts\\/Tracking\\/1\\.0\\.1\\/clitrack\\.min\\.136\\.js",
@@ -55,13 +56,68 @@
                 "herrschners.com",
                 "www.herrschners.com"
             ]
+        },
+        {
+            "rule": "emailcli\\.com\\/scripts\\/155\\/emailcli-155-click\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "90362341527a824b5a378ebc08dd186b22b606f9c15a41a3e2d84e99e1c50475"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nueskes.com",
+                "www.nueskes.com"
+            ]
+        },
+        {
+            "rule": "emailcli\\.com\\/scripts\\/155\\/cliemailpop-155\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d532c570493aeb79d221c5530e4fd0625bb8c0cdf4ad8752627272814ea525e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "clipopcookie-155": {
+                    "ttl": 31536001,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nueskes.com",
+                "www.nueskes.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 2,
+        "Script": 6,
         "XHR": 2
     },
     "nameservers": [

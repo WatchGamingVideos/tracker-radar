@@ -8,9 +8,9 @@
     "sites": 13,
     "subdomains": [
         "al241907p",
+        "fn152111p",
         "ql072012p",
         "databricks",
-        "fn152111p",
         "bc281020p",
         "bl091912p"
     ],
@@ -24,19 +24,19 @@
     "resources": [
         {
             "rule": "searchunify\\.com\\/resources\\/Allow\\/an\\.js",
-            "cookies": 0.0000415,
+            "cookies": 0.0000346,
             "fingerprinting": 1,
             "subdomains": [
                 "al241907p",
+                "fn152111p",
                 "ql072012p",
                 "databricks",
-                "fn152111p",
                 "bc281020p"
             ],
             "apis": {
-                "Document.cookie getter": 6,
                 "Date.prototype.getTime": 6,
-                "Document.cookie setter": 5
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 4
             },
             "sites": 7,
             "prevalence": 0.0000484,
@@ -48,9 +48,9 @@
             ],
             "responseHashes": [
                 "e4009ca1f0a56b451d3af77a9e144892eff49eabf9fef5c86a8f3da753bc4ea0",
+                "6a7ec9a943ae0a8806f9deaf5b2a7288167beab6053b90417d3851e662d4c6dc",
                 "5e542c513ed59d733ffa81d69254b0741602b39718ec529c13fbae1ae58c503f",
                 "c0893e94b3e65c9e54ccdc14ca100ff15f5a752324c11396379951bef33ee5d3",
-                "6a7ec9a943ae0a8806f9deaf5b2a7288167beab6053b90417d3851e662d4c6dc",
                 "93b7800bef35d896024450b3c88d2138ba38e3e861d1510c6add1322c3b75eb6"
             ],
             "type": "Script",
@@ -58,13 +58,13 @@
                 "_gz_sid": {
                     "ttl": 3601,
                     "length": 16,
-                    "prevalence": 0.00003456762810762977,
+                    "prevalence": 0.000027671702916597487,
                     "uniqueness": 1
                 },
                 "_gz_taid": {
                     "ttl": 31536001,
                     "length": 16,
-                    "prevalence": 0.00003456762810762977,
+                    "prevalence": 0.000027671702916597487,
                     "uniqueness": 1
                 }
             },
@@ -72,10 +72,10 @@
             "exampleSites": [
                 "alteryx.com",
                 "community.alteryx.com",
+                "community.fortinet.com",
                 "community.qlik.com",
                 "docs.databricks.com",
                 "forum.fortinet.com",
-                "kb.fortinet.com",
                 "knowledge.broadcom.com"
             ]
         },
@@ -87,12 +87,12 @@
                 "al241907p"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "window.sessionStorage": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.languages": 2,
-                "Navigator.prototype.language": 2
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 1,
+                "window.sessionStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -114,8 +114,8 @@
             "fingerprinting": 0,
             "subdomains": [
                 "al241907p",
-                "ql072012p",
                 "fn152111p",
+                "ql072012p",
                 "bc281020p",
                 "bl091912p"
             ],
@@ -134,15 +134,15 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gz_sid": 0.00004148115372915572,
-                "_gz_taid": 0.00004148115372915572
+                "_gz_sid": 0.00003458962864574686,
+                "_gz_taid": 0.00003458962864574686
             },
             "exampleSites": [
                 "alteryx.com",
                 "community.alteryx.com",
+                "community.fortinet.com",
                 "community.qlik.com",
                 "forum.fortinet.com",
-                "kb.fortinet.com",
                 "knowledge.broadcom.com",
                 "support.bluebeam.com",
                 "www.bluebeam.com"
@@ -171,6 +171,56 @@
             ]
         },
         {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fn152111p"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "fdd403992d2a1e5f5978feff29d9b9807602e0737b30ef024d87c87ce1929496"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortinet.com",
+                "community.fortinet.com",
+                "forum.fortinet.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fn152111p"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "9847b7aa163f6bae13b50f67496c31d8de6ed0c53cb5fd06d3ffcc1b32722376"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortinet.com",
+                "community.fortinet.com",
+                "forum.fortinet.com"
+            ]
+        },
+        {
             "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/cb43fd48-5178-11eb-8a9b-0242ac120002\\/searchbox\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -182,7 +232,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "830e76c1cdfe0533987128da0e3493ee5c1f1085240e2b5151633d42f38a0b10"
+                "98ae08b8c6ae22e4c7357292a9b6eda8411fa06d3c5f711623dd8828d13db563"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -399,8 +449,8 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gz_sid": 0.000013827051243051907,
-                "_gz_taid": 0.000013827051243051907
+                "_gz_sid": 0.000013835851458298743,
+                "_gz_taid": 0.000013835851458298743
             },
             "exampleSites": [
                 "databricks.com",
@@ -440,8 +490,10 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "cd638f4bd9c28be31d898c1cd870358f7e697158e9546cad06982d1566f72cfe"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -460,10 +512,8 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "cd638f4bd9c28be31d898c1cd870358f7e697158e9546cad06982d1566f72cfe"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -658,56 +708,6 @@
             "exampleSites": [
                 "databricks.com",
                 "docs.databricks.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "fn152111p"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3,
-                "Event.prototype.timeStamp": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "fdd403992d2a1e5f5978feff29d9b9807602e0737b30ef024d87c87ce1929496"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fortinet.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fn152111p"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "9847b7aa163f6bae13b50f67496c31d8de6ed0c53cb5fd06d3ffcc1b32722376"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fortinet.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com"
             ]
         },
         {
@@ -912,15 +912,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_gz_sid": {
-                    "ttl": 3602,
+                    "ttl": 3601,
                     "length": 16,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "_gz_taid": {
-                    "ttl": 31536002,
+                    "ttl": 31536001,
                     "length": 16,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -987,7 +987,7 @@
         "Preflight": 4
     },
     "nameservers": [
-        "ns75.domaincontrol.com",
-        "ns76.domaincontrol.com"
+        "ns76.domaincontrol.com",
+        "ns75.domaincontrol.com"
     ]
 }

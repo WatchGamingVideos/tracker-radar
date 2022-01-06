@@ -7,12 +7,35 @@
     "prevalence": 0.0000415,
     "sites": 6,
     "subdomains": [
-        "images",
-        "webassets"
+        "webassets",
+        "images"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "images4us\\.com\\/fonts\\/fonts\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webassets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "4593d7ed1bf998bad999825db9e9235d76308575b93530eee5207f56e258d0a9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "888casino.com",
+                "www.888casino.com",
+                "www.888sport.com"
+            ]
+        },
         {
             "rule": "images4us\\.com\\/888Casino_CGP\\/EN\\/8shield_white-1570519990511_tcm1841-465226\\.png",
             "cookies": 0,
@@ -22,7 +45,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "cfc0d96c3cc9a18f9de2420da193278530dae147160829309460cff11b14cddc"
@@ -45,7 +68,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "229edc78ee6a1733c59ac2c10f4f29c11990760042998ce5acac6d48149b3d4c"
@@ -112,7 +135,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "46bee76bcd7d626fcedf1dff4c5f4eea266d2e4f41a59ed6465779082c7ad433"
@@ -123,54 +146,6 @@
             "exampleSites": [
                 "888casino.com",
                 "www.888casino.com",
-                "www.888poker.com"
-            ]
-        },
-        {
-            "rule": "images4us\\.com\\/fonts\\/fonts\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webassets"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "19f6ea14ff6df532516a4fa3a60d4971186f2cd5e454070df61207fd38044473"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "888casino.com",
-                "www.888casino.com",
-                "www.888sport.com"
-            ]
-        },
-        {
-            "rule": "images4us\\.com\\/Scripts\\/prod\\/common\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "images"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e2c08f463fa751ce82f827f1df80f3fb781d1feb95975ce565a82c2b5b128863"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "888poker.com",
                 "www.888poker.com"
             ]
         },
@@ -241,42 +216,24 @@
             ]
         },
         {
-            "rule": "images4us\\.com\\/888poker\\/en\\/New-shell-slices-02_01_1444543999781\\.png",
+            "rule": "images4us\\.com\\/Scripts\\/prod\\/common\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "images"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d41acd788e1909947f2ea1a04254c1f7c0761df12e0568c016c68a42706ea651"
+                "e2c08f463fa751ce82f827f1df80f3fb781d1feb95975ce565a82c2b5b128863"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "888poker.com",
-                "www.888poker.com"
-            ]
-        },
-        {
-            "rule": "images4us\\.com\\/fonts\\/888-medium-webfont\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "webassets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a6655c2d6f2026dac687d441d29841a1f18dd9d5dc52fe2ef8e32cfd0a49388b"
-            ],
-            "type": "Font",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -461,7 +418,29 @@
             ]
         },
         {
-            "rule": "images4us\\.com\\/fonts\\/888-bold-webfont\\.woff",
+            "rule": "images4us\\.com\\/888poker\\/en\\/New-shell-slices-02_01_1444543999781\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d41acd788e1909947f2ea1a04254c1f7c0761df12e0568c016c68a42706ea651"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "888poker.com",
+                "www.888poker.com"
+            ]
+        },
+        {
+            "rule": "images4us\\.com\\/fonts\\/888-medium-webfont\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -472,7 +451,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e5a0bcaa2abc71ca1c95e03cc7ec6542e1742b88528cabaad3c2d2c1e3122f20"
+                "a6655c2d6f2026dac687d441d29841a1f18dd9d5dc52fe2ef8e32cfd0a49388b"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -527,20 +506,20 @@
             ]
         },
         {
-            "rule": "images4us\\.com\\/888poker\\/en\\/close-button-png-30230-1637651674997_tcm1488-537934\\.png",
+            "rule": "images4us\\.com\\/fonts\\/888-bold-webfont\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "images"
+                "webassets"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "59fa78eb7f6711474e0d94e92ac0544439a27ca4615ee5c5471b8b366647d63a"
+                "e5a0bcaa2abc71ca1c95e03cc7ec6542e1742b88528cabaad3c2d2c1e3122f20"
             ],
-            "type": "Image",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -563,6 +542,28 @@
                 "9dd36d928011cf362bc557c166bf4ca6c75cf30201c948ffb6942db92d6cfef8"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "888poker.com",
+                "www.888poker.com"
+            ]
+        },
+        {
+            "rule": "images4us\\.com\\/888poker\\/en\\/close-button-png-30230-1637651674997_tcm1488-537934\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "59fa78eb7f6711474e0d94e92ac0544439a27ca4615ee5c5471b8b366647d63a"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -751,8 +752,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 47,
         "Stylesheet": 3,
+        "Image": 47,
         "Script": 2,
         "Font": 18
     },

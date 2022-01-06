@@ -7,9 +7,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
+        "clf1",
         "geo",
         "api"
     ],
@@ -17,15 +18,48 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "medpagetoday\\.com\\/info\\.js",
+            "rule": "medpagetoday\\.com\\/assets\\/scripts\\/js\\/hcp\\/uc\\.js",
             "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "clf1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1d54640aecafc3d489ae222110110cef9378d135bb1d82a154849586a051d389"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MP_GUID": {
+                    "ttl": 15552004,
+                    "length": 32,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cureus.com",
+                "zdoggmd.com"
+            ]
+        },
+        {
+            "rule": "medpagetoday\\.com\\/info\\.js",
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "geo"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "ac87bbf5ea8de56fa699cae07b0cab453dc1b857d2895ce50a1fa9d2a928f602"
@@ -35,7 +69,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cureus.com",
-                "www.kevinmd.com"
+                "www.kevinmd.com",
+                "zdoggmd.com"
             ]
         },
         {
@@ -46,20 +81,22 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "ae7f224456c81649d177b764db637bd567990bcc347e29045522fe4428db41db"
+                "4d0f4d58062edd8449eab23cc0924f8cdbcecd4a5240c809c6f37414d3aa5884",
+                "b71dd746bb1349dc40b48f4b80d0c37f54bf2d6a9c8e5787f15a4543e627c109"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.000013827051243051907
+                "_ga": 0.000020753777187448115
             },
             "exampleSites": [
                 "cureus.com",
-                "www.kevinmd.com"
+                "www.kevinmd.com",
+                "zdoggmd.com"
             ]
         },
         {
@@ -74,12 +111,12 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "95bd8d3069d2496c5c7352291eb1ea9920802d39c52d7c28bdd785b54b001018"
+                "a7d0b3b226bd2efff8720887d4399ad3f6e252db67b122dbebc9c9d5b14f1bef"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "MP_GUID": 0.000013827051243051907
+                "MP_GUID": 0.000013835851458298743
             },
             "exampleSites": [
                 "kevinmd.com",
@@ -89,9 +126,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000207,
+    "cookies": 0.0000346,
     "types": {
-        "Script": 6
+        "Script": 10
     },
     "nameservers": [
         "ns-1442.awsdns-52.org",

@@ -7,26 +7,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000691,
-    "sites": 1,
+    "prevalence": 0.0000208,
+    "sites": 3,
     "subdomains": [
-        "resources",
-        "footer"
+        "footer",
+        "resources"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "wrbm\\.com\\/Footers\\/wrbm-footer\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "resources",
-                "footer"
+                "footer",
+                "resources"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "9f531e27d550d6ea54f708fb307c3c86226d106c6bd4a2380b78b939120fff51"
@@ -35,8 +35,55 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thegrocer.co.uk",
+                "foodnavigator-usa.com",
+                "www.foodnavigator-usa.com",
                 "www.thegrocer.co.uk"
+            ]
+        },
+        {
+            "rule": "wrbm\\.com\\/cookiepolicy_ez\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "edd83a7758f93efbd14ed4c9d8694574c1a7ef51e4bcb7b8165ff3aef50ecb79"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foodnavigator-usa.com",
+                "www.foodnavigator-usa.com"
+            ]
+        },
+        {
+            "rule": "wrbm\\.com\\/logo\\/WR_Monoblack_RGB\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ddd6d0e366aea65ea85d43cfd7f92adaa987c88f27d62c0b93521fb2a6c807db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foodnavigator-usa.com",
+                "www.foodnavigator-usa.com"
             ]
         }
     ],
@@ -44,7 +91,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Image": 2
     },
     "nameservers": [
         "ns-cloud-c1.googledomains.com",

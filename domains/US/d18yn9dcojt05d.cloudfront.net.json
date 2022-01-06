@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "d18yn9dcojt05d\\.cloudfront\\.net\\/apps\\/visable\\/company_profile\\/frontend\\/runtime\\.ca3c6e6\\.modern\\.js",
@@ -38,9 +38,13 @@
         {
             "rule": "d18yn9dcojt05d\\.cloudfront\\.net\\/apps\\/visable\\/company_profile\\/frontend\\/commons\\/app-3bbfb21\\.modern\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -57,11 +61,17 @@
         },
         {
             "rule": "d18yn9dcojt05d\\.cloudfront\\.net\\/apps\\/visable\\/company_profile\\/frontend\\/vendors\\/app-c442826\\.modern\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -70,7 +80,20 @@
                 "30dfeafe3a9fafd12a9bcc9bdaaa8c0a2e6b2001e84444be860fedbcd41e8579"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ab_testing_variants_v2": {
+                    "ttl": 5184000,
+                    "length": 583,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "ab_testing_traffic_split_group": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wlw.de",
@@ -80,9 +103,12 @@
         {
             "rule": "d18yn9dcojt05d\\.cloudfront\\.net\\/apps\\/visable\\/company_profile\\/frontend\\/app-cb2dde3\\.modern\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.onLine": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -423,7 +449,7 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -504,7 +530,7 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Script": 44,
         "Image": 4

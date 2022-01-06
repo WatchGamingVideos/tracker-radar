@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
-        "baxter-native"
+        "baxter-native",
+        "baxter-cdn.production"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -77,13 +78,77 @@
                 "otomoto.pl",
                 "www.otomoto.pl"
             ]
+        },
+        {
+            "rule": "olxssa\\.com\\/web\\/standvirtual\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baxter-cdn.production"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "6f2d13469d28da9157887062375f4c6ab7d81c46fbc940a52b2f3ca955962bad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dfp_user_id": {
+                    "ttl": 31536003,
+                    "length": 41,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "user_adblock_status": {
+                    "ttl": 31536007,
+                    "length": 5,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standvirtual.com",
+                "www.standvirtual.com"
+            ]
+        },
+        {
+            "rule": "olxssa\\.com\\/web\\/standvirtual\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baxter-cdn.production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a9554a28e57f28e2a58cb7b054564f6d1f47d992cfcee6d35e54f51f23a78f04"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standvirtual.com",
+                "www.standvirtual.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000208,
     "types": {
-        "XHR": 6
+        "XHR": 6,
+        "Script": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns-745.awsdns-29.net",

@@ -10,7 +10,7 @@
         "cookies"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "edrington\\.com\\/cdn-cgi\\/trace",
@@ -24,10 +24,43 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "69e137324accc72e1caf4edf2317262fbe3fa4fefd230894f617017a6693824e"
+                "7b193eb495c2c2ba1507e2960bfb9d84da5dcbf1b56b76787751886659438567"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "themacallan.com",
+                "www.themacallan.com"
+            ]
+        },
+        {
+            "rule": "edrington\\.com\\/modules\\/custom\\/ed_agegate\\/cookies\\/\\/xdomain_cookie\\.html",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cookies"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7823051b6e61b1be82ab20e5942fa1822e89faf6413c2b207e77076e5cf2b6ad"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "ed_age": {
+                    "ttl": -8639996,
+                    "length": 4,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "themacallan.com",
@@ -37,9 +70,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Document": 2
     },
     "nameservers": [
         "ns1.demysdns.net",

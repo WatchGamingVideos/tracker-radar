@@ -9,23 +9,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00109,
-    "sites": 158,
+    "prevalence": 0.00111,
+    "sites": 161,
     "subdomains": [
-        "bingshoppingtoolshopifyapp-prod",
+        "naapimtm",
         "bingshoppingtool-t2app-prod",
-        "serviceschipotlecom",
+        "bingshoppingtoolshopifyapp-prod",
         "tm-us-apim-01",
         "nslc-prod-app",
         "realm",
         "production.p13n",
-        "naapimtm",
         "od-geoapi",
         "rc-geoip",
         "rc-aks-dotca-prod",
+        "api-visitor-tm",
         "daserste-stream",
         "kaz-mtl1-tm-geoloc",
-        "api-visitor-tm",
+        "rrcwebsite",
         "prd-ase-petsmartapi",
         "advwebtracking",
         "beoecomapimtm",
@@ -33,9 +33,9 @@
         "xz-e-p-comedtmg-p-10",
         "xz-e-p-pecotmg-p-10",
         "azprduxpatternstm",
+        "serviceschipotlecom",
         "prod-client-logs",
         "euwppatscegtm01",
-        "api.forex.se",
         "fruit",
         "digitransit-prod",
         "marketing-reviews-tm-ne-pb",
@@ -53,16 +53,16 @@
             "resolved": "advwebtracking.trafficmanager.net"
         },
         {
+            "original": "api-visitor.interviewme.pl",
+            "resolved": "api-visitor-tm.trafficmanager.net"
+        },
+        {
             "original": "api-visitor.resumelab.com",
             "resolved": "api-visitor-tm.trafficmanager.net"
         },
         {
             "original": "api-visitor.zety.com",
             "resolved": "api-visitor-tm.trafficmanager.net"
-        },
-        {
-            "original": "api.forex.se",
-            "resolved": "api.forex.se.trafficmanager.net"
         },
         {
             "original": "api.meijer.com",
@@ -163,345 +163,130 @@
         {
             "original": "uxpatterns.cfainstitute.org",
             "resolved": "azprduxpatternstm.trafficmanager.net"
+        },
+        {
+            "original": "www.rrc.texas.gov",
+            "resolved": "rrcwebsite.trafficmanager.net"
         }
     ],
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "naapimtm"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [
+                {
+                    "original": "api.mps.ford.com",
+                    "resolved": "naapimtm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "help.ford.com",
+                "shop.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "naapimtm"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000484,
+            "cnames": [
+                {
+                    "original": "api.mps.ford.com",
+                    "resolved": "naapimtm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "373c09daf6d78efe2b3616043dec771571c68de235f973aa2f0b5522eb8a6e0c",
+                "68d1950e07563185e816fd23c5b83bd611493c21cd046d9190fc1a21438b03bd",
+                "4948d043d7129461c35c486abbbcd6d8a60d6e319622527d41156dbb22300225",
+                "0545488ec02f4d274fdab1bf2416924308b139adf0afb5b05bc339d534042b63",
+                "113a40408b34c65aa505b3090364d2ddb822c950acddd761b9312d1323db2fc7",
+                "d34dda0666d09d99cc78a3af92400785e16651f1b75240388efcdd1ee2fea514"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.com",
+                "accountmanager.ford.com",
+                "help.ford.com",
+                "shop.ford.com",
+                "www.ford.ca",
+                "www.ford.com",
+                "www.lincoln.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/uet\\/tracking_script",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "bingshoppingtoolshopifyapp-prod",
-                "bingshoppingtool-t2app-prod"
+                "bingshoppingtool-t2app-prod",
+                "bingshoppingtoolshopifyapp-prod"
             ],
             "apis": {},
-            "sites": 20,
-            "prevalence": 0.000138,
+            "sites": 25,
+            "prevalence": 0.000173,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "0811979185a6def0eeba767098afdd30f0a3086cf45d0c614eb86b9c6a787b16",
+                "c59f4f405baa648fdbad8e027a1c9d2fb9eeed2fcb6ff5982f501cbeacf7efa3",
+                "1aa13ad2bf5cbf28faa60acc2c0d9e3a8b1aca8cd35f5112d164813d803d4cd0",
                 "52bfec09c63d4c136c9e108c9f2f136f8236783894523aff456a18de8991e877",
                 "913b1f4a764ab84a54d8341bb6d34183ab58a5506477a2578911311ecce7d0da",
-                "349873d8fccfe6c6291b349dc8b16fec7c7eb2dd5adfe1695232f395b4676d56",
+                "4d42257de6bb4da06698aaf881c1a1b8f28b3cd441ccb46ab83ec65705be234a",
+                "bff02013074a1a43ea3ad13b503394b0c473576acfc97ac66bfea2c18b1fadd2",
                 "bebc84007ce43354145f1979837f0a1294d9ec5647e4b1a897578ba71a5b4825",
-                "67c92b9b145cda591212915a954d897649378612a116ced09f72d9f05a579ad2",
+                "349873d8fccfe6c6291b349dc8b16fec7c7eb2dd5adfe1695232f395b4676d56",
                 "3c02ed4843dd82cf1644936d80c32cf19bd240731aa88907c5aef776d6c6d3e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adamstoybox.com",
-                "blade-tech.com",
-                "built.com",
                 "casadesante.com",
-                "darkestfox.com",
-                "fieldcompany.com",
-                "guitarkitworld.com",
-                "platinumtherapylights.com",
-                "succulentsbox.com",
-                "www.bluetti.com",
-                "www.bluettipower.com",
-                "www.floorcity.com",
-                "www.militarymart.co.uk",
-                "www.planetofthevapes.com",
-                "www.radioddity.com",
-                "www.securityprousa.com",
+                "pelicansport.com",
                 "www.spigen.com",
+                "www.blenderseyewear.com",
+                "succulentsbox.com",
+                "platinumtherapylights.com",
                 "www.stanley1913.com",
+                "fieldcompany.com",
+                "www.sainsmart.com",
                 "www.thewalkingcompany.com",
-                "www.tootimid.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/new_cmg_utils1\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 3,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "783b8e5c4755c4ccca98fe26094446389faf3a7898e91600c55d670556349288"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menuinnovation\\/v1\\/universalmeals\\/online",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "1d66711111061c82b2db9cbbd3d6207b8a776b8c534119f2c1d7b1851de3e4ad"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menuinnovation\\/v1\\/universalmeals\\/online",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "98a1979f1ca4ce78b3b5c371f97720c4be858111b1e40512bd00dc91b939ebab"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menuinnovation\\/v1\\/universalmenus\\/online",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "6a783e24dc133cad46a2a864c2bf8766efb1da02888f0e4de77b1229215dc262"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menu-metadata\\/v1\\/menu-metadata",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "3349ac440928935d78d678663128a433ade5690e9482444cd9339c26bf90e1f8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menuinnovation\\/v1\\/universalmenus\\/online",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/menu-metadata\\/v1\\/menu-metadata",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/__imp_apg__\\/js\\/sed-chipotle-a07b7161\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 3,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "149c6adc32a5a0bf5a150cba381ca07ebace6df2580cdff1d2e85e21a97f2f55"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/__imp_apg__\\/api\\/imp\\/v1\\.0\\/report\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "serviceschipotlecom"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.chipotle.com",
-                    "resolved": "serviceschipotlecom.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "03f2afac992ba3397e0692b12c0a870d3eee1175ba17450b6836b6255fda40d5"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chipotle.com",
-                "www.chipotle.com"
+                "www.tootimid.com",
+                "www.militarymart.co.uk",
+                "bicyclewarehouse.com",
+                "www.floorcity.com",
+                "www.ororowear.com",
+                "darkestfox.com",
+                "built.com",
+                "bulletsafe.com",
+                "www.bluettipower.com",
+                "blade-tech.com"
             ]
         },
         {
@@ -512,8 +297,8 @@
                 "tm-us-apim-01"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "api.meijer.com",
@@ -521,13 +306,15 @@
                 }
             ],
             "responseHashes": [
-                "11179fa6a1272905263956fbe0bdcf3993bfea2629ee4d3aefb16a3a3e554584"
+                "e3852e0c27b02f805290b4c6cd6f67687a07ef3c40fef89aa57fbdf415c256af",
+                "9ef3ae42f6236fd971e542fe67ad157ba79fee0ace9f1c224772f8e8be734b66"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "meijer.com",
+                "mperks.meijer.com",
                 "www.meijer.com"
             ]
         },
@@ -548,8 +335,9 @@
                 }
             ],
             "responseHashes": [
-                "6d19a97d4f4f1135f36305051657e5701310abf1e3e6d146213bbf8bf877a7dc",
-                "25f843e1001c0e8c81433813ca92ec422387c713ac7453690da39e7cad7f2861"
+                "e97eac5ddd74f1d0643b5d11edb0273c3630fc3df504a4168d8c41217c30b0e9",
+                "b829dca4899885ff7f47bd1bacaf791cbc16fbdb15bae0749a3f35d9b9dd1101",
+                "d49684301ee616ef1417747923735573a3ee517536f692aae6c6b3113f6eb77a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -563,14 +351,14 @@
         },
         {
             "rule": "trafficmanager\\.net\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.0000968,
+            "cookies": 0.0000969,
             "fingerprinting": 0,
             "subdomains": [
                 "realm"
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.0000968,
+            "prevalence": 0.0000969,
             "cnames": [
                 {
                     "original": "realm.hearstnp.com",
@@ -602,14 +390,14 @@
         },
         {
             "rule": "trafficmanager\\.net\\/connect\\/authorize",
-            "cookies": 0.0000968,
+            "cookies": 0.0000969,
             "fingerprinting": 0,
             "subdomains": [
                 "realm"
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.0000968,
+            "prevalence": 0.0000969,
             "cnames": [
                 {
                     "original": "realm.hearstnp.com",
@@ -622,7 +410,7 @@
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00009678935870136334
+                "_li_dcdm_c": 0.00008993303447894183
             },
             "exampleSites": [
                 "sfchronicle.com",
@@ -650,7 +438,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "recommendations.production.p13n.dell.com",
@@ -676,7 +464,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "recommendations.production.p13n.dell.com",
@@ -684,8 +472,8 @@
                 }
             ],
             "responseHashes": [
-                "90b8c96258475fa103b618053617d28406862e5765218467b5e3a3bbe3920b5a",
-                "c65fa875b8f4a58a8c1d089f6e1b369f2ee703d10abc77245212ca10e4126fab"
+                "5061dd2a379939caefa5fab8933fb3485074ad317b46b2836190d939f8c9461f",
+                "3904ecd531a7ac75294e44e5400ee159a9b927a74c173a1828e2d97aac7fed69"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -694,73 +482,6 @@
                 "dell.com",
                 "i.dell.com",
                 "www.dell.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "naapimtm"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [
-                {
-                    "original": "api.mps.ford.com",
-                    "resolved": "naapimtm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "a2f487c6a3092cb718602bc318d9c5dfb8de80cddf45119b7e7e615eb31b1a02",
-                "eaa030cb9c9daaa4052caaa2fa52baaf5d409e2e2b3f8ebdff64f1f6c051d129",
-                "d590c525b69e180440d97db9d684ccb26ea776ebf240353fbdfafd68dd9b4bd5",
-                "f6313a88961e66e6905b5be0353ef37772ee41d6dc8a6c104aa526c9def1ddfb",
-                "92c35143c54d129ded1cd5611ba01cd6f809e34d099cf2e879669df0666c739e",
-                "ec5bfa8ed5486be27852d1c3853cc73ff5e5c84f17401e9b98253408480a9ba4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "help.ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/api\\/users\\/guest\\/guid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "naapimtm"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [
-                {
-                    "original": "api.mps.ford.com",
-                    "resolved": "naapimtm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ford.com",
-                "help.ford.com",
-                "owner.ford.com",
-                "shop.ford.com",
-                "www.ford.com",
-                "www.ford.ca",
-                "www.lincoln.com"
             ]
         },
         {
@@ -843,6 +564,113 @@
             ]
         },
         {
+            "rule": "trafficmanager\\.net\\/tracking-v7\\.js",
+            "cookies": 0.0000208,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api-visitor-tm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "api-visitor.interviewme.pl",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.resumelab.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.zety.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "60e47f909f88242d61fec87a781fb2a8726038ab56dad58a8eb38a0e4b1ca71e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "interviewme.pl",
+                "resumelab.com",
+                "zety.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/v4\\/visits",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-visitor-tm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "api-visitor.interviewme.pl",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.resumelab.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.zety.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "bf7fba83f6cafc87ffd63d90cc42fd20acbbec86966787ca208151d9755b0c6c",
+                "f5f5d0c1c49f49fb6a0f8dab5ebbe73a9428c3c7b6582bf37b543d1ee076307d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "interviewme.pl",
+                "resumelab.com",
+                "zety.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/v4\\/visits",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-visitor-tm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "api-visitor.interviewme.pl",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.resumelab.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                },
+                {
+                    "original": "api-visitor.zety.com",
+                    "resolved": "api-visitor-tm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "interviewme.pl",
+                "resumelab.com",
+                "zety.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/daserste\\/int\\/master\\.m3u8",
             "cookies": 0,
             "fingerprinting": 0,
@@ -897,106 +725,69 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/tracking-v7\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api-visitor-tm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api-visitor.resumelab.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
-                },
-                {
-                    "original": "api-visitor.zety.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "60e47f909f88242d61fec87a781fb2a8726038ab56dad58a8eb38a0e4b1ca71e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "resumelab.com",
-                "zety.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/v4\\/visits",
+            "rule": "trafficmanager\\.net\\/css\\/animate\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-visitor-tm"
+                "rrcwebsite"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [
                 {
-                    "original": "api-visitor.resumelab.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
-                },
-                {
-                    "original": "api-visitor.zety.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
+                    "original": "www.rrc.texas.gov",
+                    "resolved": "rrcwebsite.trafficmanager.net"
                 }
             ],
             "responseHashes": [
-                "ea5dee6aa2c465c8ca8e30b8fe744831f1aace39ba69415e9e4c04d75d57a56d"
+                "f494e14138f06e6493b363e8213d94906977519da611750924122dffe145c18c"
             ],
-            "type": "XHR",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "resumelab.com",
-                "zety.com"
+                "texas.gov",
+                "rrc.texas.gov"
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/v4\\/visits",
+            "rule": "trafficmanager\\.net\\/css\\/style\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api-visitor-tm"
+                "rrcwebsite"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [
                 {
-                    "original": "api-visitor.resumelab.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
-                },
-                {
-                    "original": "api-visitor.zety.com",
-                    "resolved": "api-visitor-tm.trafficmanager.net"
+                    "original": "www.rrc.texas.gov",
+                    "resolved": "rrcwebsite.trafficmanager.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "127cbb32543e81e60e5890b9e44e5a5b77852217fa898d687c1c066077675407"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "resumelab.com",
-                "zety.com"
+                "texas.gov",
+                "rrc.texas.gov"
             ]
         },
         {
             "rule": "trafficmanager\\.net\\/v1\\/adoptions",
-            "cookies": 0.0000207,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "prd-ase-petsmartapi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "adoptions-api.petsmart.com",
@@ -1004,28 +795,26 @@
                 }
             ],
             "responseHashes": [
-                "5f87724b02dfc02d5474269d7b30f8db8624752a46419a51a540e3f3d5252b91",
-                "dea911b54e4baaa9075b16fda25629bb077d523d988539c0a4ed571ca525a247"
+                "52e567b8c11dcd8990243659b695c0dbd4b876fcf3e97c6443a9cd619b7fb8fa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petsmart.com",
-                "services.petsmart.com",
-                "www.petsmart.com"
+                "services.petsmart.com"
             ]
         },
         {
             "rule": "trafficmanager\\.net\\/v1\\/pets\\/breeds",
-            "cookies": 0.0000207,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "prd-ase-petsmartapi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "api.petsmart.com",
@@ -1040,20 +829,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petsmart.com",
-                "services.petsmart.com",
-                "www.petsmart.com"
+                "services.petsmart.com"
             ]
         },
         {
             "rule": "trafficmanager\\.net\\/v1\\/pets\\/colors",
-            "cookies": 0.0000207,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "prd-ase-petsmartapi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "api.petsmart.com",
@@ -1068,8 +856,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "petsmart.com",
-                "services.petsmart.com",
-                "www.petsmart.com"
+                "services.petsmart.com"
             ]
         },
         {
@@ -1143,7 +930,7 @@
                 }
             ],
             "responseHashes": [
-                "3a01077d060351f168bea29608f84e152c69b4b02215ae3c7f152d13d38a2ca3"
+                "408c504a4786662020e5eee7d4e49b644c0074f382a2d498e8301c0ea5b51897"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -1330,7 +1117,7 @@
                 }
             ],
             "responseHashes": [
-                "333d935e08eecf6fc623741e07b72417ce94b1593678fa14c7c323a2ecc84400"
+                "ec7ec654bf903d486bb225158009e43e27cb156317c5e4396eeb3506fc0740bf"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1356,10 +1143,8 @@
                     "resolved": "beoecomapimtm.trafficmanager.net"
                 }
             ],
-            "responseHashes": [
-                "724974363c37cf8a928e7a7d5955a2488bbe59805ddb9a99ae6ee49c7e81c272"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1383,33 +1168,8 @@
                     "resolved": "beoecomapimtm.trafficmanager.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bang-olufsen.com",
-                "www.bang-olufsen.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/stockoperation\\/v1\\/skuavailability",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "beoecomapimtm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "beoecomapim.bang-olufsen.com",
-                    "resolved": "beoecomapimtm.trafficmanager.net"
-                }
-            ],
             "responseHashes": [
-                "7eb0a4b12713b219ae9300f5a1cec60681b6e1cce1141ef843987d8ca9ffc610"
+                "a9f6df9e8c672f343078eb2417d62619d054cf632c7d5c2ad7e13c990c471278"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1437,6 +1197,33 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bang-olufsen.com",
+                "www.bang-olufsen.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/stockoperation\\/v1\\/skuavailability",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beoecomapimtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "beoecomapim.bang-olufsen.com",
+                    "resolved": "beoecomapimtm.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "fed978aa04efdbb39cb3645aa01c2f98f3e6a0225c9d9f3d549d4b0f2c631a51"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1471,7 +1258,7 @@
                 }
             ],
             "responseHashes": [
-                "fcb327162a7c06cd6cb3be64723bd179fa9f06f0dff4964c033ca773f8a8476a"
+                "d1c84610171070ef503063cba4bd4d405035e74372688db0d43245358a14408b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1510,8 +1297,7 @@
                 }
             ],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-                "a55005d78edae5079c880051f7d24c96d8c31cd226a891f4b1cf4f2461cc31dd"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1525,7 +1311,7 @@
         },
         {
             "rule": "trafficmanager\\.net\\/api\\/Services\\/MyAccountService\\.svc\\/GetWebUserName",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "xz-e-p-bgetmg-p-10",
@@ -1630,89 +1416,11 @@
                 }
             ],
             "responseHashes": [
-                "ecb09092b725ceab40ecac858e28055eea7243e07f1636bd57f0ecd2fd52d7bd",
-                "816eb3a77070c8c7fb0c5faac468f9222be8ca8093dd8c29c4cbc97f04f901d4",
-                "9a4241c7cb3c90ec83b7ec6fcd9e0f01227ff0e60bec117d64a0eb39cbf9ad07"
+                "f0d8327f80f87c10142898c516e8d41613fdf5b8bd93d1292290a091d21d61cf",
+                "e7b5bf314030eb5740be63db870bc0bd83229c41f28e1e2b824cdf1bce55f8c6",
+                "08eb200e9f5fd5599c563979ae318dbad26f4535840ad71ff0e91798c779375a"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bge.com",
-                "www.bge.com",
-                "www.comed.com",
-                "www.peco.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/Lib\\/DigitalAssistant\\/styles\\/styles\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xz-e-p-bgetmg-p-10",
-                "xz-e-p-comedtmg-p-10",
-                "xz-e-p-pecotmg-p-10"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [
-                {
-                    "original": "secure.bge.com",
-                    "resolved": "xz-e-p-bgetmg-p-10.trafficmanager.net"
-                },
-                {
-                    "original": "secure.comed.com",
-                    "resolved": "xz-e-p-comedtmg-p-10.trafficmanager.net"
-                },
-                {
-                    "original": "secure.peco.com",
-                    "resolved": "xz-e-p-pecotmg-p-10.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "4c86b97f05f725605b4cc2f5e0b49ad22b9300949f594883f7237674c2f9fd51"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bge.com",
-                "www.bge.com",
-                "www.comed.com",
-                "www.peco.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/Lib\\/DigitalAssistant\\/styles\\/menu\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "xz-e-p-bgetmg-p-10",
-                "xz-e-p-comedtmg-p-10",
-                "xz-e-p-pecotmg-p-10"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [
-                {
-                    "original": "secure.bge.com",
-                    "resolved": "xz-e-p-bgetmg-p-10.trafficmanager.net"
-                },
-                {
-                    "original": "secure.comed.com",
-                    "resolved": "xz-e-p-comedtmg-p-10.trafficmanager.net"
-                },
-                {
-                    "original": "secure.peco.com",
-                    "resolved": "xz-e-p-pecotmg-p-10.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "a55b454c148c86119eab989d30a34104ed2856c1dd43cbbc676e332886709f43"
-            ],
-            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1762,6 +1470,45 @@
             ]
         },
         {
+            "rule": "trafficmanager\\.net\\/Lib\\/DigitalAssistant\\/styles\\/styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xz-e-p-bgetmg-p-10",
+                "xz-e-p-comedtmg-p-10",
+                "xz-e-p-pecotmg-p-10"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "secure.bge.com",
+                    "resolved": "xz-e-p-bgetmg-p-10.trafficmanager.net"
+                },
+                {
+                    "original": "secure.comed.com",
+                    "resolved": "xz-e-p-comedtmg-p-10.trafficmanager.net"
+                },
+                {
+                    "original": "secure.peco.com",
+                    "resolved": "xz-e-p-pecotmg-p-10.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "4c86b97f05f725605b4cc2f5e0b49ad22b9300949f594883f7237674c2f9fd51"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bge.com",
+                "www.bge.com",
+                "www.comed.com",
+                "www.peco.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/Lib\\/DigitalAssistant\\/images\\/chat-launch\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1791,6 +1538,45 @@
                 "be2f37b95b3a48845f534348d95451a31d315e05686e51a7a71cb483a4d43110"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bge.com",
+                "www.bge.com",
+                "www.comed.com",
+                "www.peco.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/Lib\\/DigitalAssistant\\/styles\\/menu\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xz-e-p-bgetmg-p-10",
+                "xz-e-p-comedtmg-p-10",
+                "xz-e-p-pecotmg-p-10"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "secure.bge.com",
+                    "resolved": "xz-e-p-bgetmg-p-10.trafficmanager.net"
+                },
+                {
+                    "original": "secure.comed.com",
+                    "resolved": "xz-e-p-comedtmg-p-10.trafficmanager.net"
+                },
+                {
+                    "original": "secure.peco.com",
+                    "resolved": "xz-e-p-pecotmg-p-10.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "a55b454c148c86119eab989d30a34104ed2856c1dd43cbbc676e332886709f43"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2147,6 +1933,85 @@
             ]
         },
         {
+            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/onlineorderingstatus",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "98a1979f1ca4ce78b3b5c371f97720c4be858111b1e40512bd00dc91b939ebab"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
+            ]
+        },
+        {
+            "rule": "trafficmanager\\.net\\/__imp_apg__\\/api\\/imp\\/v1\\.0\\/report\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serviceschipotlecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "services.chipotle.com",
+                    "resolved": "serviceschipotlecom.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipotle.com",
+                "www.chipotle.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/api\\/v2\\/monitoring",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2201,110 +2066,6 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/currency\\/priceCategories",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.forex.se"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.forex.se",
-                    "resolved": "api.forex.se.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "e1329d82c6efb1a850b9f7cfcd29c8b052adcc368225d786fe8583e7f5da8c80"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forex.se",
-                "www.forex.se"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/currency\\/priceCategories",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.forex.se"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.forex.se",
-                    "resolved": "api.forex.se.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forex.se",
-                "www.forex.se"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/currency\\/markets",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.forex.se"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.forex.se",
-                    "resolved": "api.forex.se.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forex.se",
-                "www.forex.se"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/currency\\/markets",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api.forex.se"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.forex.se",
-                    "resolved": "api.forex.se.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [
-                "7532032c3895a220f3bf7c4e9e924e592d167617d9fbb0557419ca440cf0e425"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "forex.se",
-                "www.forex.se"
-            ]
-        },
-        {
             "rule": "trafficmanager\\.net\\/proxydirectory\\/tags\\/11921\\/tag\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
@@ -2321,7 +2082,7 @@
                 }
             ],
             "responseHashes": [
-                "dd3c2e852d0ea143072321c7307ce94ff107871b7f0d17ad1839499628457cfd"
+                "52e4d50c53d4b78203a280c249b4380c95736881782ca78fe4d4bdcbeef93b49"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -2373,7 +2134,7 @@
                 }
             ],
             "responseHashes": [
-                "781fee18eb1b9d2f365138ccf865d29e4ad48b7e7922984f6e1b226b41a1ef3f"
+                "73d1acea59298994583ca2eea794ccbe99e1783ba6570e94767f06ce0e96e343"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -2477,7 +2238,7 @@
                 }
             ],
             "responseHashes": [
-                "41c97e2c7c27ad8bf0199d2e3540556267946632e57b50db42a0c0445a709754"
+                "31fd65113a8c9a73be97906cf09fb0802d20fbe9effbe99fc8c166d0ceb2a096"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2504,7 +2265,7 @@
                 }
             ],
             "responseHashes": [
-                "0a7160a90c41ac754cbf0dd1a67d40657fbd0e8e3cac735b7179133ba0e6e832"
+                "7ea98c29ed3e1ab559dcbcb78eea00aa5fe58419b850d7e1dfdc94d3adfe5c02"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2677,56 +2438,6 @@
             ]
         },
         {
-            "rule": "trafficmanager\\.net\\/media\\/Default\\/Images\\/Banner%20images\\/Trustnet\\/Japan_flag_LARGE\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trustnetcmseuwliv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cms.trustnet.com",
-                    "resolved": "trustnetcmseuwliv.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trustnet.com",
-                "www.trustnet.com"
-            ]
-        },
-        {
-            "rule": "trafficmanager\\.net\\/media\\/Default\\/Images\\/Banner%20images\\/Trustnet\\/stock%20market\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trustnetcmseuwliv"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cms.trustnet.com",
-                    "resolved": "trustnetcmseuwliv.trafficmanager.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trustnet.com",
-                "www.trustnet.com"
-            ]
-        },
-        {
             "rule": "trafficmanager\\.net\\/media\\/Default\\/Images\\/Banner%20images\\/Trustnet\\/coin-stacks-and-chart-graphs-on-a-chessboard\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2827,6 +2538,31 @@
             ]
         },
         {
+            "rule": "trafficmanager\\.net\\/media\\/Default\\/Images\\/Banner%20images\\/Trustnet\\/Hidden%20fees\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trustnetcmseuwliv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "cms.trustnet.com",
+                    "resolved": "trustnetcmseuwliv.trafficmanager.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trustnet.com",
+                "www.trustnet.com"
+            ]
+        },
+        {
             "rule": "trafficmanager\\.net\\/xosearch\\/Content\\/img\\/bg_misc\\.jpg",
             "cookies": 0.0000138,
             "fingerprinting": 0,
@@ -2843,7 +2579,7 @@
                 }
             ],
             "responseHashes": [
-                "defba32848b170120c8675ac91db39374e62a678cac2444784ad0235d6f73656"
+                "25c761e6dd588c58136beed3389ead0ae68ee55dcf124e5ace9b352314d05812"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2858,16 +2594,16 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000442,
+    "cookies": 0.000443,
     "types": {
-        "Script": 46,
-        "XHR": 81,
-        "Preflight": 38,
-        "Fetch": 14,
+        "Preflight": 29,
+        "XHR": 74,
+        "Script": 48,
         "Document": 24,
         "EventSource": 2,
-        "Stylesheet": 10,
-        "Image": 50,
+        "Stylesheet": 14,
+        "Fetch": 10,
+        "Image": 48,
         "Other": 2
     },
     "nameservers": [

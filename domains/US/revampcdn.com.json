@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000968,
-    "sites": 14,
+    "prevalence": 0.0000899,
+    "sites": 13,
     "subdomains": [
         "spn-v1"
     ],
@@ -27,19 +27,19 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "43f43f86a49930434d6882019346bb995aee36b5a44553843711b879f9837b97"
+                "d718558a963db77ebd768c96f61e186457a9b1913c6ca8eb36eaaf61347ee7a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aptoide.com",
-                "en.aptoide.com"
+                "aptoide.en.aptoide.com"
             ]
         },
         {
             "rule": "revampcdn\\.com\\/prebid\\/aptoide\\/prebid-client\\.js",
-            "cookies": 0,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "spn-v1"
@@ -49,7 +49,9 @@
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -58,11 +60,90 @@
                 "1e4d96a522c2e1608c317fb17cc14008402eb47f694aa22b718fd9af4e34816e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_pbjs_userid_consent_data": {
+                    "ttl": 2592002,
+                    "length": 16,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_691_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_last": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id.1st": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id.1st_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id.1st_691_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id.1st_last": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id_691_nb": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "id5id_last": {
+                    "ttl": -86397,
+                    "length": 3,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aptoide.com",
-                "en.aptoide.com"
+                "aptoide.en.aptoide.com"
             ]
         },
         {
@@ -82,22 +163,48 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aptoide.com",
-                "en.aptoide.com"
+                "aptoide.en.aptoide.com"
             ]
         },
         {
-            "rule": "revampcdn\\.com\\/prebid\\/filehorse\\/prebid-client\\.js",
-            "cookies": 0.0000138,
+            "rule": "revampcdn\\.com\\/publishers\\/cowcotland\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "spn-v1"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ca9adac808d9f8d6b98c4e0b58f53d5587ba64fa802d01646a53ce92daca843e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cowcotland.com",
+                "www.cowcotland.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/prebid\\/cowcotland\\/prebid-client\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
-                "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -106,97 +213,97 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ff4a8b16ef14e2538796c16c02cb1f6345cd7b2fe72bb41632908cb1955811cd"
+                "d98b93eb242e63902b4706b877ecf2201773efb1752ba1931fc34147d3021623"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
                     "ttl": 2592001,
                     "length": 16,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_691_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_last": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_691_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_last": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_691_nb": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_last": {
-                    "ttl": -86399,
+                    "ttl": -86398,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filehorse.com",
-                "www.filehorse.com"
+                "cowcotland.com",
+                "www.cowcotland.com"
             ]
         },
         {
-            "rule": "revampcdn\\.com\\/publishers\\/filehorse\\.js",
+            "rule": "revampcdn\\.com\\/publishers\\/cowcotland\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -204,33 +311,6 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "32f063e269a772115aafcf3987243fd0ed23c73ba307cbaf76cdf801bbe29174"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "filehorse.com",
-                "www.filehorse.com"
-            ]
-        },
-        {
-            "rule": "revampcdn\\.com\\/publishers\\/filehorse\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "spn-v1"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
@@ -241,8 +321,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "filehorse.com",
-                "www.filehorse.com"
+                "cowcotland.com",
+                "www.cowcotland.com"
             ]
         },
         {
@@ -272,81 +352,81 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592004,
+                    "ttl": 2592001,
                     "length": 16,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_691_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "pbjs-id5id_last": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_691_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id.1st_last": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_691_nb": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "id5id_last": {
-                    "ttl": -86398,
+                    "ttl": -86400,
                     "length": 3,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -372,7 +452,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "2ef4fd2d532bdb8d6ff6da736e53913a0196a2d7901f41bf43cc762b6d54a6e0"
+                "cefad995d0a6be6cd1324e595ae55b3138f920cc105f89d95973838e47884959"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -449,7 +529,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3b5427c664ef362d81bdc777af0407c9e29367bc2ba50b9ebd165d0a169f296e"
+                "0542925966ba195027ef6947d4a060b579ff9e058e43dd872524ec6a9bbe943e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -484,7 +564,7 @@
         },
         {
             "rule": "revampcdn\\.com\\/prebid\\/prebid\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "spn-v1"
@@ -495,8 +575,8 @@
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -507,81 +587,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592005,
+                    "ttl": 2592002,
                     "length": 16,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                },
-                "pbjs-id5id": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "pbjs-id5id_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "pbjs-id5id_691_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "pbjs-id5id_last": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id.1st": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id.1st_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id.1st_691_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id.1st_last": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id_691_nb": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "id5id_last": {
-                    "ttl": -86395,
-                    "length": 3,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -599,15 +607,15 @@
                 "spn-v1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "cc4f8f45bb7188307132a3219b3e4bf5142153da671c620f12a531a9d46bea1c"
+                "4490b36ae2912c0565c4efebf4b26dfdd090b51409b61361d601ae7392298eb2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -625,9 +633,9 @@
                 "spn-v1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -644,7 +652,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000553,
+    "cookies": 0.0000623,
     "types": {
         "Script": 20,
         "Fetch": 10

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00166,
-    "sites": 240,
+    "prevalence": 0.00174,
+    "sites": 251,
     "subdomains": [
         "ughr",
         "si",
@@ -21,11 +21,12 @@
         "tracker_alo",
         "tracker_cz",
         "tracker_sk",
+        "collector_sr",
         "images4",
         "www",
         "en",
-        "collector_sr",
         "hb",
+        "hbdev",
         "collector_alt",
         "analytics"
     ],
@@ -34,7 +35,7 @@
     "resources": [
         {
             "rule": "contentexchange\\.me\\/static\\/tracker\\.js",
-            "cookies": 0.000076,
+            "cookies": 0.000083,
             "fingerprinting": 1,
             "subdomains": [
                 "ughr",
@@ -46,11 +47,11 @@
                 "sk"
             ],
             "apis": {
-                "Document.cookie setter": 11,
-                "Document.cookie getter": 11
+                "Document.cookie setter": 12,
+                "Document.cookie getter": 12
             },
-            "sites": 14,
-            "prevalence": 0.0000968,
+            "sites": 16,
+            "prevalence": 0.000111,
             "cnames": [],
             "responseHashes": [
                 "90c1d5804c0693881dbd327fadb4372c99978a35c7979aa4b7ab7912d8caa166",
@@ -71,8 +72,10 @@
                 "rs.n1info.com",
                 "srbin.info",
                 "www.b92.net",
+                "www.danas.rs",
                 "www.logicno.com",
                 "www.penize.cz",
+                "www.protiproud.cz",
                 "www.slovenskenovice.si",
                 "www.ta3.com",
                 "www.telegraf.rs",
@@ -83,7 +86,7 @@
         },
         {
             "rule": "contentexchange\\.me\\/boot",
-            "cookies": 0.000076,
+            "cookies": 0.000083,
             "fingerprinting": 2,
             "subdomains": [
                 "tracker_ughr",
@@ -95,43 +98,45 @@
                 "tracker_sk"
             ],
             "apis": {
-                "Document.cookie setter": 10,
-                "Date.prototype.getTimezoneOffset": 10,
-                "Date.prototype.getTime": 10,
-                "Screen.prototype.height": 10,
-                "Screen.prototype.width": 10,
-                "Screen.prototype.colorDepth": 10
+                "Document.cookie setter": 11,
+                "Date.prototype.getTimezoneOffset": 11,
+                "Date.prototype.getTime": 11,
+                "Screen.prototype.height": 11,
+                "Screen.prototype.width": 11,
+                "Screen.prototype.colorDepth": 11
             },
-            "sites": 14,
-            "prevalence": 0.0000968,
+            "sites": 16,
+            "prevalence": 0.000111,
             "cnames": [],
             "responseHashes": [
-                "4582c5adfda367f5dc5e1330e6d78c5b2f4ba5ce4590dd9890c3a777a189bc88",
-                "4634e000aaa4812edd06ca9dfa672319bba2721833f5c01705f554321595e2f2",
-                "dd8560813e7aca7740eab2a80016366191445bcf9d5ed3e76d3ae75140b3c156",
-                "7c22cc2344ea533e8e1df63c9e1d09c9aa02e447b0341f373e1c386dec88e95e",
-                "e8005f0e6c292f01c9ae21203cd62897e481138dbc6a429c0270ea2559eff47d",
-                "9453ec5626fadd3d2a1a70b64171572e6642fd142acdf4bdc9814f8ac98bd2a3",
+                "d06273efbe589600edafd72f0dcc004a53049f62acbbbe5ce729e8f0b581b994",
+                "c616d700701d3b0271894cc8aeeff355a117c0d5a7e405ec613bae58056dd622",
+                "7c989b418351bf84b4dec1828735c0227e1caed734d320ba3403cd5cccf5df1e",
+                "cd96672f8a2bf08dd3e8a888e670d65a2e1f948b2d753068c6e903daf311aa15",
+                "d4e703a3653dc27e290ecfa65fee8afa3343782db0c403465cc7c1adbd73dd54",
+                "0a8ab26935cb50f5c6a96dc7ac506261c458d0350cdb96568edd1778530cea73",
+                "5e1a5e244ffb0422a071d4cd5397753b4498f62cab692352cf186cf8f961d131",
                 "987f3d4f8dcf9c653a029dcfb6d0feb2cf32e82efd7755ed5e5040335d9e7b1a",
-                "82c59c4eac79ac58febc8f897f76e2d47963e3f6005ad3d0aa5ed4cdf207e4fb",
-                "5ea4cbb80842573d7f1b1c6e3f0b05338492d87af903bffb3fcb936a60f9b780",
-                "aa2ed73cfc86e3368a775bdfcb801d9e28d50c121865802c31eaddbfa10f78ec",
-                "0239dffa9d1e1e92682d6fe022f1d98ee0f99b2a8c0bba70307a44b70827cc69",
-                "e4295129a1d48a898356b177fb2364a910cf084f1a9626c9426721b86504d202",
+                "1f5e84717bcfd9023671d16ff6974d36651ead90dcd3139646add8222e4c2898",
+                "82405ff1db7620d08342c22713bf6ddbb049588a932ea6ab7536e9a16a881904",
+                "a420304815c7b5cf961530075bf4ddd5211749741e9d36877c30438aa7223333",
+                "ad1af46383b1732102800271fce7ca8bf29b10d739d797d8bd64cf3c2b88a1f6",
+                "a1e960f6337c630efb2a9db3ac10e4d3b18efc89dd8fedee510add010863c69b",
+                "fc1de842992dd5b890fd7905cdf5e1a13fc9aa8cce08cdd09e835dc8581b0cde",
                 "39c80bbee62b88f0a28f2634f11cf1c9a22c91f4737ace8c598519929ad44088"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cx_id": {
-                    "ttl": 62208003,
+                    "ttl": 62208002,
                     "length": 24,
-                    "prevalence": 0.00006913525621525953,
+                    "prevalence": 0.00007609718302064309,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {
-                "euctmp": 0.000006913525621525954,
-                "get_top_level_domain_cookie": 0.000013827051243051907
+                "euctmp": 0.000006917925729149372,
+                "get_top_level_domain_cookie": 0.000013835851458298743
             },
             "exampleSites": [
                 "dnevnik.hr",
@@ -140,14 +145,43 @@
                 "rs.n1info.com",
                 "srbin.info",
                 "www.b92.net",
+                "www.danas.rs",
                 "www.logicno.com",
                 "www.penize.cz",
+                "www.protiproud.cz",
                 "www.slovenskenovice.si",
                 "www.ta3.com",
                 "www.telegraf.rs",
                 "www.telegram.hr",
                 "www.vijesti.me",
                 "www.zurnal24.si"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/hr\\/collect",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector_sr"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cx_id": 0.000020753777187448115,
+                "_ym_d": 0.000006917925729149372,
+                "get_top_level_domain_cookie": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "n1info.com",
+                "hr.n1info.com",
+                "www.telegram.hr"
             ]
         },
         {
@@ -160,8 +194,8 @@
                 "tracker_cz"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
                 "90c1d5804c0693881dbd327fadb4372c99978a35c7979aa4b7ab7912d8caa166",
@@ -172,10 +206,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dnevnik.hr",
+                "n1info.com",
                 "hr.n1info.com",
                 "rs.n1info.com",
+                "www.danas.rs",
                 "www.penize.cz",
+                "www.protiproud.cz",
                 "www.telegram.hr",
                 "www.vijesti.me"
             ]
@@ -188,30 +224,34 @@
                 "images4"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000622,
+            "sites": 11,
+            "prevalence": 0.0000761,
             "cnames": [],
             "responseHashes": [
-                "9b69227bf3c151098b86aaeeb38b6e4db584e73e72d638d7089e36feee69f2bd",
-                "adb40df423fd94fbdf404a12e94793a34286dbb071e052e544cc20fd48dbcd29",
-                "44fefff5761d311ea1dd231582d9524d20af8085eecd712b218d81575fe5d530",
-                "a20c1879ae70e291fbed9c309cac77cfe23d5a52b038f59899c6c4e3b5980092",
-                "ce3818061aa5e0ccee6908e3b095a1385f948b4c48b1c35bc4761fedf8490f21",
-                "4e7e93471d79b4a53b5ac33cb697d4c81e1bf161752ee04c361e6c318bb87c4c",
-                "85fb894cb8db54885b3bd9ecd035f9d9f364ff1be05f2a13666151a9f5eda8e5",
-                "d290da5bb6d420d1b13043b375785d56629f944b8ec24d76d9c475f660e6c995"
+                "7a1929f22f9186f785c9e4b1d86da3a6e86b0d5b79b35d2825564e89d52d5631",
+                "7fca3463668ecd1558e54b298449f203bac4bb06d209ae24755a6f3c470aaa36",
+                "df6f528842652b441a4866333606e6ff28e0147b82996dd1fef9474f9e7f920a",
+                "e7e0c103df120879279268ff3384821dc0b2da8b53fff769e8175d7ae65ea8d5",
+                "a4f3ffc4b05e2f4ac4a60eaac0322666ac12769d5a4ef0aaf22477b4728d7525",
+                "7fecb3b7d6c7b249e3cc712f5fe6514461cc8867aaaa0f01a5e029e764222d69",
+                "436425ea3642cce0990e69b675dada2a49d2a57c139c76a4611cdfa3b1e93ad4",
+                "234b18d8a2b9d4d3ed37821fe94bc449abd4ad891d9659f92ccf2401e82caabf",
+                "98e8ab3867513004bfca4fc2670b30fceb2d51b71872b01f86e54d5985d0e528",
+                "89323f1bc723bf8552887800b6aed3f40985b68a54946334b76c1daef21dab36"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000013827051243051907
+                "get_top_level_domain_cookie": 0.000006917925729149372
             },
             "exampleSites": [
-                "dnevnik.hr",
+                "n1info.com",
                 "hr.n1info.com",
                 "nova24tv.si",
                 "rs.n1info.com",
+                "www.danas.rs",
                 "www.penize.cz",
+                "www.protiproud.cz",
                 "www.slovenskenovice.si",
                 "www.telegram.hr",
                 "www.vijesti.me",
@@ -227,8 +267,8 @@
                 "en"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
                 "62db9e73eb6b6afae6d1742050ee1b2aa6a08f73ac6d399053f00573e3fb4ba5"
@@ -237,38 +277,14 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dnevnik.hr",
-                "hr.n1info.com",
-                "rs.n1info.com",
-                "www.penize.cz",
-                "www.telegram.hr",
-                "www.vijesti.me"
-            ]
-        },
-        {
-            "rule": "contentexchange\\.me\\/hr\\/collect",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector_sr"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "cx_id": 0.00002074057686457786,
-                "get_top_level_domain_cookie": 0.000006913525621525954
-            },
-            "exampleSites": [
                 "n1info.com",
                 "hr.n1info.com",
-                "www.telegram.hr"
+                "rs.n1info.com",
+                "www.danas.rs",
+                "www.penize.cz",
+                "www.protiproud.cz",
+                "www.telegram.hr",
+                "www.vijesti.me"
             ]
         },
         {
@@ -276,14 +292,16 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "hb"
+                "hb",
+                "hbdev"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
-                "5618cd9b3dc8fa4c4f1eb060fdce1de66baf091d7846348394b14fdc69199af9"
+                "5618cd9b3dc8fa4c4f1eb060fdce1de66baf091d7846348394b14fdc69199af9",
+                "87098e6902e7ed5da043993670c71285079e3f375a4a09de0bd93c32fbb9ff96"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -292,6 +310,8 @@
                 "n1info.com",
                 "hr.n1info.com",
                 "rs.n1info.com",
+                "www.danas.rs",
+                "www.protiproud.cz",
                 "www.slovenskenovice.si",
                 "www.vijesti.me",
                 "www.zurnal24.si"
@@ -299,28 +319,29 @@
         },
         {
             "rule": "contentexchange\\.me\\/prebid",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 2,
             "subdomains": [
-                "hb"
+                "hb",
+                "hbdev"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "window.sessionStorage": 4,
-                "Navigator.prototype.appName": 6,
-                "Date.prototype.getTime": 5,
+                "Navigator.prototype.cookieEnabled": 8,
+                "Date.prototype.getTime": 6,
                 "Document.cookie setter": 3,
-                "Document.cookie getter": 5,
-                "window.localStorage": 5,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Navigator.prototype.language": 3,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Navigator.prototype.doNotTrack": 2
+                "Document.cookie getter": 6,
+                "window.localStorage": 6,
+                "Navigator.prototype.userAgent": 8,
+                "window.sessionStorage": 8,
+                "Navigator.prototype.appName": 8,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.language": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Navigator.prototype.doNotTrack": 4
             },
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 8,
+            "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
                 "469bb7244a4a19ac99e802d6ce7be2427fb45313d027b1048ca829c8dc104e0d"
@@ -332,6 +353,8 @@
                 "n1info.com",
                 "hr.n1info.com",
                 "rs.n1info.com",
+                "www.danas.rs",
+                "www.protiproud.cz",
                 "www.slovenskenovice.si",
                 "www.vijesti.me",
                 "www.zurnal24.si"
@@ -354,7 +377,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cx_id": 0.000013827051243051907
+                "cx_id": 0.000013835851458298743
             },
             "exampleSites": [
                 "nova24tv.si",
@@ -409,16 +432,16 @@
             "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "8420e199907e16ebfb529ec64728e26b5510ad66714e479ef7d184c22f8186fc",
-                "de14b25afe7f9c53c32f4317cf64a38ec9487c38cce9fe8c547c820a39acb394",
-                "ef9c3c604e20e91a880ccf63e2b1ec7b639332b9f33ddd84e3325dce568dbbe2"
+                "d7d9d73b493c10493b56b628be4d67f234487da5624eeda54af5947f7c38971e",
+                "31e36fed181ef99d85bae01710b7c906041e54183f6c53f88c1a0cc9fcdc28a8",
+                "f4e4771c7bf2fb64c0e980eb87fd44f8770bf76c07e3745b17400a9c2f437916"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cx_id": {
-                    "ttl": 62208004,
+                    "ttl": 62208006,
                     "length": 24,
-                    "prevalence": 0.000027654102486103815,
+                    "prevalence": 0.000027671702916597487,
                     "uniqueness": 1
                 }
             },
@@ -447,7 +470,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cx_id": 0.000027654102486103815
+                "cx_id": 0.000027671702916597487
             },
             "exampleSites": [
                 "nova.bg",
@@ -484,22 +507,35 @@
         {
             "rule": "contentexchange\\.me\\/bex\\/boot\\/5f85aef32f8be553873579ef",
             "cookies": 0.0000138,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "analytics"
             ],
             "apis": {
                 "window.localStorage": 2,
-                "window.sessionStorage": 2
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "558045bac215cf69ff435069f6e361dd499b7a9d23dd4485b478748530af30e3"
+                "84df269c86cfe57e84f1b19926a45b2e5d859d7d5697a30ea9010888a62fd883"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "cx_id": {
+                    "ttl": 62208007,
+                    "length": 24,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "n1info.com",
@@ -508,15 +544,15 @@
         },
         {
             "rule": "contentexchange\\.me\\/sr\\/collect",
-            "cookies": 0.0000553,
+            "cookies": 0.0000623,
             "fingerprinting": 0,
             "subdomains": [
                 "collector_sr",
                 "collector_alt"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000553,
+            "sites": 9,
+            "prevalence": 0.0000623,
             "cnames": [],
             "responseHashes": [
                 "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
@@ -524,14 +560,15 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cx_id": 0.00004839467935068167,
-                "get_top_level_domain_cookie": 0.000006913525621525954
+                "cx_id": 0.00006226133156234434,
+                "get_top_level_domain_cookie": 0.000006917925729149372
             },
             "exampleSites": [
                 "n1info.com",
                 "rs.n1info.com",
                 "srbin.info",
                 "www.b92.net",
+                "www.danas.rs",
                 "www.logicno.com",
                 "www.srbijadanas.com",
                 "www.telegraf.rs",
@@ -550,7 +587,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9e0ba2f849d6733073501a6e5e8a16a29b925ef21c8244da667b05f8f0d1eb4f"
+                "1eb6337df7fee1f411ae055b094fff189fedfd83c8b16ae31ccc9d35233c5e2b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -561,29 +598,123 @@
             ]
         },
         {
-            "rule": "contentexchange\\.me\\/nativehb",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "contentexchange\\.me\\/bex\\/load\\/606711ef7d45913ccbae7a24",
+            "cookies": 0.00000692,
+            "fingerprinting": 1,
             "subdomains": [
-                "hb"
+                "analytics"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "apis": {
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "82633a4235efa99e29d92e1179366c53c15f17d23633e2a5a19ed22d92bee60c",
-                "148233b39df786ed75ce9149a5d97d5035a9cffa58488481b1ffc64bc0e7dd55"
+                "9e022a4b4fe6495858f37eaeb770e90b368b2ea3e973520a3a483a8634ec288b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "danas.rs",
+                "www.danas.rs"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/bex\\/load\\/5eeccd1f60a8ef46cb40bfd4",
+            "cookies": 0.00000692,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie setter": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dd75749f2bbb5ce9494051544a9fc610994ca53f68a18faa32f9f1120cb847cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "danas.rs",
+                "www.danas.rs"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/widget\\/Y8C77DWkrrMy8Gvu4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hb",
+                "hbdev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bb31c6e1e6fc76ddc53e9b6f0e3f18709c1896b0ae535931fa0339ca4eabfd38"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "danas.rs",
+                "www.danas.rs"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/widget\\/pZNxMarvPqQbv5bXr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hb",
+                "hbdev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1d183180935041157d2e708aef3dce36019825d625a07bf8d74b158a836d25f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "danas.rs",
+                "www.danas.rs"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/cz\\/collect",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector_alt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000006913525621525954
+                "cx_id": 0.000013835851458298743
             },
             "exampleSites": [
-                "slovenskenovice.si",
-                "www.vijesti.me",
-                "www.zurnal24.si"
+                "protiproud.cz",
+                "www.protiproud.cz"
             ]
         },
         {
@@ -606,6 +737,32 @@
             "exampleSites": [
                 "slovenskenovice.si",
                 "www.slovenskenovice.si"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/nativehb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "82633a4235efa99e29d92e1179366c53c15f17d23633e2a5a19ed22d92bee60c",
+                "148233b39df786ed75ce9149a5d97d5035a9cffa58488481b1ffc64bc0e7dd55"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "slovenskenovice.si",
+                "www.vijesti.me",
+                "www.zurnal24.si"
             ]
         },
         {
@@ -654,14 +811,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b2f7eec5a271de6995045191a5bcbdd676f96b543baae5f003a0849c191c797a"
+                "5b77fc7380c547788407fab4176f1a5983a8de746ee7461fbeb7825819f7efb3"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cx_id": {
-                    "ttl": 62208005,
+                    "ttl": 62208007,
                     "length": 24,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -688,7 +845,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cx_id": 0.000013827051243051907
+                "cx_id": 0.000013835851458298743
             },
             "exampleSites": [
                 "ta3.com",
@@ -698,14 +855,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000173,
+    "cookies": 0.000208,
     "types": {
-        "Script": 67,
-        "Image": 36
+        "Script": 85,
+        "Image": 43
     },
     "nameservers": [
-        "dns3.siel.si",
+        "dns1.siel.si",
         "dns2.siel.si",
-        "dns1.siel.si"
+        "dns3.siel.si"
     ]
 }

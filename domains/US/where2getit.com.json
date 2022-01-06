@@ -12,13 +12,17 @@
     "subdomains": [
         "static",
         "hosted",
-        "cheesecake",
-        "locations"
+        "sl-dsg",
+        "cheesecake"
     ],
     "cnames": [
         {
             "original": "locations.thecheesecakefactory.com",
             "resolved": "cheesecake.where2getit.com"
+        },
+        {
+            "original": "storelocator.dickssportinggoods.com",
+            "resolved": "sl-dsg.where2getit.com"
         }
     ],
     "fingerprinting": 2,
@@ -29,12 +33,18 @@
             "fingerprinting": 0,
             "subdomains": [
                 "static",
-                "hosted"
+                "hosted",
+                "sl-dsg"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
+            "sites": 8,
+            "prevalence": 0.0000553,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
             "responseHashes": [
                 "dcfab4a204d79cf1f6b54793e7b165f74c843f9a45826852e5e9243c3232ff11"
             ],
@@ -45,7 +55,11 @@
                 "harristeeter.com",
                 "locations.michaels.com",
                 "locations.thecheesecakefactory.com",
-                "stores.dickssportinggoods.com"
+                "stores.dickssportinggoods.com",
+                "stores.truevalue.com",
+                "www.dickssportinggoods.com",
+                "www.dollartree.com",
+                "www.thenorthface.fr"
             ]
         },
         {
@@ -54,14 +68,20 @@
             "fingerprinting": 1,
             "subdomains": [
                 "static",
-                "hosted"
+                "hosted",
+                "sl-dsg"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
+            "sites": 6,
+            "prevalence": 0.0000415,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
             "responseHashes": [
                 "a6b4f5343dd13746d73c87e9f2e6187768e92fdfd1334fb4613dd23c6cd3e819"
             ],
@@ -71,7 +91,10 @@
             "exampleSites": [
                 "harristeeter.com",
                 "locations.thecheesecakefactory.com",
-                "stores.dickssportinggoods.com"
+                "stores.dickssportinggoods.com",
+                "stores.truevalue.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
             ]
         },
         {
@@ -80,17 +103,23 @@
             "fingerprinting": 1,
             "subdomains": [
                 "static",
-                "hosted"
+                "hosted",
+                "sl-dsg"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.language": 1,
-                "Document.cookie getter": 1
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.appVersion": 4,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
+            "sites": 6,
+            "prevalence": 0.0000415,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
             "responseHashes": [
                 "ae09122deb9fb29711ef495b686728c098e8e4ed306c25a76cbcfd1aee454c21"
             ],
@@ -100,7 +129,10 @@
             "exampleSites": [
                 "harristeeter.com",
                 "locations.thecheesecakefactory.com",
-                "stores.dickssportinggoods.com"
+                "stores.dickssportinggoods.com",
+                "stores.truevalue.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
             ]
         },
         {
@@ -113,10 +145,11 @@
                 "cheesecake"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 4
+                "Event.prototype.timeStamp": 6,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 10,
-            "prevalence": 0.0000691,
+            "prevalence": 0.0000692,
             "cnames": [
                 {
                     "original": "locations.thecheesecakefactory.com",
@@ -131,58 +164,15 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "harristeeter.com",
-                "locations.harristeeter.com",
                 "officedepot.com",
                 "stores.dickssportinggoods.com",
                 "www.americasbest.com",
-                "www.deltafaucet.com",
-                "www.officedepot.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
+                "www.redken.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.timberland.de",
                 "www.traderjoes.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/client\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Screen.prototype.width": 9,
-                "Screen.prototype.height": 9,
-                "Screen.prototype.availWidth": 9,
-                "Screen.prototype.availHeight": 9,
-                "Screen.prototype.colorDepth": 9,
-                "Navigator.prototype.plugins": 9,
-                "window.localStorage": 9,
-                "window.sessionStorage": 9,
-                "Date.prototype.getTimezoneOffset": 9,
-                "Navigator.prototype.language": 9,
-                "Navigator.prototype.cookieEnabled": 9,
-                "HTMLCanvasElement.prototype.toDataURL": 9
-            },
-            "sites": 9,
-            "prevalence": 0.0000622,
-            "cnames": [],
-            "responseHashes": [
-                "b7fcc388ce5548429fa4795a5da80b2c40f34a3b50e09f1e64c10cb6db065557"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harristeeter.com",
-                "locations.michaels.com",
-                "locations.thecheesecakefactory.com",
-                "officedepot.com",
-                "stores.dickssportinggoods.com",
-                "stores.truevalue.com",
-                "www.officedepot.com",
-                "www.thenorthface.com",
-                "www.truevalue.com"
             ]
         },
         {
@@ -191,13 +181,18 @@
             "fingerprinting": 0,
             "subdomains": [
                 "static",
-                "cheesecake",
-                "hosted"
+                "sl-dsg",
+                "hosted",
+                "cheesecake"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 9,
+            "prevalence": 0.0000623,
             "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                },
                 {
                     "original": "locations.thecheesecakefactory.com",
                     "resolved": "cheesecake.where2getit.com"
@@ -212,10 +207,58 @@
             "exampleSites": [
                 "michaels.com",
                 "stores.dickssportinggoods.com",
+                "www.dickssportinggoods.com",
+                "www.redken.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.thenorthface.fr",
+                "www.timberland.de",
                 "www.traderjoes.com",
                 "www.valspar.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 11,
+                "Screen.prototype.width": 11,
+                "Screen.prototype.height": 11,
+                "Screen.prototype.availWidth": 11,
+                "Screen.prototype.availHeight": 11,
+                "Screen.prototype.colorDepth": 11,
+                "Navigator.prototype.plugins": 11,
+                "window.localStorage": 11,
+                "window.sessionStorage": 11,
+                "Date.prototype.getTimezoneOffset": 11,
+                "Navigator.prototype.language": 11,
+                "Navigator.prototype.cookieEnabled": 11,
+                "HTMLCanvasElement.prototype.toDataURL": 11
+            },
+            "sites": 11,
+            "prevalence": 0.0000761,
+            "cnames": [],
+            "responseHashes": [
+                "b7fcc388ce5548429fa4795a5da80b2c40f34a3b50e09f1e64c10cb6db065557"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michaels.com",
+                "locations.thecheesecakefactory.com",
+                "officedepot.com",
+                "stores.dickssportinggoods.com",
+                "stores.truevalue.com",
+                "truevalue.com",
+                "www.dickssportinggoods.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
+                "www.thenorthface.fr",
+                "www.timberland.de"
             ]
         },
         {
@@ -353,6 +396,139 @@
             ]
         },
         {
+            "rule": "where2getit\\.com\\/w2gi\\/css\\/style210\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hosted",
+                "static",
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "8230fed0c6dc81f241d0394ff5a48294eb1c76f72fd6e308c62906133731386e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "stores.dickssportinggoods.com",
+                "www.dickssportinggoods.com",
+                "www.redken.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/ace\\/2\\.1\\/W2GI_maps\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "hosted",
+                "sl-dsg"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "5448c8d4773a8314ac5ca5d49e224c8b19088319e2fc3b18169643c66b1bd8d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/ace\\/2\\.1\\/W2GI_slippymap\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hosted",
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "993cbd71b6b7ac1fbe1439afb34cca73c8d87072cf5ce25dde173caa35bd9342"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/images\\/icons\\/red-star\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hosted",
+                "sl-dsg",
+                "cheesecake"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000553,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                },
+                {
+                    "original": "locations.thecheesecakefactory.com",
+                    "resolved": "cheesecake.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "9f936b0dfa54b870acac20cc8e7890dbfc95b118e3ca5921cbedfe5f86943898"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.dickssportinggoods.com",
+                "www.redken.com",
+                "www.thecheesecakefactory.com",
+                "www.thenorthface.fr",
+                "www.timberland.de",
+                "www.traderjoes.com",
+                "www.valspar.com"
+            ]
+        },
+        {
             "rule": "where2getit\\.com\\/cheesecake\\/2014\\/assets\\/js\\/vendor\\/mobile\\.events\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -372,60 +548,6 @@
             "exampleSites": [
                 "thecheesecakefactory.com",
                 "locations.thecheesecakefactory.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/w2gi\\/css\\/style210\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted",
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8230fed0c6dc81f241d0394ff5a48294eb1c76f72fd6e308c62906133731386e"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thecheesecakefactory.com",
-                "stores.dickssportinggoods.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/w2gi\\/images\\/icons\\/red-star\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted",
-                "cheesecake"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
-            "cnames": [
-                {
-                    "original": "locations.thecheesecakefactory.com",
-                    "resolved": "cheesecake.where2getit.com"
-                }
-            ],
-            "responseHashes": [
-                "9f936b0dfa54b870acac20cc8e7890dbfc95b118e3ca5921cbedfe5f86943898"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thecheesecakefactory.com",
-                "www.deltafaucet.com",
-                "www.thecheesecakefactory.com",
-                "www.traderjoes.com",
-                "www.valspar.com"
             ]
         },
         {
@@ -497,6 +619,78 @@
             ]
         },
         {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/ace\\/ace-cdirections\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static",
+                "hosted"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "ed50c48409e09a00b3f09f794b0e7793500debc269b81e3c24611f6edd3232f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/ace\\/ace-cgeo3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static",
+                "hosted"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "a2f5decef085417f517efaec4b8d0aafdc8301f7461885061d9cb452e089e44e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/javascript\\/ol3-google-maps\\/dev\\/ol3gm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "f9209a21daa4334ee994d845029f05b62a5fbc807d59363c604d3b2cea86c416"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thecheesecakefactory.com",
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
             "rule": "where2getit\\.com\\/w2gi\\/images\\/logo\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -506,8 +700,8 @@
                 "cheesecake"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.000076,
+            "sites": 15,
+            "prevalence": 0.000104,
             "cnames": [
                 {
                     "original": "locations.thecheesecakefactory.com",
@@ -522,15 +716,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "thecheesecakefactory.com",
+                "locations.traderjoes.com",
                 "officedepot.com",
                 "stores.dickssportinggoods.com",
                 "stores.truevalue.com",
                 "www.americasbest.com",
-                "www.officedepot.com",
+                "www.dickssportinggoods.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
+                "www.redken.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.thenorthface.fr",
+                "www.timberland.de",
                 "www.traderjoes.com",
-                "www.truevalue.com",
                 "www.valspar.com"
             ]
         },
@@ -542,8 +740,8 @@
                 "hosted"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "b089fdd05aaa9807c28ba0aeb40c320edc9a9accb9b4e6e69f7ef254168f8f3e"
@@ -554,7 +752,8 @@
             "exampleSites": [
                 "thecheesecakefactory.com",
                 "stores.truevalue.com",
-                "www.truevalue.com"
+                "www.dickssportinggoods.com",
+                "www.thenorthface.fr"
             ]
         },
         {
@@ -588,11 +787,11 @@
                 "stores.dickssportinggoods.com",
                 "stores.truevalue.com",
                 "www.americasbest.com",
-                "www.officedepot.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.timberland.de",
                 "www.traderjoes.com",
-                "www.truevalue.com",
                 "www.valspar.com"
             ]
         },
@@ -606,11 +805,11 @@
                 "cheesecake"
             ],
             "apis": {
-                "Navigator.prototype.platform": 9,
-                "Date.prototype.getTime": 9
+                "Navigator.prototype.platform": 10,
+                "Date.prototype.getTime": 10
             },
-            "sites": 10,
-            "prevalence": 0.0000691,
+            "sites": 11,
+            "prevalence": 0.0000761,
             "cnames": [
                 {
                     "original": "locations.thecheesecakefactory.com",
@@ -628,10 +827,11 @@
                 "locations.traderjoes.com",
                 "officedepot.com",
                 "www.americasbest.com",
-                "www.deltafaucet.com",
-                "www.officedepot.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
+                "www.redken.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.timberland.de",
                 "www.traderjoes.com",
                 "www.valspar.com"
             ]
@@ -646,15 +846,16 @@
                 "cheesecake"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Navigator.prototype.platform": 9,
-                "Navigator.prototype.appVersion": 9,
-                "window.devicePixelRatio": 9,
-                "Document.cookie getter": 9,
-                "CanvasRenderingContext2D.prototype.getImageData": 7
+                "Navigator.prototype.userAgent": 10,
+                "Navigator.prototype.platform": 10,
+                "Navigator.prototype.appVersion": 10,
+                "window.devicePixelRatio": 10,
+                "Document.cookie getter": 10,
+                "CanvasRenderingContext2D.prototype.getImageData": 9,
+                "Event.prototype.timeStamp": 1
             },
-            "sites": 10,
-            "prevalence": 0.0000691,
+            "sites": 11,
+            "prevalence": 0.0000761,
             "cnames": [
                 {
                     "original": "locations.thecheesecakefactory.com",
@@ -673,786 +874,13 @@
                 "locations.traderjoes.com",
                 "officedepot.com",
                 "www.americasbest.com",
-                "www.deltafaucet.com",
-                "www.officedepot.com",
+                "www.dollartree.com",
+                "www.eyeglassworld.com",
+                "www.redken.com",
                 "www.thecheesecakefactory.com",
-                "www.thenorthface.com",
+                "www.timberland.de",
                 "www.traderjoes.com",
                 "www.valspar.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/css\\/OD\\.local\\.cleanLanding\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "12e63a57499a61fb1e38003e89af49f8e8ef55cc64cba0b60e686787ab86ab32"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/check\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "90254a2885085b86bea916a13635add8dd34defb4ea8c858811b1e494e1ef13c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/heart-regular\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1d3051a0ca5d67bff3b32c55c1692a7e8bc351bd76797e58af831d74ce4e2890"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/heart-solid\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "809d437e462383f530911b99ff8f71afd955145d3254e448e4f7dd6b43247f62"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/directions\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "36a14cc7dbdd542542defca17cba8f60cad4164d363d545d66f39b5b215d7f82"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/email\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bb1aa06dbccf18f3c6418e662af39d82b7ccaad8172864640ffef57ccc8f28f0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/text\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d5218cb2a60917704940deacde4e8c9f6f79bf5b0295d0a7a8c05c2c8736bec2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/printer\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c59e8c0e8651b4b8ec7a7c4a92419ff70793c27874d0e128752d91242937245d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/1_389_odprintingv3\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e6a46166d4bdb8c9755668ef3e6f453216224a4e671a9288eb2deb0ffe2a355c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/promo\\/techservicesrepair\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3a80fd34b26268556b2dc4963fff4b888c3ed4449d0b1769b4652ad91477e6ea"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/promo\\/Furniture_ChairsPromo\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4829d81cddbe73412c1beef55e5a0f978957edd01c1707ab2abf4693bc2b143b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/OD_storefront\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6c8b5ea0b27031f7d18c43f739a1e003cea64d0d94883604bd0c36d2d3671db3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/location-inside-image-02\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "73c51b0d6b194be83870ad4ef4324f897870fe19ca52b8352aa88f712fbe7279"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/navigation-left\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cc831c0171cb3374a4b8a9194174c0ba2296be587f7bff5d71e277c23a5ae8c6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/navigation-right\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "454fe5b91d01c696a697b7b0a11cc8981a467c919d4d86139b95456884c436d7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/ratings\\/5\\.00-5\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b479c8ffbf1d587a08fb2e11e68c33eef578f9a6c67c4038a5908771d6da4a36"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/ratings\\/4\\.00-5\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e1f2a693c84878b15812b206d7299a1e3c211cf19791afa8b3a85c923987abe5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/arrow-slide30\\.left\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0c98e41ffc2d20cd46a1b00d9e5a41a0f4d71ec5f47b494380745e528f56cf56"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/arrow-slide30\\.right\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "98d0c78df2020b861981809ea72a9ec6b86f10e903e60b8d7ab466344121b265"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/BOPIS\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8eb4cbeaa338589a03e12c64185898ac7ff7e1e5a8fe73f9f4e8d7267f473166"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/Icons_Free_Delivery\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "671712f912a2180c5e1cb5130868feb9e9931c043c907fa912ce6739779f74e1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/\\/w2gi\\/images\\/logo_navteq_large\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b3d6794afe52e1ca02f8d30f2f6732254b4dd73868c7d1c751c512dbee2a0111"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/od-location-logo\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "02b6bc5d772472e8b59ad2304c7d16369ec16916789b9b06528f0255609938a3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/map-pin\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "29d40866af73a36c2b5c883f63e860073dc3cc9722be36a3ac1ae156825511b9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/officedepot\\/images\\/map-pin-selected\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c3383ea80d02c26f87f8002d6c8c0c5b1f375c2e7043408829b09f6303aad074"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "officedepot.com",
-                "www.officedepot.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/dollar_general_logo\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/YGP\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "60229e78f345c68a8ea8bd40e6095a74af5822f1a9e45e0e615d7b838ff422da"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/wu-logo\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/DG%20Careers\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/facebook-square\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/twitter\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/instagram-black\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/pinterest\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/linkedin\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/dollargeneral\\/images\\/youtube\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dollargeneral.com",
-                "stores.dollargeneral.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/menu_hamburger\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6672184917edae81ecea46979b202bfb82e9e48c5ee8550abffb859d5b9d0059"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
             ]
         },
         {
@@ -1463,8 +891,8 @@
                 "hosted"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "b3133e884b483d8b6156febd933073e90ab50c085bc0e7a7a12683165b034ed7"
@@ -1474,8 +902,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "truevalue.com",
-                "stores.truevalue.com",
-                "www.truevalue.com"
+                "stores.truevalue.com"
             ]
         },
         {
@@ -1486,8 +913,8 @@
                 "hosted"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "76443bf3beebf4e8c8da3a220388d2e89e18bd8de1c9603bd6ffba299ca0ef64"
@@ -1497,12 +924,11 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "truevalue.com",
-                "stores.truevalue.com",
-                "www.truevalue.com"
+                "stores.truevalue.com"
             ]
         },
         {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/TV-2021_Small%20Buisness%20Saturday_1200x200\\.jpg",
+            "rule": "where2getit\\.com\\/chickfila\\/images\\/geoloc\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1513,18 +939,42 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1921d7e02e40184700f8a5175f8c3cce3122780e0723b9da78ea0a87156cd429"
+                "0c8a5e6fee2a55535d63bf5a3066a47bcae607799b5b119f8e9a4e0f50d9494e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
+                "americasbest.com",
+                "www.eyeglassworld.com"
             ]
         },
         {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/TV-2021_Small%20Buisness%20Saturday_mobile\\.jpg",
+            "rule": "where2getit\\.com\\/chickfila\\/javascript\\/mobile\\.check\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hosted"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a258fa2108c7a4579876f75154378f19e3ee8af7753499bad8bfb18b56cb6dfc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "americasbest.com",
+                "www.eyeglassworld.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/chickfila\\/images\\/logo_navtech_small\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1535,278 +985,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "13cc51b7ea795ce1d83acc63f65282617e71175782972cb5901721f8a2c188aa"
+                "1adc7d8ef8a3676d9c297425216ef53aca3644d43b82fe511b14903124dbb804"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/emailOptinIcon\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9533ab54504357a96a43055ddcc96339a6c57ffba9f0ee3c6be1a1bc52bd3318"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/facebook-f-brands\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b39a82a4efa7efc556354dac2e534a2d49cb2387c99a5ce4b556fe4ba80db0f4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/twitter-brands\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "949a039aa06f3ba0e68685627cda258be6705d087c6ca6112545c0507a5a6ee0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/instagram-brands\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "96dd2c5d9bd1cb655d932455fe545611418ded1ecc3a53708d47fdd7d1bc0788"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/youtube-brands\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "edd1428f89201bd2e0c15e0d9c6158650680519afd0188805e4f3cfc826fa32c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/pinterest-brands\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "37185933db4699a97b396853d9a1c7c2732ce8b78c892e8bc49ca48ef6fb323e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/storefront1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "locations"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9c5800a64324e91b97bc5dfef5cbc43e2015ca1ecc602e64f9d1ee09b4bc49f1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/google\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a85f6ce2ae01f994e6b9d685955a2323f2e72b3adaefcd32f04a2d149636dd30"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/CCPAform\\.html",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3962d9fffaa7741f77891de4d70d19516f74a43de313ce933afc5b24c41953f6"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/emailsignup\\.2020\\.html",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bff797ff9c5dcc093b42c5b1fef9d8a414e4f324e5180fa76f703d8d9562c627"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/circleQuestionMark\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "618bf438690a936340114407099431a91716c53d251770bc083694fb84af0960"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/truevalue\\/images\\/locator\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e62d3a4bfe9540fbcaa44ddc9b688dcc1d344a71b1ce6024ebf0c46c204f92de"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "truevalue.com",
-                "www.truevalue.com"
+                "americasbest.com",
+                "www.eyeglassworld.com"
             ]
         },
         {
@@ -1832,7 +1018,658 @@
             ]
         },
         {
-            "rule": "where2getit\\.com\\/delta\\/rest\\/getlist",
+            "rule": "where2getit\\.com\\/responsive\\/",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "8db1da96d936548d0f38339e3bacf9dc9cb997a69df79da9b036a080cc973d61"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/css\\/w2gi_style2014\\.tabs\\.3\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "676d50727b0117786ceed24667947507d53f24a184bf792a791b8a75d1591632"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/js\\/redirection_mobile\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "364c7825762b736e843a82fbebfd5e8d868448830606ab2237210477eb87b849"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/js\\/ace-cdirections\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "809cd67d6832ce762d8bb847d9dad7ea135b02ced47375d1bdc12db7db8e3ef4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/js\\/css_useragent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "1f19df9b603cd619e1c9a74dde21399a1f08f807d900f2b893e5bc1b80517c16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/js\\/customEvents\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "ef7a6c991ed6ca258f77fbd4a321480e2f933d1535841c179ff4ff7a105dd7f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/green_pin\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "5d5b5a3e4e56393d09118b8d650500e9ee6e647521a875645d9a2b93f513da64"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/w2gi\\/images\\/spacer\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg",
+                "hosted"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "40f6dda1043cb991a2403d50dde07c17e6d8e00135829748fe6c0d3ee2f917d5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com",
+                "www.dollartree.com",
+                "www.thenorthface.fr"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/bubble_pin\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "97107c096faa8865e247fc3fcd717adcf393693de6f58d4d96943379d28932d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/pros_icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "7fa2d6aaea3640e2177e796048babccc48549a9c100394fab427f0ec9a0897ed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/prev_page\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "1077848a4090cec03b0860c97f3b54a69dd0d2f639fc3915a9b2f93ad3ff4179"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/next_page\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "c4eef0f3e88993f5105b5dba24c2b8048c1ef31ee1728adb02ee660da9675ec6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/down_chevron\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "36b67cdbb5c10e4fb8853e366e064717b5ee03f6a1eeddddb1f20897118ab317"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/up_chevron\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "e4969743fba0106bc9a138e3d7f07512d1a13fe5cc2aadbd03d81d63b5291b37"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/green_map_pin\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "d5d1a715206efc3846fd19f92e037917f41e70e41364026ea377f45a644646b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/images\\/HitTraxWhiteBackground\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "2ea786c257e29d447b0e14e95fde0043cbf373142b2e5e35d6a94818745bd1a8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/images\\/Shoe_Print\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "6b52ea4640d53a218c66efda013791084df114b567a89e9020bde27ef0f53caf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/images\\/golfservice_icon_dark\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "6d36f37e7029b1c81c2b4affa51c14de8b55a9dace835dbd1c2929a9ef48d02c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/images\\/BIKE_ICON\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "557edd077c285ac9127561c90ccb5e202e7bd28d4fafd80cb7203e2b5f981d42"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/error_icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "b8141ef700ab06fca97663b680dcdc5236fd5fadb87375e320522df728c3747d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/print_directions\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "0001cc06e2014822840d70a6250d38ab0c566e1be22509e7001c5d00f5e97473"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/close\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "131c6520cf4fd99505b139a13fe8e4d5bd712f3579c58c4b8a3b669d6b59cfe0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/images\\/back\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "ce552d7fd3b374844d1bbe2cbf61604aeba5a3036c8e12e85b23d3a93a1c0e39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/responsive\\/ajax",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sl-dsg"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "storelocator.dickssportinggoods.com",
+                    "resolved": "sl-dsg.where2getit.com"
+                }
+            ],
+            "responseHashes": [
+                "229f5e92b206e47003bd60c24e9daa14d6bbb97d58ee4b6424d61182582eb49a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/dollartree\\/rest\\/getlist",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1843,14 +1680,58 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "139ed66783c9c55490a93a5eab58057dc4151d4d3d3198926211299b15148ef8"
+                "86d8f5e9d30f415b771d585bb41c0a46f2d6db588568d3ea9ed6e680b7f7cff2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "deltafaucet.com",
-                "www.deltafaucet.com"
+                "dollartree.com",
+                "www.dollartree.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/eyeglassworld\\/rest\\/getlist",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hosted"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "3f84d722d53c9f6470ef57e8c767747d0ae3f5d26013b670da5dbf90fb604ad1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eyeglassworld.com",
+                "www.eyeglassworld.com"
+            ]
+        },
+        {
+            "rule": "where2getit\\.com\\/redkenus\\/rest\\/getlist",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hosted"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f05783bdc88a613e4e95f0d754199c997891b8db9cb05c699048d36f3681539a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redken.com",
+                "www.redken.com"
             ]
         },
         {
@@ -1881,7 +1762,7 @@
             ]
         },
         {
-            "rule": "where2getit\\.com\\/northface\\/2015\\/rest\\/getlist",
+            "rule": "where2getit\\.com\\/northfaceeu\\/ajax",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1892,18 +1773,18 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "574d3cf8ce277c7c1b9c51d33515b6af29e7700bd16a98215fe181b5c28a3223"
+                "285b9fb49673393be6aca53dd7d2d309066584d5c01d6f6e940d3a9366dffa4e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thenorthface.com",
-                "www.thenorthface.com"
+                "thenorthface.fr",
+                "www.thenorthface.fr"
             ]
         },
         {
-            "rule": "where2getit\\.com\\/northface\\/2019\\/images\\/product_apparel-active\\.png",
+            "rule": "where2getit\\.com\\/timberland\\/timberlandeu\\/rest\\/getlist",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1914,80 +1795,14 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3d0c71b81c7703e18f14c28999d4879778585f878b39b55c20e78a8e97e94d84"
+                "f8c7d0d55da77c759f27210a88a8ffbf5f05245c4720569c31930fd9b90e3a9e"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thenorthface.com",
-                "www.thenorthface.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/northface\\/2019\\/images\\/product_equipment-active\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3b82914921b5a16d4a9ff5aa300d49d14de0504a9eb2ff22e185d52bb322b578"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thenorthface.com",
-                "www.thenorthface.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/northface\\/2019\\/images\\/product_footwear-active\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1ec5f6388307adea84d4e63452e993bc5529345e26ab472f070502ae71e1ca65"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thenorthface.com",
-                "www.thenorthface.com"
-            ]
-        },
-        {
-            "rule": "where2getit\\.com\\/northface\\/2019\\/images\\/product_youth-active\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hosted"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "91fa4e32cae8d4e5123c7d4b58b42a9baf99a93bd73db05fa4383eba7de5de0e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thenorthface.com",
-                "www.thenorthface.com"
+                "timberland.de",
+                "www.timberland.de"
             ]
         },
         {
@@ -2002,7 +1817,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7456e092298ec19fe794063c647bf17b4ff790c408b4eec5587b75e5d3c96206"
+                "2198fd005f925aa9dfbbcd24b909d65df2559cfd335592eb848b9cc82a266e8e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2024,7 +1839,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "de195fe3e09735d8885273b5e909a13df37ede30f3f20af668f322b7b3d01739"
+                "792a20ca09ea8f1c12a6e8cf5c92a6211f78cc902d5777cfd75408eb84719c5d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2037,13 +1852,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000622,
+    "cookies": 0.000083,
     "types": {
-        "Stylesheet": 20,
-        "Script": 59,
-        "Image": 137,
-        "XHR": 14,
-        "Document": 4
+        "Stylesheet": 27,
+        "Script": 93,
+        "Image": 84,
+        "XHR": 22,
+        "Document": 2
     },
     "nameservers": [
         "ns10.dnsmadeeasy.com",

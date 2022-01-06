@@ -7,24 +7,103 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "files"
+        "files",
+        "content-admin",
+        "content"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "reachly\\.ai\\/script\\/reachly\\.min\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b7fe60e8efa80e59f35f538eec72acb316db5f43d6342211bcd516c2bef75d2b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "uuid": {
+                    "ttl": 1209604,
+                    "length": 41,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "land.se",
+                "www.land.se"
+            ]
+        },
+        {
+            "rule": "reachly\\.ai\\/crawl\\/0186f266-1e86-4b93-b4f5-c2f93b4dee31",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "files"
+                "content-admin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b516676690333542dc2a6764baf7c2b64e155d317b55ba4539e08db22e60b248"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "land.se",
+                "www.land.se"
+            ]
+        },
+        {
+            "rule": "reachly\\.ai\\/event\\/read",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "land.se",
+                "www.land.se"
+            ]
+        },
+        {
+            "rule": "reachly\\.ai\\/event\\/read",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -35,9 +114,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "tate.ns.cloudflare.com",

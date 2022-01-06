@@ -4,14 +4,61 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000691,
-    "sites": 1,
+    "prevalence": 0.0000138,
+    "sites": 2,
     "subdomains": [
+        "widgets",
         "backend"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "davfobi\\.de\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c26f4c47d4c6f7dcf575204ecaef6913d7f8f4ba85ad892e9035f90e291048f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
+        {
+            "rule": "davfobi\\.de\\/davwgt\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1f3c4cad08c1a07166ff439f645666e973955ebce426a2ad477e037d25567664"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deutsche-apotheker-zeitung.de",
+                "www.ptaheute.de"
+            ]
+        },
         {
             "rule": "davfobi\\.de\\/auth\\/token\\/",
             "cookies": 0,
@@ -59,13 +106,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Script": 2,
+        "Stylesheet": 2,
         "Fetch": 2,
         "Preflight": 2
     },
     "nameservers": [
+        "ns-1234.awsdns-26.org",
         "ns-313.awsdns-39.com",
         "ns-915.awsdns-50.net",
-        "ns-1234.awsdns-26.org",
         "ns-1909.awsdns-46.co.uk"
     ]
 }

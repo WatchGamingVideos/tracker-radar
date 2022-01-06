@@ -7,16 +7,73 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
+        "analytics",
         "graph"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "generalmills\\.com\\/scripts\\/analytics\\/2\\.0\\.0\\.0\\/46b69476-a41c-420a-9d83-7c8039cee9b6\\/analytics\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "475f9d0c0e55a0dc2cf101459a535139438adf524e31f74a6faa60d36b2c5126"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "gmi.profile.id": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chex.com",
+                "www.chex.com"
+            ]
+        },
+        {
             "rule": "generalmills\\.com\\/2\\/users\\/identity\\/generate",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graph"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "1fe35fd0913ff21e306351b4bf5dc0d334e126bc740feabc2a5ac3a43e73625d",
+                "bda02585cb84c3ad356ca964618db2da92360ae1808b6bcc7b39620bbe2fd292"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chex.com",
+                "www.chex.com",
+                "www.oldelpaso.com"
+            ]
+        },
+        {
+            "rule": "generalmills\\.com\\/2\\/46b69476-a41c-420a-9d83-7c8039cee9b6\\/users\\/identity",
             "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
@@ -27,14 +84,16 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4f6e144e012fc1fd8991964096d9f048903a10e6a4f3dea7f5cd161c2a4b5db6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "gmi.profile.id": 0.000013835851458298743
+            },
             "exampleSites": [
-                "oldelpaso.com",
-                "www.oldelpaso.com"
+                "chex.com",
+                "www.chex.com"
             ]
         },
         {
@@ -62,13 +121,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000277,
     "types": {
-        "Script": 4
+        "Script": 9
     },
     "nameservers": [
-        "jfbextdns1.genmills.com",
         "mgoextdns1.genmills.com",
+        "jfbextdns1.genmills.com",
         "mgoextdns2.genmills.com"
     ]
 }

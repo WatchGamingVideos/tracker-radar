@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
         "cdn12-s",
         "mu-pl-s",
@@ -16,12 +16,11 @@
         "cdn12",
         "mu-ax-s",
         "mu-ax-n",
-        "cdn25-s",
         "cdn25",
         "sg-pl"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "lemnisk\\.co\\/analyze\\/pixel\\.php",
@@ -45,9 +44,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_vz": {
-                    "ttl": 31536005,
+                    "ttl": 31536004,
                     "length": 17,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -59,35 +58,39 @@
         },
         {
             "rule": "lemnisk\\.co\\/analyze\\/analyze\\.php",
-            "cookies": 0.0000207,
+            "cookies": 0.0000277,
             "fingerprinting": 1,
             "subdomains": [
                 "mu-pl-s",
                 "mu-pl"
             ],
             "apis": {
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "97a82adcb9ba1a3d03094fd70bc82c1ffd92a09b4c45fe722a6ff43662e04288",
-                "62487959b38397a8933dfeb3aa2eb84e06687e978f1fcf83587a28cd66c39a58"
+                "519faa474ad9425aa7e1b9b9d5ff8951c07f6522de43d8329233302cca5d0dc1",
+                "a23d15e65ad78864e657b8d77d262a56de99e7c5f4618258a2211cb0ea40e51f",
+                "8036d74a272dc4df0ef80c3b35b7e9c36cdd7a2ee4b8303a0d0c4e126bbb7749"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_vz": 0.00002074057686457786,
-                "_fbp": 0.000006913525621525954,
-                "_ga": 0.000013827051243051907,
-                "tvc_user_a_live": 0.000006913525621525954,
-                "usertype": 0.000006913525621525954
+                "_vz": 0.000027671702916597487,
+                "_fbc": 0.000006917925729149372,
+                "_fbp": 0.000006917925729149372,
+                "_ga": 0.000013835851458298743,
+                "tvc_user_a_live": 0.000006917925729149372,
+                "usertype": 0.000006917925729149372
             },
             "exampleSites": [
                 "axisbank.com",
                 "www.axisbank.com",
-                "www.bajajfinserv.in"
+                "www.bajajfinserv.in",
+                "www.kotak.com"
             ]
         },
         {
@@ -99,8 +102,8 @@
                 "mu-pl"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -111,7 +114,9 @@
             "exampleSites": [
                 "axisbank.com",
                 "www.axisbank.com",
-                "www.bajajfinserv.in"
+                "www.bajajfinserv.in",
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
@@ -126,7 +131,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "ebc01e940b3dea8205eb81df598451d7b4fe87e2f09f46009ac5bb06ae3fc32a"
@@ -149,8 +154,8 @@
                 "mu-ax-n"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -158,74 +163,61 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_vz": 0.00002074057686457786
+                "_vz": 0.00003458962864574686,
+                "_ga": 0.000013835851458298743,
+                "_fbc": 0.000006917925729149372,
+                "_fbp": 0.000006917925729149372
             },
             "exampleSites": [
                 "axisbank.com",
                 "www.axisbank.com",
-                "www.bajajfinserv.in"
-            ]
-        },
-        {
-            "rule": "lemnisk\\.co\\/ssp\\/IN_AxisBank_DMP\\/sw\\/service-worker\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn25-s"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44440e89abcc876ffbada6585d951cfa95bb9d1fa5aea09d468815bd8f37aa2f"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "axisbank.com",
-                "www.axisbank.com"
+                "www.bajajfinserv.in",
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
             "rule": "lemnisk\\.co\\/smt\\/smthandler\\.php",
-            "cookies": 0.00000691,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn12"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.appVersion": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "05d405f3047b0890f8c6d8380ac12ed78f551eb1675544361deafb9fa8bd89c8"
+                "05d405f3047b0890f8c6d8380ac12ed78f551eb1675544361deafb9fa8bd89c8",
+                "b0a1e0163a4d2738fb86404a87dc6987f9f0ad42a8f01ab35e8d52786666b2e7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "usertype": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 7,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "_vz": {
-                    "ttl": 31536003,
+                    "ttl": 31536004,
                     "length": 17,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000020753777187448115,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bajajfinserv.in",
-                "www.kotak.com"
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
@@ -236,8 +228,8 @@
                 "cdn25"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "8e6f84bb6d8f45adaf1e9a17e0fe2fb0c81a0914333262bb0cb77f85f2785878"
@@ -247,7 +239,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bajajfinserv.in",
-                "www.kotak.com"
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
@@ -259,8 +252,8 @@
                 "mu-pl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -268,7 +261,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bajajfinserv.in",
-                "www.kotak.com"
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
@@ -280,8 +274,8 @@
                 "mu-pl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -289,7 +283,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bajajfinserv.in",
-                "www.kotak.com"
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
             ]
         },
         {
@@ -301,8 +296,8 @@
                 "mu-pl"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -310,26 +305,160 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bajajfinserv.in",
-                "www.kotak.com"
+                "www.kotak.com",
+                "www.saudiarabiangp.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/st\\/6155\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn25"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d22260f9bdf89aa3d35b6fc8b5ff5097cf2b64a5531d3f5d53d62b6c58f90504"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saudiarabiangp.com",
+                "www.saudiarabiangp.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/MEA_SAGP\\/sw\\/sw_registration\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn25"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Notification.permission": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5e3a0ed64fefe174a1759a56d48cfa552fd4da06f8d1a5ba6e709a9f8b6e245d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_vwpnfcm": {
+                    "ttl": 126144010,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_vwpnstate": {
+                    "ttl": 86411,
+                    "length": 2,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_vwpnsent": {
+                    "ttl": 86411,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saudiarabiangp.com",
+                "www.saudiarabiangp.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/analyze\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saudiarabiangp.com",
+                "www.saudiarabiangp.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/MEA_SAGP\\/sw\\/service-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn25"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "065bdac4d89ad8c3a3bb39fb2a4fb209b00976228c6000dffab5bbdc1a5f36cd"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saudiarabiangp.com",
+                "www.saudiarabiangp.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/smtag\\/GetJsFileEventCapture\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn25"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "58344b936d8289e0ef17533930548d10a5ee9626c5b909dc5d835fd5ab6c60b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saudiarabiangp.com",
+                "www.saudiarabiangp.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000277,
+    "cookies": 0.0000415,
     "types": {
-        "Script": 12,
-        "Document": 3,
-        "XHR": 3,
-        "Other": 2,
-        "Fetch": 6
+        "Script": 22,
+        "Document": 4,
+        "XHR": 7,
+        "Fetch": 9,
+        "Other": 2
     },
     "nameservers": [
-        "a7-65.akam.net",
+        "a1-187.akam.net",
         "a4-66.akam.net",
-        "a13-67.akam.net",
         "a14-66.akam.net",
         "a20-64.akam.net",
-        "a1-187.akam.net"
+        "a7-65.akam.net",
+        "a13-67.akam.net"
     ]
 }

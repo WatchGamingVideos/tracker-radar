@@ -4,24 +4,28 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "dsa"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "system114\\.info\\/XLMDelivery\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "dsa"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.product": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "9281f40a5d15b071924dd5b1defa7f1fe0d633d0fa038376e9833ca7f551bfbc"
@@ -30,6 +34,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "pittsburghsportsnow.com",
+                "saturdaytradition.com",
+                "www.saturdaydownsouth.com"
+            ]
+        },
+        {
+            "rule": "system114\\.info\\/deliveryKVL\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dsa"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "a82b3b1305ca6a2d17110b4be27fe812d42bad37ac76191de29fd8688657ec7e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pittsburghsportsnow.com",
                 "saturdaytradition.com",
                 "www.saturdaydownsouth.com"
             ]
@@ -47,28 +75,6 @@
             "cnames": [],
             "responseHashes": [
                 "12008b35b532c4fc9c3ed92acde5aa47f4c303343a71bb4003a7de427a7c071d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "saturdaytradition.com",
-                "www.saturdaydownsouth.com"
-            ]
-        },
-        {
-            "rule": "system114\\.info\\/deliveryKVL\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dsa"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a82b3b1305ca6a2d17110b4be27fe812d42bad37ac76191de29fd8688657ec7e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -105,12 +111,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 10
     },
     "nameservers": [
-        "ns-1613.awsdns-09.co.uk",
-        "ns-1189.awsdns-20.org",
         "ns-414.awsdns-51.com",
-        "ns-565.awsdns-06.net"
+        "ns-565.awsdns-06.net",
+        "ns-1189.awsdns-20.org",
+        "ns-1613.awsdns-09.co.uk"
     ]
 }

@@ -7,32 +7,65 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
-        "dnc-ksc.secure"
+        "hv-hvnewyork.secure-cdn",
+        "dnc-ksc.secure",
+        "sm-smresortid.secure-cdn",
+        "tsv-taosnm.secure-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "accesso\\.com\\/embed\\/accesso\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "dnc-ksc.secure"
+                "hv-hvnewyork.secure-cdn",
+                "dnc-ksc.secure",
+                "sm-smresortid.secure-cdn",
+                "tsv-taosnm.secure-cdn"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Navigator.prototype.appVersion": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kennedyspacecenter.com",
-                "www.kennedyspacecenter.com"
+                "holidayvalley.com",
+                "www.kennedyspacecenter.com",
+                "www.schweitzer.com",
+                "www.skitaos.com"
+            ]
+        },
+        {
+            "rule": "accesso\\.com\\/embed\\/shim\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hv-hvnewyork.secure-cdn",
+                "sm-smresortid.secure-cdn",
+                "tsv-taosnm.secure-cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayvalley.com",
+                "www.schweitzer.com",
+                "www.skitaos.com"
             ]
         }
     ],
@@ -40,7 +73,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Document": 3
     },
     "nameservers": [
         "ns1.p23.dynect.net",

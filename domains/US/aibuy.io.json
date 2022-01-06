@@ -9,11 +9,36 @@
     "subdomains": [
         "overlay",
         "cdn-media",
-        "aibuy-api"
+        "aibuy-api",
+        "analytics-api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "aibuy\\.io\\/61f89943-f74f-4c68-8b3d-2c810a110bc0\\/assets\\/js\\/ioss-loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "overlay"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "84a7877706b6ab031aa6a73270329eb92086e8bef40b8995fd87c3e1cb5e1d3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "profootballnetwork.com",
+                "www.profootballnetwork.com"
+            ]
+        },
         {
             "rule": "aibuy\\.io\\/aibuy\\.manifest\\.json",
             "cookies": 0,
@@ -26,7 +51,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "307333d60d2541ecf52f448b1c4bfaae36cc30d29e119c0db143ce7b0a18f3df"
+                "1b6824b710acb5882e9d6819c64c06ef01a872a9f70047a1260de48256066d51"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -48,7 +73,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "47814d91975c82630de1f90ab694d528ee052ceb8dc6d76fe6a61c9a88fc0d97"
+                "48f415f7c7be02c14cd1b210fd07758ee0a72cc7bb1d32df2af3acb5a2257e4e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -81,7 +106,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/css\\/overlay\\.db622e6f\\.css",
+            "rule": "aibuy\\.io\\/assets\\/css\\/overlay\\.42ba3d26\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -92,7 +117,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "6cabb204dbfb42310d822175f8c7b14b0d0ee1e82347c365daf8b2c4089a3f3e"
+                "78ac27012aea0a17d7664462ff05b81d9d863a80ec036033dbe7d3d23566383c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -103,7 +128,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-vendors\\.18769939\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-vendors\\.f6bcebfb\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -111,13 +136,14 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.maxTouchPoints": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7448b3fdd1cf76e9f13aa543e784d9c2369989f45afd33b71e0f2a161a191bc0"
+                "6c5b54fbb22dc5d8402de6d348739a67fc69a88198a2018cbf708c6c76602703"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -128,18 +154,26 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/overlay\\.1a6c9b68\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/overlay\\.efa1c5db\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "overlay"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.orientation": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.language": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a6fbd096a63ab5f4c8e04f2befa1b40ae1206c5ab5daf94f38b49e8b7719e6c4"
+                "5d05853ef7ca0f72c58bb4d4bcfcea5a5d0006c4faa43dd139951fcbed4e8367"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -214,7 +248,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-common-async\\.427b21ad\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-common-async\\.f2d5f762\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -236,7 +270,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-902f50d6\\.bcf7a3ed\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-902f50d6\\.e4cb5bd6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -258,7 +292,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-351db61e\\.31bb7506\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-351db61e\\.c743f169\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -280,7 +314,7 @@
             ]
         },
         {
-            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-dfd106d2\\.dc16e851\\.js",
+            "rule": "aibuy\\.io\\/assets\\/js\\/chunk-dfd106d2\\.48b21efb\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -294,6 +328,48 @@
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "profootballnetwork.com",
+                "www.profootballnetwork.com"
+            ]
+        },
+        {
+            "rule": "aibuy\\.io\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "profootballnetwork.com",
+                "www.profootballnetwork.com"
+            ]
+        },
+        {
+            "rule": "aibuy\\.io\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -306,17 +382,17 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 6,
+        "Script": 6,
+        "XHR": 8,
         "Stylesheet": 4,
-        "Script": 4,
         "Font": 2,
-        "Preflight": 2,
+        "Preflight": 4,
         "Other": 8
     },
     "nameservers": [
+        "ns-323.awsdns-40.com",
         "ns-701.awsdns-23.net",
         "ns-1400.awsdns-47.org",
-        "ns-1871.awsdns-41.co.uk",
-        "ns-323.awsdns-40.com"
+        "ns-1871.awsdns-41.co.uk"
     ]
 }

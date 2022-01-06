@@ -4,12 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
-    "sites": 5,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
-        "prodo-api",
         "bfw-sso-prod",
-        "bfw-api-prod"
+        "bfw-api-prod",
+        "prodo-api"
     ],
     "cnames": [
         {
@@ -21,54 +21,8 @@
             "resolved": "bfw-sso-prod.ariva-services.de"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "ariva-services\\.de\\/clientjs\\/ProdoClient\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 1,
-            "subdomains": [
-                "prodo-api"
-            ],
-            "apis": {
-                "Document.cookie getter": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0abf185bbc97fa973eb6be0a8df9ab4a379ab04b54062130fb416ec1ea0724b1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "prodo_daily": {
-                    "ttl": 86404,
-                    "length": 63,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "prodo_weekly": {
-                    "ttl": 604804,
-                    "length": 63,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "prodo_monthly": {
-                    "ttl": 2592004,
-                    "length": 63,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ariva.de",
-                "www.faz.net"
-            ]
-        },
         {
             "rule": "ariva-services\\.de\\/auth\\/realms\\/boerse-frankfurt\\/\\.well-known\\/openid-configuration",
             "cookies": 0,
@@ -149,7 +103,7 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/derivatives_master_data",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -174,7 +128,7 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/derivatives_master_data",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -190,7 +144,7 @@
                 }
             ],
             "responseHashes": [
-                "e10422684a5ff39fb1a4fd0da45455bf2b25ffc11948c2198b5a5399ea888cd5"
+                "53f76400cb64f76aecfe1c120c688a817061102ce39ebaf04186900636331e74"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -243,9 +197,7 @@
                     "resolved": "bfw-api-prod.ariva-services.de"
                 }
             ],
-            "responseHashes": [
-                "cc8ceaf9353c2dd82ded7fa35ed31f46fee32ac54f647ae21753b97cf89b7e03"
-            ],
+            "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -330,7 +282,7 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/derivatives_master_data",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -355,7 +307,7 @@
             ]
         },
         {
-            "rule": "ariva-services\\.de\\/v1\\/data\\/derivatives_master_data",
+            "rule": "ariva-services\\.de\\/v1\\/data\\/category_news",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -371,7 +323,7 @@
                 }
             ],
             "responseHashes": [
-                "17df194ea5bf8365c1a57e954e0516f1a04a25ff47a41c8244a9c7411ce16dfd"
+                "0e154756f9bfc0989218c8bc670f8fa3b2388119a0325cdd8ba834cbffc57673"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -380,19 +332,41 @@
                 "boerse-frankfurt.de",
                 "www.boerse-frankfurt.de"
             ]
+        },
+        {
+            "rule": "ariva-services\\.de\\/clientjs\\/ProdoClient\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prodo-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0abf185bbc97fa973eb6be0a8df9ab4a379ab04b54062130fb416ec1ea0724b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faz.net",
+                "www.faz.net"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000691,
+    "cookies": 0,
     "types": {
-        "Script": 2,
         "XHR": 10,
         "Preflight": 10,
-        "Fetch": 4
+        "Fetch": 4,
+        "Script": 2
     },
     "nameservers": [
-        "ens1.ariva.de",
-        "ens2.ariva.de"
+        "ens2.ariva.de",
+        "ens1.ariva.de"
     ]
 }

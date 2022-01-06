@@ -7,8 +7,8 @@
     "prevalence": 0.0000277,
     "sites": 4,
     "subdomains": [
-        "prod-assets.sealy.cloudfront",
         "cdn.matomo",
+        "prod-assets.sealy.cloudfront",
         "prod.retaillocator.cloudfront",
         "prod.reviewsapi.cloudfront"
     ],
@@ -20,6 +20,66 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "tsiaws\\.com\\/matomo\\.js",
+            "cookies": 0.0000208,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.matomo"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.platform": 3,
+                "Document.cookie setter": 3,
+                "window.name": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "c1c0f88d712c2154cf53080d0c839e28cd459db16bc305d295fc047d5a88517c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.53.851d": {
+                    "ttl": 33955201,
+                    "length": 52,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "_pk_ses.53.851d": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_pk_id.54.0518": {
+                    "ttl": 33955201,
+                    "length": 52,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_pk_ses.54.0518": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sealy.com",
+                "www.sealy.com",
+                "www.tempurpedic.com"
+            ]
+        },
         {
             "rule": "tsiaws\\.com\\/media\\/images\\/panel-bg-featured-locations\\.original\\.jpg",
             "cookies": 0,
@@ -48,66 +108,6 @@
             ]
         },
         {
-            "rule": "tsiaws\\.com\\/matomo\\.js",
-            "cookies": 0.0000207,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn.matomo"
-            ],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "Navigator.prototype.javaEnabled": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Navigator.prototype.platform": 3,
-                "Document.cookie setter": 3,
-                "window.name": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "c1c0f88d712c2154cf53080d0c839e28cd459db16bc305d295fc047d5a88517c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pk_id.53.851d": {
-                    "ttl": 33955203,
-                    "length": 52,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "_pk_ses.53.851d": {
-                    "ttl": 1808,
-                    "length": 1,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
-                },
-                "_pk_id.54.0518": {
-                    "ttl": 33955202,
-                    "length": 52,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "_pk_ses.54.0518": {
-                    "ttl": 1811,
-                    "length": 1,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sealy.com",
-                "www.sealy.com",
-                "www.tempurpedic.com"
-            ]
-        },
-        {
             "rule": "tsiaws\\.com\\/matomo\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -116,7 +116,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -124,7 +124,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.00002074057686457786
+                "IR_gbd": 0.000020753777187448115
             },
             "exampleSites": [
                 "sealy.com",
@@ -141,11 +141,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "205599ebf8ffc38f78e565883af8acd3e8d1263f6ca3e1168ef64222ef8a11fc",
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "a19e979b597a5124ca4313cbe94cd26213745e0c7dcedf28e37879c0d6410d12",
+                "6780a7c25ede4bf52c58d3ca2e7e2824a4698b342a41b35a2774757e09af1427"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -168,7 +168,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "079b759f2140c51c514e430908e3bae40a937e8220a176c0bcf8586e6a4e789e"
+                "e299fea568db52a0e1ed6711a6ad24abcf6b92397da970470b0ee140512ed221"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -190,7 +190,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3e9c233c3c57efd78792c83d400c94d5b8a440c591d0f112b73d58aa964f3825"
+                "b6f8e859913766723f014ba006269b2c6c5d7e83676998462d0f1968013ab3c0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -205,8 +205,8 @@
     "performance": {},
     "cookies": 0.0000277,
     "types": {
-        "Image": 5,
         "Script": 3,
+        "Image": 5,
         "XHR": 7
     },
     "nameservers": [

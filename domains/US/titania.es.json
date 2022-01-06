@@ -4,13 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000553,
+    "sites": 8,
     "subdomains": [
         "cdn2_incap1",
         "cdn22"
     ],
     "cnames": [
+        {
+            "original": "access.elconfidencial.com",
+            "resolved": "cdn22.titania.es"
+        },
         {
             "original": "api.elconfidencial.com",
             "resolved": "cdn2_incap1.titania.es"
@@ -27,15 +31,15 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "titania\\.es\\/item\\/trigger\\/front\\/",
+            "rule": "titania\\.es\\/service\\/file\\/mtime\\/1\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn2_incap1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [
                 {
                     "original": "api.elconfidencial.com",
@@ -43,14 +47,70 @@
                 }
             ],
             "responseHashes": [
-                "430f2cba0869c9863af04fcfb612a50ce1ba389ca425a73e3bbb27f48219f3e7",
-                "33702e080e1e6872698bd782d4bbb83fda9b8f7b8ce0696f1e4a344775b01125"
+                "c53ff8f78667876389a50328f2c9fb7c6dc54fef479f5238a7a8af45ef0bf453"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/stats\\/elconfidencial\\.com\\/home\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "access.elconfidencial.com",
+                    "resolved": "cdn22.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "5214bd6ca812140422e49de49a6c8d61bee2e5cee9153f4ddbe2d401f4ab6455"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/item\\/trigger\\/front\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn2_incap1"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [
+                {
+                    "original": "api.elconfidencial.com",
+                    "resolved": "cdn2_incap1.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "3639955a6edc7b23a862ba64886a46823bf43dfb14c3d2a3669fe3c8c1b5db14",
+                "be9a30f718bba7978e2cb29b7625b2f358006572a6ee471cf4349db5ab3e3399",
+                "5fa107f0d7f094073b02400f377c8775ad9ad44e053dbfea2f65aa4a8246fd7d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.alimente.elconfidencial.com",
                 "www.elconfidencial.com",
                 "www.vanitatis.elconfidencial.com"
             ]
@@ -63,8 +123,8 @@
                 "cdn2_incap1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [
                 {
                     "original": "secure.elconfidencial.com",
@@ -79,6 +139,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elconfidencial.com",
+                "www.alimente.elconfidencial.com",
                 "www.elconfidencial.com",
                 "www.vanitatis.elconfidencial.com"
             ]
@@ -91,8 +152,8 @@
                 "cdn2_incap1"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [
                 {
                     "original": "secure.elconfidencial.com",
@@ -107,6 +168,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elconfidencial.com",
+                "www.alimente.elconfidencial.com",
                 "www.elconfidencial.com",
                 "www.vanitatis.elconfidencial.com"
             ]
@@ -170,9 +232,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 3,
-        "Document": 3,
-        "Script": 3,
+        "XHR": 6,
+        "Document": 6,
+        "Script": 4,
         "Image": 4
     },
     "nameservers": []

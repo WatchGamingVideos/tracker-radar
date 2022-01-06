@@ -9,19 +9,24 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "d9i5ve8f04qxt\\.cloudfront\\.net\\/UC\\/62\\/uca\\/0\\.1\\.0\\/js\\/collect-g\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -30,7 +35,14 @@
                 "dfbf4fc433fc3f4aeec3d85e0cf44f049edc4301576c404f74579130a8bc2eb2"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ucacid": {
+                    "ttl": 31536001,
+                    "length": 16,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "drsamrobbins.com",
@@ -138,7 +150,7 @@
             ]
         },
         {
-            "rule": "d9i5ve8f04qxt\\.cloudfront\\.net\\/HZ\\/42\\/cache\\/js\\/81E299B337709505C64D50CECE91F10B8A297172571964A881DE38782EF54079-mg\\.js",
+            "rule": "d9i5ve8f04qxt\\.cloudfront\\.net\\/HZ\\/42\\/cache\\/js\\/5046D41962EF1557FCFBB868BB27EDBA82B74B7A702AC7E8EAD2711D1798DA87-mg\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [],
@@ -154,20 +166,20 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d5edbb9e1ed790377d4c762381084d6eea972d7d4843c8aee07194275ca42e59"
+                "09398d53e0f3bf12a92f7d34a404fc745669e8e64041f3efce9a4ff80bbf9f29"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "UltraCartShoppingCartID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "webpSupport": {
-                    "ttl": 604801,
+                    "ttl": 604800,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -199,9 +211,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ucacid": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 17,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
@@ -247,6 +259,26 @@
                 "a5889a011462927c4d4eda3480d04c6f7c9b3849fda77cb401ff1b9683752d93"
             ],
             "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hobbyzone.com",
+                "www.hobbyzone.com"
+            ]
+        },
+        {
+            "rule": "d9i5ve8f04qxt\\.cloudfront\\.net\\/HZ\\/42\\/themes\\/mtc15\\.availability\\/assets\\/imgs\\/ajax-loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "096e3ced9fe6029822179d85c89b6591a50f7b8d0b38b7365a290002144bb97a"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -319,11 +351,11 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000277,
     "types": {
         "Script": 10,
         "Stylesheet": 2,
-        "Image": 10,
+        "Image": 12,
         "Font": 4
     },
     "nameservers": [

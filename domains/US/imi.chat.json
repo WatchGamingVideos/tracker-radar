@@ -15,7 +15,7 @@
     "resources": [
         {
             "rule": "imi\\.chat\\/widget\\/js\\/imichatinit\\.js",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "media"
@@ -26,7 +26,7 @@
                 "window.sessionStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "dcb3189ede0f0a3f88770e73ae6f5f7643458029fc3e78e77baad27bc10025fb"
@@ -43,11 +43,14 @@
         {
             "rule": "imi\\.chat\\/widget\\/js\\/imichatgeneral\\.js",
             "cookies": 0.0000277,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "media"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1
+            },
             "sites": 4,
             "prevalence": 0.0000277,
             "cnames": [],
@@ -584,7 +587,10 @@
                 "media"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4
+                "Navigator.prototype.userAgent": 4,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.mimeTypes": 1
             },
             "sites": 4,
             "prevalence": 0.0000277,
@@ -653,11 +659,13 @@
         {
             "rule": "imi\\.chat\\/widget\\/js\\/dropzone\\.js",
             "cookies": 0.0000277,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "media"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 4,
             "prevalence": 0.0000277,
             "cnames": [],
@@ -683,7 +691,9 @@
             ],
             "apis": {
                 "window.sessionStorage": 4,
-                "window.localStorage": 4
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 4,
             "prevalence": 0.0000277,
@@ -718,7 +728,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "IR_gbd": 0.000013827051243051907
+                "IR_gbd": 0.000013835851458298743
             },
             "exampleSites": [
                 "apmex.com",
@@ -759,9 +769,9 @@
         "XHR": 4
     },
     "nameservers": [
-        "ns-361.awsdns-45.com",
-        "ns-822.awsdns-38.net",
         "ns-1256.awsdns-29.org",
-        "ns-1854.awsdns-39.co.uk"
+        "ns-1854.awsdns-39.co.uk",
+        "ns-361.awsdns-45.com",
+        "ns-822.awsdns-38.net"
     ]
 }

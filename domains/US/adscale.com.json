@@ -4,57 +4,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000104,
-    "sites": 15,
+    "prevalence": 0.000111,
+    "sites": 16,
     "subdomains": [
-        "ecommerce-scripts",
         "storage-pu",
+        "ecommerce-scripts",
         "app"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "adscale\\.com\\/ecommerce\\/script\\/www\\.australiandirect\\.com\\.au\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ecommerce-scripts"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8e511960b0d01545aeb4a859c5c906c87707fb5ae9e733eeeda90c685cac1290"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "australiandirect.com.au",
-                "www.australiandirect.com.au"
-            ]
-        },
-        {
             "rule": "adscale\\.com\\/static\\/ecom_js\\/mZ7U\\/adscale_purchase\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "storage-pu"
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Document.cookie setter": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7fe1d4c5b0dbdec59263607f4b25248a6078e6b1dc08989d559b0e54a6f69dbd"
+                "b5e6cab5579736ce7962f81a97117bf66eb15db0d18b0a0a68e0251169a99a3e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_adscale_gclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_adscale_fbclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boden.co.uk",
@@ -63,27 +55,108 @@
         },
         {
             "rule": "adscale\\.com\\/static\\/ecom_js\\/mZJa\\/adscale_purchase\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "storage-pu"
             ],
             "apis": {
                 "window.localStorage": 2,
-                "Document.cookie getter": 1
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "221bf8de762a4622b8e9ccd8d0f63a6a8c4e5e9d70914a11b20027c4a9b69d4a"
+                "bb5c2f1d8b143927f90ad4a0533a3be5ccbd278de95516b0fb7f5966f0ea7e24"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_adscale_gclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_adscale_fbclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cultpens.com",
                 "www.cultpens.com"
+            ]
+        },
+        {
+            "rule": "adscale\\.com\\/ecommerce\\/script\\/www\\.directpoolsupplies\\.com\\.au\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ecommerce-scripts"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_adscale_gclid": {
+                    "ttl": 2592004,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_adscale_fbclid": {
+                    "ttl": 2592004,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "adscale_ad_link": {
+                    "ttl": 254561364,
+                    "length": 80,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directpoolsupplies.com.au",
+                "www.directpoolsupplies.com.au"
+            ]
+        },
+        {
+            "rule": "adscale\\.com\\/EcommerceProxy",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecommerce-scripts"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "46dd1322653311d8433f33a03f0fa3d245c637eb90455d9f6e08dc2e09f6ffe7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "directpoolsupplies.com.au",
+                "www.directpoolsupplies.com.au",
+                "www.theseedcollection.com.au"
             ]
         },
         {
@@ -110,23 +183,37 @@
         },
         {
             "rule": "adscale\\.com\\/static\\/ecom_js\\/mZAD\\/adscale_purchase\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "storage-pu"
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Document.cookie setter": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ddf9b6325e228a9f397e9cef9ca5171c127d1e4d39db91f92e72606ac2d604e4"
+                "b983b0d27bc3ec186e70138c162b561ce4456cbcc08261b1e48a20153e7ce856"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_adscale_gclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_adscale_fbclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "libertylondon.com",
@@ -135,23 +222,37 @@
         },
         {
             "rule": "adscale\\.com\\/static\\/ecom_js\\/mZGa\\/adscale_purchase\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "storage-pu"
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Document.cookie setter": 2,
                 "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4e57c24c451b11ecfe1cf3e2f2f0a80da026bf4823d19186e01bcf1ce5fc26e9"
+                "dcc982d110aadaa4ecf817e2c099aa76f42ba899d16f66569446fc3f232a8807"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "_adscale_gclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "_adscale_fbclid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "vivobarefoot.com",
@@ -161,9 +262,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000899,
     "types": {
-        "Script": 12
+        "Script": 12,
+        "XHR": 3
     },
     "nameservers": [
         "ns1.ccccloud.com",

@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000187,
-    "sites": 27,
+    "prevalence": 0.000221,
+    "sites": 32,
     "subdomains": [
         "track"
     ],
@@ -16,38 +16,57 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "cordial\\.io\\/track\\.v2\\.js",
+            "cookies": 0.0000623,
+            "fingerprinting": 1,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 9,
+                "Navigator.prototype.userAgent": 9,
+                "window.localStorage": 9
+            },
+            "sites": 9,
+            "prevalence": 0.0000623,
+            "cnames": [],
+            "responseHashes": [
+                "cb3da865c4155a8a73eec2d27f9130445390f79ed26afbc11f74388c44d5eb78"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bootbarn.com",
+                "www.bootbarn.com",
+                "www.countryoutfitter.com",
+                "www.essence.com",
+                "www.furniturerow.com",
+                "www.hearthsong.com",
+                "www.plowhearth.com",
+                "www.sheplers.com",
+                "www.windandweather.com"
+            ]
+        },
+        {
             "rule": "cordial\\.io\\/track\\.js",
-            "cookies": 0.0000622,
+            "cookies": 0.0000623,
             "fingerprinting": 1,
             "subdomains": [
                 "track"
             ],
             "apis": {
                 "window.localStorage": 9,
-                "Document.cookie getter": 9,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 9
             },
             "sites": 9,
-            "prevalence": 0.0000622,
+            "prevalence": 0.0000623,
             "cnames": [],
             "responseHashes": [
                 "fa297b4fb519b3c5e90747cbbabe67876a7968ded2db6697efd215b89770411c"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "crdl_logitechbID": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                },
-                "crdl_logitechaID": {
-                    "ttl": 2592016,
-                    "length": 26,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "themighty.com",
@@ -69,7 +88,7 @@
                 "track"
             ],
             "apis": {
-                "Document.cookie getter": 4
+                "Document.cookie getter": 6
             },
             "sites": 8,
             "prevalence": 0.0000553,
@@ -91,99 +110,17 @@
                 "www.onkyousa.com",
                 "www.ultimateears.com"
             ]
-        },
-        {
-            "rule": "cordial\\.io\\/track\\.v2\\.js",
-            "cookies": 0.0000484,
-            "fingerprinting": 1,
-            "subdomains": [
-                "track"
-            ],
-            "apis": {
-                "Navigator.prototype.product": 7,
-                "Navigator.prototype.userAgent": 7,
-                "window.localStorage": 7
-            },
-            "sites": 7,
-            "prevalence": 0.0000484,
-            "cnames": [],
-            "responseHashes": [
-                "cb3da865c4155a8a73eec2d27f9130445390f79ed26afbc11f74388c44d5eb78"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bootbarn.com",
-                "www.countryoutfitter.com",
-                "www.essence.com",
-                "www.furniturerow.com",
-                "www.hearthsong.com",
-                "www.plowhearth.com",
-                "www.sheplers.com"
-            ]
-        },
-        {
-            "rule": "cordial\\.io\\/track\\.php",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "track"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "crdl_logitechbID": 0.000013827051243051907,
-                "crdl_logitechaID": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "logitech.com",
-                "www.logitechg.com"
-            ]
-        },
-        {
-            "rule": "cordial\\.io\\/contact\\.php",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "track"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "crdl_logitechbID": 0.000013827051243051907,
-                "crdl_logitechaID": 0.000013827051243051907
-            },
-            "exampleSites": [
-                "logitech.com",
-                "www.logitechg.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000187,
+    "cookies": 0.000221,
     "types": {
-        "Script": 16,
-        "Document": 8,
-        "XHR": 4
+        "Script": 18,
+        "Document": 8
     },
     "nameservers": [
-        "lola.ns.cloudflare.com",
-        "sam.ns.cloudflare.com"
+        "sam.ns.cloudflare.com",
+        "lola.ns.cloudflare.com"
     ]
 }

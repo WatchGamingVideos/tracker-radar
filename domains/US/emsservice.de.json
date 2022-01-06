@@ -7,12 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000691,
+    "prevalence": 0.0000692,
     "sites": 10,
     "subdomains": [
         "static",
-        "traffic",
-        "native"
+        "traffic"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -86,13 +85,17 @@
         {
             "rule": "emsservice\\.de\\/socket\\/socket\\.io\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1
+            },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "6d09ab65ee323e742b2d363ed6063295f34c06e19f9d3fc72ac0865fef57baaa"
@@ -140,7 +143,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "91b96011b282178099b58e9026d5bf2821c3df03f5270f91b1d49e780836ce41"
@@ -163,7 +166,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "0ab2252d43ac28e73b0305832a3570707b312c1e978002f9c9be2db76e6f5dde"
@@ -186,7 +189,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "ba990506c4fcee0759ca3294a5cc3cdf4b6fe863175992817f1244ad0c2603f2"
@@ -234,7 +237,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d6cbc67fe1756190e328b09fad2b29bb7b2df33b95415c5536453669c4ed6a03"
+                "59a0cc92c3d0736fad4dd59bcb48bbad2c444c9bf0af0a52e74ebc9ac2a3000c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -277,7 +280,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -289,68 +292,6 @@
                 "grazia-magazin.de",
                 "www.grazia-magazin.de",
                 "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "emsservice\\.de\\/teasertemplates\\/335\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e6f860d144b600f45c65f055352be9e7050b3e6e77fc774e99dfc17d9dd74540"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.grazia-magazin.de"
-            ]
-        },
-        {
-            "rule": "emsservice\\.de\\/teasers\\/10139\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "native"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.grazia-magazin.de"
-            ]
-        },
-        {
-            "rule": "emsservice\\.de\\/teasers\\/10204\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "native"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grazia-magazin.de",
-                "www.grazia-magazin.de"
             ]
         },
         {
@@ -518,13 +459,61 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ae2ba326a3a3797a5c455b9888ad91e2758886047a884061547b2fe9359105bd"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grazia-magazin.de",
                 "www.grazia-magazin.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/sgs\\/wetransfer_adalliance_2021-12-02_1150_1638526407\\/AdAlliance\\/M-4-99_Fiction_13197_AJLT_DCM-P_1228_0612_200x600_Sitebar\\/images\\/HL1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "7cbd7ba74cb18f2f20deb41c2ca40973401ee2f71af681e9c76d847025edb148"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "grazia-magazin.de",
+                "www.grazia-magazin.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/1200x675_Toggo_Music\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c73d26649b64638ad88f99569151e3a567bb1c762e255b9013fa9e8088a775ae"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
             ]
         },
         {
@@ -539,9 +528,163 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4675782c35bfb022d155c5b76862668fabce5201664cd2debeef8e3e6680d56c"
+                "bae5108f5b75f1abedfd55f4acf5b6041e009edbf1d626c1ea40467d66c0b46d"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/bg1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "556673a39f92191b506b2836409c9e69f3c2e4a1dfbf24beedff9f18067d5bd4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/bg2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0e8cc7a94a2ee08c1c1f59a4bd1cbc150993a9c8de0738c8500aa07ae7595277"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/bg3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "57425891dfc69171affb42f6f30154615c76c028191c7c044daf9fb734e28db2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/cd\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "451ca3551edaab09bc9335b628166bfa42766b69f98edede89055854431b8a49"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/txt1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "f6c0210862a059e73c2079158c545cfe93bf95650e5109b02cb02c21b51c2978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/txt2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b9fd88ab6c7bd34baf1ceacd8c889d643a80c616b51075bb5f0494be660c1160"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toggo.de",
+                "www.toggo.de"
+            ]
+        },
+        {
+            "rule": "emsservice\\.de\\/werbemittel\\/Toggo\\/69156900_SRTL-TOGGO-music59-Markenweltteaser-final_1637742664\\/Toggo-Music_1200x675\\/images\\/txt3\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1d3937e4d857a1a727bfca714f7966918e1dddf437ee84e94a305feea2f18f14"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -557,9 +700,9 @@
         "Stylesheet": 2,
         "XHR": 2,
         "Script": 18,
-        "Fetch": 10,
-        "Document": 2,
-        "Image": 19
+        "Fetch": 4,
+        "Document": 4,
+        "Image": 35
     },
     "nameservers": [
         "dns1.guj.de",

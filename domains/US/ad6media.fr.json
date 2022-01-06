@@ -7,13 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000692,
+    "sites": 10,
     "subdomains": [
         "r",
         "hvtidogshc.s",
         "bvf6hg3nv1.s",
-        "z3n7lmoctq.s"
+        "z3n7lmoctq.s",
+        "c"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -58,9 +59,7 @@
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "ref_f": 0.000006913525621525954
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dhgate.com",
                 "ca.dhgate.com",
@@ -70,7 +69,7 @@
         },
         {
             "rule": "ad6media\\.fr\\/",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
                 "hvtidogshc.s",
@@ -78,11 +77,11 @@
                 "z3n7lmoctq.s"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "ebf2c0dc69b32ba8a5afb0179e3d90cd76f59ce888dc33497165e0723ab12e02",
+                "36d7676f9b11b78a9fc399da4a4db9a417063b89b218b4a49c0467892806cd6d",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
@@ -91,7 +90,108 @@
             "exampleSites": [
                 "agoravox.fr",
                 "www.agoravox.fr",
+                "www.agoravox.tv",
                 "www.infoconcert.com"
+            ]
+        },
+        {
+            "rule": "ad6media\\.fr\\/nf\\/nf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0c014069ce76368a80b327e8869b0ea9173bade0a706030aaca11f0a05ff44e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoravox.fr",
+                "www.agoravox.tv"
+            ]
+        },
+        {
+            "rule": "ad6media\\.fr\\/nf\\/base\\.native\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "99903f8d1d6e436555bab76855fadaa47d6f1728ca667bdebc7fc7637f108d84"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoravox.fr",
+                "www.agoravox.tv"
+            ]
+        },
+        {
+            "rule": "ad6media\\.fr\\/mpre1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoravox.fr",
+                "www.agoravox.tv"
+            ]
+        },
+        {
+            "rule": "ad6media\\.fr\\/lm\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "a096ce45c5163209baf8a831ce033dd0abf555b8d810938ed73e7ff139125869"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoravox.fr",
+                "www.agoravox.tv"
             ]
         },
         {
@@ -141,14 +241,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000484,
+    "cookies": 0.0000553,
     "types": {
-        "Script": 15
+        "Script": 22,
+        "Image": 2
     },
     "nameservers": [
+        "sdns2.ovh.net",
         "mx1.sd1.fr",
         "dns1.sd1.fr",
-        "dns2.sd1.fr",
-        "sdns2.ovh.net"
+        "dns2.sd1.fr"
     ]
 }

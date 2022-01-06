@@ -7,14 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "websdk",
         "rmc-by",
         "01net-by",
-        "tui-by",
-        "daraz-by"
+        "photoweb-by",
+        "tui-by"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -50,24 +50,28 @@
             "subdomains": [
                 "rmc-by",
                 "01net-by",
+                "photoweb-by",
                 "tui-by"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.languages": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
-                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.languages": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "window.name": 2,
+                "Date.prototype.getTime": 4,
                 "Navigator.prototype.permissions": 3,
-                "Navigator.prototype.vendor": 1,
-                "window.localStorage": 1,
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
                 "Notification.permission": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "a6bed3c89e0535c53fe3d14286567eaca12e02cb04cce59c5afc1e3d80eaff43",
                 "c8ba4a55077e72bee6b45ba765f31a8587f77fd77e970e75337cf97cf4e17e7a",
+                "a4ec5fd98be9f321785750cbc470f520d9ba584e6b56748cce68d9fbf48555d9",
                 "261ebfca590c86c9e519c470786e7215e7d8a76ddef39da893f86e080a191699"
             ],
             "type": "Script",
@@ -77,6 +81,7 @@
                 "bfmtv.com",
                 "rmc.bfmtv.com",
                 "www.01net.com",
+                "www.photoweb.fr",
                 "www.tui.com"
             ]
         },
@@ -86,18 +91,23 @@
             "fingerprinting": 2,
             "subdomains": [
                 "rmc-by",
+                "photoweb-by",
                 "tui-by"
             ],
             "apis": {
+                "window.name": 1,
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.vendor": 1,
                 "Navigator.prototype.languages": 1,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.permissions": 1,
+                "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
+                "4e009f518383805dd0f76a119558239ad72fb6b28bd047a9159007bbc8657585",
                 "80c46dccef5514d74463e19a3fe9cbefc2b4a7c5e7284a2a55486b3d3f1c67af"
             ],
             "type": "Document",
@@ -105,6 +115,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bfmtv.com",
+                "www.photoweb.fr",
                 "www.tui.com"
             ]
         },
@@ -114,13 +125,15 @@
             "fingerprinting": 0,
             "subdomains": [
                 "rmc-by",
+                "photoweb-by",
                 "tui-by"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
+                "ca902bee40cbdcd67023c919e718f201e89ac94988b9f2badbce72cc8570bea0",
                 "02d38c839c05507af10d4a179da2b588534d4adc32d291a94a730738d7b5c017"
             ],
             "type": "Other",
@@ -128,29 +141,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bfmtv.com",
+                "www.photoweb.fr",
                 "www.tui.com"
-            ]
-        },
-        {
-            "rule": "accengage\\.net\\/pushweb\\/assets\\/secure-bridge\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "daraz-by"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "14d238280d98e2fc4edb049f12f372f64d636c5de47cbac3b412e8c815a25ab9"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "daraz.pk",
-                "www.daraz.pk"
             ]
         },
         {
@@ -158,6 +150,7 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "photoweb-by",
                 "tui-by"
             ],
             "apis": {},
@@ -171,7 +164,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tui.com",
+                "photoweb.fr",
                 "www.tui.com"
             ]
         }
@@ -180,9 +173,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8,
-        "Document": 4,
-        "Other": 2
+        "Script": 9,
+        "Document": 3,
+        "Other": 3
     },
     "nameservers": [
         "wanda.ns.cloudflare.com",

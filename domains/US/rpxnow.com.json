@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00056,
-    "sites": 81,
+    "prevalence": 0.00054,
+    "sites": 78,
     "subdomains": [
         "widgets-cdn",
         "ssl-widget-cdn",
@@ -20,9 +20,11 @@
         {
             "rule": "rpxnow\\.com\\/js\\/lib\\/login\\.adoptapet\\.com\\/engage\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -37,21 +39,21 @@
         },
         {
             "rule": "rpxnow\\.com\\/manifest\\/capture:login",
-            "cookies": 0.000152,
+            "cookies": 0.000111,
             "fingerprinting": 2,
             "subdomains": [
                 "widgets-cdn",
                 "ssl-widget-cdn"
             ],
             "apis": {
-                "window.localStorage": 23,
                 "Navigator.prototype.userAgent": 23,
                 "Navigator.prototype.appName": 23,
-                "Screen.prototype.height": 23,
-                "Screen.prototype.width": 23,
-                "Document.cookie getter": 23,
                 "Date.prototype.getTime": 23,
-                "Document.cookie setter": 22
+                "window.localStorage": 23,
+                "Screen.prototype.height": 16,
+                "Screen.prototype.width": 16,
+                "Document.cookie getter": 17,
+                "Document.cookie setter": 16
             },
             "sites": 23,
             "prevalence": 0.000159,
@@ -63,26 +65,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vancouversun.com",
-                "ottawasun.com",
-                "edmontonjournal.com",
-                "driving.ca",
-                "winnipegsun.com",
-                "torontosun.com",
-                "ottawacitizen.com",
-                "montrealgazette.com",
                 "calgaryherald.com",
-                "thestarphoenix.com",
-                "nationalpost.com",
-                "www.nejm.org",
-                "canoe.com",
-                "theprovince.com",
-                "windsorstar.com",
+                "driving.ca",
+                "edmontonjournal.com",
                 "www.knack.be",
-                "leaderpost.com",
+                "theprovince.com",
                 "calgarysun.com",
+                "edmontonsun.com",
+                "thestarphoenix.com",
+                "www.libelle-lekker.be",
+                "ottawasun.com",
+                "montrealgazette.com",
+                "torontosun.com",
+                "canoe.com",
+                "www.levif.be",
                 "lfpress.com",
-                "www.libelle-lekker.be"
+                "windsorstar.com",
+                "winnipegsun.com",
+                "vancouversun.com",
+                "financialpost.com",
+                "ottawacitizen.com"
             ]
         },
         {
@@ -94,11 +96,9 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
-            "responseHashes": [
-                "1fac8f3f5c9609a79992cfd77073f69cb84be74467254af84e2b7705d320bf14"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -122,7 +122,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "5afb2a30be364816911252339acd7a13d72487d76590baea0b1471d7b48a2b23"
+                "1966114473edab64515e8a7c4a704f1e6390c886e671e905c04dae9fb298fed1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -141,7 +141,7 @@
                 "window.localStorage": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "f4f9a4db429cf38c74272a941149e4ea71f543d70fe410bc6c337bfc2a6dba99"
@@ -166,9 +166,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "5f35d26c640e5e200b8a909c7c9fc09c60703a9f5cf18969af6158bf88cb241c"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -183,10 +181,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 4
+                "window.localStorage": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -194,7 +192,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "christianitytoday.com",
-                "www.christianitytoday.com",
                 "www.preachingtoday.com",
                 "www.todayschristianwoman.com"
             ]
@@ -230,7 +227,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "78681f3eb9dda55ee91cfaee3f12565d8a759e3d3a84b5a8dc6c9c0da20ff7e3"
@@ -323,9 +320,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "3172035d00eebe2a95a58b11c2e60d0d36a32982eda5f134620548e900c653c8"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -357,14 +352,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000311,
+    "cookies": 0.000256,
     "types": {
-        "Script": 54
+        "Script": 53
     },
     "nameservers": [
-        "ns-1064.awsdns-05.org",
-        "ns-1845.awsdns-38.co.uk",
+        "ns-732.awsdns-27.net",
         "ns-495.awsdns-61.com",
-        "ns-732.awsdns-27.net"
+        "ns-1064.awsdns-05.org",
+        "ns-1845.awsdns-38.co.uk"
     ]
 }

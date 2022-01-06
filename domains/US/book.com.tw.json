@@ -8,7 +8,8 @@
     "sites": 2,
     "subdomains": [
         "jci",
-        "im1"
+        "im1",
+        "im2"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -106,14 +107,16 @@
         },
         {
             "rule": "book\\.com\\.tw\\/jss\\/header\\/header-www\\.js",
-            "cookies": 0,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "jci"
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -122,7 +125,14 @@
                 "faf40895f2f9f09039155550fbac1cb140785341af2847cf7af4810e5666a497"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "home_tbanner": {
+                    "ttl": 86404,
+                    "length": 1,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "books.com.tw",
@@ -154,11 +164,13 @@
         {
             "rule": "book\\.com\\.tw\\/jss\\/books\\/jqueryplugin\\/lazyload\\/1\\.9\\.3\\/jquery\\.lazyload\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "jci"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.appVersion": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -205,14 +217,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "im1"
+                "im1",
+                "im2"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "273eaf85707ec992105dd36710d47a7457fc8fe3184c31e0eaaa2f60fb081ce7"
+                "98d36710eeae1194221f1bafdae23cfc98c37993d43fcb428e731768e7455c67"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -421,6 +434,28 @@
             ]
         },
         {
+            "rule": "book\\.com\\.tw\\/css\\/header\\/images\\/tip\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e4c34f130a27955d28b2b205ca2d9de22e385eaaba4c67d02cfdf5674eeba992"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "books.com.tw",
+                "www.books.com.tw"
+            ]
+        },
+        {
             "rule": "book\\.com\\.tw\\/css\\/iconfont\\/icon_01\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
@@ -435,28 +470,6 @@
                 "ad40827a76c9ff1d14cc4681256d0d8ed88978c5bb948009daa0fa6d289dd40c"
             ],
             "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "books.com.tw",
-                "www.books.com.tw"
-            ]
-        },
-        {
-            "rule": "book\\.com\\.tw\\/css\\/mod\\/images\\/mc002\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "jci"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "51edeaf951440296ecf6f44b926ddba6cb37cf3a1b3c4cde5566d1a922444eaa"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -511,7 +524,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000692,
     "types": {
         "Stylesheet": 22,
         "Script": 12,
@@ -519,7 +532,7 @@
         "Font": 2
     },
     "nameservers": [
-        "nfdns.books.com.tw",
-        "gdns.books.com.tw"
+        "gdns.books.com.tw",
+        "nfdns.books.com.tw"
     ]
 }

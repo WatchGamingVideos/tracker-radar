@@ -7,8 +7,8 @@
     "prevalence": 0.0000899,
     "sites": 13,
     "subdomains": [
-        "web-vitals",
         "cdn.bf-whatsnext-production.aws",
+        "web-vitals",
         "chef-widget.bf-whatsnext-production.aws"
     ],
     "cnames": [
@@ -23,6 +23,33 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "bfops\\.io\\/static\\/widget\\/focus\\/wnloader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.bf-whatsnext-production.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "cdn.whatsnext.focus.de",
+                    "resolved": "cdn.bf-whatsnext-production.aws.bfops.io"
+                }
+            ],
+            "responseHashes": [
+                "144fc7f6f92cec073287b3af183552f40cf173963b249e21bcee8ff8af9ede09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus.de",
+                "www.focus.de"
+            ]
+        },
         {
             "rule": "bfops\\.io\\/web-vitals\\/dist\\/web-vitals\\.js",
             "cookies": 0,
@@ -79,33 +106,6 @@
             ]
         },
         {
-            "rule": "bfops\\.io\\/static\\/widget\\/focus\\/wnloader\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn.bf-whatsnext-production.aws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "cdn.whatsnext.focus.de",
-                    "resolved": "cdn.bf-whatsnext-production.aws.bfops.io"
-                }
-            ],
-            "responseHashes": [
-                "144fc7f6f92cec073287b3af183552f40cf173963b249e21bcee8ff8af9ede09"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "focus.de",
-                "www.focus.de"
-            ]
-        },
-        {
             "rule": "bfops\\.io\\/api\\/v1\\/telemetry\\/error\\/widget_error",
             "cookies": 0,
             "fingerprinting": 0,
@@ -116,10 +116,8 @@
             "sites": 6,
             "prevalence": 0.0000415,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -142,8 +140,10 @@
             "sites": 6,
             "prevalence": 0.0000415,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -237,8 +237,8 @@
     "cookies": 0,
     "types": {
         "Script": 18,
-        "XHR": 6,
-        "Preflight": 6
+        "Preflight": 6,
+        "XHR": 6
     },
     "nameservers": [
         "a2-64.akam.net",

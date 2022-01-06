@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "www-api"
     ],
@@ -18,15 +18,44 @@
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "ibm\\.net\\/cookie-sync\\/dbdm-data",
-            "cookies": 0.0000346,
+            "rule": "ibm\\.net\\/dbdm\\/uidgen",
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "www-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "www-api.ibm.com",
+                    "resolved": "www-api.ibm.net"
+                }
+            ],
+            "responseHashes": [
+                "d3201b3c8af64f6ae5cb8af8a5d41d740773c7923c3e68ffd2f8395421240260",
+                "37ceac9d28a36781e132a445e3cf82d8a3bbaac1954627474c5411395d59cf61"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ibm.com",
+                "developer.ibm.com",
+                "securityintelligence.com"
+            ]
+        },
+        {
+            "rule": "ibm\\.net\\/cookie-sync\\/dbdm-data",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www-api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [
                 {
                     "original": "www-api.ibm.com",
@@ -42,7 +71,6 @@
             "exampleSites": [
                 "ibm.com",
                 "developer.ibm.com",
-                "newsroom.ibm.com",
                 "securityintelligence.com",
                 "www.ibm.com"
             ]
@@ -50,9 +78,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000553,
+    "cookies": 0.0000346,
     "types": {
-        "Script": 5
+        "XHR": 3,
+        "Script": 4
     },
     "nameservers": []
 }

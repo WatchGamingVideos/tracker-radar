@@ -12,7 +12,8 @@
     "subdomains": [
         "ctm",
         "cdn",
-        "collector-sf.api"
+        "collector-sf.api",
+        "widgets"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -130,22 +131,125 @@
                 "canstarblue.com.au",
                 "www.canstarblue.com.au"
             ]
+        },
+        {
+            "rule": "canstar\\.com\\.au\\/widgets\\/assets\\/js\\/widgets\\/search\\/search-prod\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5dc77a6d57ed613a1dea79967c0a0c663054e2be555424fa60ea1834003936c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 4,
+                    "length": 9,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canstarblue.com.au",
+                "www.canstarblue.com.au"
+            ]
+        },
+        {
+            "rule": "canstar\\.com\\.au\\/widgets\\/assets\\/js\\/widgets\\/search\\/themes\\/blue_brand\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "37ccef57454e40ee3d1e6bf2ce632ce0113b6aa8300b55e39b76ff5ed475cf43"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canstarblue.com.au",
+                "www.canstarblue.com.au"
+            ]
+        },
+        {
+            "rule": "canstar\\.com\\.au\\/font-awesome\\/5\\.15\\.1\\/webfonts\\/fa-solid-900\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canstarblue.com.au",
+                "www.canstarblue.com.au"
+            ]
+        },
+        {
+            "rule": "canstar\\.com\\.au\\/widgets\\/assets\\/js\\/widgets\\/search\\/themes\\/blue_brand\\/style\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "aab5cb6fd9a25e2f75082264ce0b1ff41c307efa767c1879ba79902281049034"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canstarblue.com.au",
+                "www.canstarblue.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Script": 2,
-        "Stylesheet": 2,
+        "Script": 4,
+        "Stylesheet": 4,
         "Image": 2,
-        "XHR": 2,
-        "Preflight": 2
+        "XHR": 4,
+        "Preflight": 2,
+        "Font": 2
     },
     "nameservers": [
-        "ns-441.awsdns-55.com",
-        "ns-808.awsdns-37.net",
         "ns-1096.awsdns-09.org",
-        "ns-1742.awsdns-25.co.uk"
+        "ns-1742.awsdns-25.co.uk",
+        "ns-441.awsdns-55.com",
+        "ns-808.awsdns-37.net"
     ]
 }

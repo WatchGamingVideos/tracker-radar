@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "zero-to-three-herokuapp-com\\.global\\.ssl\\.fastly\\.net\\/assets\\/critical-3942034ce2da54984dd9e4e13eb26f37ce79964e1a5fb1ccc7d9141b69dc7043\\.css",
@@ -41,6 +41,9 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "console.memory": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -60,10 +63,13 @@
         {
             "rule": "zero-to-three-herokuapp-com\\.global\\.ssl\\.fastly\\.net\\/assets\\/main-cbbdbd272cf9c0a52898742bba5b72667754748daf2a3c40449b9b4f19ae67b1\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
                 "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
                 "Element.prototype.getClientRects": 2,
                 "Event.prototype.timeStamp": 2
             },

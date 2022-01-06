@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000691,
-    "sites": 10,
+    "prevalence": 0.0000761,
+    "sites": 11,
     "subdomains": [
-        "adminplayer"
+        "adminplayer",
+        "ovp",
+        "videoplayback"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,8 +22,8 @@
                 "adminplayer"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 6,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "2cffcfaacd57b1261f9528bf5cf177907f5dbfc64d5f39796a8bb329e8d1a430"
@@ -32,9 +34,54 @@
             "exampleSites": [
                 "hoc247.net",
                 "m.hoc247.net",
-                "thanhnien.vn",
-                "tracnghiem.net",
-                "tuoitre.vn"
+                "m.kenh14.vn",
+                "tinhte.vn",
+                "tuoitre.vn",
+                "vietnamnet.vn"
+            ]
+        },
+        {
+            "rule": "sohatv\\.vn\\/lib\\/initPlayer\\/OVPPlayerInitScript\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ovp"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e084ff92fe0a6ef92fd575c35dddb950b32ac9f429b65c9a354dad7945497b23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kenh14.vn",
+                "m.kenh14.vn"
+            ]
+        },
+        {
+            "rule": "sohatv\\.vn\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videoplayback"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kenh14.vn",
+                "m.kenh14.vn"
             ]
         }
     ],
@@ -42,11 +89,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": [
-        "ns6.synerfy.vn",
         "ns7.synerfy.vn",
-        "ns8.synerfy.vn"
+        "ns8.synerfy.vn",
+        "ns6.synerfy.vn"
     ]
 }

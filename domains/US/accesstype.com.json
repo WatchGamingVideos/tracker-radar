@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "www"
     ],
@@ -15,17 +15,18 @@
         {
             "rule": "accesstype\\.com\\/frontend\\/v2\\/accesstype\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "4c0b2625f2a9d7bbefe4b793bfc5217bd3ae6a69702efe42b21368ed9b8d4310"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},

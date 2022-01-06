@@ -8,9 +8,7 @@
     "sites": 12,
     "subdomains": [
         "live-chat",
-        "herochat-plugin",
-        "light-live-chat",
-        "files"
+        "herochat-plugin"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -18,16 +16,22 @@
         {
             "rule": "chatbotize\\.com\\/chatbotize-entrypoint\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "live-chat"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.language": 6,
+                "window.sessionStorage": 8,
+                "window.localStorage": 8,
+                "Event.prototype.timeStamp": 8
+            },
             "sites": 8,
             "prevalence": 0.0000553,
             "cnames": [],
             "responseHashes": [
-                "05bb8b9c8c77a64b75520cb605e5d8022a94da7f59537db3d20dc2e5cb4b2579"
+                "6b4053e2452086d69b77f6fe829fee7b2d36d9a7a79da8c36ad31c48166e54a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -36,8 +40,8 @@
                 "gog.com",
                 "support.gog.com",
                 "umzu.com",
+                "www.alablaboratoria.pl",
                 "www.americangolf.co.uk",
-                "www.decathlon.pl",
                 "www.empik.com",
                 "www.giesswein.com",
                 "www.primaryarms.com"
@@ -86,70 +90,7 @@
             ]
         },
         {
-            "rule": "chatbotize\\.com\\/3\\.chatbotize-entrypoint\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "light-live-chat"
-            ],
-            "apis": {
-                "Event.prototype.timeStamp": 8
-            },
-            "sites": 8,
-            "prevalence": 0.0000553,
-            "cnames": [],
-            "responseHashes": [
-                "9c0ef65f1c023520dfd7e6d923533c1c080c20f42de97fa0538ac45d160fe929"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gog.com",
-                "support.gog.com",
-                "umzu.com",
-                "www.americangolf.co.uk",
-                "www.decathlon.pl",
-                "www.empik.com",
-                "www.giesswein.com",
-                "www.primaryarms.com"
-            ]
-        },
-        {
-            "rule": "chatbotize\\.com\\/1\\.chatbotize-entrypoint\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "light-live-chat"
-            ],
-            "apis": {
-                "Navigator.prototype.language": 6,
-                "window.sessionStorage": 8,
-                "Navigator.prototype.userAgent": 8,
-                "window.localStorage": 8
-            },
-            "sites": 8,
-            "prevalence": 0.0000553,
-            "cnames": [],
-            "responseHashes": [
-                "28741e068e4d65867ce3e1ddc059396ba3d4db23f2b8b12a1c58cf88f85e3eed"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gog.com",
-                "support.gog.com",
-                "umzu.com",
-                "www.americangolf.co.uk",
-                "www.decathlon.pl",
-                "www.empik.com",
-                "www.giesswein.com",
-                "www.primaryarms.com"
-            ]
-        },
-        {
-            "rule": "chatbotize\\.com\\/instances\\/55ba5f792e694813b99f99671946396a\\/multilingual\\/livechat",
+            "rule": "chatbotize\\.com\\/instances\\/18a1e2253c3740ef8cf5ccf553b8e943\\/multilingual\\/livechat",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -160,18 +101,18 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "7f6e3198f548d19162defc3206ad4403d77ed60def17aa8f3487b419c682c6ab"
+                "0aa8153bfcaa178eb450ad68f69c2391de319d79ab429ee957b3a9e9ebd30751"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "empik.com",
-                "www.empik.com"
+                "alablaboratoria.pl",
+                "www.alablaboratoria.pl"
             ]
         },
         {
-            "rule": "chatbotize\\.com\\/instances\\/55ba5f792e694813b99f99671946396a\\/multilingual\\/livechat",
+            "rule": "chatbotize\\.com\\/instances\\/18a1e2253c3740ef8cf5ccf553b8e943\\/multilingual\\/livechat",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -186,30 +127,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "empik.com",
-                "www.empik.com"
-            ]
-        },
-        {
-            "rule": "chatbotize\\.com\\/empik\\/icon_open\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "files"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b29096e82329fff9b546409d7d52703d44f4637d9a94833c5a91d1cf391f9d9b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "empik.com",
-                "www.empik.com"
+                "alablaboratoria.pl",
+                "www.alablaboratoria.pl"
             ]
         },
         {
@@ -301,10 +220,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 24,
+        "Script": 8,
         "Fetch": 8,
-        "Preflight": 8,
-        "Image": 2
+        "Preflight": 8
     },
     "nameservers": [
         "david.ns.cloudflare.com",

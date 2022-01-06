@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,17 +21,21 @@
                 "sdk"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
+                "2c3b40bb7576e708f498937776e9670faf611ec41afaa6706c34c68d8b7cbc51",
                 "cec85398f4bdbca3867e72ebe555fa6b019431c2f234dfae1fdaa1237aead33e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "h2r-equipements.com",
+                "bricodepot.fr",
+                "www.bricodepot.fr",
+                "www.go-sport.com",
+                "www.h2r-equipements.com",
                 "www.woodbrass.com"
             ]
         },
@@ -42,23 +47,74 @@
                 "sdk"
             ],
             "apis": {
-                "window.localStorage": 1,
+                "window.localStorage": 3,
                 "Navigator.prototype.platform": 1,
                 "Navigator.prototype.userAgent": 1,
                 "Navigator.prototype.vendor": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
+                "dd9967c239999dd6cb282f3563d613e40e10c7388959fbd49a83b1a379d1c72c",
                 "16f96c4f6d02893ce5e04f60159849146c8c40d1c6d98ac3b654d7d19a7128ef"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "h2r-equipements.com",
+                "bricodepot.fr",
+                "www.go-sport.com",
+                "www.h2r-equipements.com",
                 "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "teester\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricodepot.fr",
+                "www.bricodepot.fr",
+                "www.go-sport.com",
+                "www.h2r-equipements.com"
+            ]
+        },
+        {
+            "rule": "teester\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "e4ece8307b9c58a71a6be283401e07f3ff2314894edf6e54e062a45b1237ef6d",
+                "7cfab7148f2fab869194f52c282b4329204a22713d82755db163d1104ea5e68c",
+                "ea4dd6c0862f3963ddf9230a32cd91614aeeb9f5210e2a6ae3de44ba58af1767"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricodepot.fr",
+                "www.bricodepot.fr",
+                "www.go-sport.com",
+                "www.h2r-equipements.com"
             ]
         }
     ],
@@ -66,7 +122,9 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Script": 4
+        "Script": 9,
+        "Preflight": 4,
+        "Fetch": 4
     },
     "nameservers": [
         "chan.ns.cloudflare.com",

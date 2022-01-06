@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
         "js2",
-        "barra"
+        "barra",
+        "imgs2"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "uai\\.com\\.br\\/headerbidding\\/v0330-no-analytics\\/prebid\\.js",
@@ -49,10 +50,10 @@
                 "barra"
             ],
             "apis": {
-                "Document.cookie getter": 1
+                "Document.cookie getter": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
                 "926cfdbcb7e64be5b911524c61c376f4d33faa2535486a2cebadb34153ed7529"
@@ -63,7 +64,63 @@
             "exampleSites": [
                 "brasileirao.com.br",
                 "www.brasileirao.com.br",
-                "www.em.com.br"
+                "www.em.com.br",
+                "www.mg.superesportes.com.br"
+            ]
+        },
+        {
+            "rule": "uai\\.com\\.br\\/UAI_2018\\/logo-uai-mobile\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgs2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c3ecf31e703f59a268f18b82ef3d290ae24f91bda18a770a42798ad1ea0fa0a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "em.com.br",
+                "www.mg.superesportes.com.br"
+            ]
+        },
+        {
+            "rule": "uai\\.com\\.br\\/headerbidding\\/app-cri-rtb-rub-smt-teads-adp-one\\/4-32-0\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c7dcc09ff4286be7106074e6b6692a999851e2d021b4422fcf5dee007005d79c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "superesportes.com.br",
+                "www.mg.superesportes.com.br"
             ]
         }
     ],
@@ -71,11 +128,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Document": 3
+        "Script": 4,
+        "Document": 4,
+        "Image": 2
     },
     "nameservers": [
-        "ns2.estaminas.com.br",
-        "ns.estaminas.com.br"
+        "ns.estaminas.com.br",
+        "ns2.estaminas.com.br"
     ]
 }

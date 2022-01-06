@@ -15,14 +15,16 @@
     "resources": [
         {
             "rule": "crowdhandler\\.com\\/js\\/latest\\/main\\.js",
-            "cookies": 0,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "wait"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
                 "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
                 "window.localStorage": 2,
                 "PerformanceTiming.prototype.navigationStart": 2
             },
@@ -30,10 +32,23 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4f31a262e3a9f660a2a077a8f605f1912d862d4d4a6f95ef9640d569dff7071b"
+                "416053c983794bc023f89fc53f07004041a3ed637cdc51531f5f7d31430a9ded"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "dd_cookie_test_15aa4c04-6a62-4213-b3c6-8705fcc90d4f": {
+                    "ttl": 2,
+                    "length": 4,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "_dd_s": {
+                    "ttl": 901,
+                    "length": 4,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kotsovolos.gr",
@@ -71,9 +86,7 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "fde761a6774daeb6547b206a9cb1a328bfb89b19d052abf81cc010f12cfbe7b0"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -85,7 +98,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000692,
     "types": {
         "Script": 2,
         "Preflight": 2,

@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "ps0z\\.com\\/i\\/dark\\.74k1zuA\\.css",
@@ -134,10 +134,11 @@
         },
         {
             "rule": "ps0z\\.com\\/i\\/app\\.E0Nqx7A\\.js",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Document.cookie setter": 2,
                 "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
@@ -147,7 +148,26 @@
                 "8701b763107c57a3ad8a2d97dfe27754e2f1d5f76c7ca2405a216f665dcacc07"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "bcc": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                },
+                "r2": {
+                    "ttl": null,
+                    "length": 12,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "ui-settings": {
+                    "ttl": 167204468,
+                    "length": 7,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "pornsos.com",
@@ -186,7 +206,10 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.language": 2
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -241,42 +264,22 @@
                 "pornsos.com",
                 "www.pornsos.com"
             ]
-        },
-        {
-            "rule": "ps0z\\.com\\/300x250b2\\.4\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8c160000e721c73a85589655fe6f10be30b94d4a882cf6ad35928587b0c14d64"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pornsos.com",
-                "www.pornsos.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
         "Stylesheet": 4,
         "Image": 2,
         "Font": 6,
         "Script": 8,
-        "Document": 4
+        "Document": 2
     },
     "nameservers": [
-        "ns1.edgecastdns.net",
-        "ns2.edgecastdns.net",
-        "ns3.edgecastdns.net",
-        "ns4.edgecastdns.net"
+        "ns3.ps0z.com",
+        "ns2.ps0z.com",
+        "ns4.ps0z.com",
+        "ns1.ps0z.com"
     ]
 }

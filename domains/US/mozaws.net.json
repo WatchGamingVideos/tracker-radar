@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [
+        "sentry.prod",
         "locprod2-elb-us-west-2.prod"
     ],
     "cnames": [
@@ -17,6 +18,26 @@
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "mozaws\\.net\\/api\\/490\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "foundation.mozilla.org"
+            ]
+        },
         {
             "rule": "mozaws\\.net\\/v1\\/country",
             "cookies": 0,
@@ -49,7 +70,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Fetch": 2,
         "XHR": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns-1084.awsdns-07.org",
+        "ns-178.awsdns-22.com",
+        "ns-1995.awsdns-57.co.uk",
+        "ns-865.awsdns-44.net"
+    ]
 }

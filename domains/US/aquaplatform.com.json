@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000692,
+    "sites": 10,
     "subdomains": [
         "ceramics-delivery",
         "hourmedia-delivery",
         "atg-delivery",
         "production-expert-ads",
+        "goldseek-delivery",
         "pmadvertising-delivery",
         "proxibid-delivery"
     ],
@@ -22,6 +23,10 @@
         {
             "original": "ads.proxibid.com",
             "resolved": "proxibid-delivery.aquaplatform.com"
+        },
+        {
+            "original": "advertising.goldseek.com",
+            "resolved": "goldseek-delivery.aquaplatform.com"
         },
         {
             "original": "as2.paulickreport.com",
@@ -122,10 +127,10 @@
                 }
             ],
             "responseHashes": [
-                "bee1eed6645f5dd0dd436725816f976124620bebcffffc4b9623b4ef4d941350",
-                "5343fa3880f917cb1aeed1284cde3ed5565e1b14dee4a59149bed91726a49635",
-                "c4a97de0edd92c9ef80ed1116ed488c623fd7fd014fef1a1e088c266b21cbb09",
-                "ce85b55fdc833796097953faf98a757a64ddafbe14c2db944d4cf4196be82a47"
+                "241f048ef6a8cffc1f8b0b46937fb453194a9f35ff9aa2cfcc983c7ebb1fd94a",
+                "f1b911ffa6debfe9ff30dfafe9b8e6daf3b200f9a7f863894970a53884b26beb",
+                "508b2ced3e51a9843fdabca189a2803051a306df799f42be1bd88816f050226e",
+                "6575c9c04f9bd14e4e01981cf4c9003fb20b227ee166d9f5fdc3793753e32da7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -184,6 +189,76 @@
             ]
         },
         {
+            "rule": "aquaplatform\\.com\\/www\\/delivery\\/lg\\.php",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "goldseek-delivery",
+                "pmadvertising-delivery",
+                "proxibid-delivery"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "advertising.goldseek.com",
+                    "resolved": "goldseek-delivery.aquaplatform.com"
+                },
+                {
+                    "original": "as2.paulickreport.com",
+                    "resolved": "pmadvertising-delivery.aquaplatform.com"
+                },
+                {
+                    "original": "ads.proxibid.com",
+                    "resolved": "proxibid-delivery.aquaplatform.com"
+                }
+            ],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldseek.com",
+                "www.paulickreport.com",
+                "www.proxibid.com"
+            ]
+        },
+        {
+            "rule": "aquaplatform\\.com\\/www\\/delivery\\/ajs\\.php",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "goldseek-delivery",
+                "pmadvertising-delivery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [
+                {
+                    "original": "advertising.goldseek.com",
+                    "resolved": "goldseek-delivery.aquaplatform.com"
+                },
+                {
+                    "original": "as2.paulickreport.com",
+                    "resolved": "pmadvertising-delivery.aquaplatform.com"
+                }
+            ],
+            "responseHashes": [
+                "72445d9f90d4c304b9afb9098141164d4822087b3a34e58cad3c17f9cdf2326c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldseek.com",
+                "www.paulickreport.com"
+            ]
+        },
+        {
             "rule": "aquaplatform\\.com\\/www\\/delivery\\/asyncjs\\.php",
             "cookies": 0.0000138,
             "fingerprinting": 0,
@@ -216,66 +291,6 @@
             ]
         },
         {
-            "rule": "aquaplatform\\.com\\/www\\/delivery\\/ajs\\.php",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pmadvertising-delivery"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "as2.paulickreport.com",
-                    "resolved": "pmadvertising-delivery.aquaplatform.com"
-                }
-            ],
-            "responseHashes": [
-                "645160cd0fd3cd83c1c1510310a5c00b2a104e7a957ceaea2bb3d77272311af8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paulickreport.com",
-                "www.paulickreport.com"
-            ]
-        },
-        {
-            "rule": "aquaplatform\\.com\\/www\\/delivery\\/lg\\.php",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pmadvertising-delivery",
-                "proxibid-delivery"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "as2.paulickreport.com",
-                    "resolved": "pmadvertising-delivery.aquaplatform.com"
-                },
-                {
-                    "original": "ads.proxibid.com",
-                    "resolved": "proxibid-delivery.aquaplatform.com"
-                }
-            ],
-            "responseHashes": [
-                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paulickreport.com",
-                "www.paulickreport.com",
-                "www.proxibid.com"
-            ]
-        },
-        {
             "rule": "aquaplatform\\.com\\/www\\/delivery\\/asyncspc\\.php",
             "cookies": 0.0000138,
             "fingerprinting": 0,
@@ -297,7 +312,7 @@
                 }
             ],
             "responseHashes": [
-                "6211369d56d81cc0c59eb14c296b7d894489195514b20399f4cd339846e90caf"
+                "a1342e39678abdea24e4a34643d6e780f42c5e19452046b2b5cb65645b40d236"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -310,7 +325,7 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000553,
+    "cookies": 0.0000692,
     "types": {
         "Script": 9,
         "XHR": 7,

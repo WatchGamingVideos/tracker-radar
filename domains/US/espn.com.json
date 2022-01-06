@@ -7,18 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000484,
-    "sites": 7,
+    "prevalence": 0.0000553,
+    "sites": 8,
     "subdomains": [
         "dcf",
         "secure",
-        "site.web.api",
         "sw88",
+        "site.web.api",
         "tredir",
         "fan.api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/Bootstrap\\.js",
@@ -28,18 +28,19 @@
                 "dcf"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
                 "Date.prototype.getTime": 3,
                 "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
+                "Navigator.prototype.language": 3,
                 "Document.cookie setter": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.language": 2
+                "window.sessionStorage": 2
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
+                "bed248357bd431b0b1ab887e9566f872668d1432817b4301120cd137db48478b",
                 "0f0743ed600bfcaca47176a3c8a0db46d42b4e2f24ede01f09c939b8bdc9b5fc"
             ],
             "type": "Script",
@@ -47,21 +48,147 @@
                 "s_ensRegion": {
                     "ttl": null,
                     "length": 4,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
                 "_dcf": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "espn.ph",
+                "kvia.com",
                 "www.espn.ph",
                 "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/privacy\\/v1\\/b\\/r\\.rnc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kvia.com",
+                "www.espn.ph",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/serverComponent\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "da67e1ff1753488ee9fb5bf239cd37ee94f33227371dc05f4e7ed0e4390f0158",
+                "ac22c56e1cefc95d8f0348530aeb460a037a3f0f7984eec89fcb1166b9caa6a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "s_v0": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "kvia.com",
+                "www.espn.ph",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/0fcd2e111a0ce390055123bfb4090359\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "e5a9e84435e002deafabb053db65db2d667398f878fbb48cc644445dddaee33d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kvia.com",
+                "www.espn.ph",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/38ecfe4106f4cf77c51d46d98744d380\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dcf"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "9985169e8a52cfa7521afe83e781537990643668c3439ccae24dc488bc92fb34"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kvia.com",
+                "www.espn.ph",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/js\\/dcf\\/tags\\/vision\\/latest\\/vision-videojs\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "secure"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2e588062bf27a9aba2e454babc3423a468e15795aaaf7e4f564687b26965b214"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kvia.com",
+                "www.espn.ph"
             ]
         },
         {
@@ -76,7 +203,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "643cf1d6f24f94daa0604375979c6be26b786457d7282e3c3b63f18510489a0e"
+                "73c40b8d71f796240923430fb14ce4bd04165771382f4a4094558d3715610cab"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -84,6 +211,30 @@
             "exampleSites": [
                 "espn.ph",
                 "www.espn.ph"
+            ]
+        },
+        {
+            "rule": "espn\\.com\\/id",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sw88"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "1e536b7ba9195bb11b5432592ad7f1f83900d5c3d89f1653a5deae1eab760402",
+                "47611379a255570402df5b6e22d9e571fe4bd6c75d28adf718def1d3cec830c1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.ph",
+                "www.espn.ph",
+                "www.secsports.com"
             ]
         },
         {
@@ -95,7 +246,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "92a1f89604ece53c5980f4bf188302e7ad77175406d65b23e21d881caf6f06ba"
@@ -110,62 +261,15 @@
             ]
         },
         {
-            "rule": "espn\\.com\\/id",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sw88"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "f89656c7a18faaed0746ba7cd3ce5aa36510b2c9c370ffefb0fae73249bece54",
-                "da9ba3e1bc898588cb8c53bbb5c607e97cf67c61d3d40f818045ee7eb4fcbe2e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph",
-                "www.secsports.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/privacy\\/v1\\/b\\/r\\.rnc",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dcf"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph",
-                "www.natgeotv.com"
-            ]
-        },
-        {
             "rule": "espn\\.com\\/capmon\\/GetDE",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "tredir"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "7a13ebe94485ccf36e15c3dec8ba156c84ec38c2e3f234f5351839e9504bd473"
@@ -213,7 +317,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "846b9ccb17f87f4943eb7232988d9f542acc95e7a6d6e01ed985421b555b4946"
+                "a9b552d05768ae9125e2a161c204906b2a639f58dac6dc53641e83e4ea9d5462"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -221,30 +325,6 @@
             "exampleSites": [
                 "espn.ph",
                 "www.espn.ph"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/serverComponent\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dcf"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "48ad1168b7a2b5d7bd7a8cc46dd52c2e10ffa822a75b61a3a378ae39df56a08c",
-                "ae0b7fcca626aac55cd8b952d326fb07eeb282305ef66569ffdda34202ac23ba"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph",
-                "www.natgeotv.com"
             ]
         },
         {
@@ -294,29 +374,6 @@
             ]
         },
         {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/0fcd2e111a0ce390055123bfb4090359\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dcf"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "e5a9e84435e002deafabb053db65db2d667398f878fbb48cc644445dddaee33d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph",
-                "www.natgeotv.com"
-            ]
-        },
-        {
             "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/910837be79f9910e66fbcea74904b80a\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -361,60 +418,6 @@
                 "espn.ph",
                 "www.espn.ph"
             ]
-        },
-        {
-            "rule": "espn\\.com\\/TWDC-DTCI\\/prod\\/code\\/38ecfe4106f4cf77c51d46d98744d380\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dcf"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "9985169e8a52cfa7521afe83e781537990643668c3439ccae24dc488bc92fb34"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph",
-                "www.natgeotv.com"
-            ]
-        },
-        {
-            "rule": "espn\\.com\\/js\\/dcf\\/tags\\/vision\\/latest\\/vision-videojs\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "secure"
-            ],
-            "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.plugins": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2e588062bf27a9aba2e454babc3423a468e15795aaaf7e4f564687b26965b214"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "espn.ph",
-                "www.espn.ph"
-            ]
         }
     ],
     "categories": [],
@@ -422,8 +425,8 @@
     "cookies": 0.0000484,
     "types": {
         "Script": 27,
-        "XHR": 10,
-        "Image": 3
+        "Image": 3,
+        "XHR": 10
     },
     "nameservers": [
         "ns-1045.awsdns-02.org",

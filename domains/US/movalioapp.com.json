@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000277,
+    "sites": 4,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
@@ -16,14 +16,17 @@
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "window.indexedDB": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "window.indexedDB": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.language": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Notification.permission": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.permissions": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "afb8d1f0ce88f61dc853841d4047e63ea7d655c2eac255ab310ea0c74b1ee7e5"
@@ -33,6 +36,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "activenews.ro",
+                "m.activenews.ro",
                 "www.activenews.ro"
             ]
         },
@@ -42,10 +46,11 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
                 "90f751878a4790499f773770daba43de69150dd0698b1cdca58511c0d5af7ef9"
             ],
             "type": "Fetch",
@@ -53,6 +58,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "activenews.ro",
+                "m.activenews.ro",
                 "www.activenews.ro"
             ]
         },
@@ -62,8 +68,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -71,6 +77,72 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "activenews.ro",
+                "m.activenews.ro",
+                "www.activenews.ro"
+            ]
+        },
+        {
+            "rule": "movalioapp\\.com\\/sdk-v2\\/sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "6d29e576b919722b492c7eab435704a74719e523fad6812c1d4f8431615c8e5b"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activenews.ro",
+                "m.activenews.ro",
+                "www.activenews.ro"
+            ]
+        },
+        {
+            "rule": "movalioapp\\.com\\/sdk-v2\\/apps\\/push-signup-prompt\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "b2f6de41cae40c6d3aae7262e5bbf113f7ff83385a68a5524e0f8eeb3ca6721f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activenews.ro",
+                "m.activenews.ro",
+                "www.activenews.ro"
+            ]
+        },
+        {
+            "rule": "movalioapp\\.com\\/sdk-v2\\/apps\\/push-signup-prompt\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "f9806ce3b439c249493668c370dbb40a4c4102d1852d349d95b44ca83840d742"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "activenews.ro",
+                "m.activenews.ro",
                 "www.activenews.ro"
             ]
         }
@@ -79,9 +151,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Fetch": 2,
-        "Preflight": 2
+        "Script": 6,
+        "Fetch": 3,
+        "Preflight": 3,
+        "Other": 3,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns-704.awsdns-24.net",

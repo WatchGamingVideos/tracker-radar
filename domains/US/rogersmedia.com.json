@@ -7,40 +7,42 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000553,
+    "sites": 8,
     "subdomains": [
         "utility",
-        "8c11ebd904100d",
-        "dufi"
+        "dufi",
+        "8c11ebd904100d"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
             "rule": "rogersmedia\\.com\\/utility\\.js",
-            "cookies": 0.0000277,
+            "cookies": 0.0000346,
             "fingerprinting": 1,
             "subdomains": [
                 "utility"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie getter": 4
+                "Document.cookie getter": 5,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "60659fa3138ed078984e63eedce1c344e97427129be3c18088465d89688fc790"
+                "902a4f9edff7a11dbbfd0f5f95ea6c09bca3254dd237aad75fbc9b13f62e7937"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fashionmagazine.com",
-                "torontolife.com",
+                "ottawa.citynews.ca",
                 "toronto.citynews.ca",
+                "torontolife.com",
                 "vancouver.citynews.ca"
             ]
         },
@@ -52,20 +54,91 @@
                 "utility"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "d49f5c52f90bc8cdf3ccc21c28171253f35e1c5ee2845e71aa4a816ac940f7e3",
-                "7bac6c132fbcb3a5cde4783466ac650c8c316d9f292c0527d59c709ba8bc6523",
-                "5e6cde1526a9ffba6ad8f509479883215536db8fc4984904563f45bce1763fb1"
+                "b1af74b498fbc5abb8f53e9f3bc6fbe161d09ece5d6e5d7cae35559ace8ec25e",
+                "bbcd69b416fb87fca3ef3fbd89136ba885d0d632f054adf01b95cecafb35f9b3",
+                "00dcc81c1d14d20b0d62f6f0fa460b901e83af9db4942c422b3d0b37d11e7aa6",
+                "8a3c68bf04028d986a2c34fb1bb2c7e1ecc485070aac12129445230482d84553"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fashionmagazine.com",
+                "ottawa.citynews.ca",
+                "toronto.citynews.ca",
                 "torontolife.com",
+                "vancouver.citynews.ca"
+            ]
+        },
+        {
+            "rule": "rogersmedia\\.com\\/dist\\/dufi\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dufi"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.doNotTrack": 4,
+                "window.sessionStorage": 4,
+                "HTMLCanvasElement.prototype.toDataURL": 4,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 4,
+                "WebGLRenderingContext.prototype.getParameter": 4,
+                "WebGLRenderingContext.prototype.getContextAttributes": 4,
+                "WebGLRenderingContext.prototype.getExtension": 4,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Navigator.prototype.plugins": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "7e79f93e9e064928de745c208d7a5b24e3548396442944e25ea62a57005376c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citynews.ca",
+                "ottawa.citynews.ca",
+                "toronto.citynews.ca",
+                "vancouver.citynews.ca"
+            ]
+        },
+        {
+            "rule": "rogersmedia\\.com\\/backend\\/get-ip\\.php",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dufi"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "d66295bf400b37aa45ddae37eed8f2c694d035e04d20d1d07e2ea93f4881afb2",
+                "4ae99a490df9e84c820252af4399ffe7c2bf10d80724ad003679175e172f01d5",
+                "9b0cc9de1fa58c6f1a4ed5c441aadd39173bd67c62482f3ce21a4b64f430fd66"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citynews.ca",
+                "ottawa.citynews.ca",
                 "toronto.citynews.ca",
                 "vancouver.citynews.ca"
             ]
@@ -94,77 +167,14 @@
                 "citynews.ca",
                 "vancouver.citynews.ca"
             ]
-        },
-        {
-            "rule": "rogersmedia\\.com\\/dist\\/dufi\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 3,
-            "subdomains": [
-                "dufi"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.sessionStorage": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getContextAttributes": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.plugins": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4a36b8f21f33eef7bc7fda711692164352d272f912a46c12360f655a1c1233de"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "citynews.ca",
-                "vancouver.citynews.ca"
-            ]
-        },
-        {
-            "rule": "rogersmedia\\.com\\/backend\\/get-ip\\.php",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dufi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9b0cc9de1fa58c6f1a4ed5c441aadd39173bd67c62482f3ce21a4b64f430fd66"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "citynews.ca",
-                "vancouver.citynews.ca"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000553,
     "types": {
-        "Script": 12,
-        "XHR": 2
+        "Script": 16,
+        "XHR": 4
     },
     "nameservers": [
         "a9-67.akam.net",

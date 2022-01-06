@@ -4,44 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00018,
-    "sites": 26,
+    "prevalence": 0.000214,
+    "sites": 31,
     "subdomains": [
-        "app",
         "ip",
         "cdn",
         "src",
-        "tp"
+        "tp",
+        "app"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "freshmarketer\\.com\\/ab\\/api\\/visitor\\/playback\\/canrecord",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "5781f31440e8f7547770c4b135123ae1656b72ff2364c00aee0eaefd4c1bb233",
-                "5f8fb52fbe25006ea8ce2d139c1e8f5be2afb3066840fdcee627b61bb7bf45d1"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "fm_sid_455057515A425B42585B5C57414C585F5B5D5E": 0.000006913525621525954
-            },
-            "exampleSites": [
-                "biostrap.com",
-                "www.freshworks.com",
-                "www.mordorintelligence.com"
-            ]
-        },
         {
             "rule": "freshmarketer\\.com\\/json\\/",
             "cookies": 0,
@@ -51,54 +25,92 @@
             ],
             "apis": {},
             "sites": 9,
-            "prevalence": 0.0000622,
+            "prevalence": 0.0000623,
             "cnames": [],
             "responseHashes": [
-                "cefff1ea5b45636bb135ac8dcf81b531d1a2d7560077c659fa9c0710228d9190",
-                "3eb49a89f5e417de8851f4ce9e6cdaafa05629bbaf52e78f6ed1e4efa1da035d"
+                "3eb49a89f5e417de8851f4ce9e6cdaafa05629bbaf52e78f6ed1e4efa1da035d",
+                "cefff1ea5b45636bb135ac8dcf81b531d1a2d7560077c659fa9c0710228d9190"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nyp.org",
+                "bettermindbodysoul.com",
                 "healthmatters.nyp.org",
                 "www.brakeandfrontend.com",
                 "www.freshworks.com",
                 "www.goldsgym.com",
-                "www.mordorintelligence.com",
                 "www.thoroughbreddiesel.com",
                 "www.tirereview.com",
-                "www.underhoodservice.com"
+                "www.underhoodservice.com",
+                "www.woodmans-food.com"
             ]
         },
         {
             "rule": "freshmarketer\\.com\\/665667\\/1716784\\.js",
-            "cookies": 0,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
                 "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 2,
                 "Date.prototype.getTimezoneOffset": 2
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "0cb39aef0a6f9cce07b6444d2eefd5a7e8a4e43444925d9c273d68e0fb18413e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "zarget_visitor_info": {
+                    "ttl": 31536003,
+                    "length": 6,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "zarget_user_id": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "harveynorman.com.au",
                 "stores.harveynorman.com.au",
                 "www.harveynorman.com.au"
+            ]
+        },
+        {
+            "rule": "freshmarketer\\.com\\/mas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "src"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harveynorman.com.au",
+                "stores.harveynorman.com.au",
+                "www.bourbonbanter.com",
+                "www.clopaydoor.com",
+                "www.freshworks.com"
             ]
         },
         {
@@ -127,31 +139,8 @@
             ]
         },
         {
-            "rule": "freshmarketer\\.com\\/mas",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "src"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "harveynorman.com.au",
-                "stores.harveynorman.com.au",
-                "www.bourbonbanter.com",
-                "www.clopaydoor.com",
-                "www.freshworks.com"
-            ]
-        },
-        {
             "rule": "freshmarketer\\.com\\/144612\\/337510\\.js",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
@@ -164,7 +153,7 @@
                 "Document.cookie setter": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "274567b80215e5a0422f0d450cb5beb52727212e66fd32a68f750906e3f450b2"
@@ -174,7 +163,7 @@
                 "zarget_user_id": {
                     "ttl": 31536003,
                     "length": 36,
-                    "prevalence": 0.00002074057686457786,
+                    "prevalence": 0.000020753777187448115,
                     "uniqueness": 1
                 }
             },
@@ -183,6 +172,28 @@
                 "brakeandfrontend.com",
                 "www.tirereview.com",
                 "www.underhoodservice.com"
+            ]
+        },
+        {
+            "rule": "freshmarketer\\.com\\/439071\\/1337657\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fantraxhq.com",
+                "www.fantraxhq.com"
             ]
         },
         {
@@ -210,38 +221,38 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "b067edc383bd34d70a4cdec1786bdbeaa00ee01688ba14171c8c7d40765fef21"
+                "61b10780999d952992f6f24f2f0bcd4e0f5f9f8f38fcfe4e5f09ab767c5fa934"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "zarget_user_id": {
                     "ttl": 31536001,
                     "length": 36,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
                 "zarget_visitor_info": {
-                    "ttl": 31536002,
-                    "length": 81,
-                    "prevalence": 0.000013827051243051907,
+                    "ttl": 31536001,
+                    "length": 79,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 0.5
                 },
-                "8316d0c3-f45c-49be-a4d0-1c8693ff1cba": {
-                    "ttl": 31536005,
+                "c6ce9f01-d067-4f64-9607-c0cdb6fc06b8": {
+                    "ttl": 31536003,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
                 "fm_sid_455057515A425B42585B5C57414C585F5B5D5E": {
                     "ttl": 7201,
-                    "length": 32,
-                    "prevalence": 0.000013827051243051907,
+                    "length": 33,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
-                "ab1e6694-acee-4d3e-82ff-c2640fab3d0b": {
+                "e6047368-2e19-437d-b16f-1281535270c7": {
                     "ttl": 31536004,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -263,11 +274,35 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "53cdbab333a82881c115669fe1bfab73299965fd1e37b888f9882596aecd670e"
+                "bdc406b3c01cc923cf520a13655d3982a2f08327cdfb5db956c5db686570f71d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freshworks.com",
+                "www.freshworks.com"
+            ]
+        },
+        {
+            "rule": "freshmarketer\\.com\\/ab\\/api\\/visitor\\/playback\\/canrecord",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5781f31440e8f7547770c4b135123ae1656b72ff2364c00aee0eaefd4c1bb233"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fm_sid_455057515A425B42585B5C57414C585F5B5D5E": 0.000013835851458298743
+            },
             "exampleSites": [
                 "freshworks.com",
                 "www.freshworks.com"
@@ -340,21 +375,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "zarget_user_id": {
-                    "ttl": 31536011,
+                    "ttl": 31536013,
                     "length": 36,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 },
-                "5493756e-6bdc-45a9-e79d-54d184e394bc": {
-                    "ttl": 31536009,
+                "cb89630a-c2f4-481b-e317-80e806a71919": {
+                    "ttl": 31536015,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 },
-                "664fb3e2-2648-49bc-c9e2-17cf6ef262d2": {
-                    "ttl": 31536017,
+                "6ad1ba7d-7d56-4ea9-b1bd-14ba9ac92836": {
+                    "ttl": 31536007,
                     "length": 1,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -366,17 +401,17 @@
         },
         {
             "rule": "freshmarketer\\.com\\/410602\\/1087841\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -387,15 +422,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "zarget_visitor_info": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 6,
-                    "prevalence": 0.000013827051243051907,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
                 },
                 "zarget_user_id": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -408,11 +443,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000118,
+    "cookies": 0.000125,
     "types": {
-        "XHR": 14,
-        "Script": 21,
-        "Preflight": 5
+        "Script": 23,
+        "Preflight": 5,
+        "XHR": 13
     },
     "nameservers": [
         "ns-1236.awsdns-26.org",

@@ -4,38 +4,194 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000325,
-    "sites": 47,
+    "prevalence": 0.000367,
+    "sites": 53,
     "subdomains": [
-        "ga",
-        "app"
+        "www",
+        "app",
+        "ga"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "getresponse\\.com\\/script\\/ga\\.js",
-            "cookies": 0.0000346,
-            "fingerprinting": 2,
+            "rule": "getresponse\\.com\\/view_webform\\.js",
+            "cookies": 0.0000208,
+            "fingerprinting": 1,
             "subdomains": [
-                "ga"
+                "www",
+                "app"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "Date.prototype.getTime": 5,
-                "Document.cookie setter": 5,
-                "window.sessionStorage": 2,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Notification.permission": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Screen.prototype.availWidth": 1
+                "Date.prototype.getTime": 2
             },
             "sites": 5,
             "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "19034d00cc81a20d45468a5d6a3b76e13b648e7981badb1482f1ef34a860d46b",
+                "008adae15b0a656f9bcf7b5ebaf8f8aa340f33c934672c371ba82cf889ef32a0",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beersmith.com",
+                "nerdarchy.com",
+                "www.paulickreport.com",
+                "www.truthandaction.org",
+                "www.yamedo.de"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/javascripts\\/core\\/webforms\\/webform-out\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c014398e5435fc74c82b8f4fc2fff9c5634c6caa2450891a179d33c5e8e56071"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "GetResponseComWebform18263": {
+                    "ttl": 86401,
+                    "length": 13,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
+                "GetResponseComWebform10800301": {
+                    "ttl": 86415,
+                    "length": 13,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beersmith.com",
+                "nerdarchy.com"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/stylesheets\\/core\\/pages\\/webFormV2\\/public\\/gr_wf_v2\\.css",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000761,
+            "cnames": [],
+            "responseHashes": [
+                "0c9ac233a87095c82fb409d77e1e8214461f3cffad4ddf119072b3f37caff6b1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloodpressureexplained.com",
+                "iblp.org",
+                "prepareforchange.net",
+                "thebestorganicskincare.com",
+                "thebourbonculture.com",
+                "tokenist.com",
+                "www.gartenbista.de",
+                "www.legendsofamerica.com",
+                "www.med-beds.com",
+                "www.strongfirst.com",
+                "www.tworepcave.com"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/get_file_from_url\\.html",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000761,
+            "cnames": [],
+            "responseHashes": [
+                "a1411ea87eae6e0a2de30603bfd0377fbdd9b81622934a1a2ab14893534891f6",
+                "f98a75944928d7dd6a52f7841c44fe66fc2be16a41c5a5f172899f0d1bd94f30",
+                "726920daecbc47f6484b9d6c0c41dcc44adcab7fdd8868723754ad97a8008a63"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "G_ENABLED_IDPS": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "bloodpressureexplained.com",
+                "iblp.org",
+                "prepareforchange.net",
+                "thebestorganicskincare.com",
+                "thebourbonculture.com",
+                "tokenist.com",
+                "www.gartenbista.de",
+                "www.legendsofamerica.com",
+                "www.med-beds.com",
+                "www.strongfirst.com",
+                "www.tworepcave.com"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/goals_log\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eltorotv.com",
+                "www.datingadviceguru.com"
+            ]
+        },
+        {
+            "rule": "getresponse\\.com\\/script\\/ga\\.js",
+            "cookies": 0.0000277,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ga"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "window.sessionStorage": 1,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Notification.permission": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.availWidth": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
                 "577547d4cdd5a3124668d923a794d33eab277827dffe72b326fb83ae09f626ad",
                 "243719d34df00df406b979f4c7e8249b642d427527589d27099edbdb862b14de",
                 "a5b0111e25faed660ccf531a3c3eb8fdc576e5d2493f46d6c04edf33784acc85"
@@ -45,13 +201,12 @@
                 "gaVisitorUuid": {
                     "ttl": 31536002,
                     "length": 36,
-                    "prevalence": 0.00003456762810762977,
+                    "prevalence": 0.000027671702916597487,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asiastreetfood.com",
                 "greenbullresearch.com",
                 "nerdarchy.com",
                 "www.cacklehatchery.com",
@@ -67,22 +222,22 @@
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.0000968,
+            "prevalence": 0.0000969,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gaVisitorUuid": 0.00005530820497220763,
-                "tk_ro": 0.000006913525621525954,
-                "tk_rl": 0.000006913525621525954,
-                "tk_or": 0.000006913525621525954,
-                "tk_r3d": 0.000006913525621525954,
-                "tk_lr": 0.000006913525621525954
+                "gaVisitorUuid": 0.00005534340583319497,
+                "tk_ro": 0.000006917925729149372,
+                "tk_rl": 0.000006917925729149372,
+                "tk_or": 0.000006917925729149372,
+                "tk_r3d": 0.000006917925729149372,
+                "tk_lr": 0.000006917925729149372
             },
             "exampleSites": [
-                "asiastreetfood.com",
                 "greenbullresearch.com",
+                "lovesvg.com",
                 "nerdarchy.com",
                 "www.alltime.ru",
                 "www.barnettcrossbows.com",
@@ -98,83 +253,26 @@
             ]
         },
         {
-            "rule": "getresponse\\.com\\/stylesheets\\/core\\/pages\\/webFormV2\\/public\\/gr_wf_v2\\.css",
-            "cookies": 0.0000277,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000622,
-            "cnames": [],
-            "responseHashes": [
-                "0c9ac233a87095c82fb409d77e1e8214461f3cffad4ddf119072b3f37caff6b1"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bloodpressureexplained.com",
-                "iblp.org",
-                "prepareforchange.net",
-                "tokenist.com",
-                "www.gartenbista.de",
-                "www.legendsofamerica.com",
-                "www.med-beds.com",
-                "www.strongfirst.com",
-                "www.tworepcave.com"
-            ]
-        },
-        {
-            "rule": "getresponse\\.com\\/get_file_from_url\\.html",
-            "cookies": 0.00000691,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000622,
-            "cnames": [],
-            "responseHashes": [
-                "a1411ea87eae6e0a2de30603bfd0377fbdd9b81622934a1a2ab14893534891f6",
-                "f98a75944928d7dd6a52f7841c44fe66fc2be16a41c5a5f172899f0d1bd94f30",
-                "726920daecbc47f6484b9d6c0c41dcc44adcab7fdd8868723754ad97a8008a63"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "G_ENABLED_IDPS": 0.000006913525621525954
-            },
-            "exampleSites": [
-                "bloodpressureexplained.com",
-                "iblp.org",
-                "prepareforchange.net",
-                "tokenist.com",
-                "www.gartenbista.de",
-                "www.legendsofamerica.com",
-                "www.med-beds.com",
-                "www.strongfirst.com",
-                "www.tworepcave.com"
-            ]
-        },
-        {
             "rule": "getresponse\\.com\\/view_webform_v2\\.js",
-            "cookies": 0.0000207,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "Document.cookie getter": 8
+                "Document.cookie getter": 10,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
-            "sites": 10,
-            "prevalence": 0.0000691,
+            "sites": 12,
+            "prevalence": 0.000083,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
                 "1a3d2b4667a06a2f581e1ccdeacc9fc15531fdb7f1d773b39561a6eac972d71e",
+                "e6020a5ec31e065f1005f04409f17cf8e6f316231a119a100804a4a976a8b4d2",
+                "79ad7a9f31c66a75a390a7b30b8ddb85a21102a011ce05b58ea02261554eacda",
                 "0c7eb49a8f24af6991522706ed6a8b30303e3447ee84dcfbd687b2a807bc2fff",
                 "d0dd25b7929079cfc1bc0b5fc7992540ce81c2251f2625fd30c0731c8c3133a2",
                 "58740f008c129b48a8eb30bcab8af6320bef2c70fae651a1b25da65c4beb2df5",
@@ -183,12 +281,21 @@
                 "103bad06a7cc5fa3924a232975729add1fd8720542557054e6e5da73852a61d1"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "grwf2_9493105": {
+                    "ttl": 7776011,
+                    "length": 4,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "iblp.org",
                 "m-strana.ru",
                 "prepareforchange.net",
+                "thebestorganicskincare.com",
+                "thebourbonculture.com",
                 "tokenist.com",
                 "www.ana-white.com",
                 "www.gartenbista.de",
@@ -200,7 +307,7 @@
         },
         {
             "rule": "getresponse\\.com\\/images\\/common\\/templates\\/webform\\/1\\/1\\/style\\.css",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
@@ -221,29 +328,37 @@
             ]
         },
         {
-            "rule": "getresponse\\.com\\/view_webform\\.js",
-            "cookies": 0.0000207,
-            "fingerprinting": 1,
+            "rule": "getresponse\\.com\\/ruxitagentjs_ICA2QVfghjqru_10229211201102017\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 2,
             "subdomains": [
                 "app"
             ],
             "apis": {
-                "Date.prototype.getTime": 1
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.connection": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.doNotTrack": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "7c1a050ee9a1ee14e1d0c920924b68e9a54043e2d15439903c598b613ae51842"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nerdarchy.com",
-                "www.paulickreport.com",
-                "www.truthandaction.org",
-                "www.yamedo.de"
+                "thebestorganicskincare.com",
+                "www.med-beds.com"
             ]
         },
         {
@@ -258,7 +373,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "d7bb917761afda43226bdf095de0fb3b69ed9e970eec991204851924c8e41519"
+                "9c8f999ae6a564377a058fe40ee5a23c9621ab12f1fd6fec7334096edca77daf"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -270,14 +385,14 @@
         },
         {
             "rule": "getresponse\\.com\\/images\\/common\\/templates\\/webform\\/1\\/5\\/style\\.css",
-            "cookies": 0,
+            "cookies": 0.0000138,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "d9b2c044b91924b8a5328b5b7965bbf902abedbbb99fbccbbff26e452e7cf78c"
@@ -303,7 +418,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0a0fee986cd1d80d5f3986d6ca08d28037c647be1fe13fc3f0121ee841a49f91"
+                "9ad4fbf3860a77902b2cbbdaabb20d4619461884ec1f1e7474593f4698bb4f35"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -347,7 +462,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "9599f9ada1a027d731d4c6707f35656bcdfb6a4fe8db93e1473ebe772f1fecc7"
+                "bd4cbd4561942db44d1308b210189dc9a5213f06c53a20a52728e17ddc0ec025"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -358,50 +473,8 @@
             ]
         },
         {
-            "rule": "getresponse\\.com\\/ruxitagentjs_ICA2QVfghjqru_10229211201102017\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strongfirst.com",
-                "www.tworepcave.com"
-            ]
-        },
-        {
-            "rule": "getresponse\\.com\\/login",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f81a1903829ea72c42c32dbee288ff5eaf558fb87563d7f96b9207184923c8ff"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strongfirst.com",
-                "www.tworepcave.com"
-            ]
-        },
-        {
             "rule": "getresponse\\.com\\/images\\/common\\/templates\\/webform\\/105\\/5\\/style\\.css",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 0,
             "subdomains": [
                 "app"
@@ -424,19 +497,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000173,
+    "cookies": 0.000201,
     "types": {
-        "Script": 23,
+        "Script": 27,
+        "Stylesheet": 29,
         "Fetch": 14,
-        "Stylesheet": 25,
         "Document": 6,
         "Other": 2
     },
     "nameservers": [
-        "ns1.dnsmadeeasy.com",
-        "ns4.dnsmadeeasy.com",
-        "ns3.dnsmadeeasy.com",
         "ns0.dnsmadeeasy.com",
-        "ns2.dnsmadeeasy.com"
+        "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com"
     ]
 }

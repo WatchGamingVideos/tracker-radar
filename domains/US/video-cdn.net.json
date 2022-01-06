@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000553,
-    "sites": 8,
+    "prevalence": 0.0000692,
+    "sites": 10,
     "subdomains": [
         "e",
         "d",
@@ -21,22 +21,64 @@
     "resources": [
         {
             "rule": "video-cdn\\.net\\/video",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "cookies": 0.00000692,
+            "fingerprinting": 1,
             "subdomains": [
                 "e"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "ce45a5e625b278dc63d21f5468c25a78cae7b8fbe6c52b49e8f901f556361632"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hella.com",
-                "www.hella.com"
+                "belimo.com",
+                "www.belimo.com",
+                "www.hella.com",
+                "www.mydhli.com"
+            ]
+        },
+        {
+            "rule": "video-cdn\\.net\\/v2\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2
+            },
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "ffeb77045e13883af1fb497ebfab8fdffe6e6432bab060554866ba336a1adecd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belimo.com",
+                "www.kfw.de",
+                "www.mydhli.com",
+                "www.phoenixcontact.com",
+                "www.rittal.com"
             ]
         },
         {
@@ -51,7 +93,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "90180fefd7b817a860cb826764d0415d0bb65ea882ea048dd672837d7357099b"
+                "4214c4552fd372c7eca684d5a444faf9d1e9d5ab06eac854759f875bf257d973"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -73,31 +115,9 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "934a96d1a28c85ae12212a04b50ca0237f970f9a8d654055ca517d63c6a266f3"
+                "a65851f7c26fa5db5f910dc4786633f81e3530eb6d78e9146b9f565c79bcbe8c"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hella.com",
-                "www.hella.com"
-            ]
-        },
-        {
-            "rule": "video-cdn\\.net\\/private\\/videos\\/B1gerpC4p-rNVE7LJ_disu\\/thumbnails\\/active",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "asset-out-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4db229b184cd026ebeb344fd84f7a618381407ccffd202e23181de223b5934c3"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -128,35 +148,49 @@
             ]
         },
         {
-            "rule": "video-cdn\\.net\\/v2\\/embed\\.js",
+            "rule": "video-cdn\\.net\\/v2\\/overlay-plugin\\.js",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "e"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 4,
-                "Document.cookie getter": 4,
-                "Navigator.prototype.platform": 4,
-                "Navigator.prototype.product": 4,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.languages": 1
+                "Navigator.prototype.userAgent": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ffeb77045e13883af1fb497ebfab8fdffe6e6432bab060554866ba336a1adecd"
+                "348da102e9aa9543e824760e8295aea834f54e5ac3cd7af68313e7ba8376742a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kfw.de",
-                "www.kfw.de",
-                "www.phoenixcontact.com",
-                "www.rittal.com"
+                "www.mydhli.com"
+            ]
+        },
+        {
+            "rule": "video-cdn\\.net\\/v2\\/assets\\/fonts\\/source-sans-pro-all-400-normal\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fb9077469906c4e8a8b06631b8dc7bdc4a0119e3159e3f79a1b03d51b4a36c38"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kfw.de",
+                "www.mydhli.com"
             ]
         },
         {
@@ -187,10 +221,11 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Document": 2,
+        "Document": 4,
+        "Script": 7,
         "XHR": 6,
-        "Image": 4,
-        "Script": 4
+        "Image": 2,
+        "Font": 2
     },
     "nameservers": [
         "ns1-06.azure-dns.com",

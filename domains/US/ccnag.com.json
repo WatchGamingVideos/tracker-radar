@@ -7,47 +7,47 @@
     "prevalence": 0.0000138,
     "sites": 2,
     "subdomains": [
-        "shared"
+        "prod.apig"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
-            "rule": "ccnag\\.com\\/b2c\\/sdk\\/v4\\.0\\.0\\/tcccLogin\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 1,
+            "rule": "ccnag\\.com\\/oauth\\/v1\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "shared"
+                "prod.apig"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "19cdf8f6234da3a92fa046feb62608c2e06bc34518eea574ca156750823fc580"
+                "8a2cd1759136e50572c3b985452cdc39feecc42489dac72eb679dcacb2ba36c5"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "tcccLogin_sessionUUID": {
-                    "ttl": 86401,
-                    "length": 36,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "tcccLogin_currentPage": {
-                    "ttl": 172801,
-                    "length": 33,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coca-cola.com",
+                "us.coca-cola.com"
+            ]
+        },
+        {
+            "rule": "ccnag\\.com\\/oauth\\/v1\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.apig"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "coca-cola.com",
@@ -57,9 +57,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000691,
+    "cookies": 0,
     "types": {
-        "Script": 2
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-537.awsdns-03.net",

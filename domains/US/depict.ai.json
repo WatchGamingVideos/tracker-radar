@@ -8,7 +8,6 @@
     "sites": 5,
     "subdomains": [
         "cdn",
-        "proxy",
         "ws",
         "api",
         "img"
@@ -17,51 +16,6 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "depict\\.ai\\/odla\\/depict-ai\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "BroadcastChannel.prototype.constructor": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ff1c06d8b28fb825241c274b93017c20c7539a7b63fa2e908f785c873f4e70cb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "odla.nu",
-                "www.odla.nu"
-            ]
-        },
-        {
-            "rule": "depict\\.ai\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "odla.nu",
-                "www.odla.nu"
-            ]
-        },
-        {
             "rule": "depict\\.ai\\/plantagen_21_10_25\\/depict-ai\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -69,12 +23,12 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "BroadcastChannel.prototype.constructor": 1
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "BroadcastChannel.prototype.constructor": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "4d41e245dd1b2adcb6119faed6a9185609c519a8db771cc5d28b01a5f500fe43"
@@ -84,7 +38,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "plantagen.se",
-                "www.plantagen.se"
+                "www.plantagen.se",
+                "www.plantasjen.no"
             ]
         },
         {
@@ -95,8 +50,8 @@
                 "ws"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -105,6 +60,7 @@
             "exampleSites": [
                 "plantagen.se",
                 "www.plantagen.se",
+                "www.plantasjen.no",
                 "www.teknikmagasinet.se"
             ]
         },
@@ -116,11 +72,12 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
+            "sites": 4,
+            "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "a6713aacbbc21cd5ccb08fa229d241145e4ec6c2f600bcea7831a5d1cabbf97b",
+                "74799259cb714c67ba40655e8ffe858b3a9ef80c307418d5bd18c56894699220",
+                "fa98f5ecf3a4b5a1e93e84838d106399d6f5d63468e26513f1775bba4877bfdb",
                 "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
             ],
             "type": "Fetch",
@@ -129,6 +86,7 @@
             "exampleSites": [
                 "plantagen.se",
                 "www.plantagen.se",
+                "www.plantasjen.no",
                 "www.teknikmagasinet.se"
             ]
         },
@@ -151,16 +109,41 @@
                 "teknikmagasinet.se",
                 "www.teknikmagasinet.se"
             ]
+        },
+        {
+            "rule": "depict\\.ai\\/collect-ga",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013835851458298743
+            },
+            "exampleSites": [
+                "teknikmagasinet.se",
+                "www.teknikmagasinet.se"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "WebSocket": 5,
-        "Fetch": 3,
-        "Image": 2
+        "Script": 3,
+        "WebSocket": 4,
+        "Fetch": 4,
+        "Image": 2,
+        "Ping": 2
     },
     "nameservers": [
         "rosa.ns.cloudflare.com",

@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000277,
-    "sites": 40,
+    "prevalence": 0.000297,
+    "sites": 43,
     "subdomains": [
         "jeffersonhealth.hrm",
         "scripts.cip",
+        "gundersenhealth.hrm",
+        "kumed.hrm",
         "ochsner.hrm"
     ],
     "cnames": [],
@@ -26,9 +28,9 @@
             "prevalence": 0.0000277,
             "cnames": [],
             "responseHashes": [
-                "306b5e4fd116237de53eced4e27c7d9505afe8b0ed5e044a2b6b800e78061ebd",
-                "ff942a98ca2ea064a9e96542fae9d02bc770f7373389a7fe1c2d4cc6850bd4aa",
-                "49b9651bd52ab70ddd0e1c13bc19d5bdffbbe1ec79707bfd324e1bb0e79ae692"
+                "c16c76dec75e4be97fa984c81b5e6dfbd55d2fa4c828095c190769736503ccca",
+                "43022baddce24f1fa588681219ccf1343544cda5be0a85b027c14eced27d444a",
+                "660e5ee11ec3adee9c10384931a5f8876d207dcd016a29d9dd858a89233e5cd7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -66,28 +68,34 @@
         },
         {
             "rule": "healthgrades\\.com\\/hgcrm-utm-v1\\.0\\.js",
-            "cookies": 0.000111,
+            "cookies": 0.000125,
             "fingerprinting": 1,
             "subdomains": [
                 "scripts.cip"
             ],
             "apis": {
                 "Date.prototype.getTime": 18,
-                "Document.cookie setter": 16,
+                "Document.cookie setter": 18,
                 "Document.cookie getter": 18
             },
             "sites": 18,
-            "prevalence": 0.000124,
+            "prevalence": 0.000125,
             "cnames": [],
             "responseHashes": [
                 "18488a9a47135be3facac2c81a52927ec5814a098d413bb7e3b6b6edbc24c560"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "hg_hgcrm_campaign_url": {
+                    "ttl": 86402,
+                    "length": 47,
+                    "prevalence": 0.00011760473739553932,
+                    "uniqueness": 1
+                },
                 "hg_ga_cid": {
                     "ttl": 86402,
-                    "length": 21,
-                    "prevalence": 0.00011061640994441526,
+                    "length": 20,
+                    "prevalence": 0.00011760473739553932,
                     "uniqueness": 1
                 }
             },
@@ -99,11 +107,11 @@
                 "www.amitahealth.org",
                 "www.christushealth.org",
                 "www.eehealth.org",
+                "www.gundersenhealth.org",
                 "www.hackensackmeridianhealth.org",
                 "www.mclaren.org",
                 "www.memorialcare.org",
                 "www.mountsinai.org",
-                "www.nicklauschildrens.org",
                 "www.nm.org",
                 "www.orthovirginia.com",
                 "www.ssmhealth.com",
@@ -111,6 +119,72 @@
                 "www.thechristhospital.com",
                 "www.uwmedicine.org",
                 "www.wakemed.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/cdnr\\/cid3\\/acton\\/bn\\/tracker\\/17869",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gundersenhealth.hrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gundersenhealth.org",
+                "www.gundersenhealth.org"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/cdnr\\/cid3\\/acton\\/bn\\/tracker\\/19609",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kumed.hrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "dc4a0e89567c9eabe8fc8d4f47b89a4ba760ccdd50a076eaf452cf9ac3169324"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kansashealthsystem.com",
+                "www.kansashealthsystem.com"
+            ]
+        },
+        {
+            "rule": "healthgrades\\.com\\/acton\\/bn\\/19609",
+            "cookies": 0.0000138,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kumed.hrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kansashealthsystem.com",
+                "www.kansashealthsystem.com"
             ]
         },
         {
@@ -136,10 +210,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000221,
+    "cookies": 0.000263,
     "types": {
-        "Script": 24,
-        "Image": 4
+        "Script": 28,
+        "Image": 6
     },
     "nameservers": [
         "ns-1102.awsdns-09.org",

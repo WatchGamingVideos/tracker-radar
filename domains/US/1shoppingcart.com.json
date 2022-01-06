@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000691,
+    "prevalence": 0.00000692,
     "sites": 1,
     "subdomains": [
         "www"
@@ -15,16 +15,19 @@
         {
             "rule": "1shoppingcart\\.com\\/app\\/adtrack\\.asp",
             "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1f1fe8c452db8fe611eab33aeb826d9ff0829ea78aa3fbaffdf05348dbb728eb"
+                "b37683d4b34ee524311435bd201422ec0a498a5fc2fec7aa286f42d763af927b"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -35,8 +38,8 @@
             ]
         },
         {
-            "rule": "1shoppingcart\\.com\\/cdn-cgi\\/challenge-platform\\/h\\/b\\/flow\\/ov1\\/0\\.4321868223570141:1639245970:6296d87207e9ebf53004eb635f408779ca41afb280a3b9debb5995dbe9244688\\/6bc0ac192ae55734\\/1eb09db67151d03",
-            "cookies": 0.0000138,
+            "rule": "1shoppingcart\\.com\\/cdn-cgi\\/styles\\/cf\\.errors\\.css",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
@@ -45,10 +48,28 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "0ceb98f555803d447a914408a5f7f57dd102333c5e37089d7a97d4d13875913b"
+            "responseHashes": [],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mcssl.com",
+                "www.mcssl.com"
+            ]
+        },
+        {
+            "rule": "1shoppingcart\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
             ],
-            "type": "XHR",
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -59,13 +80,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000691,
+    "cookies": 0.00000692,
     "types": {
-        "Document": 2,
-        "XHR": 2
+        "Document": 4,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "dns1.gta-tech.com",
-        "dns2.gta-tech.com"
+        "a.ns.myregisteredsite.com",
+        "b.ns.myregisteredsite.com",
+        "c.ns.myregisteredsite.com"
     ]
 }

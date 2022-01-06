@@ -7,15 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000622,
-    "sites": 9,
+    "prevalence": 0.000083,
+    "sites": 12,
     "subdomains": [
-        "monvalleyindependent",
         "batteryjunction",
+        "omx",
         "genecards",
+        "levenger",
         "moissaniteco",
-        "assets",
-        "omx"
+        "silverqueen",
+        "assets"
     ],
     "cnames": [
         {
@@ -26,32 +27,73 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "kayako\\.com\\/visitor\\/index\\.php",
+            "cookies": 0.00000692,
+            "fingerprinting": 2,
+            "subdomains": [
+                "batteryjunction",
+                "omx"
+            ],
+            "apis": {
+                "Screen.prototype.availHeight": 1,
+                "Screen.prototype.availWidth": 1,
+                "Screen.prototype.colorDepth": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [
+                {
+                    "original": "support.batteryjunction.com",
+                    "resolved": "batteryjunction.kayako.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "0e0210d12c9af09c344e6fe7e3c7958aabdd4aad44fb71496bebb4c91b8c0e6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "batteryjunction.com",
+                "www.batteryjunction.com",
+                "www.officemax.co.nz"
+            ]
+        },
+        {
             "rule": "kayako\\.com\\/api\\/v1\\/messenger\\/settings\\/current",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
-                "moissaniteco"
+                "levenger",
+                "moissaniteco",
+                "silverqueen"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 6,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "829546c5d7190d7be09ee131080fc6b79b54ae2f9a6dcd93fd50f65615631260",
                 "b7bf3d9176376fd1fe0addd9744bbcc574fb5a726ee1844247052177a13062e5",
+                "590c4f18620c6e23d8187b5cd0a820e3c5f7abfef34204bfb47cbd02cb40ccb0",
                 "8fa945ea8a0bed0a5192bd27e6e9e8fe2324016fc96ebaf9d3c515fada85fe7e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
-                "www.moissaniteco.com"
+                "www.levenger.com",
+                "www.moissaniteco.com",
+                "www.silverqueen.com"
             ]
         },
         {
@@ -59,47 +101,50 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
-                "moissaniteco"
+                "levenger",
+                "moissaniteco",
+                "silverqueen"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 6,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
-                "www.moissaniteco.com"
+                "www.levenger.com",
+                "www.moissaniteco.com",
+                "www.silverqueen.com"
             ]
         },
         {
-            "rule": "kayako\\.com\\/messenger\\/build-64f766a19a193a0f34a0\\.js",
+            "rule": "kayako\\.com\\/messenger\\/build-79609e7ca1f9ba465041\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2,
-                "window.localStorage": 4,
-                "Document.cookie getter": 2,
-                "CanvasRenderingContext2D.prototype.getImageData": 2,
-                "Date.prototype.getTime": 4,
-                "HTMLCanvasElement.prototype.toDataURL": 4,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
-                "Navigator.prototype.languages": 4,
-                "Date.prototype.getTimezoneOffset": 4
+                "Navigator.prototype.userAgent": 5,
+                "Event.prototype.timeStamp": 5,
+                "window.localStorage": 5,
+                "Document.cookie getter": 5,
+                "CanvasRenderingContext2D.prototype.getImageData": 5,
+                "Date.prototype.getTime": 5,
+                "HTMLCanvasElement.prototype.toDataURL": 5,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
+                "Navigator.prototype.languages": 5,
+                "Date.prototype.getTimezoneOffset": 3
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 6,
+            "prevalence": 0.0000415,
             "cnames": [],
             "responseHashes": [
                 "052e72109414326a406f822182b9968586e55bbe9b30b2dee97f8830ccb68f50"
@@ -108,9 +153,42 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
+                "www.moissaniteco.com",
+                "www.silverqueen.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/api\\/v1\\/conversations\\/starter",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "batteryjunction",
+                "genecards",
+                "levenger",
+                "moissaniteco"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "5ac26dbab95f2a88c98bbc0d1b24a4c0b0f8e9d619c9c54e14f92f2f7fae64b9",
+                "eb1f3d48aff293c57fece95496591772daf29a9d05abdd2fa799f13f61718854",
+                "eaf779e378943c8c8ff2afa744d851fe1a4048e4ad6fdb61d7a671946a942f52",
+                "7696bb2e873b24a32be60c8e17961e0158c0598dd8c29f463012e5b0978c4c2a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "batteryjunction.com",
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -119,52 +197,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
-                "www.moissaniteco.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/api\\/v1\\/conversations\\/starter",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "monvalleyindependent",
-                "batteryjunction",
-                "genecards",
-                "moissaniteco"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "6b7826f0e56828ff26d19f2d8f9cb6aca1be17377e226c069bb05c3e1136f00e",
-                "b08fb3c6f7f936e7b50f2696c1011997648c380a597c000871cc9b2a1bea207e",
-                "95713f6eed517a2a09d7680e297fcfcf83d81b38976a26d680affcad0ffde93b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "monvalleyindependent.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -173,27 +223,29 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "99390d46f0c1d15ab47b6535ea8e13d913ad95979510355bb145d4df4b08d677",
                 "8370420a6f4c26f0db76846bc7d240910e7fcbe4a68c486de05b041532dfbfa7",
+                "22405957918348b4cadb683b1f354fe0e90f625eeb508d4d2f57ff6e0da18bdc",
                 "1b717ef7f1387151c3bb7d48dca278e689ed702749440f8e7480cc8880267fb7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -202,23 +254,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -227,14 +280,14 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "d4d9ffb4173a409fdb9e4ef027291c692aec55d654b78d44b9cfa44e75b3f56c"
@@ -243,9 +296,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -254,23 +308,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -279,48 +334,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
                 "batteryjunction",
                 "genecards",
+                "levenger",
                 "moissaniteco"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
-                "www.moissaniteco.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "monvalleyindependent",
-                "batteryjunction",
-                "genecards",
-                "moissaniteco"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "monvalleyindependent.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
@@ -342,7 +373,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com"
             ]
         },
@@ -354,8 +385,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
                 "92eaee2b4158a772c59217d3669a97704298231ac1994c2ef3d52f085db07f69"
@@ -364,103 +395,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "monvalleyindependent.com",
+                "batteryjunction.com",
                 "www.batteryjunction.com",
                 "www.genecards.org",
+                "www.levenger.com",
                 "www.moissaniteco.com"
             ]
         },
         {
-            "rule": "kayako\\.com\\/api\\/v1\\/privacy",
+            "rule": "kayako\\.com\\/avatar\\/get\\/1aac8d60-5223-5f16-ba20-19c360c8892f",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "monvalleyindependent",
-                "batteryjunction",
-                "genecards",
-                "moissaniteco"
+                "batteryjunction"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "4ff1a99851297b0442f26fc0efab0cb47f18e0862c04d051e6e7228f8abd9337",
-                "6f0894e6038b6b52b108912a57d7c0baa5d71e17fee5024bc6311efd35143b08",
-                "dbfbd4c5c1ffc434a7eae59c6d4d5b22bda3202333ec7be36fbab30220095819"
+                "e11775bf437c60c95fde9b7ea8db6d9527d85072d06b5d3aa8bec50d92308906"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "monvalleyindependent.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
-                "www.moissaniteco.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "monvalleyindependent",
-                "batteryjunction",
-                "genecards",
-                "moissaniteco"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "be632419e378ddc73d9ea7fd56521efdd4e5862fe03a7c43c56d77cd2895a9ae"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "monvalleyindependent.com",
-                "www.batteryjunction.com",
-                "www.genecards.org",
-                "www.moissaniteco.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/visitor\\/index\\.php",
-            "cookies": 0.00000691,
-            "fingerprinting": 2,
-            "subdomains": [
-                "batteryjunction",
-                "omx"
-            ],
-            "apis": {
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Navigator.prototype.appName": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [
-                {
-                    "original": "support.batteryjunction.com",
-                    "resolved": "batteryjunction.kayako.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "1eb68fd0c856bc4225e4d466a0b4a9961e506859856e4272fe3434dfa544d50b"
-            ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "batteryjunction.com",
-                "www.batteryjunction.com",
-                "www.officemax.co.nz"
+                "www.batteryjunction.com"
             ]
         },
         {
@@ -508,45 +469,88 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/3b738a9a-a8c9-57ec-a269-8c2590eb0d7e",
+            "rule": "kayako\\.com\\/api\\/v1\\/privacy",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "batteryjunction"
+                "batteryjunction",
+                "genecards",
+                "levenger",
+                "moissaniteco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "caedaea59286668334d9604d01b85d790f5ba8ac5a9ab7c4585859e5d33901c6"
+                "4ff1a99851297b0442f26fc0efab0cb47f18e0862c04d051e6e7228f8abd9337",
+                "6f0894e6038b6b52b108912a57d7c0baa5d71e17fee5024bc6311efd35143b08",
+                "0f926695c73820fff8de7194e1a554612433d00407d8dbf3da6ff36723eeab48",
+                "dbfbd4c5c1ffc434a7eae59c6d4d5b22bda3202333ec7be36fbab30220095819"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "batteryjunction.com",
-                "www.batteryjunction.com"
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.levenger.com",
+                "www.moissaniteco.com"
             ]
         },
         {
-            "rule": "kayako\\.com\\/api\\/v1\\/articles\\.json",
+            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "genecards"
+                "batteryjunction",
+                "genecards",
+                "levenger",
+                "moissaniteco"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 5,
+            "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "genecards.org",
-                "www.genecards.org"
+                "batteryjunction.com",
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.levenger.com",
+                "www.moissaniteco.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/api\\/v1\\/conversations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "batteryjunction",
+                "genecards",
+                "levenger",
+                "moissaniteco"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000346,
+            "cnames": [],
+            "responseHashes": [
+                "be632419e378ddc73d9ea7fd56521efdd4e5862fe03a7c43c56d77cd2895a9ae"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "batteryjunction.com",
+                "www.batteryjunction.com",
+                "www.genecards.org",
+                "www.levenger.com",
+                "www.moissaniteco.com"
             ]
         },
         {
@@ -562,6 +566,28 @@
             "cnames": [],
             "responseHashes": [
                 "53aafdfa487cb1ad2a6ddb3d0691a47b2a98765deea5dbc41220afd53f39c188"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "genecards.org",
+                "www.genecards.org"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/avatar\\/get\\/6d669835-011a-545a-b3fb-8e5e22d6c636",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "genecards"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "2774999531dba47ff4e65143bb521e13bf17883d0ba374ded1599cd9a8e1976f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -616,7 +642,7 @@
             ]
         },
         {
-            "rule": "kayako\\.com\\/avatar\\/get\\/6d669835-011a-545a-b3fb-8e5e22d6c636",
+            "rule": "kayako\\.com\\/api\\/v1\\/articles\\.json",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -626,10 +652,8 @@
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
-            "responseHashes": [
-                "2774999531dba47ff4e65143bb521e13bf17883d0ba374ded1599cd9a8e1976f"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -660,6 +684,94 @@
             ]
         },
         {
+            "rule": "kayako\\.com\\/messenger\\/pattern-2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "5ac1d1d27d1d395a8e8e59ee55db9cd9fbe798a98c909573814fe3f0008df913"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "levenger.com",
+                "www.levenger.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/avatar\\/get\\/704e9fa1-c503-50a8-9215-23ec1a218bb7",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "levenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "fddf3369fb1bc8716ec7dd898c23cb74ed35df7c8a47b135cf46104c3edae247"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "levenger.com",
+                "www.levenger.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/avatar\\/get\\/ac601751-49ef-5dd9-b689-cf76ef76cef7",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "levenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "d1c10f333ba81e43c4566c7fbea95a50fe0de12baaf269bce8698ec0a6fa991f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "levenger.com",
+                "www.levenger.com"
+            ]
+        },
+        {
+            "rule": "kayako\\.com\\/avatar\\/get\\/4200f349-5bc8-5ca0-be7b-469375bf38dc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "levenger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "13783e2782cbb4f9278a56805954f50e497bedd357e2be177270f31df812af7e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "levenger.com",
+                "www.levenger.com"
+            ]
+        },
+        {
             "rule": "kayako\\.com\\/avatar\\/get\\/9023ba7c-4c9d-4112-97f5-876744bb6f00",
             "cookies": 0,
             "fingerprinting": 0,
@@ -682,6 +794,28 @@
             ]
         },
         {
+            "rule": "kayako\\.com\\/avatar\\/get\\/8bd5dc7e-235c-4489-8ddb-57a40827cd16",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "moissaniteco"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "37f222b2974ccd6a976a32ac505f3f1afd1e8d44c0a25d9d2c992fe858f07f0c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "moissaniteco.com",
+                "www.moissaniteco.com"
+            ]
+        },
+        {
             "rule": "kayako\\.com\\/avatar\\/get\\/d92abb2e-f1fb-4909-97f5-987bd2486812",
             "cookies": 0,
             "fingerprinting": 0,
@@ -694,28 +828,6 @@
             "cnames": [],
             "responseHashes": [
                 "f67d450ee65da79b64eac83a0c18add067485b4a97e92466ba24c8413feca9af"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "moissaniteco.com",
-                "www.moissaniteco.com"
-            ]
-        },
-        {
-            "rule": "kayako\\.com\\/avatar\\/get\\/0735589b-757a-49c2-bd45-1105611ef7bd",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "moissaniteco"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5d9ca3eedf0d6fd2f6f322767fb59b0fd47a4fdba7d1fb91d35fc825a7e8d234"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -818,10 +930,10 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "XHR": 26,
-        "Preflight": 26,
-        "Script": 7,
-        "Image": 34
+        "Script": 9,
+        "XHR": 33,
+        "Preflight": 33,
+        "Image": 43
     },
     "nameservers": [
         "ns-355.awsdns-44.com",

@@ -4,47 +4,104 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000208,
+    "sites": 3,
     "subdomains": [
-        "wgt"
+        "wgt",
+        "eltx"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "8select\\.io\\/eightlytics\\/client\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wgt"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "c06f763f9d59c2a9fcaf63bc2337f22d70bc518d966e97f508dabc445fbd0d56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_8s_cid": {
+                    "ttl": 63072004,
+                    "length": 36,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kastner-oehler.at",
+                "www.lodenfrey.com",
+                "www.rebelle.com"
+            ]
+        },
+        {
+            "rule": "8select\\.io\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "wgt"
+                "eltx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kastner-oehler.at",
+                "www.rebelle.com"
+            ]
+        },
+        {
+            "rule": "8select\\.io\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eltx"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "c06f763f9d59c2a9fcaf63bc2337f22d70bc518d966e97f508dabc445fbd0d56"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lodenfrey.com",
+                "kastner-oehler.at",
                 "www.rebelle.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000138,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns-1264.awsdns-30.org",
-        "ns-880.awsdns-46.net",
         "ns-410.awsdns-51.com",
+        "ns-880.awsdns-46.net",
+        "ns-1264.awsdns-30.org",
         "ns-1969.awsdns-54.co.uk"
     ]
 }

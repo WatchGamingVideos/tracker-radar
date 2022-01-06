@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000207,
-    "sites": 3,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
         "cdn",
         "stats"
@@ -15,36 +15,65 @@
     "resources": [
         {
             "rule": "sender\\.net\\/accounts_resources\\/universal\\.js",
-            "cookies": 0.00000691,
+            "cookies": 0.0000138,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.maxTouchPoints": 1,
-                "Document.cookie getter": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "a07ee688728ebb3522cc886b6899365f0490f76a60335c43ae713270cf4d0c59"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "sender_popup_shown_14552": {
+                    "ttl": 2592031,
+                    "length": 10,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                },
                 "sender_site_visitor": {
                     "ttl": 2592005,
                     "length": 10,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lewebpedagogique.com",
+                "thefreedomarticles.com",
+                "www.jornluka.com"
+            ]
+        },
+        {
+            "rule": "sender\\.net\\/accounts_resources\\/forms\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "9b1839b15e350bd02f8c61dc42a6b9bb3c8130f27e07e53b77d295f0695f0437"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefreedomarticles.com",
                 "www.jornluka.com"
             ]
         },
@@ -126,7 +155,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "0df63194b8fc6756fc0c4d2ba958610d160971484722bfe9187a3e807e648674"
+                "8a0e12ac5c50554cf08379c5e0839b02f12e11b1da10ca2c44059d9711273b68"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -149,28 +178,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jornluka.com",
-                "www.jornluka.com"
-            ]
-        },
-        {
-            "rule": "sender\\.net\\/accounts_resources\\/forms\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9b1839b15e350bd02f8c61dc42a6b9bb3c8130f27e07e53b77d295f0695f0437"
-            ],
-            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -223,12 +230,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000277,
     "types": {
-        "Script": 2,
+        "Script": 3,
+        "Stylesheet": 2,
         "Fetch": 10,
-        "Preflight": 4,
-        "Stylesheet": 2
+        "Preflight": 4
     },
     "nameservers": [
         "edna.ns.cloudflare.com",

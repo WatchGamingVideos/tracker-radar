@@ -4,10 +4,9 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000208,
+    "sites": 3,
     "subdomains": [
-        "crate",
         "e",
         "emerald",
         "stonks",
@@ -16,26 +15,6 @@
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "widgetbot\\.io\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "crate"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hardcoregaming101.net",
-                "www.hardcoregaming101.net"
-            ]
-        },
         {
             "rule": "widgetbot\\.io\\/cdn-cgi\\/bm\\/cv\\/669835187\\/api\\.js",
             "cookies": 0,
@@ -71,12 +50,15 @@
         {
             "rule": "widgetbot\\.io\\/cdn-cgi\\/scripts\\/7d0fa10a\\/cloudflare-static\\/rocket-loader\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "e",
                 "emerald"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.vendor": 1
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -100,9 +82,9 @@
                 "emerald"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -250,10 +232,13 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "0c69bf7357f9b8505322442be0add8ce084d1a3e4d0050a82a26112d7656f425",
+                "ce988d85dcd5654243543b1d177356e183441b895959e7c3702655a8ddd99244"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -272,13 +257,10 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
-            "responseHashes": [
-                "0c69bf7357f9b8505322442be0add8ce084d1a3e4d0050a82a26112d7656f425",
-                "aa700ec310b606a94338682bb7658c96b94212e2ebb4dfba51b963e79c267cf5"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -301,29 +283,6 @@
             "cnames": [],
             "responseHashes": [
                 "64cbc8b9ad3b034271ee06632f40f379fda6782a0332a88f3ab1c2da3db0d706"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lootlemon.com",
-                "www.omorashi.org"
-            ]
-        },
-        {
-            "rule": "widgetbot\\.io\\/static\\/media\\/500\\.32c4f766\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "e",
-                "emerald"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "210a491b22126217493571a011bface6c4ddf4b2ff7ef2a87005489b31b5c05f"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -380,7 +339,7 @@
             ]
         },
         {
-            "rule": "widgetbot\\.io\\/static\\/media\\/600\\.be0060da\\.woff",
+            "rule": "widgetbot\\.io\\/static\\/media\\/500\\.32c4f766\\.woff",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -392,30 +351,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "3712004f3bb70c91347f4a6210c033319126872fe3f9136091fca19d8163e636"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lootlemon.com",
-                "www.omorashi.org"
-            ]
-        },
-        {
-            "rule": "widgetbot\\.io\\/static\\/media\\/700\\.8e12fb4f\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "e",
-                "emerald"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "490cc2604e10587242c821baadd3fb0fcb4d014eddfa7d3572053fa957f1ff2d"
+                "210a491b22126217493571a011bface6c4ddf4b2ff7ef2a87005489b31b5c05f"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -430,15 +366,15 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Script": 12,
+        "Script": 10,
         "XHR": 4,
         "WebSocket": 2,
-        "Preflight": 3,
         "Fetch": 3,
-        "Font": 12
+        "Preflight": 3,
+        "Font": 8
     },
     "nameservers": [
-        "becky.ns.cloudflare.com",
-        "curt.ns.cloudflare.com"
+        "curt.ns.cloudflare.com",
+        "becky.ns.cloudflare.com"
     ]
 }

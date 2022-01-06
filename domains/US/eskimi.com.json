@@ -4,30 +4,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000968,
-    "sites": 14,
+    "prevalence": 0.0000899,
+    "sites": 13,
     "subdomains": [
+        "sspjs",
+        "dsp",
         "dsp-media",
-        "dsp-trk",
         "dsp-ap",
         "eas-fe",
+        "dsp-trk",
         "dsp-aud",
-        "sspjs",
         "hb"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "eskimi\\.com\\/esadt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sspjs"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "0770f747c4c73fea1de32274c2d617c5e91eced830de62f33c534c335a1fe93c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guardian.ng",
+                "www.premiumtimesng.com"
+            ]
+        },
+        {
             "rule": "eskimi\\.com\\/assets\\/js\\/e\\/gtr\\.min\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "dsp",
                 "dsp-media"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "9815c5028421996acaf760f85539642ed35bfdb7e2ca0f4a5411530accfb4689"
@@ -36,10 +63,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "seedify.fund",
+                "guardian.ng",
                 "launchpad.seedify.fund",
-                "www.betika.com",
-                "www.istore.co.za"
+                "www.betika.com"
+            ]
+        },
+        {
+            "rule": "eskimi\\.com\\/v2\\/gtr",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dsp-ap"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "fdc9f229e511a52b75e58b4aedba5c547a50d702c192d026c7421d6080b27916",
+                "9b950b00edb67781de3c3fd7f1bb561290dfa8c304d668d8e67c3a896f4df05e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guardian.ng",
+                "launchpad.seedify.fund",
+                "www.betika.com"
+            ]
+        },
+        {
+            "rule": "eskimi\\.com\\/pixel",
+            "cookies": 0.0000208,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eas-fe"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000208,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guardian.ng",
+                "launchpad.seedify.fund",
+                "www.betika.com"
             ]
         },
         {
@@ -50,8 +123,8 @@
                 "dsp-trk"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -62,71 +135,19 @@
             "exampleSites": [
                 "seedify.fund",
                 "launchpad.seedify.fund",
-                "www.betika.com",
-                "www.istore.co.za"
-            ]
-        },
-        {
-            "rule": "eskimi\\.com\\/v2\\/gtr",
-            "cookies": 0.0000277,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dsp-ap"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "f7859802f56071ea4dde5670842e5d7b91e582e0129e70bf1a8c6c456edfa0c9",
-                "4c9e680c9452e8144c29b62cbc904b7f908d034ed3b00deb6a5ee104df8cb1fd",
-                "fed85cefa847b10d25594ad1b17825e836536b6eb1076b1a8e7e19e09d885200"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "seedify.fund",
-                "launchpad.seedify.fund",
-                "www.betika.com",
-                "www.istore.co.za"
-            ]
-        },
-        {
-            "rule": "eskimi\\.com\\/pixel",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eas-fe",
-                "dsp-trk"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "seedify.fund",
-                "launchpad.seedify.fund",
-                "www.betika.com",
-                "www.istore.co.za"
+                "www.betika.com"
             ]
         },
         {
             "rule": "eskimi\\.com\\/pix",
-            "cookies": 0.0000277,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "dsp-trk"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -137,8 +158,7 @@
             "exampleSites": [
                 "seedify.fund",
                 "launchpad.seedify.fund",
-                "www.betika.com",
-                "www.istore.co.za"
+                "www.betika.com"
             ]
         },
         {
@@ -186,30 +206,6 @@
             ]
         },
         {
-            "rule": "eskimi\\.com\\/esadt\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sspjs"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0770f747c4c73fea1de32274c2d617c5e91eced830de62f33c534c335a1fe93c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premiumtimesng.com",
-                "www.premiumtimesng.com"
-            ]
-        },
-        {
             "rule": "eskimi\\.com\\/bids",
             "cookies": 0,
             "fingerprinting": 0,
@@ -234,11 +230,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000553,
+    "cookies": 0.0000484,
     "types": {
-        "Script": 8,
-        "XHR": 10,
-        "Image": 10
+        "Script": 7,
+        "XHR": 8,
+        "Image": 8
     },
     "nameservers": [
         "matt.ns.cloudflare.com",

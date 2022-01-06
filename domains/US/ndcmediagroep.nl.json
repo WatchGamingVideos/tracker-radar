@@ -9,7 +9,8 @@
     "subdomains": [
         "static",
         "hub",
-        "splunk"
+        "splunk",
+        "apivanplan"
     ],
     "cnames": [
         {
@@ -51,17 +52,12 @@
         },
         {
             "rule": "ndcmediagroep\\.nl\\/js\\/evolok\\/ev-em\\/3\\.2\\.26\\/ev-em\\.min\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "static"
             ],
-            "apis": {
-                "Document.cookie getter": 1,
-                "window.localStorage": 1,
-                "Navigator.prototype.appVersion": 1,
-                "Document.cookie setter": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -69,20 +65,7 @@
                 "7e464cc257a3a3da05a69768a2223d88a6e77a3d5995d6adb7f4d884671ad016"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "ev_sid": {
-                    "ttl": 126144002,
-                    "length": 24,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                },
-                "ev_did": {
-                    "ttl": 126144002,
-                    "length": 24,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dvhn.nl",
@@ -121,7 +104,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "ee45b39c0227f124c7902192ab4c7683cbde6dc9d1c6ebdfb63bafaedafa3972"
+                "b9eb21493bbdd8f19a6d617495bf9b02ae1c4a375407792b69678a480c66f2d7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -140,7 +123,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "harvest-pipeline.dvhn.nl",
@@ -169,14 +152,14 @@
         },
         {
             "rule": "ndcmediagroep\\.nl\\/track",
-            "cookies": 0.0000207,
+            "cookies": 0.0000208,
             "fingerprinting": 0,
             "subdomains": [
                 "splunk"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "harvest-pipeline.dvhn.nl",
@@ -212,7 +195,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [
                 {
                     "original": "harvest-pipeline.dvhn.nl",
@@ -236,6 +219,48 @@
                 "lc.nl",
                 "mensenlinq.nl"
             ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apivanplan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl"
+            ]
+        },
+        {
+            "rule": "ndcmediagroep\\.nl\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apivanplan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "69b171291fb6857eef9faef4f511e343d955970ef44c907a6dada9bae986acbe"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dvhn.nl",
+                "lc.nl"
+            ]
         }
     ],
     "categories": [],
@@ -243,13 +268,14 @@
     "cookies": 0.0000415,
     "types": {
         "Script": 4,
-        "Preflight": 5,
+        "Preflight": 7,
         "XHR": 5,
-        "Ping": 3
+        "Ping": 3,
+        "Fetch": 2
     },
     "nameservers": [
+        "nsauth3.bit.org",
         "nsauth1.bit.nl",
-        "nsauth2.bit.nl",
-        "nsauth3.bit.org"
+        "nsauth2.bit.nl"
     ]
 }

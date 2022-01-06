@@ -4,16 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000187,
-    "sites": 27,
+    "prevalence": 0.000208,
+    "sites": 30,
     "subdomains": [
         "cdn",
+        "zeit-de.arc",
         "babymarkt-de.arc",
+        "bogner-usa.arc",
         "bw-online-shop.arc",
         "carharttwip-de.arc",
         "exlibris.arc",
         "gartenhaus-de.arc",
-        "haertle.arc",
         "hagebau-de.arc",
         "landi-ch.arc",
         "manor-ch.arc",
@@ -22,11 +23,171 @@
         "nkd-de.arc",
         "peek-und-cloppenburg-de.arc",
         "carharttwip-pt.arc",
+        "search",
         "rs"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "epoq\\.de\\/assets\\/shopware\\/zeit-de\\/epoq-all\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.name": 1,
+                "window.indexedDB": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "c6873c1695a047bda03827cf95cbcf135529eeae5af63274d62a6a46c852055e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zeit.de",
+                "shop.zeit.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/event",
+            "cookies": 0.000083,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zeit-de.arc",
+                "babymarkt-de.arc",
+                "bogner-usa.arc",
+                "bw-online-shop.arc",
+                "carharttwip-de.arc",
+                "exlibris.arc",
+                "gartenhaus-de.arc",
+                "hagebau-de.arc",
+                "landi-ch.arc",
+                "manor-ch.arc",
+                "rs1",
+                "narayana-verlag-de.arc",
+                "nkd-de.arc",
+                "peek-und-cloppenburg-de.arc"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000969,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gclid": 0.000006917925729149372,
+                "7cb54b_session_id": 0.000013835851458298743,
+                "eqsid_": 0.000006917925729149372,
+                "_eqsid": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "zeit.de",
+                "www.babymarkt.de",
+                "www.bogner.com",
+                "www.bw-online-shop.com",
+                "www.carhartt-wip.com",
+                "www.exlibris.ch",
+                "www.gartenhaus-gmbh.de",
+                "www.hagebau.de",
+                "www.landi.ch",
+                "www.manor.ch",
+                "www.megabad.com",
+                "www.narayana-verlag.de",
+                "www.nkd.com",
+                "www.peek-und-cloppenburg.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/viewItem",
+            "cookies": 0.0000277,
+            "fingerprinting": 0,
+            "subdomains": [
+                "zeit-de.arc",
+                "bw-online-shop.arc",
+                "carharttwip-pt.arc",
+                "narayana-verlag-de.arc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000277,
+            "cnames": [],
+            "responseHashes": [
+                "357267cfcfa6b287d0b5afe5421b2299ca047398aa8f0376b1a4d6541a9e51eb",
+                "3ad204631ac3c30300f57d309ecb39eda40b2174c58267c598aaea9d71fb981a",
+                "d416d739674e53bdb7dd79e57643c80b1719df47d5c0e3a49c8f0f58cdf2fee8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "eqsid_": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "zeit.de",
+                "www.bw-online-shop.com",
+                "www.carhartt-wip.com",
+                "www.narayana-verlag.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rs1",
+                "bw-online-shop.arc",
+                "carharttwip-pt.arc",
+                "gartenhaus-de.arc",
+                "manor-ch.arc"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000553,
+            "cnames": [],
+            "responseHashes": [
+                "68a246709b13e8f22229642005fe103cfcea7adc58a9fb754adcfa778a1659fb",
+                "f41f26860e5961b1ad36d66ec807ad41702fb07372adfb228e0c36dfd4f9f007",
+                "820a856d8e59df3f732f253d285ecdf76aabda66f613fae6603e3338cadc8d6b",
+                "ddbc71ce89925da58c6201449ba4d6fe9edea86598f22f0384b4f94f115614a6",
+                "e984d3aca6b061e55df46443586092d775c8f2ac3d09d5df03ee5d5cb973625f",
+                "fbb0730e11f4c098d95a81ae75ac3c70ea7ab6e0a67391d1a1744e334e019caa",
+                "c1d2a8c0c5e900174f65f3364652a59008ffc45bee5f1e6bbdddeaa841320c3a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "eqsid_": 0.000006917925729149372
+            },
+            "exampleSites": [
+                "zeit.de",
+                "shop.zeit.de",
+                "www.bw-online-shop.com",
+                "www.carhartt-wip.com",
+                "www.gartenhaus-gmbh.de",
+                "www.goertz.de",
+                "www.manor.ch",
+                "www.megabad.com"
+            ]
+        },
         {
             "rule": "epoq\\.de\\/flow\\/babymarkt-de\\.js",
             "cookies": 0,
@@ -35,19 +196,19 @@
                 "cdn"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "window.name": 1,
-                "window.devicePixelRatio": 1,
-                "window.indexedDB": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.hardwareConcurrency": 1,
-                "Navigator.prototype.connection": 1,
-                "Screen.prototype.availWidth": 1,
-                "Screen.prototype.availHeight": 1,
-                "Screen.prototype.orientation": 1
+                "window.name": 2,
+                "window.devicePixelRatio": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -61,56 +222,6 @@
             "exampleSites": [
                 "babymarkt.de",
                 "www.babymarkt.de"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/event",
-            "cookies": 0.000083,
-            "fingerprinting": 0,
-            "subdomains": [
-                "babymarkt-de.arc",
-                "bw-online-shop.arc",
-                "carharttwip-de.arc",
-                "exlibris.arc",
-                "gartenhaus-de.arc",
-                "haertle.arc",
-                "hagebau-de.arc",
-                "landi-ch.arc",
-                "manor-ch.arc",
-                "rs1",
-                "narayana-verlag-de.arc",
-                "nkd-de.arc",
-                "peek-und-cloppenburg-de.arc"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000968,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "eqsid_": 0.000006913525621525954,
-                "7cb54b_session_id": 0.000006913525621525954,
-                "_eqsid": 0.000006913525621525954
-            },
-            "exampleSites": [
-                "babymarkt.de",
-                "www.babymarkt.de",
-                "www.bw-online-shop.com",
-                "www.carhartt-wip.com",
-                "www.exlibris.ch",
-                "www.gartenhaus-gmbh.de",
-                "www.haertle.de",
-                "www.hagebau.de",
-                "www.landi.ch",
-                "www.manor.ch",
-                "www.megabad.com",
-                "www.narayana-verlag.de",
-                "www.nkd.com",
-                "www.peek-und-cloppenburg.de"
             ]
         },
         {
@@ -150,69 +261,6 @@
             ]
         },
         {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/viewItem",
-            "cookies": 0.0000207,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bw-online-shop.arc",
-                "carharttwip-pt.arc",
-                "narayana-verlag-de.arc"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000207,
-            "cnames": [],
-            "responseHashes": [
-                "4b493165d5b38928aff37c19b9b8f478191719adfd85a5df415230df683d33e8",
-                "05eb3699c03f6de2cc2ce9da6f1e42a7d4bbee3c28a2dc297d7e233c77c18653"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "eqsid_": 0.000006913525621525954
-            },
-            "exampleSites": [
-                "bw-online-shop.com",
-                "www.carhartt-wip.com",
-                "www.narayana-verlag.de"
-            ]
-        },
-        {
-            "rule": "epoq\\.de\\/inbound-servletapi\\/getRecommendations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bw-online-shop.arc",
-                "carharttwip-pt.arc",
-                "rs1",
-                "manor-ch.arc"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "b93d31f9b6b9395f5af6d0bef98ec5a7e94d3a3f7a72daa001cf24cba564bd9b",
-                "d9afd5d2afadec9760571a5ff821282a62c666690dff632d9bee4707a2b7ab13",
-                "3c9c9a8542f120cf2b8aa7c3d87c4dc0f7e6b23219cc57516be4428f2e036ba9",
-                "befddb9076fced8988798217509290e0be38af2fe3e8ab38dd3dd82c98da6999",
-                "0652b07978eff9839bf9009712e89d81968c91f027dba26d7b8b35244ee638e7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "eqsid_": 0.000006913525621525954
-            },
-            "exampleSites": [
-                "bw-online-shop.com",
-                "www.bw-online-shop.com",
-                "www.carhartt-wip.com",
-                "www.goertz.de",
-                "www.manor.ch",
-                "www.megabad.com"
-            ]
-        },
-        {
             "rule": "epoq\\.de\\/flow\\/exlibris\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -246,6 +294,64 @@
             "exampleSites": [
                 "exlibris.ch",
                 "www.exlibris.ch"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/inbound-servletapi\\/getSearchResult",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "8393fbdf83f6afd6d78e8adbebf48250dbc8da7cd8dbc5ca884b3ac24b391dbf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "exlibris.ch",
+                "www.gartenhaus-gmbh.de"
+            ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/gartenhaus-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2,
+                "window.devicePixelRatio": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "1296f8cad46e35cdeaed2e07fcb9696f6383933203a7e0a935bde46785047249"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gartenhaus-gmbh.de",
+                "www.gartenhaus-gmbh.de"
             ]
         },
         {
@@ -285,42 +391,6 @@
             ]
         },
         {
-            "rule": "epoq\\.de\\/flow\\/haertle\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "window.indexedDB": 2,
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Navigator.prototype.connection": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Screen.prototype.orientation": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d6c1961b0b3c212cfb72c5226ca4deccdc79975eb4e15ab728964e043d4d501f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "haertle.de",
-                "www.haertle.de"
-            ]
-        },
-        {
             "rule": "epoq\\.de\\/flow\\/hagebau-de\\.js",
             "cookies": 0.0000138,
             "fingerprinting": 2,
@@ -353,8 +423,8 @@
             "firstPartyCookies": {
                 "7cb54b_session_id": {
                     "ttl": null,
-                    "length": 31,
-                    "prevalence": 0.000013827051243051907,
+                    "length": 32,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -433,7 +503,7 @@
                 "_eqsid": {
                     "ttl": null,
                     "length": 31,
-                    "prevalence": 0.000013827051243051907,
+                    "prevalence": 0.000013835851458298743,
                     "uniqueness": 1
                 }
             },
@@ -514,18 +584,52 @@
                 "narayana-verlag.de",
                 "www.narayana-verlag.de"
             ]
+        },
+        {
+            "rule": "epoq\\.de\\/flow\\/peek-und-cloppenburg-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.connection": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.orientation": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "47994ba418fe3d18bbf075d391dbc53dbcb8e2b5ecbb2945f6d3662a8cb0cc91"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "peek-und-cloppenburg.de",
+                "www.peek-und-cloppenburg.de"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000131,
+    "cookies": 0.000145,
     "types": {
-        "Script": 45
+        "Script": 54
     },
     "nameservers": [
-        "ns10.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
+        "ns-750.awsdns-29.net",
         "ns-383.awsdns-47.com",
-        "ns-750.awsdns-29.net"
+        "ns10.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com"
     ]
 }

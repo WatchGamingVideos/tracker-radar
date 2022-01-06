@@ -8,7 +8,6 @@
     "sites": 2,
     "subdomains": [
         "assets",
-        "img2",
         "img"
     ],
     "cnames": [],
@@ -96,7 +95,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -178,7 +178,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.indexedDB": 2
+                "window.indexedDB": 2,
+                "Date.prototype.getTimezoneOffset": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
@@ -274,13 +275,57 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "window.devicePixelRatio": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2
+                "HTMLCanvasElement.prototype.toDataURL": 1
             },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
                 "7ad57d221960e99662ca374281f8e61993067eca77c881dadae6d7375eeb145b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "taptap.io",
+                "www.taptap.io"
+            ]
+        },
+        {
+            "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/chunk-222ff781\\.8426e776\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b8d80dfa1dedf774aaa8c8d506099cd8f2ff3b22f9ecc25f859014dfcb4b0d6d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "taptap.io",
+                "www.taptap.io"
+            ]
+        },
+        {
+            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-222ff781\\.455c8c0f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "bb21ac08235128e77e10e80ea13831a79601577f304f5ee58435de6e91f4361a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -325,94 +370,6 @@
             "cnames": [],
             "responseHashes": [
                 "931b2ea7197dd21192639a5cb7958e28f5c1f0dc338e0ecbd9caf7c04b9f31f0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/chunk-59da2ee6\\.385d30f8\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d42faf9dd85c1c16c649458becd9f7bbf4966265a4e6314c9291fb7c5739a0e8"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-59da2ee6\\.7cd7401c\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a76e17ad17a50ea5c9a37dd374e98af3ef0ebbed5bf9065066971b8ed93d4baf"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/chunk-4ba2b0f8\\.6ec933b5\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "71505cea15dd93666a4789b6365754f848821474b1bd0b3ee32a1feef007ed75"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-4ba2b0f8\\.eb8bfdb8\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "aebefe5ab2b68bb5228851967fbf52de189c37d5523bdcdaabef4e0b61e6041b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -481,28 +438,6 @@
                 "e4170ea709343aaa0d49f6dcb77dca9f14b71786366cfa6fb49b22bb3ba836bc"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/bbcode\\/images\\/1a667685a3d219cfd780ee3f0592a067\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f2c31a42365febb7f9667a20b1839d53eb380209ba388baa8e6528709209dacb"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -593,50 +528,6 @@
             "cnames": [],
             "responseHashes": [
                 "d7bade6fb874e090c846df3bfb4c062f986e3201bdb91615bc81d3dcdb569ade"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/chunk-222ff781\\.8426e776\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b8d80dfa1dedf774aaa8c8d506099cd8f2ff3b22f9ecc25f859014dfcb4b0d6d"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-222ff781\\.455c8c0f\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bb21ac08235128e77e10e80ea13831a79601577f304f5ee58435de6e91f4361a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -823,248 +714,6 @@
             ]
         },
         {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/chunk-3ca46dab\\.6c889914\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b38c670e489a4634783ee1836002c655a482f974b96b9478c247f511f678991f"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-3ca46dab\\.379a4b48\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "296884aac29eacaaf32a50595fcc37453fdc4277c3bd95aa7a2c2a9fab77a999"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-2d0e1ee4\\.f2ef5116\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5acd009b86ad5a9c828223ec0b9dcd074af488e9b2a9faafed86a6e720148349"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/icons\\/4cf4ff9eb0d623a2ae9cf5ecc49879c3_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "69e9589a4af3efcb21ba69d17a944c9de2eff2df6169953ece65f71981e490d3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/icons\\/113894e93fbf7d066b239fa95799a075_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "04b2703fc02f1309ae9614d037276e3c3205cdb53e78eb48ff7dd7e786c0adbc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/lcs\\/e0cdc09dcadb19c3bc95644f23bd1dde_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "dd5fdaaa780bd99f866f58076ae90802564489ac3bec96825a3845d30dbc5bae"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/lcs\\/529a95f8c2052d02cbb8f266b7bd3756_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c838961087a7704514ea4352086d59f9cb012675abddf3c1fe8b9956c200b4de"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/lcs\\/d2aeb630bc45ffbd8c365f589dfdeb3d_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "af8ce784ff9b1b928488f9f7e6d81515ba2f8e407387cb31fb9463110d264836"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/lcs\\/f120e87981a5d33153465d62da97b8a0_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "06c33df2e660379852bc24097570d44d514807b1d78de88d124ee2e899975929"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/lcs\\/8c3ae19fa834d9cf7b6d6b6b42bca126_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0ad643abf48c5ee304daf186bcf1667c8136fd4baee51793ca1235361d46e50b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
-            "rule": "tapimg\\.com\\/market\\/icons\\/dec2e232e80251b5cdf2f34c80e786a1_360\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "eed2c0b96accc3422213aa9327db4da6bda84827fe585e442fd9577e2966934b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taptap.io",
-                "www.taptap.io"
-            ]
-        },
-        {
             "rule": "tapimg\\.com\\/web-app\\/static\\/css\\/app-detail\\.0e496047\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1197,18 +846,21 @@
             ]
         },
         {
-            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-2d0d76d4\\.cabffa09\\.js",
+            "rule": "tapimg\\.com\\/web-app\\/static\\/js\\/chunk-3a86d239\\.a2f0d184\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "MediaSource.isTypeSupported": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "1d00f12eb3ea07ed83380ed46c8c865c48cb4519197f58aacedb115eb242c51f"
+                "37c9200d413f118009bf735e548a5cb3a380a9011301f02553c074d61c772474"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1223,9 +875,9 @@
     "performance": {},
     "cookies": 0.0000138,
     "types": {
-        "Stylesheet": 32,
-        "Script": 54,
-        "Image": 20
+        "Stylesheet": 26,
+        "Script": 46,
+        "Image": 2
     },
     "nameservers": [
         "vip3.alidns.com",

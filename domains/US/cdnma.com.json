@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000346,
+    "sites": 5,
     "subdomains": [
-        "beacon"
+        "beacon",
+        "sc"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,8 +21,8 @@
                 "beacon"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 3,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -29,21 +30,59 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "__mauuid": 0.00003456762810762977,
-                "__acuuid": 0.00003456762810762977
+                "__mauuid": 0.000020753777187448115,
+                "__acuuid": 0.000020753777187448115
             },
             "exampleSites": [
                 "cdbaby.com",
-                "www.americancruiselines.com",
                 "www.fastenal.com",
-                "www.imperialsupplies.com",
-                "www.mayakoba.com"
+                "www.imperialsupplies.com"
+            ]
+        },
+        {
+            "rule": "cdnma\\.com\\/apps\\/19945\\/capture\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sc"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "b5350c83189e41aafedb0a460032c80dbe7a44ccc30bac74413157a96b8ed812"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__mauuid": {
+                    "ttl": 63072002,
+                    "length": 36,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                },
+                "__acuuid": {
+                    "ttl": 4,
+                    "length": 36,
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fastenal.com",
+                "www.fastenal.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000346,
     "types": {
         "Script": 5
     },

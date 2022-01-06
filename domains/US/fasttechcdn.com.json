@@ -58,9 +58,13 @@
         {
             "rule": "fasttechcdn\\.com\\/js\\/MicrosoftAjax\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2
+            },
             "sites": 2,
             "prevalence": 0.0000138,
             "cnames": [],
@@ -108,26 +112,6 @@
             "cnames": [],
             "responseHashes": [
                 "b51f18e2085928e6a00bd775ed62325470087782a46e7f22eda3b46d5cb73a40"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fasttech.com",
-                "www.fasttech.com"
-            ]
-        },
-        {
-            "rule": "fasttechcdn\\.com\\/cdn-static\\/flags\\/us_logo_24x16\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "39254426444e583c80b856c6359bd985ff5d046aa8a6d5353ece14215d7be839"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -199,7 +183,7 @@
         },
         {
             "rule": "fasttechcdn\\.com\\/v3\\/js\\/storefront\\.15\\.min\\.js",
-            "cookies": 0.00000691,
+            "cookies": 0.00000692,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
@@ -216,9 +200,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "unit": {
-                    "ttl": 31536003,
+                    "ttl": 31536000,
                     "length": 6,
-                    "prevalence": 0.000006913525621525954,
+                    "prevalence": 0.000006917925729149372,
                     "uniqueness": 1
                 }
             },
@@ -251,11 +235,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000691,
+    "cookies": 0.00000692,
     "types": {
         "Stylesheet": 2,
         "Script": 10,
-        "Image": 10
+        "Image": 8
     },
     "nameservers": [
         "pete.ns.cloudflare.com",

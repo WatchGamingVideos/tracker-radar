@@ -4,14 +4,41 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000415,
+    "sites": 6,
     "subdomains": [
         "content"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "apruvd\\.com\\/fp\\/tags\\.js",
+            "cookies": 0.0000138,
+            "fingerprinting": 1,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "28dad31b86b5e56d52bec86e3985d7b53fb2a57a08d0b14c49f4e9defc9e7456"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ambientweather.com",
+                "www.yeti.com"
+            ]
+        },
         {
             "rule": "apruvd\\.com\\/fp\\/tags",
             "cookies": 0.0000138,
@@ -24,7 +51,7 @@
             "prevalence": 0.0000138,
             "cnames": [],
             "responseHashes": [
-                "a427c4aa3db9b883d6b32f7b5e476505f445dffaf05e3e1f21604d033267d8be"
+                "6f7ab3f62ff2e38dc0ae078c6f57071d9d533f252e5754fcfaecf4bb84aaf103"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -43,7 +70,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "6882437cef514eeafff92a4dde96489b049e439967c6c99faff992e2045d994c"
@@ -77,9 +104,9 @@
                 "Screen.prototype.availWidth": 3,
                 "Screen.prototype.availHeight": 3,
                 "Screen.prototype.colorDepth": 3,
-                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.plugins": 3,
                 "Navigator.prototype.hardwareConcurrency": 3,
-                "Navigator.prototype.deviceMemory": 1,
+                "Navigator.prototype.deviceMemory": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
                 "HTMLCanvasElement.prototype.toDataURL": 2,
                 "WebGLRenderingContext.prototype.getParameter": 2,
@@ -88,10 +115,10 @@
                 "window.localStorage": 2,
                 "window.indexedDB": 2,
                 "RTCPeerConnection.prototype.constructor": 2,
-                "Navigator.prototype.storage": 1,
+                "Navigator.prototype.storage": 2,
                 "Navigator.prototype.getBattery": 2,
                 "OfflineAudioContext.prototype.constructor": 2,
-                "Navigator.prototype.mediaDevices": 1,
+                "Navigator.prototype.mediaDevices": 2,
                 "AudioBuffer.prototype.getChannelData": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.appCodeName": 1,
@@ -104,14 +131,15 @@
                 "Navigator.prototype.product": 1,
                 "Navigator.prototype.productSub": 1,
                 "Navigator.prototype.vendorSub": 1,
+                "Navigator.prototype.webdriver": 1,
                 "Screen.prototype.pixelDepth": 1
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "8cf22d48a44bcd8be3c2d48afe751f287e58490b71eb59e0b56ee7499500915f",
-                "f2c72be74c5aaddc2fd0a96c9984568989d08efa48699a7b4810c192d779bd6d"
+                "0342e9d4107e62d483f2f9e4fa2493ea09f7eac31ca485def48fce62a61eeaa1",
+                "6939bab9f7a7a5e9f8870b7a84594946e866f1ad544acce1b4f7feb8d3112953"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -131,11 +159,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "5507a9363038dcf4b4b654776a80672b4e67855e3e7a32bee777c9d5511238bc",
-                "4e9a65391edfa8f83e09fe80e36af351439978884f7446fa849bfbd17056a0d8"
+                "18766933588ba96d83981b623faf566b72dca24edba297d0ed1491d484d4001c",
+                "3ea9fc236485604a335ef1b27985ddb0ad97817ed5f6380755678ddefb4cf3b4"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -155,7 +183,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "6882437cef514eeafff92a4dde96489b049e439967c6c99faff992e2045d994c"
@@ -172,17 +200,19 @@
         {
             "rule": "apruvd\\.com\\/fp\\/ls_fp\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "content"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 3
+            },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "eeda2968cbc529e2e2471414b9225d2049fbaba85b4c4b31e5f60f8fd12ff2e1",
-                "4faae64c063b401622386aadcd0d93f5ad6d0dbbb7753ce1460218d4018b35b7"
+                "8da1d055206a3f8808f9545f0a5022aa728c42403a1c9f0f2bda2c44f93782d6",
+                "8649a7a785b6e98754db37d25f26ca04cfc0cda8252b766f360743d54ed7aa00"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -202,7 +232,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -227,11 +257,11 @@
                 "Date.prototype.getTime": 3
             },
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "e9c8146efcc0b3159211b7bff026534beeea0989409d15a6579b06a8cf156159",
-                "7f9bc8cd9a3ae330f366d6f946f4ff931f1c500866f94addb1ded229e076b553"
+                "6c3a5dccd612d9e3d8904e3d0e9dd17d4baebe7feedd3a6ea7dfbf700cd9c22f",
+                "7d59d925756a838a1aef6054125d6f97df231699f828b86951f4516ba4712892"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -251,11 +281,11 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
-                "fadb7d5a4214cfdecc318ec2ad5eebb77e38415e4b73691cd64de0ce3ea3231b",
-                "9c30be509be8d09e62119eb46372a032cb34359f9ec49673cea1e061faa5ac5e"
+                "ac15527f78ba1f7b70cc17158482aee97b5cdc251058e4e6822afe68b2392a7a",
+                "7413182be8620b8d7d55849a0cd469be32fb16c592d00a32810d3fbd9e109f8b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -275,7 +305,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000207,
+            "prevalence": 0.0000208,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -288,48 +318,21 @@
                 "www.signaturehardware.com",
                 "www.yeti.com"
             ]
-        },
-        {
-            "rule": "apruvd\\.com\\/fp\\/tags\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "content"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appVersion": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "13a3aefac12ffe3be87867ebff264cb078c374c0ff7b64e876c5bc15b481dc65"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yeti.com",
-                "www.yeti.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000277,
+    "cookies": 0.0000415,
     "types": {
+        "Script": 11,
         "Document": 11,
         "Image": 6,
-        "Script": 11,
         "XHR": 3
     },
     "nameservers": [
-        "ns-1343.awsdns-39.org",
-        "ns-1560.awsdns-03.co.uk",
         "ns-160.awsdns-20.com",
-        "ns-948.awsdns-54.net"
+        "ns-948.awsdns-54.net",
+        "ns-1560.awsdns-03.co.uk",
+        "ns-1343.awsdns-39.org"
     ]
 }

@@ -9,32 +9,222 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00121,
-    "sites": 175,
+    "prevalence": 0.00147,
+    "sites": 213,
     "subdomains": [
-        "static-na",
         "static-eu",
+        "static-na",
         "static-fe"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "payments-amazon\\.com\\/OffAmazonPayments\\/de\\/lpa\\/js\\/Widgets\\.js",
+            "cookies": 0.000187,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-eu"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 29,
+                "Navigator.prototype.userAgent": 29,
+                "window.localStorage": 29,
+                "Document.cookie getter": 27,
+                "Document.cookie setter": 27,
+                "Navigator.prototype.languages": 6,
+                "Element.prototype.getClientRects": 6
+            },
+            "sites": 29,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1f6bb6509e7759c8d63952aed68dd09820197eca4382e833bf6042e9362c509c",
+                "c428bb40462cf5120d97f3b6d0524b4d3e3a409426c358c53bbe5e15a77207b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "apay-session-set": {
+                    "ttl": 31536003,
+                    "length": 70,
+                    "prevalence": 0.00018678399468703303,
+                    "uniqueness": 1
+                },
+                "language": {
+                    "ttl": 86402,
+                    "length": 5,
+                    "prevalence": 0.00004150755437489623,
+                    "uniqueness": 0.16666666666666666
+                },
+                "amazon-pay-connectedAuth": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.00004150755437489623,
+                    "uniqueness": 0.16666666666666666
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.gartenhaus-gmbh.de",
+                "www.sanicare.de",
+                "www.rasppishop.de",
+                "www.arktis.de",
+                "www.bike-mailorder.de",
+                "www.satisfyer.com",
+                "www.gorillasports.de",
+                "r2-bike.com",
+                "www.photovoltaik4all.de",
+                "www.meinhausshop.de",
+                "www.vitalundfitmit100.de",
+                "asgoodasnew.de",
+                "www.salewa.com",
+                "www.campingshop-24.de",
+                "www.bio-apo.de",
+                "www.bike-discount.de",
+                "www.tintenmarkt.de",
+                "www.dynafit.com",
+                "www.kirstein.de",
+                "www.simon-o.com"
+            ]
+        },
+        {
+            "rule": "payments-amazon\\.com\\/v2\\/login\\.js",
+            "cookies": 0.00000692,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-eu",
+                "static-na"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 91,
+            "prevalence": 0.00063,
+            "cnames": [],
+            "responseHashes": [
+                "669bbeabcb7e507cef53fd2d402944fbff1cec8249b692109fcabe8fadf6be5b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "amazon_Login_state_cache": {
+                    "ttl": 0,
+                    "length": 4,
+                    "prevalence": 0.000006917925729149372,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.gorillasports.de",
+                "ting.com",
+                "houseofharley.com",
+                "rockler.com",
+                "www.sanicare.de",
+                "www.striderite.com",
+                "www.arktis.de",
+                "www.aerogarden.com",
+                "www.bio-apo.de",
+                "www.jins.com",
+                "www.performance-pcs.com",
+                "www.swansonvitamins.com",
+                "www.ofenseite.com",
+                "www.saucony.com",
+                "www.chiefaircraft.com",
+                "www.us.allsaints.com",
+                "www.bestheating.com",
+                "www.litter-robot.com",
+                "shopkarls.com",
+                "www.1800lighting.com"
+            ]
+        },
+        {
+            "rule": "payments-amazon\\.com\\/checkout\\.js",
+            "cookies": 0.0000692,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-na",
+                "static-eu",
+                "static-fe"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 10,
+                "Navigator.prototype.userAgent": 10,
+                "Date.prototype.getTime": 10,
+                "Document.cookie setter": 10,
+                "Document.cookie getter": 10
+            },
+            "sites": 20,
+            "prevalence": 0.000138,
+            "cnames": [],
+            "responseHashes": [
+                "ff48675f540045b12cb672ed43688e34c85f53e7ab972b062581ac37e1b8d68a",
+                "164220ab85f3ba11818ad3a7452cf00fe37ea6a04aaeb7f2dd768fc594587a70",
+                "f0c7a0b7d25955687a77b08d7f857810e50b4581da23aaa4635850bf9d0ff23f",
+                "9bde08f4e03fcb0972d2ff4fbb964f7651009e5f2333412b3b12a9f05844fd91"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "language": {
+                    "ttl": 86404,
+                    "length": 5,
+                    "prevalence": 0.00006917925729149372,
+                    "uniqueness": 0.3
+                },
+                "ledgerCurrency": {
+                    "ttl": 86404,
+                    "length": 3,
+                    "prevalence": 0.00006917925729149372,
+                    "uniqueness": 0.3
+                },
+                "apay-session-set": {
+                    "ttl": 31536004,
+                    "length": 69,
+                    "prevalence": 0.00006917925729149372,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avantree.com",
+                "dildoking.de",
+                "shop.ahw-shop.de",
+                "workingperson.com",
+                "www.ac-illust.com",
+                "www.aerosoft.com",
+                "www.befestigungsfuchs.de",
+                "www.belkin.com",
+                "www.elektrofahrrad24.de",
+                "www.erincondren.com",
+                "www.golfdiscount.com",
+                "www.hatsinthebelfry.com",
+                "www.inov-8.com",
+                "www.mvmt.com",
+                "www.penhaligons.com",
+                "www.reno.de",
+                "www.seiffen.com",
+                "www.sevenoakssoundandvision.co.uk",
+                "www.siegmund.care",
+                "www.zauberdergewuerze.de"
+            ]
+        },
+        {
             "rule": "payments-amazon\\.com\\/v2\\/analytics\\.js",
-            "cookies": 0.0000968,
+            "cookies": 0.000104,
             "fingerprinting": 1,
             "subdomains": [
                 "static-na",
                 "static-eu"
             ],
             "apis": {
-                "Date.prototype.getTime": 14,
-                "Document.cookie setter": 14,
-                "Document.cookie getter": 14,
-                "Navigator.prototype.languages": 14
+                "Date.prototype.getTime": 15,
+                "Document.cookie setter": 15,
+                "Document.cookie getter": 15,
+                "Navigator.prototype.languages": 15
             },
-            "sites": 14,
-            "prevalence": 0.0000968,
+            "sites": 15,
+            "prevalence": 0.000104,
             "cnames": [],
             "responseHashes": [
                 "91cda2486a3d6bcfd9168b8e9530c844d31eae5fe675a820bbff1959d1ac8b47",
@@ -45,291 +235,108 @@
                 "amazon-pay-connectedAuth": {
                     "ttl": 3605,
                     "length": 21,
-                    "prevalence": 0.00009678935870136334,
-                    "uniqueness": 0.07142857142857142
+                    "prevalence": 0.00010376888593724057,
+                    "uniqueness": 0.06666666666666667
                 },
                 "language": {
                     "ttl": 3605,
                     "length": 5,
-                    "prevalence": 0.00008987583307983739,
-                    "uniqueness": 0.07692307692307693
+                    "prevalence": 0.0000968509602080912,
+                    "uniqueness": 0.07142857142857142
                 },
                 "apay-session-set": {
                     "ttl": 31536005,
                     "length": 70,
-                    "prevalence": 0.00009678935870136334,
+                    "prevalence": 0.00010376888593724057,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "antiagingbed.com",
-                "hauteflair.com",
+                "birdsarentreal.com",
+                "cosmiccuts.com",
+                "criobru.com",
+                "dimebeautyco.com",
+                "gfuel.com",
+                "goaxil.com",
                 "loveplugs.co",
-                "thedailygraceco.com",
-                "us.anker.com",
-                "us.eufylife.com",
-                "us.soundcore.com",
+                "militaryuniformsupply.com",
+                "shop.teslarati.com",
+                "sleepsutera.com",
                 "willowsoul.com",
-                "www.beachbunnyswimwear.com",
-                "www.lightroompresets.com",
-                "www.promescent.com",
-                "www.thehorrordome.com",
+                "www.blendtec.com",
+                "www.minus33.com",
                 "www.wildling.shoes",
-                "www.zerofoxtrot.com"
-            ]
-        },
-        {
-            "rule": "payments-amazon\\.com\\/checkout\\.js",
-            "cookies": 0.0000484,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-eu",
-                "static-na",
-                "static-fe"
-            ],
-            "apis": {
-                "Navigator.prototype.languages": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7,
-                "Document.cookie setter": 7,
-                "Document.cookie getter": 7
-            },
-            "sites": 16,
-            "prevalence": 0.000111,
-            "cnames": [],
-            "responseHashes": [
-                "ff48675f540045b12cb672ed43688e34c85f53e7ab972b062581ac37e1b8d68a",
-                "164220ab85f3ba11818ad3a7452cf00fe37ea6a04aaeb7f2dd768fc594587a70",
-                "f0c7a0b7d25955687a77b08d7f857810e50b4581da23aaa4635850bf9d0ff23f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "language": {
-                    "ttl": 86403,
-                    "length": 5,
-                    "prevalence": 0.00004839467935068167,
-                    "uniqueness": 0.42857142857142855
-                },
-                "ledgerCurrency": {
-                    "ttl": 86403,
-                    "length": 3,
-                    "prevalence": 0.00004839467935068167,
-                    "uniqueness": 0.42857142857142855
-                },
-                "apay-session-set": {
-                    "ttl": 31536003,
-                    "length": 73,
-                    "prevalence": 0.00004839467935068167,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dildoking.de",
-                "shop.ahw-shop.de",
-                "store.overclockers.co.uk",
-                "workingperson.com",
-                "www.ac-illust.com",
-                "www.aerosoft.com",
-                "www.befestigungsfuchs.de",
-                "www.belkin.com",
-                "www.elektrofahrrad24.de",
-                "www.erincondren.com",
-                "www.feuerdepot.de",
-                "www.golfdiscount.com",
-                "www.inov-8.com",
-                "www.mvmt.com",
-                "www.reno.de",
-                "www.zauberdergewuerze.de"
+                "xdress.com"
             ]
         },
         {
             "rule": "payments-amazon\\.com\\/OffAmazonPayments\\/us\\/js\\/Widgets\\.js",
-            "cookies": 0.000304,
+            "cookies": 0.000353,
             "fingerprinting": 1,
             "subdomains": [
                 "static-na"
             ],
             "apis": {
-                "Date.prototype.getTime": 48,
-                "Navigator.prototype.userAgent": 47,
-                "window.localStorage": 44,
-                "Document.cookie getter": 45,
-                "Document.cookie setter": 44,
+                "Date.prototype.getTime": 54,
+                "Navigator.prototype.userAgent": 54,
+                "window.localStorage": 52,
+                "Document.cookie getter": 52,
+                "Document.cookie setter": 51,
                 "window.devicePixelRatio": 7,
-                "Element.prototype.getClientRects": 9,
+                "Element.prototype.getClientRects": 14,
                 "Date.prototype.getTimezoneOffset": 1
             },
-            "sites": 48,
-            "prevalence": 0.000332,
+            "sites": 54,
+            "prevalence": 0.000374,
             "cnames": [],
             "responseHashes": [
-                "51589e9b08340e5aca5779b74b86679b484b6ab827aef75b7e912364a1bbef1f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "language": {
-                    "ttl": 86404,
-                    "length": 5,
-                    "prevalence": 0.00013135698680899312,
-                    "uniqueness": 0.05263157894736842
-                },
-                "amazon-pay-connectedAuth": {
-                    "ttl": null,
-                    "length": 20,
-                    "prevalence": 0.00013135698680899312,
-                    "uniqueness": 0.10526315789473684
-                },
-                "apay-session-set": {
-                    "ttl": 86403,
-                    "length": 70,
-                    "prevalence": 0.00030419512734714194,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "merrell.com",
-                "www.orthoticshop.com",
-                "www.chacos.com",
-                "www.merrell.com",
-                "nicksboots.com",
-                "www.uswatersystems.com",
-                "www.solutionsstores.com",
-                "www.rustysoffroad.com",
-                "www.cmple.com",
-                "www.painfulpleasures.com",
-                "www.salewa.com",
-                "viridianweapontech.com",
-                "store.wsj.com",
-                "filterbuy.com",
-                "www.dynafit.com",
-                "www.thetileapp.com",
-                "www.litter-robot.com",
-                "www.getfpv.com",
-                "www.vineyardvines.com",
-                "www.performance-pcs.com"
-            ]
-        },
-        {
-            "rule": "payments-amazon\\.com\\/v2\\/login\\.js",
-            "cookies": 0.00000691,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-na",
-                "static-eu"
-            ],
-            "apis": {
-                "Document.cookie getter": 5,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 78,
-            "prevalence": 0.000539,
-            "cnames": [],
-            "responseHashes": [
-                "669bbeabcb7e507cef53fd2d402944fbff1cec8249b692109fcabe8fadf6be5b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "amazon_Login_state_cache": {
-                    "ttl": 2,
-                    "length": 4,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "viridianweapontech.com",
-                "ting.com",
-                "www.samenhaus.de",
-                "www.allsaints.com",
-                "store.wsj.com",
-                "www.chacos.com",
-                "www.bestheating.com",
-                "www.getfpv.com",
-                "www.orthoticshop.com",
-                "www.campingshop-24.de",
-                "www.woodcraft.com",
-                "www.arktis.de",
-                "www.salewa.com",
-                "www.stoll-espresso.de",
-                "www.tintenmarkt.de",
-                "filterbuy.com",
-                "www.bio-apo.de",
-                "www.therabody.com",
-                "shopkarls.com",
-                "www.uswatersystems.com"
-            ]
-        },
-        {
-            "rule": "payments-amazon\\.com\\/OffAmazonPayments\\/de\\/lpa\\/js\\/Widgets\\.js",
-            "cookies": 0.000152,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static-eu"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 24,
-                "Navigator.prototype.userAgent": 23,
-                "window.localStorage": 22,
-                "Document.cookie getter": 22,
-                "Document.cookie setter": 22,
-                "Navigator.prototype.languages": 5,
-                "Element.prototype.getClientRects": 5
-            },
-            "sites": 24,
-            "prevalence": 0.000166,
-            "cnames": [],
-            "responseHashes": [
-                "57eec1ac5df14bf6d02a1e2f007965bb0de5838f92e86e218bd17aca9c472055",
-                "1bd592259465eda62adaf2661596e05bae974b2ac688618982d8a1cf95858bec"
+                "51589e9b08340e5aca5779b74b86679b484b6ab827aef75b7e912364a1bbef1f",
+                "a0db653db87217a197013d9a5bbadabf3f8baf4d0b8cd1cab0d04cbbe21c1a09"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "apay-session-set": {
-                    "ttl": 31536002,
+                    "ttl": 86402,
                     "length": 70,
-                    "prevalence": 0.00015209756367357097,
+                    "prevalence": 0.00035281421218661795,
                     "uniqueness": 1
                 },
                 "language": {
                     "ttl": 86402,
                     "length": 5,
-                    "prevalence": 0.00003456762810762977,
-                    "uniqueness": 0.2
+                    "prevalence": 0.00015219436604128618,
+                    "uniqueness": 0.045454545454545456
                 },
                 "amazon-pay-connectedAuth": {
                     "ttl": null,
-                    "length": 21,
-                    "prevalence": 0.00003456762810762977,
-                    "uniqueness": 0.2
+                    "length": 20,
+                    "prevalence": 0.00015219436604128618,
+                    "uniqueness": 0.09090909090909091
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.photovoltaik4all.de",
-                "www.rasppishop.de",
-                "www.tintenmarkt.de",
-                "r2-bike.com",
-                "www.steinel.de",
-                "www.vitalundfitmit100.de",
-                "www.campingshop-24.de",
-                "www.aquasabi.de",
-                "www.elektroland24.de",
-                "www.ofenseite.com",
-                "www.berrybase.de",
-                "vom-achterhof.de",
-                "www.bijou-brigitte.com",
-                "www.salewa.com",
-                "www.esm-computer.de",
-                "www.gartenhaus-gmbh.de",
-                "www.dynafit.com",
-                "www.bio-apo.de",
-                "www.stoll-espresso.de",
-                "www.bike-mailorder.de"
+                "www.thetileapp.com",
+                "jovialfoods.com",
+                "www.jerrysartarama.com",
+                "www.chacos.com",
+                "www.catfootwear.com",
+                "www.swansonvitamins.com",
+                "byjasco.com",
+                "www.rockler.com",
+                "filterbuy.com",
+                "www.1000bulbs.com",
+                "www.cmple.com",
+                "www.jins.com",
+                "www.therabody.com",
+                "www.1800lighting.com",
+                "www.mathway.com",
+                "reason.com",
+                "www.aerogarden.com",
+                "www.sperry.com",
+                "www.performance-pcs.com",
+                "www.woodcraft.com"
             ]
         },
         {
@@ -341,30 +348,30 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
                 "Document.cookie getter": 4,
-                "Document.cookie setter": 4,
-                "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 3
+                "Document.cookie setter": 4
             },
             "sites": 5,
             "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "e9d3a2b63ec005a260b7c55c34952c93244890d21788f108cd1c40e20b619fe4"
+                "75c7ee74ec4dd4979ce5ce3587be18a84b5e2df69c20df679da551eb2b6c73dc"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "apay-session-set": {
-                    "ttl": 31536001,
-                    "length": 71,
-                    "prevalence": 0.000027654102486103815,
+                    "ttl": 31536002,
+                    "length": 69,
+                    "prevalence": 0.000027671702916597487,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aboalarm.de",
-                "www.leebmann24.de",
+                "www.erzgebirgskunst-drechsel.de",
                 "www.messerspezialist.de",
                 "www.pharao24.de",
                 "www.wohnen.de"
@@ -379,37 +386,38 @@
             ],
             "apis": {
                 "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
                 "Document.cookie getter": 5,
                 "Document.cookie setter": 5,
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 4,
-                "Navigator.prototype.languages": 1
+                "Navigator.prototype.languages": 2,
+                "Element.prototype.getClientRects": 1
             },
             "sites": 5,
             "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "1ca1f8f45da69456dd641be819c267977d3b88dcde48524a8be741a1a367c45a"
+                "ab9f134e53d32808935e6c745731a8e70f0635208da77e8e45b3b0ae28eec856"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "apay-session-set": {
-                    "ttl": 31536004,
-                    "length": 72,
-                    "prevalence": 0.00003456762810762977,
+                    "ttl": 31536002,
+                    "length": 71,
+                    "prevalence": 0.00003458962864574686,
                     "uniqueness": 1
                 },
                 "language": {
-                    "ttl": 86408,
+                    "ttl": 86415,
                     "length": 5,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
                 },
                 "amazon-pay-connectedAuth": {
                     "ttl": null,
                     "length": 21,
-                    "prevalence": 0.000006913525621525954,
-                    "uniqueness": 1
+                    "prevalence": 0.000013835851458298743,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -417,7 +425,7 @@
                 "allsaints.com",
                 "www.allsaints.com",
                 "www.bestheating.com",
-                "www.justkampers.com",
+                "www.jmldirect.com",
                 "www.smarthomesounds.co.uk"
             ]
         },
@@ -439,14 +447,14 @@
             "prevalence": 0.0000346,
             "cnames": [],
             "responseHashes": [
-                "f7655267728c1f7ffae7bb3aa9c23fdf26374e38b8a1c5f6eb6a65d9c0df9b45"
+                "d72ff90b8ade0dd1a76c4ef0b0b876d78cd8d26055106ebc42b002762b9ca01f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "apay-session-set": {
-                    "ttl": 31536002,
-                    "length": 71,
-                    "prevalence": 0.00003456762810762977,
+                    "ttl": 31536005,
+                    "length": 72,
+                    "prevalence": 0.00003458962864574686,
                     "uniqueness": 1
                 }
             },
@@ -457,6 +465,28 @@
                 "www.lanieri.com",
                 "www.ovs.it",
                 "www.samenhaus.de"
+            ]
+        },
+        {
+            "rule": "payments-amazon\\.com\\/checkout\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000138,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dolcegabbana.com",
+                "www.dolcegabbana.com"
             ]
         }
     ],
@@ -469,9 +499,10 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.00105,
+    "cookies": 0.00127,
     "types": {
-        "Script": 195
+        "Script": 224,
+        "Other": 2
     },
     "nameservers": [
         "pdns3.ultradns.org",
