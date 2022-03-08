@@ -4,31 +4,33 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
+    "prevalence": 0.0000286,
     "sites": 4,
     "subdomains": [
         "static3",
         "static4",
         "static11",
-        "static10"
+        "static10",
+        "static6",
+        "static5"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/vendors\\/vendors-bundle_637735253464951276\\.js",
+            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/vendors\\/vendors-bundle_637546781160000000\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "static3"
             ],
             "apis": {
+                "Event.prototype.timeStamp": 2,
                 "Navigator.prototype.maxTouchPoints": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Event.prototype.timeStamp": 1
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "294cfc858fb8671eb401423f561208842204131057767a3f377ecabc89c2609a"
@@ -43,15 +45,19 @@
             ]
         },
         {
-            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/layout\\/layout-bundle_637735253409479393\\.js",
+            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/layout\\/layout-bundle_637546781300000000\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static3"
             ],
-            "apis": {},
+            "apis": {
+                "console.memory": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "1e6ff35824a9ab839edcbdfe95137983edce399868e180c55838f54ba4163cfb"
@@ -65,29 +71,7 @@
             ]
         },
         {
-            "rule": "habimg\\.com\\/dotnet\\/content\\/css\\/dist\\/estilos-bundle_637735253408151720\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static4"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6e83a3f1cda3748a5ca0bc3755f03a9010439060faeaabe905a683dd3f5814fa"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "habitaclia.com",
-                "m.habitaclia.com"
-            ]
-        },
-        {
-            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/PWA\\/index-bundle_637735253410420263\\.js",
+            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/PWA\\/index-bundle_637513951380000000\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -95,7 +79,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "8e456878b131c47e7c60303e2b67eab500bd602d3a8c1ad08f34a8144465d774"
@@ -109,20 +93,20 @@
             ]
         },
         {
-            "rule": "habimg\\.com\\/dotnet\\/scripts\\/dist\\/home\\/homeindex-bundle_637735253409292229\\.js",
+            "rule": "habimg\\.com\\/dotnet\\/content\\/css\\/dist\\/estilos-bundle_637534071160000000\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static3"
+                "static4"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "fc7b8e41a102943eaeecb5ac8e0bb327aac3c8adce7bc9092ea3e2b531b8bdf4"
+                "6e83a3f1cda3748a5ca0bc3755f03a9010439060faeaabe905a683dd3f5814fa"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -139,10 +123,54 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "617fa754621edd326889f73781ae0933b8635709821c51a963469aeb570ecb86"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "habitaclia.com",
+                "m.habitaclia.com"
+            ]
+        },
+        {
+            "rule": "habimg\\.com\\/hab_inmuebles\\/img\\/imgv3\\/spriteN\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "3d9e5ebe5df25fa82f1cec8f9a487a1e5081f5a592f605290ec4a6773f31d988"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "habitaclia.com",
+                "m.habitaclia.com"
+            ]
+        },
+        {
+            "rule": "habimg\\.com\\/dotnet\\/content\\/img\\/fondologin\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "da1014460c811df5510dbdaf063424065521216f7aba7538c53b1149c838cf37"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -161,7 +189,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "6c42622f77da1a7cfae71b9dfe49d033042715049ce94190494a11c312568665"
@@ -184,7 +212,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "545f743628228cbdb9e87f741ed7af6e6047e26dc75001e0a6ff3521d6b52731"
@@ -207,10 +235,33 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "03598ec6223c8fab12fe0581e2331d496233152028c69f5d6463b124b98bd7af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "habitaclia.com",
+                "www.habitaclia.com"
+            ]
+        },
+        {
+            "rule": "habimg\\.com\\/hab_logos\\/27579-1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static6",
+                "static5"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fc8812e64aaaa58a8fa8ce405a06733999c54008e8f44b0600edef0f6547b64e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -229,7 +280,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "51e834e4e415338ca2a7cb6b55b96113d69b49f8b4ec429d1be19d75e6f0215e"
@@ -252,7 +303,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "089fe19e0f15f9e5ce9d3cfeba74cf73c7851eb563484c521b15b88b303d9443"
@@ -274,7 +325,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "6a2900d88383e365481d8a2aa7fc725628bc8a1f664fd819bfa9e5f213ac294f"
@@ -296,7 +347,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "bcef2192657292b453996757c3a57467166ff903888039fcc4b99432af3d9047"
@@ -318,7 +369,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "1a9815c62cb9fe20178f89b4122b61189a26a1e335b31773342f856b701388ca"
@@ -340,7 +391,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "d1a0d5d1986bf1ff0266562b7d0bae082671bd952d7d791287b0af270c68b0af"
@@ -362,7 +413,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "6d0a7c58f0940cc22406f23ca21509aefa4520bc3888f17102b203c45a09cc8d"
@@ -378,11 +429,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000692,
+    "cookies": 0.00000715,
     "types": {
-        "Script": 9,
+        "Script": 7,
         "Stylesheet": 2,
-        "Image": 21,
+        "Image": 27,
         "Font": 2
     },
     "nameservers": [

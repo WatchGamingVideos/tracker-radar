@@ -4,12 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000692,
-    "sites": 1,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
-        "lottotime72.cdn01"
+        "lottotime72.cdn01",
+        "nlotcampaignassetserver.cdn01",
+        "snapshots.vvc"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "snapshots.media.verkeerscentrum.be",
+            "resolved": "snapshots.vvc.rambla.be"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -21,10 +28,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "59e763b55a795cfa2ea1d4eb4bd38110a606201706c4dfee83ac3ec07b98db5f"
+                "1be5ede99c14a1f65b135f90695947fb21ab7cfb15b703133bb3f1d1d14815f3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -33,13 +40,62 @@
                 "e-lotto.be",
                 "www.e-lotto.be"
             ]
+        },
+        {
+            "rule": "rambla\\.be\\/libs\\/gsap\\/gsap\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nlotcampaignassetserver.cdn01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a14255e68fc99fc5b4a8b323c13070ac67f42775917706fd3b147b436810a5da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loterie-nationale.be",
+                "www.nationale-loterij.be"
+            ]
+        },
+        {
+            "rule": "rambla\\.be\\/WEB_VMS85_W8373_A14_KORTRIJK-OOST_12\\.6_PTZ\\.stream\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snapshots.vvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "snapshots.media.verkeerscentrum.be",
+                    "resolved": "snapshots.vvc.rambla.be"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "verkeerscentrum.be",
+                "www.verkeerscentrum.be"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns11.constellix.com",

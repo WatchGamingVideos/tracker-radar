@@ -4,29 +4,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000104,
-    "sites": 15,
+    "prevalence": 0.0000643,
+    "sites": 9,
     "subdomains": [
         "uim-tifbs",
         "t-uimserv-net",
-        "t-ionos-de"
+        "plusmailcom",
+        "tif-fasthosts-co-uk",
+        "t-fasthosts-co-uk"
     ],
     "cnames": [
         {
-            "original": "t.ionos.de",
-            "resolved": "t-ionos-de.ha-cdn.de"
+            "original": "plus.mail.com",
+            "resolved": "plusmailcom.ha-cdn.de"
+        },
+        {
+            "original": "t.fasthosts.co.uk",
+            "resolved": "t-fasthosts-co-uk.ha-cdn.de"
         },
         {
             "original": "t.uimserv.net",
             "resolved": "t-uimserv-net.ha-cdn.de"
         },
         {
-            "original": "uim.tifbs.net",
-            "resolved": "uim-tifbs.ha-cdn.de"
+            "original": "tif.fasthosts.co.uk",
+            "resolved": "tif-fasthosts-co-uk.ha-cdn.de"
         },
         {
-            "original": "uir.uimserv.net",
-            "resolved": "t-uimserv-net.ha-cdn.de"
+            "original": "uim.tifbs.net",
+            "resolved": "uim-tifbs.ha-cdn.de"
         }
     ],
     "fingerprinting": 1,
@@ -39,8 +45,8 @@
                 "uim-tifbs"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "uim.tifbs.net",
@@ -55,10 +61,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gmx.net",
-                "anmelden.web.de",
-                "www.gmx.com",
-                "www.gmx.at",
-                "www.gmx.fr"
+                "web.de",
+                "www.gmx.com"
             ]
         },
         {
@@ -69,8 +73,8 @@
                 "uim-tifbs"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "uim.tifbs.net",
@@ -84,77 +88,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "web.de",
-                "hilfe.web.de",
-                "hilfe.gmx.net"
-            ]
-        },
-        {
-            "rule": "ha-cdn\\.de\\/sid\\/",
-            "cookies": 0.0000208,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t-uimserv-net"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "uir.uimserv.net",
-                    "resolved": "t-uimserv-net.ha-cdn.de"
-                }
-            ],
-            "responseHashes": [
-                "0dd9ac9c546bbbdfa1737899366bccdfe3543926c4fd13e90ae80287085f44ea",
-                "30bf2ba76eaad2ac148518f2459ced9bcd127ba2feb16893a1473d512ed55e11"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ionos.com",
-                "login.ionos.com",
-                "www.ionos.com"
-            ]
-        },
-        {
-            "rule": "ha-cdn\\.de\\/optout_p\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t-ionos-de"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "t.ionos.de",
-                    "resolved": "t-ionos-de.ha-cdn.de"
-                }
-            ],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ionos.de",
-                "mail.ionos.de"
+                "mail.com",
+                "support.mail.com"
             ]
         },
         {
             "rule": "ha-cdn\\.de\\/traffic_p\\/",
-            "cookies": 0.0000208,
+            "cookies": 0.0000214,
             "fingerprinting": 0,
             "subdomains": [
                 "t-uimserv-net"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "t.uimserv.net",
@@ -168,19 +115,100 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gmx.com",
-                "www.gmx.com",
-                "www.gmx.fr"
+                "mail.com",
+                "support.mail.com",
+                "www.gmx.com"
+            ]
+        },
+        {
+            "rule": "ha-cdn\\.de\\/lt",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "plusmailcom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "plus.mail.com",
+                    "resolved": "plusmailcom.ha-cdn.de"
+                }
+            ],
+            "responseHashes": [
+                "f3e787761bb89a45ce6775202c7e7b769c37122c7ca19e5ad554f742d8c8c273"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mail.com",
+                "support.mail.com"
+            ]
+        },
+        {
+            "rule": "ha-cdn\\.de\\/js\\/44001\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tif-fasthosts-co-uk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "tif.fasthosts.co.uk",
+                    "resolved": "tif-fasthosts-co-uk.ha-cdn.de"
+                }
+            ],
+            "responseHashes": [
+                "779a99910c86e2302c282525266cda8ba4de71981f52f97615b2d3e9a9fcf909"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasthosts.co.uk",
+                "www.fasthosts.co.uk"
+            ]
+        },
+        {
+            "rule": "ha-cdn\\.de\\/fh_shop_cp_p\\/",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t-fasthosts-co-uk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "t.fasthosts.co.uk",
+                    "resolved": "t-fasthosts-co-uk.ha-cdn.de"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fasthosts.co.uk",
+                "www.fasthosts.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000554,
+    "cookies": 0.00005,
     "types": {
-        "Script": 11,
-        "XHR": 2,
-        "Image": 3
+        "Script": 7,
+        "Image": 5,
+        "Document": 2
     },
     "nameservers": []
 }

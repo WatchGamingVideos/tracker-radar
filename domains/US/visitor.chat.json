@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000572,
+    "sites": 8,
     "subdomains": [
         "api",
-        "cdn"
+        "cdn",
+        "cs-alb"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,15 +22,19 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "aea625c4c5f6a16b41c702586d7c8322eda32555bc5fc5048cf3269180f3e895"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "usedcarsni.com",
+                "superbikefactory.co.uk",
+                "www.pentagon-group.co.uk",
+                "www.perrys.co.uk",
                 "www.usedcarsni.com"
             ]
         },
@@ -41,23 +46,27 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
-                "window.name": 2,
-                "Navigator.prototype.product": 2
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "window.name": 4,
+                "Navigator.prototype.product": 4,
+                "Event.prototype.timeStamp": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
+                "ea140c1c00f4e77a5ffbd66f5d172f15b50ffaa7044ce55033a6f2ffa5d44fad",
                 "f18c20c7003ae3a5cf4316dff0d6ea8247181f4a6137a484f0b929098796b6af"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "usedcarsni.com",
+                "superbikefactory.co.uk",
+                "www.pentagon-group.co.uk",
+                "www.perrys.co.uk",
                 "www.usedcarsni.com"
             ]
         },
@@ -69,18 +78,44 @@
                 "api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
+                "e9f3647b904812a87e2689ff22831efc400b63873240a43b504d0baf3d3ca2d7",
+                "5b216ad34f6189cccaf3fc8e18c6f8e0c6d2819d1a6cabdb93ee1a6f4cf23694",
                 "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_hjTLDTest": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "superbikefactory.co.uk",
+                "www.pentagon-group.co.uk",
+                "www.perrys.co.uk",
+                "www.usedcarsni.com"
+            ]
+        },
+        {
+            "rule": "visitor\\.chat\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs-alb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "usedcarsni.com",
-                "www.usedcarsni.com"
+                "superbikefactory.co.uk",
+                "www.perrys.co.uk"
             ]
         }
     ],
@@ -88,11 +123,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "XHR": 2
+        "Script": 8,
+        "XHR": 4,
+        "WebSocket": 2
     },
     "nameservers": [
-        "jean.ns.cloudflare.com",
-        "jonah.ns.cloudflare.com"
+        "jonah.ns.cloudflare.com",
+        "jean.ns.cloudflare.com"
     ]
 }

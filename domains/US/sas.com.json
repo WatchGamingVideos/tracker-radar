@@ -7,15 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000831,
-    "sites": 12,
+    "prevalence": 0.0000214,
+    "sites": 3,
     "subdomains": [
-        "execution-euw.ci360",
         "execution-cisczusp.ci360",
-        "i-us.ci360",
-        "execution.mktg",
-        "execution-cistoeup.ci360",
-        "www"
+        "execution-cistoeup.ci360"
     ],
     "cnames": [
         {
@@ -30,28 +26,48 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "sas\\.com\\/js\\/ot-min\\.js",
-            "cookies": 0.0000208,
+            "rule": "sas\\.com\\/js\\/ot-all\\.min\\.js",
+            "cookies": 0.0000143,
             "fingerprinting": 2,
             "subdomains": [
-                "execution-euw.ci360",
                 "execution-cisczusp.ci360",
-                "i-us.ci360",
-                "execution.mktg",
                 "execution-cistoeup.ci360"
             ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "execution.dna360.scholastic.com",
+                    "resolved": "execution-cisczusp.ci360.sas.com"
+                },
+                {
+                    "original": "execution-ci360.stoloto.ru",
+                    "resolved": "execution-cistoeup.ci360.sas.com"
+                }
+            ],
+            "responseHashes": [
+                "1c6134f289a9898178c2a0d4869b96fb572af95b3668c2008e575f7ce9aaa47f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scholastic.com",
+                "www.stoloto.ru"
+            ]
+        },
+        {
+            "rule": "sas\\.com\\/js\\/ot-min\\.js",
+            "cookies": 0.00000715,
+            "fingerprinting": 2,
+            "subdomains": [
+                "execution-cisczusp.ci360",
+                "execution-cistoeup.ci360"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "execution.dna360.scholastic.com",
@@ -66,230 +82,23 @@
                 "014752d6726385251808c831b4f036922cff2d0e03b9fc870e977ca728c1739e"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_SI_SID_1.7801bc571900010afc766fa8": {
-                    "ttl": null,
-                    "length": 43,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_SI_SID_1.681cceba2200012815576dcc": {
-                    "ttl": null,
-                    "length": 42,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "enigaseluce.com",
-                "shop.scholastic.com",
-                "www.bcbsnc.com",
-                "www.bluecrossnc.com",
-                "www.jmp.com",
-                "www.stoloto.ru"
-            ]
-        },
-        {
-            "rule": "sas\\.com\\/js\\/ot-all\\.min\\.js",
-            "cookies": 0.0000415,
-            "fingerprinting": 2,
-            "subdomains": [
-                "execution-cisczusp.ci360",
-                "i-us.ci360",
-                "execution.mktg",
-                "execution-cistoeup.ci360"
-            ],
-            "apis": {
-                "window.sessionStorage": 3,
-                "window.localStorage": 3,
-                "window.name": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.platform": 3,
-                "Navigator.prototype.language": 3,
-                "Document.cookie getter": 3,
-                "Date.prototype.getTimezoneOffset": 3,
-                "Navigator.prototype.plugins": 3,
-                "Navigator.prototype.appName": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "Navigator.prototype.javaEnabled": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Screen.prototype.colorDepth": 3
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [
-                {
-                    "original": "execution.dna360.scholastic.com",
-                    "resolved": "execution-cisczusp.ci360.sas.com"
-                },
-                {
-                    "original": "execution-ci360.stoloto.ru",
-                    "resolved": "execution-cistoeup.ci360.sas.com"
-                }
-            ],
-            "responseHashes": [
-                "78c86efc2099928e8d64991ee31c352c0c8155737d2d3fbc86d81242facfe441"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_SI_VID_1.681cceba2200012815576dcc": {
-                    "ttl": 63072004,
-                    "length": 24,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_SI_DID_1.681cceba2200012815576dcc": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_SI_SID_1.681cceba2200012815576dcc": {
-                    "ttl": null,
-                    "length": 40,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "scholastic.com",
-                "shop.scholastic.com",
-                "www.bcbsnc.com",
-                "www.bluecrossnc.com",
-                "www.jmp.com",
-                "www.stoloto.ru"
-            ]
-        },
-        {
-            "rule": "sas\\.com\\/includes\\/fonts\\/an\\/b4199f62-4009-46e6-9359-5c262251c962\\.woff",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d01125f9703bcd464dc0fe3f645093af6facd6e8238533dfc5a0dcb058fffa5a"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jmp.com",
-                "www.jmp.com"
-            ]
-        },
-        {
-            "rule": "sas\\.com\\/includes\\/fonts\\/an\\/bb495831-ebf7-4423-9a14-ee11bf6b292f\\.woff",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a6abf768de4947a6047f29fc749d0d5ee709941d810986b658b87e618349932a"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jmp.com",
-                "www.jmp.com"
-            ]
-        },
-        {
-            "rule": "sas\\.com\\/t\\/e\\/681cceba2200012815576dcc",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "execution.mktg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jmp.com",
-                "www.jmp.com"
-            ]
-        },
-        {
-            "rule": "sas\\.com\\/js\\/ot-api\\.min\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 2,
-            "subdomains": [
-                "execution.mktg",
-                "execution-cistoeup.ci360"
-            ],
-            "apis": {
-                "window.sessionStorage": 1,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie getter": 1,
-                "window.name": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.plugins": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "Navigator.prototype.platform": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Document.cookie setter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "execution-ci360.stoloto.ru",
-                    "resolved": "execution-cistoeup.ci360.sas.com"
-                }
-            ],
-            "responseHashes": [
-                "3193c1a2e87d2848bb121af43c805fae5f4bff8d3079adb4b9f88e27d547c09e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_SI_SID_1.681cceba2200012815576dcc": {
-                    "ttl": null,
-                    "length": 42,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jmp.com",
                 "www.stoloto.ru"
             ]
         },
         {
             "rule": "sas\\.com\\/t\\/s\\/p\\/6befd9a02400013179aba889",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "execution-cistoeup.ci360"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "execution-ci360.stoloto.ru",
@@ -309,14 +118,14 @@
         },
         {
             "rule": "sas\\.com\\/t\\/e\\/6befd9a02400013179aba889",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "execution-cistoeup.ci360"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "execution-ci360.stoloto.ru",
@@ -335,15 +144,15 @@
             ]
         },
         {
-            "rule": "sas\\.com\\/t\\/s\\/c\\/6befd9a02400013179aba889",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "rule": "sas\\.com\\/js\\/ot-api\\.min\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
             "subdomains": [
                 "execution-cistoeup.ci360"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "execution-ci360.stoloto.ru",
@@ -351,13 +160,38 @@
                 }
             ],
             "responseHashes": [
-                "1efb88e3083c22e7a075fdd2d780343e438c7198e8a6b3b214806b2b1095d6e1"
+                "5f8308b0efb2b804cc124a72fb3749b95122f366b708dc7fd5218b6d35cd41b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stoloto.ru",
+                "www.stoloto.ru"
+            ]
+        },
+        {
+            "rule": "sas\\.com\\/t\\/s\\/c\\/6befd9a02400013179aba889",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "execution-cistoeup.ci360"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "execution-ci360.stoloto.ru",
+                    "resolved": "execution-cistoeup.ci360.sas.com"
+                }
+            ],
+            "responseHashes": [
+                "58b36c4d0456a659bb490eb177a42fc2a663d2fba0b43e20630571c2bca756bd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ym_d": 0.000006922043941134938
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
                 "stoloto.ru",
                 "www.stoloto.ru"
@@ -366,18 +200,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000831,
+    "cookies": 0.0000214,
     "types": {
-        "Script": 16,
-        "Font": 4,
-        "XHR": 6
+        "Script": 8,
+        "XHR": 4
     },
-    "nameservers": [
-        "extdns01.na.sas.com",
-        "extdns02.na.sas.com",
-        "extdns03.na.sas.com",
-        "extdns04.na.sas.com",
-        "extdns05.na.sas.com",
-        "extdns06.na.sas.com"
-    ]
+    "nameservers": []
 }

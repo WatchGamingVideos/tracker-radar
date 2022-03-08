@@ -4,14 +4,84 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
+    "prevalence": 0.0000357,
     "sites": 5,
     "subdomains": [
-        "av"
+        "pro",
+        "av",
+        "custom"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ageverify\\.co\\/jsv9\\/av\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pro"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "da2c0883f158d651f51a4a6932335a381214867a485fabbd16f4582ade87b4d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afspraakjes.be",
+                "www.afspraakjes.com"
+            ]
+        },
+        {
+            "rule": "ageverify\\.co\\/iframesV9\\/female\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9dfb05da5c5d03f3a8ee439a0a2f50aaf52b9d076b2c16d464938f066a021757"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afspraakjes.be",
+                "www.afspraakjes.com"
+            ]
+        },
+        {
+            "rule": "ageverify\\.co\\/images\\/female\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fa34cc72c912f6777e6a803a3696b93af4d4964b1a40c3e42b4e075681dffc29"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afspraakjes.be",
+                "www.afspraakjes.com"
+            ]
+        },
         {
             "rule": "ageverify\\.co\\/images\\/AgeVerify\\.png",
             "cookies": 0,
@@ -21,7 +91,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "0f704158f0b68a30ee846295f0e3660f7ea1a8bc1c231b2920f07cfdb627e21b"
@@ -30,12 +100,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bateworld.com",
+                "afspraakjes.be",
                 "www.afspraakjes.com"
             ]
         },
         {
-            "rule": "ageverify\\.co\\/jsv6\\/avp\\.js",
+            "rule": "ageverify\\.co\\/images\\/AVcheck\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -43,17 +113,63 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "07132fa438953875ea5c42829396db8e08f85b1799fddf2cf68b0e7f2668fbb5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "afspraakjes.be",
+                "www.afspraakjes.com"
+            ]
+        },
+        {
+            "rule": "ageverify\\.co\\/cigarhut\\/av\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "custom"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "73d2507843639d80c45d40d9aa0297dcd734a86670f1691f7eabbec9cc7a6ddc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cutscenes.net",
-                "www.cutscenes.net"
+                "cigarhut.com.au",
+                "www.cigarhut.com.au"
+            ]
+        },
+        {
+            "rule": "ageverify\\.co\\/cigarhut\\/AVbackground\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "custom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "081baeb7c0cf572bdc35ba22e9687bac6e12582c4f84e792b6ca14793b40034a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cigarhut.com.au",
+                "www.cigarhut.com.au"
             ]
         }
     ],
@@ -61,11 +177,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2,
-        "Script": 2
+        "Script": 4,
+        "Document": 2,
+        "Image": 8
     },
     "nameservers": [
-        "ns2.bluehost.com",
-        "ns1.bluehost.com"
+        "ns1.bluehost.com",
+        "ns2.bluehost.com"
     ]
 }

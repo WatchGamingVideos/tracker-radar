@@ -9,11 +9,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/prod\\/consumer-header\\.html",
@@ -22,7 +22,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "0ae1c3be319ea2a0f2d8a2451860981ccbdd7f9d67ba70eac9acb1f1e077535f"
@@ -42,7 +42,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "0de8e4cb3ebc4499781e47dd3e8988ce661de5ba7073e35ac1269cc6ef8ed514"
@@ -54,6 +54,118 @@
                 "ee.co.uk",
                 "community.ee.co.uk"
             ]
+        },
+        {
+            "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/production-eagle\\/css\\/clientlibs_myee\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "12e60200f2cb43e1b3a48a3979cc6d2c90784fe879ad48ce7771fa4919a8802a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ee.co.uk",
+                "id.ee.co.uk",
+                "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/production-eagle\\/css\\/clientlibs_meganav\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "c9724512864ca45e08c041af33423f4cc1a00f808ac744aed041ed72354a1148"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ee.co.uk",
+                "id.ee.co.uk",
+                "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/production-eagle\\/js\\/clientlibs_headjs\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "6f76bf3e2e7ed6ee8dc84955cabf02347f31e522186e06c42ebb942c300cec58"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ee.co.uk",
+                "id.ee.co.uk",
+                "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/production-eagle\\/js\\/clientlibs_myee\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "efa048e2019278b7bd14a28052b6c626d22a8b8abbdde9f2c275a49f0dac88ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ee.co.uk",
+                "id.ee.co.uk",
+                "myaccount.ee.co.uk"
+            ]
+        },
+        {
+            "rule": "ee-dtp-static\\.s3\\.amazonaws\\.com\\/production-eagle\\/js\\/clientlibs_meganav\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "fb7e4ea945b987d55c3c435e88b6336092ff79e6d407f2385de2562887892c13"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ee.co.uk",
+                "id.ee.co.uk",
+                "myaccount.ee.co.uk"
+            ]
         }
     ],
     "categories": [
@@ -62,12 +174,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Stylesheet": 6,
+        "Script": 9
     },
     "nameservers": [
+        "ns-1173.awsdns-18.org",
         "ns-674.awsdns-20.net",
         "ns-328.awsdns-41.com",
-        "ns-1620.awsdns-10.co.uk",
-        "ns-1173.awsdns-18.org"
+        "ns-1620.awsdns-10.co.uk"
     ]
 }

@@ -7,11 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000969,
-    "sites": 14,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
         "psm",
-        "receive"
+        "receive",
+        "identity.api",
+        "inbrain",
+        "telemetry.api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,8 +27,8 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "fbe0c1e0a40178d27cdcdd5ae99c60c6e8545e36aaa44f14d0d767b842a91d31"
@@ -35,12 +38,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "play.hbogo.com",
-                "roosterteeth.com",
-                "truecrimedaily.com",
-                "www.bleacherreport.com",
-                "www.hbo.com",
-                "www.hbomax.com"
+                "www.hbomax.com",
+                "www.hbo.com"
             ]
         },
         {
@@ -51,8 +50,8 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -60,12 +59,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "play.hbogo.com",
-                "roosterteeth.com",
-                "truecrimedaily.com",
-                "www.bleacherreport.com",
-                "www.hbo.com",
-                "www.hbomax.com"
+                "www.hbomax.com",
+                "www.hbo.com"
             ]
         },
         {
@@ -73,11 +68,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "receive"
+                "receive",
+                "identity.api"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -85,12 +81,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "play.hbogo.com",
-                "roosterteeth.com",
-                "truecrimedaily.com",
-                "www.bleacherreport.com",
-                "www.hbo.com",
-                "www.hbomax.com"
+                "www.hbomax.com",
+                "www.hbo.com"
             ]
         },
         {
@@ -98,11 +90,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "receive"
+                "receive",
+                "identity.api"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -112,12 +105,75 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "play.hbogo.com",
-                "roosterteeth.com",
-                "truecrimedaily.com",
-                "www.bleacherreport.com",
-                "www.hbo.com",
-                "www.hbomax.com"
+                "www.hbomax.com",
+                "www.hbo.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/render",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inbrain"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "CDPID": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "bleacherreport.com",
+                "www.hbomax.com",
+                "www.hbo.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/tel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "telemetry.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hbo.com",
+                "www.hbo.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/tel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "telemetry.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hbo.com",
+                "www.hbo.com"
             ]
         }
     ],
@@ -125,8 +181,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 14,
-        "Preflight": 14
+        "XHR": 11,
+        "Preflight": 8
     },
     "nameservers": [
         "ns-505.awsdns-63.com",

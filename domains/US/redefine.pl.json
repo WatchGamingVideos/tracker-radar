@@ -7,36 +7,77 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
-    "sites": 5,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
-        "redirector"
+        "redirector",
+        "distro",
+        "hls",
+        "yag"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 3,
     "resources": [
         {
-            "rule": "redefine\\.pl\\/r\\/qgim1bqwiy3v8u4ym3g2hp942orqixkr\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "redefine\\.pl\\/versions\\/cp-player-2\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 3,
             "subdomains": [
                 "redirector"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2,
+                "MediaSource.isTypeSupported": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "Navigator.prototype.connection": 2,
+                "URL.createObjectURL": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.deviceMemory": 1
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
-            "type": "Media",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "interia.pl",
-                "pogoda.interia.pl"
+                "polsatnews.pl",
+                "www.polsatnews.pl"
             ]
         },
         {
-            "rule": "redefine\\.pl\\/r\\/oskrbcxi2uxyauq51q5bdkzgqjtmtqmb\\.mp4",
+            "rule": "redefine\\.pl\\/versions\\/cp-player-loader\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -44,26 +85,137 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
-            "type": "Media",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "przyslijprzepis.pl",
-                "www.przyslijprzepis.pl"
+                "polsatnews.pl",
+                "www.polsatnews.pl"
+            ]
+        },
+        {
+            "rule": "redefine\\.pl\\/partner_api\\/v1\\/BL6S72\\/media\\/30394\\/live\\/player_data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "distro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "01c50d53c538a75e4bc78f6ce0ff01261e95290d0ef5e4b38fd6701ae4d7d508"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polsatnews.pl",
+                "www.polsatnews.pl"
+            ]
+        },
+        {
+            "rule": "redefine\\.pl\\/partner_api\\/v1\\/BL6S72\\/media\\/30394\\/live\\/next_media",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "distro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d24bed0abf863226fb750fa44ddeda420c1e574a5d85292fa97eb46518e2ee3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polsatnews.pl",
+                "www.polsatnews.pl"
+            ]
+        },
+        {
+            "rule": "redefine\\.pl\\/665614B1\\/30394\\/0\\/dash_iptv_720\\/live\\.mpd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hls"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "86a8f3eb75c9666f813a358da9cc24c06bae43fa49a7a6b297b1ed1c23a6d5ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polsatnews.pl",
+                "www.polsatnews.pl"
+            ]
+        },
+        {
+            "rule": "redefine\\.pl\\/events\\/player",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9d42a8ca640dc0cbb191b95e249427a8e7958f8e9c9dc58ab8a6c420b20624c3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polsatnews.pl",
+                "www.polsatnews.pl"
+            ]
+        },
+        {
+            "rule": "redefine\\.pl\\/events\\/player",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "polsatnews.pl",
+                "www.polsatnews.pl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000214,
     "types": {
-        "Media": 4
+        "Script": 2,
+        "Image": 2,
+        "XHR": 8,
+        "Preflight": 2
     },
     "nameservers": [
-        "nss.bellona.pl",
-        "ns.bellona.pl"
+        "ns.bellona.pl",
+        "nss.bellona.pl"
     ]
 }

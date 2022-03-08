@@ -4,14 +4,88 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
-        "webchat-sdk"
+        "webchat-sdk",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "hubtype\\.com\\/MK\\/webchat\\.botonic\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webchat-sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 1,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b59f2e42189f204f44928c8d8f3d40d20977cb275cc76289fdfb107db9f88a86"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michaelkors.co.uk",
+                "www.michaelkors.co.uk"
+            ]
+        },
+        {
+            "rule": "hubtype\\.com\\/v1\\/provider_accounts\\/2b51a67c-e119-4615-a303-ecec0745f551\\/visibility\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michaelkors.co.uk",
+                "www.michaelkors.co.uk"
+            ]
+        },
+        {
+            "rule": "hubtype\\.com\\/v1\\/provider_accounts\\/2b51a67c-e119-4615-a303-ecec0745f551\\/visibility\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michaelkors.co.uk",
+                "www.michaelkors.co.uk"
+            ]
+        },
         {
             "rule": "hubtype\\.com\\/whsmith\\/webchat\\.botonic\\.js",
             "cookies": 0,
@@ -20,15 +94,15 @@
                 "webchat-sdk"
             ],
             "apis": {
-                "Navigator.prototype.product": 1,
-                "Navigator.prototype.userAgent": 1,
-                "window.name": 1,
-                "Navigator.prototype.appVersion": 1,
-                "window.localStorage": 1,
-                "window.sessionStorage": 1
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ca77b35e7ae9af181d335a3503121ac43a1329775029cb1dba71587e9d39b519"
@@ -46,12 +120,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
+        "ns-13.awsdns-01.com",
         "ns-999.awsdns-60.net",
         "ns-1818.awsdns-35.co.uk",
-        "ns-1242.awsdns-27.org",
-        "ns-13.awsdns-01.com"
+        "ns-1242.awsdns-27.org"
     ]
 }

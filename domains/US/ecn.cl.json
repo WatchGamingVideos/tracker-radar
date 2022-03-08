@@ -7,17 +7,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
         "appsnew",
         "cache-comentarios",
-        "unomi",
-        "cache-elastic",
-        "proxyimg",
-        "cometd2",
+        "cache-elastic-pandora",
         "cometd3",
-        "ugc"
+        "cometd4",
+        "unomi",
+        "cdngrm",
+        "imgtv",
+        "videosetv"
     ],
     "cnames": [
         {
@@ -33,14 +34,14 @@
     "resources": [
         {
             "rule": "ecn\\.cl\\/bt\\/pingAudience",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "appsnew"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apps.emol.com",
@@ -59,132 +60,15 @@
             ]
         },
         {
-            "rule": "ecn\\.cl\\/Comments\\/Api",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cache-comentarios"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3f72f4e9fae7dc06d8c8c07ada88a3cc2a09c8eb9ff30a603bfb93395294273a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "ecn\\.cl\\/context\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unomi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "unm.emol.com",
-                    "resolved": "unomi.ecn.cl"
-                }
-            ],
-            "responseHashes": [
-                "af58d4d3eeb1265bdefec95d96177648f4df25f3662aef94e255b929d1d99b5a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "context-session-id": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "ecn\\.cl\\/propiedades\\/_search",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cache-elastic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "de229ae80320b25f4a0417ed93c4784ac6033717b1620b158ed43cf2b82ff83e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "ecn\\.cl\\/120\\/imgclasificados2\\.emol\\.com%2FProyectos%2Fimagenes%2Fdocs_corredores%2Farchivos%2F1222%2F1032808%2F06090f6d13c1c730795ed8c7df189d65\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proxyimg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "80fd03f28f64bc314e214050419ac2128e2e19a6624cecc70f6b6ed3a6b2c036"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
-            "rule": "ecn\\.cl\\/120\\/imgclasificados1\\.emol\\.com%2FProyectos%2Fimagenes%2Fdocs_corredores%2Farchivos%2F29%2F917276%2F273554503d1adfbf753cbb73ef45aa1f\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proxyimg"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5beff73aa8189f013cfb6bb897b10e40b9a2f00abc0388d42c1284ecae6a82d3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "emol.com",
-                "www.emol.com"
-            ]
-        },
-        {
             "rule": "ecn\\.cl\\/bt\\/rdb\\.pram\\.v1\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 1,
             "subdomains": [
                 "appsnew"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apps.emol.com",
@@ -203,19 +87,44 @@
             ]
         },
         {
-            "rule": "ecn\\.cl\\/emol\\/cometd",
+            "rule": "ecn\\.cl\\/Comments\\/Api",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cometd2",
-                "cometd3"
+                "cache-comentarios"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "e2c0da8883bee508a550b897c3d3f0774d82dc4fa22711a279dfdb65ff7e8f0d",
+                "823fb309539572651cac6297f1a0f045bf7099976e790feaf73c9790c2261c43"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/emol\\/noticia\\/_search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
+            "responseHashes": [
+                "b7a46e87b06f63ef0d5952270cc0ef2442f9cd7535708fa03f7690a961684b48"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -232,7 +141,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apps.emol.com",
@@ -251,6 +160,57 @@
             ]
         },
         {
+            "rule": "ecn\\.cl\\/emol\\/cometd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cometd3",
+                "cometd4"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/context\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unomi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "unm.emol.com",
+                    "resolved": "unomi.ecn.cl"
+                }
+            ],
+            "responseHashes": [
+                "ab156be5c630ec81c549cf7840566efa0b3ca98bb09a59b4b6b79b05727c47db"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "context-session-id": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "emol.com",
+                "www.emol.com"
+            ]
+        },
+        {
             "rule": "ecn\\.cl\\/eventcollector",
             "cookies": 0,
             "fingerprinting": 0,
@@ -259,7 +219,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "unm.emol.com",
@@ -278,36 +238,605 @@
             ]
         },
         {
-            "rule": "ecn\\.cl\\/upload\\/files\\/2018\\/06\\/04\\/clocchiatti-alejandro-200\\.jpg",
+            "rule": "ecn\\.cl\\/other\\/js\\/jquery-1\\.11\\.2\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ugc"
+                "cdngrm"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "5441709864fdf6e4b05b5dac130a751de0546f6c066ed1b1d6fbf6dab20ec3cc"
+                "2ecd295d295bec062cedebe177e54b9d6b19fc0a841dc5c178c654c9ccff09c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/other\\/cube\\/jquery\\.plugin\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdngrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4313fb8738adb582c342558f741479d6f2235bd8695efa20387489b7578d6b89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/other\\/cube\\/jquery\\.imagecube\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdngrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c5bba346fe1f3307f43a102e975aab64101798be58dea45bf768cde4edefbfe2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/mediosregionales\\/noticia\\/_search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a570698c4961618ba6bdcc5099ad23db75490752275eefc20ec03ccf72019700"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/forecast\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-comentarios"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "eb7b9bd69c80aa72490c3b3d098c38a47fd51167a1f63462caabb7934b8098a8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/_search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ab4b7fa98108fe9d4de5d10524006b8934118aae445bbdf0380df78a54cea703"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220304054024262",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "22bb08eb9f941180b03dfdb1c0139510dc5eef5242d936248de0a5c1171dce0f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220303110926749",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "71211711286df73b13623687b466894bfc47712bab83b304cec0b20352498b87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/04\\/20220304091827493\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "06bbd27c7a07ed3d110ab3f9dd04b46b60d36c35db23374864be3a4a558efd17"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "emol.com",
-                "www.emol.com"
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/04\\/20220304074713119\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a80c82ea71f59d2581388e99bb575c2a83733877686cdfff94ac130b8b2f1850"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/04\\/20220304113520683\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "67089c024dbf73e5876638eeb005fda2a836ed05a68179067c1cdc34bb9de93a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/04\\/20220304111926233\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "38c74e946d27a40e98fff78d9a347cb21ed2f2d977f87fe943f33a14fa52c9bf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/03\\/20220303121841692\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d2095ab70613dbbdde7a36d5f8026cfb2888dc1ec051a3b3a6aae505925f2f77"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/03\\/20220303095400633\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "db6c6b0a3dd3a7a0baa56c159d6fe6b965b4116076905751023f558bf8816bf3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/03\\/20220303100235402\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a5f68de85470864d66edb4ef654abd2a93839a44b6dd8a5d3494639c51058760"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/02\\/20220302015730502\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e32e88ca17b75a6ff887e1e5c07d6f7a19ae577e09ae60d7ed84165b846dade2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/02\\/20220302014137050\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5824e6273e5942352fd5e344149bf1e47ab6e5e991a3ad941fc4ab9673997d7a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/03\\/20220303074826102\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "261e031a16099181ff40c0031604952589268a1c2d7c6d518c33d93a72f2d538"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220304054459833",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "30b808d2bbc57104ff61aba0d3c623ce482dc3de0ecf419d275975b0be6c9bc2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220304090359741",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "18dfb1db6a677fbb40637a9b965e21cf7b7020747ac6835509f552b6973738dd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/EMOLTV_V2_20220304111804865_480p\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videosetv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220303084840142",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "58a70ad447a602103b1c2f40d32d963fb8df5c92d7174f58d8011c8ba9996266"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/EMOLTV_V2_20220304104343557_480p\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "videosetv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/soytv\\/media\\/20220228031217466",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache-elastic-pandora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0956e5a4427d95df8499298512f31a35d1b55b7301c7fc6853e411ede9b7c96d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/uploads\\/2022\\/03\\/01\\/20220301085355155\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imgtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0a8711db319518f7c1b4429ec0f45edfd321f69a18075a4658a71de30a87eba1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/images\\/10\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdngrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ea5904f1722a05efde0f9e36afc9db9c06c46231b64fdddf2014fcb38b56c755"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
+            ]
+        },
+        {
+            "rule": "ecn\\.cl\\/au_creatives_au_elements\\/elements\\/979\\/6dcd4af32370960cf68f05cb2775b9ed29ca4b62_3001_BANNER_CC_RETORNABLES_SOY_CHILE_710X176-01\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdngrm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f09dc26e539c8f8a7d81d0606388fe186e28bf3f75078c6b2386737d4c1f8f1c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soychile.cl",
+                "www.soychile.cl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000143,
     "types": {
-        "Image": 10,
-        "XHR": 4,
-        "Script": 6,
-        "WebSocket": 2
+        "Image": 30,
+        "Script": 10,
+        "XHR": 25,
+        "WebSocket": 3,
+        "Media": 4
     },
     "nameservers": [
         "rose.ns.cloudflare.com",

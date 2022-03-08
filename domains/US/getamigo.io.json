@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000643,
+    "sites": 9,
     "subdomains": [
-        "tag"
+        "tag",
+        "dat",
+        "log"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -23,7 +25,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "5fcd438b82c4318e7133417d78d664f10c19364f0d185670a41d61b1670ad22f"
@@ -38,21 +40,141 @@
         },
         {
             "rule": "getamigo\\.io\\/static\\/amigo-loader\\.js",
+            "cookies": 0.00000715,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag",
+                "dat"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000357,
+            "cnames": [],
+            "responseHashes": [
+                "05b3b5a2ae51b028f4ffc20235a0ef32ceb5ab3d51a12dd9b875f1d7e101b2ae",
+                "659b45532fed30365bc14595136aa59ce2cc95685a21c0290fdc5517523b503b",
+                "76bc93fb6412e54edd7df4506ca6445d928b3272188c5d94d2fcbfdaa9a145c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "amigo-id": {
+                    "ttl": 31557602,
+                    "length": 53,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "amigo-session-id": {
+                    "ttl": 7202,
+                    "length": 53,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk",
+                "www.oliverstravels.com"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/sdk\\/amigo\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "717c806e7571691d9476662c02dcea499bc356efdda6baf2de8df7fb8540b55e",
+                "88c166a1d8dc33aad0a7cb433ceab15f9ea9c2a39e1b4d0400e9cdcc546282ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/addClass\\/v2\\.1\\.0\\/",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "tag"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.mimeTypes": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "a25cf61799a7e5f4a69fb3493ffd4620bf6a9cc3182de2e3eddfb51bad7093a3"
+                "9f7b93de10e52422aa072002091cca29c027d8a8dcd6d0374ea68d1ff1a6dce1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/emitAmigoEvent\\/v1\\.0\\.2\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "9a75f7ad7ec1c623d9b3bfe478503f0c8e5d3a54050b0b4b8738f92bfd10fbf4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/forEachData\\/v1\\.1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9b2241a7b63d2ffcdca013adeb68dc88d84582fc5c328efdfeb7c2b22c213ea5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -61,17 +183,332 @@
                 "o2.co.uk",
                 "www.o2.co.uk"
             ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/getResource\\/v1\\.2\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ed70b8e2fdaef66387d48312610e7e330d417657db394f187fe446bbbe56827e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/invokeJsMethod\\/v1\\.2\\.5\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4d7cfb39a58892bc216a4d573d6c250c00ce5332c1c626e739f7dbc597d00baa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/removeClass\\/v1\\.1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8be6202471bfbb3ac1ac8573aa99671ff0892f872b714d7b7d39f0f9192b2993"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/scrapeData\\/v1\\.0\\.2\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e85a29b7e1efec128444e5120f7039f4c22195bfe5d4d61ea654a15e31dffcef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/setData\\/v1\\.3\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "02a6dbb68ac9e25fb61884da36cf311f43042efbe271270c31b8a31cfc5b1c16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/setResource\\/v1\\.3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e90c2055c064ef2c21ff29e0755f9a775dcaa6de47ccea65068a9d8f1267b640"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/testData\\/v1\\.5\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "df1e2576763462f4eb4de7fb5d7d2e9ca72c861108bd7e3ca4bb4e103abc2ffd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/watchAmigoEvent\\/v1\\.1\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c3d32b1b470cf589c66b126580f7ce4147604de247cc44129c1bc8dc052b2069"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/watchData\\/v1\\.0\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "fd20cb735453efa3b71408c9b8e529f94c9b57be4d525f619c5489ae577801ff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/testElement\\/v1\\.2\\.1\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6496e4806dfb26e0ad82da64105a29b02c41c29f4e4897eb72386dda7275194c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/plugin\\/cssLoader\\/v1\\.3\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.mimeTypes": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "5225b26f2d429fff9ef572a317a0d7e8e1251b2e19b0c39e5eae87a885899f7e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.hertz.se",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/js\\/491ad8b9385f661d5037a601e71c04cef0ee0962fc272c37acceaa0651bba2db\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "de7153780b26826af284d4e965a9b93f75bc297dbdc1ed2d8e9d96c076b81c09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hertz.co.uk",
+                "www.hertz.se"
+            ]
+        },
+        {
+            "rule": "getamigo\\.io\\/pixel\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "log"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b79f422fe396f004168faae4424b618ee2024c434c5f78b341c9da42c04db1c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hertz.se",
+                "www.hertz.se"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000692,
+    "cookies": 0.0000214,
     "types": {
-        "Script": 4
+        "Script": 45,
+        "Image": 2
     },
     "nameservers": [
         "b.dns.gandi.net",
-        "a.dns.gandi.net",
-        "c.dns.gandi.net"
+        "c.dns.gandi.net",
+        "a.dns.gandi.net"
     ]
 }

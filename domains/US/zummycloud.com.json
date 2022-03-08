@@ -4,41 +4,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000357,
+    "sites": 5,
     "subdomains": [
+        "tracker",
         "https-files"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "zummycloud\\.com\\/stats\\/read",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1a0c75eeb0d1577d416d28b7a5d04146836d42af1c06f89eed1f3e8eb85bc830"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "user_id": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "finansavisen.no",
+                "www.hammarbyfotboll.se"
+            ]
+        },
+        {
             "rule": "zummycloud\\.com\\/nyteknik\\/script\\/connect\\.min\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "https-files"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "737c679a8606b1c1286fe58cb7e75f5f8385f55fe18d4336eb741459b71feeb6"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "user_id": {
-                    "ttl": 31536005,
-                    "length": 41,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nyteknik.se",
@@ -48,8 +64,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0,
     "types": {
+        "XHR": 2,
         "Script": 2
     },
     "nameservers": [

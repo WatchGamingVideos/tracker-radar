@@ -4,15 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00009,
-    "sites": 13,
+    "prevalence": 0.0000786,
+    "sites": 11,
     "subdomains": [
         "al241907p",
-        "ql072012p",
-        "databricks",
         "fn152111p",
-        "bc281020p",
-        "bl091912p"
+        "ql072012p",
+        "cyberark",
+        "databricks",
+        "bc281020p"
     ],
     "cnames": [
         {
@@ -24,13 +24,14 @@
     "resources": [
         {
             "rule": "searchunify\\.com\\/resources\\/Allow\\/an\\.js",
-            "cookies": 0.0000415,
+            "cookies": 0.0000429,
             "fingerprinting": 1,
             "subdomains": [
                 "al241907p",
-                "ql072012p",
-                "databricks",
                 "fn152111p",
+                "ql072012p",
+                "cyberark",
+                "databricks",
                 "bc281020p"
             ],
             "apis": {
@@ -39,7 +40,7 @@
                 "Document.cookie setter": 5
             },
             "sites": 7,
-            "prevalence": 0.0000485,
+            "prevalence": 0.00005,
             "cnames": [
                 {
                     "original": "searchunify.broadcom.com",
@@ -48,9 +49,10 @@
             ],
             "responseHashes": [
                 "e4009ca1f0a56b451d3af77a9e144892eff49eabf9fef5c86a8f3da753bc4ea0",
-                "5e542c513ed59d733ffa81d69254b0741602b39718ec529c13fbae1ae58c503f",
-                "c0893e94b3e65c9e54ccdc14ca100ff15f5a752324c11396379951bef33ee5d3",
                 "6a7ec9a943ae0a8806f9deaf5b2a7288167beab6053b90417d3851e662d4c6dc",
+                "5e542c513ed59d733ffa81d69254b0741602b39718ec529c13fbae1ae58c503f",
+                "7b3a61e251a93f51257a0cbe17823a584ff82b03eb90763ff0e7fb91460a73fc",
+                "c0893e94b3e65c9e54ccdc14ca100ff15f5a752324c11396379951bef33ee5d3",
                 "93b7800bef35d896024450b3c88d2138ba38e3e861d1510c6add1322c3b75eb6"
             ],
             "type": "Script",
@@ -58,13 +60,13 @@
                 "_gz_sid": {
                     "ttl": 3600,
                     "length": 16,
-                    "prevalence": 0.00003461021970567469,
+                    "prevalence": 0.00003574952453132374,
                     "uniqueness": 1
                 },
                 "_gz_taid": {
-                    "ttl": 31536000,
+                    "ttl": 31536001,
                     "length": 16,
-                    "prevalence": 0.00003461021970567469,
+                    "prevalence": 0.00003574952453132374,
                     "uniqueness": 1
                 }
             },
@@ -72,10 +74,10 @@
             "exampleSites": [
                 "alteryx.com",
                 "community.alteryx.com",
+                "community.fortinet.com",
                 "community.qlik.com",
+                "docs.cyberark.com",
                 "docs.databricks.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com",
                 "knowledge.broadcom.com"
             ]
         },
@@ -91,11 +93,10 @@
                 "window.localStorage": 2,
                 "window.sessionStorage": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.languages": 2,
                 "Navigator.prototype.language": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "816e1fb03275c86486c3fbe6e3675af558f6c7b4a023e82af1f67c7e2222f2f5"
@@ -110,18 +111,18 @@
         },
         {
             "rule": "searchunify\\.com\\/analytics\\/track\\.png",
-            "cookies": 0.0000554,
+            "cookies": 0.0000429,
             "fingerprinting": 0,
             "subdomains": [
                 "al241907p",
-                "ql072012p",
                 "fn152111p",
-                "bc281020p",
-                "bl091912p"
+                "ql072012p",
+                "cyberark",
+                "bc281020p"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [
                 {
                     "original": "searchunify.broadcom.com",
@@ -134,18 +135,16 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gz_sid": 0.00004153226364680963,
-                "_gz_taid": 0.00004153226364680963
+                "_gz_sid": 0.000028599619625058987,
+                "_gz_taid": 0.000028599619625058987
             },
             "exampleSites": [
                 "alteryx.com",
                 "community.alteryx.com",
+                "community.fortinet.com",
                 "community.qlik.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com",
-                "knowledge.broadcom.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
+                "docs.cyberark.com",
+                "knowledge.broadcom.com"
             ]
         },
         {
@@ -157,7 +156,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "58fa132df9a01189156b9a529675669fe6c38b13c3c7369dcb366dbb9829a93d"
@@ -171,6 +170,54 @@
             ]
         },
         {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fn152111p"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0fd3eda44f269a2f50925e8f5984f493ca5677bfdf30068057cb170739c4262c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortinet.com",
+                "community.fortinet.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fn152111p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9847b7aa163f6bae13b50f67496c31d8de6ed0c53cb5fd06d3ffcc1b32722376"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fortinet.com",
+                "community.fortinet.com"
+            ]
+        },
+        {
             "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/cb43fd48-5178-11eb-8a9b-0242ac120002\\/searchbox\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -179,10 +226,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "830e76c1cdfe0533987128da0e3493ee5c1f1085240e2b5151633d42f38a0b10"
+                "9360c3547dd9d0c6df42cfb819820ef0986d1e07c21ffc40e931a9b4bcde4c2d"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -200,12 +247,10 @@
                 "ql072012p"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "7309a301b6f6399a03e0f4fe2913069e2548a953cc127ddde3b34db04c8392e4"
@@ -226,12 +271,10 @@
                 "ql072012p"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ac7edef4ea3b45ef1a5233ef8e6d49c5dbcc5fa0c08dbbfe7fb3ee10900eee50"
@@ -245,6 +288,328 @@
             ]
         },
         {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/0d99d231-d8b2-11ea-8f5c-0242ac120009\\/searchbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0d1d6c7a4fb5197593c708607e4654e24455fc690149501b94e7b9faaa1a8965"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/0d99d231-d8b2-11ea-8f5c-0242ac120009\\/external_styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "57e03417f5af1b7535ef1143e4d87df63ef86977cc92bb213b76921914560bfa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/0d99d231-d8b2-11ea-8f5c-0242ac120009\\/external_scripts\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cyberark"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4a3ca6c0976515c68ab01341b1d02b70697a624bf27d28e6f2c4f6bd09059bed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/0d99d231-d8b2-11ea-8f5c-0242ac120009\\/searchbox\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "806b8915cf7cfc9dbc1ca026612dfddf925f44893208da2247e7e85a4b0cee86"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/0d99d231-d8b2-11ea-8f5c-0242ac120009\\/searchbox\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c95cd8b7ad6c7a8bfbccb1e8ede72b5c4cf212c46e7fbde0201c2cbd7222ece1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cd638f4bd9c28be31d898c1cd870358f7e697158e9546cad06982d1566f72cfe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/Assets\\/while-searching\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "ac3fad1f4782e3e4f24a9541ad525c3a1b4fd4ae3441788a6f1336c7dc83d5b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/Assets\\/recent_search\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "7c4524ffe47b355b674b655fdad4032b1aae4a55004c149a0998bb3be97c4477"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/Assets\\/auto_suggestion\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "4454a3e7a01efac30b4377ec27626da387748816bdf7a3a86e0a97ca8109b860"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/Assets\\/tick-green\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "040bbc5ae32f07279edcc1537f783f66e263dd206387ae764d0f866e631f8b3a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/resources\\/Assets\\/tick-grey\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "67e878e169ee9655a099844e7b7cb520a717dcbfee6b80bf50d541783b1e3025"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingDataInstance",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "814c9cdab235349580122c53bec46dfe08365c410d469e80aad7ecf2ee8bb069"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
+            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingDataInstance",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cyberark",
+                "databricks"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cyberark.com",
+                "docs.databricks.com"
+            ]
+        },
+        {
             "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/7dc8d13f-90bb-11e9-98a5-06d762ad9a62\\/searchbox\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -253,7 +618,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "b03f44566519788d0ed826f3c5ac4817256313257fe2494dc6aa63edf5f27fcc"
@@ -275,7 +640,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "57e03417f5af1b7535ef1143e4d87df63ef86977cc92bb213b76921914560bfa"
@@ -297,7 +662,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "1e62f9a143ce2df2e5e98c7e3cfef3c15018b2cb63b95f5affa4b34b33af666d"
@@ -323,7 +688,7 @@
                 "window.name": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "4a3ca6c0976515c68ab01341b1d02b70697a624bf27d28e6f2c4f6bd09059bed"
@@ -345,7 +710,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "0d68c5bb7efbf6345bafaa1ed1b4f0698595bf0f265a6a9b72ce4cd2e1115318"
@@ -369,7 +734,7 @@
                 "window.localStorage": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ddedd41df8775ed3fc5178a083765ed27a9e90297ccac45ba8d9900f6cbd0e37"
@@ -384,14 +749,14 @@
         },
         {
             "rule": "searchunify\\.com\\/analytics\\/suanlytics\\.png",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "databricks"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "601b885eb9a7cdc51db278d06b08baf39aea91417d192ccf3cb7d6943d5dbf54"
@@ -399,8 +764,8 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_gz_sid": 0.000013844087882269877,
-                "_gz_taid": 0.000013844087882269877
+                "_gz_sid": 0.000014299809812529493,
+                "_gz_taid": 0.000014299809812529493
             },
             "exampleSites": [
                 "databricks.com",
@@ -416,96 +781,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "26ecbf67ac256365f073d1b4aa9300de994e3a7fcb2258332b0df2e4eb7c3fcb"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingData",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingData",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cd638f4bd9c28be31d898c1cd870358f7e697158e9546cad06982d1566f72cfe"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingDataInstance",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "814c9cdab235349580122c53bec46dfe08365c410d469e80aad7ecf2ee8bb069"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/pageRating\\/getPageRatingDataInstance",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -522,7 +803,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "cfc4f7ebe2a19c12a883fc0964dccd97df315caab0ec9e8e2e5460c70ed59752"
@@ -534,456 +815,17 @@
                 "databricks.com",
                 "docs.databricks.com"
             ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/Assets\\/while-searching\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks",
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "ac3fad1f4782e3e4f24a9541ad525c3a1b4fd4ae3441788a6f1336c7dc83d5b4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/Assets\\/recent_search\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks",
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "7c4524ffe47b355b674b655fdad4032b1aae4a55004c149a0998bb3be97c4477"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/Assets\\/auto_suggestion\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks",
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "4454a3e7a01efac30b4377ec27626da387748816bdf7a3a86e0a97ca8109b860"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/Assets\\/tick-green\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks",
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "040bbc5ae32f07279edcc1537f783f66e263dd206387ae764d0f866e631f8b3a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/Assets\\/tick-grey\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "databricks",
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "67e878e169ee9655a099844e7b7cb520a717dcbfee6b80bf50d541783b1e3025"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "databricks.com",
-                "docs.databricks.com",
-                "support.bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "fn152111p"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 2,
-                "Event.prototype.timeStamp": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "f3ad02d051903bbec44aaba78e1134576252e62551d2d56983d22335ce4df3f3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fortinet.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/8021d0dd-1517-11ec-b3e2-0242ac12000d\\/searchbox\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fn152111p"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "9847b7aa163f6bae13b50f67496c31d8de6ed0c53cb5fd06d3ffcc1b32722376"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fortinet.com",
-                "forum.fortinet.com",
-                "kb.fortinet.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/bot\\/css\\/index\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "564b6ee0fbfcd9704df374cfcba10c4aae384b7a53ea03ab6774c2c7ea3fd231"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/external_styles\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "dd979828c58afa77d2a46b05e921a7ec6cb105b8e44e0cc7ba388164b52a4777"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/main\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "586b9af5c8f63b375348843e2008b350fb2d29b84f9272241f0eff06a85644c4"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/searchbox\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "210ad46d633e7af59dc46738a4de047b57d45425e946944c771619e989b54c69"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/bot\\/js\\/index\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c1f23c0abe3fc348439a6be09a8da53295cfacb1a5d13ca45ad5ba619e6c412c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/external_scripts\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2,
-                "window.name": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "58576ba2bae279d0fc586379572345550380a84515bf6573b00f369c9d677d43"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "23d11b96fa88dfca507dc421e077ac7b0d7e8d5901ceba5f902139255c969213"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/searchbox\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "30fa496c47ea3cd16c2d32d3dbd7cef242109414d20b21a93f9b9e3dca78b0ae"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/\\/resources\\/Allow\\/an\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "dddea51ed0d164f19f6ba82306fa94c2bd3ed6a30f35edaa6da5d216e880b0a5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_gz_sid": {
-                    "ttl": 3601,
-                    "length": 16,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                },
-                "_gz_taid": {
-                    "ttl": 31536001,
-                    "length": 16,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/plugins\\/getAddonsStatus",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0351eee2545f8554667717cb50051e0d6f34eab707bf04e6d9612ddac12ee041"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
-        },
-        {
-            "rule": "searchunify\\.com\\/resources\\/search_clients_custom\\/ce069119-ef51-11e9-81f8-02ae30590d84\\/searchbox\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bl091912p"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bb5ccf3d2c1bb51ca511ca88f54f463c8173f019c199998b94fa917aef6a5862"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bluebeam.com",
-                "www.bluebeam.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00009,
+    "cookies": 0.0000786,
     "types": {
-        "Script": 32,
-        "Image": 30,
+        "Script": 25,
+        "Image": 23,
         "Fetch": 2,
-        "Stylesheet": 19,
-        "XHR": 12,
+        "Stylesheet": 14,
+        "XHR": 10,
         "Preflight": 4
     },
     "nameservers": [

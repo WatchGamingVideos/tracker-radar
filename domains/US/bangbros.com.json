@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
-    "sites": 5,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
-        "images29"
+        "images29",
+        "static",
+        "images1"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e5bea3fb012575b01b1a346dc24b367878450b6c504add240d408a767c72c9b8"
@@ -33,16 +35,97 @@
                 "bangbus.com",
                 "www.bangbrosnetwork.com"
             ]
+        },
+        {
+            "rule": "bangbros\\.com\\/min\\/b=shared\\/scripts&f=jquery\\/1\\.6\\/jquery-1\\.6\\.2\\.min\\.js,jquery\\/plugins\\/cookie\\/jquery\\.cookie\\.js,jquery\\/plugins\\/url\\/2\\.0\\/jquery\\.url\\.js,jquery\\/plugins\\/mobile\\/jquery\\.mobile\\.js,partnersoft\\/partnersoft\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d57de0fa23837f2529261614cccf88d6524246144eb55a552713e8349168e292"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aid": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "prg": {
+                    "ttl": null,
+                    "length": 3,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "cmp": {
+                    "ttl": null,
+                    "length": 11,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "warned": {
+                    "ttl": 126144000,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "psTracked": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bangbrosnetwork.com",
+                "www.bangbrosnetwork.com"
+            ]
+        },
+        {
+            "rule": "bangbros\\.com\\/shared\\/icra\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d1edc6fd97211a4691e76795b96924086fb90513b9a50a9598f310440630735d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bangbrosnetwork.com",
+                "www.bangbrosnetwork.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000143,
     "types": {
-        "Image": 2
+        "Image": 4,
+        "Script": 2
     },
     "nameservers": [
-        "frank.ns.cloudflare.com",
-        "donna.ns.cloudflare.com"
+        "donna.ns.cloudflare.com",
+        "frank.ns.cloudflare.com"
     ]
 }

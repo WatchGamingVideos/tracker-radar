@@ -9,29 +9,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000318,
-    "sites": 46,
+    "prevalence": 0.000393,
+    "sites": 55,
     "subdomains": [
-        "apim-hlrp-ejp-prod",
-        "adac-apim-p-gw02",
-        "paycorapimproduction",
-        "az-am-dig2-use-prd",
-        "prod-uc-core-apim",
-        "drinkaware-apim",
-        "inf-am-api-management-c-prod03",
-        "apim-bcsupport-prod-5501",
+        "cmp-pd",
+        "demonz",
         "voiceintuitive",
-        "apim-gw-azu-nyc-prod",
-        "aswest2extprodampwapi",
+        "apim-hlrp-ejp-prod",
+        "oneottprodapi",
+        "gf-api-apim-p-azwe",
+        "az-am-dig2-use-prd",
+        "apm-publicapps-v1-pro-crd-hd",
+        "drinkaware-apim",
+        "px-pampers-binlite",
+        "apim-kotipizza-ecom-prod",
+        "lk-web-pd-api-1",
+        "em-mm-uks-stg-dna-eas-apim",
+        "rexelapiprd",
         "srf-udp-production-api-mgmt",
         "api-systembolaget",
-        "azpapimp"
+        "prod-discoveruni",
+        "apim-gw-azu-nyc-prod"
     ],
     "cnames": [
-        {
-            "original": "api-az-prod03.extraspace.com",
-            "resolved": "inf-am-api-management-c-prod03.azure-api.net"
-        },
         {
             "original": "api-extern.systembolaget.se",
             "resolved": "api-systembolaget.azure-api.net"
@@ -41,28 +41,146 @@
             "resolved": "drinkaware-apim.azure-api.net"
         },
         {
+            "original": "api.grundfos.com",
+            "resolved": "gf-api-apim-p-azwe.azure-api.net"
+        },
+        {
             "original": "api.nyc.gov",
             "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
         },
         {
-            "original": "api.paycor.com",
-            "resolved": "paycorapimproduction.azure-api.net"
-        },
-        {
-            "original": "api.trugreen.com",
-            "resolved": "azpapimp.azure-api.net"
-        },
-        {
-            "original": "api2.oregonlottery.org",
-            "resolved": "aswest2extprodampwapi.azure-api.net"
-        },
-        {
-            "original": "apim-p-gw02.adac.de",
-            "resolved": "adac-apim-p-gw02.azure-api.net"
+            "original": "api.rexel.fr",
+            "resolved": "rexelapiprd.azure-api.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "azure-api\\.net\\/recommendations\\/personal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmp-pd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdon.dk",
+                "cdon.fi",
+                "cdon.no",
+                "cdon.se"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/recommendations\\/personal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmp-pd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "1d4b6ece86e1e260e75d60320eb25bb235775e85906b5044dffd147e14d83b2a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdon.dk",
+                "cdon.fi",
+                "cdon.no",
+                "cdon.se"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/emergency\\/api\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "demonz"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "5065cedd0fe42688420423d4130127304ab1ef19ee3cb998600ba339b739545d",
+                "61ec1f1cd67ab1bea33228f591074ae722f4a75da4b76e00e634d7fcade6b423"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "disaster.coffsharbour.nsw.gov.au",
+                "disaster.lismore.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/emergency\\/api\\/weather\\/current",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "demonz"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "cee9d41683411c4cd43935c899891bfd5968a27a45c21f6871752654cf7a8ea3",
+                "ce53a312b688f253426a2ce8d514d96afe4c42508a6e503d886cef61f3f687ad"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "disaster.coffsharbour.nsw.gov.au",
+                "disaster.lismore.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/cfg",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "bc65ad7770fa00c1fc6c7b38cdbc6aad50aa575dda29c52480610bd5bf8c40d2",
+                "d5980f97dc905430e27f1d68073ea1847dbacbbf86b998bd2c56728312f09bdd",
+                "754766f16dc721b2d567ac87e703717d08e45b567b63c914e5befe6d1eda8f91",
+                "ecfbcc3ffb9aa283908d49e71de3f5bfaac191355cf36e517cc22f07103a2d8e",
+                "8ea8bfa6c2bd9d3c1142665d7972b585f8fe8a7bdbb005fd45791a41546b29e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ilkkapohjalainen.fi",
+                "www.kainuunsanomat.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ksml.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
         {
             "rule": "azure-api\\.net\\/ee\\/ResolveVisitorId",
             "cookies": 0,
@@ -72,7 +190,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -92,10 +210,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "f92d8b6552b02e888d14629120d2711ef87c065103aece19906c6a392506d7ba"
+                "f0ad8c8f637e562b35153b21c603d60af1c9972baa905c95c0bc08ac642f5a72"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -106,230 +224,114 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/styles\\/toi-bright\\/style\\.json",
+            "rule": "azure-api\\.net\\/ee\\/CaptureUserActivity",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "adac-apim-p-gw02"
+                "apim-hlrp-ejp-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lww.com",
+                "journals.lww.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/ee\\/CaptureUserActivity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-hlrp-ejp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
+                "lww.com",
+                "journals.lww.com"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/styles\\/toi-bright\\/style\\.json",
-            "cookies": 0,
+            "rule": "azure-api\\.net\\/news-analytics\\/news\\/pageviews",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
-                "adac-apim-p-gw02"
+                "oneottprodapi"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e8d5413eb321b4aa6abfef6260e5ddbf8f623f246c5e63318671702732c0eac8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abs-cbn.com",
+                "news.abs-cbn.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/news-analytics\\/news\\/pageviews",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oneottprodapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abs-cbn.com",
+                "news.abs-cbn.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/gpi\\/imaging\\/pumpcurve",
+            "cookies": 0.00000715,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gf-api-apim-p-azwe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
+                    "original": "api.grundfos.com",
+                    "resolved": "gf-api-apim-p-azwe.azure-api.net"
                 }
             ],
             "responseHashes": [
-                "e20fe63e281ed68254618570e44a2fcbdfe6339fb1a82cf7c6f4facbb71455ca"
+                "77876fbbd44d43e39343bbb8a7b2735a524a0f56c7f0bf0c8aeac7d47cc29c5e"
             ],
-            "type": "Fetch",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/data\\/natural_earth2\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/data\\/natural_earth2\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/data\\/planet\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/data\\/planet\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/styles\\/toi-bright\\/sprite\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/mapbox\\/map\\/styles\\/toi-bright\\/sprite\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adac-apim-p-gw02"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "apim-p-gw02.adac.de",
-                    "resolved": "adac-apim-p-gw02.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adac.de",
-                "maps.adac.de"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/pendoservice\\/v1\\/metadata",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "paycorapimproduction"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.paycor.com",
-                    "resolved": "paycorapimproduction.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paycor.com",
-                "secure.paycor.com"
+                "grundfos.com",
+                "product-selection.grundfos.com"
             ]
         },
         {
@@ -341,10 +343,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "8e7606471d4649c6de48cf0ea0aa2e964101d3286738afbfd35bc134ec7b0629"
+                "8265ecc8962ef125d445db4e596536e7013161ea69bb77bb38c027e11986c8a3"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -363,7 +365,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -375,27 +377,45 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/vis\\/v3\\/prod\\/get-inventory",
-            "cookies": 0,
+            "rule": "azure-api\\.net\\/digital-gate\\/digitalGateApi\\/accountwithchannels",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
-                "prod-uc-core-apim"
+                "apm-publicapps-v1-pro-crd-hd"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "7d98c259d0bdd59e4cbf673215696b2badb93ec5291b056671fa2d5576d8c5b0",
-                "95e03d7c5142bcc1a0a0a2ba6faec0a2ffd41d2d7062d2389dfde66a958f9be7"
+                "a7b3398df1ff8967837b698a7eb9efc6fa77250b6ffc4798cb6ec3c896de30f0"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "car.com",
-                "www.car.com",
-                "www.usedcars.com"
+                "avianca.com",
+                "www.avianca.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/digital-gate\\/digitalGateApi\\/accountwithchannels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apm-publicapps-v1-pro-crd-hd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avianca.com",
+                "www.avianca.com"
             ]
         },
         {
@@ -407,7 +427,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -432,7 +452,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -457,7 +477,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -475,14 +495,14 @@
         },
         {
             "rule": "azure-api\\.net\\/content\\/navigation",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "drinkaware-apim"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -490,7 +510,7 @@
                 }
             ],
             "responseHashes": [
-                "892adf43b6e8d3f16700636c072070fa22ae77b03abc441d086a91df7d4c3f4b"
+                "4150351f33e76db1acee9770cc51e2a9489fa916268530a0a0c272a29436b690"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -502,14 +522,14 @@
         },
         {
             "rule": "azure-api\\.net\\/content\\/utilitynavigation",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "drinkaware-apim"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -536,7 +556,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -544,7 +564,7 @@
                 }
             ],
             "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "3870a3ebe97d04a1e3f5691c78d664fc023cc6eed93796e7b5e5a9a275a4b0ca"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -563,7 +583,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -581,14 +601,14 @@
         },
         {
             "rule": "azure-api\\.net\\/content\\/search\\/popularpages",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "drinkaware-apim"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.drinkaware.co.uk",
@@ -607,207 +627,163 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/exram\\/api\\/v2\\/piper\\/pixel\\/",
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814300\\/1\\/2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "inf-am-api-management-c-prod03"
+                "px-pampers-binlite"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api-az-prod03.extraspace.com",
-                    "resolved": "inf-am-api-management-c-prod03.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "1aa6ca99f5cc6bf44513547293ae42320fd56e7a43043e9f627a851e206a9e23"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "extraspace.com",
-                "www.extraspace.com"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/exram\\/api\\/v2\\/piper\\/pixel\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "inf-am-api-management-c-prod03"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api-az-prod03.extraspace.com",
-                    "resolved": "inf-am-api-management-c-prod03.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "extraspace.com",
-                "www.extraspace.com"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/support\\/v1\\/locales\\/en_US\\/channels\\/GBUSA\\/categories",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-bcsupport-prod-5501"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [
-                "5f08c186dfb3b841d16ea2da017346fb3cbf75eb082450d6c93c56096c266c2f"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gildanbrands.com",
-                "www.gildanbrands.com"
+                "pampers.com",
+                "www.in.pampers.com"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/cfg",
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430725576\\/1\\/2",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "voiceintuitive"
+                "px-pampers-binlite"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [
-                "ecfbcc3ffb9aa283908d49e71de3f5bfaac191355cf36e517cc22f07103a2d8e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ksml.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-gw-azu-nyc-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "api.nyc.gov",
-                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "2292fcaf7bf9777ddb523310d70584cd2ce012d2f9ba6f0d1ec003e1ffb76312"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nyc.gov",
-                "www.nyc.gov",
-                "www1.nyc.gov"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "apim-gw-azu-nyc-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "api.nyc.gov",
-                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
-                }
-            ],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nyc.gov",
-                "www.nyc.gov",
-                "www1.nyc.gov"
+                "pampers.com",
+                "www.in.pampers.com"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/drawresults\\/MostRecentDraws",
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814683\\/1\\/2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "aswest2extprodampwapi"
+                "px-pampers-binlite"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api2.oregonlottery.org",
-                    "resolved": "aswest2extprodampwapi.azure-api.net"
-                }
-            ],
+            "prevalence": 0.0000143,
+            "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oregonlottery.org",
-                "www.oregonlottery.org"
+                "pampers.com",
+                "www.in.pampers.com"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/drawresults\\/MostRecentDraws",
-            "cookies": 0.0000138,
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814157\\/1\\/2",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "aswest2extprodampwapi"
+                "px-pampers-binlite"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api2.oregonlottery.org",
-                    "resolved": "aswest2extprodampwapi.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "6cf93381d1fb80e92e02f128dad17269f3de9d241cff243243b9d3340b6bafe5"
-            ],
-            "type": "XHR",
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oregonlottery.org",
-                "www.oregonlottery.org"
+                "pampers.com",
+                "www.in.pampers.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814300\\/1\\/2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px-pampers-binlite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pampers.com",
+                "www.in.pampers.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430725576\\/1\\/2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px-pampers-binlite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pampers.com",
+                "www.in.pampers.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814683\\/1\\/2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px-pampers-binlite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pampers.com",
+                "www.in.pampers.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/binlite\\/buynowlite\\/api\\/retailers\\/4902430814157\\/1\\/2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "px-pampers-binlite"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pampers.com",
+                "www.in.pampers.com"
             ]
         },
         {
@@ -818,272 +794,8 @@
                 "voiceintuitive"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_rewind_15\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_play\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_forward_15\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_ratebutton_1_0\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_speechrate\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_2_0_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_9_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_8_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_7_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_6_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_5_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/round_play_with_text_black\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "a7c119c5a9e6d45a82aaedb0e4fd311abf64c248374a97d068357d7604ec0800"
@@ -1092,6 +804,684 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_rewind_15\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "6b677d7d6617ab2703be8696e76139dfca94e0e6076d1c0a771b0a5c605d6fd4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_play\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "a2d566a136bbae068b949c403c399bc7749a06b9cb156757523bd2f5bd51cd83"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_forward_15\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "d753751285bcda096a2a23413e3cd0b6edf59168711dadea4962c3ed2822f90e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_ratebutton_1_0\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "619c17e4968bfcfcba5971aaa5aab28a1dd4021ad18821faa87c58521f01730c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_speechrate\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "f7b8e5ea1d91a5f612c6b8f6b7e76f16d7261b64d9e2cebbcc3a6771bf28eb6e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_2_0_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "1d489628b5ac1d995d61583898f2690140c8f90d7d52eb7fb8d05f0f30d3d78f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_9_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "0d37457696c2c130b136d3aa6abc92d347a0a4a2ead8bf98435b58c71b4bebb1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_8_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "ed13f13f76b338d58c8d2c961094f02bf2ba8ebd565159eaf64ee7677adae114"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_7_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "d3270202e0a1e9f756ca80cdb0e2021eed624951c52228431c917b82bf7d5d1a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_6_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "2ce76cfa19aac98d4ac79f51bc373a076e721a94795712e74966df907050b3c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_5_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "beb75a026beed4289d10024ae52bb0659e3cdf4ef74d54a1a3dee9243c25f95e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_4_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "55984c9c379f24eeaa79bbd7b23efd6feab6bbeea6dea530993c5ab261d5ccc0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_3_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "1038323365c487b9cf2d3f2ec1208b576a962313ca3979c6aee867ae492657e0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_2_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "9925ea894a7a4b2332a8e8c7004b9728b367c1fb2bd6c30b94e25e382bd8862e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_1_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "fb65ad70c8993ccd0d2429f9c0a15e26d35001bb1e64e887fa40596fe74b85b0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_0_dark\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "1e002697dc035a7f8c342bd156d3c0c71e6b6a887bcbcfe233092a9341349ca1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_9_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "b7adb9490d6449db7dfbfb4f58fff8816385961ab9916e51d3c0cf73474c612d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_8_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "66eb471e69eda65222be952cceaba3110de958cf2a7b1db64cfd313020853620"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_7_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "ad132028d2a1bd862cc39b1afadced3d10254e3243895032b9a9b00b1b0710b6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_6_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "3dad34948a2151279e628bbe45a54d2ab2dfe2770420c8dd318e543eb1981c93"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_5_light\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "ce6de395c9082036e418b20b6ad49f24c0795e4af8ebb1aa8bded31fd504ea31"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_x\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "fe5672a57c9206075859a5e62438e3ca2f734f928f354fe77f71733a09953950"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kirkkojakaupunki.fi",
+                "www.kirkkojakaupunki.fi",
+                "www.ouka.fi",
+                "www.oulunjoukkoliikenne.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/pricing\\/pricing\\/customer\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-kotipizza-ecom-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9817963c82684daec8f15220a196aa308ef0d6c68fec6f042fb364171127e270"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotipizza.fi",
+                "www.kotipizza.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/pricing\\/pricing\\/customer\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apim-kotipizza-ecom-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotipizza.fi",
+                "www.kotipizza.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/web\\/api\\/site\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lk-web-pd-api-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lynkco.com",
+                "www.lynkco.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/web\\/api\\/site\\/country",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lk-web-pd-api-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9b0079f6ca8e71e732e475fc170d74996bfa09be3a29bf64560fa553710dc8d2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lynkco.com",
+                "www.lynkco.com"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "em-mm-uks-stg-dna-eas-apim"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musicmagpie.co.uk",
+                "www.musicmagpie.co.uk"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "em-mm-uks-stg-dna-eas-apim"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "musicmagpie.co.uk",
+                "www.musicmagpie.co.uk"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/resources\\/round_play_with_text_black\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "voiceintuitive"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "ouka.fi",
                 "www.ouka.fi"
             ]
@@ -1105,12 +1495,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "6b677d7d6617ab2703be8696e76139dfca94e0e6076d1c0a771b0a5c605d6fd4"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1127,12 +1517,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a2d566a136bbae068b949c403c399bc7749a06b9cb156757523bd2f5bd51cd83"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1149,29 +1539,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d753751285bcda096a2a23413e3cd0b6edf59168711dadea4962c3ed2822f90e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_4_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1193,12 +1561,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "619c17e4968bfcfcba5971aaa5aab28a1dd4021ad18821faa87c58521f01730c"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1215,12 +1583,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "f7b8e5ea1d91a5f612c6b8f6b7e76f16d7261b64d9e2cebbcc3a6771bf28eb6e"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1237,12 +1605,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "1d489628b5ac1d995d61583898f2690140c8f90d7d52eb7fb8d05f0f30d3d78f"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1259,12 +1627,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "0d37457696c2c130b136d3aa6abc92d347a0a4a2ead8bf98435b58c71b4bebb1"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1281,12 +1649,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "ed13f13f76b338d58c8d2c961094f02bf2ba8ebd565159eaf64ee7677adae114"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1303,12 +1671,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "d3270202e0a1e9f756ca80cdb0e2021eed624951c52228431c917b82bf7d5d1a"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1325,12 +1693,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "2ce76cfa19aac98d4ac79f51bc373a076e721a94795712e74966df907050b3c7"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1347,12 +1715,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "beb75a026beed4289d10024ae52bb0659e3cdf4ef74d54a1a3dee9243c25f95e"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1369,29 +1737,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "55984c9c379f24eeaa79bbd7b23efd6feab6bbeea6dea530993c5ab261d5ccc0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_3_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1413,12 +1759,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "1038323365c487b9cf2d3f2ec1208b576a962313ca3979c6aee867ae492657e0"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1435,12 +1781,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "9925ea894a7a4b2332a8e8c7004b9728b367c1fb2bd6c30b94e25e382bd8862e"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1457,12 +1803,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "fb65ad70c8993ccd0d2429f9c0a15e26d35001bb1e64e887fa40596fe74b85b0"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1479,12 +1825,12 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "1e002697dc035a7f8c342bd156d3c0c71e6b6a887bcbcfe233092a9341349ca1"
             ],
-            "type": "Image",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1501,209 +1847,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "b7adb9490d6449db7dfbfb4f58fff8816385961ab9916e51d3c0cf73474c612d"
             ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_8_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "66eb471e69eda65222be952cceaba3110de958cf2a7b1db64cfd313020853620"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_7_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ad132028d2a1bd862cc39b1afadced3d10254e3243895032b9a9b00b1b0710b6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_6_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3dad34948a2151279e628bbe45a54d2ab2dfe2770420c8dd318e543eb1981c93"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_5_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ce6de395c9082036e418b20b6ad49f24c0795e4af8ebb1aa8bded31fd504ea31"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_controlpanel_x\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fe5672a57c9206075859a5e62438e3ca2f734f928f354fe77f71733a09953950"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_2_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_1_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_1_0_dark\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouka.fi",
-                "www.ouka.fi"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/resources\\/Voice_ratepanel_rate_0_9_light\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "voiceintuitive"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -1721,7 +1869,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1743,10 +1891,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "ad132028d2a1bd862cc39b1afadced3d10254e3243895032b9a9b00b1b0710b6"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1765,7 +1913,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1787,7 +1935,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1809,10 +1957,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "fe5672a57c9206075859a5e62438e3ca2f734f928f354fe77f71733a09953950"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1820,6 +1968,31 @@
             "exampleSites": [
                 "ouka.fi",
                 "www.ouka.fi"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/media\\/api\\/fr\\/Content\\/GetMedia",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rexelapiprd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "api.rexel.fr",
+                    "resolved": "rexelapiprd.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rexel.fr",
+                "www.rexel.fr"
             ]
         },
         {
@@ -1831,7 +2004,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -1851,7 +2024,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -1873,17 +2046,40 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api-extern.systembolaget.se",
                     "resolved": "api-systembolaget.azure-api.net"
                 }
             ],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "systembolaget.se",
+                "www.systembolaget.se"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/sb-api-ecommerce\\/v1\\/settings\\/site",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-systembolaget"
             ],
-            "type": "XHR",
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "api-extern.systembolaget.se",
+                    "resolved": "api-systembolaget.azure-api.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1900,15 +2096,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api-extern.systembolaget.se",
                     "resolved": "api-systembolaget.azure-api.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f57ed31508a031eef42987611a7ebcf56c3996754f7dca35d7cc00819cc2e431"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1925,32 +2123,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api-extern.systembolaget.se",
-                    "resolved": "api-systembolaget.azure-api.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "systembolaget.se",
-                "www.systembolaget.se"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/sb-api-ecommerce\\/v1\\/settings\\/site",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-systembolaget"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api-extern.systembolaget.se",
@@ -1969,73 +2142,88 @@
             ]
         },
         {
-            "rule": "azure-api\\.net\\/party\\/accuweather\\/locations\\/v1\\/postalcodes\\/US\\/search",
+            "rule": "azure-api\\.net\\/widget\\/institutions\\/10007167\\/courses\\/UUBBSCSBSC3~UBBSCSBSC3\\/modes\\/1",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "azpapimp"
+                "prod-discoveruni"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.trugreen.com",
-                    "resolved": "azpapimp.azure-api.net"
-                }
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "york.ac.uk",
+                "www.york.ac.uk"
+            ]
+        },
+        {
+            "rule": "azure-api\\.net\\/widget\\/institutions\\/10007167\\/courses\\/UUBBSCSBSC3~UBBSCSBSC3\\/modes\\/1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-discoveruni"
             ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
             "responseHashes": [
-                "474aaa13b4fce5b726f302b6433581cd1f0959d6c80b47842590fe58392c7344"
+                "ba1c67301aaefe29baacd8e711a0d73776e606d14dd7092c2352f794c9c4d44e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trugreen.com",
-                "www.trugreen.com"
+                "york.ac.uk",
+                "www.york.ac.uk"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/plansandproducts\\/V1\\/branchProducts",
-            "cookies": 0.0000138,
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "azpapimp"
+                "apim-gw-azu-nyc-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.trugreen.com",
-                    "resolved": "azpapimp.azure-api.net"
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
                 }
             ],
             "responseHashes": [
-                "58682e552ec9f0075c030a9ffb703c835dd079fdef741bf6a145a05e44b860e5"
+                "377ebd030e678098752304ea2c89ffa71ca8e9e30b9fde916c83d7197986ddb7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trugreen.com",
-                "www.trugreen.com"
+                "nyc.gov",
+                "www1.nyc.gov"
             ]
         },
         {
-            "rule": "azure-api\\.net\\/plansandproducts\\/V1\\/branchProducts",
+            "rule": "azure-api\\.net\\/public\\/api\\/GetCalendar",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "azpapimp"
+                "apim-gw-azu-nyc-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.trugreen.com",
-                    "resolved": "azpapimp.azure-api.net"
+                    "original": "api.nyc.gov",
+                    "resolved": "apim-gw-azu-nyc-prod.azure-api.net"
                 }
             ],
             "responseHashes": [],
@@ -2043,74 +2231,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trugreen.com",
-                "www.trugreen.com"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/party\\/accuweather\\/currentconditions\\/v1\\/41528_PC",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "azpapimp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.trugreen.com",
-                    "resolved": "azpapimp.azure-api.net"
-                }
-            ],
-            "responseHashes": [
-                "e4257a273978670cb42c7d49b3db94ffa3316c47973b5c4c395a5021649cd768"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trugreen.com",
-                "www.trugreen.com"
-            ]
-        },
-        {
-            "rule": "azure-api\\.net\\/vis\\/v3\\/prod\\/get-images",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-uc-core-apim"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b47e100d598bfa567b3a8818fb9c2f3b4980a9ceffd7c0537f7c1f42bd771690"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usedcars.com",
-                "www.usedcars.com"
+                "nyc.gov",
+                "www1.nyc.gov"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000761,
+    "cookies": 0.0000858,
     "types": {
-        "Preflight": 35,
-        "XHR": 29,
-        "Fetch": 65,
-        "Script": 2,
-        "Image": 46
+        "Preflight": 46,
+        "Fetch": 64,
+        "XHR": 34,
+        "Script": 6,
+        "Image": 96
     },
     "nameservers": [
+        "ns1-05.azure-dns.com",
         "ns2-05.azure-dns.net",
         "ns3-05.azure-dns.org",
-        "ns4-05.azure-dns.info",
-        "ns1-05.azure-dns.com"
+        "ns4-05.azure-dns.info"
     ]
 }

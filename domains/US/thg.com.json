@@ -4,12 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000554,
+    "prevalence": 0.0000572,
     "sites": 8,
     "subdomains": [
-        "userexperience",
         "asgard",
-        "csp-reporter"
+        "csp-reporter",
+        "tracking"
     ],
     "cnames": [
         {
@@ -22,25 +22,83 @@
         },
         {
             "original": "userexperience.thehut.net",
-            "resolved": "userexperience.thg.com"
+            "resolved": "tracking.thg.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "thg\\.com\\/Tracker\\/track\\/t",
-            "cookies": 0.0000208,
+            "rule": "thg\\.com\\/product",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "userexperience"
+                "asgard"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "asgard.thehut.net",
+                    "resolved": "asgard.thg.com"
+                }
+            ],
+            "responseHashes": [
+                "8137861127a2c04bfebf8855f0e2832ba3ba00f7fc9421230eddcfe71e868d94",
+                "06855693b7f32bdbd9be956efb5e363b802fa9045578d2537ca17fecc2bf8a9c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myprotein.com",
+                "nl.myprotein.com",
+                "www.myprotein.com"
+            ]
+        },
+        {
+            "rule": "thg\\.com\\/blogs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csp-reporter"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
+            "cnames": [
+                {
+                    "original": "csp.thehut.net",
+                    "resolved": "csp-reporter.thg.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myprotein.com",
+                "nl.myprotein.com",
+                "us.myprotein.com",
+                "www.myprotein.com"
+            ]
+        },
+        {
+            "rule": "thg\\.com\\/Tracker\\/track\\/t",
+            "cookies": 0.0000286,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [
                 {
                     "original": "userexperience.thehut.net",
-                    "resolved": "userexperience.thg.com"
+                    "resolved": "tracking.thg.com"
                 }
             ],
             "responseHashes": [
@@ -58,18 +116,18 @@
         },
         {
             "rule": "thg\\.com\\/Tracker\\/track\\/e",
-            "cookies": 0.00000692,
+            "cookies": 0.0000214,
             "fingerprinting": 0,
             "subdomains": [
-                "userexperience"
+                "tracking"
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [
                 {
                     "original": "userexperience.thehut.net",
-                    "resolved": "userexperience.thg.com"
+                    "resolved": "tracking.thg.com"
                 }
             ],
             "responseHashes": [
@@ -86,82 +144,29 @@
             ]
         },
         {
-            "rule": "thg\\.com\\/product",
-            "cookies": 0,
+            "rule": "thg\\.com\\/Tracker\\/track\\/event",
+            "cookies": 0.00000715,
             "fingerprinting": 0,
             "subdomains": [
-                "asgard"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "asgard.thehut.net",
-                    "resolved": "asgard.thg.com"
-                }
-            ],
-            "responseHashes": [
-                "d893a9cd9c106064b3463503ca978e24f1f3e7ec2daa76d36c5d79c4765f04a9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "myprotein.com",
-                "de.myprotein.com"
-            ]
-        },
-        {
-            "rule": "thg\\.com\\/blogs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "csp-reporter"
+                "tracking"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
-                    "original": "csp.thehut.net",
-                    "resolved": "csp-reporter.thg.com"
+                    "original": "userexperience.thehut.net",
+                    "resolved": "tracking.thg.com"
                 }
             ],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "myprotein.com",
-                "de.myprotein.com",
-                "www.myprotein.com"
-            ]
-        },
-        {
-            "rule": "thg\\.com\\/Tracker\\/track\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "userexperience"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "userexperience.thehut.net",
-                    "resolved": "userexperience.thg.com"
-                }
-            ],
-            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "myprotein.com",
+                "lookfantastic.com",
                 "www.lookfantastic.com",
                 "www.myprotein.com"
             ]
@@ -169,11 +174,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000346,
+    "cookies": 0.0000357,
     "types": {
-        "Script": 11,
-        "XHR": 2,
-        "Other": 3
+        "XHR": 3,
+        "Other": 4,
+        "Script": 11
     },
     "nameservers": []
 }

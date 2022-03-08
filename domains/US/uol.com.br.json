@@ -7,15 +7,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000152,
-    "sites": 22,
+    "prevalence": 0.000558,
+    "sites": 78,
     "subdomains": [
         "tm",
+        "page-context",
         "udr",
-        "tracker.bt"
+        "tracker.bt",
+        "stc.pagseguro",
+        "logger",
+        "tempoagora"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "uol\\.com\\.br\\/mercurio\\.html",
@@ -25,107 +29,191 @@
                 "tm"
             ],
             "apis": {
-                "Date.prototype.getTime": 1,
-                "Event.prototype.timeStamp": 1
+                "Date.prototype.getTime": 13,
+                "Event.prototype.timeStamp": 7
             },
-            "sites": 12,
-            "prevalence": 0.0000831,
+            "sites": 37,
+            "prevalence": 0.000265,
             "cnames": [],
             "responseHashes": [
                 "9120bd86f7501823599a79f60f432e7742f2fd00b17984230cd6641085548690",
-                "1c7d4b4fff34b81d3262b4ed70621afab6293da1baa05284594450d2d4f09332"
+                "fd227d966abde5b3a5ed115fe0383678f0ddf03613ba5113ad572dbc6ab863f9",
+                "dae8c61e154f30a8243c7a5a1e7c7658830dbd3363edc16e79acadbb545482b1",
+                "5808bdb717c35b1ec8b0207faf1ccc74be202ec9c3e2ea2afbf8c459eec0e43d",
+                "ba1b5acfae04dd9bfb13cd441b4bd09420774d2a6ce5b807176e537536315354",
+                "6fc3d6a8559e442e31377625d3a8d1935b8da0c79ca747dc47a9be276bd2a957",
+                "eda63494094a65b019bb5c7bf49e46f3f947fa56cee7ba7c11dc120706ba0ca8",
+                "7719907b95e0cfaa62fdb7ab154042e2a714027416a2386bd579af539fb42990",
+                "be3add21c7d990bfd147ecc4404549a26f86d5f7a678de70375e3bd93f442b44",
+                "48b790cb9b24334e4b29855e5c614bc076704c49861d90f030d8f3dae2d6e026",
+                "24a656680d465a6dffded5df690026ce2d8cad0369f57e708b71ccb1e743e39e",
+                "64ce2ed6a9b28dac26c5696bb38385c35f403bd6b84dcbe6daaf711b7936442f",
+                "d742a9fae2ec4a1fec716b19f648dc7d57ac6431549508626697723ac3837e41",
+                "0bf4d02fa96fefbcc7c0523975788e593bfedef3f1bfd5a1347e0d98d1889580"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "jus.com.br",
-                "mobile.guiamais.com.br",
-                "olhardigital.com.br",
-                "siteantigo.portaleducacao.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
-                "www.guiadasemana.com.br",
-                "www.guiamais.com.br",
-                "www.infoescola.com",
+                "macmagazine.com.br",
+                "tvhistoria.com.br",
                 "www.mensagenscomamor.com",
-                "www.netshoes.com.br"
+                "olhardigital.com.br",
+                "www.somostodosum.com.br",
+                "www.submarinoviagens.com.br",
+                "www.todoestudo.com.br",
+                "www.belasmensagens.com.br",
+                "www.guiamais.com.br",
+                "www.gazetadopovo.com.br",
+                "www.portugues.com.br",
+                "www.viajali.com.br",
+                "www.dicionarioinformal.com.br",
+                "www.netshoes.com.br",
+                "especiais.gazetadopovo.com.br",
+                "mapas.guiamais.com.br",
+                "www.ofuxico.com.br",
+                "cep.guiamais.com.br",
+                "www.infoescola.com",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/api\\/get-page-context",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "page-context"
+            ],
+            "apis": {},
+            "sites": 24,
+            "prevalence": 0.000172,
+            "cnames": [],
+            "responseHashes": [
+                "82dc1a0f7435c53f2cb3d2fac6a37dc619396d7c744676cce12c9c0eb66d3cbe",
+                "35baec4b32bbdcd57816cc70e4d2e1dc0621da01e5d7eea5494ebf0543d76aaf",
+                "2ea177ea794ccd7423615fe6ecc365042d3010cb03b3d4f35f480575a4bd9792",
+                "f764293476280e9447ff8e3e8daa39b5864da5e7248bf8a89f91a2ad9b1ae4af",
+                "55e48451f37e82313f8a5e4a71339f3216aab31c48708c54f9170b9becef2450",
+                "75ca214a2d4a03fe1c7768f4c9ff8f47a969a7f4a0475b2b3a69afbde713e7d0",
+                "5e7d88483699afe84dbde921b701f2a81000c0062391240717e3205d9192a6ca",
+                "f62c4223af24a0a62d6cfda802bfb95ac6a18174ff6d78e9b1e3200c7a6092d8",
+                "e7188797f8f154ee778ef73f833c0f2a11dd478d235e064d36516baf5079b92f",
+                "f8f24e562e3137dca13c1626e52549d5808443f6881bae9dcac65d86a7381b96",
+                "f7923e1b9c88ca4743fd3fc67be0cc0ba494c912f17f2e4782907ea9d6d3df90",
+                "a64ba3e365cc5c004e263c2a1863a5ef3629e170108ec1bd3fcdeb6fe532d3cf",
+                "d2eacc582453dd94c070202dd9cb7fef065913e8ab9e942614c0c9930be74ac5",
+                "23a4a0d8ff0391db0c08e2681a0c7fb9e4723a6a46aa67419b6595352aa5e6ab",
+                "8ab16cca1cbbee9beb0e7afc99718158188c9374172369203017c6661628b9ad",
+                "055507838d66d76f7e70f5a6d56597f1d03d8817370e4278ff41c7328298a96b",
+                "268f462ce7ea0c7b333e94ed86566563ea809695131c11e16ee8716d21024b47"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "www.portugues.com.br",
+                "www.todoestudo.com.br",
+                "www.semprefamilia.com.br",
+                "macmagazine.com.br",
+                "olhardigital.com.br",
+                "www.dicionarioinformal.com.br",
+                "www.tempoagora.com.br",
+                "www.ofuxico.com.br",
+                "www.preparaenem.com",
+                "www.somostodosum.com.br",
+                "www.bnews.com.br",
+                "www.manualdaquimica.com",
+                "www.viajali.com.br",
+                "tvhistoria.com.br",
+                "www.legiaodosherois.com.br",
+                "www.belasmensagens.com.br",
+                "www.gazetadopovo.com.br",
+                "www.infoescola.com",
+                "especiais.gazetadopovo.com.br",
+                "jcconcursos.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/",
-            "cookies": 0.0000692,
+            "cookies": 0.000222,
             "fingerprinting": 0,
             "subdomains": [
                 "udr"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000692,
+            "sites": 31,
+            "prevalence": 0.000222,
             "cnames": [],
             "responseHashes": [
-                "6e6e2d7fb6f0c5e3887dac9162a0a3f0d6b6b5e8c83a2d5979e9a1dafa01d0ea",
-                "0936d6f9e2e2ac50f3c988a152b2af7aba07aa5c4983aa746807436dd71a33f4",
-                "dec930f18066de41c35328599e9d4e7f8e09daa21551991789bd2aaf57242e96",
-                "3caecdee455cae61fb226662a50ed70debc9c6f146cd3f68e4811a1b20f294a9",
-                "47b6a289fe3a48eacba7e69bbf4483898727631171cc290ca6ced2fd3ac0b04a",
-                "9760277d61ed3c4261bdffecad177184d7402233a43f0e1df5501efe7a2e66fd",
-                "71e36cef582c56e08f9cebb2f2022a49d4ea5b7b6e9980db3912abca6b1b8304",
-                "ddb775fed27750b15a239b28578f2b9674fd9ce7a145430d456cf8362ddfe044",
-                "882b055ed04898a931374b74efe74c01f9d0cae3d940bcb966c32e1aa80243f1"
+                "e024504c244a9871614db670b73a94f61c71bac17a5c4f90111cde927979ab95",
+                "29e11a5401804371851da1008540b2c29fbb34e860d2dccf85b06c9a07362105",
+                "aae5666f4d06783144df8f4a979e4af392e7f80bc1030a2b4629b303d99aa3fb",
+                "eaf09e14f30d884772116e7c9a35566b70d45b6b42999049b2c13f5df31b7f23",
+                "cff91a95f2f79d69f879c7693511f1ab148018e81e7ae4b13c0fb54b6c53e6d1",
+                "42a5712a2a6d0564466327b0fcb354920c09b7bdf9324abedb674368ec57cf1f",
+                "0c0d3d307fbc15dd503f0c3be9f85e1189cb6148ba97a00152f1ff0d5a34a0b9",
+                "a33a7f980bc1ec8dba9bfb8ba087cfe4706177d939b10daeec462884f81c5177",
+                "522172853f7a5ab6780f85df95dadcdd022287ac3678176e2e7344bd813dddae",
+                "d94f213afe2adf804fa5055f308ea9962a41ee3018f36859c74f07802f9e8675",
+                "3dfe799edc4cb79626e4552c220be1bcd631601cf3a8fca994d9c79304bfcad3",
+                "cbc218f6f000fcf2e46ad0eb7556a9b331982eae745ebef877eced9155d2fa67",
+                "7a2e2407f69af00fcd0aff08a0d6fc309babdadbbeb41f8d4f77d020dd3b9ec6",
+                "4ead1f2a3c3fb6faff4832aa8f898859bd951ff1e020c0c3e369574d2f0a6964",
+                "77b03b867ff449b4da76cdde401c0c9e857db75fba3d44cd200cc0c26e9b001f",
+                "34b963f20eb2db7462df359ae0d2125b23e8024c2f021bb2c8cf08c4736edcb4",
+                "c42f0c5eb493169a7a2d8d0cfd8500e185ae022ed4a4ef6bdd5692fe2b7757b4",
+                "0bc67faa6d1cd6ab282d87d717832932d858ae322e311b7f21e82df320a02ec2",
+                "1c37fb8df513682b876112a56038f3bcf888e76c8abe5525297e1d73dcb03fa2",
+                "377ff8b37f5bf2a6656a201f0e5bb6c6ca80ff12dd4ec77f81f0ea600a396761",
+                "31dbea11d7203d3703c6dba2c1811aa850f1f9191431082336e380ff7c5feb87",
+                "96abfe34d0290a2a9c9e37e584a220941f033d98f717c179afda68447d2a3849",
+                "6b5bbe1855f89848ebff9b9677e03170b27c72ec9e0fae639d33aa63113a1ee8",
+                "43dc32031c558e3447cd6f8a5b0020b2165491b234b743271d2199b29a59bb4e",
+                "796463249a834aefe7b494ca79bc477a0cce1052def0d864d82d0f998d070059",
+                "64e572e6624a662474f24b329996ace90b2b07f8f427b9ccf07219610f676b9e",
+                "28556c42686606cce4bb2906d17dc9a48164529c91c7433fdd1003768d35d922",
+                "a8b5cace7cbd90adad3041404e5b8f6be70f1c3d6ed317511ddc3bc2125631c5",
+                "928d3846c03a5e14b5dc94e589705a7c60ccf9ed144777b8b346cb009a31a0fd",
+                "79916f89f53c17877aef2d88a21efa8465025cadec424040ec628e053ac4177f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "jus.com.br",
-                "mobile.guiamais.com.br",
-                "olhardigital.com.br",
+                "www.preparaenem.com",
                 "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
+                "cep.guiamais.com.br",
                 "www.guiadasemana.com.br",
-                "www.guiamais.com.br",
-                "www.infoescola.com",
-                "www.mensagenscomamor.com"
-            ]
-        },
-        {
-            "rule": "uol\\.com\\.br\\/store",
-            "cookies": 0.0000485,
-            "fingerprinting": 0,
-            "subdomains": [
-                "udr"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "guiamais.com.br",
-                "jus.com.br",
-                "mobile.guiamais.com.br",
+                "abril.com.br",
                 "olhardigital.com.br",
-                "www.gazetadopovo.com.br",
-                "www.guiadasemana.com.br",
-                "www.guiamais.com.br"
+                "www.historiadomundo.com.br",
+                "www.somostodosum.com.br",
+                "m.horoscopovirtual.com.br",
+                "forum.macmagazine.com.br",
+                "www.portugues.com.br",
+                "mobile.guiamais.com.br",
+                "tvhistoria.com.br",
+                "www.viajali.com.br",
+                "www.bnews.com.br",
+                "www.mensagenscomamor.com",
+                "mapas.guiamais.com.br",
+                "www.horoscopovirtual.com.br",
+                "jcconcursos.com.br",
+                "www.legiaodosherois.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/partner",
-            "cookies": 0.0000692,
+            "cookies": 0.000214,
             "fingerprinting": 0,
             "subdomains": [
                 "tracker.bt"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000692,
+            "sites": 30,
+            "prevalence": 0.000214,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -134,61 +222,855 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "jus.com.br",
+                "www.zattini.com.br",
+                "forum.macmagazine.com.br",
+                "m.horoscopovirtual.com.br",
+                "macmagazine.com.br",
                 "mobile.guiamais.com.br",
-                "olhardigital.com.br",
-                "siteantigo.portaleducacao.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
-                "www.guiadasemana.com.br",
+                "www.mensagenscomamor.com",
+                "jus.com.br",
                 "www.guiamais.com.br",
-                "www.mensagenscomamor.com"
+                "www.somostodosum.com.br",
+                "www.gazetadopovo.com.br",
+                "www.polishop.com.br",
+                "www.viajali.com.br",
+                "www.legiaodosherois.com.br",
+                "jcconcursos.com.br",
+                "www.submarinoviagens.com.br",
+                "www.tempoagora.com.br",
+                "especiais.gazetadopovo.com.br",
+                "www.guiadasemana.com.br",
+                "www.portugues.com.br",
+                "www.historiadomundo.com.br"
             ]
         },
         {
             "rule": "uol\\.com\\.br\\/purge-clients\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tm"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Event.prototype.timeStamp": 6
+            },
+            "sites": 31,
+            "prevalence": 0.000222,
+            "cnames": [],
+            "responseHashes": [
+                "6a93c477127bad12d08a779a445d4c5962578f57d4171aee20df69a2b3e8c349",
+                "baf70612ae77e0086a5f83cda7d41d512321b7b562a45cb708e76fb31a869e97",
+                "5c2e11621849fde1ddf02e5f3434805ace7ea17ecdd14b59fb32c483429085ad",
+                "3cbb5a6d45d05034c767ffc08f764f84bfa13af97ef9f74c28d95f5b5acc67ff",
+                "ab9145b42a5a2cb0d9bfcde2798e14f9487e4d2f84d1dc48ed116309e4813045",
+                "12ebcca1a29166470e8dcdc310668c923fd10f3ccb959ef06846174b447d5090",
+                "456677223c3665b6a72c42afd118d2ccc5d811c1cf58082036e3276c7fc59916",
+                "69fbb4d065d97652fbb5e46f70be0411675d35cbf4eb64eb1f4f1f4278d06dc1",
+                "05c61898fe4f32f29551f28a83df221c8298d924691bd5554e92f9a40172805a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.guiamais.com.br",
+                "www.gazetadopovo.com.br",
+                "capricho.abril.com.br",
+                "abril.com.br",
+                "www.submarinoviagens.com.br",
+                "www.manualdaquimica.com",
+                "mobile.guiamais.com.br",
+                "olhardigital.com.br",
+                "www.viajali.com.br",
+                "m.horoscopovirtual.com.br",
+                "cep.guiamais.com.br",
+                "www.tempoagora.com.br",
+                "www.preparaenem.com",
+                "www.belasmensagens.com.br",
+                "www.guiadasemana.com.br",
+                "www.portugues.com.br",
+                "jcconcursos.com.br",
+                "www.todoestudo.com.br",
+                "jus.com.br",
+                "www.semprefamilia.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/store",
+            "cookies": 0.000172,
+            "fingerprinting": 0,
+            "subdomains": [
+                "udr"
+            ],
+            "apis": {},
+            "sites": 24,
+            "prevalence": 0.000172,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiamais.com.br",
+                "tvhistoria.com.br",
+                "forum.macmagazine.com.br",
+                "mapas.guiamais.com.br",
+                "macmagazine.com.br",
+                "www.somostodosum.com.br",
+                "www.viajali.com.br",
+                "www.manualdaquimica.com",
+                "www.gazetadopovo.com.br",
+                "cep.guiamais.com.br",
+                "www.guiamais.com.br",
+                "www.legiaodosherois.com.br",
+                "www.preparaenem.com",
+                "www.guiadasemana.com.br",
+                "www.portugues.com.br",
+                "www.historiadomundo.com.br",
+                "www.belasmensagens.com.br",
+                "www.tempoagora.com.br",
+                "olhardigital.com.br",
+                "jus.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/public\\/img\\/botoes\\/doacoes\\/120x53-doar\\.gif",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stc.pagseguro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "305cf5e9d7adcabe64de6a362671cfbe4396bab3abd62e96c52ff775fd0095e9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "contraosacademicos.com.br",
+                "www.sementesdasestrelas.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiamais.com.br",
+                "olhardigital.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/v1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "guiamais.com.br",
+                "olhardigital.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/fraud-detection\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "tm"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000761,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [],
             "responseHashes": [
-                "6a93c477127bad12d08a779a445d4c5962578f57d4171aee20df69a2b3e8c349"
+                "1936e094161ad7237982e80afdc8cd71c1832937b59c5068158954726b14fcd1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olhardigital.com.br",
+                "www.historiadomundo.com.br",
+                "www.manualdaquimica.com",
+                "www.portugues.com.br",
+                "www.preparaenem.com"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/setcookie\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tm"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "8686502bb8f465d92d340373f1350362cbe95096db6bada7b26d4281975eaf2b",
+                "1598693193b379b516125139ec07963ede247febd8dbce3bd93941b211063796",
+                "7836cf0c1bb21e28f09b1132599fe33417427457e090aab81f10ef3760c02623"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "guiamais.com.br",
-                "cep.guiamais.com.br",
-                "jus.com.br",
-                "mobile.guiamais.com.br",
-                "olhardigital.com.br",
-                "siteantigo.portaleducacao.com.br",
-                "www.dicionarioinformal.com.br",
-                "www.gazetadopovo.com.br",
-                "www.guiadasemana.com.br",
-                "www.guiamais.com.br",
-                "www.mensagenscomamor.com"
+                "netshoes.com.br",
+                "www.polishop.com.br",
+                "www.submarinoviagens.com.br",
+                "www.zattini.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1d78cfae58ed73c106c170e1de73424b04211aecdbc115577b8a391f678bf2a6"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/fonts\\/Roboto-Bold\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "afe6762f9b531c60ce88b3791f5097354171766ec70a773bf23af1cbb1a688dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/fonts\\/Roboto-Regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "199608de3e5d569b61fe724f9f956279bba16363b709e629bd63f14c64308be6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/css\\/indexstyle\\.bundle\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "56929d575c469107d45f9ca234dbb810ad96e030fef62bdfe3daccc2054a001f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-alert\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "69825ec13623b9eab7512dce250858be0b4e911c5b25f9005d6d86bddc1234aa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-previous\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e018f6c2458431cdd2e35ad08d43bf6d475692bb7b13111c1815522bc3d22200"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-next\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "25a66ad6f312168cd982e1e4b8672500a4f8854bfa8e27b0d77810f15d2a60d6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/close\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "273e100706a07ec60e114c4b65a4e2b62b9548e2d5759a4150d24b371285bda4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-cloud\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e97e32c557167b189f4bc3a1d9179cb935c84cf876ec3ce5bb5f841569a16ded"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-sensation\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "23ef2320a696fe83a3a2b827c6d47118714994fe52387ee71a53a4b770ec145d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-humidity-max\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "49d7e730205ffd488b44763d96fb937e53aa1b97b9317783a678443f73cb02a2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/updated-at\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c5c78436ac02be97c0e959e151bc0ac6eb605e2ec956e52794c1bda07b2f1464"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-arrow-min\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "3b43e5dd5d29edf12a8ba0a4f4655ce3570b07496b26c3f81ce9dd099f5cd3c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/ic-arrow-max\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4365ee56a04e30a6e1f1f2a8d4697b6c2641858d57a249505aa1745887375026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/gota-cinza\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "76cf270bf3d39139a09a6b41fef0b5f3761e82997ff3ba4fb6dfd65e82e9731e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/js\\/index\\.bundle\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Element.prototype.getClientRects": 2,
+                "Document.cookie getter": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7592f6918edce7ad3ca182ff7807295daa30d4487d19bbc2c002ba00bc542283"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/common-sprite\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1e70312d88f63288baeaae2d5b058149abcebd9d2a47ddbe35f5d9b01639eea8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/json\\/newest-alert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/json\\/myclimatempo\\/user\\/weatherNow",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "54d769556c12eaa6c3b1f8dffa9f5b924d955714df110fab8e96509409896cc8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/logotempoagora\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "40cb27b9e89ab08636a46c44ccd299873b4b6d0dae027d8fd9fdd67ff3468fb6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/outline\\/2n\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e30c70c1dd0644385c47949750f5e2f39f83af1e03efdb74390f70c3203a03d8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/2n\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5213b038992296b505afde6eadc730adf9def1d2045c3525d0d9e5400e921d56"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/v2\\/svg\\/4t\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9c7f7119054ff16e740ccbcc19a8b765eaf16787e49c4fd013e9c2e0c1ee61f3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dist\\/images\\/gota-azul\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0728a26d1d2240d3425824a27203f3b4b62a034aba61c2b7096cab7472e8a004"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/pushnews-sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tempoagora"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "21943a3c4a4d4574f564cfac429b734cb184f42fa12a12694830d670a16b738c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tempoagora.com.br",
+                "www.tempoagora.com.br"
+            ]
+        },
+        {
+            "rule": "uol\\.com\\.br\\/dynad-track-cookies\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7c95e42e6eaa36f05e09e1f62a12c959a06e80666ed2c2f705c7585e3bcdcdd3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zattini.com.br",
+                "www.zattini.com.br"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000132,
+    "cookies": 0.000472,
     "types": {
-        "Document": 23,
-        "Fetch": 17,
-        "Script": 10
+        "Document": 76,
+        "Fetch": 79,
+        "Script": 37,
+        "Image": 36,
+        "XHR": 8,
+        "Preflight": 2,
+        "Font": 6,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "charles.uol.com.br",
         "borges.uol.com.br",
+        "charles.uol.com.br",
         "eliot.uol.com.br"
     ]
 }

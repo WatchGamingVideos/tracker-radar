@@ -4,22 +4,24 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000554,
-    "sites": 8,
+    "prevalence": 0.0000786,
+    "sites": 11,
     "subdomains": [
-        "otageo",
         "s7.ct",
         "ajaxgeo",
         "cars",
-        "tag"
+        "otageo",
+        "tag",
+        "snowplow",
+        "ctimg-supplier"
     ],
     "cnames": [
         {
-            "original": "carhire.opodo.com",
+            "original": "carhire.opodo.co.uk",
             "resolved": "s7.ct.cartrawler.com"
         },
         {
-            "original": "mietwagen.opodo.de",
+            "original": "carhire.opodo.com",
             "resolved": "s7.ct.cartrawler.com"
         },
         {
@@ -27,75 +29,29 @@
             "resolved": "s7.ct.cartrawler.com"
         },
         {
-            "original": "rentacar.edreams.es",
+            "original": "rentacar.edreams.com.au",
             "resolved": "s7.ct.cartrawler.com"
         },
         {
-            "original": "rentacar.edreams.it",
-            "resolved": "s7.ct.cartrawler.com"
-        },
-        {
-            "original": "rentacar.edreams.net",
-            "resolved": "s7.ct.cartrawler.com"
-        },
-        {
-            "original": "voiture.opodo.fr",
+            "original": "rentacar.edreams.pt",
             "resolved": "s7.ct.cartrawler.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "cartrawler\\.com\\/cartrawlerota\\/json",
-            "cookies": 0.0000485,
-            "fingerprinting": 0,
-            "subdomains": [
-                "otageo"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [],
-            "responseHashes": [
-                "ae62ad174cfa86738b77dad73d450b7f09aab8a629ed9522e416931eab36de39",
-                "caf4f54d2acb745a2c7e606b5dc8571edf6ad38a9a75eac59563146a2fb68501",
-                "a29409118deedfdbf7ec903ce8a095b1e0648f336a46d5e29d8fd0b8d8ee1e7d",
-                "308608628f5758b0bbb984aba8e759f399660bc02c9c8fb39f70ac3a77c00a5a",
-                "b0e203cc0111947cc70f8741eda4dc308205496b2f6715c1821b65322d64a0d4",
-                "85fa9a77767ad8a737c6ca1a0736b7f2062fbd4e2c62a7fefa5559c0e44b86f2",
-                "b93eb2de909617b8168a1297370a3bbff8dc57007b884465365261f3c25280d7"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "CT_PriorID": 0.000006922043941134938,
-                "_ga": 0.00004845430758794457,
-                "step1ClientID": 0.000027688175764539753
-            },
-            "exampleSites": [
-                "jetsmart.com",
-                "www.edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
             "rule": "cartrawler\\.com\\/search",
-            "cookies": 0.0000485,
+            "cookies": 0.0000357,
             "fingerprinting": 1,
             "subdomains": [
                 "s7.ct"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [
                 {
-                    "original": "rentacar.edreams.es",
+                    "original": "rentacar.edreams.com.au",
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
@@ -103,47 +59,35 @@
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
-                    "original": "rentacar.edreams.net",
+                    "original": "rentacar.edreams.pt",
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
-                    "original": "rentacar.edreams.it",
+                    "original": "carhire.opodo.co.uk",
                     "resolved": "s7.ct.cartrawler.com"
                 },
                 {
                     "original": "carhire.opodo.com",
                     "resolved": "s7.ct.cartrawler.com"
-                },
-                {
-                    "original": "voiture.opodo.fr",
-                    "resolved": "s7.ct.cartrawler.com"
-                },
-                {
-                    "original": "mietwagen.opodo.de",
-                    "resolved": "s7.ct.cartrawler.com"
                 }
             ],
             "responseHashes": [
-                "9eebde2e4bf391ce3271a407e3429af72ed000cf904c3691e2b745c6f5f27159",
-                "abeb586cc8328eceb043f635dc21d52c6c9a8a9f140c31a7015150004d24119a",
-                "c9133e169ff981baa627bbd468fe663e7d25905530481fe49e436deb2512e966",
-                "ea8f94e7a3380d0bb0b318b57ec146054a2b72fff3e9867a66c3e08a7b000e8a",
-                "e76eac28d26c1e3756e90166efe44bf1743568d10d9c52cd3a49498cc9b454d8",
-                "5d0e81145ad91d5fa322e50ddba15c1166a6cdda1e552e218777cb59fc401548"
+                "f374ac4504a4649bcc77c7dca1d23904f82585f456146e4df3fae857378a0556",
+                "dc81ad09edbb1ec7ec69a4ca08a69bd8820d4b5ebe2f33013168c30da71fa438",
+                "cb37fa827adc23d6896cb7514e4c6e3959688aedda2032e846d60cb0ca56cd66",
+                "c35b53f0fcd8cb6e08727d6b365b59858bc95b267951acb7999492b33abad4fe"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004845430758794457
+                "_ga": 0.00002144971471879424
             },
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -154,26 +98,25 @@
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 6
             },
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "b898f0487e00623d013348ae2a9d027329e6b3e3ba8c7bbcee931cdf70a450d4"
+                "40afd815e05e7ca8ac0e5b221254d89b5ea03c25a1ad480ddf3e27dae4528c89"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -184,35 +127,34 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "c691cfc4007d568421f06e62cd9e568c583679fa1535a230b359cc5eea7b72d3"
+                "665093f6ea832df3948b59f29d34e2cc684948af94bbe8ae954d5dd767b7389b"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/assets\\/microsites\\/edreams\\/css\\/custom1\\.424\\.0\\.css",
+            "rule": "cartrawler\\.com\\/assets\\/microsites\\/edreams\\/css\\/custom1\\.430\\.0\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cars"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "951cab7458a22a49dcc28ef60dbf73d4cb5c39b03c408fede4b89a1ab02b9473"
@@ -221,10 +163,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it"
+                "www.edreams.pt"
             ]
         },
         {
@@ -235,8 +176,8 @@
                 "cars"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "ce5e95503a864e0d17fd27693b89ebc3d643425a1aa6e63f6400f5a484e25455"
@@ -245,10 +186,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it"
+                "www.edreams.pt"
             ]
         },
         {
@@ -259,23 +199,22 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "a1bd5aff1096480775d0db1ed3065e35de237c7f570a23c2103be61216122fea"
+                "552c4420a0415ce30549760ffa73fd218a4521b1ea2d453ed97a698467850e2f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -286,50 +225,48 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "88ee1da703ad33996f1c039d54d6ec8c1d8e85d3b40ea292e4a84b29a8a006e4"
+                "e939a0846a5c1e2fe201ada64bad19e0119890fefb0fcc0da2e12195ad9f02d8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/62fe43a3fc7381a9630a\\.vendors\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/76ebad93fc489e5db8fb\\.vendors\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "11f0b736ac46efde00ada82f647dcb04d30ae214af853411ebbf8debc9d5fab9"
+                "7df00917137358200a0f2374d1d051d3915f0775fbeb774caaa3c67c690203f0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -340,13 +277,13 @@
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "window.name": 7,
-                "Date.prototype.getTime": 7,
-                "Date.prototype.getTimezoneOffset": 7
+                "Navigator.prototype.userAgent": 8,
+                "window.name": 8,
+                "Date.prototype.getTime": 8,
+                "Date.prototype.getTimezoneOffset": 8
             },
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "4cba5252a157a9529fae313470f2e431928168843f3ccc6eec2ba2f2d12e5118"
@@ -355,865 +292,138 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
+                "www.aeropuertomadrid-barajas.com",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.melbourne-airport.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/08356d4866c49b0f76c5\\.ctscope~vendors\\.chunk\\.js",
-            "cookies": 0.0000485,
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a7fce7d56b9938cb8c14\\.ctscope~vendors\\.chunk\\.js",
+            "cookies": 0.0000429,
             "fingerprinting": 2,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "window.devicePixelRatio": 7,
-                "Screen.prototype.height": 7,
-                "Screen.prototype.width": 7,
-                "Document.cookie getter": 7,
-                "Document.cookie setter": 7,
-                "Date.prototype.getTime": 4
+                "Navigator.prototype.userAgent": 6,
+                "window.devicePixelRatio": 6,
+                "Screen.prototype.height": 6,
+                "Screen.prototype.width": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6
             },
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "034814c1a5b8024567755fac4040794b2a5cc23c28da978e9498b6578bca876c"
+                "e98ca6cd664cd3d2d5799f71874d85840d9886847948c10e5bcb2aa874b1dd53"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "CT_browserSessionID": {
                     "ttl": null,
                     "length": 15,
-                    "prevalence": 0.00004845430758794457,
+                    "prevalence": 0.00004289942943758848,
                     "uniqueness": 1
-                },
-                "step1ClientID": {
-                    "ttl": null,
-                    "length": 6,
-                    "prevalence": 0.000027688175764539753,
-                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/2c509895cb78d0c3b7aa\\.ctcommon~vendors~main-all\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/2c1e61f0fffd398fba53\\.ctcommon~vendors~main-all\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "window.localStorage": 7,
-                "window.sessionStorage": 7
+                "window.localStorage": 6,
+                "window.sessionStorage": 6
             },
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "67f5f5a4f4cc3c5f135a8401390a591ade0651dff5710a5169496f1d163d97f5"
+                "f292a66ec81fe407d83f0b6f6dffc43226ce9b2544a3760302de9f1df217a39c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ef8c09a3c5fd18ef51ec\\.ctscope~main-all\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9b7b187e19ac8b334b1b\\.ctscope~main-all\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "0527b672bc8f8b3d870797347e9ae072f01bcf31b629060d26438768a7e9cfb7"
+                "cede17cf3b61cf3047b236161475505e87e044be8e71176636d696aa950f2690"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/24682d3be38d541fc389\\.main-desktop\\.chunk\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/5ae1fab2b361d31bfc4e\\.main-desktop\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Date.prototype.getTime": 7
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTime": 6
             },
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "50650eec2ffa6b1d1da1777ed4241d25d3dd41c8889a9e4b0f5986d3b08d0d47"
+                "efa5b9ce520b037426e3503c44cbe6e8f0fe6265833a3016b92008fcdf10b2b1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.es",
+                "edreams.com.au",
                 "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/edfa5e0776bbf49dbaf7\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "4b2b3600dd4e0defc0caa7cb23f68f35565a57888bd11fa3f06c8d465f961b91"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a5e076ec7d8e44769e0d\\.vendors~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "a59f9a0727f2f36e237562f311cd1dd5448936649593785b9f34dc34a6527938"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/df7bbcc25c798d9ddfe1\\.474\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "52454cbec193b860a1f51e05a2373f616e440ee328b470674638c947608a573d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/4dc2fc7c082eb2663bbd\\.596\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "68ff7d6abaf67be251d0a60865469bf339ed92cb8a8afe8923a1ff59ef3bb732"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9ef88416630ad90f41d7\\.496\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "8fd1178cfd28c33a5ec7a3a651098f04305602e1310c604477a4f8a14b3612e0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/84974c0c14badb18e566\\.478\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "48a683cc60e4ad1d49e34853c7856bb033fbb16ce6113e08503f147137b5cc62"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.224\\.0\\/app-desktop\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "c691cfc4007d568421f06e62cd9e568c583679fa1535a230b359cc5eea7b72d3"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/6aa460674a8f26405e51\\.17\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "13835fd9fefc888c37847a99cad79d0bfcb2a464d82a867c2607e5ec27709836"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/5be35c44a2190f11d044\\.shared\\.ranking-parser\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "4d53833bbbfba76d36beed9b105628d8f2d13dc043773afe00b458091f52b878"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9940c55801dec0d9ef4f\\.shared\\.merchandising-block\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "0d5a8ee2196b433b3d75245c1039366a957c53e012e162ee566e29159ead2cb9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/64dc56027d3fd64d577d\\.shared\\.demand-urgency-header\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "095e31de7a111d0a15841ed8df38f98586bf7dea9d56ef7794c1b9bf3397dca3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/d88ea3423d23ba97f0bf\\.shared\\.social-proofing\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "a239ccd9c5a848ca75d5719b431fd5532c01ce99b161f0b6115cdb21ae930634"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/7fa0a065e03e46204aef\\.shared\\.countdown-timer\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "b8938cafe204c333a45a791098e7dd12ef0bc4e9cea7eb45e0bc73b9cb9b4a3e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a4c4e847810ac90cd165\\.shared\\.zero-excess\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "23e52dfd8f68750d78896ab00d6c769121cbf13c341c8220c899bcc96f6777a3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.224\\.0\\/langs\\/build-hash\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "88ee1da703ad33996f1c039d54d6ec8c1d8e85d3b40ea292e4a84b29a8a006e4"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/5dec8d399b4858ef4305\\.components\\.search-cars-form\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "489ce985026d0f4a30837af13d8fedc5f71a6e82ed29379a6bd8e849a7a68fc7"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/a75ea0731277c45f3fc1\\.324\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "91c41967f17237c5a5f3ad8cf86299c102007756e02f4c8199c68c54e2d4b753"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/29e244d92d32240d4480\\.491\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "3422ec32bd6cb7f7836c14c15cd9ed1bf0653dbf5b93aad03eded9de6f5e12c5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/3b78041b25abb6abe381\\.502\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "e4b5425b3a08eadfb22d1a27cca739599dde329b801c049371efa35cee77ee06"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/3100a8cea779793c7f33\\.536\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "ba0b6c061874bbd1495894687b327431e702d179858c12114d1203afa97979c3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/7e163749ff187536df3c\\.303\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "0c3b57da1ddc5c0b090f848a7daf9eb456b6b0e2fa29e46d7b4c74e88beb5d41"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/4cf23a95399d0a9dfe59\\.components\\.ct-time-picker-custom\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "994d138080b44b9f55709f3cb7313ee12be554f4b81c66f0f431fe4053328d67"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/9ae36b70d966db23c042\\.489\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "1b8119636c7906236bee5b48a0b5f42744eee4375abb66ef40647f0e2de07f3f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0027f5114e967596e253\\.component\\.search-button\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "51b1b9053181f259a88d955c697394fec08ad9e0f17f630e0ceb41e2108c9e4f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/c91d8529273893977567\\.476\\.chunk\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ajaxgeo"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "114a79ba5964a8b90f2363fbaa846ca20cac56bbb589bbec34addc3ac4e3c517"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com",
-                "www.edreams.net",
-                "www.edreams.it",
-                "www.opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tag"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8872a6cb32e498b6633f4be2731c30d0526f418f9b43066b421b07ccb190c3b9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com"
-            ]
-        },
-        {
-            "rule": "cartrawler\\.com\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tag"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "edreams.es",
-                "www.edreams.com"
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -1224,54 +434,1771 @@
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
-                "60fe18a73866b738b74b8cc2f8594550dcfa0ee4f72ff28ec4dc8f33a17bda75"
+                "3539a48fc30df58ee109e3137a2381ebfe514993375b59cf00809b226090f302"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.com",
-                "www.edreams.net",
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.opodo.co.uk",
                 "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/webapp-abe-5\\.224\\.0\\/langs\\/desktop\\/en\\.js",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/986d756b362560d8db3c\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "ajaxgeo"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "60fe18a73866b738b74b8cc2f8594550dcfa0ee4f72ff28ec4dc8f33a17bda75"
+                "4dfdadec3a26f8c3ec496e557d4a9bb03f58b8b6bc160519a23f76de2022e6c4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "edreams.com",
-                "www.edreams.net",
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
                 "www.opodo.com"
             ]
         },
         {
-            "rule": "cartrawler\\.com\\/assets\\/microsites\\/opodo\\/css\\/custom1\\.424\\.0\\.css",
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/21fe03cccbcde995dd81\\.vendors~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "f288e94d7c827db0a3bb5ee67cd6a737531a9a04e449d6f10c9374be45d3d8c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/062a071e2d2f1a325dc0\\.478\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "9c660abad074b55e536b5194d8c96d12907d99e2e84a9a0e8eb673fa42a32121"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b6385b308364bfc63522\\.600\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "6cbbe4e68cc415119db26bf5359d7f6a692877029d65bda24cdb03bdb62eee96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/d36b7c7de09fdfc7b390\\.500\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "750997d568f5647fcad9351e536deca95a11588979cf46b1c30013b90c2135b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0632d0ba503d90fa7e2a\\.482\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "0b0deaa6ce7c48dcebf7193a90379e36aaf72fd7821b8ddf357f939bf4ab2096"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/app-desktop\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "665093f6ea832df3948b59f29d34e2cc684948af94bbe8ae954d5dd767b7389b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.aeropuertomadrid-barajas.com",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.melbourne-airport.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/6bf65584193f55e7f69d\\.17\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "8902488f5520a1a4f57928d63956bac203e2b0ea972a45ef3d8fed21a378c965"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/cartrawlerota\\/json",
+            "cookies": 0.00005,
+            "fingerprinting": 0,
+            "subdomains": [
+                "otageo"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000643,
+            "cnames": [],
+            "responseHashes": [
+                "e0277c9ea24c4221972f67afd50922b9425737581b82f554dfd8cd1d2d7ee120",
+                "88265260ccf3c6df5aa3cae2772030e4ab5db5fc5eec201a870898ea44c32a5c",
+                "84c3fa3934ddf9b31cbae27cf5d25dcfc453ccb74954c8ab5d7c245b777e1cee",
+                "ca5b95b7004c16c176b78728a7c7c4e243aac72efb38e646617ee0340ad48f50",
+                "3ed51c2cd461fd3940041b37253f58530700cbb6b57f75c7ffcb2bca0de8e3c9",
+                "efb648c754c62164a1ee1ed146673c891dc1b4f274235548777069c9dfbb1c6a",
+                "e64cc425028ed8d8cd9c70cd3b96c4c650514398890c2627315df55f2d64bd87",
+                "5c4d78352083727df1e916dfca370f31614017c7cb0c5853f9a373debc318718"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00002144971471879424,
+                "CT_PriorID": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "edreams.com.au",
+                "jetsmart.com",
+                "www.aeropuertomadrid-barajas.com",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.melbourne-airport.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/0c653e331b2f6afc2f15\\.shared\\.ranking-parser\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "4372d384c3a82733b4117325d6413295af8adab51ca3e9ba29d4c95ff556357f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/440c2a930b824e10d123\\.shared\\.merchandising-block\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "e186a367398d43c64a4606fb1c7a85c5477382d03cd548a0562047939642dfa6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/2356863704a19355d081\\.shared\\.demand-urgency-header\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "0ea1f5be478990bd916c1c2ad2bee2c711fffb9387eae7bdbc6e293112835f9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/251ceed2f0f211a0d966\\.shared\\.social-proofing\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "b891ccb29afb14faa1f1ebdb986d520708306b73783a7bacfbbfc97a51bcc167"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b0edf5ca8b94e9810e31\\.shared\\.countdown-timer\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "22e99433a8dc306c67406385d7278875a18981bf1173f4c143ad085901561dc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/f4d34a050b7aeb912baf\\.shared\\.zero-excess\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "9d4d3dbe05270ec89310313a398c849ade01be0a6fd1329a15e23fee3ba9973c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/langs\\/build-hash\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "e939a0846a5c1e2fe201ada64bad19e0119890fefb0fcc0da2e12195ad9f02d8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.aeropuertomadrid-barajas.com",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.melbourne-airport.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/langs\\/desktop\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.00005,
+            "cnames": [],
+            "responseHashes": [
+                "3539a48fc30df58ee109e3137a2381ebfe514993375b59cf00809b226090f302"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.aeropuertomadrid-barajas.com",
+                "www.edreams.com",
+                "www.holidayautos.com",
+                "www.melbourne-airport.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/1b9b13fce8b44277583d\\.components\\.search-cars-form\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "d35516c35742f828223e0b02ef09e6c5c0c4a5915ecc310cce6fa3b99033ae4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/128ecf16844ef9b57de0\\.325\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "b6651b254eb32bef483a5900d9242c5fa87eff27701e535c7a92c7f130c475cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ca6ada60a87799c2156a\\.495\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "5afc823881e56f6f44bbd59547b9ba3efa7c30527ff5ce6d404bfd801760106c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/e20974d6d0b6d1d91334\\.506\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "cb4a2fde3c925ad72d7143be1894a27136a06087865c6937aa5e486fdd8ebf33"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/6861a27b9b817977a709\\.540\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "36040cc0a2acac0642e5f514671defa6ff1cd932603e590524e2d577f1ca71a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ab7c39ad8970f4c9b341\\.304\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "5d8dcf3043052df02fa931720fd7d0ed34fcde9bbbd4ab1ad12a16323623dd5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/b2afb83fb8839e73a427\\.components\\.ct-time-picker-custom\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "097461057c70bfa5b8af19dd5ff077e33cb3884688c688f2711f9d4fa7b51141"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/5f1a55dd3afd41acdf39\\.493\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "86f4d783581cd21d2d6cf227d23fa65f344548d5ba3148f9f315f0994b4ad3d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/68129b061efe940c1b4f\\.component\\.search-button\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "0b24e3bac17c60c45448918dd7f6b11e6f90c980c9ea6c5cf314ebca05f14ee5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/ea463a3943a98038e5fd\\.480\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000429,
+            "cnames": [],
+            "responseHashes": [
+                "987e05dedc7cdbc3ab22ef1ea862818099d69ce79fd5d797cbb385c3f83dbd3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com.au",
+                "www.edreams.com",
+                "www.edreams.pt",
+                "www.holidayautos.com",
+                "www.opodo.co.uk",
+                "www.opodo.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/cartrawlerota\\/ctloader",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "otageo"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "955fe6270fb1ee586790b838f31e1c60aa7983c622efd43709444b7292dfbfbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "CT_PriorID": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "jetsmart.com",
+                "www.aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/abe5\\.0\\/ct_loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a740f16d2c010cd927d54a2ea5222ea66fd1b872d9b806f209104f08b3e34a69"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/manifest-main-desktop\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "552c4420a0415ce30549760ffa73fd218a4521b1ea2d453ed97a698467850e2f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/76ebad93fc489e5db8fb\\.vendors\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7df00917137358200a0f2374d1d051d3915f0775fbeb774caaa3c67c690203f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/9b7b187e19ac8b334b1b\\.ctscope~main-all\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cede17cf3b61cf3047b236161475505e87e044be8e71176636d696aa950f2690"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/2c1e61f0fffd398fba53\\.ctcommon~vendors~main-all\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f292a66ec81fe407d83f0b6f6dffc43226ce9b2544a3760302de9f1df217a39c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/a7fce7d56b9938cb8c14\\.ctscope~vendors\\.chunk\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e98ca6cd664cd3d2d5799f71874d85840d9886847948c10e5bcb2aa874b1dd53"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "CT_browserSessionID": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/5ae1fab2b361d31bfc4e\\.main-desktop\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "efa5b9ce520b037426e3503c44cbe6e8f0fe6265833a3016b92008fcdf10b2b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/app-desktop\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "40afd815e05e7ca8ac0e5b221254d89b5ea03c25a1ad480ddf3e27dae4528c89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/986d756b362560d8db3c\\.ctcommon~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4dfdadec3a26f8c3ec496e557d4a9bb03f58b8b6bc160519a23f76de2022e6c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/21fe03cccbcde995dd81\\.vendors~main-all~shared\\.demand-urgency-header~shared\\.super-filter~shared\\.included-items-banner\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f288e94d7c827db0a3bb5ee67cd6a737531a9a04e449d6f10c9374be45d3d8c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/062a071e2d2f1a325dc0\\.478\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9c660abad074b55e536b5194d8c96d12907d99e2e84a9a0e8eb673fa42a32121"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/b6385b308364bfc63522\\.600\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6cbbe4e68cc415119db26bf5359d7f6a692877029d65bda24cdb03bdb62eee96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/d36b7c7de09fdfc7b390\\.500\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "750997d568f5647fcad9351e536deca95a11588979cf46b1c30013b90c2135b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/0632d0ba503d90fa7e2a\\.482\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0b0deaa6ce7c48dcebf7193a90379e36aaf72fd7821b8ddf357f939bf4ab2096"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/6bf65584193f55e7f69d\\.17\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8902488f5520a1a4f57928d63956bac203e2b0ea972a45ef3d8fed21a378c965"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/0c653e331b2f6afc2f15\\.shared\\.ranking-parser\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4372d384c3a82733b4117325d6413295af8adab51ca3e9ba29d4c95ff556357f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/440c2a930b824e10d123\\.shared\\.merchandising-block\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e186a367398d43c64a4606fb1c7a85c5477382d03cd548a0562047939642dfa6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/2356863704a19355d081\\.shared\\.demand-urgency-header\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0ea1f5be478990bd916c1c2ad2bee2c711fffb9387eae7bdbc6e293112835f9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/251ceed2f0f211a0d966\\.shared\\.social-proofing\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b891ccb29afb14faa1f1ebdb986d520708306b73783a7bacfbbfc97a51bcc167"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/b0edf5ca8b94e9810e31\\.shared\\.countdown-timer\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "22e99433a8dc306c67406385d7278875a18981bf1173f4c143ad085901561dc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/f4d34a050b7aeb912baf\\.shared\\.zero-excess\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9d4d3dbe05270ec89310313a398c849ade01be0a6fd1329a15e23fee3ba9973c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/1b9b13fce8b44277583d\\.components\\.search-cars-form\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d35516c35742f828223e0b02ef09e6c5c0c4a5915ecc310cce6fa3b99033ae4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/128ecf16844ef9b57de0\\.325\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b6651b254eb32bef483a5900d9242c5fa87eff27701e535c7a92c7f130c475cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/ca6ada60a87799c2156a\\.495\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5afc823881e56f6f44bbd59547b9ba3efa7c30527ff5ce6d404bfd801760106c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/e20974d6d0b6d1d91334\\.506\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cb4a2fde3c925ad72d7143be1894a27136a06087865c6937aa5e486fdd8ebf33"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/6861a27b9b817977a709\\.540\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "36040cc0a2acac0642e5f514671defa6ff1cd932603e590524e2d577f1ca71a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/ab7c39ad8970f4c9b341\\.304\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5d8dcf3043052df02fa931720fd7d0ed34fcde9bbbd4ab1ad12a16323623dd5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/93450eec20154afd1092\\.19\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4ee0bacc3716979cf036b1cdbb257f94c40c3cbc0722f5edd00a499defcbde4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/b2afb83fb8839e73a427\\.components\\.ct-time-picker-custom\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "097461057c70bfa5b8af19dd5ff077e33cb3884688c688f2711f9d4fa7b51141"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/5f1a55dd3afd41acdf39\\.493\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "86f4d783581cd21d2d6cf227d23fa65f344548d5ba3148f9f315f0994b4ad3d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/68129b061efe940c1b4f\\.component\\.search-button\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0b24e3bac17c60c45448918dd7f6b11e6f90c980c9ea6c5cf314ebca05f14ee5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-5\\.230\\.1\\/chunks\\/ea463a3943a98038e5fd\\.480\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "987e05dedc7cdbc3ab22ef1ea862818099d69ce79fd5d797cbb385c3f83dbd3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aeropuertomadrid-barajas.com",
+                "www.melbourne-airport.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0b878bd60bef3b6ec3f603cfab84f46a7bdc995e3490f086b9f501dfa79bc2b4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edreams.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/langs\\/desktop\\/en-gb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/webapp-abe-latest\\/chunks\\/dfb1ec363f466319240b\\.315\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1ade68a237353d3256e98fc207780b5c4fa4530e3f9ec4d29cfe5c8d2382adcb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/js-engine\\/cartrawler-sp\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ajaxgeo"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e60566140391e341c2fb0139d6a36214cc68a132acfb259cfbeabe5fc5c3790f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.8db5": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "_sp_id.8db5": {
+                    "ttl": 63072007,
+                    "length": 108,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snowplow"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "snowplow"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/cartrawlerota\\/json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "otageo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9564c24b0343d222259c825222e6527d57c1b10ef197d2b9514be9c0bc7bc813"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/avis\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctimg-supplier"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "23789ea30a3def739169d7303a82cd3c319e85bca96db1c956a836e6c85b8eaa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/budget\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctimg-supplier"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e06d2cbc4f72c3f9140ada1a80716fad3601079e5e5bacdcba21b96dfa9860f8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/sixt\\.pdf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctimg-supplier"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ceb447b8d927d827f6c42d289b4138faae8fe18655ac5ad63b1d7b5a67f50510"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holidayautos.com",
+                "www.holidayautos.com"
+            ]
+        },
+        {
+            "rule": "cartrawler\\.com\\/assets\\/microsites\\/opodo\\/css\\/custom1\\.430\\.0\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cars"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "c576b42fb4c9becefeb8d4537d2d2370c878b0e1047bced55e8b3b11e98caccc"
@@ -1280,9 +2207,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "opodo.co.uk",
+                "www.opodo.com"
             ]
         },
         {
@@ -1293,8 +2219,8 @@
                 "cars"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "239d98eef853bde0cde27658824e1a54582bf889f189b11ab0eabaea979cd66d"
@@ -1303,27 +2229,27 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "opodo.com",
-                "www.opodo.fr",
-                "www.opodo.de"
+                "opodo.co.uk",
+                "www.opodo.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000554,
+    "cookies": 0.0000715,
     "types": {
-        "XHR": 8,
-        "Document": 7,
-        "Script": 223,
-        "Stylesheet": 21,
-        "Fetch": 23,
-        "Preflight": 2
+        "Document": 5,
+        "Script": 269,
+        "Stylesheet": 19,
+        "Fetch": 26,
+        "XHR": 11,
+        "Preflight": 4,
+        "Image": 6
     },
     "nameservers": [
-        "ns1.p05.dynect.net",
         "ns3.p05.dynect.net",
         "ns2.p05.dynect.net",
+        "ns1.p05.dynect.net",
         "ns4.p05.dynect.net"
     ]
 }

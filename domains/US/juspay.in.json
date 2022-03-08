@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000485,
-    "sites": 7,
+    "prevalence": 0.0001,
+    "sites": 14,
     "subdomains": [
+        "api",
         "payments",
         "logs"
     ],
@@ -14,20 +15,111 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "juspay\\.in\\/web\\/PIL\\.js",
+            "rule": "juspay\\.in\\/pay\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "payments"
+                "api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Date.prototype.getTime": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "369893b298f1fb6b4bc2816a177bdc0dcfc0042a2a0a8e8af843fc9c1d7c0fca"
+                "864a7ca3d8508b91dcbd17a0c7d66c795616dd0780654f0c0fe473a90735eb99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "justickets.in",
+                "www.justickets.in"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/pay-v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2a1882d99ac01f91d5feda8aec27e2d9c08cd6a4ad12b4816ebdb56ece4b6d20"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lalpathlabs.com",
+                "www.spicejet.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/payjs-iframe-sender",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "64acad9895e4999a3f7a5358013e1c9ec894f0251152ad0006ec7e160717b0ae"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lalpathlabs.com",
+                "www.spicejet.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/reportCSPViolation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lalpathlabs.com",
+                "www.lalpathlabs.com",
+                "www.spicejet.com"
+            ]
+        },
+        {
+            "rule": "juspay\\.in\\/web\\/PIL\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000357,
+            "cnames": [],
+            "responseHashes": [
+                "3d56cef83dcaa21451c63b069ddc430343b43e6fd2b8d88ebda61fd8e4a485e7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -35,7 +127,8 @@
             "exampleSites": [
                 "myvi.in",
                 "www.tajhotels.com",
-                "www.tatasky.com",
+                "www.tataplay.com",
+                "www.timesprime.com",
                 "www.zee5.com"
             ]
         },
@@ -48,7 +141,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e2a8aca48c5b24df14c6e0ab0b30df7ed50fa97bc22fd706c71a7eebe96a8b67"
@@ -66,13 +159,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
+        "Script": 9,
+        "Document": 2,
+        "Other": 3,
         "Ping": 2
     },
     "nameservers": [
-        "ns-362.awsdns-45.com",
-        "ns-1997.awsdns-57.co.uk",
+        "ns-633.awsdns-15.net",
         "ns-1165.awsdns-17.org",
-        "ns-633.awsdns-15.net"
+        "ns-1997.awsdns-57.co.uk",
+        "ns-362.awsdns-45.com"
     ]
 }

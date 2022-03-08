@@ -7,41 +7,76 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000498,
-    "sites": 72,
+    "prevalence": 0.000365,
+    "sites": 51,
     "subdomains": [
         "cdnapisec",
+        "www",
         "analytics",
         "stats",
-        "images.frp1.ott",
-        "3223.frp1.ott",
-        "images.sgp2.ott",
-        "cfvod",
+        "api.eu",
         "cdnapi"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "kaltura\\.com\\/api_v3\\/service\\/multirequest",
+            "rule": "kaltura\\.com\\/p\\/1955031\\/embedPlaykitJs\\/uiconf_id\\/47912943",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
                 "cdnapisec"
             ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.mediaCapabilities": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.languages": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "0dfb39c2ce9f21ec9ce65b0572678e4db0c0950ede8d0eacadc1fc0630ddc83f"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "13tv.co.il",
+                "yle.fi",
+                "www.kirjasampo.fi"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/p\\/1068292\\/sp\\/106829200\\/embedPlaykitJs\\/uiconf_id\\/41907192",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.product": 1,
+                "MediaSource.isTypeSupported": 1,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.mimeTypes": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "47baf422a521097ac23906c1b7e5ae69a55d4f5ffb00f350ad748f21d724d89c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "disney.com",
                 "disneyplusoriginals.disney.com",
-                "films.nationalgeographic.com",
-                "www.disabilitybenefitscenter.org",
                 "www.starwars.com"
             ]
         },
@@ -50,27 +85,58 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdnapisec"
+                "cdnapisec",
+                "www"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 7,
+            "prevalence": 0.00005,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "disney.com",
+                "disneyplusoriginals.disney.com",
+                "media.un.org",
+                "www.newsmaxtv.com",
+                "www.tv2fyn.dk",
+                "www.tv2nord.dk",
+                "www.tv2ostjylland.dk"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/api_v3\\/service\\/multirequest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec",
+                "www"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.00005,
             "cnames": [],
             "responseHashes": [
-                "06bbd907e950940cb744be3b9214caf8b79f1dff9dfdce270c49d07180ceafbb",
-                "8abd14e9117381a912562f439a6b5ee50297173439b3f67c64a6fc8546676ac6",
-                "d3e8ad0e803061b8952c78643966a32242645d1462ac2529053725705bed2de1",
-                "405a72c31fc5f97a805d9adeb20b31a2ce9f210b0b26885cfe09d33a3ce5d411"
+                "e0e8b120f1817755f025c98933daf83ca3046c5508eb147fbaa0ef88fd4c9b0f",
+                "6e58f0c2d8cf9f0121410aefe66bbf51fcd83cb09b2a8a167e7b32588b4d19c5",
+                "aa44027858e3a3d0f8830f09cda5580edddeac9ff8ac6c0d1bbebe4296a56f72",
+                "fd09957c43e7f120b08e1b8ad0526379083a1a76ef6a246bd59b611bb4cfa1c9",
+                "08b4d40838b5c3a15b275c941f6afa920130594abae36974483bdc38a79a2e19",
+                "4d5ea9ebe1e758ee192cc2809a01097333a0d0c0b2e007c434e0345ca9e5c0db"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "13tv.co.il",
+                "disney.com",
                 "disneyplusoriginals.disney.com",
-                "films.nationalgeographic.com",
-                "www.disabilitybenefitscenter.org",
-                "www.starwars.com"
+                "media.un.org",
+                "www.newsmaxtv.com",
+                "www.tv2fyn.dk",
+                "www.tv2nord.dk",
+                "www.tv2ostjylland.dk"
             ]
         },
         {
@@ -83,82 +149,280 @@
                 "cdnapisec"
             ],
             "apis": {},
-            "sites": 18,
-            "prevalence": 0.000125,
+            "sites": 16,
+            "prevalence": 0.000114,
             "cnames": [],
             "responseHashes": [
-                "9fd47949bb977d3f4ba85581c2b24af89b5213939a47b00be4afeb2e86d63d89",
-                "031653b06acb8882a6e50c41eb4866cace03dadd1a1fc63e41511163b06e9c4d",
-                "7ec54609ce9fa7199551fb957754bfc32a9b2df8862fc21ccc1e4ccc0140fca9",
-                "df2d69fc634007e818d8ddaec15fec6b5eb82d22f18ee71a67fd54cb8401f098",
-                "c785310dd64eb22b22fba7ce15d82cf12b68350896457731b43453dfc7042e7e",
-                "cae7ad73945e5fafbf2cbbba3ef9a4a485bbfcfdec73ce274b7faa200f5e8d8c",
-                "ee4c6bbd148f7f146f3e1099aba0a1ebc2a18c35da6d430b2f89b40a0efcbae7",
-                "d2a1ae333decec0d93ea95f570fa877a989274b1a66bb53bee798ed06d495d32",
-                "e3e071ee22fb04169595cb22c30d3792fcd52e91411acd2e17d7e03e41833d67",
-                "250d9ad62a1f1ba27de699d8092f847238ea3cbca906a6de69af55595b8342ea",
-                "58fedc94977a3a8f5a550896b5399e10e3c639044ea186c927433073b464bac2",
-                "02ec310ada15fab54edfc1e34cdd2675ac638e1308a9cfe11ffaf01c88e5c3a6",
-                "9eb50e5ba4c67d31816158f27bc4c8d9a7bd9a212fdf9992463bfa6df3643aa3",
-                "3a71d8267735358b2874d60ea5bd9986e90e87baa151727dbf5210d30142d457",
-                "d723c405b518d0b20a5d5fbf421108b5de532f3b852a610c28a05381b4f734ab",
-                "cb054c341d457c33500ee1b35eb56f117667edd944301aa29d1a63c09b05ed4e",
-                "6ce53792671dfc718428ea144427ee52b975690b13a15366819124b3a394d4dc"
+                "803b82fd7521e93a7cca759a75a9d8f59c088c03858546d9dca94a9b0253f437",
+                "7bd3b71b50afb989dfe68cc7f8b04b2af8fabe23e961c0dbd2c1a8c7d3b717b8",
+                "167b824084751f8da7c5781f8b8df18fc9e29320ee6a27d2c5ea3c1217ae7a92",
+                "be530ee5cf79b5e32888bd7946413d4dbe1eb5d43543df920566fc82c6961c64",
+                "5677316e1d8d6bf4b153a3f9a6f4a66c87bd9cd776ba7d662f3a2f7b3e6d04bd",
+                "045827dd60a784e3828f552622605731d48ad663a7068b8d25869d1ea7e92073",
+                "25935a6e147deb185e8a7129992296e99ed81078a6566d4d0dece177806a9845",
+                "0276f0d417104a19dc84c08db3a33f6316e4f6ef8aebe9b99c80f296792e5b8b",
+                "44b844ea4acfc0bcde426418f51620268cf157863ebfbddab02665cab9f07d26",
+                "3a392c70cc021ac4dde4bba3048bd7031b567a261d2767e50ada16e5f455a07e",
+                "750a1c124f277803288bcd382d786cfdc0d1822164668ba3d5d938e61c78752d",
+                "2dc65bb458ff1336577d707c08fc6e13461488c59c2ee1ccd144f2f320b7cfed",
+                "7315389d7463286d27d69504f1490699b6936ebf32ce42fbf51c12058d92b067",
+                "bde913345eb5604d791ce3ac27e193cc1576662f44617fb40fa59ad183727664",
+                "9c37685b58d89350e3e21990e9d36d116d28238163ac2dcbc17f5df3db8e088d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "13tv.co.il",
-                "disney.es",
+                "disney.com",
                 "disneyplusoriginals.disney.com",
-                "extension.oregonstate.edu",
-                "films.nationalgeographic.com",
-                "humanorigins.si.edu",
-                "news.un.org",
-                "vt.edu",
-                "www.bucknell.edu",
-                "www.disabilitybenefitscenter.org",
+                "frozenthemusical.co.uk",
+                "media.un.org",
+                "toledo.kuleuven.be",
+                "www.castrol.com",
+                "www.disney.com.au",
+                "www.forsvaret.dk",
                 "www.gsb.stanford.edu",
+                "www.newsmaxtv.com",
                 "www.nottingham.ac.uk",
-                "www.novartis.com",
                 "www.oreilly.com",
-                "www.rfa.org",
-                "www.shopdisney.com",
-                "www.starwars.com",
+                "www.tv2fyn.dk",
+                "www.tv2nord.dk",
+                "www.tv2ostjylland.dk",
                 "www.vetstreet.com"
             ]
         },
         {
-            "rule": "kaltura\\.com\\/p\\/1068292\\/sp\\/106829200\\/embedPlaykitJs\\/uiconf_id\\/41907192",
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.71\\.2\\/load\\.php",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdnapisec"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.product": 3,
-                "MediaSource.isTypeSupported": 3,
-                "Navigator.prototype.vendor": 3,
-                "Navigator.prototype.mimeTypes": 3,
-                "window.localStorage": 3,
-                "HTMLMediaElement.prototype.canPlayType": 3,
-                "Date.prototype.getTime": 3
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.connection": 2,
+                "URL.createObjectURL": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "121703983c5ce492cdc0fa7c7c58852fedc582746ee4869a3dc320ccf0714fca"
+                "f8af56510a952e983817679cd729d58a29ff45ef127bd160bc1e096245174a32"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "disney.com",
-                "films.nationalgeographic.com",
-                "www.starwars.com"
+                "frozenthemusical.co.uk",
+                "www.disney.com.au"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.71\\.2\\/\\/skins\\/kdark\\/fonts\\/icomoon\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "aa14debba7bc016eefbf468197833a1ec2301f58e54e724dc5a292541bf51016"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frozenthemusical.co.uk",
+                "www.disney.com.au"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/p\\/2503451\\/embedPlaykitJs\\/uiconf_id\\/47917953",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 1,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.vendor": 2,
+                "Screen.prototype.orientation": 2,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.mediaCapabilities": 2,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.connection": 2,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "213caae7ab843ae82031e02cc78f72718fe4d6fdf6ca170fd9b60212784bf4bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "un.org",
+                "media.un.org"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/p\\/2375821\\/sp\\/237582100\\/embedIframeJs\\/uiconf_id\\/43066731\\/partner_id\\/2375821",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.79\\.3\\/mwEmbedLoader\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b3f0c3b63c8a6a1cd7ab213f6db67af63db0fd184667c0e6986c8c57cf9dfc48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.79\\.3\\/load\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {
+                "window.name": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.javaEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d830c24ad7f000377751de9f89ed14158723f5e073dc0beefa0685aefb8d0b5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.79\\.3\\/modules\\/Quiz\\/resources\\/fonts\\/Lato-Light\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9b0c466f7175c1446f04f1c3ab85259e9670c2e9cb92a8db7db08b60fe1e70e2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.79\\.3\\/\\/skins\\/kdark\\/fonts\\/icomoon\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "aa14debba7bc016eefbf468197833a1ec2301f58e54e724dc5a292541bf51016"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.79\\.3\\/\\/skins\\/kdark\\/images\\/kalturaLogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnapisec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "039aa0f855ef54087c06869beb3a04acebe784f5cbb78a5a6d40594de5d67053"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuleuven.be",
+                "toledo.kuleuven.be"
             ]
         },
         {
@@ -169,75 +433,57 @@
                 "cdnapisec"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "85235410e5670d522b41f587af5ba6211f2e49addb9da816e7154d5574983bb0",
-                "f5629e6f310e0dc2997fb0da74ff7316bbb3cb3e1aeb42e956517b24b362ad51",
-                "a6c129001df4476b67d1b34f14d2f15837213164946b447e4e5cad73f49afa58",
-                "0ed87903ce1c3daff309e40c2c7c5d7c21f6ab9065fa9fe2250640c995017b00",
-                "d59c760b477f314628a5523ed02697faef41aa10f877b6b4e9dfa389c96dfbcb"
+                "847c9a2a01a2d97750df6b8fb9f58ef33c65e7a77c7133059b69dad9795a199a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "si.edu",
-                "news.un.org",
-                "vt.edu",
-                "www.bucknell.edu",
-                "www.novartis.com",
-                "www.shopdisney.com"
+                "castrol.com",
+                "www.forsvaret.dk"
             ]
         },
         {
             "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.92\\/load\\.php",
-            "cookies": 0.00000692,
+            "cookies": 0.00000715,
             "fingerprinting": 2,
             "subdomains": [
                 "cdnapisec"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Date.prototype.getTime": 6,
-                "Navigator.prototype.mimeTypes": 6,
-                "Navigator.prototype.platform": 6,
-                "Document.cookie getter": 6,
-                "Navigator.prototype.javaEnabled": 6,
-                "Navigator.prototype.plugins": 6,
-                "HTMLMediaElement.prototype.canPlayType": 6,
-                "Navigator.prototype.appName": 2,
-                "MediaSource.isTypeSupported": 5,
-                "Document.cookie setter": 1
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.connection": 1
             },
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "5a99b3e1e1240afc35f538d713cdc821bbcc0267c7da83f5f506517dcf2dad50",
-                "4f57cff5376849aebf371cc9ff639ae5d5385d364d0e1a22917757df61deb4a2",
-                "527d302666efa89638ac8dbd72913a061ff5121cb3727e7eef9ca15d62a530d5",
-                "1e5ab3904c8359afea7b846f31efaabb080781ed6d8ab2846d177207d8682377",
-                "8ab25a2111917b0ba18638d9e17f5da994cef4370f832bf02bbffe04708bd28c"
+                "fd91791c587ae05c4960cd926b63b977446568356dccc3ad55c29ed59120a09b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "volumeControl_volumeValue": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000006922043941134938,
+                    "prevalence": 0.000007149904906264747,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "si.edu",
-                "news.un.org",
-                "vt.edu",
-                "www.bucknell.edu",
-                "www.novartis.com",
-                "www.shopdisney.com"
+                "castrol.com",
+                "www.forsvaret.dk"
             ]
         },
         {
@@ -248,8 +494,8 @@
                 "cdnapisec"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "aa14debba7bc016eefbf468197833a1ec2301f58e54e724dc5a292541bf51016"
@@ -258,524 +504,52 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "si.edu",
-                "news.un.org",
-                "vt.edu",
-                "www.novartis.com",
-                "www.shopdisney.com"
+                "castrol.com",
+                "www.forsvaret.dk"
             ]
         },
         {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/8d114396421c492699cdb7e56a893762\\/version\\/8\\/width\\/1920\\/height\\/1080\\/quality\\/80",
+            "rule": "kaltura\\.com\\/p\\/139\\/thumbnail\\/entry_id\\/0_tkx0gxa0\\/width\\/320\\/height\\/180",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "images.frp1.ott"
+                "api.eu"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "daf142d33e657e3b5a45f484aef82f7b0c0b1c89779ca4e3aaf801fa39c4f3f7"
+                "fe1589ba992a07a823126c7d864796d2e16a34703417ebe862b93098b7f99c2f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
+                "cbs.nl",
+                "www.cbs.nl"
             ]
         },
         {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/4961e2646bf14a1c8312490673eec7ab\\/version\\/8\\/width\\/1920\\/height\\/3072\\/quality\\/80",
+            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.71\\.2\\/mwEmbedFrame\\.php",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4a02f3b1bb01a5b47bc9210301cb9c9baa1939fe8aea77c1ae8b7fddcf6da3bd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/d41177e664b14a658169aefa7b0d68b3\\/version\\/5\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "74b03ad9647a9dc9ff9f356d3348091562699b4914634767fa7ebb1ab6f89876"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/231a37d6fd3847cba1fb495b939e1343\\/version\\/4\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7edc295a0ab99f11cde29acf917c91848e76ae481c18f48f827ca571f1982227"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/0a19bbdff22b4fa2a65f73667f470be6\\/version\\/7\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7a417e445e1a5ab2c55c3c5acf8ab03de9d5d8e494e0ab0cf4a14b2ac53da7c3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/a12332f822234160be13606e2858fd89\\/version\\/0\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "76ec6f04af2bdee2c65dbffc7a77314ab3cb3dde3fab662d47cc95cf69814b21"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/2174fda2aacc4930b8278b5085801392\\/version\\/8\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7f252ee8b48ba2401c9881139a1577ca478a2885ace97c70ad36783acea9ee3c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/580655ec068d452a947e4315fcaa2570\\/version\\/32\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ece1458398f9e1d1fcf171e503fb083064439dc500254cdc272619ad3824913a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/2f53ed7c6700443aae2c50681e85fc94\\/version\\/11\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "95ade5e7005eed1324866bb520db5a6f631832837b7fd3d19df700ca43ce4052"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/074f18b4951f4e58a871b78f0d9e9ce3\\/version\\/54\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "395df09ce4d9237fc80c4fce25d912d215d7b1a09844225a6da42ea536b6e372"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/api_v3\\/service\\/asset\\/action\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3223.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/api_v3\\/service\\/userAssetRule\\/action\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3223.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/api_v3\\/service\\/asset\\/action\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3223.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e1161537f0d3ab5f07179f3aa976d870974de1a6f8caa2f13241b6ed28317bb9"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/api_v3\\/service\\/userAssetRule\\/action\\/list",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3223.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fe66ec6d2061bf97008aaf14d76b5e12b27d793a49cd7895e687a40c1886dcaf"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/34a35ccc551b4842afd1da0efb1181b6\\/version\\/1\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b9dc0feef44ab161628738c7f0b8a97f660aef2f23b497f92b306c396c2f5177"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/0107e25ebe07442aac8fb023c5459208\\/version\\/1\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9435780ebf361b0b47580644bbc0df87e3dca9dc1b0c6156afead58c47dc3958"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/0c2c12cb5fc3485090d67f68c6ea5a89\\/version\\/27\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8751641ed78bab5bf4ede30258fefb7f9464a6ca1ad2822fbceddd241db045a8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/864a2b1942874fa6b03b6727917fae6d\\/version\\/29\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d3f4cc80b2884be7f0bfd21559176b1413543fe28f40de8a70ee93a8095111c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/3223\\/entry_id\\/380f8b6275cf46999846671db2472723\\/version\\/8\\/width\\/768\\/height\\/1117\\/quality\\/80",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.frp1.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3a6dbaadecea7bb20892f0f8adddfdd262491208b63b931265e92d9d5db33426"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "3plus.tv",
-                "www.3plus.tv"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/Service\\.svc\\/GetImage\\/p\\/147\\/entry_id\\/8a35697900614b43aeb3fc41a7276d1b_1\\/version\\/7\\/width\\/640\\/height\\/360\\/quality\\/100",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "images.sgp2.ott"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e2f6708e7a81c73a13fd6beca71f3b48cb0724c952f3e862c11a90c47539f2ac"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "channelnewsasia.com",
-                "www.todayonline.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2918211\\/embedPlaykitJs\\/uiconf_id\\/46066101",
-            "cookies": 0,
-            "fingerprinting": 2,
             "subdomains": [
                 "cdnapisec"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.mediaCapabilities": 2,
-                "window.localStorage": 2,
-                "Screen.prototype.orientation": 2,
-                "Navigator.prototype.connection": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "Navigator.prototype.language": 2,
-                "URL.createObjectURL": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "ec8d82a5099b9851e08daa842a0fc2b1283a3c0c031a1657efc3642cf399d2a4"
+                "56f781f685233b0fcadb949945d611a1a8b5a10b708a807446ca3c5944be4109"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "disabilitybenefitscenter.org",
-                "www.disabilitybenefitscenter.org"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2918211\\/sp\\/291821100\\/thumbnail\\/entry_id\\/1_rwbdsdvv\\/version\\/100001\\/width\\/164\\/vid_slices\\/100\\/ks\\/djJ8MjkxODIxMXxrb4TNvqxFDGSfmCuQ_Wt0AmnRn6iOTVJmnfAPFvLqfA3cJzCWV4Jubv34pYbVRLT1J2cx3cciSJIOQAkJbhpTYxWzOPr3suEN15ElPKJTVQ==",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9a6989c9e8c89dc9b1b746f1f010d981250664db4e464ab6865db9129fe1049d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "disabilitybenefitscenter.org",
-                "www.disabilitybenefitscenter.org"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2918211\\/sp\\/291821100\\/playManifest\\/entryId\\/1_rwbdsdvv\\/protocol\\/https\\/format\\/mpegdash\\/flavorIds\\/1_x21s23b1\\/a\\.mpd",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdnapisec"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "disabilitybenefitscenter.org",
-                "www.disabilitybenefitscenter.org"
+                "disney.com.au",
+                "www.disney.com.au"
             ]
         },
         {
@@ -787,7 +561,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -806,13 +580,14 @@
                 "cdnapisec"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "212f41cb911fd25bb424f069e98386c644abf3144caa9598939c4cfc7f6a9a60"
+                "862538636827df936acf8bf3b82833a29919b62b2883f65a36f0c3825ba4cbc6"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -823,29 +598,7 @@
             ]
         },
         {
-            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.86\\/mwEmbedFrame\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdnapisec"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5155fb8dc4145aa130bf9d01ff9b11ec4cf5c284d7293708a7a94f2b784a9b49"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oreilly.com",
-                "www.rfa.org"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.86\\/load\\.php",
+            "rule": "kaltura\\.com\\/p\\/2082311\\/embedPlaykitJs\\/uiconf_id\\/48290763\\/",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -853,268 +606,50 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.mediaCapabilities": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.platform": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
+                "Navigator.prototype.mimeTypes": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "f5a8ab1f86a7f3e3d6802c39a80aa2bce5b9c95051affb74267ecd487b181549"
+                "284f07154ae2e460fa972c0b49b38957102309e052cad0a74a9462e6c60bc2c2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oreilly.com",
-                "www.rfa.org"
+                "mewatch.sg",
+                "www.mewatch.sg"
             ]
         },
         {
-            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.86\\/\\/skins\\/kdark\\/fonts\\/icomoon\\.woff",
+            "rule": "kaltura\\.com\\/p\\/424421\\/sp\\/42442100\\/embedIframeJs\\/uiconf_id\\/7033932\\/partner_id\\/424421",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "cdnapisec"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "aa14debba7bc016eefbf468197833a1ec2301f58e54e724dc5a292541bf51016"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oreilly.com",
-                "www.rfa.org"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2520931\\/embedPlaykitJs\\/uiconf_id\\/43941301",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdnapisec"
+                "www"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.mediaCapabilities": 2
+                "window.localStorage": 1
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "39cb83ecf00e6a272cbeeb018c417eca795a7561d9192912bf6fd8c03fbd5f46"
+                "d4ac19af076b79147602dd46fa9e5771d0d2e5763ec4800c1c612e8774059220"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pocsports.com",
-                "www.pocsports.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2520931\\/sp\\/252093100\\/thumbnail\\/entry_id\\/1_tkkxglhi\\/version\\/100001\\/type\\/3\\/width\\/360\\/height\\/360",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f8a1b426f94bc5c46b80aae1c5678883a2ae360396cf1e3128e8993b4922da56"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pocsports.com",
-                "www.pocsports.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2520931\\/sp\\/252093100\\/thumbnail\\/entry_id\\/1_nb3lh2sk\\/version\\/100001\\/type\\/3\\/width\\/360\\/height\\/360",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "725582ec6c5614a13031e036c502246f98b0f4ae13d01efc4eaf8f8d2a319d20"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pocsports.com",
-                "www.pocsports.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2520931\\/sp\\/252093100\\/thumbnail\\/entry_id\\/1_tkkxglhi\\/version\\/100001\\/type\\/3\\/start_sec\\/0\\/end_sec\\/3\\/width\\/360\\/height\\/360\\/vid_slices\\/12\\/file_name\\/thumbnail\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a33c572584b7f0248bf35e8a86dfd3be9bd354b660f3f7128a9b01f2954c3588"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pocsports.com",
-                "www.pocsports.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2520931\\/sp\\/252093100\\/thumbnail\\/entry_id\\/1_nb3lh2sk\\/version\\/100001\\/type\\/3\\/start_sec\\/0\\/end_sec\\/3\\/width\\/360\\/height\\/360\\/vid_slices\\/12\\/file_name\\/thumbnail\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "54ccf53cbcde4890c1206791e0003a556b8872b6dae693054f46a826cbbad795"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pocsports.com",
-                "www.pocsports.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/3042751\\/embedPlaykitJs\\/uiconf_id\\/46406191",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdnapisec"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.mediaCapabilities": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1b0509e99177020bd81e3a54527f0658a92373560bf464c707d7149c117c0f55"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rodanandfields.com",
-                "www.rodanandfields.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/3042751\\/sp\\/304275100\\/thumbnail\\/entry_id\\/1_1essijuj\\/version\\/100001\\/type\\/3\\/width\\/283\\/height\\/0",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2ce0da4102c7321db3dc98c355c3b62e92e8fde2c9c4b14debe986025eacc668"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rodanandfields.com",
-                "www.rodanandfields.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/3042751\\/sp\\/304275100\\/thumbnail\\/entry_id\\/1_1essijuj\\/version\\/100001\\/type\\/3\\/start_sec\\/0\\/end_sec\\/3\\/width\\/283\\/height\\/283\\/vid_slices\\/12\\/file_name\\/thumbnail\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cfvod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c44147eccf3a0ccedf3f69ea3ac3086b964d59f91335e4205fffa6b01c472b60"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rodanandfields.com",
-                "www.rodanandfields.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/p\\/2593021\\/embedPlaykitJs\\/uiconf_id\\/44463011",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdnapisec"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.product": 2,
-                "MediaSource.isTypeSupported": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.vendor": 2,
-                "Navigator.prototype.mediaCapabilities": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a907994e3ce543da0eab6a66da6d32aa0b4129079240284d765275538c77a306"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "smithoptics.com",
-                "www.smithoptics.com"
+                "une.edu.au",
+                "www.une.edu.au"
             ]
         },
         {
@@ -1126,13 +661,11 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.plugins": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.appVersion": 2
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.mimeTypes": 1
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "726cad130675c9e9dfab84b2d84432d63fd607072ae32d14b552d4f71060241f"
@@ -1154,10 +687,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "619e9b8ac84377f1cc2aef16f4258466a8fda6580cb11b9774599fcab8f2644e"
+                "ddeeb7a758860d758c6d5e53616227663408eb60dc0fb266d4feed56cf3da634"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1170,22 +703,16 @@
         {
             "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.27\\.1\\/load\\.php",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdnapi"
             ],
             "apis": {
-                "Event.prototype.timeStamp": 1,
                 "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.plugins": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.javaEnabled": 1,
-                "HTMLMediaElement.prototype.canPlayType": 1,
-                "Navigator.prototype.mimeTypes": 1
+                "Date.prototype.getTime": 1
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "b40ac9930ceb1d392bd3bee6b9c1d676ec443f58ae0215b0ffeb292fe40268f3"
@@ -1199,25 +726,68 @@
             ]
         },
         {
-            "rule": "kaltura\\.com\\/html5\\/html5lib\\/v2\\.27\\.1\\/\\/skins\\/kdark\\/fonts\\/icomoon\\.woff",
+            "rule": "kaltura\\.com\\/p\\/48857972\\/embedPlaykitJs\\/uiconf_id\\/48391193",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 3,
             "subdomains": [
-                "cdnapi"
+                "cdnapisec"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.product": 3,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.vendor": 3,
+                "Screen.prototype.orientation": 2,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.mediaCapabilities": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "e4bfbb5b7ec17d76ef3dc10cc5a686b6a47a60895dcf3e58bc248a135ea4de0c"
+                "bf74572178a45d34e33acbebebb7ab877afd552783cc4b6cf855ddc1a91caaf5",
+                "f9f933b6b8ce1accdc1977d351bf79e6bc19f5521da54048de8534012618c1e6"
             ],
-            "type": "Font",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vetstreet.com",
-                "www.vetstreet.com"
+                "wionews.com",
+                "www.wionews.com",
+                "zeenews.india.com"
+            ]
+        },
+        {
+            "rule": "kaltura\\.com\\/api_v3\\/index\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wionews.com",
+                "www.zee5.com"
             ]
         },
         {
@@ -1239,34 +809,12 @@
                 "Navigator.prototype.connection": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "3a68164657543939f927afba75762e039fd05c1d70a4104724ebe920411cbb94"
+                "b5d77e9871c9fc6f54d7a50ffd8b1fe77c97b2ea1ab6f4182ac8aad6e4bbcda7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "zee5.com",
-                "www.zee5.com"
-            ]
-        },
-        {
-            "rule": "kaltura\\.com\\/api_v3\\/index\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1277,15 +825,14 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000143,
     "types": {
-        "Preflight": 9,
+        "Script": 34,
+        "Preflight": 7,
         "XHR": 23,
-        "Script": 35,
-        "Font": 9,
-        "Image": 46,
-        "Fetch": 6,
-        "Document": 4,
+        "Font": 8,
+        "Document": 6,
+        "Image": 4,
         "Ping": 2
     },
     "nameservers": [

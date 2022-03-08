@@ -4,34 +4,82 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000623,
-    "sites": 9,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
-        "sdk",
         "cis",
+        "sdk",
         "collector"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cis"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapo.cl",
+                "m.yapo.cl",
+                "www.subito.it",
+                "www.yapo.cl"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
+            "cookies": 0.0000286,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cis"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "ee1d30d99853f89d5d4077c5bf3507523fb86256ad80ff536a7e911d62e8e4ef",
+                "33ae745bb764e0e5dbdee062e12e0aa8deacca2aef4b2d6c0f891a5b7248014c",
+                "a8b92fce61b85cfbe7091c375bf93da03fe252f3b4e78942d1300043e3a7dfb5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapo.cl",
+                "m.yapo.cl",
+                "www.subito.it",
+                "www.yapo.cl"
+            ]
+        },
+        {
             "rule": "mpianalytics\\.com\\/pulse\\.min\\.js",
-            "cookies": 0.0000346,
+            "cookies": 0.00000715,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "Document.cookie setter": 5,
-                "Navigator.prototype.language": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5
+                "Document.cookie getter": 3,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 1
             },
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "5ed3a33f8205b62c1d8f09af330700c68ad0c836701f88981bf8bb1518c059e2"
@@ -39,107 +87,29 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_pulse2data": {
-                    "ttl": 63072003,
-                    "length": 550,
-                    "prevalence": 0.00003461021970567469,
+                    "ttl": 63072009,
+                    "length": 529,
+                    "prevalence": 0.000007149904906264747,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "jofogas.hu",
-                "www.jofogas.hu",
-                "www.segundamano.mx",
-                "www.willhaben.at",
+                "yapo.cl",
+                "m.yapo.cl",
                 "www.yapo.cl"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
-            "cookies": 0.0000415,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cis"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "2c4760e3228b0b6e41e1f2d0296b0dedfc647e41fef5db417cd880fb35782f6d",
-                "42dd66b3969394b3b2323e534344e826cec52e780003363b673aefef51ce0f8c",
-                "d2c0b391c9853c9574897c982b452a5b89ef5084248221f21411b42fc3956df4",
-                "de033976f68ba0a80875e3bf690686f037d91f4401f2ae0066b0bbae22135691",
-                "60a9e72f0972faa3cca1f05a5cec4e43bfb232e0eb323880a016c6079a46b351"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jofogas.hu",
-                "www.jofogas.hu",
-                "www.segundamano.mx",
-                "www.subito.it",
-                "www.willhaben.at",
-                "www.yapo.cl"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cis"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jofogas.hu",
-                "www.jofogas.hu",
-                "www.segundamano.mx",
-                "www.subito.it",
-                "www.willhaben.at",
-                "www.yapo.cl"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:jofogashu",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jofogas.hu",
-                "www.jofogas.hu"
             ]
         },
         {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/sync",
-            "cookies": 0.0000346,
+            "cookies": 0.0000286,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -148,55 +118,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "segundamano.mx",
-                "www.segundamano.mx",
+                "yapo.cl",
+                "m.yapo.cl",
                 "www.subito.it",
-                "www.willhaben.at",
                 "www.yapo.cl"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:segundamanomx",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "segundamano.mx",
-                "www.segundamano.mx"
-            ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:subito",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "subito.it",
-                "www.subito.it"
             ]
         },
         {
@@ -208,7 +133,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
@@ -220,16 +145,38 @@
                 "yapo.cl",
                 "www.yapo.cl"
             ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:subito",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subito.it",
+                "www.subito.it"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000623,
+    "cookies": 0.0000429,
     "types": {
-        "Script": 5,
-        "Fetch": 14,
-        "Preflight": 6,
-        "Image": 5
+        "Preflight": 4,
+        "Fetch": 8,
+        "Script": 3,
+        "Image": 4
     },
     "nameservers": [
         "ns-221.awsdns-27.com",

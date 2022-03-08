@@ -4,40 +4,47 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000623,
-    "sites": 9,
+    "prevalence": 0.000107,
+    "sites": 15,
     "subdomains": [
-        "capture-api"
+        "capture-api",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "ap3prod\\.com\\/-\\/events\\/page-event",
-            "cookies": 0.0000346,
+            "cookies": 0.0000572,
             "fingerprinting": 0,
             "subdomains": [
                 "capture-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "60d191355a86166fa5f86f30d371f6f349975ba0d2bc6cb40af9dca4d04cfc13",
-                "875042ed43b62d20e23c7d4f84ff3b3a6bd2005b8d6118a1843a9f8fc89cce0c",
-                "3caf154eca1a6899fcf047b147f662a35ad3b51091488876838bc6b85a0f30e3",
-                "741271e50d182820c07dac4ab15b7c4fde9225a7d3d60b3c89260cc3dad929cd"
+                "ae33ab9fb9cbd0011a5c2a0af3a351f25acd93094901346ec29de3f368b27ffc",
+                "fb5902b99d60ecf53929128aa22a691aaa84607903782decd9d13feeeeefca6e",
+                "76c1ec79638dd1e9b5aa09f83d4f25a0b453fca7da028a1b9a1c1cf55d404ad2",
+                "0e73826df0479f2afaae79a7769c9678cf0ed1590c306fb163fd3ac98556c064",
+                "40c368d7c2ffa05c065142eea422af9f83017038f1c28de7ce27a4d088fa6bd9",
+                "753b334ad7dbbc979dd04cc354835998f143779de93cca18fb13cfd65394ed83",
+                "e76fcaeb7881e3f060ab7368d93e4927d3a5cc268f643888af1481abfec92be3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "adf.org.au",
+                "cryptotaxcalculator.io",
                 "dogfood.guide",
+                "www.couriersplease.com.au",
                 "www.felineliving.net",
+                "www.flyplay.com",
                 "www.harrisfarm.com.au",
-                "www.orgoneenergy.org",
-                "www.walcottradio.com"
+                "www.orgoneenergy.org"
             ]
         },
         {
@@ -48,38 +55,82 @@
                 "capture-api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "06b3bc0e0a0b4f926b031a722e9728d5a4897f91d43692f080add5f4755d1f63",
                 "eb9c42b0cc2cc3a68ed84f0b40b4b4d11a4e6c3755ac899a0f7f4d8a901a4bdf",
+                "13178d142b61aaf9203bd8fa528ffd9a91b3749f5b86139eac72623c77df776e",
+                "434b3d83248150c32a77aebd49951ee1bdf814624122f8c7f41ac2a402e0aa17",
                 "68e738d0548a19232e866cab7319d5dd89c81b306ffa5088eb2b0e071cfe1aea"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "adf.org.au",
+                "cryptotaxcalculator.io",
                 "dogfood.guide",
+                "www.couriersplease.com.au",
                 "www.felineliving.net",
+                "www.flyplay.com",
                 "www.harrisfarm.com.au",
-                "www.orgoneenergy.org",
-                "www.walcottradio.com"
+                "www.orgoneenergy.org"
+            ]
+        },
+        {
+            "rule": "ap3prod\\.com\\/app\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7cf50f2b782f0d48794384eeb6d34d79bddd959981e0a0662cf82114ad9da8f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ap3c": {
+                    "ttl": 31536007,
+                    "length": 50,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "couriersplease.com.au",
+                "www.couriersplease.com.au"
             ]
         },
         {
             "rule": "ap3prod\\.com\\/-\\/events\\/cw-event",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "capture-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "29dea27e8d2a2056ab9c989e3d53551ed98f4214a69b015807a018b51dbfea3d"
+                "26675add1265d8669c6c6cbe4af4b57557c8fa44583248918cab0aad1585a5f8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -92,9 +143,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000623,
+    "cookies": 0.000107,
     "types": {
-        "XHR": 12
+        "XHR": 18,
+        "Script": 2
     },
     "nameservers": [
         "ns-679.awsdns-20.net",

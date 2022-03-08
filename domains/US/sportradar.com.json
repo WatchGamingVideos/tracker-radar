@@ -7,55 +7,80 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000159,
-    "sites": 23,
+    "prevalence": 0.000143,
+    "sites": 20,
     "subdomains": [
+        "avplayer-cdn",
         "tm.ads",
         "tracker.ads",
         "echoback.ads",
         "serving.ads",
-        "widgets.media",
-        "img",
-        "uswidgets.fn",
         "widgets.sir"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "sportradar\\.com\\/dist\\/tag-manager\\.js",
+            "rule": "sportradar\\.com\\/dist\\/latest\\/avvpl-player\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "tm.ads"
+                "avplayer-cdn"
             ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "5294a92f9317c1df27207d9156215a7da9d5bb01a1319127e56ca441518f5e2c",
-                "ad586a13c7f4b22232722c5058ada39ffb05326c2be45713064983a4adc54ac9",
-                "00f908472f9596cd78e056d60aca28f093477462129270d6aa59b02a9567e60e",
-                "d6761940e6ce50470766ce15416ce8697f3f8e1674c5b605472efe3cad8d9bc4",
-                "b3065b6ca5ccf7e307619b0122e3ac4aaebef0012e467af6ded4c3948f1a8a1b",
-                "885f85a166808c7b0c928457708bc6556b8b2d03c1d8b4ab510ab471147d0bee",
-                "eb2450f21850a105d6a65636862c83a14c122de2f541471e2a5ee398be1057bb",
-                "1f07fb349a64a14fb0e3c92fca32ab28f12ec7b63858b10a8ee455ce7205e736"
+                "19716c0041151ffe1a3a32c63201074cfddcc8dabdb350d855117afd8199bf5e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "betway.com",
-                "sportsbook.fanduel.com",
-                "www.49erswebzone.com",
+                "odibets.com",
+                "www.wrc.com"
+            ]
+        },
+        {
+            "rule": "sportradar\\.com\\/dist\\/tag-manager\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tm.ads"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "8b9b410c92f3de38222221093a380a550e7fbbdc82065e55a4171a942db65be3",
+                "fc46d7b48bfb48124a73bce866ffe41e76b0c401d465a257fa4eeb977be7b623",
+                "2ffea65ddc79136facd3eaac4d727881e8e2a39f8b3123a7764de40c4b049ffa",
+                "7d1284a8c3de6e0e42d2b55d798d531120ad97b004f7e5f73e4c393e92ac6fd4",
+                "885f85a166808c7b0c928457708bc6556b8b2d03c1d8b4ab510ab471147d0bee",
+                "2d6bc17a5589e42b1f2db2e040f66eee5dd0d4e6262835e348830824d7bf5174"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odibets.com",
+                "pixbet.com",
                 "www.bet9ja.com",
                 "www.betika.com",
-                "www.fanduel.com",
+                "www.betsson.com",
+                "www.coolbet.com",
                 "www.mozzartbet.co.ke",
-                "www.pinnacle.com",
-                "www.sportybet.com"
+                "www.pinnacle.com"
             ]
         },
         {
@@ -66,12 +91,12 @@
                 "tracker.ads"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Document.cookie getter": 9,
-                "Navigator.prototype.maxTouchPoints": 9
+                "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 8,
+                "Navigator.prototype.maxTouchPoints": 8
             },
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "feda67648acd203488c2c74a84f52bef7a05a3154a00cb2fbc94c62d559afb46"
@@ -80,15 +105,154 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "betway.com",
-                "sportsbook.fanduel.com",
-                "www.49erswebzone.com",
+                "odibets.com",
+                "pixbet.com",
                 "www.bet9ja.com",
                 "www.betika.com",
-                "www.fanduel.com",
+                "www.betsson.com",
+                "www.coolbet.com",
                 "www.mozzartbet.co.ke",
-                "www.pinnacle.com",
-                "www.sportybet.com"
+                "www.pinnacle.com"
+            ]
+        },
+        {
+            "rule": "sportradar\\.com\\/dist\\/\\/sp-2\\.14\\.0\\.js",
+            "cookies": 0.0000572,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tracker.ads"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 8,
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.doNotTrack": 8,
+                "Navigator.prototype.language": 8,
+                "Navigator.prototype.mimeTypes": 8,
+                "Navigator.prototype.javaEnabled": 8,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "Screen.prototype.colorDepth": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "Date.prototype.getTime": 8,
+                "window.localStorage": 8,
+                "Document.cookie setter": 8,
+                "Document.cookie getter": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "50cf303cfaa020fcbedd6ad1bf045a008cbb88dfc792f731f07235dd1ca13599"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_srt_ses.133d": {
+                    "ttl": 1801,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.133d": {
+                    "ttl": 47304001,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.7460": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.7460": {
+                    "ttl": 47304003,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.55ca": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.55ca": {
+                    "ttl": 47304002,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.4e98": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.4e98": {
+                    "ttl": 47304002,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.718d": {
+                    "ttl": 1814,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.718d": {
+                    "ttl": 47304014,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.9d4b": {
+                    "ttl": 1809,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.9d4b": {
+                    "ttl": 47304009,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.b554": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.b554": {
+                    "ttl": 47304003,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_ses.9843": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_sp_srt_id.9843": {
+                    "ttl": 47304006,
+                    "length": 108,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odibets.com",
+                "pixbet.com",
+                "www.bet9ja.com",
+                "www.betika.com",
+                "www.betsson.com",
+                "www.coolbet.com",
+                "www.mozzartbet.co.ke",
+                "www.pinnacle.com"
             ]
         },
         {
@@ -100,182 +264,41 @@
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000554,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "a12191154cc9ca7efb0f9fc781ec90bd1ab312c2c11e33e9ae865601331fb49b",
-                "e00e83afdd3406d2373538b3c95a631356a473630b4b0508c414cddc9f8572ac",
-                "d6d6f09b14be76cb5dc092cd176cb07244cecbc84843fe3b3da700b5c52f37f1",
-                "9391ed854ac26646dcfee3fe2495aa9934562240eecd7f1aea811fda6c590c70",
-                "d74163cb8bbf84542ba9d5358f3194c4c05c786a4c8cbcd823f97aee7049bab4",
-                "f5ceb0277ec09f48faf6fc495bb3134287c210a4c454c6bc942312e60ed43948",
-                "2e8b1dca5d2882fa9aa33fbdc26864c206f7bb3d658feb2b2083986bd85a609b"
+                "045efbeabc6e9ad5a835c1a8546ec8656355b2ef4c88e86de59a4ea078480d0b",
+                "e508a5aeeade08ef613bb28ca077d681824054907505e73d006198e1fd9f953c",
+                "ee05c0c9e6584105dfc7d4a7568d643d8d5e7b36f150481e258c7924bfd506f3",
+                "0c1caa8688a617ca6a07c4c626ae2a947cb0bc57cb2a4ae9576b9b51b8863934",
+                "ddb3c8471d4a977f6f538e3bee3cf1390b0dc9ed0ee0144bcf39d1b84815ee6e",
+                "80d7fdf60efbbe88a9febd7364114a22fa938b0df23d398893b17a78642c5b59",
+                "52c7556bb1cc12490a62b1c4fd6984b9ff6f61666ae1efc74000c028eb1e2115"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "betway.com",
-                "sportsbook.fanduel.com",
-                "www.49erswebzone.com",
-                "www.betika.com",
-                "www.fanduel.com",
-                "www.mozzartbet.co.ke",
-                "www.pinnacle.com",
-                "www.sportybet.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/dist\\/\\/sp-2\\.14\\.0\\.js",
-            "cookies": 0.0000623,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tracker.ads"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 9,
-                "Navigator.prototype.userAgent": 9,
-                "Navigator.prototype.doNotTrack": 9,
-                "Navigator.prototype.language": 9,
-                "Navigator.prototype.mimeTypes": 9,
-                "Navigator.prototype.javaEnabled": 9,
-                "Screen.prototype.width": 9,
-                "Screen.prototype.height": 9,
-                "Screen.prototype.colorDepth": 9,
-                "Navigator.prototype.cookieEnabled": 9,
-                "Date.prototype.getTime": 9,
-                "window.localStorage": 9,
-                "Document.cookie setter": 9,
-                "Document.cookie getter": 9
-            },
-            "sites": 9,
-            "prevalence": 0.0000623,
-            "cnames": [],
-            "responseHashes": [
-                "50cf303cfaa020fcbedd6ad1bf045a008cbb88dfc792f731f07235dd1ca13599"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_sp_srt_ses.0d73": {
-                    "ttl": 1810,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.0d73": {
-                    "ttl": 47304010,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.7aed": {
-                    "ttl": 1825,
-                    "length": 1,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 0.5
-                },
-                "_sp_srt_id.7aed": {
-                    "ttl": 47304025,
-                    "length": 108,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.b5e8": {
-                    "ttl": 1824,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.b5e8": {
-                    "ttl": 47304024,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.55ca": {
-                    "ttl": 1802,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.55ca": {
-                    "ttl": 47304002,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.4e98": {
-                    "ttl": 1804,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.4e98": {
-                    "ttl": 47304004,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.b554": {
-                    "ttl": 1802,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.b554": {
-                    "ttl": 47304002,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.9843": {
-                    "ttl": 1803,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.9843": {
-                    "ttl": 47304003,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_ses.bb2d": {
-                    "ttl": 1802,
-                    "length": 1,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                },
-                "_sp_srt_id.bb2d": {
-                    "ttl": 47304002,
-                    "length": 108,
-                    "prevalence": 0.000006922043941134938,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "betway.com",
-                "sportsbook.fanduel.com",
-                "www.49erswebzone.com",
+                "odibets.com",
+                "pixbet.com",
                 "www.bet9ja.com",
                 "www.betika.com",
-                "www.fanduel.com",
+                "www.betsson.com",
+                "www.coolbet.com",
                 "www.mozzartbet.co.ke",
-                "www.pinnacle.com",
-                "www.sportybet.com"
+                "www.pinnacle.com"
             ]
         },
         {
             "rule": "sportradar\\.com\\/i",
-            "cookies": 0.0000554,
+            "cookies": 0.0000572,
             "fingerprinting": 0,
             "subdomains": [
                 "serving.ads"
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000554,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -283,951 +306,17 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.000006922043941134938,
-                "IR_gbd": 0.000006922043941134938
+                "domain.viq": 0.000007149904906264747
             },
             "exampleSites": [
-                "betway.com",
-                "sportsbook.fanduel.com",
-                "www.49erswebzone.com",
+                "odibets.com",
+                "pixbet.com",
+                "www.bet9ja.com",
                 "www.betika.com",
-                "www.fanduel.com",
+                "www.betsson.com",
+                "www.coolbet.com",
                 "www.mozzartbet.co.ke",
-                "www.pinnacle.com",
-                "www.sportybet.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/common_widgets\\.baeec261586f870e670c\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "52cc72c412bdcce34554ff0e61b7db978cdaaf02ec038045a16c295a1aa3ff71"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thegameday.com",
-                "www.49erswebzone.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/translations\\/en_us\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "7e4e91ead31e53e932bca49d22347c0e9b09db7f4432c81d3405bcc3fb494a41",
-                "395c3b036711faafc719f9586e38fa40c045161b445d01410261d5128cf51a8c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thegameday.com",
-                "www.ballysports.com",
-                "www.thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3433\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "411f99e1ff5236bdfbec08393fb082ec063e6bd74973eb182347fe1946e3c0f8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thegameday.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/react\\.4357113482fc698ff5e7\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "505ff2c7808b74fbcc6ec473230eb08225f9d44ff5d210bf0cae24ec313c1760"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "49erswebzone.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sinclair\\/widgetloader",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "eff47b096dc87f3bd72160d79f1b777e11f7d01c7a881036f43390e836c0b32f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/us\\.common\\.scoreTicker\\.c1108c5002ad1dcc6c2c\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5d4f3113942709f785ae289dd4da2fa39f4a3ddb80e84a8a7d9fa84e97c2c51a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sinclair\\/css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "37ad2b498689a002ecd27ba854b1b16cdf98c031c5bbe7818cad83be267dcd2e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sinclair\\/licensing",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "18f72bbeb0b862db3ad697a4f5baa76f8b853bd22deb80d102b7715db8d73819"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/uniquetournament_info\\/132",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4134dab73aefaa919e6b1e6f97971cb65d7d697bcd65c499be25d8af830b1797"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/stats_season_meta\\/85502",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3c69b6990ce85499d3c55c70c6c80b4b38c4a28e7125a39c114b8bad777c2811"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/livescore_season_fixtures\\/85502",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/uniquetournament_info\\/875",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f50809b9279a73d3ade7095cee3b6a24e6bf5cb87fc16d436c9d9272cfdc49c8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/livescore_season_fixtures\\/81728",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fd61fdb235ad166abfe43650afbf85ccce76f1abfd55e3dbfe7b25c05c3e0812"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3425\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7467ab62c4ce5b0ee2ebdacb7ab62fa8a357cf3f6cf82f8bc358faa96065344e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3420\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4bf9d44720b99627d6481b91aa8ac74ca87fb4e5e3d1a876ed537a50845005b2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3418\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "76906de663928b32b01da3a6b4b2379509024a7ec40d74c81d4726e834294ca4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3430\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "89fa81475a4ce7549022853977622eb78547c5ebb3f19356019fe862799089eb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3427\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "639737c95607514e69d9b8f0c22e8e0b073a298aadcba3a19e92b1aecaed19d7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3437\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d1bd38f95e3f6d21b13395ead2f8822d5fda214f6eb3187b4bbf0ac600b8b35d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3414\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0f7a2623f5142c6a2c7004de25afa8427d89ab09f16482aed41ab208acbda7fb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3422\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "55c1b25968633f15492bc716e96f9e77f25e1af7b4a9615575c20dab2ac96a81"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3435\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f83d6ce0d82072b1da791578a584319a0833663833f9e72657ea4f4a95f36531"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3423\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e518bc1319f616feafaedd761314ba3aebc5d14988722c024c2ecf94bb9a3c39"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3409\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "40a597dbae459efb86aba0a6f4b46826f11699f4b3de47905f0784cce4121ad8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3410\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "62b8d25a03c8fd76f873e8af29b0620786176ed17e2cb71ece431a8d6c2360cb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3431\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ccf0d0084d8c8ea6abbf4505278dc9ef1c664ab4218ed7b1594b5f883ca40628"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3436\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b146826e688601aa45159df1199eed865982a79c2d3036e808a59df9296dacfc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3429\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "87a513918d392669f74e4413d45034f33b58664193c2ad22d95bdf3b27cc4128"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3424\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3091af523863dee51b79136e89cda1a1eed53fdc4832618becfb56fb7d5d73c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3434\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "406b2bc11c0879f3a02fa1ebfc6260f9591c80501c1205a7b100f4537fd7ed89"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3415\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "757f2247f2ae8a08b1ae75af69a505fd6d4e7d64f874edc898dcdb7dc5518083"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3417\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b51b95fbfa8c3ff913c895e0d1287c4e39893ca80f6a12db68df9caf45a92275"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3412\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cb26769900652fcd23b9466432919a7c0f7d5971979060fbd64ee08ecc36e55e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3428\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "40042ce65b01db1b357a1a7f71508c05d45e45b28af2a40b111e73c7d256a13c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28809124",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7667382904e705afa4c7dc76fa8eab005a515f06c52fab97951e2f0076bc5618"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28809128",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b0f2be2c6c74823ecebad5a157b9de6705ad66901cf0fb31b7aefe864001ddac"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28808284",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "eeeb88f69f2127a8b1f759d80a76a5b0de350cc2ed2e055bb735b44849c0a8ab"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28809118",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "43f27d6a66136cc5c50e39ec6535d2f550a26bb8e58de319084e0c33b3b51c58"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28807746",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c9c9b8f0b8381aea84185e184b0a0d5a51f1fb37e9a7936f992d19aaf80225bf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28808522",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "195dd3bf727bc41a4aa6cd5dee266392aa09428f15ade509f8835b930043c776"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28807734",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "521991840e5eadd1753ceb5049a02f593b99ccba85fcb054f1ba44317ad3901b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28809012",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "c9bc805d293bedcdbce947fd44a9202a4c72276ec05f6bd680b74ecdaa226c64"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ballysports.com",
-                "www.ballysports.com"
+                "www.pinnacle.com"
             ]
         },
         {
@@ -1241,17 +330,17 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "bea9dbbd447f5af9aa60087afb9aca2ece1c5db1725b7ca6c45f8a3c1bf384fb"
+                "de7c022890fa27fa78b146d689dd7eed774b5c28b591a6003cae33cc64e66899"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "betway.co.za",
-                "www.betway.co.za"
+                "betway.com.ng",
+                "www.betway.com.ng"
             ]
         },
         {
@@ -1265,10 +354,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "41fb87a754aeec9e0c92f9c8c9560fc39294a0867c21da9665fe7431d246888c"
+                "5fa8bda0f40fc7192b8d2ed9801b37dbe3e25d2d2bf630a5ccd5a52d0f242cf5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1277,710 +366,19 @@
                 "mozzartbet.co.ke",
                 "www.mozzartbet.co.ke"
             ]
-        },
-        {
-            "rule": "sportradar\\.com\\/torontostar\\/widgetloader",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fe3b0c7a0fd9e26bce51a0a0c68ca54cac197a1b5d80ca032f530cea9886a5fa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/common_widgets\\.6dbeb9386216a2d11c64\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e8b6325062a1c0c987cd1498ffbc89ee263e749f507930030b8f594a71d1dafd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/us\\.common\\.scoreTicker\\.fcb65cdf750385dfa199\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e499550ca9e05c4add505bb3b26017bcc87fefe3c42ce0f51995960c98ebd9a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/assets\\/react\\.1eb3c2e2a2bf9cefb355\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2893d18d94bc228c78dd63f0719d36c224504e4669bfe9156eab059a322d4a7f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/torontostar\\/css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "794f815439957a99ba5c28299d021fcc1b062b687ab8306ece58727baa2f147c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/torontostar\\/licensing",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widgets.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ccd8ed6c341c6d62e4b94b8a2157928ede692636e75adae3c5f5079fd6a68f88"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/uniquetournament_info\\/234",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2d3c90036c6b9f41e9b0a0a2c12e73f781f2d6599e764fbda67370debc854427"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/stats_season_meta\\/85082",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "62546761d310bf93dd5b30a4563329443d1546a11e9342030646056166ed6304"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/livescore_season_fixtures\\/85082",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "210d8e09b1eaa486c9dddc5afc3317f79ffde8599a95814c8107acd7dcd54c06"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/uniquetournament_info\\/870",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "02489c37c37cc65f85569bf19dc06844204e7b8f27a5ddb76a377f1a1f471b89"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/livescore_season_fixtures\\/75161",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44e8af85b7052482857df73d8fdff5b8ce70b15457a21119fa18079b0906751c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3697\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5a787d10cd0ff0f4e524c8606348625345d09426efc5097a68d628fd417b5086"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3683\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e2b718074ad87b020a344168bd7ebe8022a370c7ba96ca638f367c87ae1dd282"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3701\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f08b02d81e2da5cec123d02d87752624d6182b5efa606daa543306cb09f23da7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3680\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2b858533d0b2d1cf0bf961ce14834273a0815a045a96b7ef184bd9af54b222ca"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3698\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "995a7a1ef4b57244e56ff27bbc3cdb577172f360521cfc85a50ec9f88e3ed003"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3703\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b4249b0471a5f1742f9fab6f6d070b9a2dd5a27f2f484cd2b0aa1cfaad7a2e83"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3684\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6d37e9b8ef34baf261311bd122698b63e3a1e77d9f0f22dcfd753eda88be2f86"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3685\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "775c9cbdbaf1cd9c234516cb7eb46312b8411c68799ff00ee554ba7323ee1309"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3689\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6ed188e0fd6fb2ed38f23176a847185b971a73c834a110ae54b79061759117cc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3681\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2974590fc9d04b9f9efbb342e4eec06419b03a1c65727e8bca37994323fd5b48"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3687\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1f74561d22a76cbea5deb9bc5623341ca8f9dae6a1df196557b2b53d0794162a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3692\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b75fc02563778609d99a1b890ee3d922c987d64acf2865d15221d67e6c2fe13f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3694\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5382ddbaccda8ed92d2658ce7f3890717b56b5c949a6837084d1a92fc59bbd7b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3675\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "10e388c6285a58dcd7300091c9e319c6ff8550c1d3b8f20207f29211bf2e03a0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/3695\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4de1c15572e82b74cf9ca46bd3002c65e48314b1528f8d42941c8cff63bbfd9c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/ls\\/crest\\/medium\\/794340\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "img"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e25e62a3b028c6278d0b0b666e2e66fde7dd9eb2bc346ce467c1bb7d558094eb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28275464",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "46ac7964a69ffa789f2b5cc9f72e690abf552fa05672e4fbd7f81f5107709c89"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28275462",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7190637f7d6ce81d9720c3c0d7aac02440a57c028aa02df8e34f1716721283ab"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28275460",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "739d849787387f05be6ccd48b2cd7e0a0ecc93a199cbc9c9ac3ab7df8698dcca"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
-        },
-        {
-            "rule": "sportradar\\.com\\/sportradarmlb\\/en_us\\/Etc:UTC\\/gismo\\/match_info\\/28275458",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uswidgets.fn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "13b4a24c48ac72ce3c31ee75629979c4a03d12a4f1eb249060385b1bfa0a6e3a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "thespec.com",
-                "www.thestar.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00009,
+    "cookies": 0.000107,
     "types": {
-        "Script": 56,
-        "Image": 84,
-        "XHR": 57
+        "Script": 38,
+        "Image": 8
     },
     "nameservers": [
+        "ns-1100.awsdns-09.org",
         "ns-1583.awsdns-05.co.uk",
         "ns-168.awsdns-21.com",
-        "ns-902.awsdns-48.net",
-        "ns-1100.awsdns-09.org"
+        "ns-902.awsdns-48.net"
     ]
 }

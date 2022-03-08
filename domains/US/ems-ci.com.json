@@ -4,9 +4,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
+        "webextend",
         "currencies.gymshark.com"
     ],
     "cnames": [
@@ -15,8 +16,54 @@
             "resolved": "currencies.gymshark.com.ems-ci.com"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ems-ci\\.com\\/js\\/customScarabQueue_currency_conversion_v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webextend"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1d0819c91ccd272775f50b1fb5d1a735d72cb2f094c3ed58b56301c53ec914c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camilla.com",
+                "au.camilla.com"
+            ]
+        },
+        {
+            "rule": "ems-ci\\.com\\/currency_conversion_json\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webextend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "489c33ed4a5430939689b08e01a527f0b98b3b525c2b0324897ba50824dc727a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camilla.com",
+                "au.camilla.com"
+            ]
+        },
         {
             "rule": "ems-ci\\.com\\/gymshark\\/customScarabQueueV2\\.js",
             "cookies": 0,
@@ -25,8 +72,8 @@
                 "currencies.gymshark.com"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "currencies.gymshark.com",
@@ -34,13 +81,15 @@
                 }
             ],
             "responseHashes": [
-                "c510fb7173cf5fbc38886bb33e2baf2703d9a5bd7188b60273a6a87fb0e833fa"
+                "4ed2d505cce3ef1461b8ca54a7eb337854f28f7b1303c97ccffb44397f14076a",
+                "d04bdd852463ffe3dcc1a75505bcee5b7a09f1066e3ea44c218f241632c88bd8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "gymshark.com",
+                "au.gymshark.com",
                 "www.gymshark.com"
             ]
         }
@@ -49,7 +98,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 5,
+        "Fetch": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "nsb2.schlundtech.de",
+        "nsc2.schlundtech.de",
+        "nsd2.schlundtech.de",
+        "nsa2.schlundtech.de"
+    ]
 }

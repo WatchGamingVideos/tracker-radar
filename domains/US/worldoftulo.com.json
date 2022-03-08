@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000831,
-    "sites": 12,
+    "prevalence": 0.000293,
+    "sites": 41,
     "subdomains": [
         "engage-cloud",
         "engage-ues-otavamedia",
-        "engage-ues"
+        "engage-ues",
+        "backend"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -25,17 +26,17 @@
                 "engage-cloud"
             ],
             "apis": {
-                "window.sessionStorage": 5,
-                "window.localStorage": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.language": 5,
-                "Screen.prototype.height": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.colorDepth": 5,
-                "Date.prototype.getTimezoneOffset": 5
+                "window.sessionStorage": 9,
+                "window.localStorage": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.language": 9,
+                "Screen.prototype.height": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.colorDepth": 9,
+                "Date.prototype.getTimezoneOffset": 9
             },
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 9,
+            "prevalence": 0.0000643,
             "cnames": [],
             "responseHashes": [
                 "f3bd36328dc93b1db7ec7435fe67c03d17008d9aa9c892012b1b454f844bf668"
@@ -45,10 +46,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anna.fi",
+                "hymy.fi",
+                "kaksplus.fi",
                 "keskustelu.kaksplus.fi",
                 "kotiliesi.fi",
                 "murobbs.muropaketti.com",
-                "seura.fi"
+                "muropaketti.com",
+                "seura.fi",
+                "suomenkuvalehti.fi"
             ]
         },
         {
@@ -60,8 +65,8 @@
                 "engage-ues"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 17,
+            "prevalence": 0.000122,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -71,11 +76,22 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anna.fi",
+                "hymy.fi",
+                "kaksplus.fi",
                 "keskustelu.kaksplus.fi",
                 "kotiliesi.fi",
                 "murobbs.muropaketti.com",
+                "muropaketti.com",
                 "seura.fi",
-                "www.ksml.fi"
+                "suomenkuvalehti.fi",
+                "www.esaimaa.fi",
+                "www.ess.fi",
+                "www.helsinginuutiset.fi",
+                "www.kouvolansanomat.fi",
+                "www.ksml.fi",
+                "www.lansivayla.fi",
+                "www.savonsanomat.fi",
+                "www.tamperelainen.fi"
             ]
         },
         {
@@ -86,8 +102,8 @@
                 "engage-ues-otavamedia"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 9,
+            "prevalence": 0.0000643,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -97,10 +113,95 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "anna.fi",
+                "hymy.fi",
+                "kaksplus.fi",
                 "keskustelu.kaksplus.fi",
                 "kotiliesi.fi",
                 "murobbs.muropaketti.com",
-                "seura.fi"
+                "muropaketti.com",
+                "seura.fi",
+                "suomenkuvalehti.fi"
+            ]
+        },
+        {
+            "rule": "worldoftulo\\.com\\/javascript\\/tulo_js_api\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "backend"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c892d2d8a27a6e1a99346e1047efcd785d99b0396d495d930d949fda4331cc26"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "T_ID": {
+                    "ttl": null,
+                    "length": 337,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotbolldirekt.se",
+                "hockeysverige.se"
+            ]
+        },
+        {
+            "rule": "worldoftulo\\.com\\/js\\/v2\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a4bc2a61b2991d5d2dfc5777141a312a201c94e6f1f655c9e47e0abb34cb56cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotbolldirekt.se",
+                "hockeysverige.se"
+            ]
+        },
+        {
+            "rule": "worldoftulo\\.com\\/js\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "backend"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "6f9f77034249cef82a95ecd47acf18fb0341245646ce48964009b1158f6f7d3b",
+                "1f85259e4fc471dbb776e97f9c9f0561cbe89749f58fb5a6b4950f33af68b509",
+                "18db096c6bac382478db312578fafaf057ad3754965c1fff2b683f9f76b20fec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bohuslaningen.se",
+                "www.hallandsposten.se",
+                "www.hn.se",
+                "www.ttela.se"
             ]
         },
         {
@@ -111,17 +212,17 @@
                 "engage-cloud"
             ],
             "apis": {
-                "window.sessionStorage": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "window.sessionStorage": 7,
+                "window.localStorage": 7,
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.language": 8,
+                "Screen.prototype.height": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.colorDepth": 7,
+                "Date.prototype.getTimezoneOffset": 8
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "3a9319ed7b8b6e8b5a32a1cc08acc87a0643bd94f694d052eeb319f3381f1afd"
@@ -130,21 +231,27 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ksml.fi",
-                "www.ksml.fi"
+                "esaimaa.fi",
+                "www.ess.fi",
+                "www.helsinginuutiset.fi",
+                "www.kouvolansanomat.fi",
+                "www.ksml.fi",
+                "www.lansivayla.fi",
+                "www.savonsanomat.fi",
+                "www.tamperelainen.fi"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000429,
     "types": {
-        "Script": 7,
-        "XHR": 6,
-        "Ping": 5
+        "Script": 23,
+        "XHR": 19,
+        "Ping": 9
     },
     "nameservers": [
-        "ns2.loopia.se",
-        "ns1.loopia.se"
+        "ns1.loopia.se",
+        "ns2.loopia.se"
     ]
 }

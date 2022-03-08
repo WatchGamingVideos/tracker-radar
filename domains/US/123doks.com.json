@@ -4,26 +4,62 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
+        "asset-123dok-net",
         "asset-1library-co",
-        "asset-1library-org"
+        "asset-1library-net",
+        "asset-1library-org",
+        "asset-5dok-org"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "123doks\\.com\\/assets_v3\\/js\\/lazyload\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "asset-123dok-net",
+                "asset-1library-co",
+                "asset-1library-net",
+                "asset-1library-org",
+                "asset-5dok-org"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.devicePixelRatio": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000357,
+            "cnames": [],
+            "responseHashes": [
+                "ea0bff4c09b2d825e704cc95a9621d5584d6e7e334d7d2bc1d6d432a376ca566"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123dok.net",
+                "1library.co",
+                "1library.net",
+                "1library.org",
+                "5dok.org"
+            ]
+        },
         {
             "rule": "123doks\\.com\\/logos\\/1library\\.net\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "asset-1library-co",
+                "asset-1library-net",
                 "asset-1library-org"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "60debd05fb7c1a080d3467c492276f0a89dee0005670008a910081695e76dac7"
@@ -33,32 +69,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "1library.co",
-                "1library.org"
-            ]
-        },
-        {
-            "rule": "123doks\\.com\\/assets_v3\\/js\\/lazyload\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "asset-1library-co",
-                "asset-1library-org"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.devicePixelRatio": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ea0bff4c09b2d825e704cc95a9621d5584d6e7e334d7d2bc1d6d432a376ca566"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "1library.co",
+                "1library.net",
                 "1library.org"
             ]
         }
@@ -67,8 +78,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2,
-        "Script": 2
+        "Script": 5,
+        "Image": 3
     },
     "nameservers": [
         "vera.ns.cloudflare.com",

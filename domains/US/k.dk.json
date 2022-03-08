@@ -4,24 +4,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.00005,
+    "sites": 7,
     "subdomains": [
         "bbl"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "k\\.dk\\/tracking\\/build\\/bbl-tracking\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "cookies": 0.0000286,
+            "fingerprinting": 1,
             "subdomains": [
                 "bbl"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "b167dd04c4fb51dc06823dc2bf55b60eb6611ea57aa366f800962b6298986214"
@@ -31,21 +36,48 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "kristeligt-dagblad.dk",
-                "www.kristeligt-dagblad.dk"
+                "www.kristeligt-dagblad.dk",
+                "www.kristendom.dk",
+                "www.religion.dk"
+            ]
+        },
+        {
+            "rule": "k\\.dk\\/bigbucket",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bbl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "fcc9532a5d3a6d2556fb1547ff567e7f4de4cec5cae9ac4f7a5c136186254984",
+                "0a3449f680b35676002d612491c8c0d429ec2372f6b3a2b0c2f8bbd4939c5894"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kristendom.dk",
+                "www.kristendom.dk",
+                "www.religion.dk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000429,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 3
     },
     "nameservers": [
-        "ns1.gratisdns.dk",
         "ns2.gratisdns.dk",
         "ns3.gratisdns.dk",
-        "ns4.gratisdns.dk",
-        "ns5.gratisdns.dk"
+        "ns1.gratisdns.dk",
+        "ns5.gratisdns.dk",
+        "ns4.gratisdns.dk"
     ]
 }

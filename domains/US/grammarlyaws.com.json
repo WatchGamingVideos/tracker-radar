@@ -4,13 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000554,
+    "prevalence": 0.0000572,
     "sites": 8,
     "subdomains": [
         "capi.core-prod",
         "gnar-writr.data",
         "prod-data.acquisition",
-        "public-treatment.prod-experimentation",
         "subscription.subscription"
     ],
     "cnames": [
@@ -29,10 +28,6 @@
         {
             "original": "subscription.grammarly.com",
             "resolved": "subscription.subscription.grammarlyaws.com"
-        },
-        {
-            "original": "treatment.grammarly.com",
-            "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
         }
     ],
     "fingerprinting": 0,
@@ -46,7 +41,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "capi.grammarly.com",
@@ -71,7 +66,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [
                 {
                     "original": "gnar.grammarly.com",
@@ -79,7 +74,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Fetch",
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -98,7 +93,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [
                 {
                     "original": "gnar.grammarly.com",
@@ -106,7 +101,7 @@
                 }
             ],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -118,22 +113,24 @@
         },
         {
             "rule": "grammarlyaws\\.com\\/api\\/mimic",
-            "cookies": 0,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "prod-data.acquisition"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "data.grammarly.com",
                     "resolved": "prod-data.acquisition.grammarlyaws.com"
                 }
             ],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "fcaa227bab86fba51d4873e774ce91d2c7f08edd62e372ebe89b367df5574567"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -143,45 +140,18 @@
         },
         {
             "rule": "grammarlyaws\\.com\\/api\\/mimic",
-            "cookies": 0.0000138,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "prod-data.acquisition"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "data.grammarly.com",
                     "resolved": "prod-data.acquisition.grammarlyaws.com"
-                }
-            ],
-            "responseHashes": [
-                "52c46ac3683083799031782915b5e7867576cd469df5e393eec6c432a99e2b00"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grammarly.com",
-                "demo.grammarly.com"
-            ]
-        },
-        {
-            "rule": "grammarlyaws\\.com\\/treatment\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "public-treatment.prod-experimentation"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "treatment.grammarly.com",
-                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
                 }
             ],
             "responseHashes": [],
@@ -190,34 +160,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "grammarly.com",
-                "www.grammarly.com"
-            ]
-        },
-        {
-            "rule": "grammarlyaws\\.com\\/treatment\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "public-treatment.prod-experimentation"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "treatment.grammarly.com",
-                    "resolved": "public-treatment.prod-experimentation.grammarlyaws.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "grammarly.com",
-                "www.grammarly.com"
+                "demo.grammarly.com"
             ]
         },
         {
@@ -229,7 +172,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "subscription.grammarly.com",
@@ -254,7 +197,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "subscription.grammarly.com",
@@ -275,11 +218,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000143,
     "types": {
         "WebSocket": 2,
-        "Fetch": 10,
-        "Preflight": 10
+        "Preflight": 8,
+        "Fetch": 8
     },
     "nameservers": []
 }

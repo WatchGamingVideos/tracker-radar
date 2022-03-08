@@ -4,14 +4,115 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
+        "collector",
         "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "capturly\\.com\\/capturly-track-js\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2,
+                "Navigator.prototype.doNotTrack": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ee4153015eab2db48920ce9ac985a2bc610b804bd785b4e4a27632f6ce8e0388"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_tr_id.3166.5e89": {
+                    "ttl": 33955200,
+                    "length": 52,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_tr_ses.3166.5e89": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_tr_id.2806.c6ae": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "_tr_ses.2806.c6ae": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wakkereburgers.be",
+                "www.reboot-it.com.au"
+            ]
+        },
+        {
+            "rule": "capturly\\.com\\/collect\\/maskinfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ac94c5344926d3e6fee3ab336183e667620fb6f11ef1cf0e01b02d35812372f0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wakkereburgers.be",
+                "www.reboot-it.com.au"
+            ]
+        },
+        {
+            "rule": "capturly\\.com\\/capturly-track\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wakkereburgers.be",
+                "www.reboot-it.com.au"
+            ]
+        },
         {
             "rule": "capturly\\.com\\/js\\/track\\.js",
             "cookies": 0,
@@ -25,7 +126,7 @@
                 "Document.cookie getter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ff5412f460a2960aa37620d6bde0500fe314550a9d4bf8ccb29aa2be5173f439"
@@ -41,9 +142,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000286,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 2,
+        "Image": 2
     },
     "nameservers": [
         "josh.ns.cloudflare.com",

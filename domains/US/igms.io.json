@@ -4,14 +4,63 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000357,
+    "sites": 5,
     "subdomains": [
-        "static"
+        "static",
+        "offers",
+        "pts",
+        "media"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "igms\\.io\\/registration-library\\/v2\\/registration\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "67389ba8a57ab5c029c97f1e8762837efe9c3d24a0fdf7f766377f8b7b6222cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/registration-library\\/v2\\/registration-form\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "edc5f9b91ec4c601090658eb0606089839ac6d42b39681688f4b0cd29998bba6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
+            ]
+        },
         {
             "rule": "igms\\.io\\/web-components\\/v1\\/wc\\.min\\.js",
             "cookies": 0,
@@ -20,19 +69,60 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "2380e4af056be8509325da42fb1ab43d270ca9a81435c564834e74589c4062bf"
+                "fc4d0475a7b7da2bfecb04e514f265d88bf64c02035e581c893a0ad81aab7011"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coin-hero.de",
                 "coinjournal.net",
-                "vantagepointtrading.com"
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/api\\/v1\\/public\\/register",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "offers"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/api\\/v1\\/public\\/register",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "offers"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f3025705e115a44435b5dcb99176c396e90f21f24ff40a734bd4ec381fbc5d2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
             ]
         },
         {
@@ -43,8 +133,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "a7721b5f21c4a93659f17753bf836f143cf9c0bc1c83f596f4929ddf74f065d7"
@@ -53,36 +143,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coin-hero.de",
                 "coinjournal.net",
-                "vantagepointtrading.com"
+                "guiadobitcoin.com.br"
             ]
         },
         {
-            "rule": "igms\\.io\\/web-components\\/v1\\/wc\\.7\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "c5acd7db6cc8a04ed1afa3304c16c15132ae933a68ec33bd76e047b4a646ec6a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coin-hero.de",
-                "coinjournal.net",
-                "vantagepointtrading.com"
-            ]
-        },
-        {
-            "rule": "igms\\.io\\/web-components\\/v1\\/wc\\.2\\.min\\.js",
+            "rule": "igms\\.io\\/web-components\\/v1\\/wc\\.9\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -90,17 +156,39 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "50afb27415e75ab3ebb4aa5a66aac0494fa9fb4bf450194c19b95e4781a0942b"
+                "2963cbe4b41b02c06776236934babcf2058e81b32e994a63635e1b8c9c7f8118"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coin-hero.de",
-                "coinjournal.net"
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/api\\/v2\\/coins\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fb13afa036376686db832b0ff5d720053034f46e3bb049dd4f28b98a339cb438"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
             ]
         },
         {
@@ -111,19 +199,62 @@
                 "static"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "e8e628092ce4a781092a1fd3394d4f4e3a66f670474e958c29769fe7f1be74f0"
+                "55da9b930aff233883e932e9a07c2fa3b8c4f52b414840ebc5a2476d07f6968f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coin-hero.de",
                 "coinjournal.net",
-                "vantagepointtrading.com"
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/web-components\\/v1\\/wc\\.3\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "03132bf51a6a487d03d12640a9c44b620fb2b228cf5a7d4a48f8d3e686e98a65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
+            ]
+        },
+        {
+            "rule": "igms\\.io\\/2018\\/11\\/18\\/1545141744801-ff7244f4-a98a-4e8e-9a64-305c45120666\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e6a2a7d7cb92889c3f8a605534ffdfe23984abed9ae6354549496a3427fce079"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinjournal.net",
+                "guiadobitcoin.com.br"
             ]
         }
     ],
@@ -131,7 +262,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 14
+        "Script": 14,
+        "Preflight": 2,
+        "Fetch": 4,
+        "Image": 2
     },
     "nameservers": [
         "ada.ns.cloudflare.com",

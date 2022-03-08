@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000357,
+    "sites": 5,
     "subdomains": [],
     "cnames": [
         {
@@ -18,61 +18,43 @@
             "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
         },
         {
-            "original": "jobsearch-api.cloud.seek.com.au",
+            "original": "identity-metrics.cloud.seek.com.au",
             "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
         },
         {
-            "original": "locations.cloud.seek.com.au",
+            "original": "jobsearch-api.cloud.seek.com.au",
             "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
-            "rule": "cloud-seek-com-au-1839719694\\.ap-southeast-2\\.elb\\.amazonaws\\.com\\/v3\\/personalised-suggest",
+            "rule": "cloud-seek-com-au-1839719694\\.ap-southeast-2\\.elb\\.amazonaws\\.com\\/v1\\/send",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
-                    "original": "locations.cloud.seek.com.au",
+                    "original": "identity-metrics.cloud.seek.com.au",
+                    "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
+                },
+                {
+                    "original": "discover-metrics.cloud.seek.com.au",
                     "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
                 }
             ],
             "responseHashes": [
-                "216310477c93f25c921901639ecbda35b26c87c91c81f0661c31faba3b06ce92"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "XHR",
+            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "seek.com.au",
-                "www.seek.co.nz"
-            ]
-        },
-        {
-            "rule": "cloud-seek-com-au-1839719694\\.ap-southeast-2\\.elb\\.amazonaws\\.com\\/v3\\/personalised-suggest",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "locations.cloud.seek.com.au",
-                    "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "seek.com.au",
+                "www.seek.com.au",
                 "www.seek.co.nz"
             ]
         },
@@ -83,7 +65,7 @@
             "subdomains": [],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "jobsearch-api.cloud.seek.com.au",
@@ -91,38 +73,10 @@
                 }
             ],
             "responseHashes": [
-                "1b3477708baa5c1688ea84df7451a52fa379a0975ff36fa49cac44298a0c7f34",
-                "384355767f3e2f1e55468869cdd3b5f9a270fcfb33984db105862b824e02e98e"
+                "1344cd4fd0de9eeff0fa159dc1090fa4d5944d650c16ef1c768b3079031d2f61",
+                "2119d74c3a073734438a759da4f0d5fa223387567f4c703532e993538dac4667"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "searchTerm": 0.000006922043941134938
-            },
-            "exampleSites": [
-                "seek.com.au",
-                "www.seek.co.nz",
-                "www.seek.com.au"
-            ]
-        },
-        {
-            "rule": "cloud-seek-com-au-1839719694\\.ap-southeast-2\\.elb\\.amazonaws\\.com\\/v1\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "discover-metrics.cloud.seek.com.au",
-                    "resolved": ".cloud-seek-com-au-1839719694.ap-southeast-2.elb.amazonaws.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -138,9 +92,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 5,
-        "Preflight": 2,
-        "Ping": 3
+        "Ping": 3,
+        "XHR": 3
     },
     "nameservers": []
 }

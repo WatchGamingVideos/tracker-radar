@@ -9,37 +9,100 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000242,
-    "sites": 35,
+    "prevalence": 0.000243,
+    "sites": 34,
     "subdomains": [
-        "adserver",
+        "aka-cdn",
         "aka-cdn-ns",
-        "aka-cdn"
+        "adserver"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "adtech\\.de\\/bind",
+            "rule": "adtech\\.de\\/dt\\/common\\/DAC\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "adserver"
+                "aka-cdn",
+                "aka-cdn-ns"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "apis": {
+                "Navigator.prototype.userAgent": 11,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 14,
+            "prevalence": 0.0001,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "b3f611aa7518a9da205ca9575fb39872e85c04ebaa02eaf49ca4cbe1b65cae18"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nzz.ch",
-                "bellevue.nzz.ch",
-                "www.nzz.ch"
+                "foretagande.se",
+                "forum.babyverden.no",
+                "metromode.se",
+                "ng.se",
+                "stats.football.co.uk",
+                "swedroid.se",
+                "therobusttrader.com",
+                "travelweekly.co.uk",
+                "www.emmasdiary.co.uk",
+                "www.marketingweek.com",
+                "www.mitti.se",
+                "www.moneymarketing.co.uk",
+                "www.thelawyer.com",
+                "www.wissen.de"
+            ]
+        },
+        {
+            "rule": "adtech\\.de\\/dac\\/868\\.1\\/config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aka-cdn",
+                "aka-cdn-ns"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foretagande.se",
+                "therobusttrader.com"
+            ]
+        },
+        {
+            "rule": "adtech\\.de\\/dt\\/common\\/postscribe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aka-cdn",
+                "aka-cdn-ns"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "44244f0fa0e9f86b1b25c5cef0e58326295b44bf86c505b4e54f09ec0a89c9dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foretagande.se",
+                "ng.se",
+                "stats.football.co.uk"
             ]
         },
         {
@@ -50,8 +113,8 @@
                 "aka-cdn-ns"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "7b6071cba10c3a3137b107e2db1842293170ba68e8636d610e511ce5b7c65ceb"
@@ -60,44 +123,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "meteo.gr",
-                "www.efsyn.gr",
-                "www.gazzetta.gr",
-                "www.meteo.gr",
-                "www.news247.gr",
-                "www.sport24.gr"
+                "efsyn.gr",
+                "www.efsyn.gr"
             ]
         },
         {
-            "rule": "adtech\\.de\\/dt\\/common\\/DAC\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "aka-cdn-ns",
-                "aka-cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 5,
-            "prevalence": 0.0000346,
-            "cnames": [],
-            "responseHashes": [
-                "b3f611aa7518a9da205ca9575fb39872e85c04ebaa02eaf49ca4cbe1b65cae18"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "therobusttrader.com",
-                "www.homebuilding.co.uk",
-                "www.ihr-wellness-magazin.de",
-                "www.thebookseller.com",
-                "www.wissen.de"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688999\\/0\\/0\\/ADTECH",
+            "rule": "adtech\\.de\\/addyn\\/3\\.0\\/2973\\/5719446\\/0\\/225\\/ADTECH",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -105,187 +136,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688994\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688997\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688996\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688992\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6689000\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4538\\.1\\/6688998\\/0\\/0\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cpu-monkey.com",
-                "www.cpu-monkey.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4596\\.1\\/6541702\\/0\\/2466\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vgchartz.com",
-                "www.vgchartz.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/pubapi\\/3\\.0\\/4596\\.1\\/6541700\\/0\\/2473\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vgchartz.com",
-                "www.vgchartz.com"
-            ]
-        },
-        {
-            "rule": "adtech\\.de\\/addyn\\/3\\.0\\/59\\/5585902\\/0\\/1356\\/ADTECH",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "adserver"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "36a9e7f1c95b82ffb99743e0c5c4ce95d83c9a430aac59f84ef3cbfab6145068"
@@ -294,8 +145,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wetter24.de",
-                "www.wetter24.de"
+                "legalcheek.com",
+                "www.legalcheek.com"
+            ]
+        },
+        {
+            "rule": "adtech\\.de\\/bind",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adserver"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nzz.ch",
+                "www.nzz.ch"
             ]
         }
     ],
@@ -306,9 +179,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 3,
-        "Script": 13,
-        "XHR": 18
+        "Script": 23,
+        "Image": 2
     },
     "nameservers": [
         "ns1.yahoo.com",

@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000346,
-    "sites": 5,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
         "login"
     ],
@@ -18,56 +18,69 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "microsoftonline\\.com\\/a9be3ac7-0c60-491e-8b3b-a32f8f46aec8\\/saml2",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "09b0cc11add17fdaff60b66233a5a24235cfd1a787ff68f9a0ca8cb3e289753f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "clrc": {
+                    "ttl": 2592007,
+                    "length": 49,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "education.tas.gov.au",
+                "canvas.education.tas.gov.au"
+            ]
+        },
+        {
             "rule": "microsoftonline\\.com\\/common\\/instrumentation\\/dssostatus",
-            "cookies": 0.0000138,
+            "cookies": 0.0000214,
             "fingerprinting": 0,
             "subdomains": [
                 "login"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "e538c7bc2e3409ca85f99ba563970a3e367302338ba679e3c1e86966a8b0dafb"
+                "9514a5c32cf836def427816f1c0cf6fc677ed2244e385b48a6c35f478c8430ef",
+                "e2e097f40bdb8b61c072855a0e38517bbce294b74bfd34d0f4f954da82775548"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aifs.gov.au",
-                "learn.snhu.edu"
-            ]
-        },
-        {
-            "rule": "microsoftonline\\.com\\/e7520e4d-d5a0-488d-9e9f-949faae7dce8\\/oauth2\\/authorize",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "login"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "63126c6a3c4bb58188d56c4bddaaced08a56b038ce9c58a57179e737d71cd6ae"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ups.com",
-                "epconnect.ups.com"
+                "education.tas.gov.au",
+                "canvas.education.tas.gov.au",
+                "performancemanager10.successfactors.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000346,
+    "cookies": 0.0000286,
     "types": {
-        "XHR": 2,
-        "Document": 2
+        "Document": 2,
+        "XHR": 3
     },
     "nameservers": [
         "nse12.o365filtering.com",

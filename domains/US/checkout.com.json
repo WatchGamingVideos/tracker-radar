@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000643,
+    "sites": 9,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,23 +21,45 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
-                "9f13d7b2414d3008d824deb4338ad9b021dd0a5c8c3bf424b399ff0549160db3",
-                "c7e78302cad0a394702afe548911b9097491c55f6c1560eb5ba6bd3786ace8a3"
+                "c4ce1f7056ae04061a8029f987a5969c0b747a16ca275407a42d1f6689d9b4f4"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "desertcart.com",
-                "canada.desertcart.com",
-                "www.ribblecycles.co.uk"
+                "squatwolf.com",
+                "www.coopersofstortford.co.uk",
+                "www.ribblecycles.co.uk",
+                "www.subscribestar.com"
+            ]
+        },
+        {
+            "rule": "checkout\\.com\\/logger\\/1*1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "talabat.com",
+                "www.talabat.com"
             ]
         }
     ],
@@ -44,12 +67,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 4,
+        "Image": 2
     },
     "nameservers": [
-        "ns4.checkout.com",
-        "ns3.checkout.com",
-        "ns2.checkout.com",
-        "ns1.checkout.com"
+        "earl.ns.cloudflare.com",
+        "kristina.ns.cloudflare.com"
     ]
 }

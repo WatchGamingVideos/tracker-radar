@@ -7,38 +7,97 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000145,
-    "sites": 21,
+    "prevalence": 0.0001,
+    "sites": 14,
     "subdomains": [
         "assets",
         "trackingapi",
-        "pic",
-        "prod"
+        "pic"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
-            "rule": "trendemon\\.com\\/scripts\\/2102\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "trendemon\\.com\\/tag\\/trends\\.min\\.js",
+            "cookies": 0.0000572,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "window.localStorage": 8,
+                "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 8,
+                "Document.cookie setter": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "6722a30458fd62f21ae547095263f45eb94c9df33c2a29bc3fad4d3b8ad1ecb0"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "trd_cid": {
+                    "ttl": 31536004,
+                    "length": 17,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 1
+                },
+                "trd_vid_l": {
+                    "ttl": 31536005,
+                    "length": 24,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 0.875
+                },
+                "trd_vuid_l": {
+                    "ttl": 31536005,
+                    "length": 19,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 0.875
+                },
+                "trd_first_visit": {
+                    "ttl": 31536004,
+                    "length": 10,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 1
+                },
+                "trd_pw": {
+                    "ttl": 31536004,
+                    "length": 1,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 0.25
+                },
+                "trd_pws": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 0.25
+                },
+                "trd_sid": {
+                    "ttl": 1804,
+                    "length": 17,
+                    "prevalence": 0.00005719923925011797,
+                    "uniqueness": 1
+                },
+                "trd_ma_cookie": {
+                    "ttl": 43205,
+                    "length": 78,
+                    "prevalence": 0.00003574952453132374,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "foxnews.com",
-                "nation.foxnews.com",
-                "try.nation.foxnews.com"
+                "snyk.io",
+                "supportcenter.checkpoint.com",
+                "www.checkpoint.com",
+                "www.openlogic.com",
+                "www.payoneer.com",
+                "www.perforce.com",
+                "www.sisense.com",
+                "www.tenable.com"
             ]
         },
         {
@@ -49,225 +108,88 @@
                 "assets"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Navigator.prototype.webdriver": 7,
-                "Navigator.prototype.language": 7,
-                "Screen.prototype.colorDepth": 7,
-                "Navigator.prototype.deviceMemory": 7,
-                "Navigator.prototype.hardwareConcurrency": 7,
-                "Screen.prototype.width": 7,
-                "Screen.prototype.height": 7,
-                "Screen.prototype.availWidth": 7,
-                "Screen.prototype.availHeight": 7,
-                "Date.prototype.getTimezoneOffset": 7,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 7,
-                "window.sessionStorage": 7,
-                "window.localStorage": 7,
-                "window.indexedDB": 7,
-                "Navigator.prototype.platform": 7,
-                "Navigator.prototype.appName": 7,
-                "Navigator.prototype.plugins": 7,
-                "WebGLRenderingContext.prototype.getExtension": 7,
-                "HTMLCanvasElement.prototype.toDataURL": 7,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 7,
-                "WebGLRenderingContext.prototype.getParameter": 7,
-                "WebGLRenderingContext.prototype.getContextAttributes": 7,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 7,
-                "Navigator.prototype.languages": 7,
-                "Navigator.prototype.maxTouchPoints": 7,
-                "Navigator.prototype.productSub": 7
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.webdriver": 8,
+                "Navigator.prototype.language": 8,
+                "Screen.prototype.colorDepth": 8,
+                "Navigator.prototype.deviceMemory": 8,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "Screen.prototype.availWidth": 8,
+                "Screen.prototype.availHeight": 8,
+                "Date.prototype.getTimezoneOffset": 8,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 8,
+                "window.sessionStorage": 8,
+                "window.localStorage": 8,
+                "window.indexedDB": 8,
+                "Navigator.prototype.platform": 8,
+                "Navigator.prototype.appName": 8,
+                "Navigator.prototype.mimeTypes": 8,
+                "WebGLRenderingContext.prototype.getExtension": 8,
+                "HTMLCanvasElement.prototype.toDataURL": 8,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 8,
+                "WebGLRenderingContext.prototype.getContextAttributes": 8,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 8,
+                "Navigator.prototype.maxTouchPoints": 8,
+                "Navigator.prototype.productSub": 8,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "WebGLRenderingContext.prototype.getParameter": 1,
+                "Navigator.prototype.languages": 1
             },
             "sites": 8,
-            "prevalence": 0.0000554,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "51199eba952a7bc777ac7e424bb5610da76f7e7fc0e11fdebb74f501f51fc9de"
+                "7f2a0fff8ab40d4c29ae7d43ee453b8fb1f88072e8def056334afe51cfc82dba"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "panasonic.jp",
                 "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
+                "supportcenter.checkpoint.com",
+                "www.checkpoint.com",
                 "www.openlogic.com",
                 "www.payoneer.com",
                 "www.perforce.com",
+                "www.sisense.com",
                 "www.tenable.com"
             ]
         },
         {
             "rule": "trendemon\\.com\\/api\\/Identity\\/me",
-            "cookies": 0.0000554,
+            "cookies": 0.0000572,
             "fingerprinting": 0,
             "subdomains": [
                 "trackingapi"
             ],
             "apis": {},
             "sites": 8,
-            "prevalence": 0.0000554,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "4463caf6be7f2c935cbe10296b310152127f97f6d9ee5a84c0634d21f8eae284",
-                "2459860cd35069484e8972256e20f44b86c5b46bd753ddb9ef9a72285c4abf27",
-                "6de2348aa3d01716d3ee4b5b67bc9d97edee41203cb9a57ec47b0af9fab74e39",
-                "90f28675070ee5574861f899af6466868decae8144e8d1c600acada82968797d",
-                "1232d1198730ce09abc7ab567c8825399116cffc9997f99c2bada77a6c7f7089",
-                "22794ac2bf1a9abccf3456115933ca0287a30a96f3f7ee4929f900a1a6e56bf8",
-                "e7f059b78c2146e4fdc0eb379533b1b39cbe9928fd6713cb95c47eb8c0f0e809"
+                "6efefb18e111a1501e8270dfb29690d8a3b257665e53434be164dd1296ad7bc4",
+                "cfaa366954df830b998c794ec5d72518110a1a5ecc770df6c1c4ad02ee60e14a",
+                "239a475b098b34e010aa513e132b4666d577b6466e2eda4c46bd8d86bfd97f8c",
+                "6c62a800d83caf236315bb10abd4bbeb8af74c1f5a07b3253efeb9769bd79106",
+                "e02382065c2bd7efa80f68cc9174a9e53bf0e1a1deb3caeec24ccaaac5a2811d",
+                "1f56c628cfa6650d6f1bbd750ef22c9dfb3423ac61a34d10b1341c0c7cb597ac",
+                "ee7b98a515cacfc849e954b84d56f11b630df1058a353698af28a9bbb1f6d6bd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "trd_cid": 0.000055376351529079506
+                "trd_cid": 0.00005719923925011797,
+                "trd_first_visit": 0.000007149904906264747
             },
             "exampleSites": [
-                "panasonic.jp",
                 "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
+                "supportcenter.checkpoint.com",
+                "www.checkpoint.com",
                 "www.openlogic.com",
                 "www.payoneer.com",
                 "www.perforce.com",
-                "www.tenable.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/api\\/events\\/pageview",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trackingapi"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [],
-            "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "trd_cid": 0.000055376351529079506,
-                "utm_medium": 0.000006922043941134938,
-                "trd_first_visit": 0.000020766131823404817
-            },
-            "exampleSites": [
-                "panasonic.jp",
-                "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
-                "www.openlogic.com",
-                "www.payoneer.com",
-                "www.perforce.com",
-                "www.tenable.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/api\\/events\\/pageread",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trackingapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "trd_cid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "panasonic.jp",
-                "www.payoneer.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/tag\\/trends\\.min\\.js",
-            "cookies": 0.0000485,
-            "fingerprinting": 1,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 7,
-                "window.localStorage": 7,
-                "Navigator.prototype.userAgent": 7,
-                "Document.cookie getter": 7,
-                "Document.cookie setter": 7
-            },
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [],
-            "responseHashes": [
-                "cef73fe10680ac578ca7e74a3b5101d724ae566e185689abed238f872cf5d7be"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "trd_cid": {
-                    "ttl": 31536005,
-                    "length": 17,
-                    "prevalence": 0.00004153226364680963,
-                    "uniqueness": 1
-                },
-                "trd_vid_l": {
-                    "ttl": 31536003,
-                    "length": 24,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 1
-                },
-                "trd_vuid_l": {
-                    "ttl": 31536003,
-                    "length": 19,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 1
-                },
-                "trd_first_visit": {
-                    "ttl": 31536003,
-                    "length": 10,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 1
-                },
-                "trd_pw": {
-                    "ttl": 31536003,
-                    "length": 1,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 0.2
-                },
-                "trd_pws": {
-                    "ttl": 1803,
-                    "length": 1,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 0.2
-                },
-                "trd_sid": {
-                    "ttl": 1803,
-                    "length": 17,
-                    "prevalence": 0.00003461021970567469,
-                    "uniqueness": 1
-                },
-                "trd_ma_cookie": {
-                    "ttl": 43203,
-                    "length": 84,
-                    "prevalence": 0.000027688175764539753,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
-                "www.openlogic.com",
-                "www.payoneer.com",
-                "www.perforce.com",
+                "www.sisense.com",
                 "www.tenable.com"
             ]
         },
@@ -280,27 +202,27 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "8cbd81b0e33ae8cdbd827455d769376eb3956b805ecae7f5748a24898fc2deb2",
-                "26472cf1e4d8f6fe784cc979f8b708d79af92c78e62edacffffa3986479cf53a",
-                "a6c84afcd06cba111c5cef0f9b0ffeff4f181d01eb34b327a79437116d786ff0",
-                "2816db0ff86b9e63bbab7a6370913667d5180915a4f3cdd9bf065612fdbe4337",
-                "83cb97f972a267621e21f637adcf096f7505a54a5c92576efaef854c5c3f1558"
+                "0067dab957c4ba3eb16a40f7155ad84361049d05031338b6c95b73a4c2a7ba59",
+                "1af6bd850a963cc2bc207f9f3a765f059b5f2231ebf4b84d03367ccfc4ca6807",
+                "e5695f3546aca41045d403ccf6cea949348a5450530fd9b598027e104c446193",
+                "84bb3d178ca264057f8324651de68881a09bbbb381d55bb0442dac5079696be9",
+                "2f89439bda43caa90ea136c20abc680b4fb90322252f69b257d9485f3b941a47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "trd_cid": 0.00004153226364680963,
-                "trd_ma_cookie": 0.00004153226364680963
+                "trd_cid": 0.00004289942943758848,
+                "trd_ma_cookie": 0.00004289942943758848
             },
             "exampleSites": [
                 "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
+                "www.checkpoint.com",
                 "www.openlogic.com",
                 "www.perforce.com",
+                "www.sisense.com",
                 "www.tenable.com"
             ]
         },
@@ -312,34 +234,58 @@
                 "trackingapi"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "600502b1c1dec7f59cec81685c9a822d2e3f981ffca0bf494727b3d2dfa91a58",
-                "e963b058bdc69a36e0014d8d0445f73dc2dcd68c7b5be02b32db5b94d247d7b8",
-                "b37314342ebee7fed02cc77a614803c9a5214c364a36a579596dd4a08cceb27c",
-                "e89dbb2472d34d500148eca818a0a660ce94220cc214d012d1db68d58657c843",
-                "d1d95a6c5e47d2a3ceab51057f990bfb40f2883db6da45f543b69df85372c7c0",
-                "421b1c9f5350d37279e071fa56371d59a3df0671c2c7d482ef49027732cea612"
+                "92154ac33d1536a0456bd43ac6b7ce54160705e270e03ff1fe1a2e62ee17c7a3",
+                "f86c1af0fa345fca41fe12856e1ebbd2a9931f2d448cadf1fc70bda50f577980",
+                "68d6b65ee4ed700bd31d75cbec8f4799b93becf466d5fec1d0a61a3932c2f4d4",
+                "6967a02f6410e38d49a074cb7d501d9f5cb63ad0e51dc982462a4629e86eecd9",
+                "fc688a411dae4ef1aaabb7bf08b870e6bb5771920e5bd7fb0fa26b5d4ea0f527"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "trd_cid": 0.000027688175764539753,
-                "utm_source": 0.000006922043941134938,
-                "utm_medium": 0.000006922043941134938,
-                "utm_campaign": 0.000006922043941134938,
-                "trd_utmcampaign": 0.000006922043941134938,
-                "trd_utmsource": 0.000006922043941134938
+                "trd_cid": 0.00002144971471879424
             },
             "exampleSites": [
                 "snyk.io",
-                "www.applitrack.com",
-                "www.frontlineeducation.com",
                 "www.openlogic.com",
                 "www.payoneer.com",
                 "www.perforce.com",
+                "www.sisense.com",
+                "www.tenable.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/events\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_cid": 0.00005719923925011797,
+                "trd_first_visit": 0.00003574952453132374
+            },
+            "exampleSites": [
+                "snyk.io",
+                "supportcenter.checkpoint.com",
+                "www.checkpoint.com",
+                "www.openlogic.com",
+                "www.payoneer.com",
+                "www.perforce.com",
+                "www.sisense.com",
                 "www.tenable.com"
             ]
         },
@@ -351,8 +297,8 @@
                 "trackingapi"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -360,13 +306,15 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "trd_cid": 0.000013844087882269877,
-                "trd_first_visit": 0.000006922043941134938
+                "trd_cid": 0.000014299809812529493,
+                "trd_first_visit": 0.00002144971471879424
             },
             "exampleSites": [
                 "snyk.io",
+                "www.checkpoint.com",
                 "www.openlogic.com",
-                "www.perforce.com"
+                "www.perforce.com",
+                "www.sisense.com"
             ]
         },
         {
@@ -378,7 +326,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "384f24a122d3d3818a1b477c7d9af49efd9e2d42023a013be9123cca726d3c98"
@@ -390,7 +338,103 @@
                 "snyk.io",
                 "www.openlogic.com",
                 "www.perforce.com",
-                "www.tenable.com"
+                "www.sisense.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/settings\\/2336",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "10cede88d1ae44821529faac8bd05679ae1678251e298fb238afd2f94140f130",
+                "55e6a7f47347c365ca95739e91ef3cd61a83068e30bdc8d01cbdcdd4c9e3271c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "checkpoint.com",
+                "supportcenter.checkpoint.com",
+                "www.checkpoint.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/settings\\/2160",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c6863f95c9e9e6cfe2810e7793015fc490f610223554bdc4043ab15eef62b57c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "openlogic.com",
+                "www.openlogic.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/units-graphics\\/300x300\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4fcc2e8e1692743600bbe2bec919200c8022c1efc59e946833729d293a5bdc40"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "openlogic.com",
+                "www.openlogic.com"
+            ]
+        },
+        {
+            "rule": "trendemon\\.com\\/api\\/experience\\/personal-embedded",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trackingapi"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "9fdfc0c0c7efd2dcb8e69b48e6b5f202722c1399bbd78fd8c178e9bd1b5b95c2",
+                "01147bb7bf4b2e19b6c5d4e0c600557f79125db4cb5919db464af7f5f10eec54",
+                "b8b828c34bf143c8733f1d7512010582edaa0ab51790d1633ccb22bf66aa5f05"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "trd_cid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "openlogic.com",
+                "www.openlogic.com",
+                "www.perforce.com",
+                "www.sisense.com"
             ]
         },
         {
@@ -402,7 +446,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -410,104 +454,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "trd_cid": 0.000020766131823404817,
-                "trd_first_visit": 0.000013844087882269877
+                "trd_cid": 0.00002144971471879424,
+                "trd_first_visit": 0.00002144971471879424
             },
             "exampleSites": [
-                "snyk.io",
-                "www.openlogic.com",
-                "www.tenable.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/apis\\/loadflame\\/mainflamejs",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kddi.com",
-                "time-space.kddi.com",
-                "www.shiseido.co.jp"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/scripts\\/1819\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kddi.com",
-                "time-space.kddi.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/api\\/settings\\/2112",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trackingapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cf34a218eb7d04bb50cac66fc1273bdc741c12119eb2915e8f83b2418b514262"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "applitrack.com",
-                "www.frontlineeducation.com"
-            ]
-        },
-        {
-            "rule": "trendemon\\.com\\/api\\/experience\\/personal-embedded",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trackingapi"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "d7baadeb71b2f832c3bfa05d13b1b1087af5019cee6ca04b502687af1193f0bd",
-                "203c4620948237447b15e2e17ea64419a3c956e1011a6fe8e33a024a23667518"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "trd_cid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "frontlineeducation.com",
+                "openlogic.com",
                 "www.openlogic.com",
                 "www.perforce.com"
             ]
@@ -521,10 +472,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "1250338e1fb2e8508584edcf391356f467704147b719414a04ee31256fded3ef"
+                "3ed637f8839bcf02b383cb163e080918571f99f0c55833ff1f0d127fb3feeff1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -543,10 +494,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "4ae1d3d752cce180109481950296a768b354eca686f42c518b4b3a2f72062149"
+                "43016aec9096cb990c1430fdb880af094b15fd9f809bbfe752c39a96ac5ae06e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -557,7 +508,7 @@
             ]
         },
         {
-            "rule": "trendemon\\.com\\/api\\/settings\\/2110",
+            "rule": "trendemon\\.com\\/api\\/settings\\/1902",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -565,26 +516,26 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "763ebe19eeade6ef0d1d6aca643b0f64a05207ce42d63c726b6ccd7e540dd0ac"
+                "f7d5b2e193c83ef935730c019d5cc2a2946e08dc682dce3c0437c93575362596"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tenable.com",
-                "www.tenable.com"
+                "sisense.com",
+                "www.sisense.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000969,
+    "cookies": 0.0001,
     "types": {
-        "Script": 55,
-        "Image": 20
+        "Script": 51,
+        "Image": 22
     },
     "nameservers": [
         "ns07.domaincontrol.com",

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000357,
+    "sites": 5,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "api.tracker"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "systema\\.ai\\/Systema\\.2\\.0\\.1\\.js",
@@ -25,10 +26,10 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "6c7bd07bb71142ba66759ac72bf756ab47d1f78b9754885a15aeb5981c12ca90"
+                "d415027f4b6dd8b758fa98e866a6a3a4bb2ede3de43141a7057f775c5893e9d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,13 +38,86 @@
                 "fantasticfurniture.com.au",
                 "www.fantasticfurniture.com.au"
             ]
+        },
+        {
+            "rule": "systema\\.ai\\/v1\\/tracker",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "generalpants.com",
+                "www.yellowoctopus.com.au"
+            ]
+        },
+        {
+            "rule": "systema\\.ai\\/Systema\\.Analytics\\.1\\.4\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.productSub": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "AudioBuffer.prototype.getChannelData": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e76be3b66057b9d82f6347e8891bb2d0c0a2d4b4b4009e44153fb594d2f7ae7f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yellowoctopus.com.au",
+                "www.yellowoctopus.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "Ping": 2
     },
     "nameservers": [
         "ns-105.awsdns-13.com",

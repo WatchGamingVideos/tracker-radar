@@ -7,15 +7,42 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
+    "prevalence": 0.0000214,
     "sites": 3,
     "subdomains": [
-        "widget.timatic",
-        "go.updates"
+        "widget.timatic"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "iata\\.org\\/scripts\\/iata-timatic-widget-live\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget.timatic"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.product": 3,
+                "Navigator.prototype.platform": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "6a541e15e305d0f62a8fa9e9461fe2c5e2de14f8fdb905ad24691c6c57608a45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
+            ]
+        },
         {
             "rule": "iata\\.org\\/api\\/get-token\\/a3a3757f-277e-4e5f-b8d6-18901044e049",
             "cookies": 0,
@@ -24,59 +51,127 @@
                 "widget.timatic"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "f7df11cb11152389e28b4e8188cd427ba808f3268afbe9dfeb3ed168ba98c371"
+                "8d3955e27b67c403d85668cc6a17bc017daa3f52ad698bbebea2c2537036f8ee",
+                "e54dbf0871f0a3635ab2c5d0fc68f985ec52e91244000ab661067179e3efd188"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cph.dk",
-                "www.cph.dk"
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
             ]
         },
         {
-            "rule": "iata\\.org\\/analytics",
-            "cookies": 0.0000138,
+            "rule": "iata\\.org\\/api\\/alerts\\/countries",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "go.updates"
+                "widget.timatic"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "dcf430710cdd1359115293f45d5023b2a560aef8a2c1e59d578b8b1e10a216d3"
+                "b8bcdc5148471057534f385ee0f40bf6470ec840bfc6b1052ea53989e652da19"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "visitor_id123902": 0.000013844087882269877,
-                "visitor_id123902-hash": 0.000013844087882269877
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "iatatravelcentre.com",
-                "www.iatatravelcentre.com"
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
+            ]
+        },
+        {
+            "rule": "iata\\.org\\/api\\/alerts\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget.timatic"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
+            ]
+        },
+        {
+            "rule": "iata\\.org\\/api\\/alerts\\/airport-countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget.timatic"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "daf47d251fa3dc37f83db2a84fe6727b5ee07548b9ca5b4f04e0e008c84bc043"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
+            ]
+        },
+        {
+            "rule": "iata\\.org\\/api\\/alerts\\/airport-countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget.timatic"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bll.dk",
+                "www.bll.dk",
+                "www.dam-health.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0,
     "types": {
-        "XHR": 2,
-        "Script": 2
+        "Script": 3,
+        "XHR": 9,
+        "Preflight": 6
     },
     "nameservers": [
-        "pdns2.ultradns.net",
+        "udns1.ultradns.net",
+        "udns2.ultradns.net",
         "pdns5.ultradns.info",
         "pdns6.ultradns.co.uk",
-        "pdns1.ultradns.net",
+        "pdns2.ultradns.net",
         "pdns3.ultradns.org",
-        "pdns4.ultradns.org"
+        "pdns4.ultradns.org",
+        "pdns1.ultradns.net"
     ]
 }

@@ -4,13 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000125,
-    "sites": 18,
+    "prevalence": 0.000114,
+    "sites": 16,
     "subdomains": [
         "api",
+        "3rdparty-apis",
         "s2",
-        "files",
-        "3rdparty-apis"
+        "files"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,11 +23,12 @@
                 "api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
-                "743ce034fd69a1c14b79200ab5b517e45eb8b694226f36bb27049f501cf07a8c"
+                "dd109dab38a7ddf5834bc1a50f7cf4c58e79521236bb40122de0212a5c3d5859",
+                "2b1dc8884b1ef1720255c79ffe23fab4bad0ec09d934a5536b51fd1cd5848f05"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -35,11 +36,38 @@
             "exampleSites": [
                 "uniswap.org",
                 "app.uniswap.org",
-                "saitamatoken.com"
+                "hedron.pro",
+                "hex.com"
             ]
         },
         {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/1\\.png",
+            "rule": "coinmarketcap\\.com\\/v1\\/cryptocurrency\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "3rdparty-apis"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "ceb5527bf9c72955190ae05ef38120150f4715a30ff78537027e9a1576110e7f",
+                "b6de3feab853943b784f70d5370f0444343199df4d63ec772e2b4b0979db90c1",
+                "ed30e712fb84f4f0cd36171a2414d80bd5c1d6d19a78934e99ef6c090de47926"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "isthiscoinascam.com",
+                "www.cryptonewsz.com",
+                "www.xrpchat.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -47,44 +75,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a87a135b8a9de206c5404b200ed39b5f416fc33fc6435dad0a0571cd80ac322b"
+                "e64f0f5f3b21a9861a50b9418592c960382658299f3e6e04d0aad52f9ee66356"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coinmarketsearch.com",
-                "crypto-academy.org"
+                "coinsnews.com",
+                "www.cryptonewsz.com"
             ]
         },
         {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/1027\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "d0b86f1e96e99a5bf480d9004599a6ca24eb9a3f790e6660aaf923cb45d2b8c3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "crypto-academy.org",
-                "tokenmagic.app"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/825\\.png",
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -92,63 +97,573 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "8dceee659ef6aa966b963bfe8f29eb1b9e17b14316be905f925a8ea48fe313b7"
+                "97d761f00b57426be4f9cf288ad1bc42c13948f613b2771d090bb4b2b6337db3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coinmarketsearch.com",
-                "crypto-academy.org"
+                "coinsnews.com",
+                "www.cryptonewsz.com"
             ]
         },
         {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/1839\\.png",
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/52\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "s2"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "105b48f9a2bbc8fb69f58e5c78f55366083346a3e6bd118212d52f1669b1d71f"
+                "01bba7af6817cb763358484144e114c95177b68f578e223a52cc454b7fb7187e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coinmarketsearch.com",
-                "crypto-academy.org",
-                "tokenmagic.app"
+                "coinsnews.com",
+                "www.cryptonewsz.com"
             ]
         },
         {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/2010\\.png",
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/74\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "s2"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "871ea516f9661e79b5079a502176eec2175999f8063448329bcc357322705f74"
+                "90b5b73ebb95808f973bdfc3419fe0d3681a97e5d454b5fa5dd788990da6891d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coinmarketsearch.com",
-                "crypto-academy.org",
-                "ox-currencies.com"
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/512\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fef7035de4eb509093297e9007ace16cc85e5991abe5f50de333bf591850d4e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1027\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "162bdee1e42362a4dd98c89b7c2637ffbbb99a5bdde6da1dc1026b097956d1cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1321\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "37938c8e0dedba47345c5ac61248a8dfad2f6adec0cfa48dbe142e87fb98c331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1765\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0e9712578ff70a937536ae5471a8b75147338f9f15764d79b6339d147cb15dd5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1831\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "084efc2ddfc36e89471e2beb4adfb657863c607d66f40d3c485485636686190d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1958\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "aef30e1c4f5e7b6b80b99cf02f26df452beccbd1ce47d66c865ed7114b252eb2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/1975\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ab8ed54072baf0f12d9054f791b758994a1f3203a1580a3f5abedfa04acb8b27"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/2010\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "58e5fda1ab474545bac7fc75fd1e4f618ba307cf4a86479d26692e909e7db1fc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/2682\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "553dfc8c50974b76c278bb1bfc668e88527d595dae80065e52e7dc2ffd865e96"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/3077\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "72145ad3299e91e90f896f7d304ede154d3dcaa8b9170eac3244a402f9b27987"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/3890\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2e2a4246a135b3bef4f3d6e9a59b4e29c2def22a3d3697a501734bd9fb432b00"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/4030\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "521ec828b375c9ff2bfe5eeb0225f1156b51dafd48732417e2905563242101b2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/4066\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8568d4a1af0771ea73363bcfe05c5b1995e25f5881ca0673fc3257bc1d768ea9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/5994\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "221ba111e5bbd1e4541f28e84f891cc4f4068bdce60ac1f5d8b8af6c2e180b62"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/6636\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cafd9c10e314d4c9e034afb7037df4f4e062a5b99d39c53e450a7b30384c9929"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/6719\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "57cefc045a8cf0fa7ef67d80afa67f49caa7dc667f6292e758f25e8e349e0cd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coinsnews.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/widget\\/currency\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "cab91e972ad5f56c3e265177ae3e6cb723fe430253db6f77abf501533b4ed08f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "free-litecoin.com",
+                "isthiscoinascam.com",
+                "www.xrpchat.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/widget\\/coinMarquee\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "42ddd8b89cd2f3acae38059fec042e4f4f1d7ef0c5c33fc613f8d1afc9512b6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/825\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "49309b44f7523832fb84d1e019e8ceef39d0e84fd4e43f376b71e1c7fcda527c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/2469\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "55cc33bf52ea0d6b4f3ba7e7a800d2997a00cf4716e55d04cd8b335688229e21"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/4206\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a27d3f1feca56025298085de8e6e6256ab5cd3ff2ad5b990085ef7b4298a3eb6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/8757\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8b1a4d8fce7711c50e9cf864e24409d2ee73766de533b132dbf32669cd512955"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
+            ]
+        },
+        {
+            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/32x32\\/16086\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "880a342c96dac284e678c0193a4d453f0101516463b7fa09783ff7e2a6e310f0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cryptonewsz.com",
+                "www.cryptonewsz.com"
             ]
         },
         {
@@ -160,7 +675,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "f423c64550fedf35f2ee5478aeff6e9b84a77bdf80c14a8cf6b7355c41db2242"
@@ -169,165 +684,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "coinmarketsearch.com",
-                "www.xrpchat.com"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/5805\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "858b6e2c7b4e7bbba673ce2024f7ca7bd71066bc4e5f9229bde11d48465f967b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "tokenmagic.app"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/3890\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2e2a4246a135b3bef4f3d6e9a59b4e29c2def22a3d3697a501734bd9fb432b00"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "tokenmagic.app"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/5994\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ae3e95cbdaeb91fe990b072076cde24fae853095a90a30dbd4e59955c1f10ef0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "watcher.guru"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/3513\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bd42ed98e87b0291bba74b79fcbec7b8b6dc744b524b0302d4fb5ca8cf89ecd8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "tokenmagic.app"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/img\\/coins\\/64x64\\/2502\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s2"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "72cb7552fb75c15e30f9aa41105c310000dad53fe4979a7afb312d913182fcab"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "coinmarketsearch.com",
-                "tokenmagic.app"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/static\\/widget\\/currency\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "files"
-            ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cab91e972ad5f56c3e265177ae3e6cb723fe430253db6f77abf501533b4ed08f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trumpcoin.com",
-                "www.xrpchat.com"
-            ]
-        },
-        {
-            "rule": "coinmarketcap\\.com\\/v1\\/cryptocurrency\\/widget",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "3rdparty-apis"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "9ed9f12075468c711776553cad72a4e138e1bc78eca364a64b3f29f658c35b5f",
-                "181ef4efc0731719e9306dd849a2fe9398503290682d33d06febde83fc553ecc"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "trumpcoin.com",
-                "www.trumpcoin.com",
+                "xrpchat.com",
                 "www.xrpchat.com"
             ]
         }
@@ -336,10 +693,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 3,
-        "Image": 25,
-        "Script": 2,
-        "XHR": 3
+        "Fetch": 4,
+        "XHR": 4,
+        "Image": 52,
+        "Script": 5
     },
     "nameservers": [
         "kara.ns.cloudflare.com",

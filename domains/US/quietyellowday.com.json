@@ -4,18 +4,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000831,
-    "sites": 12,
+    "prevalence": 0.0001,
+    "sites": 14,
     "subdomains": [
         "red",
-        "blue"
+        "blue",
+        "pir",
+        "eured"
     ],
     "cnames": [],
     "fingerprinting": 3,
     "resources": [
         {
             "rule": "quietyellowday\\.com\\/i\\/3c53f8ed6f6dfd3b533741ecda52da28\\.js",
-            "cookies": 0.0000415,
+            "cookies": 0.0000429,
             "fingerprinting": 3,
             "subdomains": [
                 "red"
@@ -26,66 +28,64 @@
                 "Screen.prototype.availHeight": 6,
                 "Screen.prototype.availWidth": 6,
                 "Document.cookie getter": 6,
+                "Navigator.prototype.webdriver": 6,
                 "WebGLRenderingContext.prototype.getExtension": 6,
-                "WebGLRenderingContext.prototype.getParameter": 6,
                 "WebGLRenderingContext.prototype.getSupportedExtensions": 6,
                 "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.onLine": 6,
                 "Screen.prototype.colorDepth": 6,
                 "Screen.prototype.pixelDepth": 6,
                 "window.devicePixelRatio": 6,
                 "Navigator.prototype.vendor": 6,
                 "Navigator.prototype.permissions": 6,
                 "Navigator.prototype.platform": 6,
-                "Navigator.prototype.webdriver": 6,
-                "Navigator.prototype.plugins": 6,
+                "Navigator.prototype.mimeTypes": 6,
                 "Document.cookie setter": 6,
                 "window.localStorage": 6,
-                "Navigator.prototype.mimeTypes": 6,
                 "HTMLCanvasElement.prototype.toDataURL": 6,
                 "window.indexedDB": 6,
                 "Navigator.prototype.doNotTrack": 6,
                 "Navigator.prototype.maxTouchPoints": 6,
-                "Navigator.prototype.hardwareConcurrency": 6,
+                "Screen.prototype.availTop": 6,
+                "Screen.prototype.availLeft": 6,
                 "window.name": 6,
                 "Performance.prototype.memory": 6,
                 "Navigator.prototype.connection": 6,
                 "Date.prototype.getTime": 6,
                 "Date.prototype.getTimezoneOffset": 6,
                 "PerformanceTiming.prototype.navigationStart": 6,
+                "Navigator.prototype.productSub": 6,
+                "Navigator.prototype.product": 6,
+                "Navigator.prototype.appName": 6,
+                "Navigator.prototype.appCodeName": 6,
+                "Navigator.prototype.deviceMemory": 6,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 6,
-                "window.sessionStorage": 6,
-                "Screen.prototype.availTop": 2,
-                "Screen.prototype.availLeft": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.productSub": 2,
-                "Navigator.prototype.product": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appCodeName": 2
+                "window.sessionStorage": 6
             },
             "sites": 6,
-            "prevalence": 0.0000415,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "c1b125252eaec288f702ecaf6e2855c9375a600aafd239952a55e403486d4b94"
+                "001c0d352a4884a3404d46f5d02696dddc564a7cd3e1f5edaad8f98947f0e12c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_cq_check": {
-                    "ttl": -1642749754,
+                    "ttl": -1646286163,
                     "length": 1,
-                    "prevalence": 0.00004153226364680963,
+                    "prevalence": 0.00004289942943758848,
                     "uniqueness": 0.16666666666666666
                 },
                 "_cq_duid": {
-                    "ttl": 7884004,
+                    "ttl": 7884005,
                     "length": 29,
-                    "prevalence": 0.00004153226364680963,
+                    "prevalence": 0.00004289942943758848,
                     "uniqueness": 1
                 },
                 "_cq_suid": {
                     "ttl": null,
                     "length": 29,
-                    "prevalence": 0.00004153226364680963,
+                    "prevalence": 0.00004289942943758848,
                     "uniqueness": 1
                 }
             },
@@ -101,36 +101,38 @@
         },
         {
             "rule": "quietyellowday\\.com\\/ct",
-            "cookies": 0.0000485,
+            "cookies": 0.00005,
             "fingerprinting": 0,
             "subdomains": [
-                "blue"
+                "blue",
+                "pir"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
-                "abc68047bf9b9dedfbbca10aebd93a6f0fc60cf65bb3995c39458f228e469d5d",
-                "a1978fa14771bb42ea928f2fca05bdbb9c36149208d40f5f0a2e3de2965c94cb",
-                "5eb0854b35627b301ea18c516b07b2bd143339e1a134b35275dfc038731e7796",
-                "ba28755dedb1f5d67fe4bc665a99b0385c289d559dd7fe0e888d919b07677150",
-                "2d674e768e34db777275879b614bfd49ccb05870f948a7d789359b8fca503c7f",
-                "c97b9a89e8d619335b74905a605d4969c6d9153a10b572a5f6cd28cbcb1bec6b"
+                "646aa5105f32542be1ed79805f58980cbe169aaaeb333eafdf4b69eb63cf6a62",
+                "f30fa974c9702fbf1c689f112ee36e8d39395dd9232daeff9f94d70d1f6146b1",
+                "c22138ffa85fcce2e18f621872e65a49c82a862d0e45cfc49a9a232af4493cd1",
+                "d3780535fbad4ac43b12de80bfb051d0dd315d3198222bd9d62c6e1042c0ee3f",
+                "9b0b3b622d35bdfa1afcd465b9ee0a216bf170613df3f67e719f6d3ab76088eb",
+                "f8e74db025b14bace8172540ca7d5d7da927f7bbb0040c9c855517a6e82927e5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ga": 0.00004845430758794457,
-                "_cq_duid": 0.00004153226364680963,
-                "_cq_suid": 0.00004153226364680963
+                "_ga": 0.00005719923925011797,
+                "_cq_duid": 0.00005719923925011797,
+                "_cq_suid": 0.00005719923925011797
             },
             "exampleSites": [
                 "autoexpress.co.uk",
                 "www.autoexpress.co.uk",
                 "www.buyacar.co.uk",
                 "www.carbuyer.co.uk",
-                "www.d.co.il",
+                "www.culturekings.co.nz",
+                "www.culturekings.com.au",
                 "www.drivingelectric.com",
                 "www.evo.co.uk"
             ]
@@ -140,11 +142,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "blue"
+                "blue",
+                "pir"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -157,7 +160,8 @@
                 "www.autoexpress.co.uk",
                 "www.buyacar.co.uk",
                 "www.carbuyer.co.uk",
-                "www.d.co.il",
+                "www.culturekings.co.nz",
+                "www.culturekings.com.au",
                 "www.drivingelectric.com",
                 "www.evo.co.uk"
             ]
@@ -170,8 +174,8 @@
                 "blue"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -184,17 +188,16 @@
                 "www.autoexpress.co.uk",
                 "www.buyacar.co.uk",
                 "www.carbuyer.co.uk",
-                "www.d.co.il",
                 "www.drivingelectric.com",
                 "www.evo.co.uk"
             ]
         },
         {
-            "rule": "quietyellowday\\.com\\/clicktrue_invocation\\.js",
-            "cookies": 0.0000138,
-            "fingerprinting": 2,
+            "rule": "quietyellowday\\.com\\/sxp\\/i\\/0dd7e8dcbc59adea2357160bb79b4e03\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 3,
             "subdomains": [
-                "red"
+                "eured"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
@@ -203,59 +206,156 @@
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.availWidth": 2,
                 "Document.cookie getter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.onLine": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Screen.prototype.pixelDepth": 2,
                 "window.devicePixelRatio": 2,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.permissions": 2,
                 "Navigator.prototype.platform": 2,
-                "Navigator.prototype.webdriver": 2,
-                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
                 "Document.cookie setter": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.mimeTypes": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.availTop": 2,
+                "Screen.prototype.availLeft": 2,
                 "window.name": 2,
                 "Performance.prototype.memory": 2,
                 "Navigator.prototype.connection": 2,
                 "Date.prototype.getTime": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "PerformanceTiming.prototype.navigationStart": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "URL.createObjectURL": 2
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "URL.createObjectURL": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "Navigator.prototype.languages": 1
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "b384d22cea80f044dfb01b0b95a6a9c9b02cfea687ac2894879a9af4a3705145"
+                "8f0829a53dd073cb387b6d1743006abb6561b6920d595418b5fec837e4c1b461"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_cq_check": {
-                    "ttl": -1642753433,
+                    "ttl": -1646395362,
                     "length": 1,
-                    "prevalence": 0.000013844087882269877,
+                    "prevalence": 0.000014299809812529493,
                     "uniqueness": 0.5
+                },
+                "_cq_duid": {
+                    "ttl": 7884009,
+                    "length": 29,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "_cq_suid": {
+                    "ttl": null,
+                    "length": 29,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "d.co.il",
-                "www.d.co.il"
+                "culturekings.co.nz",
+                "www.culturekings.co.nz"
+            ]
+        },
+        {
+            "rule": "quietyellowday\\.com\\/sxp\\/i\\/3bfe6689fd3a6a5f95044b8b7cf51011\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 3,
+            "subdomains": [
+                "eured"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.webdriver": 1,
+                "Navigator.prototype.onLine": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.permissions": 1,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mimeTypes": 1,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Screen.prototype.availTop": 2,
+                "Screen.prototype.availLeft": 2,
+                "window.name": 2,
+                "Performance.prototype.memory": 1,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.deviceMemory": 1,
+                "URL.createObjectURL": 1,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "bcde28c89d5630a6445e3946b1f5386d1d986c09e61f40eb3968c6e84b01d68f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_cq_check": {
+                    "ttl": -1646290815,
+                    "length": 1,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "_cq_duid": {
+                    "ttl": 7884007,
+                    "length": 29,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "_cq_suid": {
+                    "ttl": null,
+                    "length": 29,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "culturekings.com.au",
+                "www.culturekings.com.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000831,
+    "cookies": 0.0001,
     "types": {
-        "Script": 15,
-        "Image": 7,
-        "XHR": 7
+        "Script": 18,
+        "Image": 8,
+        "XHR": 6
     },
     "nameservers": [
         "ns-589.awsdns-09.net",

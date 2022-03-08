@@ -7,37 +7,47 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000325,
-    "sites": 47,
+    "prevalence": 0.000508,
+    "sites": 71,
     "subdomains": [
         "sdk.pulse",
         "cis",
+        "jssdk.pulse",
         "static.privacy",
-        "info.privacy",
-        "session-service.login"
+        "session-service.login",
+        "info.privacy"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "id.adressa.no",
+            "resolved": "session-service.login.schibsted.com"
+        },
+        {
+            "original": "id.smp.no",
+            "resolved": "session-service.login.schibsted.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "schibsted\\.com\\/pulse\\.min\\.js",
-            "cookies": 0.000111,
+            "cookies": 0.000164,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk.pulse"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 16,
-                "Document.cookie getter": 16,
-                "Document.cookie setter": 16,
-                "Navigator.prototype.language": 16,
-                "Screen.prototype.width": 16,
-                "Screen.prototype.height": 16,
-                "window.localStorage": 16,
-                "Date.prototype.getTime": 16
+                "Navigator.prototype.userAgent": 23,
+                "Document.cookie getter": 23,
+                "Document.cookie setter": 23,
+                "Navigator.prototype.language": 23,
+                "Screen.prototype.width": 23,
+                "Screen.prototype.height": 23,
+                "window.localStorage": 23,
+                "Date.prototype.getTime": 23
             },
-            "sites": 16,
-            "prevalence": 0.000111,
+            "sites": 23,
+            "prevalence": 0.000164,
             "cnames": [],
             "responseHashes": [
                 "c0fd2af6ae9309c224332a47755b780c3c9dbb3938420b690e125791a213bcbe"
@@ -46,35 +56,39 @@
             "firstPartyCookies": {
                 "_pulse2data": {
                     "ttl": 63072005,
-                    "length": 578,
-                    "prevalence": 0.00011075270305815901,
+                    "length": 576,
+                    "prevalence": 0.00016444781284408918,
                     "uniqueness": 1
                 },
                 "_pulsesession": {
                     "ttl": 1803,
                     "length": 109,
-                    "prevalence": 0.00011075270305815901,
+                    "prevalence": 0.00016444781284408918,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "oikotie.fi",
-                "asunnot.oikotie.fi",
                 "omni.se",
+                "jobbsafari.se",
+                "www.tv.nu",
+                "www.tek.no",
+                "asunnot.oikotie.fi",
+                "www.adressa.no",
+                "m.tori.fi",
+                "www.tori.fi",
+                "www.fvn.no",
+                "bostad.blocket.se",
+                "www.godt.no",
                 "tyopaikat.oikotie.fi",
-                "vgd.no",
-                "www.bilbasen.dk",
                 "www.blocket.se",
                 "www.dba.dk",
-                "www.godt.no",
-                "www.oikotie.fi",
-                "www.prisjakt.nu",
-                "www.prisjakt.no",
+                "avointyopaikka.fi",
+                "jobb.blocket.se",
                 "www.rakentaja.fi",
-                "www.tek.no",
-                "www.tori.fi",
-                "www.tv.nu"
+                "www.bilbasen.dk",
+                "www.smp.no"
             ]
         },
         {
@@ -86,7 +100,7 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "1bf5728ed986fe935ac7a2c1848cc64d810131c8ebe8b01759b1bcc95f45f3d3"
@@ -103,64 +117,75 @@
         },
         {
             "rule": "schibsted\\.com\\/api\\/v1\\/identify",
-            "cookies": 0.000166,
+            "cookies": 0.00025,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
-            "sites": 24,
-            "prevalence": 0.000166,
+            "sites": 35,
+            "prevalence": 0.00025,
             "cnames": [],
             "responseHashes": [
-                "cfdaeedadf07543cd981f1363bd4a200a449d4cfbfd2f481996a07a834fc36c1",
-                "33fb51d85137e919fb6c9e4102d774c5c781e028344e8b083f2180893a2469b5",
-                "0a8645d5bd44b760c5f32c733648cdd0ee1091fb09d7a506e433e0628d8666c5",
-                "58bf947fee2bb83e759f9cc29d77e9fc940eb20e162a364a8f8f310ec84048c1",
-                "d4719d1f6ffacd9d1e4f3487a60c03f6b7c3f5ecaf16d56dd25eb631bea1c31f",
-                "0d5561d4890f74b38888814146981e681d4a3646850b7452b2324590981af6b4",
-                "f5b6aa34b25d46d321fabf7380c9f3b31ee91cb7dd3d1501f04c48b09e3120a4",
-                "870077a5af386076f2fa101433fedb27a10756151bf7972b9f2ed58ad22e34d6",
-                "d925e4a0843576382c384e9c231aac326e0f7f3cb103a9594284d2d52aa89501",
-                "43bdb016608be6a458bc95d62f6ece93f5e9c04f87492258be4b0f173bf1d806",
-                "2a077f951675b568d3919637079e7f73a818d4735e2dd5513fa66163031e6646",
-                "a2e2dd79f3e9428a21997788422d77792ebd68d87f75c3f68745fac7c23d6b1a",
-                "fdf8dc7f35eedc387d0cac31ed60c990058fd7dafffd24437c0c4989c544560f",
-                "f8faaaed3db567e316f6bcb7034bb8d3190b7a1ba345aee67c664164cb8e34ca",
-                "475253f5c875e23c77c646c60fde927371afce11b49fd6ca94e166454d225282",
-                "b94b70156a9c05878cd862eb33d4deb10fd4f701fb8ea0bb81f89ded0de8303a",
-                "6b77f094baab4e82db69390b6a43981e4fca4dd2a2fffa76d642bb50e49fd214",
-                "5b51cb6ad08650a8ac555777e00e104c0ebe09fb0be6a28a922575a53eda391b",
-                "829b34f4eaa4f6e8215437d7cab8871ccab04f59d9491789f2c038d53ba2989e",
-                "7b7f4bd3a172ab555c1d5ff6a6c3ab7ec16162a793d76fb83aa843dc56b2c6e4",
-                "d21a85dff5b31208458f79a70e60995817c84080324dd9ae0aa846d78ad6892a",
-                "e2a702d7f79ad767e363101e042fe8db4edf70c12b342913a0a5a9257ca7351d",
-                "6b2e20514954ba09297b1f2c6b633e5a57f107deed48a5ddcac1e83ff00db45d"
+                "57a23ef8f2d59b699fe9fffb4b7a09748fc6436d1730cf8dd89627a9b3798b34",
+                "a5645a74756f9224c0f46c407c13e42c46f389afad74dbe12646f03fbc08dfcf",
+                "14684e9839ea9cc1d6afcb4c9bda634b16f4db101ebe323ae6acd4c0daff6ac9",
+                "8b100361fa895ad17f062adcfd29cbbf4abeac35c217839aae62158b6cbc6fcf",
+                "549b5a05a53bd3fde17edb5c29c74dce5e14dd12e89e6237b39159cdd7e91166",
+                "af68a5966e47a490797c9a8cdf319ae09364694ce3cc69089521db771a780268",
+                "ddc8a37e8f6cd97abb85b6db56c48972c3fea5b72059147a7494b8aa7731b571",
+                "0236b97b5f32155bef3b8414a3f43fc08d26f4416d4c6c8fe94ba429a7abafcf",
+                "363c54b362e918b534a9a6a1536342711f737ab116c152601520e36148c9f8fb",
+                "666ad598f8b618c2ef8a372ab8ddf94dd2a7af1a1302635a0fd9ec42b88058e0",
+                "d33fce090ac3400fd3e16f8392d6a2c51d0c837d5c2494457df9d441553391bd",
+                "54e9557e6111a9095cd6cda29e821e55990c389bf81bc8584c6c1b0e8c58c639",
+                "511b8699068b41ec8b06448856291cee3a8715c52d44f7c6a02bd3c2b3bdb851",
+                "12d20a24551b2e839ee66b9d1222c2262a545c6ccca68a53acb4a8c4495f739b",
+                "5f8420135dbef9cede72bdd2b08d1db225b6d80328337c24835b8ef679cde0b7",
+                "df90d1613ecbaead13254a5810f364a71877ab3d74d63a4aa208a3870203b7e9",
+                "c86e030d2ca9151d74ef64e3456467647024b99a17033e66bdb16dfaf3401b8a",
+                "c2b124d5aacc0b4b3b09f3541fdf63a9c3cfe1784985a5744bfc2edc85806e97",
+                "6ab1664ca94d6b63507b16ab4b8e17c5d76e0dd873cba199930f81e5d2607951",
+                "e3b39db9353f8208ac1c75bc043dce4efbb7eaa2d79dcb37d9b15288866e41f6",
+                "a5918e78965faef445748babc13a8278546fa568f5d96aca28ed872235e514d8",
+                "276cc51fcd359e02531c622700ed44c17cde9875bb87f7ac879f25356aef5c9c",
+                "02ae8354c4b4d2f80a7e3f35ef111a1e7a82039b2fb99d6c93cf3b78a7823004",
+                "dfc59ff114a839ef4f73f063a4bf02359a96c2015cdbc8062486d30be4f61c0d",
+                "9a0892eec6a7db97771bdad2d853739b08a8708724d7c8435bcaf26fa59f03e9",
+                "e4ee7566c6fd10f3355acd468573c3a2ff4c237a99c517a2d2452cfc916f28b9",
+                "5543e689880884bc071458f1342e77be1457e92e038695e2f9562e9af5d3f54e",
+                "4294a42656700d597924cb099d28c39de7fbfa56cbd2af333f7b612c4ece4e49",
+                "3b2f687a4e52b715fd1205311f4eaa30e9448ba19bd0d4f6cddc662a145e3fe0",
+                "772a8b79f54b70581823ffebf9cfb9c60146a2510976c3dc8acf9d263356a761",
+                "7c71b71acf3d0f2920ccce8c6b36d6e31edbe964bff5b53a73cf46edd4213d32",
+                "a33606e60eea36a8601f9392e5d8dd385993dd917fb65bb7f086f56a2e1d67f4",
+                "a9c4ce62dcb8e366fb63d4ed4c24fad37593844260ae68f989f0af85b74b7a8e",
+                "9720aa8fd9358ade698f702c0280c7ea4c3969446255973fe36322320ce53c3a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.dba.dk",
-                "omni.se",
-                "vgd.no",
-                "www.tek.no",
-                "www.oikotie.fi",
-                "e24.no",
-                "asunnot.oikotie.fi",
-                "www.godt.no",
-                "www.aftonbladet.se",
-                "www.rakentaja.fi",
-                "www.prisjakt.nu",
-                "www.bilbasen.dk",
-                "www.tv.nu",
-                "tyopaikat.oikotie.fi",
-                "www.svd.se",
-                "www.blocket.se",
-                "www.vg.no",
                 "www.tori.fi",
-                "www.prisjakt.no",
-                "www.klart.se"
+                "www.dba.dk",
+                "oikotie.fi",
+                "e24.no",
+                "www.bt.no",
+                "www.vg.no",
+                "www.aftenbladet.no",
+                "omni.se",
+                "vglive.no",
+                "www.bilbasen.dk",
+                "www.blocket.se",
+                "kart.finn.no",
+                "www.oikotie.fi",
+                "www.wellness.se",
+                "www.fvn.no",
+                "www.smp.no",
+                "www.finn.no",
+                "www.godt.no",
+                "www.adressa.no",
+                "www.tek.no"
             ]
         },
         {
@@ -171,74 +196,137 @@
                 "cis"
             ],
             "apis": {},
-            "sites": 25,
-            "prevalence": 0.000173,
+            "sites": 37,
+            "prevalence": 0.000265,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.blocket.se",
-                "www.bytbil.com",
-                "www.klart.se",
-                "www.aftenposten.no",
-                "www.bilbasen.dk",
-                "www.prisjakt.nu",
-                "www.aftonbladet.se",
-                "e24.no",
-                "tyopaikat.oikotie.fi",
-                "asunnot.oikotie.fi",
+                "vglive.no",
                 "www.finn.no",
-                "www.svd.se",
-                "www.oikotie.fi",
-                "www.godt.no",
+                "www.bytbil.com",
+                "e24.no",
+                "www.aftenposten.no",
                 "oikotie.fi",
-                "www.tv.nu",
-                "www.prisjakt.no",
+                "avointyopaikka.fi",
+                "www.adressa.no",
+                "www.tek.no",
+                "www.godt.no",
+                "www.bilbasen.dk",
                 "www.vg.no",
+                "puutarha.net",
+                "www.klart.se",
+                "vgd.no",
                 "www.bt.no",
-                "www.tek.no"
+                "www.aftonbladet.se",
+                "m.tori.fi",
+                "www.tori.fi",
+                "jobbsafari.se"
             ]
         },
         {
             "rule": "schibsted\\.com\\/api\\/v1\\/sync",
-            "cookies": 0.000166,
+            "cookies": 0.00025,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
-            "sites": 24,
-            "prevalence": 0.000166,
+            "sites": 35,
+            "prevalence": 0.00025,
             "cnames": [],
             "responseHashes": [
+                "07383c96980710a04144e5a39ae59e7f9f74bcfd6462a6932ded48efe6d73bce",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.vg.no",
-                "www.bt.no",
-                "e24.no",
-                "www.bilbasen.dk",
-                "www.prisjakt.no",
-                "www.bytbil.com",
-                "www.dba.dk",
-                "www.finn.no",
-                "vgd.no",
-                "oikotie.fi",
-                "www.aftenposten.no",
-                "asunnot.oikotie.fi",
-                "tyopaikat.oikotie.fi",
-                "www.svd.se",
-                "www.blocket.se",
-                "www.tek.no",
-                "www.oikotie.fi",
+                "www.wellness.se",
                 "www.aftonbladet.se",
-                "www.klart.se",
-                "www.prisjakt.nu"
+                "tyopaikat.oikotie.fi",
+                "bostad.blocket.se",
+                "www.finn.no",
+                "puutarha.net",
+                "oikotie.fi",
+                "www.smp.no",
+                "vglive.no",
+                "www.bytbil.com",
+                "www.bt.no",
+                "omni.se",
+                "kart.finn.no",
+                "www.godt.no",
+                "avointyopaikka.fi",
+                "www.vg.no",
+                "www.bilbasen.dk",
+                "www.aftenposten.no",
+                "www.rakentaja.fi",
+                "jobbsafari.se"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/autoTracker\\.min\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "jssdk.pulse"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7815782479e9429f5b2447b3ca096beefbae4ad5b2db46626216f99e411d9b26"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pulse2data": {
+                    "ttl": 63072003,
+                    "length": 534,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vg.no",
+                "www.bytbil.com"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/api\\/v1\\/identify",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "62106f74e478f099b9233b2da0e24aa14aaea0c9ec7223eb26ff222b0f353495"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vg.no",
+                "www.bytbil.com"
             ]
         },
         {
@@ -249,8 +337,8 @@
                 "static.privacy"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000831,
+            "sites": 13,
+            "prevalence": 0.0000929,
             "cnames": [],
             "responseHashes": [
                 "8a17dbe0c9d25187a9ef656698d4a70e9144f61258f7b4211d5403548b8b6a2c"
@@ -260,8 +348,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "e24.no",
-                "omni.se",
                 "www.aftenposten.no",
+                "www.aftenbladet.no",
                 "www.aftonbladet.se",
                 "www.bt.no",
                 "www.finn.no",
@@ -270,7 +358,173 @@
                 "www.svd.se",
                 "www.tek.no",
                 "www.tv.nu",
-                "www.vg.no"
+                "www.vg.no",
+                "www.wellness.se"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/cmp\\/psi_secure\\.20210809\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.privacy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8ad360bbdf60e43ab5785299fb391c5ef1d1b17c0a39fe5251e977397ec04be6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e24.no",
+                "www.tek.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/cmp\\/psi_personalization\\.20210809\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.privacy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a21b151b93e5bfb352d1a4c988d91088ad6bf9cd8e4537b3df89875d82bb7a0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e24.no",
+                "www.tek.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/cmp\\/psi_service\\.20210809\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.privacy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a9f42342c4defe15a691dba6327524cafdafd1e747a2bc548e8845fe87a51b32"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e24.no",
+                "www.tek.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/cmp\\/psi_ads\\.20210809\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.privacy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c32fa8ab4d1d109dc1e823dc69ea465021b458d5ae378807381071bd45c9a1bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e24.no",
+                "www.tek.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/pulse-modern\\.min\\.js",
+            "cookies": 0.0000214,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk.pulse"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.language": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "31da25233e29a7a1c25b963c62f489e7e885c183855234788e02de227862bd3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pulse2data": {
+                    "ttl": 63072005,
+                    "length": 581,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 1
+                },
+                "_pulsesession": {
+                    "ttl": 1802,
+                    "length": 109,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finn.no",
+                "kart.finn.no",
+                "www.finn.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.com\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-service.login"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "id.adressa.no",
+                    "resolved": "session-service.login.schibsted.com"
+                },
+                {
+                    "original": "id.smp.no",
+                    "resolved": "session-service.login.schibsted.com"
+                }
+            ],
+            "responseHashes": [
+                "7f6f85b2474239f232c24918e2ac4a56a838bc64a9e872a62b89152e569602ff"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adressa.no",
+                "www.adressa.no",
+                "www.smp.no"
             ]
         },
         {
@@ -282,7 +536,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0000761,
+            "prevalence": 0.0000786,
             "cnames": [],
             "responseHashes": [
                 "3879f624ae000c73b050ac1857b8b19054f89fa88f5bd08fbeb6663ba71703a4"
@@ -291,15 +545,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "omni.se",
+                "aftenposten.no",
                 "www.aftenposten.no",
+                "www.aftenbladet.no",
                 "www.aftonbladet.se",
                 "www.bt.no",
                 "www.finn.no",
                 "www.godt.no",
                 "www.klart.se",
                 "www.svd.se",
-                "www.tek.no",
                 "www.tv.nu",
                 "www.vg.no"
             ]
@@ -313,7 +567,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0000761,
+            "prevalence": 0.0000786,
             "cnames": [],
             "responseHashes": [
                 "8c26cee394398ef0c53858cb26cd58f20528c22ede6736f24755cc8b9fe348fa"
@@ -322,15 +576,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "omni.se",
+                "aftenposten.no",
                 "www.aftenposten.no",
+                "www.aftenbladet.no",
                 "www.aftonbladet.se",
                 "www.bt.no",
                 "www.finn.no",
                 "www.godt.no",
                 "www.klart.se",
                 "www.svd.se",
-                "www.tek.no",
                 "www.tv.nu",
                 "www.vg.no"
             ]
@@ -344,7 +598,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0000761,
+            "prevalence": 0.0000786,
             "cnames": [],
             "responseHashes": [
                 "d5cbe10685238e942b2e1ba56f4788d111848220c442fd1dd7c88d49b854c06f"
@@ -353,15 +607,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "omni.se",
+                "aftenposten.no",
                 "www.aftenposten.no",
+                "www.aftenbladet.no",
                 "www.aftonbladet.se",
                 "www.bt.no",
                 "www.finn.no",
                 "www.godt.no",
                 "www.klart.se",
                 "www.svd.se",
-                "www.tek.no",
                 "www.tv.nu",
                 "www.vg.no"
             ]
@@ -375,7 +629,7 @@
             ],
             "apis": {},
             "sites": 11,
-            "prevalence": 0.0000761,
+            "prevalence": 0.0000786,
             "cnames": [],
             "responseHashes": [
                 "a45e4c43ba373836c77fb1516d3b08e944686e570e306d362a8af44a7ff29565"
@@ -384,15 +638,15 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "omni.se",
+                "aftenposten.no",
                 "www.aftenposten.no",
+                "www.aftenbladet.no",
                 "www.aftonbladet.se",
                 "www.bt.no",
                 "www.finn.no",
                 "www.godt.no",
                 "www.klart.se",
                 "www.svd.se",
-                "www.tek.no",
                 "www.tv.nu",
                 "www.vg.no"
             ]
@@ -405,8 +659,8 @@
                 "session-service.login"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
                 "28885d54f98e4f35ce8e06ce3991dd4da7505ce771252465bbead57930a07778"
@@ -419,6 +673,7 @@
                 "www.aftonbladet.se",
                 "www.blocket.se",
                 "www.bytbil.com",
+                "www.klart.se",
                 "www.tv.nu"
             ]
         },
@@ -432,8 +687,8 @@
             "apis": {
                 "Document.cookie getter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "7b13b7367e97ccf86aef25ff8e78f24207ea9759386af980b2761b5cda9c5088"
@@ -443,51 +698,33 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bytbil.com",
+                "www.bytbil.com",
                 "www.tv.nu"
             ]
         },
         {
-            "rule": "schibsted\\.com\\/pulse-modern\\.min\\.js",
-            "cookies": 0.0000138,
+            "rule": "schibsted\\.com\\/plugins\\/local-history\\/plugin\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "sdk.pulse"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "window.localStorage": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "31da25233e29a7a1c25b963c62f489e7e885c183855234788e02de227862bd3d"
+                "dd6cbbbdfd90d14f8d1ac04644076e603bf83a8a490d89f6292332eaaa11e70b"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "_pulse2data": {
-                    "ttl": 63072010,
-                    "length": 581,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                },
-                "_pulsesession": {
-                    "ttl": 1808,
-                    "length": 109,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "finn.no",
-                "www.finn.no"
+                "fvn.no",
+                "www.fvn.no",
+                "www.smp.no"
             ]
         },
         {
@@ -499,7 +736,7 @@
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "39a8273ad3ea14a99967faff56b7a6bb337e36dd57e3861125c0bf6015d1438b"
@@ -516,12 +753,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000325,
+    "cookies": 0.000508,
     "types": {
-        "Script": 27,
-        "Fetch": 29,
-        "Preflight": 25,
-        "Image": 80
+        "Script": 41,
+        "Fetch": 44,
+        "Preflight": 37,
+        "Image": 100,
+        "XHR": 2
     },
     "nameservers": [
         "ns-182.awsdns-22.com",

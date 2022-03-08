@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000572,
+    "sites": 8,
     "subdomains": [
-        "apoteket-se"
+        "apoteket-se",
+        "masku-fi",
+        "komplett-no-prod",
+        "komplett-se-prod"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -17,21 +20,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "apoteket-se"
+                "apoteket-se",
+                "masku-fi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "4b02fb1ae4e7f4f2a9574678854ca396b9fe8b68d6c0f27791ee85c0099315f8"
+                "0572e225e4b4d909a1fbadc562a45e9f9401ed362fbc15ca22c74c17c196eefd",
+                "5a7b4ff904678be4ea59765dcf399552f875e3e1085f0f6454458dcfc92c6db4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "apoteket.se",
-                "www.apoteket.se"
+                "www.apoteket.se",
+                "www.masku.com"
             ]
         },
         {
@@ -39,11 +45,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "apoteket-se"
+                "apoteket-se",
+                "masku-fi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -51,7 +58,52 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "apoteket.se",
-                "www.apoteket.se"
+                "www.apoteket.se",
+                "www.masku.com"
+            ]
+        },
+        {
+            "rule": "54proxy\\.com\\/createEvents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "komplett-no-prod",
+                "komplett-se-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "komplett.no",
+                "www.komplett.se"
+            ]
+        },
+        {
+            "rule": "54proxy\\.com\\/createEvents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "komplett-no-prod",
+                "komplett-se-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "komplett.no",
+                "www.komplett.se"
             ]
         }
     ],
@@ -59,8 +111,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2,
-        "Preflight": 2
+        "XHR": 5,
+        "Preflight": 5
     },
     "nameservers": [
         "ns1.dnsmadeeasy.com",

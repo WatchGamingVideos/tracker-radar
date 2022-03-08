@@ -9,24 +9,31 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000643,
+    "sites": 9,
     "subdomains": [
-        "login"
+        "login",
+        "onedrive",
+        "excel.officeapps",
+        "mrodevicemgr.officeapps",
+        "shared.officeapps",
+        "client.hip",
+        "wus.client.hip",
+        "scu.client.hip"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "live\\.com\\/Me\\.htm",
-            "cookies": 0.0000277,
+            "cookies": 0.0000214,
             "fingerprinting": 0,
             "subdomains": [
                 "login"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -35,27 +42,433 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aifs.gov.au",
-                "epconnect.ups.com",
-                "learn.snhu.edu",
-                "wd5.myworkday.com"
+                "education.tas.gov.au",
+                "canvas.education.tas.gov.au",
+                "performancemanager10.successfactors.com"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/embed",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "onedrive"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5f0102f05bf22d1493d06ada6e14a9bf812217cbb426ea360c007848b55adf25"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_layouts\\/xlembed\\.aspx",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2aa497f29baea42b0019b013803a63f4384f60c9b9d5c7630337c66d931ca644"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_vti_bin\\/DynamicGridContent\\.json\\/GetRangeContentJson",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "babf553db7ef7298a6a8585ce2b444b42f6cad866e394a16a71cfd97f3b36b73"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/RemoteUls\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/mrodevicemgrsvc\\/api\\/v1\\/SDXReleaseDataPackages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mrodevicemgr.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/mrodevicemgrsvc\\/api\\/v1\\/SDXReleaseDataPackages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mrodevicemgr.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "90e361b06e7d4fd32671e3fb18386e3a407c05114a7e4bf0430dfee0c095080a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_layouts\\/BeaconHandler\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5b40665a9c6eda7ee5b01320fae0bc3bda499e8df67c518193f944683dc70c79"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_layouts\\/RemoteTelemetry\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_vti_bin\\/EwaInternalWebService\\.json\\/GetInstantaneousSupportInformation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "eb60004407771ec4763689110d55568d524a4c1a7209c3b5948740eddd56dab7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_vti_bin\\/EwaInternalWebService\\.json\\/GetFunctionList",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3db928f14292fb9243ee735db3bc7e3907f08c998cd4ed582ef0f4c984e6dbf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/clipboard\\/shared\\.aspx",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shared.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "56434b1ded8d1685a1e3355c1e480adab03c45ae3c4a1bce0ba75946e9b2f3b0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/RemoteUls\\.ashx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/x\\/_vti_bin\\/EwaInternalWebService\\.json\\/GetHasUntrustedImageUrls",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "excel.officeapps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "afacea75b9de3786fa565d5f6a5fded9a58919dd2ebeea99d4eecdc9da46c5a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/log",
+            "cookies": 0.00000715,
+            "fingerprinting": 0,
+            "subdomains": [
+                "onedrive"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmlights.be",
+                "www.solarchoice.net.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/GetHIP\\/Getwlsphip0\\/WLSPHIP0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client.hip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "049cdc429c95122aa3a3f4bf8eab7c254c9d82a7dbc38722e5b118b2afc6a0ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbg.vic.gov.au",
+                "www.rbg.vic.gov.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/Images\\/icon_err\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wus.client.hip",
+                "scu.client.hip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7153e69e5bef0d77cb0afe143916ff8e6beea6c451092c3d01323481c2570f7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbg.vic.gov.au",
+                "www.rbg.vic.gov.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/GetHIPData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wus.client.hip",
+                "scu.client.hip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8919b01fd4c8d36b1f74a039fb456a61a59b47faf47bd66a8e26d1972b873912"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbg.vic.gov.au",
+                "www.rbg.vic.gov.au"
+            ]
+        },
+        {
+            "rule": "live\\.com\\/Images\\/hig_progcircle_animated\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wus.client.hip",
+                "scu.client.hip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "98851f534b23fba2d1ac6907cfc0a75c2dee531bf36afb9fd8c4fd711f23782a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbg.vic.gov.au",
+                "www.rbg.vic.gov.au"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000429,
     "types": {
-        "Other": 4
+        "Other": 3,
+        "Document": 6,
+        "XHR": 18,
+        "Preflight": 2,
+        "Ping": 4,
+        "Script": 2,
+        "Image": 6
     },
     "nameservers": [
-        "nse13.o365filtering.com",
         "nse12.o365filtering.com",
+        "nse13.o365filtering.com",
+        "nse21.o365filtering.com",
         "ns1-34.azure-dns.com",
         "ns2-34.azure-dns.net",
-        "ns8-34.azure-dns.info",
-        "ns7-34.azure-dns.org",
         "ns5-34.azure-dns.com",
-        "nse21.o365filtering.com"
+        "ns7-34.azure-dns.org",
+        "ns8-34.azure-dns.info"
     ]
 }

@@ -4,79 +4,104 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000554,
-    "sites": 8,
+    "prevalence": 0.0001,
+    "sites": 14,
     "subdomains": [
-        "olxid.edge",
+        "olxar.edge",
+        "olxec.edge",
+        "olxpe.edge",
         "olxco.edge",
-        "olxin.edge",
-        "olxza.edge"
+        "olxin.edge"
     ],
     "cnames": [
         {
-            "original": "api.olx.co.id",
-            "resolved": "olxid.edge.olx.net"
-        },
-        {
-            "original": "api.olx.co.za",
-            "resolved": "olxza.edge.olx.net"
+            "original": "api.olx.com.ar",
+            "resolved": "olxar.edge.olx.net"
         },
         {
             "original": "api.olx.com.co",
             "resolved": "olxco.edge.olx.net"
         },
         {
+            "original": "api.olx.com.ec",
+            "resolved": "olxec.edge.olx.net"
+        },
+        {
+            "original": "api.olx.com.pe",
+            "resolved": "olxpe.edge.olx.net"
+        },
+        {
             "original": "api.olx.in",
             "resolved": "olxin.edge.olx.net"
         },
         {
-            "original": "statics.olx.in",
-            "resolved": "olxin.edge.olx.net"
+            "original": "statics.olx.com.ar",
+            "resolved": "olxar.edge.olx.net"
+        },
+        {
+            "original": "statics.olx.com.ec",
+            "resolved": "olxec.edge.olx.net"
+        },
+        {
+            "original": "statics.olx.com.pe",
+            "resolved": "olxpe.edge.olx.net"
+        },
+        {
+            "original": "xchat.olx.com.ar",
+            "resolved": "olxar.edge.olx.net"
+        },
+        {
+            "original": "xchat.olx.com.ec",
+            "resolved": "olxec.edge.olx.net"
+        },
+        {
+            "original": "xchat.olx.com.pe",
+            "resolved": "olxpe.edge.olx.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "olx\\.net\\/baxter\\/web\\/olxid\\.min\\.js",
+            "rule": "olx\\.net\\/baxter\\/web\\/olxar\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "olxid.edge"
+                "olxar.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.olx.co.id",
-                    "resolved": "olxid.edge.olx.net"
+                    "original": "api.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "e0e797e39c6185ca7e64d9e70996909c94566db56dba5a93f5a02e82b0f4b2f1"
+                "1dc7b727a60576cae06a990a613841e5487853c1e4f10b8863574792bd2f0e08"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.co.id",
-                "www.olx.co.id"
+                "olx.com.ar",
+                "www.olx.com.ar"
             ]
         },
         {
-            "rule": "olx\\.net\\/baxter\\/web\\/olxid\\.css",
+            "rule": "olx\\.net\\/baxter\\/web\\/olxar\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "olxid.edge"
+                "olxar.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.olx.co.id",
-                    "resolved": "olxid.edge.olx.net"
+                    "original": "api.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
                 }
             ],
             "responseHashes": [
@@ -86,8 +111,197 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.co.id",
-                "www.olx.co.id"
+                "olx.com.ar",
+                "www.olx.com.ar"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/external\\/base\\/img\\/noResults\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxar.edge",
+                "olxec.edge",
+                "olxpe.edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "statics.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
+                }
+            ],
+            "responseHashes": [
+                "0d00382844e51d005fd0435b70446a34112ea49b064ca43ca9ac90e3fa49ab85"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.com.ar",
+                "www.olx.com.ec",
+                "www.olx.com.pe"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/external\\/base\\/img\\/playstore\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxar.edge",
+                "olxec.edge",
+                "olxpe.edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "statics.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
+                }
+            ],
+            "responseHashes": [
+                "b3a0901ed8e2df4b4afa047fcc81937223aa9057bc10b143c13f8440ec99bab3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.com.ar",
+                "www.olx.com.ec",
+                "www.olx.com.pe"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/external\\/base\\/img\\/appstore\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxar.edge",
+                "olxec.edge",
+                "olxpe.edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "statics.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
+                },
+                {
+                    "original": "statics.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
+                }
+            ],
+            "responseHashes": [
+                "08116838fec367e885073ac927439995bdf587c0992e6f3494e4bea3b489fa30"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.com.ar",
+                "www.olx.com.ec",
+                "www.olx.com.pe"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/service\\/startup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxar.edge",
+                "olxec.edge",
+                "olxpe.edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "xchat.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
+                },
+                {
+                    "original": "xchat.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
+                },
+                {
+                    "original": "xchat.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.com.ar",
+                "www.olx.com.ec",
+                "www.olx.com.pe"
+            ]
+        },
+        {
+            "rule": "olx\\.net\\/service\\/startup",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "olxar.edge",
+                "olxec.edge",
+                "olxpe.edge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [
+                {
+                    "original": "xchat.olx.com.ar",
+                    "resolved": "olxar.edge.olx.net"
+                },
+                {
+                    "original": "xchat.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
+                },
+                {
+                    "original": "xchat.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
+                }
+            ],
+            "responseHashes": [
+                "c654bd6f8b399927f153fa09cb32b25f66e8161fd65be36670bf9f0ddc0571ec",
+                "0d39e2ebfd38e2a16c12069835b0db5160a0e7cbe94a81c56fc1b341c8626bcf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olx.com.ar",
+                "www.olx.com.ec",
+                "www.olx.com.pe"
             ]
         },
         {
@@ -99,7 +313,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.olx.com.co",
@@ -126,7 +340,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.olx.com.co",
@@ -145,57 +359,57 @@
             ]
         },
         {
-            "rule": "olx\\.net\\/",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
+            "rule": "olx\\.net\\/baxter\\/web\\/olxec\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "olxin.edge"
+                "olxec.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "statics.olx.in",
-                    "resolved": "olxin.edge.olx.net"
+                    "original": "api.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "217ea3488c081f431e650a4c02a8c66d168323d1c1ba945363ca0205f43e3b22"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.in",
-                "www.olx.in"
+                "olx.com.ec",
+                "www.olx.com.ec"
             ]
         },
         {
-            "rule": "olx\\.net\\/olxin\\/banners\\/hero_bg_in_v1@1x\\.png",
+            "rule": "olx\\.net\\/baxter\\/web\\/olxec\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "olxin.edge"
+                "olxec.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "statics.olx.in",
-                    "resolved": "olxin.edge.olx.net"
+                    "original": "api.olx.com.ec",
+                    "resolved": "olxec.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "0c0d9d2a33a5c5679e9948950b5200f11297ee1df12d45364cc469c352286dce"
+                "cc5dddb8220c0ff95bb89908c4db3f362f51d850a99858786aa4b7037641be20"
             ],
-            "type": "Image",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.in",
-                "www.olx.in"
+                "olx.com.ec",
+                "www.olx.com.ec"
             ]
         },
         {
@@ -207,7 +421,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.olx.in",
@@ -234,7 +448,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "api.olx.in",
@@ -253,67 +467,69 @@
             ]
         },
         {
-            "rule": "olx\\.net\\/baxter\\/web\\/olxza\\.min\\.js",
+            "rule": "olx\\.net\\/baxter\\/web\\/olxpe\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "olxza.edge"
+                "olxpe.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.olx.co.za",
-                    "resolved": "olxza.edge.olx.net"
+                    "original": "api.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "2cf221312d9ded51bb2a4651f432f02465c29563b29d52114325f0e0eb7309f8"
+                "f43c4f07bf912c0d31fb24d65e3102c96616e072a493080c1d434dd58e53d6b6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.co.za",
-                "www.olx.co.za"
+                "olx.com.pe",
+                "www.olx.com.pe"
             ]
         },
         {
-            "rule": "olx\\.net\\/baxter\\/web\\/olxza\\.css",
+            "rule": "olx\\.net\\/baxter\\/web\\/olxpe\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "olxza.edge"
+                "olxpe.edge"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.olx.co.za",
-                    "resolved": "olxza.edge.olx.net"
+                    "original": "api.olx.com.pe",
+                    "resolved": "olxpe.edge.olx.net"
                 }
             ],
             "responseHashes": [
-                "95a76a4a08ad9cee422dec2413d081561e643d797eead68fd1f329bfdf0e4c4c"
+                "cc5dddb8220c0ff95bb89908c4db3f362f51d850a99858786aa4b7037641be20"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "olx.co.za",
-                "www.olx.co.za"
+                "olx.com.pe",
+                "www.olx.com.pe"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000286,
     "types": {
-        "Script": 8,
-        "Stylesheet": 8,
-        "Image": 4
+        "Script": 10,
+        "Stylesheet": 10,
+        "Image": 9,
+        "Preflight": 3,
+        "XHR": 3
     },
     "nameservers": []
 }

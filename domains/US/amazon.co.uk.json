@@ -9,13 +9,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000692,
-    "sites": 10,
+    "prevalence": 0.0002,
+    "sites": 28,
     "subdomains": [
+        "read",
         "completion",
         "payments",
         "unagi",
-        "fls-eu"
+        "fls-eu",
+        "www"
     ],
     "cnames": [
         {
@@ -31,8 +33,28 @@
             "resolved": "completion.amazon.co.uk"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "amazon\\.co\\.uk\\/kp\\/card",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "read"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saturdaykitchenrecipes.com",
+                "www.theburningplatform.com"
+            ]
+        },
         {
             "rule": "amazon\\.co\\.uk\\/api\\/2017\\/suggestions",
             "cookies": 0,
@@ -42,14 +64,14 @@
             ],
             "apis": {},
             "sites": 4,
-            "prevalence": 0.0000277,
+            "prevalence": 0.0000286,
             "cnames": [
                 {
-                    "original": "completion.amazon.pl",
+                    "original": "completion.amazon.eg",
                     "resolved": "completion.amazon.co.uk"
                 },
                 {
-                    "original": "completion.amazon.eg",
+                    "original": "completion.amazon.pl",
                     "resolved": "completion.amazon.co.uk"
                 },
                 {
@@ -64,7 +86,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "amazon.pl",
+                "amazon.eg",
                 "www.amazon.eg",
                 "www.amazon.pl",
                 "www.amazon.se"
@@ -72,14 +94,14 @@
         },
         {
             "rule": "amazon\\.co\\.uk\\/cs\\/uedata",
-            "cookies": 0.0000208,
+            "cookies": 0.0000643,
             "fingerprinting": 0,
             "subdomains": [
                 "payments"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 9,
+            "prevalence": 0.0000643,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -88,8 +110,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bestheating.com",
+                "awd-it.co.uk",
+                "www.awd-it.co.uk",
+                "www.bargainhardware.co.uk",
                 "www.bestheating.com",
+                "www.bigbathroomshop.co.uk",
+                "www.flooringsuperstore.com",
+                "www.indigo-herbs.co.uk",
+                "www.jmldirect.com",
+                "www.proswimwear.co.uk"
+            ]
+        },
+        {
+            "rule": "amazon\\.co\\.uk\\/gp\\/widgets\\/sessionstabilizer",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "payments"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "349f5c86df120f8762e4b96e08c2180220efe60bd3a5cd204320dc1adaca6888",
+                "1602c59fb1935b05c9ce722177007a7afe4445880078df1656cc011d8ade6353"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bargainhardware.co.uk",
+                "www.bargainhardware.co.uk",
                 "www.indigo-herbs.co.uk"
             ]
         },
@@ -101,8 +153,8 @@
                 "unagi"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -111,8 +163,10 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bookdepository.com",
-                "www.bookdepository.com"
+                "bookdepository.co.uk",
+                "www.bookdepository.co.uk",
+                "www.bookdepository.com",
+                "www.thatbritishtweedcompany.co.uk"
             ]
         },
         {
@@ -123,8 +177,8 @@
                 "fls-eu"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -133,28 +187,104 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bookdepository.com",
-                "www.bookdepository.com"
+                "bookdepository.co.uk",
+                "www.bookdepository.com",
+                "www.bookdepository.co.uk",
+                "www.thatbritishtweedcompany.co.uk"
+            ]
+        },
+        {
+            "rule": "amazon\\.co\\.uk\\/reviews\\/iframe",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d3c696d93af01894bb68f2f452f46b5179d178f7f05366eeda9f578dc64b20ce"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "csm-hit": {
+                    "ttl": 30240014,
+                    "length": 68,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thatbritishtweedcompany.co.uk",
+                "www.thatbritishtweedcompany.co.uk"
+            ]
+        },
+        {
+            "rule": "amazon\\.co\\.uk\\/rd\\/uedata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thatbritishtweedcompany.co.uk",
+                "www.thatbritishtweedcompany.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000208,
+    "cookies": 0.000114,
     "types": {
-        "XHR": 7,
-        "Ping": 4
+        "Document": 4,
+        "XHR": 16,
+        "Ping": 8,
+        "Image": 2
     },
     "nameservers": [
-        "ns3.p31.dynect.net",
-        "pdns6.ultradns.co.uk",
         "ns1.p31.dynect.net",
+        "ns2.p31.dynect.net",
+        "ns3.p31.dynect.net",
+        "ns4.p31.dynect.net",
+        "pdns1.ultradns.net",
         "pdns2.ultradns.net",
         "pdns3.ultradns.org",
         "pdns4.ultradns.org",
-        "pdns1.ultradns.net",
-        "ns2.p31.dynect.net",
         "pdns5.ultradns.info",
-        "ns4.p31.dynect.net"
+        "pdns6.ultradns.co.uk"
     ]
 }

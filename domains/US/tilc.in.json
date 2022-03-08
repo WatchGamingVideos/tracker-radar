@@ -4,20 +4,57 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000623,
-    "sites": 9,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
+        "til9dedd9c9-545.mumbai-1.elb",
         "sf-objects-s3",
-        "tilfd9cc2be-1300.mumbai-1.elb"
+        "tilfd9cc2be-1300.mumbai-1.elb",
+        "tilb7f4a2aa-1025.mumbai-1.elb"
     ],
     "cnames": [
         {
             "original": "comment.indiatimes.com",
             "resolved": "tilfd9cc2be-1300.mumbai-1.elb.tilc.in"
+        },
+        {
+            "original": "etx.indiatimes.com",
+            "resolved": "til9dedd9c9-545.mumbai-1.elb.tilc.in"
+        },
+        {
+            "original": "static.timesjobs.com",
+            "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
         }
     ],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "tilc\\.in\\/error_save",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "til9dedd9c9-545.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "etx.indiatimes.com",
+                    "resolved": "til9dedd9c9-545.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "23973ad7882754b58a480c42ba313af0380e498705e840709f8e81013fcead63"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indiatimes.com",
+                "economictimes.indiatimes.com"
+            ]
+        },
         {
             "rule": "tilc\\.in\\/sf-objects\\/cdnperf\\.js",
             "cookies": 0,
@@ -26,20 +63,18 @@
                 "sf-objects-s3"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "150a72145c25d4f9e40ab0ccf88227489c100c8bb0f7e8bfab45eb457c90b5f9"
+                "547120c4341a6404ca8755b1370b7816b735a4343d823089f285ea5f2d75282b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "indiatimes.com",
-                "m.timesofindia.com",
-                "thetimesofindia.com",
-                "timesofindia.indiatimes.com"
+                "thetimesofindia.com"
             ]
         },
         {
@@ -51,7 +86,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "comment.indiatimes.com",
@@ -76,7 +111,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "comment.indiatimes.com",
@@ -84,7 +119,7 @@
                 }
             ],
             "responseHashes": [
-                "17d23d0db7da15eb43d6534270daf62f55b786837fac25daec2b5d8c9638840b"
+                "5ac5f31267a883726755791c6dc54a48bd792700c103a8c55a5caad39cce2148"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -93,20 +128,293 @@
                 "indiatimes.com",
                 "www.indiatimes.com"
             ]
+        },
+        {
+            "rule": "tilc\\.in\\/newtj_js\\/scripts\\/groupJs\\/dwrGroup\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "695f3732871fbd4cdfd4ada6213703e09a2eabdd0ecae8375f4fb56058fee5e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/newtj_css\\/css\\/tj_css\\/personlisation\\/gb_styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "b54326d49b530033c9603c5fc0ea3ab9578adef21fbfd86912d85c42901b2bf8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/newtj_js\\/scripts\\/ajax-upload\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "9888d977e15856627afcebdfda7f851caa5dcac4903391841e360f68b6e04135"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/personlisation\\/top-facebook-notify\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "666a662d35b93315d79d3a77a326386fc9afff764ba3a97900be6e26d550128c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/personlisation\\/tj-logo-new\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "4b2d608c4e58010d1049ec09b60aa12cc0ed3f2347c012a651b26ae3b7380624"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/personlisation\\/loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "b947435020855cd35e4334c155e57799f8b5d04ef780138baeadda34ac0600a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/usability\\/open-search-bg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "d564e2b5b4b43df77968d25b0297693b5f1de3eed95ba5672f805e4129ff7a5d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/personlisation\\/srch-select-arrow\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "13eb7a1123d52b1fa8691c21108536d2bdf4948eaa4a18667dac1007cca2cfcd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/newtj_js\\/scripts\\/tj_scripts\\/fb_auto_connect\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "ac50e9ec9fecbecea47cb8437b213a0d8a9411122e333f72b90f62464fedb247"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
+        },
+        {
+            "rule": "tilc\\.in\\/images_cand\\/tj_images\\/usability\\/tj-sprite-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tilb7f4a2aa-1025.mumbai-1.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "static.timesjobs.com",
+                    "resolved": "tilb7f4a2aa-1025.mumbai-1.elb.tilc.in"
+                }
+            ],
+            "responseHashes": [
+                "2774e4880cc205f4157614143907f361b6e3b44ddc965c7b3bfd2e5a6e2c3ad2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "timesjobs.com",
+                "www.timesjobs.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000143,
     "types": {
-        "Script": 4,
+        "XHR": 2,
+        "Script": 8,
         "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Stylesheet": 2,
+        "Image": 12
     },
     "nameservers": [
-        "ns-1323.awsdns-37.org",
-        "ns-1678.awsdns-17.co.uk",
         "ns-97.awsdns-12.com",
-        "ns-813.awsdns-37.net"
+        "ns-1323.awsdns-37.org",
+        "ns-813.awsdns-37.net",
+        "ns-1678.awsdns-17.co.uk"
     ]
 }

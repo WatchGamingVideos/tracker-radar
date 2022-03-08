@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000485,
-    "sites": 7,
+    "prevalence": 0.0001,
+    "sites": 14,
     "subdomains": [
         "tg1",
         "cdn",
-        "app"
+        "app",
+        "floater"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,25 +23,28 @@
                 "tg1"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appVersion": 3
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.appVersion": 4
             },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
-                "4d651bd602d8c514f59ec16074526e7314fe861d42b34266f7875997212a2707",
-                "898d1e1d666da5b44b2ddf77e9adc753a6b1afa0c90159f6ff50aafd186721f4",
-                "f68af2fe3fbd36bc5c9aa5f26ddce72683a118040f5ad7f379108040d3111a5e"
+                "938e335eeaa2e6c7e93899b205ad5a728e5db60aefda01f0b112862273ecb479",
+                "b0ee0ad2cf0c9b087ef85658928d4a2b08dc9e4247d83d8643a8842ff8da9b1d",
+                "54a68ffb40fec219cf0574d099807196a88c7b57eba6fa9af1d1129c20c75826",
+                "2d804125538afc49756446c56e64a0bf1718dce86bde8bb9fdf75363675a5e30"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vietjack.com",
+                "gbhackers.com",
+                "krishijagran.com",
+                "m.supervasco.com",
                 "ndmais.com.br",
-                "www.freepressjournal.in",
-                "www.telegraphindia.com"
+                "www.dimsumdaily.hk",
+                "www.indiatvnews.com"
             ]
         },
         {
@@ -51,8 +55,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "c806548a811e28e57290d17f7b65fbf91ea51f5557661350fb50c8d14cf33538"
@@ -61,8 +65,77 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ndmais.com.br",
-                "www.telegraphindia.com"
+                "gbhackers.com",
+                "krishijagran.com",
+                "ndmais.com.br"
+            ]
+        },
+        {
+            "rule": "playstream\\.media\\/js\\/instream\\/instream\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "58ee36480aa68e791322f58872f412e74002d6ed20de2bb8ea2b69d95487b903"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dinakaran.com",
+                "www.prabhatkhabar.com"
+            ]
+        },
+        {
+            "rule": "playstream\\.media\\/js\\/floater\\/floater\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6b80cc6bd4159ee9d40e84386c005b9042cb60f6c4dda34ed7d9df99d8a93013"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dinakaran.com",
+                "www.hancinema.net"
+            ]
+        },
+        {
+            "rule": "playstream\\.media\\/api\\/urlChecker",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "edc48cd3b0bc4fa7ba23aad40b8508a17d370ca38be174bae2a2f64634e65a2b",
+                "c462d460eab61de19f36cc384c99666e5bf65eaeba0c12b8f594c5410c01f220"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dinakaran.com",
+                "www.hancinema.net",
+                "www.prabhatkhabar.com"
             ]
         },
         {
@@ -74,7 +147,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "bf303c11ce587218423199a2570caad9a389530dd7fdcbc47acab72e9195acbe"
@@ -88,85 +161,33 @@
             ]
         },
         {
-            "rule": "playstream\\.media\\/js\\/floater\\/floater\\.js",
+            "rule": "playstream\\.media\\/domain\\/a2b17ad8-3200-4434-aefc-89b8395d2c56\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "app"
+                "floater"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2,
-                "URL.createObjectURL": 2,
-                "MediaSource.isTypeSupported": 1,
-                "Navigator.prototype.vendor": 1
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [
-                "6b80cc6bd4159ee9d40e84386c005b9042cb60f6c4dda34ed7d9df99d8a93013"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hancinema.net",
-                "www.hancinema.net"
-            ]
-        },
-        {
-            "rule": "playstream\\.media\\/api\\/urlChecker",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "edc48cd3b0bc4fa7ba23aad40b8508a17d370ca38be174bae2a2f64634e65a2b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hancinema.net",
-                "www.hancinema.net"
-            ]
-        },
-        {
-            "rule": "playstream\\.media\\/api\\/getVideos\\/21b76e16-2cc7-45dc-8a01-03b5522fcc94",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7569e32cfcae99b26af2c8150d6c4cc10605e1bebdefc1e0b6f9c116eaa4f158"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hancinema.net",
-                "www.hancinema.net"
+                "skymetweather.com",
+                "www.skymetweather.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000692,
+    "cookies": 0.00000715,
     "types": {
-        "Script": 8,
-        "Image": 2,
-        "Fetch": 4
+        "Script": 14,
+        "Image": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "walt.ns.cloudflare.com",

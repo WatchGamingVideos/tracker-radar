@@ -4,17 +4,67 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000692,
-    "sites": 10,
+    "prevalence": 0.000186,
+    "sites": 26,
     "subdomains": [
         "zone-1.cdn",
-        "popup"
+        "files.cdn",
+        "popup",
+        "analytics-zone-1.api",
+        "cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "leadfamly\\.com\\/campaign\\/sdk\\/utilities\\.responsive_iframe\\.min\\.js",
+            "rule": "leadfamly\\.com\\/campaign\\/sdk\\/popup\\.min\\.js",
+            "cookies": 0.00005,
+            "fingerprinting": 1,
+            "subdomains": [
+                "zone-1.cdn",
+                "files.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.platform": 7,
+                "Document.cookie setter": 7,
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 7
+            },
+            "sites": 7,
+            "prevalence": 0.00005,
+            "cnames": [],
+            "responseHashes": [
+                "e2a14fd336eb149f50263379604e3376fe3b382527864cfce35a5532e163a5dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1646352798,
+                    "length": 600,
+                    "prevalence": 0.00005004933434385323,
+                    "uniqueness": 0.14285714285714285
+                },
+                "lf-campaigns": {
+                    "ttl": 2592004,
+                    "length": 83,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isabella.net",
+                "www.isabella.net",
+                "www.proshop.no",
+                "www.proshop.fi",
+                "www.proshop.se",
+                "www.sokos.fi",
+                "www.sport24.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/api\\/v1\\/campaign\\/popup\\/json\\/eff5591a9ef1139a47b099c66ef3f74e",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -22,52 +72,289 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "1f2e46b97628be537254fd39959f40a7295726b15a50a1634639bf416ff936be"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isabella.net",
+                "www.isabella.net"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/script\\/e580de0dba05c322136c04127be0bd1d\\/popup\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9e35920ec7fb419de9cf27e5a52e1739f57f1977afd5f991db6320177d3f3b3d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "politiken.dk",
-                "www.visitfinland.com"
+                "kop-kande.dk",
+                "www.kop-kande.dk"
             ]
         },
         {
-            "rule": "leadfamly\\.com\\/campaign\\/sdk\\/popup\\.min\\.js",
-            "cookies": 0.0000138,
+            "rule": "leadfamly\\.com\\/campaign\\/view\\/css\\/79732\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c9115490c08e2a6f11fb26d119599691c4e41e98344610c37a4f16c860512140"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/vendor\\/platform\\/campaign\\/assets\\/css\\/font-awesome\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files.cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "799aeb25cc0373fdee0e1b1db7ad6c2f6a0e058dfadaa3379689f583213190bd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk",
+                "www.proshop.no"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/campaign\\/view\\/js\\/79732\\.js",
+            "cookies": 0.0000143,
             "fingerprinting": 1,
             "subdomains": [
-                "zone-1.cdn"
+                "popup"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Document.cookie setter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "c2904401af689e4addde023d5d6d1a91303f85d31d42d29c4d798b6d54c79dcb"
+                "6961b57ac4f0d5957db281fca972e29ddd95563d4e3b2063d1ede12092033b56"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1642788367,
-                    "length": 600,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 0.5
+                "79732-sid": {
+                    "ttl": 306,
+                    "length": 36,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "79732-sid-seen": {
+                    "ttl": 306,
+                    "length": 13,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sokos.fi",
-                "www.sokos.fi"
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/api\\/v1\\/campaign\\/view\\/79732\\/14d37de430dd9ba70b8aca85a7577e7a",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "62ba4490817622769d6d173a9aef8fa3be03f68df580bdf2d10f6304b64812c3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/api\\/v1\\/campaign\\/analytic\\/page-view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics-zone-1.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2bc44d18a8abbda5cf2956fc519fe0695283ae911ff46e2aecbedde184260d37"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/files\\/1497\\/avis_pop-up\\/kk09_400x400px_foedselsdagsavis\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "60ab83f5bd799fa87d36dbe7272260c636ee07ecac10787d3edb8ea983a43f87"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/vendor\\/platform\\/campaign\\/assets\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kop-kande.dk",
+                "www.kop-kande.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/campaign\\/sdk\\/games\\.popup\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lalandia.dk",
+                "www.lalandia.dk"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/script\\/0d3079f2accb9136bfa0f4cbe74d9379\\/popup\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d82c93b51ab6074ce0e040b0567dc5e758164ad44d9524a10945225c433e9296"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "operaballet.nl",
+                "www.operaballet.nl"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/api\\/v1\\/campaign\\/popup\\/json\\/3670ae1bceadf0f5722635e94805fe34",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "e083f1b9cf93631137b6706a6aea2540d40dd9dbeaa60096947cde50daaade2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "proshop.no",
+                "www.proshop.fi",
+                "www.proshop.no",
+                "www.proshop.se"
             ]
         },
         {
@@ -79,10 +366,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "61c7220f39044fc11bbc925b5421ad78eef65ad01f52740a54ca79f822ae1ca1"
+                "0ec8ea57393b386620e9c82ff38fd7239b8e23e504da788f73452551bd32b5ac"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -90,6 +377,28 @@
             "exampleSites": [
                 "sokos.fi",
                 "www.sokos.fi"
+            ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/api\\/v1\\/campaign\\/popup\\/json\\/23f8f8438807daf6d957038964a0fad2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sport24.dk",
+                "www.sport24.dk"
             ]
         },
         {
@@ -101,7 +410,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "8cba4656b6a63e1a2c4b3973bd74c3996df576ff0e1629ca01c1c60de5c0b7b2"
@@ -123,7 +432,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "8cba4656b6a63e1a2c4b3973bd74c3996df576ff0e1629ca01c1c60de5c0b7b2"
@@ -135,14 +444,44 @@
                 "tokmanni.fi",
                 "www.tokmanni.fi"
             ]
+        },
+        {
+            "rule": "leadfamly\\.com\\/script\\/fef223a9396c0e94c24cfa99d8811d76\\/popup\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "popup"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8a3bc43e201b6bb5b27cbcb73379494b081f71a2a558ca0049b3e21be8574e1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unisportstore.com",
+                "www.unisportstore.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000208,
+    "cookies": 0.0001,
     "types": {
-        "Script": 8,
-        "XHR": 2
+        "Script": 21,
+        "XHR": 14,
+        "Stylesheet": 5,
+        "Image": 2,
+        "Font": 2
     },
     "nameservers": [
         "ns-91.awsdns-11.com",

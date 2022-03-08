@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
+    "prevalence": 0.0000214,
     "sites": 3,
     "subdomains": [
-        "js-api"
+        "js-api",
+        "widget"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -24,17 +25,17 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "ce6fd7fc25427efac8267d57514d8e094520040110406b9c28bc5a1734705eed"
+                "f5702ba63e73049a764867cd7030ac1b60c03f969665362e08bc1ce49731491f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fortuneo.fr",
-                "www.fortuneo.fr"
+                "mediamarkt.nl",
+                "outlet.mediamarkt.nl"
             ]
         },
         {
@@ -46,17 +47,57 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [
-                "3edfb14804f28d101fc2cacab7d3066b91b0a46cdc113cb80eb99b51aafa88fa"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fortuneo.fr",
-                "www.fortuneo.fr"
+                "mediamarkt.nl",
+                "outlet.mediamarkt.nl"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/api\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darty.com",
+                "www.darty.com"
+            ]
+        },
+        {
+            "rule": "dial-once\\.com\\/api\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "aba43e6b482794a45ebfa8780fe605ec90a273582917b6a5c4cb1306b19eb2a9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darty.com",
+                "www.darty.com"
             ]
         }
     ],
@@ -64,7 +105,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 4
+        "XHR": 4,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-a1.googledomains.com",

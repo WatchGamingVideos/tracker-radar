@@ -4,14 +4,134 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "stats"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "maaw\\.io\\/maawWrapper\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9fec1e442de9f3de9d2f8f4eb9169485530b19a6b8163caa056458241d728537"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javligtgott.se",
+                "www.javligtgott.se"
+            ]
+        },
+        {
+            "rule": "maaw\\.io\\/prebid\\.3\\.18\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5882702e822ee907d76d58e4d86d7dddbd1b105e9e16d1da4838bbfd9344f05a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javligtgott.se",
+                "www.javligtgott.se"
+            ]
+        },
+        {
+            "rule": "maaw\\.io\\/json\\/123456\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f37de5a6e78c73892dd16e8d2ede55f2046895f1eebca34b32dfa70c0cee52f0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javligtgott.se",
+                "www.javligtgott.se"
+            ]
+        },
+        {
+            "rule": "maaw\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javligtgott.se",
+                "www.javligtgott.se"
+            ]
+        },
+        {
+            "rule": "maaw\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javligtgott.se",
+                "www.javligtgott.se"
+            ]
+        },
         {
             "rule": "maaw\\.io\\/maawFullPageAd\\/custom\\/moviezine\\/maawFullPageAd\\.css",
             "cookies": 0,
@@ -21,7 +141,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "f04113d1d1d8fcc250671f38527a12c9a333cc99f9163e30b9f947220c26d554"
@@ -36,7 +156,7 @@
         },
         {
             "rule": "maaw\\.io\\/maawFullPageAd\\/custom\\/moviezine\\/maawFullPageAd\\.min\\.js",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
@@ -47,7 +167,7 @@
                 "Document.cookie setter": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "c885a488f6d21915e1880fe9da5c39a81d5ceb823cfdb93f7ea674d83ae09e53"
@@ -55,9 +175,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "maawFullPage": {
-                    "ttl": 6,
+                    "ttl": 8,
                     "length": 5,
-                    "prevalence": 0.000013844087882269877,
+                    "prevalence": 0.000014299809812529493,
                     "uniqueness": 0.5
                 }
             },
@@ -70,15 +190,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000143,
     "types": {
-        "Stylesheet": 2,
-        "Script": 2
+        "Script": 6,
+        "Fetch": 2,
+        "Preflight": 2,
+        "XHR": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
         "dns03.ports.se",
+        "dns04.ports.net",
         "dns01.dipcon.com",
-        "dns02.ports.se",
-        "dns04.ports.net"
+        "dns02.ports.se"
     ]
 }

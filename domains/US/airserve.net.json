@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000429,
+    "sites": 6,
     "subdomains": [
-        "heartbeat"
+        "heartbeat",
+        "static"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 3,
     "resources": [
         {
             "rule": "airserve\\.net\\/js\\/airserve\\/v9\\/airserve\\.js",
@@ -20,8 +21,8 @@
                 "heartbeat"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "ed463ab2cd5cd79d737d65566719b391cc2212abbcad96d09fc7c76761a34f13"
@@ -30,8 +31,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grapevine.is",
-                "www.mbl.is"
+                "ja.is",
+                "www.mbl.is",
+                "www.visir.is"
             ]
         },
         {
@@ -42,8 +44,113 @@
                 "heartbeat"
             ],
             "apis": {
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.availLeft": 4,
+                "Screen.prototype.availTop": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "Screen.prototype.width": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "35cdbf9cba8f80af28230ce61503d2c10f9b26895be18f68b0220a62e261abbe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ja.is",
+                "www.dv.is",
+                "www.mbl.is",
+                "www.visir.is"
+            ]
+        },
+        {
+            "rule": "airserve\\.net\\/v2\\/tracker\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "heartbeat"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ja.is",
+                "www.dv.is",
+                "www.mbl.is",
+                "www.visir.is"
+            ]
+        },
+        {
+            "rule": "airserve\\.net\\/v2\\/tracker\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "heartbeat"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ja.is",
+                "www.dv.is",
+                "www.mbl.is",
+                "www.visir.is"
+            ]
+        },
+        {
+            "rule": "airserve\\.net\\/js\\/airserve\\/v10\\/airserve\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "heartbeat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "73f8edf6e83992d3ef730addce89c90a5cf1fa1cc7cf78dfdcd4e13d5174e2e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dv.is",
+                "www.dv.is"
+            ]
+        },
+        {
+            "rule": "airserve\\.net\\/js\\/site\\/v1\\/pulse\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "heartbeat"
+            ],
+            "apis": {
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.availHeight": 2,
                 "Screen.prototype.availLeft": 2,
@@ -55,21 +162,34 @@
                 "Screen.prototype.width": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "35cdbf9cba8f80af28230ce61503d2c10f9b26895be18f68b0220a62e261abbe"
+                "9f9446ef0d203c372479500358e5adfa8fbf49623c270ac7da465dcf2e6658db"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__ashb": {
+                    "ttl": 31536001,
+                    "length": 40,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "__assc": {
+                    "ttl": null,
+                    "length": 40,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grapevine.is",
-                "www.mbl.is"
+                "dv.is",
+                "www.dv.is"
             ]
         },
         {
-            "rule": "airserve\\.net\\/v2\\/tracker\\/",
+            "rule": "airserve\\.net\\/v1\\/pulse\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -77,19 +197,19 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grapevine.is",
-                "www.mbl.is"
+                "dv.is",
+                "www.dv.is"
             ]
         },
         {
-            "rule": "airserve\\.net\\/v2\\/tracker\\/",
+            "rule": "airserve\\.net\\/v1\\/pulse\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -97,7 +217,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -106,18 +226,41 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "grapevine.is",
-                "www.mbl.is"
+                "dv.is",
+                "www.dv.is"
+            ]
+        },
+        {
+            "rule": "airserve\\.net\\/hvita-husid\\/vita\\/2021-10-sumar22\\/mallorca-310x400-4feb\\/201821\\/310x400\\.hyperesources\\/139567640-blonde-boy-eating-ice-cream-si_H264HD1080\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b556fc018b31751cd437a303cb5d98011ad28fcbcfa42d9c0b95f3e33e25afc5"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "visir.is",
+                "www.visir.is"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000143,
     "types": {
-        "Script": 4,
-        "Preflight": 2,
-        "XHR": 2
+        "Script": 11,
+        "XHR": 6,
+        "Preflight": 6,
+        "Media": 2
     },
     "nameservers": [
         "brad.ns.cloudflare.com",

@@ -7,15 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000623,
-    "sites": 9,
+    "prevalence": 0.0005,
+    "sites": 70,
     "subdomains": [
         "files",
-        "apiv2",
         "widget",
         "widget-launcher",
         "triggers-v3",
-        "cdn"
+        "cdn",
+        "wss",
+        "apiv2"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -28,10 +29,10 @@
                 "files"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6
+                "Navigator.prototype.userAgent": 27
             },
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 37,
+            "prevalence": 0.000265,
             "cnames": [],
             "responseHashes": [
                 "11fc18ce8c840fcb236d817854c3ae328e69febe25c22554ac3ce263c8b8a645"
@@ -40,12 +41,706 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
+                "mau.se",
                 "www.odeonkino.no",
-                "www.outnorth.com",
+                "nordicwellness.se",
+                "www.hig.se",
+                "www.bilia.se",
+                "www.ctek.com",
+                "www.sysav.se",
+                "objektvision.se",
+                "www.outnorth.dk",
+                "www.cancerfonden.se",
+                "www.lampgallerian.se",
+                "www.miun.se",
+                "www.skistar.com",
+                "www.pnjakt.se",
+                "www.outnorth.fi",
+                "www.branas.se",
+                "www.villaagarna.se",
+                "feetfirst.se",
+                "www.hammarbyfotboll.se",
+                "www.stc.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-v2\\/prod\\/widget\\.js",
+            "cookies": 0.000236,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 34,
+                "Navigator.prototype.userAgent": 36,
+                "window.name": 34,
+                "Document.cookie getter": 34,
+                "window.sessionStorage": 36,
+                "Navigator.prototype.language": 36,
+                "Date.prototype.getTime": 35,
+                "Document.cookie setter": 33
+            },
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "e6a78e79659a40b560bf43e9846b7b2c30490e19c2235dbcdc5154f730c919fc",
+                "0ca4d57bd9f645d4d33b2b67f531b51c6705e25d2948acc48af12ecb79398267"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "imbox": {
+                    "ttl": 2592006,
+                    "length": 43,
+                    "prevalence": 0.00023594686190673664,
+                    "uniqueness": 1
+                },
+                "imboxStats": {
+                    "ttl": 1206,
+                    "length": 13,
+                    "prevalence": 0.00023594686190673664,
+                    "uniqueness": 0.030303030303030304
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.toyota.se",
+                "besikta.se",
+                "www.kungsberget.se",
+                "www.pnjakt.se",
+                "www.odeonkino.no",
+                "www.wayke.se",
+                "www.vasaloppet.se",
+                "feetfirst.se",
+                "www.hig.se",
+                "www.villaagarna.se",
+                "www.outnorth.dk",
+                "www.miun.se",
+                "www.blomsterlandet.se",
+                "www2.bilia.se",
+                "www.jakt.se",
+                "objektvision.se",
+                "www.skistar.com",
+                "www.stc.se",
+                "www.elon.se",
+                "www.ctek.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/index\\.4d13894\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "b41db86d59d55ddfaac5f061808350b58984d66256b97044eaafa08a6f9ad2ac"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "www.lampgallerian.se",
+                "www.cykloteket.se",
+                "besikta.se",
+                "www.pnjakt.se",
+                "www.outnorth.no",
+                "www.hammarbyfotboll.se",
+                "www.outnorth.fi",
+                "www.hig.se",
+                "www.cancerfonden.se",
+                "www.odeonkino.no",
+                "www.skistar.com",
+                "www.miun.se",
+                "objektvision.se",
+                "www.toyota.se",
+                "www.jakt.se",
+                "www.stc.se",
+                "www.ctek.com",
+                "www.sysav.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.74314989ffaaba0adfc5\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "f9ca7a01dd095ee64fbac2b12c0a1e16fcabed4fea25982ef7446013d319c82b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.jakt.se",
+                "www.kungsberget.se",
+                "www.outnorth.dk",
+                "www.cykloteket.se",
+                "www.wayke.se",
+                "www.outnorth.fi",
+                "www.bjurfors.se",
+                "objektvision.se",
+                "www.gekas.se",
+                "www.odeonkino.no",
+                "ledigajobb.se",
+                "www2.bilia.se",
+                "www.skistar.com",
+                "www.branas.se",
+                "www.hig.se",
+                "mau.se",
+                "www.vasaloppet.se",
+                "www.cancerfonden.se",
+                "nordicwellness.se",
+                "besikta.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.bundle\\.022ecc47872899fa581f\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 36,
+                "window.name": 26,
+                "Navigator.prototype.appVersion": 36,
+                "Navigator.prototype.appName": 36,
+                "Screen.prototype.width": 26,
+                "Screen.prototype.height": 26,
+                "Navigator.prototype.language": 36,
+                "window.localStorage": 26,
+                "Navigator.prototype.product": 36,
+                "Date.prototype.getTime": 36,
+                "Navigator.prototype.mediaDevices": 23
+            },
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "2dcf09aa42bdec71df06721382d097f07a35fed77e43de7a968cfea1913c1f77"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www2.bilia.se",
+                "www.hammarbyfotboll.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "objektvision.se",
+                "nordicwellness.se",
+                "www.blomsterlandet.se",
+                "www.hig.se",
+                "www.willabgarden.se",
+                "www.sysav.se",
+                "ledigajobb.se",
+                "mau.se",
+                "www.odeonkino.no",
+                "www.cykloteket.se",
+                "www.vasaloppet.se",
+                "www.outnorth.no",
+                "www.gekas.se",
+                "www.bjurfors.se",
+                "www.kungsberget.se",
+                "www.villaagarna.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.30ea1496731e39c37394\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "439554e4e749c12ff449426f7f695b9eb1d97b464b41ad383b00a82f199d86ba"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "www.outnorth.se",
-                "www.skistar.com"
+                "ledigajobb.se",
+                "www.ctek.com",
+                "www.bjurfors.se",
+                "www.outnorth.no",
+                "www.cancerfonden.se",
+                "nordicwellness.se",
+                "www.gekas.se",
+                "www.hig.se",
+                "www.elon.se",
+                "www2.bilia.se",
+                "mau.se",
+                "www.branas.se",
+                "www.miun.se",
+                "www.wayke.se",
+                "www.hammarbyfotboll.se",
+                "www.lampgallerian.se",
+                "feetfirst.se",
+                "www.cykloteket.se",
+                "www.jakt.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/bundle\\.30ea1496731e39c37394\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 28,
+                "Navigator.prototype.userAgent": 33,
+                "window.name": 24
+            },
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "10b48d9072309e0288b6b75dffbdc4ab4a0453e9744256dc1cd197158d033673"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.sysav.se",
+                "www.outnorth.com",
+                "www.cykloteket.se",
+                "www.odeonkino.no",
+                "www.pnjakt.se",
+                "www.ctek.com",
+                "www.willabgarden.se",
+                "www.hammarbyfotboll.se",
+                "www.miun.se",
+                "feetfirst.se",
+                "nordicwellness.se",
+                "www.outnorth.fi",
+                "www.bjurfors.se",
+                "www.elon.se",
+                "www.gekas.se",
+                "objektvision.se",
+                "besikta.se",
+                "www.cancerfonden.se",
+                "mau.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/roboto\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "5429e91ea07e0bc81e9923d2bf4b8478632e76d335a0942d091bc128388201d7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordicwellness.se",
+                "mau.se",
+                "ledigajobb.se",
+                "www.stc.se",
+                "www.vasaloppet.se",
+                "www.willabgarden.se",
+                "www.outnorth.no",
+                "www.toyota.se",
+                "www.elon.se",
+                "objektvision.se",
+                "www.skistar.com",
+                "www.outnorth.fi",
+                "www.sysav.se",
+                "www.cykloteket.se",
+                "www.blomsterlandet.se",
+                "www2.bilia.se",
+                "www.outnorth.dk",
+                "www.outnorth.se",
+                "www.odeonkino.no",
+                "www.branas.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-en\\.69f73854b14ed9092394\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "751d0cbdfce5b83fbd3a363af73e36fab8894412d24e2eca128f35731135ba8e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.toyota.se",
+                "www.pnjakt.se",
+                "www.jakt.se",
+                "www.sysav.se",
+                "objektvision.se",
+                "besikta.se",
+                "www.wayke.se",
+                "www.cykloteket.se",
+                "www.elon.se",
+                "nordicwellness.se",
+                "www.ctek.com",
+                "mau.se",
+                "www2.bilia.se",
+                "www.villaagarna.se",
+                "www.odeonkino.no",
+                "www.outnorth.se",
+                "www.kungsberget.se",
+                "www.outnorth.dk",
+                "feetfirst.se",
+                "www.hig.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/fonts\\/launcher-icon\\.590c11f49c524500c3023d7f1ccfb147\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.toyota.se",
+                "www.villaagarna.se",
+                "www.pnjakt.se",
+                "www.odeonkino.no",
+                "www.outnorth.fi",
+                "www.elon.se",
+                "www.hig.se",
+                "www2.bilia.se",
+                "www.cykloteket.se",
+                "www.vasaloppet.se",
+                "www.willabgarden.se",
+                "www.outnorth.no",
+                "www.miun.se",
+                "nordicwellness.se",
+                "www.blomsterlandet.se",
+                "mau.se",
+                "www.outnorth.dk",
+                "www.sysav.se",
+                "www.bjurfors.se",
+                "www.wayke.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/trigger",
+            "cookies": 0.00025,
+            "fingerprinting": 0,
+            "subdomains": [
+                "triggers-v3"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.000257,
+            "cnames": [],
+            "responseHashes": [
+                "7f010a610be35afa7d4a8cb8b2ae7ef1f131d47eaf7ae604e67761d23dc7679a",
+                "b124dd8cf637c3ab9639b6128f925b380ddd9de9a38a8141ff5080ec815f6982",
+                "e5bf2b113872f7378a10d690d8ceda10646803986184818e41950a7b42cb41d8",
+                "3768ba44360547e0ee68ef79b122b782b0a1921043ed039340f7d2e7cc5dd96c",
+                "98468707b554cac25bc1400305b15662e20fde26ad3200762e3e40c539c02504",
+                "d3168bbd4ffe27066251fa9fdeea20ab0c5b0882077878b83420089811d752bc",
+                "ee0404608e1d0c4d70307755f9103b4c619c158d0baebe3781de99c050b5148c",
+                "855380ea85671be902ab84cd6056a304916830d1152ddf52cae7ed1430b2ec2f",
+                "27c8f88cefca675cfd8e0ac39d0593689308af4c29199f5d2bde384a854b4f04",
+                "ee08866cddb66b98d10bd2c79571b773d6069faa07dedd6a2068b997c4e1ee79",
+                "34530de059d11c9b55a29016ec8c31c889537a416d6690ccad7b39640f2bce2b",
+                "f0daf7aa44efdab8a6a204842b99c3311602bec7932eb0e6a5c5bb1fba2a43e1",
+                "64caf1a0910a34b57cbf009c6ce37bcd755cb093fbf4326546cbf74d43e65f39",
+                "0f6410231bd11b545a0355029bf79b78126552c4d601c890680afb9a9e05d337",
+                "1e3a4f8af793fad0a911b1d99425050443b780d71b136c6dc2905df7eb55a181",
+                "44f746106612bf17ea61c1fe3ad1bf4da04231b3b5b5e2e55300ecce7a8d2ebe",
+                "dd70b1acc09e21bd3ff9ac42cb1465d689584a08cfdfdb781d6e1774186ae968",
+                "0d65531bfecff3a0f1a50f0bd56a3441f1e28939f81fd82a6842b73a23d9c76e",
+                "da64623ce469716f10231c53c7ff576e75ebc5c34eabf89aad2163923597cd57",
+                "71a81678093eb150d2000d8e5f8caf1c17217e733687b8cb9d8e44bfbb7b7461",
+                "44e5430bdb8287a294ad78fb7218ad38d93b8ff492df3efc5470c5f5589390e5",
+                "e330c43fef46b2688df12eee50b9e05a9bcf1e156009a4aaf9e602f013ab4f94",
+                "7d5f7bd138c8ea722f3a67a8a0774a9e9d62713f363fa21eb321aba7d20534cf",
+                "5329fdaf61cf512dd914f6a75316e697a561007045d52f63b95694b9697d71ab",
+                "6d007303305d65a17678503a83d21141e407240c6b92db60af3324f9a0a97ddd",
+                "c65dd57b38a762f188000d2891ae41a16971c88fcee7f30f7b97bbf11dbc13dd",
+                "9220da4bc865924a5cc81f5f47a393362e76ce4cd6c2c035a20ede047eb2bafd",
+                "40623d07c8e31484fd0817b3333a55335423b71a098582c66b8a215cdcc67b8c",
+                "9cab868908e810a2f38a8eb47e999706d923d9ff2ea45cbf5368d399f6f19d65",
+                "50a55af555d2e1b83edd1ca0a4479af50df4a8e53252c221a2c7e8ece3420377",
+                "d0979e7800a5df118953de101c50dae618a8f90e3ff74eaac7f2b7e7a73366e5",
+                "ea5ff944e51231e01f7b7ec28766235b07133186154b9919080b08416eb68363",
+                "ed87bee13a02eb09d4d0dc99a833aca39dd61acf40b227312356ad9af1a1545a",
+                "dbfda36f6a198fe3d8e6999a22692abeb22dcd00af637711255741193300da30"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.wayke.se",
+                "www.odeonkino.no",
+                "www.bjurfors.se",
+                "www.branas.se",
+                "www.pnjakt.se",
+                "www.sysav.se",
+                "ledigajobb.se",
+                "www.ctek.com",
+                "www2.bilia.se",
+                "www.jakt.se",
+                "www.blomsterlandet.se",
+                "www.outnorth.com",
+                "www.villaagarna.se",
+                "www.cykloteket.se",
+                "www.toyota.se",
+                "www.kungsberget.se",
+                "www.vasaloppet.se",
+                "www.skistar.com",
+                "mau.se",
+                "www.outnorth.no"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/flow\\/default\\/images\\/launcher-icon\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000122,
+            "cnames": [],
+            "responseHashes": [
+                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "besikta.se",
+                "ledigajobb.se",
+                "www.bjurfors.se",
+                "www.branas.se",
+                "www.cancerfonden.se",
+                "www.cykloteket.se",
+                "www.elon.se",
+                "www.gekas.se",
+                "www.hig.se",
+                "www.kungsberget.se",
+                "www.lampgallerian.se",
+                "www.miun.se",
+                "www.skistar.com",
+                "www.stc.se",
+                "www.toyota.se",
+                "www.vasaloppet.se",
+                "www.villaagarna.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-sv\\.33b62faf26ab23ca8dd9\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000122,
+            "cnames": [],
+            "responseHashes": [
+                "b9306b7d44c38041ba460b968f30c314dc16d92c9675364d4ec2f578882dd4bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "besikta.se",
+                "feetfirst.se",
+                "ledigajobb.se",
+                "www.bjurfors.se",
+                "www.blomsterlandet.se",
+                "www.branas.se",
+                "www.cykloteket.se",
+                "www.elon.se",
+                "www.hammarbyfotboll.se",
+                "www.kungsberget.se",
+                "www.lampgallerian.se",
+                "www.miun.se",
+                "www.outnorth.se",
+                "www.skistar.com",
+                "www.stc.se",
+                "www.sysav.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/fonts\\/roboto\\/roboto-v27-latin-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 30,
+            "prevalence": 0.000214,
+            "cnames": [],
+            "responseHashes": [
+                "81d931a8c973b5bc8f9ded86a3440bd247a58e592b3897bf755c1a5d8390d763"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.gekas.se",
+                "www.willabgarden.se",
+                "objektvision.se",
+                "www.vasaloppet.se",
+                "www.odeonkino.no",
+                "www.villaagarna.se",
+                "www.kungsberget.se",
+                "www.jakt.se",
+                "www.cancerfonden.se",
+                "www.outnorth.se",
+                "www.hig.se",
+                "www.outnorth.fi",
+                "feetfirst.se",
+                "www.branas.se",
+                "www.toyota.se",
+                "www.sysav.se",
+                "www.stc.se",
+                "www.skistar.com",
+                "ledigajobb.se",
+                "www.blomsterlandet.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/fonts\\/roboto\\/roboto-v27-latin-700\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000357,
+            "cnames": [],
+            "responseHashes": [
+                "c039da2477a00e6c4f4f94be655f95caea42d00a877cb37ca92546253c7ed3fc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "feetfirst.se",
+                "www.branas.se",
+                "www.hammarbyfotboll.se",
+                "www.kungsberget.se",
+                "www.willabgarden.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/primus\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "02a9aa0d18fef1c1a97f77991d12434215c8e97cb3382c412f5b6b8648c2b3b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordicwellness.se",
+                "www.cancerfonden.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/primus\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5f62484e46b25c88dbbe619782ac0f52d2bffbd76136c3a10133169963735c18"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordicwellness.se",
+                "www.cancerfonden.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/452",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bjurfors.se",
+                "www.bjurfors.se"
             ]
         },
         {
@@ -57,10 +752,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a89fc2c83819f13f4eaf334a461e15f2c8c4a2a32433c68e9d21e1a8dbe2578f"
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -68,338 +763,6 @@
             "exampleSites": [
                 "blomsterlandet.se",
                 "www.blomsterlandet.se"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/widget-v2\\/prod\\/widget\\.js",
-            "cookies": 0.0000415,
-            "fingerprinting": 1,
-            "subdomains": [
-                "files"
-            ],
-            "apis": {
-                "Navigator.prototype.vendor": 6,
-                "Navigator.prototype.userAgent": 6,
-                "window.name": 6,
-                "Document.cookie getter": 6,
-                "window.sessionStorage": 6,
-                "Navigator.prototype.language": 6,
-                "Date.prototype.getTime": 6,
-                "Document.cookie setter": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "2e1d2dc26cfb647834d8dd8f6f638d4fcd896a60664720165d8bc4d6fa553fa5",
-                "568f1728da4cf4b9bede954a2752a46597643edece9c0e18fd8ac3a8c00ab5b8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "imbox": {
-                    "ttl": 2592007,
-                    "length": 42,
-                    "prevalence": 0.00004153226364680963,
-                    "uniqueness": 1
-                },
-                "imboxStats": {
-                    "ttl": 1207,
-                    "length": 13,
-                    "prevalence": 0.00004153226364680963,
-                    "uniqueness": 0.16666666666666666
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/index\\.c144a07\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget",
-                "widget-launcher"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "0d74f25d498e7f2dc4e75ce950f57019d627c11331acde3414f9ee8603c4459d",
-                "cd27063f99c7dc842391f35953a83cc2fbf063749a051bb1812a297d4b844277"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/primus\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {
-                "Navigator.prototype.onLine": 6,
-                "Navigator.prototype.userAgent": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "02a9aa0d18fef1c1a97f77991d12434215c8e97cb3382c412f5b6b8648c2b3b1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/client\\.f50e6f4355020b4dbd74\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "f9ca7a01dd095ee64fbac2b12c0a1e16fcabed4fea25982ef7446013d319c82b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/client\\.bundle\\.18d1247a969d8dec93cb\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "window.name": 6,
-                "Navigator.prototype.appVersion": 6,
-                "Navigator.prototype.mediaDevices": 6,
-                "Navigator.prototype.appName": 6,
-                "Screen.prototype.width": 6,
-                "Screen.prototype.height": 6,
-                "Navigator.prototype.language": 6,
-                "window.localStorage": 6,
-                "Navigator.prototype.product": 6,
-                "Date.prototype.getTime": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "54eb9c7e06f371249c82a50b56ab7862dc495b9f1b830a0e577071df318f048d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/client\\.644e27e874f5a7862e50\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget-launcher"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "0a7e9cf8dd648f233feb54603ec124a0ae0ebe822cc5eb24d4b37b94a181498b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/bundle\\.644e27e874f5a7862e50\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "widget-launcher"
-            ],
-            "apis": {
-                "Navigator.prototype.language": 6,
-                "Navigator.prototype.userAgent": 6,
-                "window.name": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "d37dd585615ad10bf09a42fe828630b914fb29e55457260554d338b1ea76ffde"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/app\\/static\\/roboto\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "files"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "5429e91ea07e0bc81e9923d2bf4b8478632e76d335a0942d091bc128388201d7"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/fonts\\/launcher-icon\\.590c11f49c524500c3023d7f1ccfb147\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget-launcher"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/trigger",
-            "cookies": 0.0000415,
-            "fingerprinting": 0,
-            "subdomains": [
-                "triggers-v3"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [],
-            "responseHashes": [
-                "fb56082d6c1adc3fb0b26afa4096ff5ddbf910bf1aad64d8a776b341c15bfc1c",
-                "f85c9bdcf3bbdafafa1e820df78f09656c549d5f1e33bbd572b06ab6486ed3f3",
-                "4a47f1e5ac024d8392c09a8c6637a02feaea7f5d71ee027b1b4455cf220b6d7c",
-                "41f4d0534a757ea1dd5bcdfc6d0ffe81bc30659898a6ef6671574beeccf08792",
-                "42ab4cb64ccf0b2a7059e54e232b78d5dca7d0f689332e16dac1e9fe166f9323"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
-            ]
-        },
-        {
-            "rule": "imbox\\.io\\/localization-sv\\.a96db8baaebdb18964f0\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "widget"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "ea31ca8bbe76060aa6f0e5f0b65941037b221305d41588b6e99c9064a4d0df8d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
-                "www.outnorth.se",
-                "www.skistar.com"
             ]
         },
         {
@@ -411,7 +774,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "78300c1ec5f5bfdf164e858ddab48c29b26a723d84c8becb33307ac61ebebe3c"
@@ -433,7 +796,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "a08d4bedc0f4a9e244a0f03102c9e2cd4b80d0f27be5ee6a6b6e83252e2e0e17"
@@ -447,29 +810,385 @@
             ]
         },
         {
-            "rule": "imbox\\.io\\/app\\/static\\/fonts\\/roboto\\/roboto-v27-latin-regular\\.woff2",
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/453",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.branas.se",
+                "www.kungsberget.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-app\\.74314989ffaaba0adfc5\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "dee69a27d7b863d5c7d0fa74826978ac329b2e6b3660591f80e045142c6f6810"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-app\\.799dd2955a997dd27398\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "32064443b744079046f7944b99f1b56634d9e5a9f401e93b995a037c5b5e87bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/fonts\\/imbox\\.dc6bcf045b555a693f0e81f399ef2a21\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "c7cffcd6a821da95735f02ed8f1c92afb081ccd7f7d20971f9c86f8fcd386112"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/material-icons\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "files"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "81d931a8c973b5bc8f9ded86a3440bd247a58e592b3897bf755c1a5d8390d763"
+                "5784af48158b5fdb223ac320b922f4f1e6b576d12dc85007819331ea151cb02c"
             ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "blomsterlandet.se",
-                "www.blomsterlandet.se",
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-answers\\.74314989ffaaba0adfc5\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "80176d4e9e2979409e776774a0608629d0772291759f7797c4a35450c061743d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-answers\\.f6d6185f51fa12bafa35\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "b15cf343233b3bb34c2b8e02df33f38fd07638986c90862781feb82f97a02e19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "branas.se",
+                "www.toyota.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1022",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cancerfonden.se",
+                "www.cancerfonden.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/2217",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctek.com",
+                "www.ctek.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/2426",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cykloteket.se",
+                "www.cykloteket.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/2114",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elon.se",
+                "www.elon.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1354",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gekas.se",
+                "www.gekas.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/915",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jakt.se",
+                "www.jakt.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1528",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lampgallerian.se",
+                "www.lampgallerian.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/529",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "miun.se",
+                "www.miun.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/2306",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odeonkino.no",
+                "www.odeonkino.no"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-no\\.cb73154cc16d6838937b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "1aaea9c795d358a67525ebbfe6a5bdbee260b33b622fd4789173682ca37d2ff0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odeonkino.no",
                 "www.odeonkino.no",
-                "www.outnorth.com",
-                "www.outnorth.se",
-                "www.skistar.com"
+                "www.outnorth.no"
             ]
         },
         {
@@ -481,10 +1200,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a89fc2c83819f13f4eaf334a461e15f2c8c4a2a32433c68e9d21e1a8dbe2578f"
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -492,6 +1211,116 @@
             "exampleSites": [
                 "outnorth.com",
                 "www.outnorth.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1768",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.fi",
+                "www.outnorth.fi"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-fi\\.ceeff14d45fb0e3ea6ec\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e4028a5861b4c3332fc603438cabc64561e5dfdb1d02a59428a23dbf994bd317"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.fi",
+                "www.outnorth.fi"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1769",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.dk",
+                "www.outnorth.dk"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-da\\.0ad3169cf0983103d73c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fecd86e115ff63cd8e5db641fe3d5e354095124cb710a894d8511b6980faf8f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.dk",
+                "www.outnorth.dk"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1770",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.no",
+                "www.outnorth.no"
             ]
         },
         {
@@ -503,10 +1332,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a89fc2c83819f13f4eaf334a461e15f2c8c4a2a32433c68e9d21e1a8dbe2578f"
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -514,6 +1343,28 @@
             "exampleSites": [
                 "outnorth.se",
                 "www.outnorth.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1324",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pnjakt.se",
+                "www.pnjakt.se"
             ]
         },
         {
@@ -525,10 +1376,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "a89fc2c83819f13f4eaf334a461e15f2c8c4a2a32433c68e9d21e1a8dbe2578f"
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -539,7 +1390,73 @@
             ]
         },
         {
-            "rule": "imbox\\.io\\/flow\\/default\\/images\\/launcher-icon\\.svg",
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/961",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sysav.se",
+                "www.sysav.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/svg\\/Sysav\\/icon_sysav_v1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e11c25fb2fcee41a26b0653618bb09e349ca4cf4e18fcf4a66fbffea8a9711e5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sysav.se",
+                "www.sysav.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1930",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toyota.se",
+                "www.toyota.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/flow\\/1930\\/fonts\\/oe9mRcVor9ezfC3MudCq4FBjTH5dtPuh\\.otf",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -547,30 +1464,138 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
+                "5d96d563fad9fd733a35420d3b6703d336958b54309648f7c046099617713df2"
             ],
-            "type": "Image",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "skistar.com",
-                "www.skistar.com"
+                "toyota.se",
+                "www.toyota.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1239",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vasaloppet.se",
+                "www.vasaloppet.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/448",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "villaagarna.se",
+                "www.villaagarna.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/597",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7b1a7ae849ca11cb84964d1051dff3b76c2ee907515cbed778ca0cdd7c7301e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "willabgarden.se",
+                "www.willabgarden.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1986",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilia.se",
+                "www2.bilia.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/flow\\/1986\\/fonts\\/8hbmCXFR4w1lD1Ns1GqZOEtF4DEFOMmN\\.otf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "757553a4b6c62541b1b191b13012a1b2decae65f77792e2e800b17854fc4bf7c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilia.se",
+                "www2.bilia.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000623,
+    "cookies": 0.000465,
     "types": {
-        "Script": 42,
-        "Document": 6,
-        "Stylesheet": 18,
-        "Image": 10,
-        "XHR": 6,
-        "Font": 8
+        "Script": 264,
+        "Document": 36,
+        "Stylesheet": 114,
+        "Image": 57,
+        "XHR": 38,
+        "Font": 47
     },
     "nameservers": [
         "sue.ns.cloudflare.com",

@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000215,
-    "sites": 31,
+    "prevalence": 0.000529,
+    "sites": 74,
     "subdomains": [
         "cdn",
+        "mcdn",
         "rrstatic",
         "tracking",
         "api",
@@ -20,45 +21,166 @@
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "retailrocket\\.net\\/content\\/javascript\\/tracking\\.js",
+            "cookies": 0.000172,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 25,
+                "window.localStorage": 23,
+                "Document.cookie getter": 25,
+                "Navigator.prototype.cookieEnabled": 25,
+                "Document.cookie setter": 24
+            },
+            "sites": 25,
+            "prevalence": 0.000179,
+            "cnames": [],
+            "responseHashes": [
+                "b3b92ec6d0cbb3d6df780dbdec618ea00ddb1ef295735d10883264266e99cd4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rr-testCookie": {
+                    "ttl": 13,
+                    "length": 9,
+                    "prevalence": 0.0001501480030315597,
+                    "uniqueness": 0.047619047619047616
+                },
+                "rrpvid": {
+                    "ttl": 31536004,
+                    "length": 15,
+                    "prevalence": 0.00015729790793782443,
+                    "uniqueness": 1
+                },
+                "rcuid": {
+                    "ttl": 31536003,
+                    "length": 24,
+                    "prevalence": 0.00016444781284408918,
+                    "uniqueness": 1
+                },
+                "rrwpswu": {
+                    "ttl": 305,
+                    "length": 4,
+                    "prevalence": 0.00005004933434385323,
+                    "uniqueness": 0.14285714285714285
+                },
+                "rr-viewItemId": {
+                    "ttl": 603,
+                    "length": 4,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "rrviewed": {
+                    "ttl": 3603,
+                    "length": 4,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "rrlevt": {
+                    "ttl": 63072003,
+                    "length": 13,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.hulpmiddelwereld.nl",
+                "www.tinytronics.nl",
+                "salcobrand.cl",
+                "www.welkoop.nl",
+                "www.techniekwebshop.nl",
+                "appelboom.com",
+                "www.selectspecs.com",
+                "www.denotenshop.nl",
+                "www.oechsle.pe",
+                "www.daka.nl",
+                "www.gereedschapcentrum.nl",
+                "homingxl.nl",
+                "www.tiendainglesa.com.uy",
+                "www.decathlon.ie",
+                "www.douche-concurrent.nl",
+                "www.houthandelonline.nl",
+                "www.kabeldirect.nl",
+                "www.podobrace.nl",
+                "www.krefel.be",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
             "rule": "retailrocket\\.net\\/api\\/markupblocks\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "cdn",
+                "mcdn"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000761,
+            "sites": 35,
+            "prevalence": 0.00025,
             "cnames": [],
             "responseHashes": [
-                "66ac60aad467228c0b3b31feb3b32eb85442faeeba5743af03550fc1f9a94b70",
-                "0e08328b8fbe92ca4bb3aab9c12ad47cf2e4203600c70827aaef252d53f2c386",
-                "586bb22f7fa72a9a3adf7e568563cb50eb27dedcf95b07e28209857ea85fc00d",
-                "a410204e7365b01c7476f49a269e1ae1c6bb7ee48fcb5931c9848cbe14a5f821",
-                "bb0ce40764a9e48b1083881a4e7bb7f71b0c044824dc54265bc994a602f45ba1",
+                "a82806107e409b9c4707efd08237d79808d15dbd4de15f64b97eb0d78bbbcd48",
+                "2b00c81647ceded3f0a455054551756dc4833bf1be737f08047cdda4b685f9e9",
+                "6989141e46ca00a6fed21746717d0e3080450821aeab95bc9283ea6cff4de69d",
+                "255be791e7a1fd7ddf7b9a5515fb4d6939cdb52cdec8a8262d04254e833d1dfa",
+                "3b3cc794940d17c6a492cf29a03da2f3bf8b005b7dcb72b7c0b49927bbdab542",
+                "32a318e22461f88a7c7daf8f654927376410e46f31b7a6f71efa856d732cdfce",
+                "477f9c2f34094e97f2669da856aec3e4472bcb44743c5439e89417cac3d0045d",
                 "d2f5dea9b3ec52cfee5f0120c405ff2fd083642fe9b438c9e157bf9d6d24d9df",
-                "14e48959ca3540975da825db2c6637fc7c11529feee1ecd099e81f8fd4f7aab5",
-                "2ac842868707de538ca19682c5a788e443fbb0bae045c134c0dd55ba608fa7c8",
-                "4abe2920096209bae51d2bca8800413bcdffad53bdd9287660705280ecd7eeef",
+                "1dc73c7e5fc499f875c6714b7dc945d9874dfc8bc50f782897a8e232607b3a32",
+                "a12bac2973f22d8a7c70468f1cd352ee9850e9b750c3a980ee644d809c2eed02",
+                "57d6d21d7ae019b3ebb9081773d88f89fa81f664aaef1822b5780586a55f131f",
+                "edea79ae58567f2b04ea3b3d034b40f7e3bb21780a8f56b21d92c941f5d7aa15",
+                "d875e6a8cf0f5723af8964b790ad51f28beab6c4de43ef959fe05c261085fcca",
+                "a59ca21c734bae1afe19360dd56afbf7ed03fbeb1d3872045f6eabdc0e376345",
+                "d84d03dea575c9af496f3d00fea2637f5f9e51140ab897b213e1132bf89598a6",
+                "971663f1b9735c7932226be8328f1d37aad17d3e5d38d535642f6edea038d7ca",
+                "87a85d4cda850b0c015bc06f0f9cbfd045876cd5c5006cf9c69f68d2cdaf69a1",
+                "543dc95dfb9f5908bd98a3209ed7c381817a5a96f72724e270237dfb1af66fc8",
+                "f869373fb601bd271e0070eb33a8aac33110321ea96c82aabf9104e26e71ff95",
+                "38cd8e06bc4268baca82b8c402fb800e8ffdedd235689d910421879d86be67f0",
+                "2f9cc1fc2409d108af8a7c8594618be03cb76dcc06b8382b60792098df6ae0d7",
+                "92b06ee5ce1e3e43c66684127a0ba5f82e9dcb624bba3f7634ef166459d3dbad",
+                "9d5d16d150fc6c5f286141bffa6c3eefc065735cd353fdc534933dce8b5e3ca3",
+                "4f192e2dcb09181be4888eda6b14179d38841e993a30126e6e8f9f2db25023dc",
+                "cbcced3571ba782a9cf4a7165f696ef260041677ebf3e8dd4bb359ae982ec9fa",
+                "8e97d0607de31a901405863498e9796eac93b7de538bd6949da23a84d9891de6",
+                "d179548b1f576047fd665b7a3c74b5e01bf9e0390b69353057a1a377d4aaf2ea",
+                "357679eb09cae7bd3d5022470195ef9eab5d5ebcd2138f6f68cb2d66f67c2ee8",
+                "0fd74431cddf58b6bd539700303499903568616d5344133f33a1ad43a8f21466",
+                "44b0c9bd6d7b4d275099b4ccb3dbb6880a305a141270ef1658ddd40587beedf2",
+                "e2b51491dac63196c574e19db3bc51154fa4409cf61f6792e36b5c13b8beb9fe",
                 "db130e149c933368c389931a30f058efb7aef96696de08f34df857c2a159887b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.00007614248335248432
+                "rrpvid": 0.00024309676681300138
             },
             "exampleSites": [
-                "hoff.ru",
-                "petrovich.ru",
-                "sbermegamarket.ru",
-                "www.alltime.ru",
-                "www.decathlon.nl",
                 "www.denotenshop.nl",
-                "www.dns-shop.ru",
-                "www.gereedschapcentrum.nl",
-                "www.maxidom.ru",
-                "www.selectspecs.com",
-                "www.welkoop.nl"
+                "www.douche-concurrent.nl",
+                "www.oechsle.pe",
+                "ru.siberianhealth.com",
+                "hoff.ru",
+                "www.to-be-dressed.nl",
+                "www.hulpmiddelwereld.nl",
+                "technopoint.ru",
+                "sunlight.net",
+                "www.welkoop.nl",
+                "www.asics.com.br",
+                "www.sneakers.nl",
+                "appelboom.com",
+                "www.podobrace.nl",
+                "www.tinytronics.nl",
+                "sbermegamarket.ru",
+                "www.techniekwebshop.nl",
+                "homingxl.nl",
+                "burdastyle.ru",
+                "www.decathlon.ie"
             ]
         },
         {
@@ -69,8 +191,8 @@
                 "rrstatic"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "sites": 24,
+            "prevalence": 0.000172,
             "cnames": [],
             "responseHashes": [
                 "968f3857a7da66f5d707881e84dba3b07cf0e631aee0771a7e16da62f5d2fd73"
@@ -79,15 +201,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "hoff.ru",
-                "petrovich.ru",
+                "www.to-be-dressed.nl",
+                "rivegauche.ru",
+                "www.oechsle.pe",
+                "salcobrand.cl",
+                "www.hulpmiddelwereld.nl",
+                "www.welkoop.nl",
                 "sbermegamarket.ru",
-                "www.alltime.ru",
-                "www.decathlon.nl",
-                "www.gereedschapcentrum.nl",
-                "www.maxidom.ru",
+                "burdastyle.ru",
+                "www.decathlon.ie",
+                "www.sossolutions.nl",
+                "www.houthandelonline.nl",
+                "ru.siberianhealth.com",
+                "www.dijkmanmuziek.nl",
                 "www.selectspecs.com",
-                "www.welkoop.nl"
+                "sunlight.net",
+                "hoff.ru",
+                "www.makroshop.be",
+                "www.daka.nl",
+                "www.douche-concurrent.nl",
+                "homingxl.nl"
             ]
         },
         {
@@ -98,15 +231,15 @@
                 "rrstatic"
             ],
             "apis": {
-                "Navigator.prototype.maxTouchPoints": 5,
-                "Navigator.prototype.platform": 5,
-                "Navigator.prototype.userAgent": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "window.devicePixelRatio": 5
+                "Navigator.prototype.maxTouchPoints": 11,
+                "Navigator.prototype.platform": 11,
+                "Navigator.prototype.userAgent": 11,
+                "Screen.prototype.width": 11,
+                "Screen.prototype.height": 11,
+                "window.devicePixelRatio": 11
             },
-            "sites": 5,
-            "prevalence": 0.0000346,
+            "sites": 11,
+            "prevalence": 0.0000786,
             "cnames": [],
             "responseHashes": [
                 "62c2651fa0a5ae089690182e6d88b84bf3153dc5a739ee928057c345ab8a59ac"
@@ -116,36 +249,104 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hoff.ru",
-                "petrovich.ru",
-                "www.alltime.ru",
-                "www.gereedschapcentrum.nl",
-                "www.selectspecs.com"
+                "rivegauche.ru",
+                "salcobrand.cl",
+                "sbermegamarket.ru",
+                "www.daka.nl",
+                "www.houthandelonline.nl",
+                "www.hulpmiddelwereld.nl",
+                "www.makroshop.be",
+                "www.oechsle.pe",
+                "www.selectspecs.com",
+                "www.tinytronics.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/52380fa00d422d3464afdde7",
-            "cookies": 0.0000138,
+            "rule": "retailrocket\\.net\\/1\\.0\\/timing\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000786,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homingxl.nl",
+                "www.asics.com.br",
+                "www.asna.ru",
+                "www.daka.nl",
+                "www.dijkmanmuziek.nl",
+                "www.douche-concurrent.nl",
+                "www.hulpmiddelwereld.nl",
+                "www.krefel.be",
+                "www.pult.ru",
+                "www.spdigital.cl",
+                "www.sulpak.kz"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/timing\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000786,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homingxl.nl",
+                "www.asics.com.br",
+                "www.asna.ru",
+                "www.daka.nl",
+                "www.dijkmanmuziek.nl",
+                "www.douche-concurrent.nl",
+                "www.hulpmiddelwereld.nl",
+                "www.krefel.be",
+                "www.pult.ru",
+                "www.spdigital.cl",
+                "www.sulpak.kz"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/53593a336636b1243c9644b3",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "db5b7173edf21a9f7532e085df0dbd5e304fadd2de48fdcd681dcea21e8d2e1c"
+                "6210b6f16407135867c2f873cafdadf5d1c20ff74505c06f1147835fbbbacd3d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "_ym_d": 0.000014299809812529493
+            },
             "exampleSites": [
-                "alltime.ru",
-                "www.alltime.ru"
+                "vseinstrumenti.ru",
+                "www.vseinstrumenti.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/52380fa00d422d3464afdde7",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/53593a336636b1243c9644b3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -153,7 +354,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -161,19 +362,17 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "_ym_d": 0.000006922043941134938,
-                "rcuid": 0.000013844087882269877,
-                "rr-viewItemId": 0.000006922043941134938,
-                "rrviewed": 0.000006922043941134938
+                "rrpvid": 0.000014299809812529493,
+                "_ym_d": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
             },
             "exampleSites": [
-                "alltime.ru",
-                "www.alltime.ru"
+                "vseinstrumenti.ru",
+                "www.vseinstrumenti.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/52380fa00d422d3464afdde7",
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/53593a336636b1243c9644b3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -181,21 +380,45 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "38c2a5b14a5a9854d733a124bc809b8752a36c52807c934b969b5a0f3da3022d"
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alltime.ru",
-                "www.alltime.ru"
+                "vseinstrumenti.ru",
+                "www.vseinstrumenti.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/52380fa00d422d3464afdde7",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5ca79d7797a5281fd80ce642",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fc8c93857487a8c1b99ea0e91e58d2cebf5b6b3914356a688e46d2ad9c2c37f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ym_d": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5ca79d7797a5281fd80ce642",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -203,7 +426,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -211,15 +434,106 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "_ym_d": 0.000006922043941134938,
-                "rcuid": 0.000013844087882269877,
-                "rr-viewItemId": 0.000006922043941134938,
-                "rrviewed": 0.000006922043941134938
+                "_ym_d": 0.000007149904906264747,
+                "rrpvid": 0.000014299809812529493
             },
             "exampleSites": [
-                "alltime.ru",
-                "www.alltime.ru"
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5ca79d7797a5281fd80ce642",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5ca79d7797a5281fd80ce642",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5f5dfe14b9db79c6c5c77afe68e1740af9d29d1186916c842469bf516613692e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/5ca79d7797a5281fd80ce642\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c3351abb11d52dfc04f3e1434cddc88699c3b38053c00c082faa43b8fd272588"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5ca79d7797a5281fd80ce642\\/item\\/500959\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "38dcba5a1a5f4df27942e0273829260c5eae03dd72b7263b186e43ee776e9a0e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "siberianhealth.com",
+                "ru.siberianhealth.com"
             ]
         },
         {
@@ -230,8 +544,8 @@
                 "rrstatic"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 8,
+            "prevalence": 0.0000572,
             "cnames": [],
             "responseHashes": [
                 "27ec7561235ff80cbfdc412281dfde6d5ba485915a5652f9442cca212cb5e9cb"
@@ -240,38 +554,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alltime.ru",
-                "www.alltime.ru",
-                "www.gereedschapcentrum.nl",
-                "www.selectspecs.com"
+                "salcobrand.cl",
+                "www.decathlon.ie",
+                "www.houthandelonline.nl",
+                "www.hulpmiddelwereld.nl",
+                "www.makroshop.be",
+                "www.oechsle.pe",
+                "www.selectspecs.com",
+                "www.tinytronics.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5a2513efc7d0132270191cfc",
-            "cookies": 0.0000138,
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5ddfeb9c97a52509389f55ec",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "938af9391b51cce377f6f1be2a62b66bbe455f112bbee9085a0f0c909189a33e"
+                "dda5421c62c5258f5eecd14fff232062e73fe99ad288dc48a7f2d001879a40a0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ym_d": 0.000006922043941134938
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asna.ru",
-                "www.asna.ru"
+                "technopoint.ru",
+                "www.dns-shop.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5a2513efc7d0132270191cfc",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5ddfeb9c97a52509389f55ec",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -279,7 +595,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -287,16 +603,17 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493,
+                "_ym_d": 0.000007149904906264747
             },
             "exampleSites": [
-                "asna.ru",
-                "www.asna.ru"
+                "technopoint.ru",
+                "www.dns-shop.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5a2513efc7d0132270191cfc",
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5ddfeb9c97a52509389f55ec",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -304,7 +621,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
@@ -313,95 +630,348 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asna.ru",
-                "www.asna.ru"
+                "technopoint.ru",
+                "www.dns-shop.ru"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/content\\/javascript\\/tracking\\.js",
-            "cookies": 0.0000623,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 9,
-                "window.localStorage": 9,
-                "Document.cookie getter": 9,
-                "Navigator.prototype.cookieEnabled": 9,
-                "Document.cookie setter": 9
-            },
-            "sites": 9,
-            "prevalence": 0.0000623,
-            "cnames": [],
-            "responseHashes": [
-                "a24d59fd33f0aeb16bf4074925b50a47e15254de9d30b7a2094ef0b14d747943"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "rr-testCookie": {
-                    "ttl": 12,
-                    "length": 9,
-                    "prevalence": 0.000055376351529079506,
-                    "uniqueness": 0.125
-                },
-                "rrpvid": {
-                    "ttl": 31536003,
-                    "length": 15,
-                    "prevalence": 0.000055376351529079506,
-                    "uniqueness": 1
-                },
-                "rcuid": {
-                    "ttl": 31536002,
-                    "length": 24,
-                    "prevalence": 0.00006229839547021444,
-                    "uniqueness": 1
-                },
-                "rr-viewItemId": {
-                    "ttl": 604,
-                    "length": 7,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                },
-                "rrviewed": {
-                    "ttl": 3604,
-                    "length": 7,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                },
-                "rrlevt": {
-                    "ttl": 63072004,
-                    "length": 13,
-                    "prevalence": 0.000013844087882269877,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "decathlon.nl",
-                "www.denotenshop.nl",
-                "www.drinksandco.com",
-                "www.drinksandco.co.uk",
-                "www.drinksco.de",
-                "www.gereedschapcentrum.nl",
-                "www.krefel.be",
-                "www.selectspecs.com",
-                "www.welkoop.nl"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/6197af3497a5252b18b69722",
-            "cookies": 0.0000138,
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/515e88160d422d0ea0cafccd",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "c8f1c9844cadf9885cd2f1c109376d6c0521a68ebee9ceda0c21acd7495781d6"
+                "21626834cb8aad9e70f455c1b4486c7234089f00e654032244faa09a84befac4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "220-volt.ru",
+                "www.220-volt.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/515e88160d422d0ea0cafccd\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7d6c24e2af618715e71e64a2c8f1fa199e00fead59687a571480b163c0854e17"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "220-volt.ru",
+                "www.220-volt.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/515e88160d422d0ea0cafccd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "220-volt.ru",
+                "www.220-volt.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/515e88160d422d0ea0cafccd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "220-volt.ru",
+                "www.220-volt.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/515e88160d422d0ea0cafccd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "220-volt.ru",
+                "www.220-volt.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/widget\\/plugins\\/slick\\/slick\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rrstatic"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "e02af7df9a190d88380e2dcec2050ecaa493ae2d23526dbeec67f6907df3a752"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "220-volt.ru",
+                "www.dijkmanmuziek.nl",
+                "www.douche-concurrent.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/596620d19872e504c4f51b1e",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "32005c4f144d2dc07c0d554db3e418066017092c9b26a5e735b6df80848d8cc8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daka.nl",
+                "www.daka.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/596620d19872e504c4f51b1e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daka.nl",
+                "www.daka.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/596620d19872e504c4f51b1e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000007149904906264747,
+                "rcuid": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "daka.nl",
+                "www.daka.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/596620d19872e504c4f51b1e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daka.nl",
+                "www.daka.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5f32757c97a5250c8c97f048",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1fbec4d8337fa697490a77f28f456e3a385307a0a3b5e2a7808d688d84aa6555"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.ie",
+                "www.decathlon.ie"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5f32757c97a5250c8c97f048",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rcuid": 0.000014299809812529493,
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "decathlon.ie",
+                "www.decathlon.ie"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5f32757c97a5250c8c97f048",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d5f47b12b7a7e2a7323fce88c52f228bd563aa0a759851fe523192a6a01a7af3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decathlon.ie",
+                "www.decathlon.ie"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5f32757c97a5250c8c97f048",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "decathlon.ie",
+                "www.decathlon.ie"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/6197af3497a5252b18b69722",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "33bc011524029d597f21978bef7c49718a1276e738a9cd6e68745070ea6ef4e2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -420,7 +990,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -428,8 +998,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
             },
             "exampleSites": [
                 "denotenshop.nl",
@@ -445,7 +1015,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
@@ -459,73 +1029,53 @@
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/timing\\/",
-            "cookies": 0,
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5c658a1997a5251b1ca3b429",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "0ba7f8ce6715a71802a3d89c650e323aaaa9d55ae00fdd97bdd555b3681ab79d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "denotenshop.nl",
-                "www.krefel.be"
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/timing\\/",
+            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/5c658a1997a5251b1ca3b429\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking"
+                "api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "denotenshop.nl",
-                "www.krefel.be"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5ddfeb9c97a52509389f55ec",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "7b43c66b41ce255eb9d2b6937b36f9ec8791902f0cbd99828cd3681d9cd748de"
+                "dc393f15c6596590260bcd6a0e7e78870459553d34b6a237d27955ac3496c89b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ym_d": 0.000006922043941134938
+                "rrpvid": 0.000014299809812529493
             },
             "exampleSites": [
-                "dns-shop.ru",
-                "www.dns-shop.ru"
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5ddfeb9c97a52509389f55ec",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5c658a1997a5251b1ca3b429",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -533,7 +1083,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -541,17 +1091,40 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "_ym_d": 0.000006922043941134938,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493
             },
             "exampleSites": [
-                "dns-shop.ru",
-                "www.dns-shop.ru"
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5ddfeb9c97a52509389f55ec",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5c658a1997a5251b1ca3b429",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5c658a1997a5251b1ca3b429",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -559,7 +1132,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
@@ -568,59 +1141,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dns-shop.ru",
-                "www.dns-shop.ru"
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5a39331bc7d0106b7c1778bd",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ec491267ef08788d3f8a88f6dce1d871f1f65240464629bcfdcc46e8e838f77a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drinksandco.com",
-                "www.drinksandco.com"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5a39331bc7d0106b7c1778bd",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "drinksandco.com",
-                "www.drinksandco.com"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5a39331bc7d0106b7c1778bd",
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/1810\\/picture\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -628,68 +1154,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "dd801e5fd7e203462c760e9b1057d8dd058d6e3ebf417aa06560b58ebb89e219"
+                "222cc7a2b8d77383f792fa0a11b4afbbc12e3388bf6faac9bb329f87e185af0a"
             ],
-            "type": "XHR",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "drinksandco.com",
-                "www.drinksandco.com"
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5a3932dec7d0106b7c1778a8",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ef2ce3e6fe5bb60bb9f7daed4c8b33690a3bdfbe75c8bb6a39388ca42850fd1e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drinksco.de",
-                "www.drinksco.de"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5a3932dec7d0106b7c1778a8",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "drinksco.de",
-                "www.drinksco.de"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5a3932dec7d0106b7c1778a8",
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/4454\\/picture\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -697,32 +1176,325 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "17b181e258bf95ee87f0b8330fe0409286ceebdd33ae9c1a8065c1f068ba9a7f"
+                "035e49566024fc7935413024de16ddcffb937d0af97ed3e6e7822d81edcc4539"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/5147\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "31c5e6e7404ba986214b79217855ec0f9b004db7a08283b149e6aa1bc9895b97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/4758\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b0a1e29c3722a48976c2904d17a2bea493de56dd6baac0d6646d5938e49fecf7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/2059\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5d21829b95f26a106230244b059663c56717af2bcf086478317c9f404a993781"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/11642\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8f4a3dda1a75509a241b5dd749ffc24e38018e8bfe8e539cc40ee6b16bb21d39"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/10661\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "94bc109769d65c2b50e9f9a947ab43f780a684508d94c9fedb41ba3ca1519b4d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/10067\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "4440532da4ada2e7af16d653a85bdeb088ace7968d2607b48880fb616cd75839"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/10035\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "a4cd2a184776da39003b9e21f38e53384e4df5e53a97fd7c8f0dc5c421d5b6c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5c658a1997a5251b1ca3b429\\/item\\/10771\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6940415c867f339d6d51cb68f6f180e78d48aeea65eb6bef92b1ed2514fe01c5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dijkmanmuziek.nl",
+                "www.dijkmanmuziek.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5a79a928c7d010633ca56b3c",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fd951b83ecdb0701661e458ff6c61263196b6ae9869f6327331e3a1c2bc1fbc6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "drinksco.de",
-                "www.drinksco.de"
+                "douche-concurrent.nl",
+                "www.douche-concurrent.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5a79a928c7d010633ca56b3c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "douche-concurrent.nl",
+                "www.douche-concurrent.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5a79a928c7d010633ca56b3c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "30e2e8d3646dede36d6b567a24d4a9f6c049fcbcc4969a5bb46837c367461e66"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "douche-concurrent.nl",
+                "www.douche-concurrent.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/content\\/javascript\\/trackingm\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn",
+                "mcdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6763e4af801c4897afb1432524d852c7645391e018a21338cc880d237b469bb8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rr-testCookie": {
+                    "ttl": 15,
+                    "length": 9,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "rrpvid": {
+                    "ttl": 31536006,
+                    "length": 15,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "rcuid": {
+                    "ttl": 31536006,
+                    "length": 24,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "encuentra24.com",
+                "www.spdigital.cl"
             ]
         },
         {
             "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5b86555297a52511c0e63a5a",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "e86b4c6714a6290678d8a1ad63435a73c82121f11fe2edf81f0ff9296613f445"
+                "848d9304f4eb2de565e27fb5e31b83b8f141d76afc50169a90667678c8d18d4b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -741,7 +1513,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -749,8 +1521,8 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
             },
             "exampleSites": [
                 "gereedschapcentrum.nl",
@@ -766,7 +1538,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
@@ -780,79 +1552,29 @@
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5b86555297a52511c0e63a5a",
-            "cookies": 0,
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5e29818a97a5251a3c982ea6",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "gereedschapcentrum.nl",
-                "www.gereedschapcentrum.nl"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markupViewed\\/5b86555297a52511c0e63a5a",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "gereedschapcentrum.nl",
-                "www.gereedschapcentrum.nl"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5aed739a97a5285440152b0f",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0cf9e70dd4305f6b88089d8cf9b8fdf5c6cae5e49c2922d0d3448a14b9748303"
+                "829a28d069aaef70fef068ba28aafc113ddfa558cd7565ed4895fbdf54320a98"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "krefel.be",
-                "www.krefel.be"
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5aed739a97a5285440152b0f",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5e29818a97a5251a3c982ea6",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -860,7 +1582,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -868,16 +1590,40 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493
             },
             "exampleSites": [
-                "krefel.be",
-                "www.krefel.be"
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5aed739a97a5285440152b0f",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5e29818a97a5251a3c982ea6",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5e29818a97a5251a3c982ea6",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -885,143 +1631,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+                "a2cc1d9d39ba732915aae1fd79fcb4a21bbbb8eebf3513bb760adb82a47a1c41"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "krefel.be",
-                "www.krefel.be"
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5693c2f665bf19391c0a979c",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6a2e78928037dd36615169ae6f81bad8c270b90d5f0f9e6d70dc32b8800d012d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ym_d": 0.000006922043941134938
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5693c2f665bf19391c0a979c",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "_ym_d": 0.000006922043941134938,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5693c2f665bf19391c0a979c",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/personal\\/5693c2f665bf19391c0a979c\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5693c2f665bf19391c0a979c",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/5693c2f665bf19391c0a979c\\/light-bulb\\.svg",
+            "rule": "retailrocket\\.net\\/5e29818a97a5251a3c982ea6\\/icpn__cart\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1029,71 +1653,21 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "62a53af808df64ad5fbec08c702dd2fb3b22284e88b962c550ff93731e886877"
+                "02824e8673164b87ff76a27b50430576205b88dc5dd82e25aa30edfda217f51d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/personal\\/viewed\\/5693c2f665bf19391c0a979c\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/5693c2f665bf19391c0a979c\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "294bd56b2ae376b42ec2c98a31bcd24bb84b8b965dc00645cf2fd988697d5e2c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
-            },
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/5693c2f665bf19391c0a979c\\/label_discount\\.svg",
+            "rule": "retailrocket\\.net\\/5e29818a97a5251a3c982ea6\\/slider_arrow\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1101,351 +1675,43 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "01d6bd45c70053a754d232fdf58e6707aea6be156372cd4524303ec335b34647"
+                "3111a2bd3f66f146f81c607398e3eca8991e1705a4297d89cd3cc0d6987e8af4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
+                "houthandelonline.nl",
+                "www.houthandelonline.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/3413577\\/picture\\/",
-            "cookies": 0,
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5ed8c09a97a528330c83b2a5",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "tracking"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "14a60d5651ab8591a0c84339952835a4018c472d25f572b14de9fe1727dcf8fa"
+                "e457df38de0766b51ed4c9b4b1f88a8f2887cb6345d685d3824e2e5367728c69"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
+                "hulpmiddelwereld.nl",
+                "www.hulpmiddelwereld.nl"
             ]
         },
         {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/4590029\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f208f2001f289e801e41ef12aaae297741dd0c5cf939ceb6725a29e1d34c8b7a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/3499953\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0f5859ca1fe3f4ac713abf6d9db9c8e1a76925807d58353f6cdee6dc04fb97fc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/9423190\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ca0e29fea77e47f9bee82f22b89929ba257cbac523d38e0062bf48d2bd710ca4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/5831619\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "79e7cde7870d4b55fe323b970ab638a609c44af6faf257f8da617b47a444ca32"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/9411856\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "51714cdd73cb8e3a25883bca59474882f0f3515362f08744893cc4ee853c5135"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/3646378\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "29fa93e246b0a384ddea6d8977c2e92387c44e02e9bea87b26c6a5048f6f2ba6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/4167727\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ff3aa4dea9ad1cd4d37d88547b11464f3cd70b7f93a94ed2b0dac4de7b431348"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/4167717\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2ed400b59d5a74189f1ef77ab750eb4ef7368fec96d2fd3e0c14e378ce267a84"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/7192511\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7e7c64b355d86e052eb5d7e2f52442193188040027280764a888eb65907d4ee9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/9423016\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ddb0cfc27455d09fc9e02952c7cda336e3fefde7d8ce65b4c66b81c859982ea5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/7863622\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b9420ac1b6f1b3eeab75ae59f0bc4df97aec0f5fae8a186cbea466015a08c775"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/3257444\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0aa878bcff86d0a7ae7bda5c1a98d23ef6d67882827fdb804e2c690aafab63e6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/9423790\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d44f72b09b95e295dd8052571513ebb5892d58e17ca2d01e7ab1fd8c0a78985e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5693c2f665bf19391c0a979c\\/item\\/4808165\\/picture\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9bf1e9c7c6418bfdf11e7b14ff5a714a99e81601ad08549d7d044dd0239559f9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
-            ]
-        },
-        {
-            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/categoryView\\/5693c2f665bf19391c0a979c\\/41110",
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5ed8c09a97a528330c83b2a5",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1453,7 +1719,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
@@ -1461,30 +1727,1463 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "rrpvid": 0.000013844087882269877,
-                "rcuid": 0.000013844087882269877
+                "rrpvid": 0.000014299809812529493
             },
             "exampleSites": [
-                "maxidom.ru",
-                "www.maxidom.ru"
+                "hulpmiddelwereld.nl",
+                "www.hulpmiddelwereld.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5ed8c09a97a528330c83b2a5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "hulpmiddelwereld.nl",
+                "www.hulpmiddelwereld.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5ed8c09a97a528330c83b2a5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hulpmiddelwereld.nl",
+                "www.hulpmiddelwereld.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/5ed8c09a97a528330c83b2a5\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "932061a2f22d17171d4c112cd4e0856683098c22ec076d63ee931ba85492bea8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "hulpmiddelwereld.nl",
+                "www.hulpmiddelwereld.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/61c1b35397a52511146357bc",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1a60b42a575222f00f0677e45e1ae7b406bb7d2892ed1c304ac7744ef0cd773f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kabeldirect.nl",
+                "www.kabeldirect.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/61c1b35397a52511146357bc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "kabeldirect.nl",
+                "www.kabeldirect.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/61c1b35397a52511146357bc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5c3beae648eb1284861b164c02e0794445d6eb2ffb989fc31079d8f523f13382"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kabeldirect.nl",
+                "www.kabeldirect.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5bbc651197a5280eac53ec37",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cdb6ee064668741dab68d02ce4d6753b52d9a71dc264eaff8f213b060c5f59f1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "makroshop.be",
+                "www.makroshop.be"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5bbc651197a5280eac53ec37",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000007149904906264747,
+                "rcuid": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "makroshop.be",
+                "www.makroshop.be"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5bbc651197a5280eac53ec37",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "makroshop.be",
+                "www.makroshop.be"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5bbc651197a5280eac53ec37",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "makroshop.be",
+                "www.makroshop.be"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bbc651197a5280eac53ec37\\/arrow-small-left\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f870b03462064fb02ef049b6ee54c847d5f344238a72c9b16c0a8c207db0b171"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "makroshop.be",
+                "www.makroshop.be"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5e6260df97a5251a10daf30d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "oechsle.pe",
+                "www.oechsle.pe"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5bfc08c597a5250bd8fea4f0",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9dd04da68ee84e22e6757078cdb51ef210f253efc08253589af498facc03b852"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5bfc08c597a5250bd8fea4f0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bfc08c597a5250bd8fea4f0\\/klantbeoordeling\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "52e42a75d505964bfdd5455660d850ac58da95b43b5be3dec03ff64dd3d38a71"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bfc08c597a5250bd8fea4f0\\/niet_goed_geld_terug\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6165c0edd6af36298794ccab1218127d3b424fff4e346e72ab6d5a93bc2d48c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bfc08c597a5250bd8fea4f0\\/gratis_verzenden\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e0cd0a06389cac07b667d5f472f3d48023ee3750fa5115f7c4c6dd92759f4fe9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bfc08c597a5250bd8fea4f0\\/voor_2130_besteld\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "bd74f245dfce1807bbeb326b4d0f423d56590447fd3027c7cf6acd9a55e8e31c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bfc08c597a5250bd8fea4f0\\/Keurmerklogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "df7e260d9bdad42568db61392d0cba5775d67064dbf9c22e37dd1ec321aa495a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5bfc08c597a5250bd8fea4f0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5bfc08c597a5250bd8fea4f0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "aab1c0cf60585b6ce43b547786499627d89f823af06c503df78f6e3330326a37"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markupViewed\\/5bfc08c597a5250bd8fea4f0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "podobrace.nl",
+                "www.podobrace.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/55360ff66636b409a028736c",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "940e9942b7f39c373cc8be04bd790bd6dc4e718bed4ef566ed8fc34deb726ac6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pult.ru",
+                "www.pult.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/55360ff66636b409a028736c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "pult.ru",
+                "www.pult.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/55360ff66636b409a028736c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pult.ru",
+                "www.pult.ru"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5fb37f6b97a5251c5cf5a962",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "199173b4271dae6fbdecbdb18d47360d88a1e58016266914e68e5c8c3c526b1c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ym_d": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "selectspecs.com",
+                "www.selectspecs.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5fb37f6b97a5251c5cf5a962",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "_ym_d": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "selectspecs.com",
+                "www.selectspecs.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5fb37f6b97a5251c5cf5a962",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "_ym_d": 0.000007149904906264747,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "selectspecs.com",
+                "www.selectspecs.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5fb37f6b97a5251c5cf5a962",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "selectspecs.com",
+                "www.selectspecs.com"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5a66f78dc7d01017ecd5400e",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "3572d633c85c1db908c594a666899ca6ee5adaf3fd19c3b62dd0f2dcb7a4633c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5a66f78dc7d01017ecd5400e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5a66f78dc7d01017ecd5400e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5a66f78dc7d01017ecd5400e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/2\\.0\\/recommendation\\/popular\\/5a66f78dc7d01017ecd5400e\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "423d4dea6cfaa389d39756d9d9ac7cf31d5043d08137bd14c5a75268cbe6b6d7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5a66f78dc7d01017ecd5400e\\/item\\/36371937\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "96aaa862dafe0b55b1464ec8129f649400c4f9b6e2f1120e85252cd0e1c61289"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5a66f78dc7d01017ecd5400e\\/item\\/45538941\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "25db2c8d203f70ce18e46725e4748e0afb64af1949453f238eabba275e2bae25"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/partner\\/5a66f78dc7d01017ecd5400e\\/item\\/11293937\\/picture\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "347b62781d15a311a5f3d7ccf234f0cb51f73097adc393f9e9763fcc9ff9032d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/sneakers\\.nl\\/widget\\/sprite\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rrstatic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "3577b219c73b6f9d44e51db3869050fa2d0204f4edcccc0bc912678251d50769"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sneakers.nl",
+                "www.sneakers.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5bd9ab8897a5284530863073",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0b3dd3aa250390d784416c1d59b622f5d285b955341a12edef6ea6ce33837730"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sossolutions.nl",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5bd9ab8897a5284530863073",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "sossolutions.nl",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/5bd9ab8897a5284530863073\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gallery"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "14b269d15dd10e34e8362c05e6772d464d569fd10b8b2f467af5eb683e31b1ac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sossolutions.nl",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5bd9ab8897a5284530863073",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "sossolutions.nl",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5bd9ab8897a5284530863073",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "b88663d1d9971c5008731ed8ac1f6f4c018a67f7a359fb7b62ea739b5b2d3c3a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sossolutions.nl",
+                "www.sossolutions.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/57a340a95a65881420712467",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5dd633f0fe5eda6ab4b352ac66c1c0295403ad241fc0e64e56ebbb50dbf64f96"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spdigital.cl",
+                "www.spdigital.cl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/57a340a95a65881420712467",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "spdigital.cl",
+                "www.spdigital.cl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/57a340a95a65881420712467",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spdigital.cl",
+                "www.spdigital.cl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/58f730f25a65884bd09173b3",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "88e5b8d3e82bcb6d75b124ef5efaf85493b0b5a6b7ed372c1f7c663b299d7871"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fz_fvdt": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "sulpak.kz",
+                "www.sulpak.kz"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/58f730f25a65884bd09173b3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "sulpak.kz",
+                "www.sulpak.kz"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/58f730f25a65884bd09173b3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sulpak.kz",
+                "www.sulpak.kz"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5bdc177797a5251e98681e9d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techniekwebshop.nl",
+                "www.techniekwebshop.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5d78dcb897a52513e03c5a15",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "914728131c3e516692616cd601bafd5876ac69c02e3257e232e642a7e1d18c6f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tinytronics.nl",
+                "www.tinytronics.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5d78dcb897a52513e03c5a15",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "tinytronics.nl",
+                "www.tinytronics.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5d78dcb897a52513e03c5a15",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "tinytronics.nl",
+                "www.tinytronics.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5d78dcb897a52513e03c5a15",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tinytronics.nl",
+                "www.tinytronics.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5d6678c997a525223ca9d271",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "50e6a0e611fb5cc26bd8aa12ab7568857d59b949909e3511129f787b34c60455"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "to-be-dressed.nl",
+                "www.to-be-dressed.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5d6678c997a525223ca9d271",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "to-be-dressed.nl",
+                "www.to-be-dressed.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5d6678c997a525223ca9d271",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "to-be-dressed.nl",
+                "www.to-be-dressed.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5d6678c997a525223ca9d271",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ae4cba83e06fdf95c20ed4b4351c27dafcf2e07b8c5b1bae1b315ad5ffab9d71"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "to-be-dressed.nl",
+                "www.to-be-dressed.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/initialize\\/5abca3cd97a5253460a24e76",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "267f820b6c14dcc237161a4608e50fc4de2997bc52bad353d15b2f1620b5aa15"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "welkoop.nl",
+                "www.welkoop.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/markuprendered\\/5abca3cd97a5253460a24e76",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "welkoop.nl",
+                "www.welkoop.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/1\\.0\\/event\\/pageView\\/5abca3cd97a5253460a24e76",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "rrpvid": 0.000014299809812529493,
+                "rcuid": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "welkoop.nl",
+                "www.welkoop.nl"
+            ]
+        },
+        {
+            "rule": "retailrocket\\.net\\/api\\/1\\.0\\/PushPartnerSettings\\/5abca3cd97a5253460a24e76",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ca1e51b137335d9bc710460b95c93e78a282fcfe7fbab4670b92665c1f5bd9a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "welkoop.nl",
+                "www.welkoop.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000215,
+    "cookies": 0.000529,
     "types": {
-        "XHR": 83,
-        "Stylesheet": 9,
-        "Script": 14,
-        "Image": 38,
-        "Preflight": 2
+        "Script": 41,
+        "XHR": 236,
+        "Stylesheet": 24,
+        "Preflight": 11,
+        "Image": 56
     },
     "nameservers": [
-        "ns8-l2.nic.ru",
-        "ns4-l2.nic.ru",
-        "ns3-l2.nic.ru",
-        "ns8-cloud.nic.ru",
-        "ns4-cloud.nic.ru"
+        "ns1.selectel.org",
+        "ns2.selectel.org",
+        "ns4.selectel.org",
+        "ns3.selectel.org"
     ]
 }

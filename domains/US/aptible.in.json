@@ -4,24 +4,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
-    "sites": 4,
+    "prevalence": 0.0000143,
+    "sites": 2,
     "subdomains": [
-        "elb-everplans-7099",
-        "elb-forhims-22918"
+        "elb-everplans-7100",
+        "elb-everplans-7099"
     ],
     "cnames": [
         {
-            "original": "api.forhims.com",
-            "resolved": "elb-forhims-22918.aptible.in"
-        },
-        {
             "original": "my.everplans.com",
             "resolved": "elb-everplans-7099.aptible.in"
+        },
+        {
+            "original": "webapps.everplans.com",
+            "resolved": "elb-everplans-7100.aptible.in"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "aptible\\.in\\/externalApp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "elb-everplans-7100"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "webapps.everplans.com",
+                    "resolved": "elb-everplans-7100.aptible.in"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "everplans.com",
+                "www.everplans.com"
+            ]
+        },
         {
             "rule": "aptible\\.in\\/api\\/v1\\/config",
             "cookies": 0,
@@ -31,7 +56,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "my.everplans.com",
+                    "resolved": "elb-everplans-7099.aptible.in"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "everplans.com",
+                "www.everplans.com"
+            ]
+        },
+        {
+            "rule": "aptible\\.in\\/api\\/v1\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "elb-everplans-7099"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "my.everplans.com",
@@ -50,30 +100,30 @@
             ]
         },
         {
-            "rule": "aptible\\.in\\/graphql",
+            "rule": "aptible\\.in\\/api\\/v0\\/check_user",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "elb-forhims-22918"
+                "elb-everplans-7099"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "api.forhims.com",
-                    "resolved": "elb-forhims-22918.aptible.in"
+                    "original": "my.everplans.com",
+                    "resolved": "elb-everplans-7099.aptible.in"
                 }
             ],
             "responseHashes": [
-                "9f038fad7a2a548f3f106862ea414c260d57f16aa7eb1b2e4aab9dcdce53f4be"
+                "04e2a844eb28f1ae9c8d5a7a8750eba6cc54519dfe281fadbe526ee4aa9b64bf"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "forhims.com",
-                "www.forhims.com"
+                "everplans.com",
+                "www.everplans.com"
             ]
         }
     ],
@@ -81,8 +131,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2,
-        "Fetch": 2
+        "Script": 4,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": []
 }

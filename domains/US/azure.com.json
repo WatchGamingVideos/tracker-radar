@@ -9,57 +9,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00118,
-    "sites": 171,
+    "prevalence": 0.00126,
+    "sites": 176,
     "subdomains": [
         "js.monitor",
-        "dt-appgw-prod.eastus2.cloudapp",
-        "westus2-2.in.applicationinsights",
-        "s00025-oda.eastus.cloudapp",
-        "centralus-0.in.applicationinsights",
-        "centralus-2.in.applicationinsights",
-        "eastus-3.in.applicationinsights",
-        "eastus-8.in.applicationinsights",
-        "canadacentral-0.in.applicationinsights",
-        "germanywestcentral-0.in.applicationinsights",
+        "eastus-2.in.applicationinsights",
+        "westeurope-0.in.applicationinsights",
+        "uksouth-1.in.applicationinsights",
+        "westeurope-1.in.applicationinsights",
         "uksouth-0.in.applicationinsights",
-        "eastus2-0.in.applicationinsights",
-        "eastus-1.in.applicationinsights",
-        "prod-18.northcentralus.logic",
-        "prod-23.centralus.logic",
-        "benefitsgov-production-v2.eastus.cloudapp",
-        "dxf-smart-home-waf.westeurope.cloudapp",
+        "germanywestcentral-0.in.applicationinsights",
+        "eastus-5.in.applicationinsights",
+        "eastus-3.in.applicationinsights",
+        "northeurope-2.in.applicationinsights",
+        "australiaeast-1.in.applicationinsights",
+        "eastus-8.in.applicationinsights",
+        "australiaeast-0.in.applicationinsights",
+        "westeurope-4.in.applicationinsights",
+        "arsa-prod-appgw-public.eastus2.cloudapp",
+        "dt-appgw-prod.eastus2.cloudapp",
+        "qwestflexprod.uksouth.cloudapp",
+        "glive.northeurope.cloudapp",
+        "eset-gdd-k8s-nginx-ingress-dev-lb-hostname.northeurope.cloudapp",
         "finnet-matomo.westeurope.cloudapp",
-        "hqv-pwr-proxy.eastus2.cloudapp",
+        "folkeskolen.westeurope.cloudapp",
+        "is-prod-ag-v2.australiaeast.cloudapp",
         "wafweblaliga.westeurope.cloudapp",
+        "api-appgw.eastus2.cloudapp",
         "dkazr-prd-livechat.eastus2.cloudapp",
-        "premera.westus2.cloudapp",
-        "ih-cs-web-1.southcentralus.cloudapp",
-        "pstweb-configuratorwag.centralus.cloudapp",
-        "waf-msh-prd.westus.cloudapp",
-        "production-n-toggo.westeurope.cloudapp",
         "c66-welcome-production-prd-171e.westeurope.cloudapp"
     ],
     "cnames": [
-        {
-            "original": "analytics.finanzen.at",
-            "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
-        },
         {
             "original": "analytics.finanzen.ch",
             "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
         },
         {
-            "original": "api.benefits.gov",
-            "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
+            "original": "api.investsmart.com.au",
+            "resolved": "is-prod-ag-v2.australiaeast.cloudapp.azure.com"
+        },
+        {
+            "original": "apigateway.prodapi.azure.mskcc.org",
+            "resolved": "api-appgw.eastus2.cloudapp.azure.com"
         },
         {
             "original": "apim.laliga.com",
             "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
         },
         {
-            "original": "ci-cartsync.revivalanimal.com",
-            "resolved": "ih-cs-web-1.southcentralus.cloudapp.azure.com"
+            "original": "backend.folkeskolen.dk",
+            "resolved": "folkeskolen.westeurope.cloudapp.azure.com"
+        },
+        {
+            "original": "chatbot.cheshirewestandchester.gov.uk",
+            "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
+        },
+        {
+            "original": "content.services.aerolineas.com.ar",
+            "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
         },
         {
             "original": "crm.welcomepickups.com",
@@ -74,39 +81,230 @@
             "resolved": "dkazr-prd-livechat.eastus2.cloudapp.azure.com"
         },
         {
-            "original": "member-edge.premera.com",
-            "resolved": "premera.westus2.cloudapp.azure.com"
-        },
-        {
-            "original": "msh.sheahomes.com",
-            "resolved": "waf-msh-prd.westus.cloudapp.azure.com"
-        },
-        {
-            "original": "production-n.toggo.de",
-            "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-        },
-        {
-            "original": "raselect.rockwellautomation.com",
-            "resolved": "pstweb-configuratorwag.centralus.cloudapp.azure.com"
-        },
-        {
-            "original": "services.bosch-smarthome.com",
-            "resolved": "dxf-smart-home-waf.westeurope.cloudapp.azure.com"
-        },
-        {
-            "original": "shop.husqvarna.com",
-            "resolved": "hqv-pwr-proxy.eastus2.cloudapp.azure.com"
-        },
-        {
-            "original": "virtualassistant-nonprod.starbucks.com",
-            "resolved": "s00025-oda.eastus.cloudapp.azure.com"
+            "original": "staging.sgtm.eset.com",
+            "resolved": "eset-gdd-k8s-nginx-ingress-dev-lb-hostname.northeurope.cloudapp.azure.com"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "azure\\.com\\/scripts\\/c\\/ms\\.jsll-3\\.min\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.appVersion": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f2798f151600e63249fe8ecb9e50ee6075ade8bfb5da57d2394bdfe091274ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MicrosoftApplicationsTelemetryDeviceId": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "ai_session": {
+                    "ttl": 1803,
+                    "length": 50,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "MSFPC": {
+                    "ttl": 31536000,
+                    "length": 4,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ardalis.com",
+                "developerinsider.co"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eastus-2.in.applicationinsights",
+                "westeurope-0.in.applicationinsights",
+                "uksouth-1.in.applicationinsights",
+                "westeurope-1.in.applicationinsights",
+                "uksouth-0.in.applicationinsights",
+                "germanywestcentral-0.in.applicationinsights",
+                "eastus-5.in.applicationinsights",
+                "eastus-3.in.applicationinsights",
+                "northeurope-2.in.applicationinsights",
+                "australiaeast-1.in.applicationinsights",
+                "eastus-8.in.applicationinsights",
+                "australiaeast-0.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000122,
+            "cnames": [],
+            "responseHashes": [
+                "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19",
+                "a0371d4fc59a21c844b13e45055c533e2410c7238808a8378e5f57d13f1db958",
+                "513fa9efcd57db663d3a04059d0e6758f2c0b42d54082c3353a8340cdb41effa",
+                "1c300fc217f6dcd4dde779b410f9c36ea1960f27eb203f0475b6451e20ce760a",
+                "d8b2e6d81fc8696b7f958409739986682dd201580920a45fc8ffe0b803df02e4",
+                "e60a1bb1e0e9f39d31e1a723d53840e58f1ef33ac06a36f6604223083e07eeb5",
+                "834b9d3cb675cc60599c9d542d08b9457536d22334ddcb3e5b876e24a9b941fb",
+                "f3c49eee24e94b0a8aa77f5fca67338aeb92f8606f9b87a606a35715f1feea51",
+                "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2",
+                "76dc829025cdfa2c12dfaf8863662fc69c15a5a16535f2835bc9c5e0d14942b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auctionsplus.com.au",
+                "eurojackpot.nederlandseloterij.nl",
+                "shellspintowin.co.uk",
+                "www.apok.be",
+                "www.bovishomes.co.uk",
+                "www.computeruniverse.net",
+                "www.flyingflowers.co.uk",
+                "www.gibson.com",
+                "www.interflora.co.uk",
+                "www.lloyds.com",
+                "www.monter.no",
+                "www.reservations.com",
+                "www.skanetrafiken.se",
+                "www.snalltaget.se",
+                "www.superliquor.co.nz",
+                "www.understandmyself.com",
+                "www.volunteer.com.au"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eastus-2.in.applicationinsights",
+                "westeurope-0.in.applicationinsights",
+                "uksouth-1.in.applicationinsights",
+                "westeurope-1.in.applicationinsights",
+                "uksouth-0.in.applicationinsights",
+                "germanywestcentral-0.in.applicationinsights",
+                "eastus-5.in.applicationinsights",
+                "eastus-3.in.applicationinsights",
+                "northeurope-2.in.applicationinsights",
+                "australiaeast-1.in.applicationinsights",
+                "eastus-8.in.applicationinsights",
+                "australiaeast-0.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000122,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auctionsplus.com.au",
+                "eurojackpot.nederlandseloterij.nl",
+                "shellspintowin.co.uk",
+                "www.apok.be",
+                "www.bovishomes.co.uk",
+                "www.computeruniverse.net",
+                "www.flyingflowers.co.uk",
+                "www.gibson.com",
+                "www.interflora.co.uk",
+                "www.lloyds.com",
+                "www.monter.no",
+                "www.reservations.com",
+                "www.skanetrafiken.se",
+                "www.snalltaget.se",
+                "www.superliquor.co.nz",
+                "www.understandmyself.com",
+                "www.volunteer.com.au"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
+            "cookies": 0.000286,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 44,
+                "Document.cookie getter": 40,
+                "window.localStorage": 43,
+                "Navigator.prototype.userAgent": 44,
+                "Document.cookie setter": 40,
+                "window.sessionStorage": 45,
+                "Navigator.prototype.onLine": 45
+            },
+            "sites": 53,
+            "prevalence": 0.000379,
+            "cnames": [],
+            "responseHashes": [
+                "feb5a95f889fd1ecdabaab0aece26b232bdb83017971c4636dce99105898f318"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.0002859961962505899,
+                    "uniqueness": 1
+                },
+                "ai_user": {
+                    "ttl": 31536000,
+                    "length": 47,
+                    "prevalence": 0.00025739657662553087,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.nextdirect.com",
+                "www.bayleys.co.nz",
+                "www.helen.fi",
+                "www.casadellibro.com",
+                "www.reiss.com",
+                "www.ahlsell.se",
+                "www.banenor.no",
+                "ohmyposh.dev",
+                "www.ami.co.nz",
+                "www.monter.no",
+                "www.familjensjurist.se",
+                "www.eneco.nl",
+                "www.skiforeningen.no",
+                "www.saa.co.uk",
+                "my.clevelandclinic.org",
+                "www.roompot.nl",
+                "www.granngarden.se",
+                "www.scribblemaps.com",
+                "www.eksote.fi",
+                "www.fundsmith.co.uk"
+            ]
+        },
+        {
             "rule": "azure\\.com\\/scripts\\/c\\/ms\\.analytics-web-3\\.gbl\\.min\\.js",
-            "cookies": 0.0000346,
+            "cookies": 0.0000357,
             "fingerprinting": 2,
             "subdomains": [
                 "js.monitor"
@@ -123,39 +321,152 @@
                 "window.localStorage": 5
             },
             "sites": 5,
-            "prevalence": 0.0000346,
+            "prevalence": 0.0000357,
             "cnames": [],
             "responseHashes": [
-                "527b0cc29a20669da90363160cdd707cd7e53ee72d5d2245c12a480f51177de6"
+                "bb9e9bd11d1c8ac9fab6136fe3585050b05f5a38a6a47dccb4dcafb0f976c780",
+                "863a53a44fffd59205d3c48562fdb2af7e4bf5acae4259907cd0b48d38aea692"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "MicrosoftApplicationsTelemetryDeviceId": {
                     "ttl": 31536000,
                     "length": 36,
-                    "prevalence": 0.00003461021970567469,
+                    "prevalence": 0.00003574952453132374,
                     "uniqueness": 1
                 },
                 "ai_session": {
-                    "ttl": 1801,
+                    "ttl": 1803,
                     "length": 50,
-                    "prevalence": 0.00003461021970567469,
+                    "prevalence": 0.00003574952453132374,
                     "uniqueness": 1
                 },
                 "MSFPC": {
                     "ttl": 31536000,
                     "length": 4,
-                    "prevalence": 0.00003461021970567469,
+                    "prevalence": 0.00003574952453132374,
                     "uniqueness": 0.2
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mojang.com",
+                "minecraft.net",
+                "education.minecraft.net",
                 "feedback.minecraft.net",
                 "help.minecraft.net",
-                "minecraft.net",
                 "www.minecraft.net"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "westeurope-4.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nederlandseloterij.nl",
+                "eurojackpot.nederlandseloterij.nl"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/v2\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "westeurope-4.in.applicationinsights"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nederlandseloterij.nl",
+                "eurojackpot.nederlandseloterij.nl"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.gbl\\.min\\.js",
+            "cookies": 0.00000715,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js.monitor"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 7,
+                "window.localStorage": 8,
+                "PerformanceTiming.prototype.navigationStart": 8,
+                "Navigator.prototype.userAgent": 8,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000572,
+            "cnames": [],
+            "responseHashes": [
+                "002d544430bd54b3a85066ce380ed8928e4b3283c2c70328aa6e69e39fbda829"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ai_session": {
+                    "ttl": 1800,
+                    "length": 50,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instantpot.com",
+                "www.crucial.com",
+                "www.healthspan.co.uk",
+                "www.hoover.co.uk",
+                "www.lovethegarden.com",
+                "www.omen.com",
+                "www.pokon.nl",
+                "www.quakeroats.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/footer_content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arsa-prod-appgw-public.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "content.services.aerolineas.com.ar",
+                    "resolved": "arsa-prod-appgw-public.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "71f8a7c01200da0f731463a3094e3b2a88c83b32cfc5e7557988342ca14c0df3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aerolineas.com.ar",
+                "www.aerolineas.com.ar"
             ]
         },
         {
@@ -166,8 +477,8 @@
                 "dt-appgw-prod.eastus2.cloudapp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "dynatrace.att.com",
@@ -175,292 +486,176 @@
                 }
             ],
             "responseHashes": [
-                "3975b6170045d5ae64633db3ff528eac50b2f38de5ca2c2455dfb65443063d15",
-                "92ac183611f89c3a6df077d54a6ac6f48cab9943fb9b0e16b2127fd228ed44e5"
+                "ddf6441f602e0573325841e6462977baa303de1b45826ee43411d8796c2604cf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "att.com",
-                "www.att.com",
-                "www.wireless.att.com"
+                "www.att.com"
             ]
         },
         {
-            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0.000277,
-            "fingerprinting": 2,
-            "subdomains": [
-                "js.monitor"
-            ],
-            "apis": {
-                "Navigator.prototype.onLine": 47,
-                "window.sessionStorage": 41,
-                "Document.cookie getter": 40,
-                "Navigator.prototype.userAgent": 41,
-                "Document.cookie setter": 40,
-                "window.localStorage": 41,
-                "PerformanceTiming.prototype.navigationStart": 41
-            },
-            "sites": 47,
-            "prevalence": 0.000325,
-            "cnames": [],
-            "responseHashes": [
-                "f9fa2bbbf048b49dca5b1207cf03a3d5867924372252df0196167810cea88780"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "ai_user": {
-                    "ttl": 31536000,
-                    "length": 47,
-                    "prevalence": 0.0002699597137042626,
-                    "uniqueness": 1
-                },
-                "ai_session": {
-                    "ttl": 1800,
-                    "length": 50,
-                    "prevalence": 0.0002768817576453975,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "usnews.com",
-                "www.granngarden.se",
-                "www.milwaukeetool.com",
-                "www.abeka.com",
-                "www.icruise.com",
-                "www.macu.com",
-                "www.ontrack.com",
-                "www.iga.net",
-                "www.next.ie",
-                "www.4imprint.com",
-                "www.libraccio.it",
-                "www.1aauto.com",
-                "thriftbooks.com",
-                "www.gotomypc.com",
-                "rac.com.au",
-                "www.salahtimes.com",
-                "www.thriftbooks.com",
-                "www.thriftyfoods.com",
-                "schools.madrasati.sa",
-                "lawyers.usnews.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/\\/v2\\/track",
+            "rule": "azure\\.com\\/chat\\/css\\/flex\\.chat\\.pluginv2\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "westus2-2.in.applicationinsights"
+                "qwestflexprod.uksouth.cloudapp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "biblia.com",
-                "faithlife.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/web-sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "s00025-oda.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "virtualassistant-nonprod.starbucks.com",
-                    "resolved": "s00025-oda.eastus.cloudapp.azure.com"
+                    "original": "chatbot.cheshirewestandchester.gov.uk",
+                    "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
                 }
             ],
             "responseHashes": [
-                "aef6a53ca74007fb648b1343444a33b0cfeb38a1e30f2a96c2c6f708e34a1f29"
+                "f7e2590f47a6d262569c5fd0cd16f011ebde3883ed809271c0f2793b1a60bd27"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheshirewestandchester.gov.uk",
+                "www.cheshirewestandchester.gov.uk"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/chat\\/js\\/flex\\/flex\\.chat\\.pluginv2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "qwestflexprod.uksouth.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "chatbot.cheshirewestandchester.gov.uk",
+                    "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "17c8d225ed440d459d5346ecfb4d44a7cacb7c2ba92c57533b79b1f756e4fed8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "starbucks.com",
-                "customerservice.starbucks.com"
+                "cheshirewestandchester.gov.uk",
+                "www.cheshirewestandchester.gov.uk"
             ]
         },
         {
-            "rule": "azure\\.com\\/\\/v2\\/track",
+            "rule": "azure\\.com\\/chat\\/image\\/bot-bg-trans\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "westus2-2.in.applicationinsights",
-                "centralus-0.in.applicationinsights",
-                "centralus-2.in.applicationinsights",
-                "eastus-3.in.applicationinsights",
-                "eastus-8.in.applicationinsights",
-                "canadacentral-0.in.applicationinsights",
-                "germanywestcentral-0.in.applicationinsights",
-                "uksouth-0.in.applicationinsights",
-                "eastus2-0.in.applicationinsights",
-                "eastus-1.in.applicationinsights"
+                "qwestflexprod.uksouth.cloudapp"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000969,
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "chatbot.cheshirewestandchester.gov.uk",
+                    "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "efbb5334aea17e1d55d68fa5b8e8e877545ca297969c9e5b3b2747c35ff07d72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheshirewestandchester.gov.uk",
+                "www.cheshirewestandchester.gov.uk"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/chat\\/image\\/no-image\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qwestflexprod.uksouth.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "chatbot.cheshirewestandchester.gov.uk",
+                    "resolved": "qwestflexprod.uksouth.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e8fb62ea64316de3988d9e1e299f125c6c0b8d6701391ad8ca13dde75191e1b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cheshirewestandchester.gov.uk",
+                "www.cheshirewestandchester.gov.uk"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/Chat\\/67668042-a833-4561-9a3c-8bc589fdd7d3\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "glive.northeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "2f06451e2da9bcec5593f0e5f8be5aaf93a584def5560838666f6ddcc0f90a19",
-                "76dc829025cdfa2c12dfaf8863662fc69c15a5a16535f2835bc9c5e0d14942b6",
-                "2d4e6fc4cc086cf99949cb1d9c45ece2336d1a1b457fe7eb3136377bdf285aa2",
-                "202f50229347a82b54f1ea61db1da9cf154cc6c319ac11b6715dadf8b426dcee",
-                "5883cecb5ce5f0c36615a97d0c9cef0ba19c1ea52ecd7486d22a94d2cd2ed06c",
-                "d8b2e6d81fc8696b7f958409739986682dd201580920a45fc8ffe0b803df02e4",
-                "257a956a04c6d4e9bb0c4452c175d5f032370c558d260f946109cfaee680906c",
-                "a0371d4fc59a21c844b13e45055c533e2410c7238808a8378e5f57d13f1db958",
-                "f3c49eee24e94b0a8aa77f5fca67338aeb92f8606f9b87a606a35715f1feea51"
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lausd.net",
-                "dailypass.lausd.net",
-                "ivoterguide.com",
-                "keeptradecut.com",
-                "reservations.com",
-                "www.abeka.com",
-                "www.cineplex.com",
-                "www.computeruniverse.net",
-                "www.interflora.co.uk",
-                "www.larosas.com",
-                "www.nhs.uk",
-                "www.reservations.com",
-                "www.tangeroutlet.com",
-                "www.visitingangels.com"
+                "era.pt",
+                "www.era.pt"
             ]
         },
         {
-            "rule": "azure\\.com\\/\\/v2\\/track",
+            "rule": "azure\\.com\\/ws\\/chat\\/67668042-a833-4561-9a3c-8bc589fdd7d3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "westus2-2.in.applicationinsights",
-                "centralus-0.in.applicationinsights",
-                "centralus-2.in.applicationinsights",
-                "eastus-3.in.applicationinsights",
-                "eastus-8.in.applicationinsights",
-                "canadacentral-0.in.applicationinsights",
-                "germanywestcentral-0.in.applicationinsights",
-                "uksouth-0.in.applicationinsights",
-                "eastus2-0.in.applicationinsights",
-                "eastus-1.in.applicationinsights"
+                "glive.northeurope.cloudapp"
             ],
             "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000969,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
-            "type": "Preflight",
+            "type": "WebSocket",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "lausd.net",
-                "dailypass.lausd.net",
-                "ivoterguide.com",
-                "keeptradecut.com",
-                "reservations.com",
-                "www.abeka.com",
-                "www.cineplex.com",
-                "www.computeruniverse.net",
-                "www.interflora.co.uk",
-                "www.larosas.com",
-                "www.nhs.uk",
-                "www.reservations.com",
-                "www.tangeroutlet.com",
-                "www.visitingangels.com"
+                "era.pt",
+                "www.era.pt"
             ]
         },
         {
-            "rule": "azure\\.com\\/workflows\\/ec610897b5e14f7f9756d9a6f884d700\\/triggers\\/manual\\/paths\\/invoke",
+            "rule": "azure\\.com\\/api\\/Chat\\/67668042-a833-4561-9a3c-8bc589fdd7d3\\/messages",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "prod-18.northcentralus.logic"
+                "glive.northeurope.cloudapp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7bcc211d950d9b79662ad5b8c03babc7ee0226102b0ba40e78864939c63787cb"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eddiebygiddy.com",
-                "education.eddiebygiddy.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/workflows\\/ec610897b5e14f7f9756d9a6f884d700\\/triggers\\/manual\\/paths\\/invoke",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-18.northcentralus.logic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eddiebygiddy.com",
-                "education.eddiebygiddy.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/workflows\\/bd84997466814b1fa9b92132339f3e14\\/triggers\\/manual\\/paths\\/invoke",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-23.centralus.logic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eddiebygiddy.com",
-                "education.eddiebygiddy.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/workflows\\/bd84997466814b1fa9b92132339f3e14\\/triggers\\/manual\\/paths\\/invoke",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "prod-23.centralus.logic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -469,260 +664,37 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eddiebygiddy.com",
-                "education.eddiebygiddy.com"
+                "era.pt",
+                "www.era.pt"
             ]
         },
         {
-            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.gbl\\.min\\.js",
+            "rule": "azure\\.com\\/g\\/collect",
             "cookies": 0,
-            "fingerprinting": 2,
+            "fingerprinting": 0,
             "subdomains": [
-                "js.monitor"
+                "eset-gdd-k8s-nginx-ingress-dev-lb-hostname.northeurope.cloudapp"
             ],
-            "apis": {
-                "Navigator.prototype.onLine": 11,
-                "window.localStorage": 11,
-                "PerformanceTiming.prototype.navigationStart": 11,
-                "Navigator.prototype.userAgent": 11
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "staging.sgtm.eset.com",
+                    "resolved": "eset-gdd-k8s-nginx-ingress-dev-lb-hostname.northeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00003574952453132374
             },
-            "sites": 11,
-            "prevalence": 0.0000761,
-            "cnames": [],
-            "responseHashes": [
-                "982836797757b0abc24e6e98f207852c54acf2373430a758dc14d8856934b724"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "egopowerplus.com",
-                "instantpot.com",
-                "www.corelle.com",
-                "www.instanthome.com",
-                "www.lovethegarden.com",
-                "www.medela.us",
-                "www.omen.com",
-                "www.pyrexhome.com",
-                "www.rainx.com",
-                "www.sanus.com",
-                "www.skil.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/special_announcement",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "d4561e6d5a737be57f8e17576b160e50b7d63382833e366b3932ab3f5380497f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/interface_translation",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "d72e905e0c9e62cf48ac97480d8972994a6099639bde3e474bea9d5191234103"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/emergency_banner",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "0ab42bb7701f2425396469ea3d4d93cb635fa6d50ca9bbc2a311ee0e015ed1cd"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/recommendApi\\/v1\\/popular\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "c28547b75b78bac99ec236835b7d1429325ab011535688bfbf7e8d5bc9433484"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/about_us",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "415565cfa57ac09b79dd03a84931aba7808967f3b540feed6b169764a667d197"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/benefit",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "8e26212ad89f4f68992b69b818983e59f2a7c05b47981eab2978929df1d3c598"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/v1\\/articles",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "benefitsgov-production-v2.eastus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "api.benefits.gov",
-                    "resolved": "benefitsgov-production-v2.eastus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "a624c73299d50470d165389ef547bdc2e0b00d893ec491480728e27e7447402d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "benefits.gov",
-                "www.benefits.gov"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/metasearch\\/home-metasearch\\/targetsystems",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dxf-smart-home-waf.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "services.bosch-smarthome.com",
-                    "resolved": "dxf-smart-home-waf.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "44db21a447b2c8aa3c868727897e7dc27237e766286c3202c23eb0c6be6ca492"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bosch-smarthome.com",
-                "www.bosch-smarthome.com"
+                "eset.com",
+                "www.eset.com"
             ]
         },
         {
@@ -733,28 +705,23 @@
                 "finnet-matomo.westeurope.cloudapp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "analytics.finanzen.ch",
                     "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
-                },
-                {
-                    "original": "analytics.finanzen.at",
-                    "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
                 }
             ],
             "responseHashes": [
-                "0504b67a506ab4b537725084eb6c26f4c1ceeb3349e7c84da8974bec7bde47e1"
+                "f7ad5a6588556d0e3b24f836408a2c220e8b9fe8250af0b13ab3c90ea2730965"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "finanzen.ch",
-                "www.finanzen.ch",
-                "www.finanzen.at"
+                "www.finanzen.ch"
             ]
         },
         {
@@ -765,15 +732,11 @@
                 "finnet-matomo.westeurope.cloudapp"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "analytics.finanzen.ch",
-                    "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
-                },
-                {
-                    "original": "analytics.finanzen.at",
                     "resolved": "finnet-matomo.westeurope.cloudapp.azure.com"
                 }
             ],
@@ -785,39 +748,119 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "finanzen.ch",
-                "www.finanzen.ch",
-                "www.finanzen.at"
+                "www.finanzen.ch"
             ]
         },
         {
-            "rule": "azure\\.com\\/wcs\\/resources\\/store\\/11251\\/usercontext\\/@self\\/contextdata",
-            "cookies": 0.0000138,
+            "rule": "azure\\.com\\/Images\\/620\\/350\\/4\\/3\\/i5a2002-JPG",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "hqv-pwr-proxy.eastus2.cloudapp"
+                "folkeskolen.westeurope.cloudapp"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "shop.husqvarna.com",
-                    "resolved": "hqv-pwr-proxy.eastus2.cloudapp.azure.com"
+                    "original": "backend.folkeskolen.dk",
+                    "resolved": "folkeskolen.westeurope.cloudapp.azure.com"
                 }
             ],
             "responseHashes": [
-                "2114be7815ed62cc30da62fef179a54efcc7be7a333a58d3304702f3dbb60fa7"
+                "d901f07b3cdf7699b4e8ca73311685387df51c0c997c6e81cf62703d57eeb2b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "folkeskolen.dk",
+                "www.folkeskolen.dk"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/media\\/704658\\/vi-tager-ansvar-pressenaevnet-logo-boarder_neg-2_123x91\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "folkeskolen.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "backend.folkeskolen.dk",
+                    "resolved": "folkeskolen.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "96d7b12a143580120ebccb2be87f440dcc46b265fcc43907ab4ed2c634471a31"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "folkeskolen.dk",
+                "www.folkeskolen.dk"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/api\\/model-portfolios",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "is-prod-ag-v2.australiaeast.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "api.investsmart.com.au",
+                    "resolved": "is-prod-ag-v2.australiaeast.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "1642ce1fc65fdd8618526a6ce09eb4cae3bfd6d99dff27fd67a3245e56456db3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "husqvarna.com",
-                "www.husqvarna.com"
+                "investsmart.com.au",
+                "www.investsmart.com.au"
             ]
         },
         {
-            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/teams",
+            "rule": "azure\\.com\\/api\\/affiliate-check\\/1",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "is-prod-ag-v2.australiaeast.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "api.investsmart.com.au",
+                    "resolved": "is-prod-ag-v2.australiaeast.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "0690be28334436a0d9a0a7b53ba330f481322cd350469bfe4a70d4c3fc5c1c2e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "investsmart.com.au",
+                "www.investsmart.com.au"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/digitalassets\\/proximos-partidos",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -825,7 +868,34 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "b62bd99781a98fbcabba29f8e015d6efb6c18609c3fda4e027aa7d009b5cded5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/digitalassets\\/proximos-partidos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -842,7 +912,7 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/teams",
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/digitalassets\\/clasificacion",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -850,7 +920,32 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/digitalassets\\/clasificacion",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -858,7 +953,7 @@
                 }
             ],
             "responseHashes": [
-                "15d61d26665d7ac10a9243102479a78fae808979f488672590233676ceb907f2"
+                "6f3e2a0faf24071116bc83e4c35b7614ec7257f5833a0751be137b08a0ca90f2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -877,7 +972,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "apim.laliga.com",
@@ -885,7 +980,7 @@
                 }
             ],
             "responseHashes": [
-                "88112af90ebe95ad631f3b1f03893448357f65fe242463f36d82c5042c52997c"
+                "1ed4b6bba223e3b11443a45fc1021d8cd88f89c9b11fa0e9c8799d8e74ef3a6e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -893,6 +988,293 @@
             "exampleSites": [
                 "laliga.com",
                 "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/subscriptions\\/laliga-santander-2021\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/subscriptions\\/laliga-santander-2021\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "f86b91e02be59df70f4426759ece9f5ee18ef3c2051a107884d3be1ef0edd2f0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/broadcasters-channels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/broadcasters-channels",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "c4745fe29b22cef23ac5c9a1231607d92fece0b772726f8fc20cac4c4fce2201"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/public-service\\/api\\/v1\\/subscriptions\\/primera-division-femenina-2021\\/standing",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wafweblaliga.westeurope.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apim.laliga.com",
+                    "resolved": "wafweblaliga.westeurope.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "27a63f70c96e9306bfe22de9507830dd1dc0e1d9dda88f79b9c4b8e48085b1e7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laliga.com",
+                "www.laliga.com"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/Events",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/Events",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/Cache\\/Visit",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "e99d3e1c0e113e237eebb50a308c5b428a1cc01f9d5067343a2a88c57dd0999f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/Cache\\/Visit",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/SmartAssets\\/b2707cd073e56e3b61f3425049b4fc42\\/Results",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [
+                "d490ea7a39feeecf8b0021f9782c32b55839fb8789f0a94d6e2661b24ece8abd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "azure\\.com\\/msk-apim\\/external\\/v2\\/cdprp\\/api\\/SmartAssets\\/b2707cd073e56e3b61f3425049b4fc42\\/Results",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-appgw.eastus2.cloudapp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "apigateway.prodapi.azure.mskcc.org",
+                    "resolved": "api-appgw.eastus2.cloudapp.azure.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mskcc.org",
+                "www.mskcc.org"
             ]
         },
         {
@@ -904,7 +1286,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "livechat.niddk.nih.gov",
@@ -931,7 +1313,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "livechat.niddk.nih.gov",
@@ -958,7 +1340,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "livechat.niddk.nih.gov",
@@ -985,7 +1367,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "livechat.niddk.nih.gov",
@@ -1012,7 +1394,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "livechat.niddk.nih.gov",
@@ -1031,525 +1413,6 @@
             ]
         },
         {
-            "rule": "azure\\.com\\/api\\/v1\\.0\\/environment\\/information",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "premera.westus2.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "member-edge.premera.com",
-                    "resolved": "premera.westus2.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "c72fd8fba49730ef8397d94d05701f2e8cc52023fd4675a0a41ec9797901f207"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "premera.com",
-                "www.premera.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/scripts\\/b\\/ai\\.2\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "js.monitor"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f9fa2bbbf048b49dca5b1207cf03a3d5867924372252df0196167810cea88780"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "providence.org",
-                "www.providence.org"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/Engagement\\/init",
-            "cookies": 0.0000138,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ih-cs-web-1.southcentralus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "ci-cartsync.revivalanimal.com",
-                    "resolved": "ih-cs-web-1.southcentralus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "943aade0508a0e8c96d530dc3c2f2d35fd3ba9a32af68784b01af746a71a4d5f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "revivalanimal.com",
-                "www.revivalanimal.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/Engagement\\/TrackEventAsync",
-            "cookies": 0.0000138,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ih-cs-web-1.southcentralus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "ci-cartsync.revivalanimal.com",
-                    "resolved": "ih-cs-web-1.southcentralus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "revivalanimal.com",
-                "www.revivalanimal.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/raselect\\/sitedown\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "pstweb-configuratorwag.centralus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "raselect.rockwellautomation.com",
-                    "resolved": "pstweb-configuratorwag.centralus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "d772d1e9c7800bd1043870811176a5e95a0cf296971e14e8458981ecb35495f9"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "rockwellautomation.com",
-                "www.rockwellautomation.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/favoritingapi\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "waf-msh-prd.westus.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "msh.sheahomes.com",
-                    "resolved": "waf-msh-prd.westus.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "caa4a88e05c11ebfbff5496cef33930164faa7136801653ea408c7e36f1a2917"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sheahomes.com",
-                "www.sheahomes.com"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "81516103b798a18b4d6dc5565c3b379a1ca897c8626f6d1cbe4de131584e2e20"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/config",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/config\\/lang\\/de",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/config\\/lang\\/de",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "08c3527ff15d0cbc49e856368d6e9f260ad48f5d3dcf0e0990a8d91ec9b3339c"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/mixed_assets",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/game",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/asset",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/character",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/mixed_assets",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "3b9bda0046a5f2205b7c36b13f6aeff7e0e170c3090d00b670a28f5e7cf38215"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/game",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "ad452669481d5b75a7adcba59405620f32ef8a0db7325d2d2aa67e65c993b72b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/asset",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/character",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "f6347c55b29a8b83633d67deb85ff3bd2bfc79968a07d5069aedf9d4fbce6701"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/seo\\/home",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
-            "rule": "azure\\.com\\/api\\/assetstore\\/vod\\/seo\\/home",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "production-n-toggo.westeurope.cloudapp"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "production-n.toggo.de",
-                    "resolved": "production-n-toggo.westeurope.cloudapp.azure.com"
-                }
-            ],
-            "responseHashes": [
-                "aa198d1cbfd4a6389a8594d8ecbd5dc4cd35245fc4bfc76de2228ed2122f6936"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toggo.de",
-                "www.toggo.de"
-            ]
-        },
-        {
             "rule": "azure\\.com\\/api\\/v2\\/form\\/welcome_city",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1558,7 +1421,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "crm.welcomepickups.com",
@@ -1566,7 +1429,7 @@
                 }
             ],
             "responseHashes": [
-                "4a420056fd21467f658debd80b8debf59713f8c78c6e95163bf435a144e6d1ec"
+                "ffff1cafd16c004446a8e2301df213e49487395ea40d9b58d91a8a26af317b81"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1579,15 +1442,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000616,
+    "cookies": 0.000636,
     "types": {
-        "Script": 74,
-        "XHR": 49,
-        "Ping": 5,
-        "Preflight": 34,
+        "Script": 76,
+        "XHR": 51,
+        "Preflight": 33,
         "Stylesheet": 6,
-        "Image": 2,
-        "Fetch": 18
+        "Image": 10,
+        "WebSocket": 2,
+        "Ping": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns4-205.azure-dns.info",

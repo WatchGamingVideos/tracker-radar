@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.0000214,
+    "sites": 3,
     "subdomains": [
-        "login"
+        "login",
+        "k244"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -18,39 +19,61 @@
         {
             "rule": "pearson\\.com\\/v1\\/piapi\\/login\\/js\\/v2\\/session\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "login"
             ],
-            "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "c9250dbf7e34bf431152ce7ef05c5d9a44926783b9147a34d689a7489fef9f09"
+                "a45ff057b264c507ddf8a2713fe6ef9e18c1ca0551a5aa010e883dbb36a2b223"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pearsonassessments.com",
-                "www.pearsonassessments.com"
+                "activelearnprimary.co.uk",
+                "www.activelearnprimary.co.uk"
+            ]
+        },
+        {
+            "rule": "pearson\\.com\\/DG\\/DEFAULT\\/rest\\/rpc\\/383",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "k244"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "af48f9563545ac487cddc1261fde15b3f5fd18f25bca2e1424844f56e8f32bb0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "pearsonhighered.com",
+                "www.pearsonhighered.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.00000715,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "ns01.pearson.com",
-        "ns02.pearson.com",
+        "ns04.pearson.com",
         "ns03.pearson.com",
-        "ns04.pearson.com"
+        "ns02.pearson.com",
+        "ns01.pearson.com"
     ]
 }

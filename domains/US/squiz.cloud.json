@@ -7,28 +7,161 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000485,
-    "sites": 7,
+    "prevalence": 0.000186,
+    "sites": 26,
     "subdomains": [
+        "hss-search",
         "uoab-search",
-        "dxp-us-search.funnelback",
+        "dxp-au-search.funnelback",
+        "lgasa-search",
+        "derbyu-new-search",
+        "uom-search",
+        "scsa-web",
+        "eurosc-search01",
         "nswdfsi-search",
-        "mon4-search"
+        "icc-search",
+        "mon4-search",
+        "wds",
+        "saw-dev"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "k10outline.scsa.wa.edu.au",
+            "resolved": "scsa-web.squiz.cloud"
+        },
+        {
+            "original": "search.aci.health.nsw.gov.au",
+            "resolved": "hss-search.squiz.cloud"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion-2\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hss-search",
+                "uoab-search",
+                "dxp-au-search.funnelback",
+                "lgasa-search",
+                "derbyu-new-search"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.00005,
+            "cnames": [
+                {
+                    "original": "search.aci.health.nsw.gov.au",
+                    "resolved": "hss-search.squiz.cloud"
+                }
+            ],
+            "responseHashes": [
+                "eb7af0070671c20b09c9eaf9f2ef45f608caba0f6717afe8f094651192d6c78c",
+                "8415e8c7f73bd81bc6c58ddf25e7f352eaafd6ada546de4c2bc9b8cc7da00ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.abdn.ac.uk",
+                "www.ccc.govt.nz",
+                "www.charlessturt.sa.gov.au",
+                "www.cityofpae.sa.gov.au",
+                "www.derby.ac.uk",
+                "www.endeavourenergy.com.au"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/search\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uom-search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "add5d27ea790a5d2e9b2ddf929c23fa57416e08899a3f7e38110a3619fb47122"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "previousPageUrl": 0.000007149904906264747
+            },
+            "exampleSites": [
+                "unimelb.edu.au",
+                "pursuit.unimelb.edu.au"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/__data\\/assets\\/js_file\\/0017\\/1862\\/jquery-accessibleMegaMenu\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scsa-web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "k10outline.scsa.wa.edu.au",
+                    "resolved": "scsa-web.squiz.cloud"
+                }
+            ],
+            "responseHashes": [
+                "fec6c9d867f273348a217199a7885e307c0e009e0836a9d4630993c5111b8e9b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scsa.wa.edu.au",
+                "senior-secondary.scsa.wa.edu.au"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/_design\\/js\\/common_functions\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scsa-web"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "k10outline.scsa.wa.edu.au",
+                    "resolved": "scsa-web.squiz.cloud"
+                }
+            ],
+            "responseHashes": [
+                "787a529eaba307bb7321d2d3971c5ceee8be24b6eb52383d5e48459a966ba678"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scsa.wa.edu.au",
+                "senior-secondary.scsa.wa.edu.au"
+            ]
+        },
         {
             "rule": "squiz\\.cloud\\/s\\/resources-global\\/css\\/funnelback\\.autocompletion-2\\.6\\.0\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "uoab-search",
-                "dxp-us-search.funnelback"
+                "dxp-au-search.funnelback"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
                 "65c60db819e2bcfdbb09f0b3fcb92d8ca645ad37847cf0ced2ca2cdf980314c0"
@@ -38,8 +171,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abdn.ac.uk",
-                "www.abdn.ac.uk",
-                "www.csn.edu"
+                "www.ccc.govt.nz",
+                "www.endeavourenergy.com.au"
             ]
         },
         {
@@ -47,14 +180,17 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "uoab-search"
+                "uoab-search",
+                "lgasa-search",
+                "derbyu-new-search",
+                "dxp-au-search.funnelback"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Navigator.prototype.userAgent": 2
+                "window.localStorage": 5,
+                "Navigator.prototype.userAgent": 5
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [],
             "responseHashes": [
                 "075c11a06a2a62c26afcdeda6d40a3fb015225bf341ba5ea505f23c5cc5658ba"
@@ -64,32 +200,145 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "abdn.ac.uk",
-                "www.abdn.ac.uk"
+                "www.charlessturt.sa.gov.au",
+                "www.cityofpae.sa.gov.au",
+                "www.derby.ac.uk",
+                "www.endeavourenergy.com.au"
             ]
         },
         {
-            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion-2\\.6\\.0\\.js",
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/thirdparty\\/typeahead-0\\.11\\.1\\/typeahead\\.bundle\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "uoab-search",
-                "dxp-us-search.funnelback"
+                "dxp-au-search.funnelback"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "eb7af0070671c20b09c9eaf9f2ef45f608caba0f6717afe8f094651192d6c78c",
-                "8415e8c7f73bd81bc6c58ddf25e7f352eaafd6ada546de4c2bc9b8cc7da00ddc"
+                "075c11a06a2a62c26afcdeda6d40a3fb015225bf341ba5ea505f23c5cc5658ba"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abdn.ac.uk",
-                "www.abdn.ac.uk",
-                "www.csn.edu"
+                "ccc.govt.nz",
+                "www.ccc.govt.nz"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/thirdparty\\/handlebars-4\\.0\\.5\\/handlebars\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dxp-au-search.funnelback"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "acc39238ce470f35443285594efdb5f3df912924d2818e5929f4df6a9eeadb31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ccc.govt.nz",
+                "www.ccc.govt.nz"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/handlebars-4\\.0\\.5\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "derbyu-new-search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "acc39238ce470f35443285594efdb5f3df912924d2818e5929f4df6a9eeadb31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derby.ac.uk",
+                "www.derby.ac.uk"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources\\/uod-meta\\/_default\\/typeahead\\.config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "derbyu-new-search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "64528fa03c4eeb6f75fe6645673d80bbc24c3bb1bcea742a06f38cd7e59f8a4b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "derby.ac.uk",
+                "www.derby.ac.uk"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/css\\/funnelback\\.autocompletion\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eurosc-search01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "65c60db819e2bcfdbb09f0b3fcb92d8ca645ad37847cf0ced2ca2cdf980314c0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.esc.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eurosc-search01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "eb7af0070671c20b09c9eaf9f2ef45f608caba0f6717afe8f094651192d6c78c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.esc.nsw.gov.au"
             ]
         },
         {
@@ -101,7 +350,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "cdb4a287a3c9cfef55d73d4fdd912fb29ec31bc9271f589a54413586748c0183"
@@ -115,6 +364,28 @@
             ]
         },
         {
+            "rule": "squiz\\.cloud\\/s\\/resources-global\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "icc-search"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "dfee1fe127c3a828a6f88e3ef6e8d1d7f8a3750e6f9d9e24520992a2294696a6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ipswich.qld.gov.au",
+                "www.ipswich.qld.gov.au"
+            ]
+        },
+        {
             "rule": "squiz\\.cloud\\/stencils\\/resources\\/autocompletion\\/js\\/handlebars\\.min-v4\\.0\\.5\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -123,7 +394,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "121c6721805fae5a7c9fb988d9e7ffa92f7daca3102d93fd1c01e89e01bf2cb0"
@@ -148,7 +419,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "456894e2899453bb50d8cdf099140d5bd50be74301e02b9c6d13c26ec42ff97d"
@@ -170,7 +441,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "46d12024754e1d99458ff91f66f73d39ece9a6634fa86f286df0a55512e4d730"
@@ -194,7 +465,7 @@
                 "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "8e95b881702116fa860c3e41ef7ebaac83c3ecf0db026aaae023b46671db74ce"
@@ -216,7 +487,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "3ed144ef1f71b104ac38b066fb2b344f260036cc31420a31b2619d28728827b0"
@@ -228,18 +499,65 @@
                 "monash.edu",
                 "www.monash.edu"
             ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/__data\\/assets\\/image\\/0009\\/608472\\/SAlogo-bg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "82c3ad05e3c4c722e4e0b055d9473566dafc2c02afa65a8fc21e1dccc67c88fc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "premier.sa.gov.au",
+                "www.premier.sa.gov.au"
+            ]
+        },
+        {
+            "rule": "squiz\\.cloud\\/__data\\/assets\\/file\\/0004\\/185863\\/gt-eesti-display-regular-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saw-dev"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "7e66da31338e269ffd4c61a1feea6cb7e7b043396b19e4f50a0088229b447309"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sawater.com.au",
+                "www.sawater.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Stylesheet": 3,
-        "Script": 17
+        "Script": 40,
+        "Fetch": 2,
+        "Stylesheet": 5,
+        "Image": 2,
+        "Font": 2
     },
     "nameservers": [
-        "ns2.squiz.net",
         "ns3.squiz.net",
-        "ns1.squiz.net"
+        "ns1.squiz.net",
+        "ns2.squiz.net"
     ]
 }

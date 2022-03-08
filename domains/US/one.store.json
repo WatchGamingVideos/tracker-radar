@@ -4,24 +4,100 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000143,
+    "sites": 2,
     "subdomains": [
-        "widget-api"
+        "cdn",
+        "widget-api",
+        "interactions"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
+            "rule": "one\\.store\\/javascript\\/dist\\/1\\.0\\/jcr-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "55a54b1c4d437597c4f9b68872a2a239087b5902f8e2f8811ea58f31c10027e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shokz.com",
+                "uk.shokz.com"
+            ]
+        },
+        {
+            "rule": "one\\.store\\/javascript\\/dist\\/1\\.0\\/jcr-widget-app\\.f35d77a2\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e58ffc891734715f20f6766b4651945fc9a4d11c38d088c668817a98ea5c8d7a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "proof-factor-user-3bcea984-e35c-4adf-a518-ec060c5cb49a-all-time-data": {
+                    "ttl": 63072002,
+                    "length": 149,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "pf_stc": {
+                    "ttl": 302,
+                    "length": 1,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 0.5
+                },
+                "proof-factor-user-e8f8afdc-f0c3-4016-b66b-77ec7ae718f7-all-time-data": {
+                    "ttl": 63072002,
+                    "length": 149,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shokz.com",
+                "uk.shokz.com"
+            ]
+        },
+        {
             "rule": "one\\.store\\/v1\\/notifications\\/config",
-            "cookies": 0.0000138,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "widget-api"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "fb0058722ed26a753186c46424d8422430ea74b72a27cf34aec2755e4c1c3317"
@@ -30,16 +106,82 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chastitybox.com",
-                "seedtime.com"
+                "shokz.com",
+                "uk.shokz.com"
+            ]
+        },
+        {
+            "rule": "one\\.store\\/v1\\/analytics\\/visits",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "interactions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shokz.com",
+                "uk.shokz.com"
+            ]
+        },
+        {
+            "rule": "one\\.store\\/v1\\/partners\\/shopify\\/cart_events",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "interactions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shokz.com",
+                "uk.shokz.com"
+            ]
+        },
+        {
+            "rule": "one\\.store\\/v1\\/partners\\/shopify\\/cart_events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "interactions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shokz.com",
+                "uk.shokz.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000208,
+    "cookies": 0.0000143,
     "types": {
-        "XHR": 2
+        "Script": 4,
+        "XHR": 2,
+        "Ping": 2,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "buck.ns.cloudflare.com",

@@ -7,26 +7,21 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000132,
-    "sites": 19,
+    "prevalence": 0.000265,
+    "sites": 37,
     "subdomains": [
-        "search-au",
+        "actgov-search.clients",
         "tga-search.clients",
+        "slnsw-search.clients",
+        "bankwest-search.clients",
         "brookes-search.clients.uk",
         "uc-search.clients",
         "durhamacuk-search.clients.uk",
-        "t4-search.clients.us",
-        "actgov-search.clients",
-        "gonzaga-search.clients.us",
-        "uwyo-search.clients.us",
-        "irmi-search.clients.us",
+        "liverpool-council-search.clients",
+        "mu-search.clients",
         "transurban-search.clients"
     ],
     "cnames": [
-        {
-            "original": "search.asx.com.au",
-            "resolved": "search-au.funnelback.com"
-        },
         {
             "original": "search.brookes.ac.uk",
             "resolved": "brookes-search.clients.uk.funnelback.com"
@@ -40,6 +35,10 @@
             "resolved": "durhamacuk-search.clients.uk.funnelback.com"
         },
         {
+            "original": "search.liverpool.nsw.gov.au",
+            "resolved": "liverpool-council-search.clients.funnelback.com"
+        },
+        {
             "original": "search.tga.gov.au",
             "resolved": "tga-search.clients.funnelback.com"
         },
@@ -51,33 +50,103 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "funnelback\\.com\\/search\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "search-au",
+                "actgov-search.clients",
                 "tga-search.clients"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 12,
+            "prevalence": 0.0000858,
             "cnames": [
                 {
-                    "original": "search.asx.com.au",
-                    "resolved": "search-au.funnelback.com"
+                    "original": "www.search.act.gov.au",
+                    "resolved": "actgov-search.clients.funnelback.com"
                 },
                 {
                     "original": "search.tga.gov.au",
                     "resolved": "tga-search.clients.funnelback.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "dfee1fe127c3a828a6f88e3ef6e8d1d7f8a3750e6f9d9e24520992a2294696a6"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "asx.com.au",
-                "www.tga.gov.au"
+                "act.gov.au",
+                "www.cityservices.act.gov.au",
+                "www.cmtedd.act.gov.au",
+                "www.covid19.act.gov.au",
+                "www.education.act.gov.au",
+                "www.environment.act.gov.au",
+                "www.library.act.gov.au",
+                "www.parks.act.gov.au",
+                "www.parliament.act.gov.au",
+                "www.revenue.act.gov.au",
+                "www.tga.gov.au",
+                "www.transport.act.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\.funnelback-completion\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "actgov-search.clients",
+                "slnsw-search.clients"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000715,
+            "cnames": [
+                {
+                    "original": "www.search.act.gov.au",
+                    "resolved": "actgov-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "cdb4a287a3c9cfef55d73d4fdd912fb29ec31bc9271f589a54413586748c0183"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "act.gov.au",
+                "www.cityservices.act.gov.au",
+                "www.cmtedd.act.gov.au",
+                "www.covid19.act.gov.au",
+                "www.education.act.gov.au",
+                "www.environment.act.gov.au",
+                "www.library.act.gov.au",
+                "www.parliament.act.gov.au",
+                "www.sl.nsw.gov.au",
+                "www.transport.act.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/search\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bankwest-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c07630b8489cf7a58a8b54f684f1e4f3aae0036b7414fe52c1d4f178f9620cf2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bankwest.com.au",
+                "www.bankwest.com.au"
             ]
         },
         {
@@ -90,7 +159,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "search.brookes.ac.uk",
@@ -122,7 +191,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "search.brookes.ac.uk",
@@ -151,11 +220,13 @@
             "subdomains": [
                 "brookes-search.clients.uk",
                 "uc-search.clients",
-                "durhamacuk-search.clients.uk"
+                "durhamacuk-search.clients.uk",
+                "liverpool-council-search.clients",
+                "mu-search.clients"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [
                 {
                     "original": "search.brookes.ac.uk",
@@ -168,6 +239,10 @@
                 {
                     "original": "search.durham.ac.uk",
                     "resolved": "durhamacuk-search.clients.uk.funnelback.com"
+                },
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
                 }
             ],
             "responseHashes": [
@@ -180,7 +255,9 @@
             "exampleSites": [
                 "brookes.ac.uk",
                 "www.canterbury.ac.nz",
-                "www.durham.ac.uk"
+                "www.durham.ac.uk",
+                "www.liverpool.nsw.gov.au",
+                "www.murdoch.edu.au"
             ]
         },
         {
@@ -190,11 +267,11 @@
             "subdomains": [
                 "uc-search.clients",
                 "durhamacuk-search.clients.uk",
-                "t4-search.clients.us"
+                "mu-search.clients"
             ],
             "apis": {},
             "sites": 3,
-            "prevalence": 0.0000208,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "search.canterbury.ac.nz",
@@ -214,67 +291,7 @@
             "exampleSites": [
                 "canterbury.ac.nz",
                 "www.durham.ac.uk",
-                "www.wheaton.edu"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "actgov-search.clients",
-                "tga-search.clients"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [
-                {
-                    "original": "www.search.act.gov.au",
-                    "resolved": "actgov-search.clients.funnelback.com"
-                },
-                {
-                    "original": "search.tga.gov.au",
-                    "resolved": "tga-search.clients.funnelback.com"
-                }
-            ],
-            "responseHashes": [
-                "dfee1fe127c3a828a6f88e3ef6e8d1d7f8a3750e6f9d9e24520992a2294696a6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "act.gov.au",
-                "www.covid19.act.gov.au",
-                "www.tga.gov.au"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\.funnelback-completion\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "actgov-search.clients"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "www.search.act.gov.au",
-                    "resolved": "actgov-search.clients.funnelback.com"
-                }
-            ],
-            "responseHashes": [
-                "cdb4a287a3c9cfef55d73d4fdd912fb29ec31bc9271f589a54413586748c0183"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "act.gov.au",
-                "www.covid19.act.gov.au"
+                "www.murdoch.edu.au"
             ]
         },
         {
@@ -282,11 +299,15 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "durhamacuk-search.clients.uk"
+                "durhamacuk-search.clients.uk",
+                "mu-search.clients"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "search.durham.ac.uk",
@@ -301,7 +322,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "durham.ac.uk",
-                "www.durham.ac.uk"
+                "www.durham.ac.uk",
+                "www.murdoch.edu.au"
             ]
         },
         {
@@ -313,7 +335,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "search.durham.ac.uk",
@@ -332,122 +354,6 @@
             ]
         },
         {
-            "rule": "funnelback\\.com\\/stencils\\/resources\\/autocompletion\\/js\\/typeahead\\.bundle-0\\.11\\.1\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "gonzaga-search.clients.us",
-                "uwyo-search.clients.us",
-                "t4-search.clients.us"
-            ],
-            "apis": {
-                "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "456894e2899453bb50d8cdf099140d5bd50be74301e02b9c6d13c26ec42ff97d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gonzaga.edu",
-                "www.uwyo.edu",
-                "www.wheaton.edu"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources\\/irmi-search\\/funnelback\\.autocompletion\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "irmi-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fe8094b0cd7b635ed750e7745843763d68404819b40169ad9a46a5789fc0b76c"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irmi.com",
-                "www.irmi.com"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources-global\\/css\\/funnelback\\.faceted-navigation\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "irmi-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "dd129a52a380c418307b2e39f46504d2ad5b28d6c09904842a0c791494f001c7"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irmi.com",
-                "www.irmi.com"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources\\/irmi-search\\/_default\\/dropdown-menu\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "irmi-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "1e847ad8461ad676d2503815c6f24f8a69cadc4344a4cac0d29a9fb676d4a7ed"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irmi.com",
-                "www.irmi.com"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources\\/irmi-search\\/_default\\/funnelback\\.autocompletion\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "irmi-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0915cb04e5149d9ade7e728d69916051a25950b7d2980b3de09454bbc67e352c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "irmi.com",
-                "www.irmi.com"
-            ]
-        },
-        {
             "rule": "funnelback\\.com\\/s\\/search\\.html",
             "cookies": 0,
             "fingerprinting": 0,
@@ -456,7 +362,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "d1fa67ba40a34a61dc7f706081c0c4d9a1a69097a55fa1065557390fd9556345"
@@ -470,6 +376,210 @@
             ]
         },
         {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/vendors\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "998059d4f22ded2afc46aa2a1915bd1cdc24491c4293e1aa43f81c54c2df373d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/runtime\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "9c3c80e0cda1f0710c2f4083c813332432f9eebae3a4b23b70e6e1964d036c07"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "e38e5a441635ae5f9a18edfd77d5ee2a97b2f056132df1519e684d87f86cf118"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/stencils\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "3b3cd7108e8e67a642e234bc62bc71c092662b108109296718bfe2b5110002f8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/handlebars-helpers\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.liverpool.nsw.gov.au",
+                    "resolved": "liverpool-council-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [
+                "856e96e28124c0e042904d063bd5cf5b24b524e54656b485e72449824d7ae6b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources\\/liverpool-city-council~sp-search\\/_default\\/js\\/funnelback\\.session-cart-0\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "liverpool-council-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "90001bebd94c32887d8589e4dc01a529f7f225fb64995142814f126ede9d62e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nsw.gov.au",
+                "www.liverpool.nsw.gov.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/s\\/resources-global\\/thirdparty\\/handlebars-4\\.0\\.5\\/handlebars\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "acc39238ce470f35443285594efdb5f3df912924d2818e5929f4df6a9eeadb31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "murdoch.edu.au",
+                "www.murdoch.edu.au"
+            ]
+        },
+        {
+            "rule": "funnelback\\.com\\/search\\/js\\/jquery\\/jquery\\.tmpl\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tga-search.clients"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "search.tga.gov.au",
+                    "resolved": "tga-search.clients.funnelback.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tga.gov.au",
+                "www.tga.gov.au"
+            ]
+        },
+        {
             "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\.funnelback-completion-15\\.12\\.0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -478,7 +588,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "search.tga.gov.au",
@@ -495,104 +605,14 @@
                 "tga.gov.au",
                 "www.tga.gov.au"
             ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources\\/uwyo-search\\/_default\\/js\\/typeahead\\.fb-2\\.6\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "uwyo-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6a19d37db900eb03e63ebb2b6a143e6e5896fac9cf1c65f68274ecaf8d83a1dd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "uwyo.edu",
-                "www.uwyo.edu"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources-global\\/js\\/jquery\\/jquery-1\\.10\\.2\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "t4-search.clients.us"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0ba081f546084bd5097aa8a73c75931d5aa1fc4d6e846e53c21f98e6a1509988"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wheaton.edu",
-                "www.wheaton.edu"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/stencils\\/resources\\/autocompletion\\/js\\/handlebars\\.min-v4\\.0\\.5\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t4-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "121c6721805fae5a7c9fb988d9e7ffa92f7daca3102d93fd1c01e89e01bf2cb0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wheaton.edu",
-                "www.wheaton.edu"
-            ]
-        },
-        {
-            "rule": "funnelback\\.com\\/s\\/resources\\/wheaton-search\\/_default\\/js\\/typeahead\\.fb-2\\.6\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "t4-search.clients.us"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6a19d37db900eb03e63ebb2b6a143e6e5896fac9cf1c65f68274ecaf8d83a1dd"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wheaton.edu",
-                "www.wheaton.edu"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 33,
-        "Stylesheet": 9,
+        "Script": 56,
+        "Stylesheet": 3,
         "Fetch": 2
     },
     "nameservers": [

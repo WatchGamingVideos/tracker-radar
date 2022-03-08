@@ -4,14 +4,44 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000692,
-    "sites": 1,
+    "prevalence": 0.0000143,
+    "sites": 2,
     "subdomains": [
+        "cdn-swisscom",
         "swisscom"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "push\\.delivery\\/bluewin\\/3\\.1\\.2\\/webpush-production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-swisscom"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3451828e75cf4087bc16a1b4185714833a6d85fe359b8c642c47b377c88b20d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluewin.ch",
+                "www.bluewin.ch"
+            ]
+        },
         {
             "rule": "push\\.delivery\\/push-api\\/tags",
             "cookies": 0,
@@ -21,7 +51,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -41,12 +71,56 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "43d5f7dcc49e3f3825a69af96cd6308f97fa7318fa40feeee89e983a275371b8"
+                "1eba3d03ba670b083918bc9b18b77b26393794c2b37dd126969ae8130d5f2c08"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluewin.ch",
+                "www.bluewin.ch"
+            ]
+        },
+        {
+            "rule": "push\\.delivery\\/bluewin\\/images\\/bluenews-logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-swisscom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "fb827177134c9977617e81ddc59a948769622bcdc3d5911913a1c17725ff6299"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluewin.ch",
+                "www.bluewin.ch"
+            ]
+        },
+        {
+            "rule": "push\\.delivery\\/bluewin\\/3\\.1\\.2\\/service-worker-production\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-swisscom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "0d552b31ee1f7232b5f9678ff0b00dbbc6bd7e3b2884c8172cbec196ba91ed1c"
+            ],
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -59,13 +133,16 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Script": 2,
         "Preflight": 2,
-        "Fetch": 2
+        "Fetch": 2,
+        "Image": 2,
+        "Other": 2
     },
     "nameservers": [
-        "nsa4.schlundtech.de",
+        "nsd4.schlundtech.de",
         "nsb4.schlundtech.de",
-        "nsc4.schlundtech.de",
-        "nsd4.schlundtech.de"
+        "nsa4.schlundtech.de",
+        "nsc4.schlundtech.de"
     ]
 }

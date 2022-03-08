@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000208,
-    "sites": 30,
+    "prevalence": 0.000186,
+    "sites": 26,
     "subdomains": [
-        "rum"
+        "rum",
+        "rumcollector"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,10 +21,10 @@
                 "rum"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 15
+                "Navigator.prototype.userAgent": 11
             },
-            "sites": 17,
-            "prevalence": 0.000118,
+            "sites": 14,
+            "prevalence": 0.0001,
             "cnames": [],
             "responseHashes": [
                 "9081ab408728b06cbe245cf9fb674a8f2605800db4d1f20dc992579135c8c00b"
@@ -32,22 +33,19 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "migros.ch",
-                "liquidspace.com",
+                "iceland.co.uk",
                 "uktvplay.uktv.co.uk",
                 "understandsolar.com",
                 "www.altontowers.com",
-                "www.costadelmar.com",
-                "www.goldengoose.com",
                 "www.iceland.co.uk",
+                "www.learndirect.com",
                 "www.lucidmotors.com",
-                "www.migros.ch",
                 "www.peekyou.com",
                 "www.pocsports.com",
+                "www.rtbf.be",
                 "www.storyblocks.com",
                 "www.supersmart.com",
                 "www.thingiverse.com",
-                "www.traeger.com",
                 "www.zeiss.com"
             ]
         },
@@ -59,33 +57,78 @@
                 "rum"
             ],
             "apis": {},
-            "sites": 16,
-            "prevalence": 0.000111,
+            "sites": 13,
+            "prevalence": 0.0000929,
             "cnames": [],
             "responseHashes": [
-                "e8dc051cac81ea5e30899600db6c085894f31a248ab46ace77d3b1756d58e730",
-                "80e5bed8abe6565cca6546c035015b5aa7f5989e9beff4736d47a8052793f7c7"
+                "80e5bed8abe6565cca6546c035015b5aa7f5989e9beff4736d47a8052793f7c7",
+                "e8dc051cac81ea5e30899600db6c085894f31a248ab46ace77d3b1756d58e730"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "migros.ch",
+                "iceland.co.uk",
                 "uktvplay.uktv.co.uk",
                 "understandsolar.com",
                 "www.altontowers.com",
-                "www.costadelmar.com",
-                "www.goldengoose.com",
                 "www.iceland.co.uk",
+                "www.learndirect.com",
                 "www.lucidmotors.com",
-                "www.migros.ch",
                 "www.peekyou.com",
                 "www.pocsports.com",
-                "www.storyblocks.com",
+                "www.rtbf.be",
                 "www.supersmart.com",
                 "www.thingiverse.com",
-                "www.traeger.com",
                 "www.zeiss.com"
+            ]
+        },
+        {
+            "rule": "uptime\\.com\\/static\\/rum\\/compiled\\/v2\\/rum\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rum"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ab702a62e73ff196073861620ce2b53af71602bce93208f313bbea067ccd9ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pocsports.com",
+                "www.pocsports.com"
+            ]
+        },
+        {
+            "rule": "uptime\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rumcollector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "d64ffeec5a038011098e529ed98bf311addbcb556173b00966049018620b34cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pocsports.com",
+                "www.pocsports.com"
             ]
         }
     ],
@@ -93,8 +136,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 17,
-        "XHR": 16
+        "Script": 16,
+        "XHR": 15
     },
     "nameservers": [
         "ns-650.awsdns-17.net",

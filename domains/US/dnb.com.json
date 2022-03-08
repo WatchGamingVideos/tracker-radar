@@ -7,24 +7,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
+    "prevalence": 0.0000429,
     "sites": 6,
     "subdomains": [
-        "dunsregistered"
+        "dunsregistered",
+        "exponea-api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "dnb\\.com\\/",
-            "cookies": 0.0000208,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "dunsregistered"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "22b06ee018d71ee1e55b249beadbe4b0aa4be216e7070d65d60273c72809f6b3"
@@ -34,40 +35,147 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brobank.ru",
-                "www.alliedmarketresearch.com",
-                "www.vinmec.com"
+                "www.alliedmarketresearch.com"
             ]
         },
         {
             "rule": "dnb\\.com\\/SealAuthentication\\.aspx",
-            "cookies": 0.0000208,
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "dunsregistered"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [
-                "ab1e67f8912193df40cef854a54cb8d3ae8f8ab0f863c63f2d8999b0d9671d26"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brobank.ru",
-                "www.alliedmarketresearch.com",
-                "www.vinmec.com"
+                "www.alliedmarketresearch.com"
+            ]
+        },
+        {
+            "rule": "dnb\\.com\\/js\\/exponea\\.min\\.js",
+            "cookies": 0.0000143,
+            "fingerprinting": 2,
+            "subdomains": [
+                "exponea-api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "ec3b3d7426eab2a68e4bd434219ffe4ac026c5eb47101ac7a4404590d93f73a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__exponea_etc__": {
+                    "ttl": 94608002,
+                    "length": 36,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                },
+                "__exponea_time2__": {
+                    "ttl": 3602,
+                    "length": 20,
+                    "prevalence": 0.000014299809812529493,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnb.co.uk",
+                "www.dnb.co.uk"
+            ]
+        },
+        {
+            "rule": "dnb\\.com\\/webxp\\/projects\\/faae5396-48ae-11ec-b7e8-26d23021b1b2\\/bundle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exponea-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8f67c220208e587be331014d68e4b9a493ac5a964d1b78782e4fcb4a51474393"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnb.co.uk",
+                "www.dnb.co.uk"
+            ]
+        },
+        {
+            "rule": "dnb\\.com\\/bulk",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exponea-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "8f6ddf61fb7e361f6e03ee1866ae851160f8263438b3ef3ead18c3973cf211fc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnb.co.uk",
+                "www.dnb.co.uk"
+            ]
+        },
+        {
+            "rule": "dnb\\.com\\/managed-tags\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "exponea-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "9ecc155c1a20b00b0ed06cb25a949c26ede5f170e02ec814bc6d9b444cc65d2d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnb.co.uk",
+                "www.dnb.co.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000415,
+    "cookies": 0.0000429,
     "types": {
-        "Script": 3,
-        "Document": 3
+        "Script": 4,
+        "Document": 2,
+        "Fetch": 6
     },
     "nameservers": [
         "a13-66.akam.net",

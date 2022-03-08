@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000138,
-    "sites": 2,
+    "prevalence": 0.00005,
+    "sites": 7,
     "subdomains": [
-        "wording-api"
+        "wording-api",
+        "cpe-search-api",
+        "csxd"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "groupepvcp\\.com\\/v1\\/wording\\/page",
@@ -20,18 +22,70 @@
                 "wording-api"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 4,
+            "prevalence": 0.0000286,
             "cnames": [],
             "responseHashes": [
-                "528833d47e0eac94de17afd769c0d8d6a0d1c6c3587cbca5832d49b28479ec98"
+                "8721ac3f4ee2616384a91562a85bdcad9f2afd69ed75baa1ea589a97a171902b",
+                "3a3a765a8e82d0025f53558c4cc5e59f3a079cb24cd01cfc1403e67a9583b781",
+                "769cdfe1585e6d6f2bd43ea28b8d72166275a13b94b630aa7e526feea4fd15b2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "centerparcs.de",
-                "www.centerparcs.de"
+                "centerparcs.be",
+                "www.centerparcs.be",
+                "www.centerparcs.eu",
+                "www.centerparcs.nl"
+            ]
+        },
+        {
+            "rule": "groupepvcp\\.com\\/v1\\/search\\/results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cpe-search-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "b70e2487401f2546c4a97a7d5f6d50caa4320d534e9b31d54003267d3ff607a3",
+                "4f041fb1674ed5c969f81625130504670cd01bb0f0cd3a13710f5e7cae9882c9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "domainVisited": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "centerparcs.eu",
+                "www.centerparcs.eu",
+                "www.centerparcs.nl"
+            ]
+        },
+        {
+            "rule": "groupepvcp\\.com\\/xdframe-1\\.0\\.0\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "csxd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "01c5f3d7746282875c8967061c478f1170c9fceb13eb94ccf785f8d0f48cd7a3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pierreetvacances.com",
+                "www.pierreetvacances.com"
             ]
         }
     ],
@@ -39,7 +93,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Fetch": 4,
+        "XHR": 3,
+        "Document": 2
     },
     "nameservers": [
         "ns-89.awsdns-11.com",

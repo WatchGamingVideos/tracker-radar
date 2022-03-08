@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000415,
-    "sites": 6,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
-        "bridge"
+        "bridge",
+        "rinkeby",
+        "arb1"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,8 +22,8 @@
                 "bridge"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 6,
+            "prevalence": 0.0000429,
             "cnames": [],
             "responseHashes": [
                 "2e27ad6b4b9f2f7a6247547b42393b75f25b68d05e3b6d9214b57017cf4be055"
@@ -30,10 +32,56 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "uniswap.org",
-                "app.uniswap.org",
+                "sushi.com",
                 "app.sushi.com",
-                "saitamatoken.com"
+                "app.uniswap.org",
+                "hedron.pro",
+                "hex.com",
+                "kyberswap.com"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rinkeby",
+                "arb1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "376d4470dde46ad2a1f502b037bf8e2bb49d97e233cfed9fa4f2afda86c27ab0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kyberswap.com",
+                "yearn.finance"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rinkeby",
+                "arb1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kyberswap.com",
+                "yearn.finance"
             ]
         }
     ],
@@ -41,10 +89,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4
+        "Fetch": 8,
+        "Preflight": 2
     },
     "nameservers": [
-        "arya.ns.cloudflare.com",
-        "james.ns.cloudflare.com"
+        "james.ns.cloudflare.com",
+        "arya.ns.cloudflare.com"
     ]
 }

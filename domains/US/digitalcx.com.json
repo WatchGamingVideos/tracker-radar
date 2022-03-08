@@ -7,10 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
-        "congstar-congstar"
+        "talkmobile-talkmobile",
+        "congstar-congstar",
+        "plusnet-pn",
+        "amc-development",
+        "asr-ditzozorg2"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -20,21 +24,86 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
+                "talkmobile-talkmobile",
                 "congstar-congstar"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "983825d46c9f22270283c5eb5bda47497e135c754cc49b76ff299853e1475cc7"
+                "844c04e438e01233c757dc644b90139f6c37d0b5b0cff044ea15bf91bf8bc9bc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "congstar.de",
+                "talkmobile.co.uk",
                 "www.congstar.de"
+            ]
+        },
+        {
+            "rule": "digitalcx\\.com\\/classifications\\/3\\/categories",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plusnet-pn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "plus.net",
+                "webmail.plus.net"
+            ]
+        },
+        {
+            "rule": "digitalcx\\.com\\/event\\/onload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "amc-development"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "6eeeb56d6a919cd7d9fc0de3c1a2eb0e046aa916b398d62b2cc46e7094324610"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amc.nl",
+                "www.amc.nl"
+            ]
+        },
+        {
+            "rule": "digitalcx\\.com\\/classifications\\/65\\/categories\\/257\\/faqs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "asr-ditzozorg2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "c7cc297d028992fed5c2e45cb32cd13ca889712589ace00cd11cf07aeda6cc5b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ditzo.nl",
+                "www.ditzo.nl"
             ]
         }
     ],
@@ -42,7 +111,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 6,
+        "XHR": 2
     },
     "nameservers": [
         "norm.ns.cloudflare.com",

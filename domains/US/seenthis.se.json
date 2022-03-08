@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
         "video"
     ],
@@ -13,23 +13,29 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "seenthis\\.se\\/public\\/tag-loader\\.js",
+            "rule": "seenthis\\.se\\/v2\\/player\\/75\\/player\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "video"
             ],
-            "apis": {},
+            "apis": {
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "0f7068a3a75ffa63182b6abf83959f2e19176f4bb3f6ec829daa899fbebb6de0"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "techwalla.com",
-                "www.techwalla.com"
+                "dn.no",
+                "www.nettavisen.no"
             ]
         }
     ],
@@ -40,9 +46,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-606.awsdns-11.net",
-        "ns-1662.awsdns-15.co.uk",
+        "ns-1228.awsdns-25.org",
         "ns-415.awsdns-51.com",
-        "ns-1228.awsdns-25.org"
+        "ns-606.awsdns-11.net",
+        "ns-1662.awsdns-15.co.uk"
     ]
 }

@@ -4,60 +4,187 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000277,
+    "prevalence": 0.0000286,
     "sites": 4,
     "subdomains": [
-        "socket"
+        "socket",
+        "socket-assets"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "thescv\\.team\\/assets\\/journey-sockets\\.js",
-            "cookies": 0.00000692,
+            "cookies": 0.0000143,
             "fingerprinting": 1,
             "subdomains": [
                 "socket"
             ],
             "apis": {
                 "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.doNotTrack": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 1
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "825d0fc849dadebfbf7530e50f81d828727b68052ac1e615478e7b0b652dd722"
+            ],
             "type": "Script",
             "firstPartyCookies": {
                 "cd-visitor": {
                     "ttl": 86400,
                     "length": 36,
-                    "prevalence": 0.000006922043941134938,
+                    "prevalence": 0.000014299809812529493,
                     "uniqueness": 1
                 },
                 "cd-session": {
                     "ttl": 1800,
                     "length": 36,
-                    "prevalence": 0.000006922043941134938,
+                    "prevalence": 0.000007149904906264747,
+                    "uniqueness": 1
+                },
+                "cd-bts-session": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000007149904906264747,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ao.com",
-                "www.ao.de"
+                "www.bootskitchenappliances.com"
+            ]
+        },
+        {
+            "rule": "thescv\\.team\\/assets\\/hub\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socket-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "5307bd76e189422a498abc70ea6e83428a8f3e1b90dda7cbdec6919b96daef32"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ao.com",
+                "www.bootskitchenappliances.com"
+            ]
+        },
+        {
+            "rule": "thescv\\.team\\/assets\\/hub\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f009cd1dec3834b9d0ab07a9109b130f97a7188ad764b200b7ae48fc6d5be71d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ao.com",
+                "www.bootskitchenappliances.com"
+            ]
+        },
+        {
+            "rule": "thescv\\.team\\/assets\\/936\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "86ffdbcdf7e041a3f607c93d2c3d70fe40f147ddcffd5e407ab5f2902062c39a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ao.com",
+                "www.bootskitchenappliances.com"
+            ]
+        },
+        {
+            "rule": "thescv\\.team\\/assets\\/sockets\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e008e7bdf7cc1b8347285b326be57f32371a9e03c55fdc96f17d62d88abe0263"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ao.com",
+                "www.bootskitchenappliances.com"
+            ]
+        },
+        {
+            "rule": "thescv\\.team\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ao.com",
+                "www.bootskitchenappliances.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000138,
+    "cookies": 0.0000286,
     "types": {
-        "Script": 2
+        "Script": 8,
+        "Document": 2,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns-12.awsdns-01.com",

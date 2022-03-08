@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000572,
+    "sites": 8,
     "subdomains": [
         "v2",
         "abm2"
@@ -24,20 +24,21 @@
                 "v2"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.mimeTypes": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mimeTypes": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "5afe8ccd22affa1a750c851d2f3de3a544227800f7b517c47f078eb9be3a06a9"
+                "b7916c8a0b782df103da1877c280acf1d4966d9937c86aa16413cb9ddf40edf0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "splunk.com",
+                "community.splunk.com",
                 "www.splunk.com"
             ]
         },
@@ -50,9 +51,11 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "54c92804a5f97113030e5307876352f27f1623775916b78311a3131a6bf89fab"
+            ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -60,14 +63,127 @@
                 "splunk.com",
                 "www.splunk.com"
             ]
+        },
+        {
+            "rule": "listenloop\\.com\\/loop\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "v2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "005946d9cd8483176238b355bb2aaa06465d91b77232be4e90a205b36e8d9088"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartbear.com",
+                "www.altexsoft.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/organizations\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "92ca505f4f6f8ca27e4427ed1807ae206a478d7930831cd1650f488a5c3e6e59"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartbear.com",
+                "www.altexsoft.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/retargeting_segments",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "1cddcd88d3332d560856627ab2cecc7d9aa6c9d616729701ae13902d1671d0b0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartbear.com",
+                "www.altexsoft.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/page_views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e8f6f2cf6a8032581ae7e9bb48ec60195ca085a62f824878813f12692d7ffc93"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartbear.com",
+                "www.altexsoft.com"
+            ]
+        },
+        {
+            "rule": "listenloop\\.com\\/api\\/v1\\/public\\/page_views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abm2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartbear.com",
+                "www.altexsoft.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Fetch": 2
+        "Script": 5,
+        "Fetch": 4,
+        "XHR": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "cloe.ns.cloudflare.com",

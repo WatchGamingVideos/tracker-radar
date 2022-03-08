@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000692,
-    "sites": 1,
+    "prevalence": 0.0000214,
+    "sites": 3,
     "subdomains": [
         "chat"
     ],
@@ -13,20 +13,151 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "eircom\\.ie\\/server\\/resources\\/chatTemplatesEirBB\\.html",
-            "cookies": 0.0000138,
+            "rule": "eircom\\.ie\\/server\\/resources\\/js\\/build\\/GPE\\.min\\.js",
+            "cookies": 0.0000214,
+            "fingerprinting": 2,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "window.name": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.language": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.appName": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "5f5fb745acd77788a30ab4067ba1bb69dc4985792181ce48c4da7c6f68c0b54b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 1,
+                    "length": 9,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 0.3333333333333333
+                },
+                "genesys.tracker.serverAlias": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 0.6666666666666666
+                },
+                "genesys.tracker.globalVisitID": {
+                    "ttl": 94608004,
+                    "length": 36,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 1
+                },
+                "genesys.tracker.visitID": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00002144971471879424,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gomo.ie",
+                "home.eir.ie",
+                "www.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/data\\/category\\/info",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "0a388fdeaa54f569b419f77e9974c22211c7c925681b16bb05108e7f551527e1",
+                "c80fdf3f8aa3481c95ae4c03f7fd100549af59afe8f47eae5142b1f1c5d2369c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gomo.ie",
+                "home.eir.ie",
+                "www.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/resources\\/dsl\\/domain-model\\.xml",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "16ca5750fb7d352ce3a44efe47b6a9d623b67b7d67a8617396a02fca5c7eef19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gomo.ie",
+                "home.eir.ie",
+                "www.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/cometd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "genesys.tracker.serverAlias": 0.00002144971471879424
+            },
+            "exampleSites": [
+                "gomo.ie",
+                "home.eir.ie",
+                "www.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/resources\\/css\\/chatTemplatesEir\\.css",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "chat"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "589c5104e5a6af32fb02ef5a3ff59c13e7ab010e2904047292a38b3c1c5dca65"
+                "c93d4dbb7ae942f69cdc1fdad30df01a6f14220f9f75e37505348dcce39ab5a1"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -35,15 +166,39 @@
             ]
         },
         {
-            "rule": "eircom\\.ie\\/server\\/data\\/wm\\/event\\/caf237aa-9dcd-4c7c-af6c-032cc304c052\\/06339ee5-4eb0-4ac1-87d9-5db0a258e9bc",
-            "cookies": 0.0000138,
+            "rule": "eircom\\.ie\\/server\\/resources\\/chatTemplatesEirBB\\.html",
+            "cookies": 0.0000214,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
+            "responseHashes": [
+                "54f62eec5432a326a99df73ab708aa4f2a3383601109ea5308b852c126fdd488",
+                "e11523bc0eef792110029c60d3ea253bd46757ca37878a96da9e61238242b126"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eir.ie",
+                "home.eir.ie",
+                "www.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/data\\/wm\\/event\\/0bc104c5-f629-4cb9-b397-b57716cfa77c\\/6b8140fc-952c-4a81-b5c3-d29aa02a68ae",
+            "cookies": 0.0000143,
             "fingerprinting": 0,
             "subdomains": [
                 "chat"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -51,9 +206,35 @@
             "type": "Ping",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "genesys.tracker.serverAlias": 0.000013844087882269877,
-                "genesys.tracker.globalVisitID": 0.000013844087882269877,
-                "genesys.tracker.visitID": 0.000013844087882269877
+                "genesys.tracker.serverAlias": 0.000014299809812529493,
+                "genesys.tracker.globalVisitID": 0.000014299809812529493,
+                "genesys.tracker.visitID": 0.000014299809812529493
+            },
+            "exampleSites": [
+                "eir.ie",
+                "home.eir.ie"
+            ]
+        },
+        {
+            "rule": "eircom\\.ie\\/server\\/data\\/wm\\/event\\/7636499f-1d06-43c5-ac74-841ecbe8b7e1\\/b170ac5d-98d7-461a-9dc4-5b21cb582a95",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "genesys.tracker.serverAlias": 0.000014299809812529493,
+                "genesys.tracker.globalVisitID": 0.000014299809812529493,
+                "genesys.tracker.visitID": 0.000014299809812529493
             },
             "exampleSites": [
                 "eir.ie",
@@ -63,14 +244,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000692,
+    "cookies": 0.0000214,
     "types": {
-        "Script": 2,
-        "Ping": 2
+        "Script": 12,
+        "WebSocket": 3,
+        "Stylesheet": 2,
+        "Ping": 4
     },
     "nameservers": [
         "ns.eircom.ie",
-        "ns3.eircom.ie",
-        "ns1.eircom.ie"
+        "ns1.eircom.ie",
+        "ns3.eircom.ie"
     ]
 }

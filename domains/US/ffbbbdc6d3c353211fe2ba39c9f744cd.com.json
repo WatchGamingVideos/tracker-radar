@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
-        "static"
+        "static",
+        "sentry",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -21,7 +23,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
                 "15b4943424e02e93d2b024afb015f7c226d7ea0a3de500838774483a50e2cce4"
@@ -33,13 +35,77 @@
                 "bybit.com",
                 "learn.bybit.com"
             ]
+        },
+        {
+            "rule": "ffbbbdc6d3c353211fe2ba39c9f744cd\\.com\\/api\\/25\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bybit.com",
+                "www.bybit.com"
+            ]
+        },
+        {
+            "rule": "ffbbbdc6d3c353211fe2ba39c9f744cd\\.com\\/p\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bybit.com",
+                "www.bybit.com"
+            ]
+        },
+        {
+            "rule": "ffbbbdc6d3c353211fe2ba39c9f744cd\\.com\\/p\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bybit.com",
+                "www.bybit.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Fetch": 4,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-292.awsdns-36.com",

@@ -7,22 +7,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000173,
-    "sites": 25,
+    "prevalence": 0.0000715,
+    "sites": 10,
     "subdomains": [
+        "cdn",
         "highwebmedia-cname-realtime",
-        "turing-group-rest",
-        "rest",
-        "mentimeter-cname-realtime",
-        "turing-group-realtime",
         "realtime",
-        "cdn"
+        "rest",
+        "pubnub"
     ],
     "cnames": [
-        {
-            "original": "realtime.ably.mentimeter.com",
-            "resolved": "mentimeter-cname-realtime.ably.io"
-        },
         {
             "original": "realtime.pa.highwebmedia.com",
             "resolved": "highwebmedia-cname-realtime.ably.io"
@@ -31,127 +25,30 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ably\\.io\\/keys\\/KSKw2g\\.L36ISg\\/requestToken",
+            "rule": "ably\\.io\\/lib\\/ably\\.min-1\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "highwebmedia-cname-realtime"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000214,
+            "cnames": [],
             "responseHashes": [
-                "412c26def485b8b693199a755e3e57bde7180cd14a5de75497c3aea55bb283b8",
-                "b55c6b366405272759026b910cefedb3fb25e73db674f747bc0b774450b9f51b",
-                "df513486e7f1bead1a3b2d042c2d1060e3716c09839ae1a10b21328bba458682",
-                "5898032d4e54f5546ad4b4d09e041dff20720d1ac6b1cea5e474468dbd9bc9bc",
-                "dd61237a04bacca79e5b5acdf997e15b9b7d24da78709d427a2407d401c841f1",
-                "de14c90768961a6c8385518f0f7a5daa0daf710f1ad72246d4a2b23a73cd9a8d",
-                "666c2fd0a476a6856408b24beb6a3618a172663125d2174999d59a90271a9b2d"
+                "830ee125557a3a3b1dc6f5ca7ffaf2ddb843263badc9c633757c1c25b00b77ea"
             ],
-            "type": "XHR",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com",
-                "es.chaturbate.com",
-                "fr.chaturbate.com",
-                "it.chaturbate.com",
-                "m.chaturbate.com",
-                "nl.chaturbate.com",
-                "pt.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/keys\\/KSKw2g\\.L36ISg\\/requestToken",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com",
-                "es.chaturbate.com",
-                "fr.chaturbate.com",
-                "it.chaturbate.com",
-                "m.chaturbate.com",
-                "nl.chaturbate.com",
-                "pt.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/connect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime",
-                "turing-group-rest",
-                "rest",
-                "mentimeter-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000831,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                },
-                {
-                    "original": "realtime.ably.mentimeter.com",
-                    "resolved": "mentimeter-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "5e515d37c0ac64288e465e57a57883f7964babff95331c831b601d8055fcb421",
-                "68a364931a7f78f4e37344a47020b2c3fa04d577fb2bc85b22368cfb12f2040d",
-                "90ec4c630aaf7d4a6b4df9b575d1563a5ad2bb176f12c65b22dd718d85b19967",
-                "70403b578c1c8daa0571baabdc6848497d6ddfa78aa44b2f714566d79a573e0c",
-                "3a5162dbab2995bb679793c3c0e498b530529a875e19da12cf34656eac4cb177",
-                "e052985ad6d8d1076ffe987195a6e26a3f5d4b900198aab2b071ef1846e54ff0",
-                "bfab3b0399e21d41d81b5bce4cd87504999de50adb7d3625fb33ea307c555dbe",
-                "ab5e247e3c27fdc7fb238ac6cac0bf293d6937c24297de744ec0fd0158c1b981",
-                "6ff602d86a4a76704cc56d887dd085980d591d525d943dfc6299680c94c8b3e3",
-                "0c58cbc959d297a8d76bedeb90567c9f5375d2628fd135130edfbcf00f44fc52",
-                "d966c3060475752431815d2cdab99542528f341a78377d8d53c906edfee623b4"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com",
-                "es.chaturbate.com",
-                "fr.chaturbate.com",
-                "it.chaturbate.com",
-                "m.chaturbate.com",
-                "nl.chaturbate.com",
-                "pt.chaturbate.com",
-                "ridertools.metrarail.com",
-                "www.codewars.com",
-                "www.mentimeter.com",
-                "www.rokfin.com"
+                "annonces.nc",
+                "www.beatstars.com",
+                "www.elmundo.es"
             ]
         },
         {
@@ -160,12 +57,11 @@
             "fingerprinting": 0,
             "subdomains": [
                 "highwebmedia-cname-realtime",
-                "turing-group-realtime",
                 "realtime"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000761,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
                     "original": "realtime.pa.highwebmedia.com",
@@ -178,644 +74,36 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chaturbate.com",
-                "de.chaturbate.com",
-                "es.chaturbate.com",
-                "fr.chaturbate.com",
-                "it.chaturbate.com",
-                "m.chaturbate.com",
-                "nl.chaturbate.com",
-                "pt.chaturbate.com",
-                "ridertools.metrarail.com",
                 "www.codewars.com",
                 "www.rokfin.com"
             ]
         },
         {
-            "rule": "ably\\.io\\/comet\\/e7dNVnaUwB7FnB!MV2WWbsuUXw4hPg5-2e8e0e7dNVnaUwB7FnB\\/recv",
+            "rule": "ably\\.io\\/comet\\/connect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "highwebmedia-cname-realtime"
+                "rest"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d1KP9kQB7ECr!OcFoZpBnqEG4LNh7-868eae7d1KP9kQB7ECr\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d1KP9kQB7ECr!OcFoZpBnqEG4LNh7-868eae7d1KP9kQB7ECr\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d1KP9kQB7ECr!OcFoZpBnqEG4LNh7-868eae7d1KP9kQB7ECr\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "13ce1628e9d9ec0024025e32555b4bf881efc50d81659af512ddf46b62cc94e9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "de.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d_tt9uAB7GSD!6soFXvTtlAzn92Wh-2442e7d_tt9uAB7GSD\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "es.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dTzlBgwB7GSV!uG2hbPEu6kzmCghT-1bc6e7dTzlBgwB7GSV\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "es.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dl6ge6gB7Fo8!YUfGeMSLLoFfblbW-37c42e7dl6ge6gB7Fo8\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "fr.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dpwglfgB7GSU!eCzPMbiONoqsWKft-82a2e7dpwglfgB7GSU\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "fr.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dpwglfgB7GSU!eCzPMbiONoqsWKft-82a2e7dpwglfgB7GSU\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "fr.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dpwglfgB7GSU!eCzPMbiONoqsWKft-82a2e7dpwglfgB7GSU\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "eafed2bdec719a1a317c9135df3d31c816897fbd3d753570ba8d10a64fd602cf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "fr.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d4mM6eAB7ED3!KRY1a92wSZ1GYTRV-92d8be7d4mM6eAB7ED3\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "it.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dpvzOigB7ESG!2U2TfpEYXGl25uks-8617de7dpvzOigB7ESG\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "it.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7d9x1sRQB7EiE!DkaSWArX0-zUrBLe-7ba4ee7d9x1sRQB7EiE\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "m.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dC64bnQB7Fo1!wvwHbJW9Fgw6kWf9-41d33e7dC64bnQB7Fo1\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "m.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dZYnWbQB7Fo2!GkOAofq5EEgyBYVw-499b4e7dZYnWbQB7Fo2\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "nl.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7di1jSEQB7ED9!o7cnArxNFxv4rBll-9c876e7di1jSEQB7ED9\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "nl.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7di1jSEQB7ED9!o7cnArxNFxv4rBll-9c876e7di1jSEQB7ED9\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "nl.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7di1jSEQB7ED9!o7cnArxNFxv4rBll-9c876e7di1jSEQB7ED9\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [
-                "8f245ef6bc44c29a6e4ff3b8a8cf22a637675cebfd9b151453aefcfcf44a0cc9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "nl.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/86flbTsogB7ErZ!-QSWqYSFvXyol0oB-92b5686flbTsogB7ErZ\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "pt.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/86f3Jl9IAB7EEp!cWF_512ABPQFiYDt-b9cbb86f3Jl9IAB7EEp\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "highwebmedia-cname-realtime"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [
-                {
-                    "original": "realtime.pa.highwebmedia.com",
-                    "resolved": "highwebmedia-cname-realtime.ably.io"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chaturbate.com",
-                "pt.chaturbate.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/lib\\/ably\\.min-1\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "window.sessionStorage": 3,
-                "window.localStorage": 3
-            },
-            "sites": 4,
-            "prevalence": 0.0000277,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "830ee125557a3a3b1dc6f5ca7ffaf2ddb843263badc9c633757c1c25b00b77ea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metrarail.com",
-                "ridertools.metrarail.com",
-                "www.beatstars.com",
-                "www.elmundo.es"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dOXulsQB7FkL!C2EI4J6xSGwCyUwN-4f5abe7dOXulsQB7FkL\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "turing-group-rest"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metrarail.com",
-                "ridertools.metrarail.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dveuWFQB7FoP!A7iNAIEZoLGbK498-48ee0e7dveuWFQB7FoP\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "turing-group-rest"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metrarail.com",
-                "ridertools.metrarail.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dveuWFQB7FoP!A7iNAIEZoLGbK498-48ee0e7dveuWFQB7FoP\\/send",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "turing-group-rest"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+                "49a4e3cd56c741e87aa16cb6d62dfa96114104df4b60f9a654b3da1dc2cca71d",
+                "5c42584b46a38bb4574604deeef6dcf3f30aec0a1a3dcd28c5d92944585dd337"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "metrarail.com",
-                "ridertools.metrarail.com"
+                "codewars.com",
+                "www.codewars.com",
+                "www.rokfin.com"
             ]
         },
         {
-            "rule": "ably\\.io\\/comet\\/e7dveuWFQB7FoP!A7iNAIEZoLGbK498-48ee0e7dveuWFQB7FoP\\/recv",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "turing-group-rest"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "76fb00b028d7195cdfb7fe683a78392aaeac5a4bec067413202d03fdb6c98f5c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "metrarail.com",
-                "ridertools.metrarail.com"
-            ]
-        },
-        {
-            "rule": "ably\\.io\\/comet\\/e7dMNocXAB7Ftv!kWYG3LE9mJYpHile-78cdce7dMNocXAB7Ftv\\/recv",
+            "rule": "ably\\.io\\/comet\\/e7dnrvkzgB8hoR!3Ii-qH9yI0Cc6Y8m-ad2d3e7dnrvkzgB8hoR\\/recv",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -823,10 +111,10 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "2e6bd86f8e1ccd4eb6608ee8915f70a4bc8c1f210dc4a8672d7bff6d6cbdd784"
+                "ac7f77ce75867d8f2e3fbcde41f074ff76d7bd515c6ab84d83c0908b2fddcc7c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -835,16 +123,37 @@
                 "codewars.com",
                 "www.codewars.com"
             ]
+        },
+        {
+            "rule": "ably\\.io\\/time\\/0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pubnub"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e1a956da1e93e77c6fa0c6d75b2dfce7f8761c535ec84e22a3cb7b4e8d8efcfa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homestay.com",
+                "www.homestay.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 62,
-        "Preflight": 16,
-        "WebSocket": 11,
-        "Script": 4
+        "Script": 3,
+        "WebSocket": 3,
+        "XHR": 7
     },
     "nameservers": [
         "ns-1050.awsdns-03.org",

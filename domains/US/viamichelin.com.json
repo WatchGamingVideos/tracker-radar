@@ -7,50 +7,67 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000104,
-    "sites": 15,
+    "prevalence": 0.000136,
+    "sites": 19,
     "subdomains": [
+        "map",
         "vmrest",
         "map2",
         "map1",
         "partner",
-        "www"
+        "affrest"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "viamichelin\\.com\\/apir\\/1\\/MapBoxCatalog\\.json2",
+            "rule": "viamichelin\\.com\\/map\\/mapsgene\\/dm\\/mapdirect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "map"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "f9883b706f5c0ba33df39dd9e79fe01372a7af1edbb146ff08765f1981624c6b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atseuromaster.co.uk",
+                "centre.atseuromaster.co.uk"
+            ]
+        },
+        {
+            "rule": "viamichelin\\.com\\/apir\\/1\\/geocode1f\\.json2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "vmrest"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [],
             "responseHashes": [
-                "936eaa9333e6776f7b6fe4f14e6ba094d9c322dbc91c56e399350de64100492d",
-                "74434d851adaed694a0aad86ba42438ae033809c8603ace92454e8745d9a359e",
-                "200e28846c90532f0286e74f5ec6860d9dc53476c6e58a23f71c5dfce9b2a0da",
-                "438c2f1ff2948917a4776c2719fd0e5ad8821d1799eb5c7f86d53dcec22e2c8e",
-                "6dd5637ef9cc91b07c59c993a8ce330ec255520b4667807851d6833b1bc093f2",
-                "34bf31246e121c0fdb5c182d342ee28d96ef24f30ee3efde0b7a3bb891513c43"
+                "ac6aa6284fd9b80fc1eae4b8e64c06e3a178b3cb5258babad22ab7721901d277",
+                "d5616fe991191892c0b7400e29d4dcd9eccbcad68a44b77b80893367bab3b404",
+                "83f823d22bffd4e8900b80a58da5efa762fa2374ed07ddfc5be8daf6a23a1e9b",
+                "e7c8a337e5b83e461562217453eee834500033ee76111012176876aa0bb9721c"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "viamichelin.be",
-                "nl.viamichelin.be",
-                "www.viamichelin.at",
-                "www.viamichelin.co.uk",
+                "fr.viamichelin.be",
                 "www.viamichelin.de",
                 "www.viamichelin.es",
-                "www.viamichelin.fr",
-                "www.viamichelin.it",
-                "www.viamichelin.nl"
+                "www.viamichelin.fr"
             ]
         },
         {
@@ -62,8 +79,8 @@
                 "map1"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
+            "sites": 10,
+            "prevalence": 0.0000715,
             "cnames": [],
             "responseHashes": [
                 "7f830b8954edb2f39f3726cba46f92a6057a6c06f79a760ff538beeff63d7bbd",
@@ -74,14 +91,62 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "viamichelin.be",
+                "fr.viamichelin.be",
                 "nl.viamichelin.be",
-                "www.viamichelin.at",
                 "www.viamichelin.co.uk",
-                "www.viamichelin.de",
                 "www.viamichelin.es",
+                "www.viamichelin.de",
                 "www.viamichelin.fr",
                 "www.viamichelin.it",
-                "www.viamichelin.nl"
+                "www.viamichelin.nl",
+                "www.viamichelin.pt"
+            ]
+        },
+        {
+            "rule": "viamichelin\\.com\\/apir\\/11\\/iti\\.json\\/fra\\/geom",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vmrest"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "cd28b5eda2ea1b72f408970f6a9c9808eadf4a073f6ef10489daacf12cb0b900"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viamichelin.be",
+                "www.viamichelin.fr"
+            ]
+        },
+        {
+            "rule": "viamichelin\\.com\\/api\\/roadsheet\\/3\\/partners",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partner"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000286,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "d067354258f527dccd4d82e2f2e42b75baa7c80f95afcae558e92fe29cce29df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viamichelin.be",
+                "www.viamichelin.de",
+                "www.viamichelin.es",
+                "www.viamichelin.fr"
             ]
         },
         {
@@ -92,170 +157,78 @@
                 "partner"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
+            "sites": 9,
+            "prevalence": 0.0000643,
             "cnames": [],
             "responseHashes": [
-                "d4fe37419e64b9c4dec800c3571bfa552d66221aa437b8c2e1ee99ea512ae97a",
-                "ea642e8cef832647a07234fae6722cf4e24a8eb28c27c8e116ed504551e2d33a",
-                "a0efc9bb51190b25c881c8f712a17780b149f719a0b5457d8ae2f9ac3a03eeda",
-                "7d3b04ccaa45e9b5327bc7ae4820ba15743d0dce962c3c676d5dc7b6462b1478",
-                "5be17491f3ee445e6fbe765031d1370d1f9923799de0ff5652c50ec85deac5c1",
-                "94c5225d0a0cfe0b8d9a7f392be6494d71e2cebfbf329e370b27be5910d14418"
+                "a5967be638fe15937b2d02147cf15dd0c3eb2a1d6f4c30c2cc5808d40fcb535a",
+                "71052284348aa8318996392379f82ec447f69f7351e9dbca7bdef96b1515a8c0",
+                "dacbbf6a47b66c5d3b490b2519544a39a6f89cdf45fecca6697de5ae9528ad71",
+                "ac101a6edfcda552b9d65c0f5c6494b780487c51101f0fe77c5a2dadb95c8317",
+                "5486e009a2de37a678314f141b873df4486392465249693ecf1b66379c519490",
+                "8b24cd1fc6d5bac9548f5047577efcf36e32a637fb68492ed7e3b5158699afef",
+                "ef404e17f195c06a4a9cb45da73ce0c0e954dba21da98f7b696b63bf8b9c97c3",
+                "1a9470a55821e046190b167c6c58a2041a672a3a24df44aa0aa12323b9e30f8d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "viamichelin.be",
-                "www.viamichelin.at",
+                "nl.viamichelin.be",
                 "www.viamichelin.co.uk",
                 "www.viamichelin.de",
                 "www.viamichelin.es",
                 "www.viamichelin.fr",
-                "www.viamichelin.it"
+                "www.viamichelin.it",
+                "www.viamichelin.nl",
+                "www.viamichelin.pt"
             ]
         },
         {
-            "rule": "viamichelin\\.com\\/apir\\/1\\/POD\\.json2\\/1\\.824190898977463:51\\.498520000000894:7\\.1540791010200735:49\\.50728000000106",
+            "rule": "viamichelin\\.com\\/map\\/carte",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vmrest"
+                "map"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [],
             "responseHashes": [
-                "ef24e18fac382c54b8775b31be796a6671d74d01d564b2173fced4e462e4b262"
+                "79a9a0a3905df0d380b5b7764db4c1d9da11d52486d172c036370c1d04c30dc6",
+                "de5c9d1232d1d24d28bfb48a42cdf23a6b35b0420619728da46d7003f227f963"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "viamichelin.be",
-                "nl.viamichelin.be"
+                "www.viamichelin.it",
+                "www.viamichelin.nl"
             ]
         },
         {
-            "rule": "viamichelin\\.com\\/apir\\/1\\/POD\\.json2\\/-180\\.00000000000037:72\\.052257373754:180\\.0000000000016:-72\\.05225737375437",
+            "rule": "viamichelin\\.com\\/apiw\\/poi\\/geocluster\\/parking",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "vmrest"
+                "affrest"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
+            "sites": 2,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "7d21028b55858ab1e31bc7f0f6b98d0ed59174d8017b25520c0c6163c0b57d87"
+                "c7c4fcc38c09d82bc09e892150b2d87fca88cc09b1122f954b5c22765ea9d5e7"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "viamichelin.at",
-                "www.viamichelin.co.uk",
-                "www.viamichelin.de",
-                "www.viamichelin.es",
-                "www.viamichelin.fr",
-                "www.viamichelin.it"
-            ]
-        },
-        {
-            "rule": "viamichelin\\.com\\/magazine\\/wp-content\\/uploads\\/2021\\/02\\/LocVoiture_pushedito_fevrier2017-logos-V2\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "f860491342fe1da6bf2fc1473cf84310a3db332a52be105e6062df960c9e5531"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "viamichelin.de",
-                "www.viamichelin.es",
-                "www.viamichelin.fr",
-                "www.viamichelin.it"
-            ]
-        },
-        {
-            "rule": "viamichelin\\.com\\/magazine\\/wp-content\\/uploads\\/2021\\/10\\/DT_Verglas\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000277,
-            "cnames": [],
-            "responseHashes": [
-                "5d2356a30c306af465d7f01e9f81c6e057045664bb4946c17cb7df4387a143b2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "viamichelin.de",
-                "www.viamichelin.es",
-                "www.viamichelin.fr",
-                "www.viamichelin.it"
-            ]
-        },
-        {
-            "rule": "viamichelin\\.com\\/magazine\\/wp-content\\/uploads\\/2021\\/08\\/PushOK_MaitriseBudget\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "d5727adcf6e06e6c7730d1e143bb68a8de7c23ebb64d1674564bd4cffaeaf498"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "viamichelin.de",
-                "www.viamichelin.es",
-                "www.viamichelin.it"
-            ]
-        },
-        {
-            "rule": "viamichelin\\.com\\/magazine\\/wp-content\\/uploads\\/2021\\/05\\/PushOK_ecomobile\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "5bdc7cb0c07a4be215e98feca1deba2c63096c994a89260c6ed96fadd0e35481"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "viamichelin.de",
-                "www.viamichelin.es",
-                "www.viamichelin.it"
+                "viamichelin.co.uk",
+                "www.viamichelin.co.uk"
             ]
         }
     ],
@@ -263,13 +236,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 18,
-        "XHR": 7,
-        "Script": 8,
-        "Image": 14
+        "Image": 5,
+        "Script": 7,
+        "Fetch": 10,
+        "XHR": 15
     },
     "nameservers": [
-        "pdns2.cscdns.net",
-        "pdns1.cscdns.net"
+        "pdns1.cscdns.net",
+        "pdns2.cscdns.net"
     ]
 }

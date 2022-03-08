@@ -7,19 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000125,
-    "sites": 18,
+    "prevalence": 0.00005,
+    "sites": 7,
     "subdomains": [
-        "eu1-prod",
         "us1-prod",
-        "eu2-prod",
-        "eu3-prod",
-        "us1-prod-images",
-        "eu1-prod-images"
+        "eu3-prod"
     ],
     "cnames": [
         {
-            "original": "eu3-prod-direct.eurosport.com",
+            "original": "disco-api-prod.globalcyclingnetwork.com",
+            "resolved": "us1-prod.disco-api.com"
+        },
+        {
+            "original": "eu3-prod-direct.eurosport.co.uk",
+            "resolved": "eu3-prod.disco-api.com"
+        },
+        {
+            "original": "eu3-prod-direct.eurosport.fr",
             "resolved": "eu3-prod.disco-api.com"
         },
         {
@@ -29,71 +33,64 @@
         {
             "original": "us1-prod-direct.discoveryplus.com",
             "resolved": "us1-prod.disco-api.com"
-        },
-        {
-            "original": "us1-prod-direct.go.discovery.com",
-            "resolved": "us1-prod.disco-api.com"
-        },
-        {
-            "original": "us1-prod-direct.investigationdiscovery.com",
-            "resolved": "us1-prod.disco-api.com"
-        },
-        {
-            "original": "us1-prod-direct.tlc.com",
-            "resolved": "us1-prod.disco-api.com"
-        },
-        {
-            "original": "us1-prod-direct.watch.foodnetwork.com",
-            "resolved": "us1-prod.disco-api.com"
-        },
-        {
-            "original": "us1-prod-direct.watch.hgtv.com",
-            "resolved": "us1-prod.disco-api.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
         {
             "rule": "disco-api\\.com\\/token",
+            "cookies": 0.0000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us1-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "disco-api-prod.globalcyclingnetwork.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
+            ],
+            "responseHashes": [
+                "a03d6165360af1df0a2f14eaba39b95660df0bd22b73be0d2e4753c819e2518f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globalcyclingnetwork.com",
+                "racepass.globalcyclingnetwork.com"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/token",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod",
                 "us1-prod",
-                "eu2-prod",
                 "eu3-prod"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000761,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [
                 {
-                    "original": "us1-prod-direct.go.discovery.com",
+                    "original": "disco-api-prod.globalcyclingnetwork.com",
                     "resolved": "us1-prod.disco-api.com"
                 },
                 {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
+                    "original": "eu3-prod-direct.eurosport.fr",
+                    "resolved": "eu3-prod.disco-api.com"
                 },
                 {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosport.com",
+                    "original": "eu3-prod-direct.eurosport.co.uk",
                     "resolved": "eu3-prod.disco-api.com"
                 },
                 {
                     "original": "eu3-prod-direct.eurosportplayer.com",
                     "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -101,89 +98,38 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dmax.de",
-                "go.discovery.com",
-                "nove.tv",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.eurosport.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tele5.de",
-                "www.tlc.com"
+                "globalcyclingnetwork.com",
+                "racepass.globalcyclingnetwork.com",
+                "www.eurosport.fr",
+                "www.eurosport.co.uk",
+                "www.eurosportplayer.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/token",
-            "cookies": 0.00000692,
+            "rule": "disco-api\\.com\\/users\\/me",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod",
-                "eu2-prod"
+                "us1-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "disco-api-prod.globalcyclingnetwork.com",
+                    "resolved": "us1-prod.disco-api.com"
+                }
+            ],
             "responseHashes": [
-                "1087f7a5afe0fb84444c2a82c5fa043e46b1a82675ded1bfd5ee2f02852d8e71",
-                "9df102c2271a44909d67f3bfd95dcccda97c5784a42b1189d244fc35cac65f57"
+                "902cc82ad9f334d572d8b541fb53fe67fe35b4529e9f72b04b71080d00f8d42c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "dmax.de",
-                "nove.tv",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/playback\\/v3\\/videoPlaybackInfo",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod",
-                "eu2-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dmax.de",
-                "nove.tv",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/playback\\/v3\\/videoPlaybackInfo",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod",
-                "eu2-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "1e83c45527eeed748630899a3bebe582169f79ac4a8d0bc113fe58ee165648a6",
-                "9c62ad876cba86d21682c26e49d0d1bc308043f3bdf4fc4b8b5314b474faf0a9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dmax.de",
-                "nove.tv",
-                "www.tele5.de"
+                "globalcyclingnetwork.com",
+                "racepass.globalcyclingnetwork.com"
             ]
         },
         {
@@ -195,32 +141,16 @@
                 "eu3-prod"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
+            "sites": 3,
+            "prevalence": 0.0000214,
             "cnames": [
                 {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
+                    "original": "disco-api-prod.globalcyclingnetwork.com",
                     "resolved": "us1-prod.disco-api.com"
                 },
                 {
                     "original": "eu3-prod-direct.eurosportplayer.com",
                     "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
                 }
             ],
             "responseHashes": [],
@@ -228,1866 +158,59 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/users\\/me",
-            "cookies": 0.00000692,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu3-prod"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000623,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.discoveryplus.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosportplayer.com",
-                    "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "0a628bbd880e05461430e9a9e82e62dc8e8b31fcbf8eb275a54ee70dcfc0babd",
-                "a3809f1c00baf1c761f3449bff7f3d712229d2457230e90a04d2e10bb3079fc9",
-                "e85aca59510b4b90b0faa28af98cab3cdd5de00750a35e4eb9f8c1d053765dba",
-                "46abd89d8668a3fcef16b00af2457862b3b5207d01f39b8e3f9d6c15367c7a8d",
-                "0ab517d79e5e67ae7e3ca40c9d0a32387dd5a7068c91dee85b49382b6e5e3ebb",
-                "06590346ce77977b075734a97fba7ed8d4e37bae9c6b7294a6b713b2f5cb8dcb",
-                "b6cc0335631f59b6626681074a63f2d0904ac6da700f05cd57aeee170ee534d1",
-                "bd4b7b94b3bb400b08bb6116ec202dfd2a01834d958e03fde7ad1e0823b3eea6"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.discoveryplus.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
+                "globalcyclingnetwork.com",
+                "racepass.globalcyclingnetwork.com",
+                "www.eurosportplayer.com"
             ]
         },
         {
             "rule": "disco-api\\.com\\/token",
-            "cookies": 0.0000692,
+            "cookies": 0.0000357,
             "fingerprinting": 0,
             "subdomains": [
                 "us1-prod",
                 "eu3-prod"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000692,
+            "sites": 5,
+            "prevalence": 0.0000357,
             "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
                 {
                     "original": "us1-prod-direct.discoveryplus.com",
                     "resolved": "us1-prod.disco-api.com"
                 },
                 {
-                    "original": "eu3-prod-direct.eurosport.com",
+                    "original": "eu3-prod-direct.eurosport.fr",
+                    "resolved": "eu3-prod.disco-api.com"
+                },
+                {
+                    "original": "eu3-prod-direct.eurosport.co.uk",
                     "resolved": "eu3-prod.disco-api.com"
                 },
                 {
                     "original": "eu3-prod-direct.eurosportplayer.com",
                     "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
                 }
             ],
             "responseHashes": [
-                "81ead77c60c7dc051a06a85c8853d13743c9846c6091f4450cd0014601e3fe74",
-                "8c31e8c08300e79dee7695ca2841892a6cd1250ebec62cd4dcc0c87adeb99e76",
-                "4169f2f74cd02b69f16d2adcb0548fbd1241615e9be115005da9087420a19291",
-                "4bc5d4b961cac84f261cb18512b34f39f1059a672d207339117fcee1fe40df91",
-                "1425f7aab31c4e6cf1dbc30eaa05386ff9364738c22d39be2590d6e6999604fb",
-                "bc91358e483b279a83272e1366a7ad6fdfcf5fa1aca4676b5a20bb33889ac7f3",
-                "82a97895c832a637c6ffbb03fa43571b72ce45e3da721ef516083814e2d38087",
-                "bbee7651e0508fad5cce5daac2bd12a2209601d7b9a930333d1fc8d08460692b",
-                "e29ef1d9e7c55572d6d2b6efeb3190f7674f93c37223ca24597a86559deb066b"
+                "1fe8d1323e9960af2507664facad1ee2454adf061ebae250767d3dd04b4b717a",
+                "29aca3aaba6005080edd0a1ee8882a15652efcc77b5970bbaa7f25325e8ca07d",
+                "17f4cce9c6a4f6c61c72d1e28f0a21a2f2327b9782b2446468403ed416554750",
+                "fdd8e3ed8e42464ada792a11af4ba54f86dc764f049857e56b0dba301ec01890"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
+                "discoveryplus.com",
                 "www.discoveryplus.com",
-                "www.eurosport.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
+                "www.eurosport.fr",
+                "www.eurosport.co.uk",
+                "www.eurosportplayer.com"
             ]
         },
         {
-            "rule": "disco-api\\.com\\/users\\/me\\/partners",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "accfa01bfb5c211f98893652237b3e5dbe773cde980ed856e1d77c29dee62351",
-                "0f32235a28ed3e830a5a323246960fcdc754cbd7e94e4d46a4fef232e01cadd5",
-                "b73ecce52affa3bb34e01c7d384a0aea046e199e82ab72b035fc076140fc5ec7",
-                "6c269470961b5c89b75f48330d9acc3f99434bab0310a4c2f81c9bf10072c8d6",
-                "e27d7707dffb78c80c370d00d4ecffd1e27652b2043fec2473d30b98a70bc454"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/users\\/me\\/partners",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/configs\\/paws-desktop-mobile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "a2f7722d4fc57d00658068dd2cef46a217ef7869460f26236c73f2fe9eaff2d6",
-                "dc68eeaec06179044fb7cc8809bd73331642086abebce21a54a4fe17e0e4ce1a",
-                "d5ca5f2c455f033624ddbdbd79d026a97eda2eb351ed75a67eca0278f84dba6d",
-                "20782e242cd31ae43c63b880d39ba419829a4097afa6ebbd40138e803dae295c",
-                "f1391c3d273feae1dba4fe495b2efa7d3347b54d4359831606b386b1927e4948"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/configs\\/paws-desktop-mobile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/web-menubar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/web-footer",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu3-prod"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosportplayer.com",
-                    "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/routes\\/home",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu3-prod"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosportplayer.com",
-                    "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/web-menubar",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "5a943fc2cd4e4498eb92638a2b19ae4b30062d42d345bb0e85363358b92e75d9",
-                "1eb3e90232c3de93fbd0335469e3b08a01f9148cf2c9d05465e29f04227759f3",
-                "a5478443a3641c2424dd265d30e13137ddb249ab9d78804e6a45e5b9717919c0",
-                "d211de69d078f6d0ac439666aa1efcd21a2ae9c5d605843fb3d01bcc3632ab00",
-                "91555aa8d0ba7ba607c629a7c3dfb458a09753fbaa5a6a27cce61274a0612f09"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/web-footer",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu3-prod"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000554,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosportplayer.com",
-                    "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "507a8f4bdea28c7c4402c13fa7cc403566be167c9f47edacea6e5b44ac14b8a9",
-                "77d1f767c70e89ee1e6f7f251a7e5ba7a36d92d73a06ef8bccd71700a4de425e",
-                "9d703a8eb23e5c6d71eca71b006f2bc5efdc29bc8e0ce953cbdb06ec5d679a5d",
-                "62610908ccd91ece39fdad42d2388b6cd9ef9a1b943571b662b7db2fa99ee6f9",
-                "f170a06cc2b7bde1bfd088f3c2944d391db43cf6b5682dbb5f041c6fadc3226a",
-                "3770b50db67a373e3c0e1ede0df984b4ae9d6b1bf7e51e44aa4112fb3c4fa8e2"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/routes\\/home",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod",
-                "eu3-prod"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000415,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "eu3-prod-direct.eurosportplayer.com",
-                    "resolved": "eu3-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "f277cf16c65f56eda4b5c12b1393a378e1084536e6dbc4b69465f13799361115",
-                "958a2dc6f436f48f521b54c10951e303437bdbdf6f83d79df83bb418a2299dc1",
-                "ca4d7c5b0c37e804de0ab886112f62aab2dbe13147a086c9508231839f27270e",
-                "2b4b9b9aa85a7aeeed22028232ad8ace664d9b41de9825892f25229a6dd941cf",
-                "90c259d9e13905e210e1de2a2b83c82183de61aefbbcec8c4a4c62573b7b500b"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.eurosportplayer.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/7\\/13\\/668669e9-a081-4c16-ab9c-d445167acedf\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "45fcce101ee914b0bd262810cc2e43ac0e90e67cfcc06d4c659bbdb3af8d71c3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/2e81d212-1135-4dd8-8495-e1aeec8835ee\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "80accbc0e37e0a745402170ed95d0500bb8701c6597fdeb202e7b9796d05d949"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/c6bc37db-81b7-4531-8415-7eede84d7523\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "b2f9c5fc5a896cda2f4812c4034ef3ffd4289733d458ad34d5971004faa2223e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/90f0e87e-2072-4b05-a848-429016aed299\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "734811a4bb547533fd9cdc6da496e431e3578123b5e0dc62f66e29ee14166a96"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/b9e46a92-1ff4-4b2f-aac8-98421f77e4a9\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "020cf80a74994160a23b7beb613c9dae81d8d33f7c0c8089f5c972ddc9944a1f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/58d16343-7e1f-4534-aedb-20dc65babbc5\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "4c1f1a436663e292456c43f2de763c4b9c8425e0b440e04c7619daf101d38c3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/17ebade7-0657-478b-960e-4aa2d8cf1260\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "916a41e906699beccf9563d42f906381c911927b59cdf12dc8120f1e532f5d1e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/11\\/4ba56c40-0afd-404d-b70f-4cf352466ee0\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "9007b3b33490cdc72502f8b24a375b0008ea4111b928a72629e0651f83675803"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/11\\/9ec5f1ef-752f-440f-9428-729c5f32e54b\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000208,
-            "cnames": [],
-            "responseHashes": [
-                "587740707952142ea751f99fae04901a8c96afce470602693b929623c29400d4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "www.discovery.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/events\\/v1",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/events\\/v1",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000485,
-            "cnames": [
-                {
-                    "original": "us1-prod-direct.go.discovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.foodnetwork.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.watch.hgtv.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.investigationdiscovery.com",
-                    "resolved": "us1-prod.disco-api.com"
-                },
-                {
-                    "original": "us1-prod-direct.tlc.com",
-                    "resolved": "us1-prod.disco-api.com"
-                }
-            ],
-            "responseHashes": [
-                "c40f4000b8398f38d2f5a26ed00e2cb34d4880d3317caf1ddd86cb82a05ab9b5"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discovery.com",
-                "go.discovery.com",
-                "watch.foodnetwork.com",
-                "watch.hgtv.com",
-                "www.discovery.com",
-                "www.investigationdiscovery.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/7\\/13\\/f1c77479-5dfb-4c59-b3ff-11cadbb1bd42\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "398ffb92b4317b9409845565992f3e5a89308b2bbab0416544055245c0c029c5"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/200ccf92-c917-4c63-8e3c-b0b2a48e3bea\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "80accbc0e37e0a745402170ed95d0500bb8701c6597fdeb202e7b9796d05d949"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/c247b49f-dea6-427b-9dcd-0a7e4ff46419\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b2f9c5fc5a896cda2f4812c4034ef3ffd4289733d458ad34d5971004faa2223e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/22c4e0da-6edb-4b19-8208-beeccec7f335\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "734811a4bb547533fd9cdc6da496e431e3578123b5e0dc62f66e29ee14166a96"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/8723ff80-1765-4443-a5f4-173423097d72\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "020cf80a74994160a23b7beb613c9dae81d8d33f7c0c8089f5c972ddc9944a1f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/32869150-da8e-4156-9dbb-081dba7b0d67\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4c1f1a436663e292456c43f2de763c4b9c8425e0b440e04c7619daf101d38c3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/189b88f0-fb4c-4025-88c4-d140f07b248c\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9007b3b33490cdc72502f8b24a375b0008ea4111b928a72629e0651f83675803"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/19b88e28-c214-4eb2-b808-32d6afa5bacd\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "916a41e906699beccf9563d42f906381c911927b59cdf12dc8120f1e532f5d1e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/5\\/10\\/99f61959-5c6e-4941-908e-e415c9c96111\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "587740707952142ea751f99fae04901a8c96afce470602693b929623c29400d4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/23\\/d21ae1b1-ea6c-4f24-a9b8-21ffa96e382e\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d2dbb7aecba034c7940b94d092813e96741505b9ccc67e7be69e7c299c98e04c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/1385c9bc-2088-4948-ae0a-2d4cb1dbfd72\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "6154b396dc42dc1dd5e7542d5972d55741d7fb2a47ee8de9a373c13acf709da6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/a7d93453-b637-42c6-91f2-dc6831894422\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "439d6f9032c9600597e9538b5ebcf6ff703efb95f2d1fbca33ab8eb23af028cd"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/c3b6c389-f1b6-48df-a1e8-a5eb1e8295b4\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "03f8a66ca9a9dcbe081d93d315f8486af7315e7632891b54b702652b9788bdb0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/c0122117-d5ab-406c-94d6-fa4daa0a425d\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a5e3b9335f218dd0ebf45bd1537799cb8b521974f43941801595fbf02b4cf071"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/9a78c8b3-9141-4d51-8fbf-3386a797f9ca\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "856a97c8caecde70e7e0d04ea89cf5a761a67c686cacd036a80265d68c003170"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/d2258f43-f8fa-4334-9aa3-5b4dc24161c7\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "967f3b86cf4b9584ead83282e9c731b44e128b5fde86c7a13a72d4243561eee4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/e14d9371-40d2-4fb3-94ff-34e43e333198\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "08843a8a10c5605dde5a3c50f91eac64c268929f2ec8a12f5fbd7d3244447f6b"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/e1565701-4b39-43c1-b251-39b6f353e31d\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d7518a90cb1b58e7d62ded9b7a1fb28f5c7c0d854bdc30655f44667b7561fb2c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/31\\/0785e0d1-b41d-39d7-abd5-6353294d7d69\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "77e9013948118b2e31bde12da91143623da492babd104526716fe2871441237a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/31\\/f7397152-b7bf-39b3-abe1-53108b98ef8e\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "24a458262232995c2f047df0ce6aa3e9d50d87efbfe5f5a5eff485370f650b3a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/31\\/1f5d7fb2-edc3-3102-8e94-5613fedccecd\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b22a8310f90d1d5194a0a7aabff7c52fbf535be63ff059a90c7f1978dc9d8798"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/1\\/5\\/496f98ce-1ee4-4012-86da-3e27f55a45a8\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f687bb901ed91c6309c977c0e561028e3285a847cbcb160a1f45da0e5f8b0913"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/1\\/5\\/8cb31c2c-70ff-4e70-8ee7-6d4181aff725\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "427b73129003150f2d3841502510cbcf59d836a8883d0dfe80a97c854828eeef"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/02\\/26\\/9cd590a9-fa43-39f6-a293-7e1f393308e2\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a464dc2661912dcb81dd861251b2907c50bed4029b2e186c7693df01cc6a559f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/11\\/30\\/c0cb60ee-a39a-3b02-b90d-be01542de231\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "d44b51f13efb5f66368afb6664250b7ad00ade09c228781398c0498031de8aac"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/06\\/17\\/84d2442a-4870-34f2-8035-709dd052563d\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "3a3e3a9ad437e82f7c3edd61444c8205bb262cb6847613a64d3fca05fcb18a64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/03\\/24\\/4801b54f-cfd1-35c2-b229-541d9bd783f3\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "aaedd04124b8b7bbc73ac090eb913e28a2d551346113bf649c5d3f5588cd2bfc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/07\\/07\\/e2c86e7b-ff50-3ade-8872-6e3f84a6c8a9\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "2b3fa020c0a9800f028c348a9366c9e84d85521d42fba8f1bd17da149ab70d24"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/25\\/25770765-298c-370b-b833-a42cb1911c42\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5f6edd987cf39a411b00225bf628248ba60a5a7080e1d21d4eac324aa725b60e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/20\\/96a76169-a0e1-3423-a8a9-7380c05121d5\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "61c7b499fa5a414090274774eeaac7ce9f833b8dab3eefe4cda3dea4601b0549"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/03\\/26\\/4f6cdd98-fb02-3d31-9442-51e1ca9a5545\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "a9542d67927b4efaeaaa4394dfb6801808277b3e951d30f805d9b607350a3b94"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/09\\/84f2a65a-4c23-32e9-ad6d-4ad866211e44\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "f9f1ab35256086661fbe0990a3e49e2e7d904512ffa63acc0c12c269d3c9a14d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/04\\/30\\/e4718ed4-2766-3a22-9d97-9d14ac3eeee9\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "020c8a06b62beb82ffb88ef4e2ab42a489d0baa2e856ca75de922d81d3acbde8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/06\\/28\\/48862efd-1fc9-308e-8064-ac8a41959bdf\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "cf8a3a27cbad277bc8c2bef4436645967ef2ce4b8290a90f633916054d5f38c1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/25\\/dd972baa-f332-3971-8c8f-785d8a444335\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9be5149940b83bf555fe5f7a3fb2223f8b94ceeaebfb78cf55025d2c151a0c49"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/17\\/a97ea635-d0f7-3bff-946f-556f9366823e\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7d026e6d2bf2941a69146240a76387a7d8b653ca92381b9c8c86d880243ae0df"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/10\\/22\\/bc95bfa5-eaca-331b-9702-81764a19fccc\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "7fc4056a6d31870af30ac3c245ff22b8022935694825b2dd1f421c78640778a2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hgtv.com",
-                "watch.hgtv.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/labs\\/api\\/v1\\/decision",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "77d82360d3a5c184af26e7c619247ff63ec9e80211e0ede966c7a68d15e1b733"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/labs\\/api\\/v1\\/decision",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/labs\\/api\\/v1\\/events\\/publish",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "ba7b7488f787292e20dabd497c59741d742f003981f39bbe489f79e16539bee4"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/labs\\/api\\/v1\\/events\\/publish",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "discoveryplus.com",
-                "www.discoveryplus.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/playback\\/v2\\/videoPlaybackInfo\\/sourceSystemId\\/eurosport-vid1543239",
+            "rule": "disco-api\\.com\\/playback\\/v2\\/videoPlaybackInfo\\/sourceSystemId\\/eurosport-vid1633646",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2095,22 +218,49 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
-                    "original": "eu3-prod-direct.eurosport.com",
+                    "original": "eu3-prod-direct.eurosport.fr",
                     "resolved": "eu3-prod.disco-api.com"
                 }
             ],
             "responseHashes": [
-                "b5d76de566ed30804ae0916bf75f13af91ccd20b2b48f23e288a48860d68ee52"
+                "932e5897347cecb252e17ae8fe1f768333ae49ef3fe51499aae25740b7cee3d2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eurosport.com",
-                "www.eurosport.com"
+                "eurosport.fr",
+                "www.eurosport.fr"
+            ]
+        },
+        {
+            "rule": "disco-api\\.com\\/playback\\/v2\\/videoPlaybackInfo\\/sourceSystemId\\/eurosport-vid1519500",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "eu3-prod-direct.eurosport.co.uk",
+                    "resolved": "eu3-prod.disco-api.com"
+                }
+            ],
+            "responseHashes": [
+                "3e3ee877a7e9006ba6a4218c6576f02293442bcc310e5e2a5a4e40ba3a1476c3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eurosport.co.uk",
+                "www.eurosport.co.uk"
             ]
         },
         {
@@ -2122,7 +272,7 @@
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [
                 {
                     "original": "eu3-prod-direct.eurosportplayer.com",
@@ -2130,7 +280,7 @@
                 }
             ],
             "responseHashes": [
-                "397c098576dec933b860b6ab40345ae5479ccffce9ced9d58d5db2e5c62005c3"
+                "418c0e2784c5a86dbf7eb7e117043ba733cc78f4b6d7737a23177e1ee11074a2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -2141,737 +291,40 @@
             ]
         },
         {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/neue-folgen-tele-5",
+            "rule": "disco-api\\.com\\/users\\/me",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "eu1-prod"
+                "eu3-prod"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
+            "prevalence": 0.0000143,
+            "cnames": [
+                {
+                    "original": "eu3-prod-direct.eurosportplayer.com",
+                    "resolved": "eu3-prod.disco-api.com"
+                }
+            ],
             "responseHashes": [
-                "9e7119f48efa967389a81c8cd4937e24a45b965ed60eca914a965ba1a69059d4"
+                "9eca3a5b2ff6d00192cecbb39f5dcded889e816961742c510632591fe29d0c1d"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/neue-folgen-tele-5",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/schlefaz-outtakes",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "47714104af427a6b1c32c9390c0d6ea129449a06bbeb0619eaba14e685a9ca58"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/schlefaz-outtakes",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/13\\/cd16c946-b505-3d6b-af69-b9da6b05c063\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b276b05224faf038e57c4c23c8048a236e5eddb4b0d61f0594256166d2454173"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/14\\/248c7a99-b5d2-3416-a0e8-50283c141e83\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b29d7ec1402c50913b5bf12081fb9f32a725d5989d7de4f58b9524d6243595ce"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/13\\/3c7be03b-b52d-3388-84b4-425548f12ed5\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "16c08479686f575dee502f7a264ce628a8d1925906d14c112e63d6a860a4a7cc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/15\\/6969a412-c420-34c4-ac0c-27ce574bda15\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "67eef7fda2b1fb095e3d88426ae740941d1ecfae6c55f9b95e4dd97c7243b0fa"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/13\\/317f4f76-488b-3780-bfa9-04a1c5240e78\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "02a33f1cacb2f0c18358c8b14459d43ab1e954d926bdc33b296ec8a3f4969cf7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/13\\/8ba07cd7-e296-31c7-b148-099b3af216be\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "26da5c1b452a3c10d0e0d1329152c943ddebb0bfa8e675e031ec21c56d920a67"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/content\\/videos\\/1532167",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4726a78fd67eaa1c7a9d6ee93a7b02ec02983b038695490e46fef4efba0dfdb3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/content\\/videos\\/1532167",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/99f2402d-7fb5-33cd-9e5f-3b0fab8c4230\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9e5b646dcc97b1c43fa42f0b49022c181069efa78ad26a179d0d3dace1874591"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/ad51d6c1-43fa-3f8f-8651-6b6ad892a993\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "46536677224119ba1a20c1a2231318f3ec2706042656714fd164435af9c2b427"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/a22b56b5-040e-31e3-8abd-e276076917e5\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fcc978b85d0742868ada634594f4f3a031c05230e98ac7ed4f4be7c9e5899b95"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/b5b7d498-8cab-3282-aa67-4f0489067fbb\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fbd6adcb4f721f8a6d9e3fe83c56d3602c7ff3ede302161ecaab774856ee037a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/tele-5-bald-offline",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9f8e5090a38d298cfc399f892669d822099485013033763b86e63e4a369429fe"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/cms\\/collections\\/tele-5-bald-offline",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/16\\/16cbf377-aa0a-3ba6-9298-e2e902501eaf\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "bbddcee12650ba46723fe3b3f56196425365111cd36c65262f287a1902b77f64"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/12\\/14\\/3b7f3cbb-2ca2-35e8-abda-44d35b2de63e\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "8867890db13de19d327b7b555180879d43d0ce7b193a70c43a1b2614bef21595"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/f14c9819-0458-38e7-b84e-df2debd969e0\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "5ee3e8e6c438b51a6e22d0efc05b3b6261f101c59a9878fb6234c640d3cf2e28"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/562b31ed-7ca3-38c5-bebc-9be241843149\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "fdd9543a2367b3b000b09b3e131b215ae8b04b063ebf3c44ec53ce120afb1bec"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/01\\/11\\/5812f836-2d20-3ad3-ab89-67a8d97801eb\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "eu1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "32aa4b05e3682160fd711a2d30d82c6486a792367ea116450b40e5547528da1f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tele5.de",
-                "www.tele5.de"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/3\\/29\\/ae7db4a0-f4e2-47c2-94d3-7e00beae229c\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "4c1f1a436663e292456c43f2de763c4b9c8425e0b440e04c7619daf101d38c3d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/3\\/29\\/ada1be5c-0d9a-4874-87e2-19986552f5f1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "9007b3b33490cdc72502f8b24a375b0008ea4111b928a72629e0651f83675803"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/3\\/29\\/90019073-3686-43c3-808b-f0be847f790d\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "916a41e906699beccf9563d42f906381c911927b59cdf12dc8120f1e532f5d1e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2020\\/3\\/29\\/d09ad758-53d0-43bb-b8ae-0158675b4ad0\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "587740707952142ea751f99fae04901a8c96afce470602693b929623c29400d4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/9\\/29\\/89e504c0-9d94-4b94-85b7-79060cba848a\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "450749df131780ab12669782e68b1c030fecccfe136d37602f6d525ce6efa7cb"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/d5f426fc-23d6-4ff4-be2b-63c827be5a9e\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "80accbc0e37e0a745402170ed95d0500bb8701c6597fdeb202e7b9796d05d949"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/6201ab9c-9ed0-4513-9e69-779820557bfb\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "b2f9c5fc5a896cda2f4812c4034ef3ffd4289733d458ad34d5971004faa2223e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/424258e8-c089-452d-9b88-dd756c078727\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "734811a4bb547533fd9cdc6da496e431e3578123b5e0dc62f66e29ee14166a96"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2021\\/6\\/28\\/a76a1acf-5549-4131-a133-96ceedca1ef2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "020cf80a74994160a23b7beb613c9dae81d8d33f7c0c8089f5c972ddc9944a1f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
-            ]
-        },
-        {
-            "rule": "disco-api\\.com\\/2022\\/1\\/18\\/2c5416f9-13ea-48f0-bbcc-8a9b817eaa88\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "us1-prod-images"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000138,
-            "cnames": [],
-            "responseHashes": [
-                "0da63691a00810168e359451783352bba8637049ace63611ca105f4720667f4f"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tlc.com",
-                "www.tlc.com"
+                "eurosportplayer.com",
+                "www.eurosportplayer.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000104,
+    "cookies": 0.00005,
     "types": {
-        "Preflight": 76,
-        "XHR": 14,
-        "Fetch": 69,
-        "Image": 151
+        "XHR": 4,
+        "Preflight": 8,
+        "Fetch": 13
     },
-    "nameservers": [
-        "ns-235.awsdns-29.com",
-        "ns-722.awsdns-26.net",
-        "ns-1647.awsdns-13.co.uk",
-        "ns-1277.awsdns-31.org"
-    ]
+    "nameservers": []
 }

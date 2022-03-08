@@ -4,34 +4,81 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000208,
-    "sites": 3,
+    "prevalence": 0.0000286,
+    "sites": 4,
     "subdomains": [
-        "api"
+        "ou",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "adsquirrel\\.ai\\/ask",
+            "rule": "adsquirrel\\.ai\\/insert",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "api"
+                "ou"
             ],
             "apis": {},
             "sites": 2,
-            "prevalence": 0.0000138,
+            "prevalence": 0.0000143,
             "cnames": [],
             "responseHashes": [
-                "296cac6d576c5a3797d6ef94a377432cc36be084805b50dc36eb27060635f099"
+                "0501ff0326680044298a3aee49f95e4ca72db046a7f520b6c7f64683da02ff26"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "news247.gr",
-                "www.onmed.gr"
+                "efsyn.gr",
+                "www.efsyn.gr"
+            ]
+        },
+        {
+            "rule": "adsquirrel\\.ai\\/insert",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ou"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "efsyn.gr",
+                "www.efsyn.gr"
+            ]
+        },
+        {
+            "rule": "adsquirrel\\.ai\\/pronews\\.gr\\/chirp\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000143,
+            "cnames": [],
+            "responseHashes": [
+                "e40736d67d4140e18c91d21091f7fcb3ec3bc2993e7b575c9cf212ad861a6008"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pronews.gr",
+                "www.pronews.gr"
             ]
         }
     ],
@@ -39,7 +86,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Preflight": 2,
+        "Script": 2
     },
     "nameservers": [
         "marek.ns.cloudflare.com",
