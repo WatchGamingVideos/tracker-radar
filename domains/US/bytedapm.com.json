@@ -4,15 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "sf16-short-sg",
-        "sf16-short-va"
+        "sf16-short-sg"
     ],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "bytedapm\\.com\\/slardar\\/fe\\/sdk-web\\/plugins\\/common-monitors\\.0\\.8\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sf16-short-sg"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "29591c0ba0abc06ec6661562bee8bd8c60538551b5da89869c268e32f7c01d0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tiktok.com",
+                "www.capcut.net"
+            ]
+        },
         {
             "rule": "bytedapm\\.com\\/slardar\\/fe\\/sdk-web\\/browser\\.sg\\.js",
             "cookies": 0,
@@ -25,13 +48,14 @@
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d2ebd9f164d592616f6c6c706b66bd5635437a56431610b28d06e638cdef018a"
+                "2296a012418b7ad08d6d752d79d1cbab3df9c22a938f74e954b20e5089c4461d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,33 +66,7 @@
             ]
         },
         {
-            "rule": "bytedapm\\.com\\/slardar\\/fe\\/sdk-web\\/plugins\\/common-monitors\\.0\\.7\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sf16-short-sg",
-                "sf16-short-va"
-            ],
-            "apis": {
-                "PerformanceTiming.prototype.navigationStart": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "e60be22cebca7a2094439e2199bb543a0fb5d380c283228d75faac2b4ae44afa"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "capcut.net",
-                "www.capcut.net",
-                "www.tiktok.com"
-            ]
-        },
-        {
-            "rule": "bytedapm\\.com\\/slardar\\/fe\\/sdk-web\\/plugins\\/sentry\\.0\\.7\\.0\\.js",
+            "rule": "bytedapm\\.com\\/slardar\\/fe\\/sdk-web\\/plugins\\/sentry\\.0\\.8\\.0\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -94,14 +92,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7
+        "Script": 6
     },
     "nameservers": [
         "a3-64.akam.net",
-        "a7-65.akam.net",
-        "a12-65.akam.net",
-        "a2-67.akam.net",
+        "a1-156.akam.net",
         "a16-66.akam.net",
-        "a1-156.akam.net"
+        "a7-65.akam.net",
+        "a2-67.akam.net",
+        "a12-65.akam.net"
     ]
 }

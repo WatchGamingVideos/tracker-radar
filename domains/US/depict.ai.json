@@ -4,18 +4,46 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000204,
-    "sites": 30,
+    "prevalence": 0.000265,
+    "sites": 39,
     "subdomains": [
+        "cdn",
         "ws",
         "api",
-        "cdn",
         "proxy",
         "img"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "depict\\.ai\\/hatstore\\/depict-ai\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "BroadcastChannel.prototype.constructor": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bec1c6e0823692dd458e50c668864e945c818c766909d8b5485684435465fca2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hatstore.co.uk",
+                "hatstore.se"
+            ]
+        },
         {
             "rule": "depict\\.ai\\/ws\\/create-events",
             "cookies": 0,
@@ -24,8 +52,8 @@
                 "ws"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [],
             "type": "WebSocket",
@@ -33,6 +61,10 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hatstore.co.uk",
+                "hatstore.se",
+                "houdinisportswear.com",
+                "www.bjornborg.com",
+                "www.kitchenlab.se",
                 "www.maxgaming.se",
                 "www.mq.se",
                 "www.nordiskagalleriet.se",
@@ -40,7 +72,7 @@
                 "www.plantagen.fi",
                 "www.plantagen.se",
                 "www.plantasjen.no",
-                "www.teknikmagasinet.no",
+                "www.svenskttenn.com",
                 "www.teknikmagasinet.se",
                 "www.zoo.se"
             ]
@@ -53,35 +85,53 @@
                 "api"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "204dc219362d25a0db3f29a4339a3b71e3ef6fc4400e97eb9e948825800cc694",
-                "f4f3898d491d287bbbf0a76aa180c6deec5e8e0eac4c129711d73c138bdc6df2",
                 "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6",
-                "ad8d1f9f80be06830c8b974c98d698f2dc197a6182c0f2acff3d5d4880122d49",
-                "08e7921854fdf699ddb145e879d3f2f360f00a924d75a02554270c1560650c1b",
-                "5e62abcb39267439f1fb8c3c5a9a17c0d5a7c3d956d19ae612dd850c19f4b95d",
-                "8bf6312b6c6a008b8e94a0aaaa4c87d1c120a949c3b4f7746ab6bcb9c214f95b",
-                "6dae3ea672b7c2c1129290ef90fc428e7c6da3564992cea22233bdf1ed96df50",
-                "3165af3d2271ef9ff971c31193bfb240a855c737d9366517a50bb47b0564c7f1"
+                "c7099754b443b43c466c73853d758a7f30f169ca1f2a48b2f0567fedd1169465",
+                "bc96156dee24ba1a16e07d1f3cb5f00ec2a2305673cc7df204ed86a531c51f88",
+                "aad74b91c88e31bbab1a4bf4cde35f5749589dd5b3bf8e0e6e34b5ae65929e2d",
+                "ee58611bba6bb3349715886b308a5ad57803ca3f63c2d3b32b2882f34679dc0d",
+                "7c3776ffa165fc56b70f587980ec437e77f472d3390d436ada6424fbbfa32438",
+                "646dc54fbfc40e02f7a99b28964b54fc53c642d10e5396c24334e81b43ec8f9f",
+                "ff29093831dc25c7a3787024f0722b44aeacbc9f169b2c86f6984f6f8c2f42a7"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hatstore.co.uk",
+                "hatstore.se",
+                "houdinisportswear.com",
                 "www.maxgaming.se",
-                "www.mq.se",
                 "www.nordiskagalleriet.se",
-                "www.officedepot.se",
                 "www.plantagen.fi",
                 "www.plantagen.se",
                 "www.plantasjen.no",
-                "www.teknikmagasinet.no",
                 "www.teknikmagasinet.se",
                 "www.zoo.se"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "royaldesign.se",
+                "www.odla.nu"
             ]
         },
         {
@@ -107,6 +157,28 @@
             ]
         },
         {
+            "rule": "depict\\.ai\\/bjornborg\\/modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "612efc0e1e96aa090ff357806192dd089b515f166bf11c95d7b6569f0dbbeeee"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bjornborg.com",
+                "www.bjornborg.com"
+            ]
+        },
+        {
             "rule": "depict\\.ai\\/kitchenlab\\/depict-ai\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -115,13 +187,14 @@
             ],
             "apis": {
                 "window.localStorage": 2,
-                "BroadcastChannel.prototype.constructor": 1
+                "window.innerWidth": 2,
+                "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d99fd0e553a9bdabd0f8f72cd3d5775d1ed45cec34d2924102442ab7f033239b"
+                "7e10af8cf4dc67d303bedb1ffe13448a753b60dbd4cba2b4577eecf14e49b9e5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -129,27 +202,6 @@
             "exampleSites": [
                 "kitchenlab.se",
                 "www.kitchenlab.se"
-            ]
-        },
-        {
-            "rule": "depict\\.ai\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proxy"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "kitchenlab.se",
-                "www.kitchenlab.se",
-                "www.odla.nu"
             ]
         },
         {
@@ -162,13 +214,14 @@
             "apis": {
                 "window.localStorage": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "14300bb386901151921d86d9f08be43e0a66b30fc690b134098907eff76cecc8"
+                "c6bcfdddf3143812026b563828e3ce691a394ebf197ae959476ecfd2aebdcc8d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -187,13 +240,15 @@
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6196b4bb41faeeee4c4b5509528ea0988a25aef52e598a6caa8f2f0aabcccab1"
+                "96a28a049fb8c8fe59eb30efdd6f3ce42b6200ab8128746de7e88daee405cd5b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -215,7 +270,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "239f8cfa8e891068232bbda997d595008bd37b611e0d23511c64ed84f9cf969d"
+                "cba5515b1fe895b14f7931074e0ca4da59083ad1bb08944da8d5812f51cf8f93"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -235,13 +290,14 @@
             "apis": {
                 "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eef37921bd963ff71f509b0efc2037ae3d2bc686474bef94357ad457036f8bfe"
+                "e45926f995f682cfd8d2108813fac15b17e630470dbb60c688aca485194f44eb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -263,8 +319,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "7f790de80aa97932abad15a65065e384fed53497bea4d02611b22b1c89f3a410",
-                "942a9029f2318c507e598e6a16d25597388c57045882c871b191f261a0331e98"
+                "59bd2decea4a9e4d3c3f8854765a2de4f767384b9eab595a3023541ccb79d208",
+                "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -273,6 +329,28 @@
                 "nordiskagalleriet.se",
                 "www.nordiskagalleriet.se",
                 "www.zoo.se"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/diagnostics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "762c2749580c286a68d4528d912a4afa02a17dc2025c6c65b17b0dfab8291408"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordiskagalleriet.se",
+                "www.nordiskagalleriet.se"
             ]
         },
         {
@@ -287,7 +365,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "403e29b4bdaca2848f6db8a3cdd06170547fbc8f473f4a93c5bd58c79f17b44e"
+                "7ab8910d91af7435949def6c9725a284d214a370a53c8b825d366ebacb279b01"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -306,6 +384,7 @@
             ],
             "apis": {
                 "window.localStorage": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
@@ -331,6 +410,8 @@
             ],
             "apis": {
                 "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2,
                 "Document.cookie getter": 2
             },
@@ -338,7 +419,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "851f5035de1cf12047471689b086bf1723e992e8b165bd11798402c26a2d6742"
+                "87ca21f98cd4596cd7f29faf8839560aeac60a250e6b4ac2408beed3639d5e54"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -349,7 +430,51 @@
             ]
         },
         {
-            "rule": "depict\\.ai\\/plantagen_21_10_25\\/depict-ai\\.js",
+            "rule": "depict\\.ai\\/v2\\/recommend\\/products\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35b52afcc69470714bfff1d3c20c8f208e5a8fc0d2a1857b73df091fe832c1a6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "officedepot.se",
+                "www.officedepot.se"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/ResizeImage\\/officedepot",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2d04f360e0503fff906b7726b4d859586e7e7a96cbf9d9dd2d28a90795f834b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "officedepot.se",
+                "www.officedepot.se"
+            ]
+        },
+        {
+            "rule": "depict\\.ai\\/plantagen-2022-03-07\\/depict-ai\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -358,13 +483,14 @@
             "apis": {
                 "window.localStorage": 4,
                 "Navigator.prototype.userAgent": 4,
+                "window.innerWidth": 4,
                 "BroadcastChannel.prototype.constructor": 4
             },
             "sites": 4,
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "f76a4c961858fdc0d73f8e956381443f092bc8808fa130b97e54708aa7b892ad"
+                "44b8878735b9aa87d8cb4ab228c04ffc0588e028c7d260c5651bb4e1c358dd98"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -384,8 +510,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e642c1f58e17935534e83b547429077b5b7a630d4eb9c4b0996b65c5842c9cb8"
@@ -394,7 +520,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "synsam.se",
+                "synsam.no",
+                "www.synsam.no",
                 "www.synsam.se"
             ]
         },
@@ -406,69 +533,45 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 3,
-                "Date.prototype.getTime": 3,
-                "Navigator.prototype.userAgent": 3,
-                "BroadcastChannel.prototype.constructor": 3
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "BroadcastChannel.prototype.constructor": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2ad6e96de503d25a4409b3ffa14b9e478e0fff65164a536e7187e1250e99953c"
+                "441668ac3b9349e2a3f0dddfcd3d26be76fe6a448e4c8ff2b0a21f30b71a5bd3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "teknikmagasinet.no",
-                "www.teknikmagasinet.no",
+                "teknikmagasinet.se",
                 "www.teknikmagasinet.se"
             ]
         },
         {
-            "rule": "depict\\.ai\\/collect-ga",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "teknikmagasinet.no",
-                "www.teknikmagasinet.no",
-                "www.teknikmagasinet.se"
-            ]
-        },
-        {
-            "rule": "depict\\.ai\\/ResizeImage",
+            "rule": "depict\\.ai\\/ResizeImage\\/teknikmagasinet",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "img"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d832650fd04956fb77b8b2d5a791c39279f3e8377f2fecd07927e3157873dd16"
+                "7467a6af76e68da479f8f50b84026f30be64ea68b4dccd3396359e7a423f37cb"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "teknikmagasinet.no",
-                "www.teknikmagasinet.no",
+                "teknikmagasinet.se",
                 "www.teknikmagasinet.se"
             ]
         },
@@ -483,13 +586,14 @@
                 "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
                 "BroadcastChannel.prototype.constructor": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "47e6b9d05a6ad4c96c3eb4686051c86566c262cb130be94a44c2ee7cdbfe412f"
+                "afed50fecb12e65d95a66a67caf40fe9f0b883aec069702c7a874328efff5e99"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -511,7 +615,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fe2bcb1d64a866bcb887d42fc9cd58825662989abaf01358ee9e046bdd6303b7"
+                "c3d67d4ad7f32c6b35fef263c266e4b67726c6753f5d07ef912535abd58dd492"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -526,12 +630,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "WebSocket": 14,
-        "Fetch": 16,
-        "Other": 4,
-        "Script": 21,
-        "Image": 7,
-        "Ping": 3
+        "Script": 22,
+        "WebSocket": 17,
+        "Fetch": 17,
+        "Other": 7,
+        "Ping": 2,
+        "Image": 8
     },
     "nameservers": [
         "rosa.ns.cloudflare.com",

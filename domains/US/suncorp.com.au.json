@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
-        "dip"
+        "dip",
+        "chat"
     ],
     "cnames": [
         {
@@ -34,54 +35,14 @@
     "resources": [
         {
             "rule": "suncorp\\.com\\.au\\/data-insights-api\\/ac\\/said\\/cookie",
-            "cookies": 0.0000341,
+            "cookies": 0.000034,
             "fingerprinting": 0,
             "subdomains": [
                 "dip"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
-            "cnames": [
-                {
-                    "original": "dip.aami.com.au",
-                    "resolved": "dip.suncorp.com.au"
-                },
-                {
-                    "original": "dip.apia.com.au",
-                    "resolved": "dip.suncorp.com.au"
-                },
-                {
-                    "original": "dip.gio.com.au",
-                    "resolved": "dip.suncorp.com.au"
-                },
-                {
-                    "original": "dip.shannons.com.au",
-                    "resolved": "dip.suncorp.com.au"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aami.com.au",
-                "www.aami.com.au",
-                "www.apia.com.au",
-                "www.gio.com.au",
-                "www.shannons.com.au"
-            ]
-        },
-        {
-            "rule": "suncorp\\.com\\.au\\/data-insights-api\\/ac\\/said\\/cookie",
-            "cookies": 0.0000341,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dip"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "dip.aami.com.au",
@@ -113,14 +74,108 @@
                 "www.gio.com.au",
                 "www.shannons.com.au"
             ]
+        },
+        {
+            "rule": "suncorp\\.com\\.au\\/data-insights-api\\/ac\\/said\\/cookie",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dip"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [
+                {
+                    "original": "dip.aami.com.au",
+                    "resolved": "dip.suncorp.com.au"
+                },
+                {
+                    "original": "dip.apia.com.au",
+                    "resolved": "dip.suncorp.com.au"
+                },
+                {
+                    "original": "dip.gio.com.au",
+                    "resolved": "dip.suncorp.com.au"
+                },
+                {
+                    "original": "dip.shannons.com.au",
+                    "resolved": "dip.suncorp.com.au"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aami.com.au",
+                "www.aami.com.au",
+                "www.apia.com.au",
+                "www.gio.com.au",
+                "www.shannons.com.au"
+            ]
+        },
+        {
+            "rule": "suncorp\\.com\\.au\\/data-insights-api\\/v2\\/default\\/v2\\/combined\\/B17FE86719F4AB84092A2B92C70EFE70",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dip"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aami.com.au",
+                "www.aami.com.au"
+            ]
+        },
+        {
+            "rule": "suncorp\\.com\\.au\\/chatbot-ui\\/v1\\.0\\/gio\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.product": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a35a0946ce2423ea69f3ee11c94a33fd0c4b6ae30df72f36fa4b0fd8b4a80ae2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gio.com.au",
+                "www.gio.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000545,
+    "cookies": 0.0000681,
     "types": {
+        "XHR": 7,
         "Preflight": 5,
-        "XHR": 5
+        "Script": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "udns1.cscdns.net",
+        "udns2.cscdns.uk"
+    ]
 }

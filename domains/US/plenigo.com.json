@@ -4,35 +4,47 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "api",
         "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "plenigo\\.com\\/api\\/v2\\/user\\/view",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "plenigo\\.com\\/static_resources\\/javascript\\/31FEWSJ1Q3KE8C32OXL3\\/plenigo_sdk\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "api"
+                "static"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "04d2e87f2ea4f0e6ed700e8c63c03d7347c2ff26a634bdd0879a1e20fe13a295"
+                "7aa7f48bd182cd76ddd403904a566fa7410d01a370a0f75f193b32f2b3b9f8d8"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "plenigo_check": {
+                    "ttl": null,
+                    "length": 96,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "oekotest.de",
-                "www.swp.de"
+                "www.oekotest.de"
             ]
         },
         {
@@ -43,8 +55,8 @@
                 "static"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "ed2de5aa7e7c47fa4435168f93d129c9be25bc32096c500a418c6ccb44e7731b"
@@ -54,6 +66,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "oekotest.de",
+                "www.oekotest.de",
                 "www.swp.de"
             ]
         },
@@ -67,26 +80,22 @@
             "apis": {
                 "window.localStorage": 2,
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "103461aa031c32d7d872ff9b5fb170e067628692ea867922bafc9f75d769c78d"
+                "371803dc997009a309a08e9e69f386ca113d77162fa5715ad622453a5f72abb2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "plenigo_check": {
                     "ttl": null,
                     "length": 96,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                },
-                "plenigo_view": {
-                    "ttl": -257766934,
-                    "length": 6,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -99,11 +108,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000272,
     "types": {
-        "XHR": 2,
-        "Stylesheet": 2,
-        "Script": 2
+        "Script": 4,
+        "Stylesheet": 3
     },
     "nameservers": [
         "ns2.inwx.de",

@@ -4,17 +4,54 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00015,
-    "sites": 22,
+    "prevalence": 0.00017,
+    "sites": 25,
     "subdomains": [
         "imbo",
-        "svd"
+        "omni-gfx",
+        "svd",
+        "cdn"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "gfx.omni.se",
+            "resolved": "omni-gfx.vgc.no"
+        },
+        {
+            "original": "imbo.vgtv.no",
+            "resolved": ".vgc.no"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "vgc\\.no\\/js\\/pym\\.js\\/latest\\/pym\\.min\\.js",
+            "rule": "vgc\\.no\\/player\\/player\\.next\\.min\\.bundled-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.devicePixelRatio": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "28e2b6a7aaf46a70548b3363367fdb8e44e216c397d2cab1e01574991d4a30a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-plugin-muted-latest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -23,18 +60,140 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b7f736144a4c3c86a1e620f94d91b3c0eedcadac33888203e554dc2e7c3cfa66"
+                "3e320af7dd984f5c6e73a30b91de8a38eeb8d3dee5fa264b9e176dd0a2201952"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aftenposten.no",
-                "www.vg.no"
+                "vglive.no",
+                "www.vgtv.no"
             ]
         },
         {
-            "rule": "vgc\\.no\\/users\\/godt\\/images\\/6b86b8ef6dd79ff223e876316125dcde",
+            "rule": "vgc\\.no\\/player\\/player-plugin-tracking-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b2ac0b4b2c865f02dd26ba0c5e74f0d22e6cf0f6dab1785e4ac8414f227db54f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-plugin-countdown-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "476198b3cf66059b551db2cd9813893e5e7e414afd5569cd9412836cb239a5c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-plugin-media-session-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "af5198e7ab9902f1ea5ee5c4c9fb4c7c9e0d34c94c4fb948b4566b7d7683f383"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-plugin-topic-subscriber-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d0470de466cc3977a6a34b4400a8e4468586aa42b7001225cc2c15699d77275"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/streamingtag_plugin_jwplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f91955dcfa2844ceeaadf5344262ce93c11517b5ab3136baaf54f3a8f64e73df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-skin-vgtv-latest\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1423ad6e173d2dfd58b22baabaac9c3b82d1f9be9609ecc013fcc9e355b695a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/users\\/godt\\/images\\/be79ce7dc15eb248c3772a517c51be7f",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -45,7 +204,51 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "619d53fd7b17d07da3ed4f29f0b328318a0039e6ad3039cd95215a6a8bf9a08b"
+                "4ae7ed7b84becc0b0226ea283e5bce8c48e2436ca7f52168a94854019b8a67c3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godt.no",
+                "www.godt.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/users\\/godt\\/images\\/80de7b92ffc3f51933866f2dda4a2453",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imbo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1d198d86c97162c3f71ebb65511f130d2a911cdf174633235968a868b02fe267"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "godt.no",
+                "www.godt.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/users\\/godt\\/images\\/2d2dab387b569147201eb27affdde46f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imbo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6eb66933ae2b0ef4a35fa2a5ff2983688a325b9621157d01986321a0bdbeac42"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -56,7 +259,196 @@
             ]
         },
         {
-            "rule": "vgc\\.no\\/v2\\/images\\/330a84f8-bec6-43e0-b764-44901898256c",
+            "rule": "vgc\\.no\\/images\\/f3b208e5-76dc-4ddc-aff4-88ea58f07a4f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "6e15d2dff168ea9924e0e8a7d7acb99d0b0401f54e637e32f231f1a0198749e9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/c9e2cfd6-364f-433f-84f5-b8151a9b66c7",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "6301dbc642071a71a35c4f7d35c0858a9612c9384f2cdf383b5522648967b6e4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/ee0033e2-1476-4b4c-8ac0-4dfebe862e15",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "2004a52c347dda74f40c1dd5271796a425f2c87d1473e7482e98664479f71533"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/901d9f0c-015a-4e77-b496-5cb7333ed819",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "4da8f339df9b916deec2031e5e0195ce5b71ef7f2dbbb2f15e7a7a3c3a6fdb22"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/ba4548fb-3953-472c-9ad3-70b3c101d5fe",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "9fe85c496f6f1a79ff0485014b274f770d5d4b4b03901ddc6965556edb69184b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/f96d9e54-3b80-4874-b151-cb8e993ee120",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "e51a49c83f2ed90bd34061b95d03f40c9df2933616a30115cf536a889ca409ea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/images\\/9111c9c1-f0b1-44ad-9f78-6d765177ce0b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "omni-gfx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gfx.omni.se",
+                    "resolved": "omni-gfx.vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "20c657b0b92a1db626569cd8b0768aff569ee2a0fee03c6ee640091caa00139b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omni.se",
+                "www.omni.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/v2\\/images\\/c5efdd3b-15fe-49b5-9ecf-2e99f0f793e6",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -67,7 +459,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "936e2ca720e3ad8c6f7db78bdcd7c9d7069d7c04f01ab2aaf1f7c7587a671735"
+                "ec48a0b6b2b5817c4510312a42c3c85087b96904118515d679bed04245285dfc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -78,7 +470,7 @@
             ]
         },
         {
-            "rule": "vgc\\.no\\/v2\\/images\\/9b8cd9e6-bc2a-4e22-8c6a-8e64dae43f88",
+            "rule": "vgc\\.no\\/v2\\/images\\/7a266196-8c6d-4d31-abfa-a532f9333f78",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -89,7 +481,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4899892a43f45e175c8867ee851d52b327e1ba16b28f1ab4503ee32e537a68ee"
+                "3b85cd43b0684ce78a4ea65ceb75aeb1865f70b3306580765226ebfb23559f6f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -100,7 +492,7 @@
             ]
         },
         {
-            "rule": "vgc\\.no\\/v2\\/images\\/2382b87c-ec0a-44a6-9958-d4993e1e6925",
+            "rule": "vgc\\.no\\/v2\\/images\\/a3a8bd31-772b-445e-94f4-d8ba410963eb",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -111,7 +503,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1854fdcf8527bcd9d639e4e64a2409d28b195ff011c0dbbd4fb5a74a1644a0bb"
+                "a7a1edb46f7bb570ac75985b04fd65ecdd09f55316bf9f71b806f793662ad00f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -119,6 +511,100 @@
             "exampleSites": [
                 "svd.se",
                 "www.svd.se"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/js\\/libs\\/asd-client\\.umd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac181724ad58a70fceb6b1e12afa7d5ddea9e6ff63d623e2e68a495a126eb833"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgtv.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/player\\/player-plugin-paywall-message-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df1eaeff8cb0cf5a56e910f398090b870fbb68306020be279f74ca1461a85f9b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgtv.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/users\\/vgtv-stage\\/images\\/7f37e4fdeff6802a8bd0a9f596de4d1c\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "imbo.vgtv.no",
+                    "resolved": ".vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "cdd8e81dba62cc1a582ffde7da2c1ed198b25978ccef6d101b6af3a75e8bf320"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgtv.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "vgc\\.no\\/users\\/vgtv\\/images\\/6904afa757f37d736c47adbbf4d4848a\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "imbo.vgtv.no",
+                    "resolved": ".vgc.no"
+                }
+            ],
+            "responseHashes": [
+                "4f21ee4a813dcda752f85ef8b4e8264e6530041ad3d0e1afbf53ad96c8f0c49c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vgtv.no",
+                "www.vgtv.no"
             ]
         }
     ],
@@ -126,15 +612,16 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Image": 8
+        "Script": 18,
+        "Stylesheet": 2,
+        "Image": 30
     },
     "nameservers": [
-        "ns-foo.linpro.net",
-        "ns-zoo.linpro.net",
-        "nsb.dnsnode.net",
-        "nsu.dnsnode.net",
         "ns-bar.linpro.net",
-        "nsp.dnsnode.net"
+        "nsb.dnsnode.net",
+        "nsp.dnsnode.net",
+        "nsu.dnsnode.net",
+        "ns-zoo.linpro.net",
+        "ns-foo.linpro.net"
     ]
 }

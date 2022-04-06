@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "accounts.sap.com.cloud"
     ],
@@ -22,6 +22,33 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "sap\\.akadns\\.net\\/saml2\\/idp\\/sso",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accounts.sap.com.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "accounts.sap.com",
+                    "resolved": "accounts.sap.com.cloud.sap.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sap.com",
+                "apps.support.sap.com"
+            ]
+        },
         {
             "rule": "sap\\.akadns\\.net\\/ui\\/resources\\/javascripts\\/SAP_IDS\\.js",
             "cookies": 0.00000681,
@@ -108,8 +135,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "types": {
+        "Image": 2,
         "Script": 6
     },
     "nameservers": []

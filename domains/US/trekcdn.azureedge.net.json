@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 2,
@@ -31,7 +31,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trekbikes.com",
+                "cyclesgalleria.com.au",
                 "www.trekbikes.com"
             ]
         },
@@ -43,8 +43,10 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appVersion": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Event.prototype.timeStamp": 2,
-                "Element.prototype.getClientRects": 2
+                "Element.prototype.getClientRects": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -56,7 +58,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "trekbikes.com",
+                "cyclesgalleria.com.au",
                 "www.trekbikes.com"
             ]
         },
@@ -76,6 +78,53 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cyclesgalleria.com.au",
+                "www.trekbikes.com"
+            ]
+        },
+        {
+            "rule": "trekcdn\\.azureedge\\.net\\/hybris\\/_ui\\/desktop\\/theme-trek\\/css\\/chunk-common\\.7142af43\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b726c995a6e63edbf5074318d2e071d21396bb21bda5df64555c395b78448188"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trekbikes.com",
+                "www.trekbikes.com"
+            ]
+        },
+        {
+            "rule": "trekcdn\\.azureedge\\.net\\/hybris\\/_ui\\/desktop\\/theme-trek\\/js\\/chunk-common\\.e591ad38\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41049adb520ed52b9eb42e9ea2d2363b905336d786de2609f79629249467b4e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "trekbikes.com",
                 "www.trekbikes.com"
             ]
@@ -87,7 +136,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6
+        "Script": 8,
+        "Stylesheet": 2
     },
     "nameservers": []
 }

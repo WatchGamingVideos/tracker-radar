@@ -4,14 +4,88 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
-    "sites": 7,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
+        "arb1",
+        "rinkeby",
         "bridge"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arb1",
+                "rinkeby"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "376d4470dde46ad2a1f502b037bf8e2bb49d97e233cfed9fa4f2afda86c27ab0",
+                "ee16ca567efc4e258c6ac72549a8c73e0f64631a9039171992cfdd49de669651"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aave.com",
+                "app.wonderland.money",
+                "kyberswap.com",
+                "yearn.finance"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arb1",
+                "rinkeby"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aave.com",
+                "app.beefy.finance",
+                "app.wonderland.money",
+                "kyberswap.com",
+                "yearn.finance"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arb1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b2c8853260885ea5e063d048d9db48d15dbc48e45dbb172eaf4610d9e844aa8c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beefy.finance",
+                "app.beefy.finance"
+            ]
+        },
         {
             "rule": "arbitrum\\.io\\/token-list-42161\\.json",
             "cookies": 0,
@@ -20,20 +94,22 @@
                 "bridge"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "2e27ad6b4b9f2f7a6247547b42393b75f25b68d05e3b6d9214b57017cf4be055"
+                "05e2783b37ed84a3e14b0473c6607dbe70cfa4ae7637def346dd48e174e12e9c"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "uniswap.org",
-                "app.uniswap.org",
+                "sushi.com",
                 "app.sushi.com",
-                "hex.com"
+                "app.uniswap.org",
+                "hedron.pro",
+                "hex.com",
+                "kyberswap.com"
             ]
         }
     ],
@@ -41,10 +117,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 4
+        "Fetch": 10,
+        "Preflight": 5,
+        "XHR": 2
     },
     "nameservers": [
-        "arya.ns.cloudflare.com",
-        "james.ns.cloudflare.com"
+        "james.ns.cloudflare.com",
+        "arya.ns.cloudflare.com"
     ]
 }

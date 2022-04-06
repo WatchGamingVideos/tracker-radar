@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "data"
+        "data",
+        "ping"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,15 +21,39 @@
                 "data"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ab609583bbfc6dd15dfe3a4b47966e1377d50d2ab04c43b422771adeb12bbd73"
+                "20f818556e37e831824990bf3583e8fa0cb22bf4228997ad2a96380bd97bf005"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "woodbrass.com",
+                "www.woodbrass.com"
+            ]
+        },
+        {
+            "rule": "thank-you\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "33e5b852206a7f828d7105c4ea148b736d402c893e7adff932b0bcb4551c0025"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -41,7 +66,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns113.ovh.net",

@@ -8,6 +8,7 @@
     "sites": 2,
     "subdomains": [
         "statics.cdn0",
+        "images.cdn2",
         "statics.cdn1"
     ],
     "cnames": [],
@@ -21,7 +22,7 @@
                 "statics.cdn0"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -83,6 +84,50 @@
             ]
         },
         {
+            "rule": "buscalibre\\.com\\/fit-in\\/360x360\\/4b\\/e8\\/4be86767994c9e005fe75e47aae3b5bf\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images.cdn2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a3ae7bb394f8d5b6c271ccd9507e8862a605b01945c997140467ffe3593e955"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buscalibre.cl",
+                "www.buscalibre.cl"
+            ]
+        },
+        {
+            "rule": "buscalibre\\.com\\/fit-in\\/360x360\\/filters:quality\\(1\\)\\/filters:blur\\(7\\)\\/4b\\/e8\\/4be86767994c9e005fe75e47aae3b5bf\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images.cdn2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce6356fe83e2edd518e830c0c7bffec6c346a31b95609de5a992c2ec0314257c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buscalibre.cl",
+                "www.buscalibre.cl"
+            ]
+        },
+        {
             "rule": "buscalibre\\.com\\/js\\/lazysizes\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -90,7 +135,9 @@
                 "statics.cdn0"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -173,28 +220,6 @@
             ]
         },
         {
-            "rule": "buscalibre\\.com\\/images\\/buscalibre2018\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "statics.cdn1"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0a66a3fa2143fef398fd3e6ab2e7dbfbf611da9fe8d5c06e5cc57e91c8cf5047"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buscalibre.cl",
-                "www.buscalibre.cl"
-            ]
-        },
-        {
             "rule": "buscalibre\\.com\\/images\\/20180914-1600sprite-estrellas\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -208,6 +233,28 @@
             "cnames": [],
             "responseHashes": [
                 "6d03190d12d3adf4ba8d007c3499834ad9daa5bc20660736d34b0cb9ede243c1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buscalibre.cl",
+                "www.buscalibre.cl"
+            ]
+        },
+        {
+            "rule": "buscalibre\\.com\\/images\\/buscalibre2018\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "statics.cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a66a3fa2143fef398fd3e6ab2e7dbfbf611da9fe8d5c06e5cc57e91c8cf5047"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -247,7 +294,7 @@
     "types": {
         "Script": 6,
         "Stylesheet": 2,
-        "Image": 10,
+        "Image": 14,
         "Font": 2
     },
     "nameservers": [

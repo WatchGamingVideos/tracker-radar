@@ -4,12 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
-    "sites": 7,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "doctorlotto",
         "vurdere",
         "lojasaraiva",
+        "sorteonline",
         "electroluxbrasil"
     ],
     "cnames": [],
@@ -22,18 +23,20 @@
             "subdomains": [
                 "doctorlotto",
                 "vurdere",
-                "lojasaraiva"
+                "lojasaraiva",
+                "sorteonline"
             ],
             "apis": {
                 "window.localStorage": 1
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "d12bfcc3dd9635ce77cc9114e5b4d39bf1881d2bbfda00c76c6738855a6d63f2",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "7a6d0130b147b9701bdcbc4bccef8087e6daa69f24a7dfe1f324044f4b439edf"
+                "7a6d0130b147b9701bdcbc4bccef8087e6daa69f24a7dfe1f324044f4b439edf",
+                "83f0fa58712daeb1c6d0c95b4a9cbef51850a274de904c877a7c39a87f75c029"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,7 +45,8 @@
                 "doctorlotto.com",
                 "br.doctorlotto.com",
                 "loja.electrolux.com.br",
-                "www.saraiva.com.br"
+                "www.saraiva.com.br",
+                "www.sorteonline.com.br"
             ]
         },
         {
@@ -50,21 +54,24 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "doctorlotto"
+                "doctorlotto",
+                "sorteonline"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "c34f604336d697668bc94abace98138f83b3ef86e078c61cf20ed9479b1c8403"
+                "c34f604336d697668bc94abace98138f83b3ef86e078c61cf20ed9479b1c8403",
+                "d36838b45e7bddda3172bb75bdcacfa5ae6e2f060bce41241de0907407021f35"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "doctorlotto.com",
-                "br.doctorlotto.com"
+                "br.doctorlotto.com",
+                "www.sorteonline.com.br"
             ]
         },
         {
@@ -122,11 +129,10 @@
             "apis": {
                 "window.localStorage": 1
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d12bfcc3dd9635ce77cc9114e5b4d39bf1881d2bbfda00c76c6738855a6d63f2",
                 "7a6d0130b147b9701bdcbc4bccef8087e6daa69f24a7dfe1f324044f4b439edf"
             ],
             "type": "Other",
@@ -134,30 +140,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "doctorlotto.com",
-                "br.doctorlotto.com",
                 "www.saraiva.com.br"
-            ]
-        },
-        {
-            "rule": "mais\\.social\\/reviews\\/dist\\/vendor\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "doctorlotto"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c34f604336d697668bc94abace98138f83b3ef86e078c61cf20ed9479b1c8403"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "doctorlotto.com",
-                "br.doctorlotto.com"
             ]
         },
         {
@@ -179,14 +162,136 @@
                 "electrolux.com.br",
                 "loja.electrolux.com.br"
             ]
+        },
+        {
+            "rule": "mais\\.social\\/seo\\/dist\\/install\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lojasaraiva",
+                "sorteonline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saraiva.com.br",
+                "www.sorteonline.com.br"
+            ]
+        },
+        {
+            "rule": "mais\\.social\\/referrals\\/dist\\/install\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sorteonline"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "953271a57272de1974be90ea65087d64abf44b54cf84f193f5825374adbb16a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sorteonline.com.br",
+                "www.sorteonline.com.br"
+            ]
+        },
+        {
+            "rule": "mais\\.social\\/welcome\\/dist\\/install\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sorteonline"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9b6dc95aa775fcae5e014dcb9f820958d19de14e2197f03fbc7247d3bb927d99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sorteonline.com.br",
+                "www.sorteonline.com.br"
+            ]
+        },
+        {
+            "rule": "mais\\.social\\/referrals\\/service\\/get\\/member-get-member\\/sln\\/offuser",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sorteonline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edc48cd3b0bc4fa7ba23aad40b8508a17d370ca38be174bae2a2f64634e65a2b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sorteonline.com.br",
+                "www.sorteonline.com.br"
+            ]
+        },
+        {
+            "rule": "mais\\.social\\/referrals\\/service\\/get\\/facebook\\/credentials",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sorteonline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ad1260d912cfa14d8c21adabfdbb28bd5e8ffc98cc8081004271d658a247546"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sorteonline.com.br",
+                "www.sorteonline.com.br"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 12,
-        "Other": 5
+        "Script": 20,
+        "Other": 2,
+        "XHR": 4
     },
     "nameservers": [
         "kanye.ns.cloudflare.com",

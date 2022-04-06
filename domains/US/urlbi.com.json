@@ -4,12 +4,56 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
-    "subdomains": [],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "widget.consent"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "urlbi\\.com\\/notice\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget.consent"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manta.com",
+                "www.manta.com"
+            ]
+        },
+        {
+            "rule": "urlbi\\.com\\/pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "342ed94296f56cde0d3b4739acb64a7636c3771146d1a3401e76e14ad569606a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manta.com",
+                "www.manta.com"
+            ]
+        },
         {
             "rule": "urlbi\\.com\\/pixel\\.gif",
             "cookies": 0.0000136,
@@ -29,13 +73,54 @@
                 "manta.com",
                 "www.manta.com"
             ]
+        },
+        {
+            "rule": "urlbi\\.com\\/sid2hashes\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manta.com",
+                "www.manta.com"
+            ]
+        },
+        {
+            "rule": "urlbi\\.com\\/sid2hashes\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manta.com",
+                "www.manta.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "types": {
-        "Image": 2
+        "Script": 4,
+        "Image": 2,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-241.awsdns-30.com",

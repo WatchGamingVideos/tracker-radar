@@ -4,42 +4,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000143,
-    "sites": 21,
+    "prevalence": 0.000123,
+    "sites": 18,
     "subdomains": [
         "trafico",
         "analytics-cdn",
         "analytics",
-        "estaticos-cdn"
+        "estaticos-cdn",
+        "upload-bcube",
+        "motor-cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "prensaiberica\\.es\\/cmp\\/min\\/partner\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "trafico"
-            ],
-            "apis": {
-                "window.localStorage": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c6cee7161394bcc60f164e4ab07375b6093bbd5cf21fe1f131b60958e2c4645e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "deia.eus",
-                "www.deia.eus",
-                "www.noticiasdenavarra.com"
-            ]
-        },
         {
             "rule": "prensaiberica\\.es\\/cmp\\/min\\/prensaiberica-es\\.js",
             "cookies": 0,
@@ -55,25 +32,50 @@
             "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "a255e26402ab9bb8df0379e640b78b12cfc560808d7b3fb9d30945798a675f40"
+                "b7b4c41ee381262cf6de4dc370d62163735dfb5e62cf7ff8b899a4e1358a0c05"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elperiodico.com",
+                "lne.es",
+                "formula1.lne.es",
                 "www.elperiodico.com",
                 "www.farodevigo.es",
                 "www.informacion.es",
                 "www.laopiniondemurcia.es",
                 "www.levante-emv.com",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
+                "www.sport.es"
             ]
         },
         {
-            "rule": "prensaiberica\\.es\\/static\\/javascript\\/mo_web_prensaiberica\\.min\\.js",
+            "rule": "prensaiberica\\.es\\/adm\\/min\\/prensaiberica\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "trafico"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d4867f4298efbf0d595f9ab96e899a49cc3ef695e50fa2e82d6771a90b6f3fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lne.es",
+                "formula1.lne.es"
+            ]
+        },
+        {
+            "rule": "prensaiberica\\.es\\/static\\/javascript\\/mo_wp\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -83,27 +85,29 @@
                 "window.localStorage": 9,
                 "Date.prototype.getTime": 9,
                 "Document.cookie getter": 9,
-                "Notification.permission": 9
+                "Notification.permission": 9,
+                "Navigator.prototype.permissions": 9,
+                "window.innerHeight": 2
             },
             "sites": 9,
             "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "81cef38bb2260bce6b950de33230ef98bfa2bf615eb694464f8a16636659b8f4"
+                "cee0aca5ff9bd924fe98a9230d0274aac3d281069ffbcfcd618d198bd86f6eaf"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elperiodico.com",
+                "lne.es",
+                "formula1.lne.es",
                 "www.elperiodico.com",
                 "www.farodevigo.es",
                 "www.informacion.es",
                 "www.laopiniondemurcia.es",
                 "www.levante-emv.com",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
+                "www.sport.es"
             ]
         },
         {
@@ -118,28 +122,28 @@
             "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "cf262e7ed9a5a2c2c692d79047f06e5902d54c2208c4df672f8792975d9f077f",
-                "3a5b77f43d271cd34d36995aecc284f3d51b86964f5e5a3a4a7528295c060ff5",
-                "f2fc3850427a426196ebb8389795ec3e48398f2d805432fb88bf578404f410a4",
-                "c722123dd32cd5b6942edd4d4303ea005406b01500d1e4731620f1cf4a701031",
-                "74f9019f1c0b6d5f7fe753c7c3f71496ab1cc913f18c744153ba67342f6147d4",
-                "b2ad8945b047d38374996f1599974a9aa2ae1ba8e8b29b8eb455aba11864f873",
-                "14b239358d1ec0dc6de5e230ef2a72b9b79662361b47273af765070edb6b8a1a",
-                "41e28e7e0c5b7df380da0c0ec95919d9dc77d89ab3e3e29ec6a1b2b6a6b7b364"
+                "c23a0903cc88f1bb867749c32125bd6a56cc9bc5e825c8a1539c03c44202ae59",
+                "383e23a04bfa20e8de1641f0a9a3ab06b4c9d97526b425991308f778b70abd3a",
+                "74eb9b2eff989318347d5d8b7709644fd8b7a11bbb5ae781a174064aad06d452",
+                "cc7a61fa2b8480461d2a68cee547f14182a399e7090d7bc36f3932763d6379c6",
+                "6f7d5d17fb1cc16d567588038abc89416e7d2494826f2c7731f2907921db9682",
+                "d8c72f57af6e9ed6cea581ea1655bb2b445206a3a2cfd052e7d7cc9966c05e21",
+                "de24e1854a090bf1dd6e4e33a7f2e7258d1c93061652344f7f2b1f024827e265",
+                "d7a7dd0ff33412ea445fc6cda9282c0c7d79e3e21601cea138feaa70f0a29b5a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elperiodico.com",
+                "lne.es",
+                "formula1.lne.es",
                 "www.elperiodico.com",
                 "www.farodevigo.es",
                 "www.informacion.es",
                 "www.laopiniondemurcia.es",
                 "www.levante-emv.com",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
+                "www.sport.es"
             ]
         },
         {
@@ -154,28 +158,52 @@
             "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "78345357a0a593ec63c4200314e0a6520e5f977ef0b42d0f2a7d6224140b471e",
-                "6493023642de1594ac7f79d20e0c883666824cf72ca97cb1ebd561142595c2e9",
-                "5db396ec152cf57d55bde8499993ba3fa095e8c4c8c01f316d0a358b7845f376",
-                "1728aa40f53e346e00f4d7770965725bf8d9c6a1e63550e777ce3a96cdbaaa87",
-                "61a87d64f189acf8a900ded13a8a47d411b439bc0148b16360b5d21f81ebf5df",
-                "bf1bc6aa9a73fc6842b14abba408cfb30176869964c104c8286675d6a744763d",
-                "05aabc7732529ccead29224eedb27d3e03f2779ca9cae39fbede749c4f1bb733",
-                "a79e6c79c1cdf9a0d50cead15de1eb36ed11a56f53ba37fe06755287c022f60f"
+                "7661e8b9280b04af7e0c1f7b50b3859883a21b94ccc64b0caba1b0b62a33d7c1",
+                "51733869113f88b65bddafe0ad8094cdc5b52766affe631898e138f324200a32",
+                "a89aceebde5209d17f0ebd46c49f6d729fc8ff55dcb514fc793bb80e9cb1e88d",
+                "64d9ed136ed71b3964adb8b3ee8b16117048ada4cbda887c3413c66796a7281b",
+                "03960f9fe3892bc65ca1929bb198747c24b4141e34e27fcfe94dcfae0335ac69",
+                "b7c4cb8198ad60fd6e94df7ab43f01f4ead2d9ccb4e1fcc00518b62d21916104",
+                "73ddb5b5b176ae1e935a09438952d7f723a29c8fca71e9dca95cd0d6729d245c",
+                "15cd449ca3a1e62291788249f263f50299ab7c969521b73c9e79a35dd1c2661e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elperiodico.com",
+                "lne.es",
+                "formula1.lne.es",
                 "www.elperiodico.com",
                 "www.farodevigo.es",
                 "www.informacion.es",
                 "www.laopiniondemurcia.es",
                 "www.levante-emv.com",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
+                "www.sport.es"
+            ]
+        },
+        {
+            "rule": "prensaiberica\\.es\\/cmp\\/min\\/partner\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "trafico"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c6cee7161394bcc60f164e4ab07375b6093bbd5cf21fe1f131b60958e2c4645e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "deia.eus",
+                "www.deia.eus"
             ]
         },
         {
@@ -186,11 +214,13 @@
                 "analytics"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000545,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "2a5eb4c820cd6c2d785fd1adf12e10fa5c0eef0780b5a2f18a837c0ba4702158",
+                "f6c850e37304470cd70f8a75e3a875d288df52007e8bb440b34b2a844f717a39",
+                "1efa0a7b20a32fba3ba3a6a5775519333b2d807369ef96425a7f957a59413542",
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Script",
@@ -199,12 +229,10 @@
             "exampleSites": [
                 "elperiodico.com",
                 "www.elperiodico.com",
-                "www.farodevigo.es",
                 "www.informacion.es",
                 "www.laopiniondemurcia.es",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
+                "www.sport.es"
             ]
         },
         {
@@ -215,10 +243,11 @@
                 "trafico"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9
+                "window.innerHeight": 8,
+                "Navigator.prototype.userAgent": 8
             },
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "7fa8917c73f9b00b6f3df8d7a8879817dded2013d7618e97d005d241de2027f1"
@@ -234,36 +263,7 @@
                 "www.laopiniondemurcia.es",
                 "www.levante-emv.com",
                 "www.lne.es",
-                "www.sport.es",
-                "www.superdeporte.es"
-            ]
-        },
-        {
-            "rule": "prensaiberica\\.es\\/api\\/delivery\\/recommendations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "e0118470f036f0d3efa78293427bd0c1bf489fb9eec2e73a96127db5b7641c27",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-                "0643872dea121f7c2ad7a3d74e8ce8aab2b1b707f6a80a46167d4537fd512dc1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.00002724201808870001
-            },
-            "exampleSites": [
-                "elperiodico.com",
-                "www.farodevigo.es",
-                "www.informacion.es",
-                "www.lne.es"
+                "www.sport.es"
             ]
         },
         {
@@ -274,8 +274,8 @@
                 "estaticos-cdn"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "23730538c88f552afabf5fc09987d801fd7293fe4007f5e56ab2e6798453ee11"
@@ -286,57 +286,32 @@
             "exampleSites": [
                 "farodevigo.es",
                 "www.informacion.es",
-                "www.levante-emv.com",
-                "www.lne.es"
-            ]
-        },
-        {
-            "rule": "prensaiberica\\.es\\/clip\\/ffcc1ae4-626d-4183-931a-a2f08c45cc59_source-aspect-ratio_default_0\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "estaticos-cdn"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "e976af16b9223de3183c2d1c4c4e71a9a84fb3ce3c78d19f9eaf293034dda5d6"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "farodevigo.es",
-                "www.laopiniondemurcia.es",
                 "www.levante-emv.com"
             ]
         },
         {
-            "rule": "prensaiberica\\.es\\/static\\/img\\/viajar\\.png",
+            "rule": "prensaiberica\\.es\\/statics\\/iframes\\/fundacion-corachan\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "analytics-cdn"
+                "estaticos-cdn",
+                "upload-bcube"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "2d2b78fdd311c9e66636ac637b6b281c87d02ad83007c74b37f2d15912e1de0c"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "farodevigo.es",
-                "www.lne.es"
+                "www.laopiniondemurcia.es"
             ]
         },
         {
-            "rule": "prensaiberica\\.es\\/clip\\/9313491e-e9e1-448f-8b6b-250aa51e0d96_16-9-aspect-ratio_default_0\\.jpg",
+            "rule": "prensaiberica\\.es\\/clip\\/4ee7b03a-14da-4dee-ab17-36f06b400144_16-9-aspect-ratio_default_0_x468y244\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -347,14 +322,36 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3ea2790523f40ffa57666b5d577a53ace7196d36d133e7373eadb0d61a419365"
+                "b2d54f0a9a0d66f8180c715d0084eac0b9a4e5739795019c11e36a279460e855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "informacion.es",
-                "www.lne.es"
+                "www.informacion.es"
+            ]
+        },
+        {
+            "rule": "prensaiberica\\.es\\/css\\/frontend\\/wneomotoroiframe\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "motor-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b241cda5daadcf206b3a2c6600bc02340afd7b9c78bc260fe7d9977fcba0fb98"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "informacion.es",
+                "www.laopiniondemurcia.es"
             ]
         },
         {
@@ -384,8 +381,9 @@
     "performance": {},
     "cookies": 0.000109,
     "types": {
-        "Script": 60,
-        "Image": 13
+        "Script": 54,
+        "Image": 9,
+        "Stylesheet": 2
     },
     "nameservers": [
         "ns2.epi.es",

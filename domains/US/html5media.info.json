@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
         "api"
     ],
@@ -15,11 +15,13 @@
         {
             "rule": "html5media\\.info\\/1\\.1\\.5\\/html5media\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "api"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -33,41 +35,16 @@
                 "unsw.edu.au",
                 "www.asmrxxx.com"
             ]
-        },
-        {
-            "rule": "html5media\\.info\\/1\\.1\\.8\\/html5media\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "HTMLMediaElement.prototype.canPlayType": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "96550a59aaa36ed818fc20580d6a1c1145046084dff95915d98e2d1d03c56c6d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "monoskop.org",
-                "www.naijapals.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 2
     },
     "nameservers": [
-        "roxy.ns.cloudflare.com",
-        "duke.ns.cloudflare.com"
+        "duke.ns.cloudflare.com",
+        "roxy.ns.cloudflare.com"
     ]
 }

@@ -4,15 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
         "beacon",
         "cdn",
+        "shopify-cdn",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "flow\\.io\\/events\\/session_upserted",
@@ -22,8 +23,8 @@
                 "beacon"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -31,10 +32,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_f60_session": 0.000020431513566525008
+                "_f60_session": 0.000027225515753364053
             },
             "exampleSites": [
                 "ledger.com",
+                "www.spartan.com",
                 "www.timex.com",
                 "www.uncommongoods.com"
             ]
@@ -47,8 +49,8 @@
                 "beacon"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
@@ -56,14 +58,179 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_f60_session": 0.000020431513566525008,
-                "dy_fs_page": 0.0000068105045221750025,
-                "IR_gbd": 0.0000068105045221750025
+                "_f60_session": 0.000027225515753364053,
+                "IR_gbd": 0.000013612757876682026,
+                "_szl_instant_merchant_domain": 0.000006806378938341013,
+                "dy_fs_page": 0.000006806378938341013
             },
             "exampleSites": [
                 "ledger.com",
+                "www.spartan.com",
                 "www.timex.com",
                 "www.uncommongoods.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/country-picker\\/js\\/v0\\/country-picker\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08ba7a5db2a8c2c61badf973b5fad1835c6a60b75f67de1f5f6382d6a113c36b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 0,
+                    "length": 9,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/spartan\\/js\\/v0\\/flow\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "shopify-cdn"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b07f056e0882dc413cf7a45798922b04e25a8130012a9e91a1ceb4168f32be0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 0,
+                    "length": 9,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                },
+                "_f60_session": {
+                    "ttl": 31536002,
+                    "length": 64,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/shopify\\/shops\\/spartan-race-shop-2\\.myshopify\\.com\\/sessions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4a7e80892c0e407a95837bc43badcf48092163764ea527236b682c45edef0f0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/spartan\\/bundles\\/browser",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6861e29864d0db60783845d36d368a2e1baca6d081a044490e30c821de19013c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/spartan\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff7bb622e7f134d5c31114191b905fe1b724352435b5fc60ed3ebd1b243f928f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
+            ]
+        },
+        {
+            "rule": "flow\\.io\\/spartan\\/countries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spartan.com",
+                "www.spartan.com"
             ]
         },
         {
@@ -91,7 +258,7 @@
                 "cookies.js": {
                     "ttl": 0,
                     "length": 9,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -121,21 +288,20 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "07821bdba6ee92b822c4df603711a8557730a98400a1710a4bcd3db4c1f4765e",
-                "f0a9e196857648a099b1b1e1339bf2e205c74d68ba2527af6b2fd8c77037633f"
+                "494139780d6e34281831197bd4d3c1fc49b397e981cd1ee97483ac9a37bbb78c"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cookies.js": {
-                    "ttl": 5,
+                    "ttl": 3,
                     "length": 9,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 0.3333333333333333
                 },
                 "_f60_session": {
-                    "ttl": 31536008,
+                    "ttl": 31536006,
                     "length": 64,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 }
             },
@@ -158,7 +324,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8661240508f3f79b60ae26e8a9f42bccf7f7adc4eda9cfce87029a472cb40ec3"
+                "16887ad6e15907f33ee04336335276bf75063ca14b5e76839dc01d5a38f28965"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -180,7 +346,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c9ed5977b80b0cc6796519e935f918dce2f509ac067d7733c61ac58d6ab3829b"
+                "9a3a0063ac71dda60b5bc4130f44f61ef12ca58acb544113d7d845f3aa8484aa"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -202,7 +368,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9c7b3a3a2e8a602329083793d9547ef3f105d8a274398d53c1debdd1949bdae7"
+                "1c32e68d1a7dfb6aaf5ee697daee469d0a0e842724ef4c278564dd15f3249cbb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -224,7 +390,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1f2d0304f23590b587aa2f340ed16050d3c76bc85027a73fa82981664f534472"
+                "17fe39075c9780d0d32faf0f2600f20e8f474c7ccf0049f3320f52831bfb56fe"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -237,14 +403,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000476,
     "types": {
-        "Image": 6,
-        "Script": 5,
-        "XHR": 8
+        "Image": 8,
+        "Script": 9,
+        "XHR": 14,
+        "Preflight": 2
     },
     "nameservers": [
-        "rocky.ns.cloudflare.com",
-        "pam.ns.cloudflare.com"
+        "pam.ns.cloudflare.com",
+        "rocky.ns.cloudflare.com"
     ]
 }

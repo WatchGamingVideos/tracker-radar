@@ -20,7 +20,7 @@
                 "app"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -68,6 +68,7 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
+                "window.innerWidth": 2,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.platform": 2,
@@ -80,13 +81,15 @@
                 "Document.cookie getter": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.onLine": 2,
-                "window.indexedDB": 2
+                "window.indexedDB": 2,
+                "window.innerHeight": 2,
+                "window.matchMedia(\"prefers-color-scheme\")": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "712335786d4ee4d6fed1c8593adbef8b15cff356f4dcaeeb21e98136d4af85a2"
+                "8b1ad09c15fbc646b87261d8ab0e33bfef0a318f7265458b34450dcfafe5b656"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -157,9 +160,34 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "85bd94021f4e7532b20b082af38907a63b9ff2adf2ac0be8f328fdc514420d25"
+                "8de633c43f91fd27b88e14806d85b4860cf21cfe3fdbee72e3b9abf0d8a685c6"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "draw.io",
+                "www.draw.io"
+            ]
+        },
+        {
+            "rule": "diagrams\\.net\\/math\\/config\\/TeX-MML-AM_SVG-full\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed017b03f27418fe844458f152ad6af8987ea3d996596592987af0ddbcf293a7"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -179,7 +207,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3aaa20ddab8dc863f3f65754382918ccd0e7fa0b6e2b525a55b4ed5de765fae7"
+                "9ae5cd1c1fe19ea4722031bad9557435e669dcd36dce417e181d06ee88a77c72"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -201,7 +229,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9f54bcf9cd14146345aa90edd127305f95638ae7638c27210e5a2acdc87096f5"
+                "73dcc88ad66f81d03a0c0860367f82181b601cb5fbf0dd05eeb8487e216f6c74"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -227,7 +255,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f300db27469cdcde7ecd4c8d4bd7d68260504f24e43a8711b459107eb3eb944d"
+                "d8134482b5423d262ab191b7cd81b79fc74b9a573b0d61f000c2f85ffaae7d3c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -238,21 +266,40 @@
             ]
         },
         {
-            "rule": "diagrams\\.net\\/math\\/config\\/TeX-MML-AM_SVG-full\\.js",
+            "rule": "diagrams\\.net\\/math\\/config\\/Safe\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "app"
             ],
-            "apis": {
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ed017b03f27418fe844458f152ad6af8987ea3d996596592987af0ddbcf293a7"
+                "cbd2597ad52538c321e2138fed7cc9c82c71e7116b378a928814481df9ecdc39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "draw.io",
+                "www.draw.io"
+            ]
+        },
+        {
+            "rule": "diagrams\\.net\\/math\\/extensions\\/Safe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "954645087051ccbff0abeb23c8e150b67ed2650a34419b90b02bd4d4de45a5e7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -357,7 +404,7 @@
     "types": {
         "Document": 2,
         "Stylesheet": 4,
-        "Script": 14,
+        "Script": 18,
         "XHR": 2,
         "Image": 6
     },

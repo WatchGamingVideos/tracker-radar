@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "images-us"
+        "images-us",
+        "tm-eu"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "nivea\\.com\\/-\\/media\\/global\\/neu-von-nivea\\/nivea-human-touch\\/stageteaserslider\\/000002_en_gl_niv_purpose_11_2020_digital_lp_storystage_twins_2560_1298\\.jpg",
@@ -33,13 +34,77 @@
                 "nivea.co.uk",
                 "www.nivea.co.uk"
             ]
+        },
+        {
+            "rule": "nivea\\.com\\/gtm\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tm-eu"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a01737170c1d2057f7ec31ad96104706557e896a792b7efbb404aad9e650da47"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_uconfig": {
+                    "ttl": 31536001,
+                    "length": 6,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "_sconfig": {
+                    "ttl": 1800,
+                    "length": 113,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nivea.nl",
+                "www.nivea.nl"
+            ]
+        },
+        {
+            "rule": "nivea\\.com\\/-\\/media\\/local\\/nl\\/campaigns\\/tester-worden-nivea\\/2022\\/april\\/nl_nl_niv_tester-april_header-desktop-2560x1000\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eec1e7dbcbb122576bea93f99126f9fde5ae4af4401d4074111765f23b79507a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nivea.nl",
+                "www.nivea.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
-        "Image": 2
+        "Image": 4,
+        "Script": 2
     },
     "nameservers": [
         "ns2.netnames.net",

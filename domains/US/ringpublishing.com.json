@@ -4,11 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "embed.videos",
-        "vhost-session-manager-blic-rs-96430.accelerator"
+        "vhost-session-manager-blic-rs-96430.accelerator",
+        "external.videos",
+        "d01wxcy3x8.cdn.videos"
     ],
     "cnames": [
         {
@@ -20,28 +22,30 @@
     "resources": [
         {
             "rule": "ringpublishing\\.com\\/scripts\\/embedCreator\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.000034,
             "fingerprinting": 1,
             "subdomains": [
                 "embed.videos"
             ],
             "apis": {
-                "Navigator.prototype.product": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3
+                "Navigator.prototype.product": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "6976d515eede91678647b4734c5b6eb49162b63f69baa432d0c1f18b40149127"
+                "9f2157a0a8002bc3ccbb14af386a4b512a0bcbd28ef50fabf7bf0ef09f25c7e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "businessinsider.com.pl",
-                "www.komputerswiat.pl",
+                "wiadomosci.onet.pl",
+                "www.fakt.pl",
+                "www.infor.pl",
                 "www.medonet.pl"
             ]
         },
@@ -71,14 +75,58 @@
                 "blic.rs",
                 "www.blic.rs"
             ]
+        },
+        {
+            "rule": "ringpublishing\\.com\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "external.videos"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5232ba70419daa4d9599ca736ca9d41c382a430da6a6c19649aecbe3db314a3d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "infor.pl",
+                "www.infor.pl"
+            ]
+        },
+        {
+            "rule": "ringpublishing\\.com\\/video-d01wxcy3x8\\/00d5b171-6c37-40bd-9177-5044e8263f6a\\.1560928953\\.0594532\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d01wxcy3x8.cdn.videos"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "medonet.pl",
+                "www.medonet.pl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000613,
     "types": {
-        "Script": 3,
-        "Fetch": 2
+        "Script": 5,
+        "Fetch": 2,
+        "Document": 2,
+        "Media": 2
     },
     "nameservers": [
         "ns49.ringpublishing.net",

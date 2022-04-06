@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "track"
     ],
@@ -14,36 +14,86 @@
     "resources": [
         {
             "rule": "shop2market\\.com\\/track_visit\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.000034,
             "fingerprinting": 1,
             "subdomains": [
                 "track"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "823b0c1df9793f1db5f28a62512f67d0376f59880cb4667e67decb667ca83fda",
-                "12c2db5b14ec10e279736d08d09b80e53bb7307b725ecfd0ec1ba9f64cd6fedd"
+                "344a41e16e0f242b1d3c478c544935c281c2debc9a6de61280b1f5071a359172",
+                "bb9f2a242084c90948e1786ecb0c47dd91f83f8f9a72f1a8e99a5da0e3e03c9e",
+                "b7539c261596bc4668c497e15041ee9c22d13ee7d254c0891b64346139867915",
+                "71ab79aa02f144ab341adc739a42e5b065d6041a17d5a0524fda13f3a98d174d"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "__s2m_stid_1315": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "__s2m_sid_3892": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_stid_3892": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_pid_3892": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_vals_3892": {
+                    "ttl": 315360000,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "__s2m_stid_3473": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_sid_1541": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_stid_1541": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_pid_1541": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "__s2m_vals_1541": {
+                    "ttl": 315360000,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -51,15 +101,70 @@
             "exampleSites": [
                 "gezondheidswinkel.nl",
                 "www.gezondheidswinkel.nl",
-                "www.volero.nl"
+                "www.piratescave.co.uk",
+                "www.volero.nl",
+                "www.wieleroutfits.nl"
+            ]
+        },
+        {
+            "rule": "shop2market\\.com\\/v3\\/update_visit\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1240d1897819b34fd624303217ecae112e6eec758ccf7736bee280979a69e405"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__s2m_sid_3892": 0.000013612757876682026,
+                "__s2m_vals_3892": 0.000013612757876682026,
+                "__s2m_sid_1541": 0.000006806378938341013,
+                "__s2m_vals_1541": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "piratescave.co.uk",
+                "www.piratescave.co.uk",
+                "www.wieleroutfits.nl"
+            ]
+        },
+        {
+            "rule": "shop2market\\.com\\/v3\\/visit_iframe\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "92c152e1e756b0a64b4db0354a3cef50093e763f03bcd438a6e46ae625bddc86",
+                "05c909245ced87210782ec83fcf3e94546e5722f128a6c3443d0944f7d243c44"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "piratescave.co.uk",
+                "www.piratescave.co.uk",
+                "www.wieleroutfits.nl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.0000545,
     "types": {
-        "Script": 3
+        "Script": 5,
+        "Document": 6
     },
     "nameservers": [
         "ns-547.awsdns-04.net",

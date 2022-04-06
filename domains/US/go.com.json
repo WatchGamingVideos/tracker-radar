@@ -7,221 +7,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000885,
-    "sites": 13,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
+        "go4.disney",
+        "analytics.disney",
         "cdn.registerdisney",
         "stg.cdn.registerdisney",
         "cdn.unid",
         "unid",
-        "tredir",
-        "go4.disney",
-        "analytics.disney",
+        "fastcast.semfs.engsvc",
+        "p88decd28-4eff-44b4-8995-d6feda9c03b7-34-204-6-245.fastcast.semfs.engsvc",
+        "p1dc34e07-772a-4c0d-9149-f0cc729e3030-54-160-61-208.fastcast.semfs.engsvc",
         "prod.gatekeeper.us-abc.symphony.edgedatg"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "go\\.com\\/v2\\/outer\\/DisneyID\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn.registerdisney"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "window.sessionStorage": 4,
-                "Document.cookie getter": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 2
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "930e6e87abad58fa50fd295b498cffa7bd3550b6a8382b2e29f7775e7120b8ab"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "SWID": {
-                    "ttl": 31536002,
-                    "length": 36,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/v2\\/responder\\/responder\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "stg.cdn.registerdisney",
-                "cdn.registerdisney"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Document.cookie getter": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/js\\/unid\\.min\\.js",
-            "cookies": 0.0000272,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn.unid"
-            ],
-            "apis": {
-                "Document.cookie getter": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Navigator.prototype.language": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "window.localStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "fce9a2f431448206e4f577fa3d9be6e3053d7995ba2bef6a853a809f70696e5d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "UNID": {
-                    "ttl": 157680012,
-                    "length": 36,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/inner\\/",
-            "cookies": 0.0000272,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn.unid"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "Document.cookie getter": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "954928d2afcf38fd769a7b9002d0f3ed8edf21099ed4b7b6ab6606142c3f5f17"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/v3\\/hit",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unid"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/v3\\/hit",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "unid"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "frozenthemusical.co.uk",
-                "www.espn.com.ar",
-                "www.natgeotv.com",
-                "www.shopdisney.co.uk"
-            ]
-        },
-        {
-            "rule": "go\\.com\\/capmon\\/GetDE\\/",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tredir"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a72edcf04b96e127e0fc9781b11204a8356a3f4e6a9f4820165f3531bb6969cc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marvelhq.com",
-                "spiderman.marvelhq.com"
-            ]
-        },
         {
             "rule": "go\\.com\\/",
             "cookies": 0,
@@ -234,7 +36,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "56a34eb2b5746bc6e20fa4d370e771926791fa373e2e4e5901d1539568a5e3ec"
+                "e4dc75c93982ced4d18f618b37021f0bb176f5b3aa1a027e66b93f6af296907a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -320,6 +122,44 @@
             ]
         },
         {
+            "rule": "go\\.com\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.sessionStorage": 5,
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 2
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "930e6e87abad58fa50fd295b498cffa7bd3550b6a8382b2e29f7775e7120b8ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
             "rule": "go\\.com\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/es-LA",
             "cookies": 0,
             "fingerprinting": 1,
@@ -327,18 +167,192 @@
                 "cdn.registerdisney"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.name": 2,
-                "window.devicePixelRatio": 2,
-                "Document.cookie getter": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.name": 3,
+                "window.devicePixelRatio": 3,
+                "Document.cookie getter": 3
             },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4718f219190f359c7992a48cd06aa9a4f8afa501141c11050513860beb027bb1",
+                "ffeb9d169080c781118c6188221ec8058596ec1eebd22f30c6faf6e701b80d15"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney",
+                "stg.cdn.registerdisney"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/js\\/unid\\.min\\.js",
+            "cookies": 0.0000408,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.unid"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Navigator.prototype.cookieEnabled": 6,
+                "Navigator.prototype.language": 6,
+                "Date.prototype.getTimezoneOffset": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6,
+                "window.localStorage": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "fce9a2f431448206e4f577fa3d9be6e3053d7995ba2bef6a853a809f70696e5d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "UNID": {
+                    "ttl": 157680013,
+                    "length": 36,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.natgeotv.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/inner\\/",
+            "cookies": 0.0000408,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.unid"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6,
+                "Document.cookie getter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "954928d2afcf38fd769a7b9002d0f3ed8edf21099ed4b7b6ab6606142c3f5f17"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.natgeotv.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v3\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unid"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.natgeotv.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v3\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unid"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.cl",
+                "www.espn.com.ar",
+                "www.espn.com.co",
+                "www.footytips.com.au",
+                "www.natgeotv.com",
+                "www.shopdisney.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/public\\/websockethost",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fastcast.semfs.engsvc"
+            ],
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c68e74af80d4e7d78ee7546f0be78e8f9d8d090ea912a7843830dd8fa4064118"
+                "f3e0a3d7428ccc50e50876d438b42f28757b97e5d502bbaa78027b7c12c5b173"
             ],
-            "type": "Document",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -347,7 +361,28 @@
             ]
         },
         {
-            "rule": "go\\.com\\/v2\\/21CF-NATGEOTV\\.WEB-PROD\\/en-US",
+            "rule": "go\\.com\\/FastcastService\\/pubsub\\/profiles\\/12000",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p88decd28-4eff-44b4-8995-d6feda9c03b7-34-204-6-245.fastcast.semfs.engsvc",
+                "p1dc34e07-772a-4c0d-9149-f0cc729e3030-54-160-61-208.fastcast.semfs.engsvc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com.ar",
+                "www.espn.com.ar"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v2\\/ESPN-FOOTYTIPS\\.WEB-PROD\\/en-US",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -363,9 +398,80 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0b32f06f11b00e30f716a814b5d49d50727ca7cb11956879420ace11c1713fc0"
+                "013be547ec8198c9817a7bb79700ce6c84c2f7fbc252e110887d3c1ccb418b0a"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "footytips.com.au",
+                "www.footytips.com.au"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v4\\/OneID\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2d2a60eb002366f24eee7a4c8d61ee7068781247c34891240e8e1f546592cc17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natgeotv.com",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v4\\/bundle\\/web\\/21CF-NATGEOTV\\.WEB\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "103d83065c7a532a269002b440e754860bab1541d1d24e27a28f8d5b425bca16"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "natgeotv.com",
+                "www.natgeotv.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\/v4\\/responder\\.JS",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3af07103fe2267b00a09f3b798e0063f78a170038f4cb7135255551094dd808f"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -385,7 +491,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "abdc148988c03d6c3e2924680f687628eed92f3a4b4c435b1a0bce7c3e0782d4"
+                "86fe6ba0af8faab06c9cc57d70ef29c5e9994c9c07866db0a9450bd2cfb65ff0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -412,7 +518,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b31bbf5b15166fc555882ab38fada497f9a96fb3e220a42886dd72cdc539629c"
+                "7908bcadad67909f4991eb3158607062b52f1c34b8a5d9c70b11aefac0b0a4c1"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -425,12 +531,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000681,
+    "cookies": 0.0000817,
     "types": {
-        "Script": 22,
-        "Document": 10,
-        "XHR": 6,
-        "Preflight": 4
+        "Script": 28,
+        "Document": 15,
+        "XHR": 10,
+        "Preflight": 6,
+        "WebSocket": 2
     },
     "nameservers": [
         "ns1.twdcns.com",

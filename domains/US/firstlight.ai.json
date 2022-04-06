@@ -11,7 +11,8 @@
         "image-resizer-cloud-cdn.api.aha",
         "static-assets-cdn.api.aha",
         "geo-loc.api.aha",
-        "auth-gw.api.aha"
+        "auth-gw.api.aha",
+        "rg-srv-cdn.api.aha"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -28,7 +29,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1be4f55ec62e6bd4ededf51f8799f116988da0005c881d9714bcd17d483d7143"
+                "ea354b86c50933aae4bb9c367a5d82883eea193bbf226f881df10375c15f2079"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -156,7 +157,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fe5df2ad80f289fcaff022ba41c551ac5a16e09c9b893bb09f02c3356cef2fc5"
+                "e8e5dbf56f1a5c1cb6a8a6f82aefa8f48a80b7ce6e14d93524a61ef29004881a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -178,7 +179,49 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7a70ca0de6f0dab676bf72a2e6fd707916ecc716e3fd529fef6a20b468a6b480"
+                "3880810023efbf876a79a43a469077b9a8bc11c562b30d257930737889f18116"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aha.video",
+                "www.aha.video"
+            ]
+        },
+        {
+            "rule": "firstlight\\.ai\\/recommend\\/lookup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rg-srv-cdn.api.aha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aha.video",
+                "www.aha.video"
+            ]
+        },
+        {
+            "rule": "firstlight\\.ai\\/recommend\\/lookup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rg-srv-cdn.api.aha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77607ffc541a1b36500e9785e0fbcd8a8aa38fa6a9def4e85c8d2505960d4359"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -195,8 +238,8 @@
     "types": {
         "Fetch": 4,
         "Image": 4,
-        "Preflight": 4,
-        "XHR": 4
+        "Preflight": 6,
+        "XHR": 6
     },
     "nameservers": [
         "ns-423.awsdns-52.com",

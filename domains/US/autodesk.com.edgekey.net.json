@@ -13,12 +13,22 @@
     "sites": 8,
     "subdomains": [
         "akn.unifiedprofile",
-        "universal-search"
+        "universal-search",
+        "beehive",
+        "uhm"
     ],
     "cnames": [
         {
             "original": "akn.unifiedprofile.autodesk.com",
             "resolved": "akn.unifiedprofile.autodesk.com.edgekey.net"
+        },
+        {
+            "original": "beehive.autodesk.com",
+            "resolved": "beehive.autodesk.com.edgekey.net"
+        },
+        {
+            "original": "uhm.autodesk.com",
+            "resolved": "uhm.autodesk.com.edgekey.net"
         },
         {
             "original": "universal-search.autodesk.com",
@@ -65,7 +75,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "universal-search.autodesk.com",
@@ -113,6 +123,60 @@
                 "help.autodesk.com",
                 "knowledge.autodesk.com"
             ]
+        },
+        {
+            "rule": "autodesk\\.com\\.edgekey\\.net\\/ontology\\/v1\\/rest\\/allprodrelease\\/json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beehive"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "beehive.autodesk.com",
+                    "resolved": "beehive.autodesk.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a67c0ada906e15fe6214b2a5de9f72a6ac0bb7b0c2a8ec4c47a346ea820ba55d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "www.autodesk.com"
+            ]
+        },
+        {
+            "rule": "autodesk\\.com\\.edgekey\\.net\\/banner\\.config\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uhm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "uhm.autodesk.com",
+                    "resolved": "uhm.autodesk.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "17fa684206fedc0b91fae18379a728ab2e471fa3017dd5b61d0ec3b338d979d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "www.autodesk.com"
+            ]
         }
     ],
     "categories": [],
@@ -120,7 +184,8 @@
     "cookies": 0.0000272,
     "types": {
         "Script": 9,
-        "Stylesheet": 3
+        "Stylesheet": 3,
+        "XHR": 4
     },
     "nameservers": []
 }

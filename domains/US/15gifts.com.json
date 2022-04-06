@@ -4,15 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
+    "prevalence": 0.0000408,
     "sites": 6,
     "subdomains": [
         "virgin",
         "cpw",
+        "o2",
         "virginmobile"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "15gifts\\.com\\/public\\/evo\\/wizard\\/core\\.js",
@@ -20,18 +21,21 @@
             "fingerprinting": 1,
             "subdomains": [
                 "virgin",
-                "cpw"
+                "cpw",
+                "o2"
             ],
             "apis": {
                 "window.localStorage": 4,
                 "Navigator.prototype.userAgent": 4,
+                "PerformanceTiming.prototype.navigationStart": 4,
                 "Date.prototype.getTime": 4
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "9c6cdf0b70e628086e7a242007187c96647630119026408091b9fdccf5e7c9e6"
+                "44570b75e20915d485d41846a0c496904326cf03057f8e176d2d0fa50aadc9a9",
+                "0e343fe97027f4051a54776e124b21c1404bb7ae4610c158377138e918035bf2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,7 +45,7 @@
                 "my.virginmedia.com",
                 "store.virginmedia.com",
                 "www.carphonewarehouse.com",
-                "www.virginmedia.com"
+                "www.o2.co.uk"
             ]
         },
         {
@@ -50,15 +54,16 @@
             "fingerprinting": 0,
             "subdomains": [
                 "virgin",
-                "virginmobile"
+                "virginmobile",
+                "o2"
             ],
             "apis": {},
             "sites": 4,
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "09d0725a3b3a46ed23824014afe3e5a7cbb66308e89e9b4d3d1a1a1a205450d8",
-                "77195f4dcaace7350dbd1634a060b2301c4272a7c98da209813b08ce7637449a"
+                "7190e06fb7e512c4e4ccf859e15613e292be3b064078cc36028d230abc6f21b6",
+                "d7661615bf5d040e64d59387740a6ebabbb5479bda5ea4597711877ea9681ab1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -67,7 +72,7 @@
                 "virginmedia.com",
                 "my.virginmedia.com",
                 "store.virginmedia.com",
-                "www.virginmedia.com"
+                "www.o2.co.uk"
             ]
         },
         {
@@ -76,7 +81,7 @@
             "fingerprinting": 0,
             "subdomains": [
                 "virgin",
-                "virginmobile"
+                "o2"
             ],
             "apis": {},
             "sites": 4,
@@ -90,95 +95,7 @@
                 "virginmedia.com",
                 "my.virginmedia.com",
                 "store.virginmedia.com",
-                "www.virginmedia.com"
-            ]
-        },
-        {
-            "rule": "15gifts\\.com\\/leap\\/public\\/v1\\.60\\.0-d0d46ac-virgin\\/partner\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "virgin"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.devicePixelRatio": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0463b0ad713ff3b952bac57e0181cfef64a912b31f2bfa334cbeca219f6f0427"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "__evo_virgin_2592000": {
-                    "ttl": 2592009,
-                    "length": 50,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                },
-                "__evo_virgin_session": {
-                    "ttl": null,
-                    "length": 95,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "virginmedia.com",
-                "www.virginmedia.com"
-            ]
-        },
-        {
-            "rule": "15gifts\\.com\\/leap\\/public\\/v1\\.60\\.0-d0d46ac-virgin\\/partner\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "virgin"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1103e2922ad0ad29bbbad3c73d0ea3068a718519078450ead329208c8c16813b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "virginmedia.com",
-                "www.virginmedia.com"
-            ]
-        },
-        {
-            "rule": "15gifts\\.com\\/wizard\\/ready_to_open\\.html",
-            "cookies": 0.00000681,
-            "fingerprinting": 0,
-            "subdomains": [
-                "virgin"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "41b6f62a3d8915e19dac41c62bae104036fe6602fad8445e4299cb1d647aa551"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "virginmedia.com",
-                "www.virginmedia.com"
+                "www.o2.co.uk"
             ]
         },
         {
@@ -193,7 +110,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa6309fda184c34b7744d7546c6c5a7a1394266bb9d7db396d12b9105b353be8"
+                "0556a19ec040c328ccc31eedbf7f38f97a5a4708cd5a9d0a41f227ef84fc6614"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -208,10 +125,9 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 11,
+        "Script": 7,
         "XHR": 4,
-        "Preflight": 4,
-        "Stylesheet": 2
+        "Preflight": 4
     },
     "nameservers": [
         "ns-535.awsdns-02.net",

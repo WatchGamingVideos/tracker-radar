@@ -9,12 +9,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
+        "api",
         "personalization"
     ],
     "cnames": [
+        {
+            "original": "api.vidio.com",
+            "resolved": "api.vidio.com.edgesuite.net"
+        },
         {
             "original": "personalization.vidio.com",
             "resolved": "personalization.vidio.com.edgesuite.net"
@@ -23,15 +28,42 @@
     "fingerprinting": 3,
     "resources": [
         {
+            "rule": "vidio\\.com\\.edgesuite\\.net\\/auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.vidio.com",
+                    "resolved": "api.vidio.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "67a90e9657148781482d6402fe92af8532bd3f653b9feff57167f8a3e57b5c6a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vidio.com",
+                "m.vidio.com"
+            ]
+        },
+        {
             "rule": "vidio\\.com\\.edgesuite\\.net\\/embed\\.js",
-            "cookies": 0.0000272,
+            "cookies": 0.0000204,
             "fingerprinting": 3,
             "subdomains": [
                 "personalization"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "personalization.vidio.com",
@@ -42,25 +74,11 @@
                 "001019d8761f1b4efd62710dd3c7772556a73dc4aaab4e12707db4c3022b9a2c"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "cookietest": {
-                    "ttl": -1645155077,
-                    "length": 1,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                },
-                "visitor_fp_id": {
-                    "ttl": 3625,
-                    "length": 32,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "liputan6.com",
+                "vidio.com",
                 "m.vidio.com",
-                "www.liputan6.com",
                 "www.vidio.com"
             ]
         },
@@ -72,8 +90,8 @@
                 "personalization"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "personalization.vidio.com",
@@ -81,28 +99,27 @@
                 }
             ],
             "responseHashes": [
-                "0aab865d09d5ed04839962c25c6d82447f75a0de91aa8dcfa499c869f56ff62b"
+                "bf962d4454782196e44e22e305684485271e82e07fa6dc763dede14b0e6358db"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "liputan6.com",
+                "vidio.com",
                 "m.vidio.com",
-                "www.liputan6.com",
                 "www.vidio.com"
             ]
         },
         {
-            "rule": "vidio\\.com\\.edgesuite\\.net\\/embed-internal\\.a32cbec1171ff3da33e6\\.js",
+            "rule": "vidio\\.com\\.edgesuite\\.net\\/embed-internal\\.e8fa0db3036d99f15525\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "personalization"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "personalization.vidio.com",
@@ -110,16 +127,94 @@
                 }
             ],
             "responseHashes": [
-                "0e1ca50b9bc4104f3d43250d8e38b66c4b9583f7464793be36dc7d79e9655a42"
+                "98d93aebb9f36b59f681e57cf0e84f102fcd39ceab9c0f7c93f457f9ff4427c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vidio.com",
+                "m.vidio.com",
+                "www.vidio.com"
+            ]
+        },
+        {
+            "rule": "vidio\\.com\\.edgesuite\\.net\\/categories",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.vidio.com",
+                    "resolved": "api.vidio.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "2481c41ec6737b740a0746164e3e4ccfc811a845b9810726488b0ac5d9c9e67c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vidio.com",
+                "www.vidio.com"
+            ]
+        },
+        {
+            "rule": "vidio\\.com\\.edgesuite\\.net\\/categories",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.vidio.com",
+                    "resolved": "api.vidio.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vidio.com",
+                "www.vidio.com"
+            ]
+        },
+        {
+            "rule": "vidio\\.com\\.edgesuite\\.net\\/embed-internal\\.8324be04cc0adb1be9165f1847ed900281851c7a\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "personalization"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "personalization.vidio.com",
+                    "resolved": "personalization.vidio.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "80f0ca9c170debfbc6d04f92a1c62b0ddab77287947094956313cce1c41d9f69"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "liputan6.com",
-                "m.vidio.com",
-                "www.liputan6.com",
-                "www.vidio.com"
+                "www.liputan6.com"
             ]
         }
     ],
@@ -127,10 +222,12 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000272,
     "types": {
+        "Fetch": 4,
         "Script": 8,
-        "Document": 4
+        "Document": 3,
+        "Preflight": 2
     },
     "nameservers": []
 }

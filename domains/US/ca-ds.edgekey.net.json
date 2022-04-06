@@ -13,9 +13,14 @@
     "sites": 2,
     "subdomains": [
         "s.radio-canada",
-        "services.radio-canada"
+        "services.radio-canada",
+        "api.radio-canada"
     ],
     "cnames": [
+        {
+            "original": "api.radio-canada.ca",
+            "resolved": "api.radio-canada.ca-ds.edgekey.net"
+        },
         {
             "original": "s.radio-canada.ca",
             "resolved": "s.radio-canada.ca-ds.edgekey.net"
@@ -27,33 +32,6 @@
     ],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "ca-ds\\.edgekey\\.net\\/mp\\/modules\\.socialbar\\.executer\\.6\\.0\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "s.radio-canada"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "s.radio-canada.ca",
-                    "resolved": "s.radio-canada.ca-ds.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "81d3004262990a152ed9c7d516efeeb36cb7281586d813fff8ee5aaa5b1ff7fc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "radio-canada.ca",
-                "ici.radio-canada.ca"
-            ]
-        },
         {
             "rule": "ca-ds\\.edgekey\\.net\\/mp\\/visitorAPI_2_5_0\\.js",
             "cookies": 0.0000136,
@@ -82,8 +60,35 @@
             ]
         },
         {
+            "rule": "ca-ds\\.edgekey\\.net\\/mp\\/modules\\.socialbar\\.executer\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.radio-canada.ca",
+                    "resolved": "s.radio-canada.ca-ds.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "81d3004262990a152ed9c7d516efeeb36cb7281586d813fff8ee5aaa5b1ff7fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
             "rule": "ca-ds\\.edgekey\\.net\\/mp\\/appMeasurement_2_21_0\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 2,
             "subdomains": [
                 "s.radio-canada"
@@ -150,7 +155,7 @@
                 }
             ],
             "responseHashes": [
-                "3adeb5d4f565c567eea9e6687e399d55025c86c3f4eec2dafad8a6d754c3a313"
+                "d4cf91166bb20f99db14c35067ad3f8c901b1f9126cab0402808564554086561"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -202,11 +207,40 @@
                 }
             ],
             "responseHashes": [
-                "edf0cbaa262adf3121fa26e2c946cb62c7666ef6982d2629c4d9801552739927"
+                "51a6d8f3a9c6db476dc53e0269b6a7c26016bc6250be537b42f7b202f853bdf8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radio-canada.ca",
+                "ici.radio-canada.ca"
+            ]
+        },
+        {
+            "rule": "ca-ds\\.edgekey\\.net\\/partage\\/v2\\/SharingBar\\/ScriptSharingBarBatch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.radio-canada"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.radio-canada.ca",
+                    "resolved": "api.radio-canada.ca-ds.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "815f19e924dca7de188450da05170aa4117a899e05142d6018d3459cab849cf2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013612757876682026
+            },
             "exampleSites": [
                 "radio-canada.ca",
                 "ici.radio-canada.ca"
@@ -217,7 +251,7 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 6,
+        "Script": 8,
         "Preflight": 4,
         "Fetch": 4
     },

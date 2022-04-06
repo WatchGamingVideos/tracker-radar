@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "cdn"
+        "cdn",
+        "qcdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -24,7 +25,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f3acaaacb180b6e69a4dd9f05aa58d9ade3559dd70f20fa45620e18a6750253d"
+                "f407c128841289ebd26075d702adbf6d0d1a7e83cf7da0b318382dd199ec28a8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -44,17 +45,42 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.platform": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
                 "Navigator.prototype.vendor": 2,
                 "window.localStorage": 2,
-                "window.devicePixelRatio": 1
+                "window.devicePixelRatio": 2,
+                "window.innerHeight": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "be4640e6fe271b0bad5e275177675f037fc728e807846ea51922f1ebd23f6461"
+                "9c0ee2bfc5c306a752471e1fc79ef3018248daa6b57ac25624489f234e20a557"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluewin.ch",
+                "www.bluewin.ch"
+            ]
+        },
+        {
+            "rule": "skyjs\\.org\\/bluewin\\.ch\\/ta\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "98505edd88b3fee0c05144138a0299c3bc513acfd7701e46f39b1affb510db44"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -67,11 +93,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "ns1.digitalocean.com",
         "ns2.digitalocean.com",
-        "ns3.digitalocean.com"
+        "ns3.digitalocean.com",
+        "ns1.digitalocean.com"
     ]
 }

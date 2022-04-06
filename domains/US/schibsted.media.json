@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "cdn.stream",
         "jssdk.touchpoints"
@@ -17,7 +17,110 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "schibsted\\.media\\/player\\/3\\.39\\.6\\/player\\.next\\.min\\.js",
+            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.24\\.3\\/jwplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "window.localStorage": 4,
+                "Navigator.prototype.platform": 4,
+                "MediaSource.isTypeSupported": 4,
+                "HTMLMediaElement.prototype.canPlayType": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "0909e09031a45df6d23fa103c08836b4d23c38ea066004367ae81e36c364d999"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.aftenposten.no",
+                "www.bt.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.24\\.3\\/jwplayer\\.core\\.controls\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "5cf7b01e9bad3d3a9da846f6be9bde1e9e50625bc4c0c19ef3f2cc52ab0278b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.aftenposten.no",
+                "www.bt.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.24\\.3\\/translations\\/no\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "0d9e05d46f6d3a58de0038407e23dd505247f9264e3e3be3a84fff8178b4a2cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vglive.no",
+                "www.aftenposten.no",
+                "www.bt.no",
+                "www.vgtv.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.media\\/embed\\/latest\\/js\\/embed\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.stream"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fb0e311bfda085c05a4a25d9fa831415155bfa633d911e19b6c55579724d377"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aftenposten.no",
+                "www.bt.no"
+            ]
+        },
+        {
+            "rule": "schibsted\\.media\\/player\\/3\\.41\\.0\\/player\\.next\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -33,14 +136,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e0550c527c24f88a412811baf0faecab19d6df765046855b9917651d1778951a"
+                "1f16667ca1527f3fdf5b66b64f3684597f1d8d3e0a25b0c27716d775cc786192"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "aftenposten.no",
-                "www.aftonbladet.se"
+                "www.bt.no"
             ]
         },
         {
@@ -51,10 +154,11 @@
                 "jssdk.touchpoints"
             ],
             "apis": {
-                "Document.cookie getter": 5
+                "Document.cookie getter": 4,
+                "window.innerHeight": 4
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "ae42f412f1f4df2e17a3afb4d271f54066a75e27d7c2239e4a77e3e9edc24485"
@@ -66,59 +170,7 @@
                 "aftenposten.no",
                 "www.aftenposten.no",
                 "www.aftenbladet.no",
-                "www.bt.no",
-                "www.vg.no"
-            ]
-        },
-        {
-            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.23\\.2\\/jwplayer\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn.stream"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "PerformanceTiming.prototype.navigationStart": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.platform": 2,
-                "MediaSource.isTypeSupported": 2,
-                "HTMLMediaElement.prototype.canPlayType": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "6b2f387031c2c3711da5a43718d4582b57241542568b0e486c7f4a028d6d5344"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenposten.no",
-                "www.aftonbladet.se"
-            ]
-        },
-        {
-            "rule": "schibsted\\.media\\/jw\\/jwplayer-8\\.23\\.2\\/jwplayer\\.core\\.controls\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn.stream"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2671d7c7400b9398aea12a761c1f7bc098223f42e5a92f0eb3fa7bd94b54d58f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aftenposten.no",
-                "www.aftonbladet.se"
+                "www.bt.no"
             ]
         }
     ],
@@ -126,12 +178,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 11
+        "Script": 16,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-1693.awsdns-19.co.uk",
-        "ns-766.awsdns-31.net",
         "ns-412.awsdns-51.com",
-        "ns-1070.awsdns-05.org"
+        "ns-766.awsdns-31.net",
+        "ns-1070.awsdns-05.org",
+        "ns-1693.awsdns-19.co.uk"
     ]
 }

@@ -16,16 +16,19 @@
         {
             "rule": "joonbot\\.com\\/init\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "js"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d886aad55eecf8d5d5644e38a69e082408045844e8e98b8997311fda50a2d3ac"
+                "6292bec86ebb1cfdb69003f51497b557abca0c030a3eda32dc72b65c1a4b98ec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -47,7 +50,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4a60a7a1bdc3aa7348c5309f99a940027fd0cefca5fc8e5e1cf96911783fee43"
+                "9af4fcb4e7d70826743c65bb71d34b24e3dcd093882f4de4800d1eaefa9d7d9d"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -103,29 +106,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f5f9c3fdab52714780644d5723af433928a9aed3bf55441b8023fd364afd7c9c"
+                "d80de373e6e74c35de5c5b989ed9c32cfc38dcadf9d8a581ef115e0dede9c68e"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "everybodywiki.com",
-                "en.everybodywiki.com"
-            ]
-        },
-        {
-            "rule": "joonbot\\.com\\/api\\/integrations\\/29dbe28c-5518-489c-92f4-099dcc4ff823",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bot-gateway"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -148,6 +131,26 @@
                 "f64065e681b2da9718590cad426aa5b169bb8bf8b24b7a82e41625b38d0c7e26"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "everybodywiki.com",
+                "en.everybodywiki.com"
+            ]
+        },
+        {
+            "rule": "joonbot\\.com\\/api\\/integrations\\/29dbe28c-5518-489c-92f4-099dcc4ff823",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bot-gateway"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -204,8 +207,8 @@
     "types": {
         "Script": 6,
         "Document": 2,
-        "Preflight": 4,
-        "XHR": 4
+        "XHR": 4,
+        "Preflight": 4
     },
     "nameservers": [
         "ns1.digitalocean.com",

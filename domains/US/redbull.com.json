@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
+        "downloads",
+        "policies",
         "img",
         "static-cosmos",
-        "player",
         "resources",
         "addons-redbullracing-com2020",
         "rbrtranslateit",
@@ -21,6 +22,74 @@
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "redbull\\.com\\/webtrekk\\/edAnalyticsWrapper\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "downloads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordenskioldsloppet.se",
+                "www.nordenskioldsloppet.se"
+            ]
+        },
+        {
+            "rule": "redbull\\.com\\/rbcookieconsent\\/2\\/cookieconsent\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "policies"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "22b01993eea3d94d0bb3b54084b0f7b8ea1673017f71e09e8f4b5f08480f73fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordenskioldsloppet.se",
+                "www.nordenskioldsloppet.se"
+            ]
+        },
+        {
+            "rule": "redbull\\.com\\/rbcookieconsent\\/2\\/\\/franc-custom\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "policies"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ec33360c55a3b93bd91a31d7f378538aa1860a0e5553eac5efe5dba38972235d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordenskioldsloppet.se",
+                "www.nordenskioldsloppet.se"
+            ]
+        },
         {
             "rule": "redbull\\.com\\/images\\/w_220\\/q_auto,f_auto\\/redbullcom\\/2022\\/2\\/9\\/uxgdknthvvsnfla76pii\\/oracle-red-bull-racing-logo",
             "cookies": 0,
@@ -176,50 +245,6 @@
             ]
         },
         {
-            "rule": "redbull\\.com\\/rbup-wrapper-init\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d0dbd2142a7f7e7299e6d66b69a7ded13fce22ad2fc02328b9b952ee8e04c56a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redbullracing.com",
-                "www.redbullracing.com"
-            ]
-        },
-        {
-            "rule": "redbull\\.com\\/1\\.2\\.129-release-3263\\/rbup-wrapper\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "player"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0b1cbea9f03167c273eb5bf45a93b6ea3191da4a08f4d23dffe816269b7673c2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "redbullracing.com",
-                "www.redbullracing.com"
-            ]
-        },
-        {
             "rule": "redbull\\.com\\/logos\\/rbr\\/v4\\/redbullracing-logo\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -264,6 +289,28 @@
             ]
         },
         {
+            "rule": "redbull\\.com\\/fonts\\/bull-text\\/v1\\/full\\/BullText-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e731f1634d72deeee9e4d885ced503077a6cab438fe2e2f095ff491dd1a207db"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbullracing.com",
+                "www.redbullshop.com"
+            ]
+        },
+        {
             "rule": "redbull\\.com\\/api\\/graphQL\\/storedQuery",
             "cookies": 0,
             "fingerprinting": 0,
@@ -275,7 +322,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21b0be785f4379e31b5985ecc244e572206ca095c3399d1c867750e8b1cb2bbc"
+                "96c763a5a21bff4f13ee13c22aa1db04a3307fb30fe57266321c39f20282b9a5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -339,7 +386,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a9c84ccf518df01761b20f1b4009314b549b0c6df2914f8b35aae47ea42a3f23"
+                "ae9a87f52c49a56a596656d6c16aaeec75d9d2e439cb7da6e98c70b735fa5090"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -370,7 +417,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ec9471a3d1d53ff7813def8b10b8eba19c740a8d0a7f43e179bd4563be8317a0"
+                "54c288b7e976b4241263bc8990a12079f6c696b668e71e492ecd839a41365995"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -379,23 +426,89 @@
                 "redbullracing.com",
                 "www.redbullracing.com"
             ]
+        },
+        {
+            "rule": "redbull\\.com\\/fonts\\/bull\\/v3\\/full\\/Bull-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "67927be3cb8642c9e017885cecd867b3f5172230c904258886e9138527fd2053"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbullshop.com",
+                "www.redbullshop.com"
+            ]
+        },
+        {
+            "rule": "redbull\\.com\\/fonts\\/bull-text\\/v1\\/full\\/BullText-Medium\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4fb36f9a134d409150d919e0436719e6271d9260f04a7253e53a897ad3f84dcf"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbullshop.com",
+                "www.redbullshop.com"
+            ]
+        },
+        {
+            "rule": "redbull\\.com\\/fonts\\/bull-text\\/v1\\/full\\/BullText-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44281f836cab045568b421b269f46e04183eb6957b9cc08bd5d2a77da97b1470"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redbullshop.com",
+                "www.redbullshop.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.00000681,
     "types": {
+        "Script": 6,
         "Image": 2,
-        "Font": 12,
-        "Script": 4,
+        "Font": 20,
         "Fetch": 10,
         "Preflight": 2,
         "Document": 2
     },
     "nameservers": [
-        "pdns91.ultradns.com",
         "pdns91.ultradns.net",
-        "pdns91.ultradns.org",
-        "pdns91.ultradns.biz"
+        "pdns91.ultradns.com",
+        "pdns91.ultradns.biz",
+        "pdns91.ultradns.org"
     ]
 }

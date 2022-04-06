@@ -9,29 +9,27 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000558,
-    "sites": 82,
+    "prevalence": 0.000572,
+    "sites": 84,
     "subdomains": [
-        "snswprod-prod",
         "indeed-prod-live",
         "accor-group-prod-prod",
         "cisco-dsc-prod",
         "ee-prod-prod-02",
-        "onegov-production",
-        "mns-00.dn",
+        "cmg-prod",
+        "adsk-prod",
         "ee-prod-prod",
         "telstra-prod-public",
         "bgl-web-prod",
-        "artdotcom-prod",
         "conrad-prod-gcp-prod",
+        "costco-prd",
         "dswinc-prod",
         "schubergphilis-prod",
         "nhk-prod",
         "tyr-prod",
         "ecollege-prod",
         "bupa-sanitas",
-        "se-prod-prod",
-        "cmg-prod"
+        "se-prod-prod"
     ],
     "cnames": [
         {
@@ -47,6 +45,14 @@
             "resolved": "conrad-prod-gcp-prod.apigee.net"
         },
         {
+            "original": "api.conrad.nl",
+            "resolved": "conrad-prod-gcp-prod.apigee.net"
+        },
+        {
+            "original": "api.costco.com",
+            "resolved": "costco-prd.apigee.net"
+        },
+        {
             "original": "api.dsw.com",
             "resolved": "dswinc-prod.apigee.net"
         },
@@ -59,20 +65,8 @@
             "resolved": "ee-prod-prod.apigee.net"
         },
         {
-            "original": "api.g.service.nsw.gov.au",
-            "resolved": "snswprod-prod.apigee.net"
-        },
-        {
-            "original": "api.marksandspencer.com",
-            "resolved": "mns-00.dn.apigee.net"
-        },
-        {
             "original": "api.nhk.or.jp",
             "resolved": "nhk-prod.apigee.net"
-        },
-        {
-            "original": "api.onegov.nsw.gov.au",
-            "resolved": "onegov-production.apigee.net"
         },
         {
             "original": "api.prod.bunnings.com.au",
@@ -91,12 +85,8 @@
             "resolved": "indeed-prod-live.apigee.net"
         },
         {
-            "original": "bizapi.allposters.com",
-            "resolved": "artdotcom-prod.apigee.net"
-        },
-        {
-            "original": "bizapi.art.com",
-            "resolved": "artdotcom-prod.apigee.net"
+            "original": "developer.api.autodesk.com",
+            "resolved": "adsk-prod.apigee.net"
         },
         {
             "original": "dsc.cisco.com",
@@ -114,31 +104,6 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "apigee\\.net\\/myservicensw\\/v1\\/service-centre\\/self",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "snswprod-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.g.service.nsw.gov.au",
-                    "resolved": "snswprod-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nsw.gov.au",
-                "my.service.nsw.gov.au"
-            ]
-        },
-        {
             "rule": "apigee\\.net\\/graphql",
             "cookies": 0,
             "fingerprinting": 0,
@@ -146,8 +111,8 @@
                 "indeed-prod-live"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000116,
+            "sites": 19,
+            "prevalence": 0.000129,
             "cnames": [
                 {
                     "original": "apis.indeed.com",
@@ -155,22 +120,24 @@
                 }
             ],
             "responseHashes": [
-                "4595ab0cf4d8740d3166f80edc9a8068048a30592872982c2203cf96c76c3dd2",
-                "5cd8c91793327608823caab82e67a7d6d9ecd8a7fefdeb2fb039c694e8facbc6",
-                "bf3687ad6a29b9f17a1283f6eefe6c2c2e056f851b3e43359f54b558fddf2e62",
+                "26177d1e143d95518d0ed41690b7f37497021fee2c020c10fdd2d318fe43964f",
+                "0c63bbb9b8108b52053a895d5258661f91ecece8529312ed6471d2181cf41194",
+                "c3cdd3043546d23dfa2a0964e3a1dadcf4e60b880fa018337b53f904238bc5eb",
                 "95673eaed34cb1c55bcdffb53948494424eeeeabadf589e86ce54a4ee6f96fb6",
-                "b0249e5ac50e1f41f10a991a8d0692e29ea9ecc1481efcad648f43ad6f2a4163",
-                "b94fdbab4f427fef772166f046ecd4488b448cb5cd44026b907b853c3fe61ed4",
+                "8e6475e18fabfe077119c466017eea55d2bfd6699b7961027c3ead542d833dd6",
+                "d60fe7546397625394818879cd7e53c53154a46c753bf426a44b05aa9634e02c",
                 "36d986895f28e3df71ad1332d85b2e260ec9f7fcdaeae2248ed35c8bc161fdff",
-                "ce0d0385aca46fe691492da461cfe6b14d0b0116b1110c42323170d43bcdd109",
-                "460d6e9ba00d31744e7cc0b97c1a92e92501203ab0f02a52889d98dff6d11aeb",
-                "54ce015a99bf0b6f5f04e4bc3a04857b6ccddb5745145872dc964b533d660aa6",
-                "947129c952355b9d554c620e4555fba18aada04470cd385143f1c5a514fa0d6a",
-                "808c90e13c46e107ed18f29224d001555a78502ccef473420f58ee43e6ecbf8c",
-                "75625d215a1670e8623ad93d82f3055ba02bf0ece7e5e3afd697a56a57c5677c",
-                "70c24cd1a0bf72996edcf4b921abaa181897f885339e6e681d787f87168f1ffe",
-                "40963abd9c6b3fbfedf515fd380d13fe6c66e59c04648411ba5269e8544237d3",
-                "21b43b05fd410d4f0a27ba62cdfddd7ca916ce956390425d12eaab6dda65e5e4"
+                "9bb07718d8fac6dedaa482e4929a3bb6138b099af948b8c30e2d948c00e43ee7",
+                "3bce0060a275c28e5c3ca177d507cf051c2b5bb1eed0365b0b3f6d8f8f099ecd",
+                "326214f873e2839d471ce96488ffb9abd2eae37335c1029280d8142887b3fdb2",
+                "3bcee5c534f80823d224062708ed764418f9817fa865652116367af58e3e46dc",
+                "3e446966ab86517d68137828a18ad1942e95171d5635072ed2397d9ad403b9c3",
+                "565ab72be684221ab18d0c02cb91294e30e97a37a64056d93bfdfecdb9fe8b65",
+                "9808063b110944064e746d327e31a70fbc6411b180865f62310d8496e65cbe31",
+                "8596cd805e9e67ecf76231d426c74f8e15f3060baa2ee05091287f1045d09057",
+                "a59169be573b3c4784148418767fa3a8ac1f82774e8db3498ddbb3a5b4460d08",
+                "98cd38a60a63f5fc9b8e5bb54afd8287b87d70a87570a757d9b1e7b6bf8a9eef",
+                "dd8383054f66309d6a29c67a961b34bbe443d5dd22d11d83d256ef740e5bf350"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -188,9 +155,11 @@
                 "fr.indeed.com",
                 "ie.indeed.com",
                 "nl.indeed.com",
+                "no.indeed.com",
                 "nz.indeed.com",
-                "ph.indeed.com",
-                "uk.indeed.com",
+                "pe.indeed.com",
+                "pt.indeed.com",
+                "se.indeed.com",
                 "www.indeed.fr",
                 "za.indeed.com"
             ]
@@ -203,8 +172,8 @@
                 "indeed-prod-live"
             ],
             "apis": {},
-            "sites": 17,
-            "prevalence": 0.000116,
+            "sites": 19,
+            "prevalence": 0.000129,
             "cnames": [
                 {
                     "original": "apis.indeed.com",
@@ -228,23 +197,25 @@
                 "fr.indeed.com",
                 "ie.indeed.com",
                 "nl.indeed.com",
+                "no.indeed.com",
                 "nz.indeed.com",
-                "ph.indeed.com",
-                "uk.indeed.com",
+                "pe.indeed.com",
+                "pt.indeed.com",
+                "se.indeed.com",
                 "www.indeed.fr",
                 "za.indeed.com"
             ]
         },
         {
             "rule": "apigee\\.net\\/authentication\\/v2\\.0\\/authorization",
-            "cookies": 0.0000341,
+            "cookies": 0.000034,
             "fingerprinting": 0,
             "subdomains": [
                 "accor-group-prod-prod"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [
                 {
                     "original": "api.accor.com",
@@ -280,9 +251,9 @@
                 }
             ],
             "responseHashes": [
-                "81720023382aa19cae4e164c5a91876a73a1c4ee55e21ed52bdce38dda65e474",
-                "73d28135ad0a96f1cdaa2aff82cefe3f442e00086702a269b602493826251456",
-                "7d8ca74ef9a11fee7291a660c9cdb007c69d3abbc97b3aac0246b334306d6a98"
+                "fde71dec6f291f2c2cb012b537bad0822dda4df9310d09783ccbe70b3ef8b651",
+                "15111f03d158d992814658f38645cf42e10ac19b56b5b3fe900101053c10ab21",
+                "f6d8d6b303d4aa1bc370367150ec6323cbd4d1adac6996c722779b1c2c9fb75e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -310,9 +281,7 @@
                     "resolved": "ee-prod-prod-02.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "a54ab5c4c7a388915be5e20a9b52611b1c910508a3b7574f9c9d021dab21a3b4"
-            ],
+            "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -324,82 +293,71 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/FuelCheckApp\\/v1\\/fuel\\/prices\\/currenttrend",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "onegov-production"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.onegov.nsw.gov.au",
-                    "resolved": "onegov-production.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "784447aee06b6c8623041aa62efc089a722f57a962fb31693804d334826c6a04"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nsw.gov.au",
-                "www.fuelcheck.nsw.gov.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/phoenix-recommendation\\/v1\\/resolver",
+            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/download\\/session\\/load",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "mns-00.dn"
+                "cmg-prod"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.marksandspencer.com",
-                    "resolved": "mns-00.dn.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "marksandspencer.com",
-                "www.marksandspencer.com"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/phoenix-recommendation\\/v1\\/resolver",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "mns-00.dn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.marksandspencer.com",
-                    "resolved": "mns-00.dn.apigee.net"
-                }
-            ],
+            "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "marksandspencer.com",
-                "www.marksandspencer.com"
+                "cnet.com",
+                "download.cnet.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/v1\\/xapi\\/users\\/download\\/session\\/load",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cmg-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b4e46c56fa05a1f1c2127254b31a2bcc06acb1c54da20b5dc70b815c3ea2beb5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnet.com",
+                "download.cnet.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/authentication\\/v2\\/authorize",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adsk-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "developer.api.autodesk.com",
+                    "resolved": "adsk-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autodesk.com",
+                "viewer.autodesk.com",
+                "www.autodesk.com"
             ]
         },
         {
@@ -496,7 +454,7 @@
                 }
             ],
             "responseHashes": [
-                "e266a52f6a4c7560e1d9fb44c7ed5585e855876e1b4afcc1072f75d26c84aa4b"
+                "92724d2e2ec022d33eab909c5442c43069fbe2965b25d5c3adfb5a1dfeac36e9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -523,7 +481,7 @@
                 }
             ],
             "responseHashes": [
-                "c66e481ac68a145a164e6b91c564ef2d107ce34483c3fc9c62a9c5eddb797d90"
+                "bddf91dba5d67062c721e5575c4cfd4308a71e0d125aaf650bc42a77ae73197c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -575,7 +533,7 @@
                 }
             ],
             "responseHashes": [
-                "908f435cc9a99cc200e8a06f9f4df7c2eefd3c1fecfbb8ee63e6f0693fab16c5"
+                "c0342134edc149f3f2a25e1fe21818c065c7bb2034cf7c07a59c87f9fa637f2a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -627,7 +585,7 @@
                 }
             ],
             "responseHashes": [
-                "efd378922ca860f668e78409f71a4350353197ee1480177b039aa895543224c4"
+                "35faf9fb7ebfcd97273f3897e4e5000a101932960aacd3b8cb039b2a2c3246e0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -635,37 +593,6 @@
             "exampleSites": [
                 "bunnings.com.au",
                 "trade.bunnings.com.au"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/v2\\/search",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "artdotcom-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "bizapi.allposters.com",
-                    "resolved": "artdotcom-prod.apigee.net"
-                },
-                {
-                    "original": "bizapi.art.com",
-                    "resolved": "artdotcom-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "390e61b36ed0b60ad34749cf6756cc82162f4f314ca039b461b7525d332fd502"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "allposters.com",
-                "www.art.com"
             ]
         },
         {
@@ -709,7 +636,9 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "5a7c267fcf99ad394b4438a31fdfd97ae7855f5c6034a4704c741afea0967d5a"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -759,9 +688,7 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "0ce5920bca7a6255cc0cfded3a5cb55f1ba9e9268dd0ff547aabe2e5565411c7"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -811,9 +738,7 @@
                     "resolved": "bgl-web-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "6a34323c1dae7205c7c09028be5fba5b23f21c9772b29faf962f9fc2d3c9ea50"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -823,32 +748,7 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/search\\/1\\/campaigns\\/redirects\\/NL\\/nl\\/b2b",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "conrad-prod-gcp-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.conrad.com",
-                    "resolved": "conrad-prod-gcp-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.nl",
-                "www.conrad.nl"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/search\\/1\\/campaigns\\/redirects\\/NL\\/nl\\/b2b",
+            "rule": "apigee\\.net\\/search\\/1\\/campaigns\\/redirects\\/COM\\/en\\/b2c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -864,14 +764,14 @@
                 }
             ],
             "responseHashes": [
-                "7c4c54f2b91f12d99b9b0da160d7d1e4369022bd8a9609a3a008b7690e7d35b2"
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "conrad.nl",
-                "www.conrad.nl"
+                "conrad.com",
+                "www.conrad.com"
             ]
         },
         {
@@ -900,7 +800,7 @@
             ]
         },
         {
-            "rule": "apigee\\.net\\/search\\/1\\/campaigns\\/redirects\\/COM\\/en\\/b2c",
+            "rule": "apigee\\.net\\/reco\\/3",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -915,10 +815,8 @@
                     "resolved": "conrad-prod-gcp-prod.apigee.net"
                 }
             ],
-            "responseHashes": [
-                "f23cc12ccf940c785b612ce2f308a94144e67c9d8f33028ee2045c1f19f9deee"
-            ],
-            "type": "Fetch",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -934,34 +832,8 @@
                 "conrad-prod-gcp-prod"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "api.conrad.com",
-                    "resolved": "conrad-prod-gcp-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.com",
-                "www.conrad.com",
-                "www.conrad.nl"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/reco\\/3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "conrad-prod-gcp-prod"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.conrad.com",
@@ -969,16 +841,14 @@
                 }
             ],
             "responseHashes": [
-                "003e9d024b642c849bb72b0a6fb44c2906983d919b4b1db77c28cd94fab27eac",
-                "79ebfcabecadac7589011a4eb4fc3bb30229a2b98b106c2ca18a5365670d4ca8"
+                "47305f41620a2a4bda2f68f4e004b2fe9e12c75b96735e15269bf8b9689c65e4"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "conrad.com",
-                "www.conrad.com",
-                "www.conrad.nl"
+                "www.conrad.com"
             ]
         },
         {
@@ -989,9 +859,13 @@
                 "conrad-prod-gcp-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
                 {
                     "original": "api.conrad.de",
                     "resolved": "conrad-prod-gcp-prod.apigee.net"
@@ -1004,21 +878,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "conrad.de",
+                "conrad.nl",
+                "www.conrad.nl",
                 "www.conrad.de"
             ]
         },
         {
             "rule": "apigee\\.net\\/session\\/1\\/userinfo",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "conrad-prod-gcp-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
                 {
                     "original": "api.conrad.de",
                     "resolved": "conrad-prod-gcp-prod.apigee.net"
@@ -1031,7 +910,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "conrad.de",
+                "conrad.nl",
+                "www.conrad.nl",
                 "www.conrad.de"
             ]
         },
@@ -1043,9 +923,13 @@
                 "conrad-prod-gcp-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
                 {
                     "original": "api.conrad.de",
                     "resolved": "conrad-prod-gcp-prod.apigee.net"
@@ -1056,7 +940,262 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "conrad.de",
+                "conrad.nl",
+                "www.conrad.nl",
+                "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/category\\/1\\/service\\/CQ_NL_B2B\\/tree",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "770fbae7e0d7b32cfa6d35b2376dc70cee3dbd5e291ae7d0352b82963d570869"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/product\\/1\\/service\\/CQ_NL_B2B\\/productdetails",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "80eb516dda2b2498417af3164fa2fbb78fcfa8e87e8b9efe50be435a92d34a5f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/product\\/1\\/service\\/CQ_NL_B2B\\/productdetails",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/reco\\/3\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
+                {
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "19f7c0a9621a6510d4e42efaffa9352b8a62eccf237a42374edb174b2fc1badb",
+                "eeda0674758fa6b11dfab32ebbe3c5f763585993d49b0ff4d580bb210cdb9a92"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl",
+                "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/reco\\/3\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
+                {
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl",
+                "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/price-availability\\/4\\/CQ_NL_B2B\\/facade",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/price-availability\\/4\\/CQ_NL_B2B\\/facade",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "6a8bf9a65a16323913fae349d58c1984d7da793e4cfcee08d71a28e093ca0d03"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.nl"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/alter\\/1\\/availability-text-resolver",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
+                {
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "a0bf4d291f47d47f2c01c1537668673faca4dfa372d31a15d983a9e642675a3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
+                "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/alter\\/1\\/availability-text-resolver",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "conrad-prod-gcp-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.conrad.nl",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                },
+                {
+                    "original": "api.conrad.de",
+                    "resolved": "conrad-prod-gcp-prod.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conrad.nl",
                 "www.conrad.de"
             ]
         },
@@ -1077,7 +1216,7 @@
                 }
             ],
             "responseHashes": [
-                "6adc5f391293ab3fb65378723fb6899b9c3f94f296cae6892d1917ce3ba2a080"
+                "1a22d30177584fe055f23ab6c383847ae05f5217fa301e2aee40bdc6e1239145"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1104,59 +1243,7 @@
                 }
             ],
             "responseHashes": [
-                "0e019a688a181b75b85fcc21e44de367ac46e4904a11792438b4e0c922ecfebf"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.de",
-                "www.conrad.de"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/reco\\/3\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "conrad-prod-gcp-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.conrad.de",
-                    "resolved": "conrad-prod-gcp-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "conrad.de",
-                "www.conrad.de"
-            ]
-        },
-        {
-            "rule": "apigee\\.net\\/reco\\/3\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "conrad-prod-gcp-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api.conrad.de",
-                    "resolved": "conrad-prod-gcp-prod.apigee.net"
-                }
-            ],
-            "responseHashes": [
-                "5e4aceea0c39f17851cdb11e7909c86547061ab45c998b3854697a37fe4ba234"
+                "f988fa870c11adc7715929822acafbfdba3a39e9a4fcdb3b9b62c938e82311cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1208,7 +1295,7 @@
                 }
             ],
             "responseHashes": [
-                "b35026ef44f5d89a0114418e3249be854ae5b54e2e563882e2ed0e2c6fe72ae6"
+                "b809ff5d7ed81ef0a0f56829a004c872b3e09d01e6efd59cc693b7dbedffb677"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1216,6 +1303,87 @@
             "exampleSites": [
                 "conrad.de",
                 "www.conrad.de"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.ca",
+                "www.costco.ca",
+                "www.costco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/ebusiness\\/inventory\\/v1\\/location\\/distributioncenters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.ca",
+                "www.costco.ca",
+                "www.costco.com"
+            ]
+        },
+        {
+            "rule": "apigee\\.net\\/warehouseLocatorMobile\\/v1\\/warehouses\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "costco-prd"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.costco.com",
+                    "resolved": "costco-prd.apigee.net"
+                }
+            ],
+            "responseHashes": [
+                "111fad6fe55d08e3acf9daee68a81a8a88df48dff9e82626fa97e506ac632fa6",
+                "7e457c8f3d6fad25562c8eee5aea5ec5245a7b4fa297efe5a1a9e10e03616a69"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.ca",
+                "www.costco.ca",
+                "www.costco.com"
             ]
         },
         {
@@ -1260,7 +1428,7 @@
                 }
             ],
             "responseHashes": [
-                "b46dec4f6580ce7be4fc1d8898be51da02d26e33212672f7d6f8f62d7a44646f"
+                "d1024deeaea1b609ce295a7228ca9b57a39dfab66efd8ec054f7e28f0cb9a9b6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1282,7 +1450,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bfc94d6c8478044cfd23f64864d1a2e81a45e7dccd9901991be2c66493570206"
+                "1bc83b25e5993cee2fe6ab091343e1304aa5738859dbe96f9cfc8ff770bebc33"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1300,8 +1468,8 @@
                 "nhk-prod"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
                     "original": "api.nhk.or.jp",
@@ -1309,22 +1477,14 @@
                 }
             ],
             "responseHashes": [
-                "e9ac668089235ed1526f75be31e1bd52d808bab7b048c46db4f4556fa555d5b5",
-                "1cd6e0c7536fff2f3249d0d2528bdebfc873a672ec3982ef4bceb0e1283c436d",
-                "7d67037dd6f4a2a278837dbf92860e7bcb473a5f2539cfc6d0f17d183a828201",
-                "924622707d20f48b3b41004caef511760da32974633014823ba825c772639a75",
-                "442410f401199874a49fd3a39426573cbe55153c42e9099ae17ef5ba3d29830a"
+                "a9ebd0c2d04cf3354b5f782ee3676e9b8a49845d09fa9e402ab11e5f74061fe7"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nhk.or.jp",
-                "www2.nhk.or.jp",
-                "www3.nhk.or.jp",
-                "www4.nhk.or.jp",
-                "www6.nhk.or.jp",
-                "www9.nhk.or.jp"
+                "www3.nhk.or.jp"
             ]
         },
         {
@@ -1359,7 +1519,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "defb5872836ce476d9b568bb461ce3b56993f1f5bdc1edb3149846cdd965c6b2"
+                "8f5954426bdd414a855eebe5368b15bcffaa35b2d0b4eea61c06fd45eb361f54"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1386,7 +1546,7 @@
                 }
             ],
             "responseHashes": [
-                "a45ff057b264c507ddf8a2713fe6ef9e18c1ca0551a5aa010e883dbb36a2b223"
+                "392bc5aeda2ee6090b9321a81cc2982a76518e4f5f73f578269e8ed5a0ced9e8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1490,7 +1650,7 @@
                 }
             ],
             "responseHashes": [
-                "512df71e0740e4fb83ebdc802feb3a2d0f53a6da8643395f30e3c7d522aeaf7b"
+                "6c7cb41a5ba4b52d1d2128c67e26daf0c14c5a6286b1e86f181582e027a7b6b8"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1512,7 +1672,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9cc6a9aee6abd0e08959352088dfc5c24bfbf332fa32f8793b3c498ae1820065"
+                "b098196fd2ce081465395b6a34aa75bf59f7efa0a96bd7837eae2d22588cf2fe"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1527,13 +1687,13 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.000143,
+    "cookies": 0.000177,
     "types": {
-        "XHR": 48,
-        "Fetch": 28,
-        "Preflight": 54,
-        "Document": 9,
-        "Script": 8
+        "Fetch": 25,
+        "Preflight": 64,
+        "Document": 12,
+        "Script": 9,
+        "XHR": 56
     },
     "nameservers": [
         "ns-116.awsdns-14.com",

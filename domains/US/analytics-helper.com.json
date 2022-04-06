@@ -8,31 +8,69 @@
     "sites": 4,
     "subdomains": [
         "ga",
-        "pings"
+        "user",
+        "pings",
+        "proxy"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "analytics-helper\\.com\\/1\\/s\\/UA-19838998-1",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "ga"
             ],
-            "apis": {},
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "524ca342839bf55ad8dafa495980366747773ce12ba4c84b790c421ba83f8240"
+                "a3ac85d730283cfe026a31615ffc427038ac9752717035f1e7af927bcb616564"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ga_helper_consent": {
+                    "ttl": 31104001,
+                    "length": 82,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cidj.com",
                 "www.cidj.com"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/data\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f9c03df4c9137cc42cba2fb9286c6c4dcc595838422417bbcd21bbd3ecdb4ad9",
+                "9bdf68e0db0c92ff8c1fb2fbc4b38c90d5c2a90eb8be9ded6de3cd8416ef43bc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cidj.com",
+                "www.cidj.com",
+                "www.forums.supertoinette.com"
             ]
         },
         {
@@ -59,21 +97,55 @@
             ]
         },
         {
-            "rule": "analytics-helper\\.com\\/1\\/s\\/UA-16651611-1",
+            "rule": "analytics-helper\\.com\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ga"
+                "proxy"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "524ca342839bf55ad8dafa495980366747773ce12ba4c84b790c421ba83f8240"
+                "6b3da89922d333d106b84fefeebd7b16bfebf4cfbd7bef37fa10a47c471ae64c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cidj.com",
+                "www.cidj.com"
+            ]
+        },
+        {
+            "rule": "analytics-helper\\.com\\/1\\/s\\/UA-16651611-1",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ga"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2653b9a7f46b5e0650e0b3b99005e8383a2f025a72601f29a1a4261d2f5cc0a7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "ga_helper_consent": {
+                    "ttl": 31104001,
+                    "length": 347,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "supertoinette.com",
@@ -83,10 +155,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000272,
     "types": {
         "Script": 4,
-        "XHR": 3
+        "XHR": 6,
+        "Image": 2
     },
     "nameservers": [
         "raphaela.ns.cloudflare.com",

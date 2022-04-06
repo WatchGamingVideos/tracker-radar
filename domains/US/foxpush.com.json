@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000109,
-    "sites": 16,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
         "www",
+        "js",
         "json"
     ],
     "cnames": [],
@@ -22,17 +23,17 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
-                "12562c4ad41189c85694e6a94abc660b4fbc2c3986de3f03acc9df41742e1f84"
+                "8a2830bdb37d519f86563ffe63daee20904ac82d3542f9f6eeb821613de68572"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comicbookmovie.com",
-                "lanetaneta.com",
+                "coinmarketdo.com",
+                "regiopurmerend.nl",
                 "viral.olasmediatv.com",
                 "www.almasryalyoum.com",
                 "www.automobile-magazine.fr",
@@ -58,14 +59,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "comicbookmovie.com",
-                "lanetaneta.com",
-                "sabq.org",
+                "coinmarketdo.com",
+                "english.aawsat.com",
+                "regiopurmerend.nl",
                 "viral.olasmediatv.com",
                 "www.almasryalyoum.com",
                 "www.automobile-magazine.fr",
                 "www.nezavisne.com",
                 "www.perfect-tennis.com"
+            ]
+        },
+        {
+            "rule": "foxpush\\.com\\/aawsatcom\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Notification.permission": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ce75d0a81566f8855d63cc13a57cff045027c4739609f1baca05bc2eeda12ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aawsat.com",
+                "english.aawsat.com"
             ]
         },
         {
@@ -102,7 +129,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "94d5734438ee339a01e3a289b73c678b9632e5f83c4f5021da002f28da07d123"
+                "b9132ea1ae809d9b06bb06dee314059126cd01d9c763a30a8342f34d6f7d9307"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -124,7 +151,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3df34376f77ed870759c7cec1a60e2ae720b97982117dfa3ead9f1b2003f3347"
+                "6d06f7a25e5f49032a357aa386f8bd44a1456e02b107577e99bb135774e2901e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -155,28 +182,6 @@
                 "nezavisne.com",
                 "www.nezavisne.com"
             ]
-        },
-        {
-            "rule": "foxpush\\.com\\/youm7com\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "json"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c3ddcf7016efa1e24a72ab6e19657165cd9cca6da59e27d008aaa153a436af5f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "youm7.com",
-                "www.youm7.com"
-            ]
         }
     ],
     "categories": [],
@@ -185,7 +190,8 @@
     "types": {
         "Document": 7,
         "Other": 8,
-        "XHR": 10
+        "Script": 2,
+        "XHR": 8
     },
     "nameservers": [
         "tom.ns.cloudflare.com",

@@ -10,13 +10,55 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
+        "processor808",
         "app",
-        "api",
-        "processor808"
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "shoppable\\.com\\/secure\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "processor808"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3efe48eed53128ad432049cb9a968ec995d06f21f385955ef447b0251be8c4a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyhandyman.com",
+                "www.familyhandyman.com"
+            ]
+        },
+        {
+            "rule": "shoppable\\.com\\/cartAuth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyhandyman.com",
+                "www.familyhandyman.com"
+            ]
+        },
         {
             "rule": "shoppable\\.com\\/cartAuth",
             "cookies": 0.0000136,
@@ -29,7 +71,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cbd10a8d77629e064e6e8ecf955bb0e0710e40f94c728659df62bba846271d1b"
+                "41b936538ea339d40384c3d6b150a1764d3cb81a650c6bfc77dfd5d4e5cdfd7c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -40,89 +82,7 @@
             ]
         },
         {
-            "rule": "shoppable\\.com\\/cartAuth",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyhandyman.com",
-                "www.familyhandyman.com"
-            ]
-        },
-        {
-            "rule": "shoppable\\.com\\/v3\\/cart\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2debe6c86d8e7e9bdfbc70b92ee80be565ebda960da36b11eec5e2e6358bb7db"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyhandyman.com",
-                "www.familyhandyman.com"
-            ]
-        },
-        {
-            "rule": "shoppable\\.com\\/v3\\/cart\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyhandyman.com",
-                "www.familyhandyman.com"
-            ]
-        },
-        {
-            "rule": "shoppable\\.com\\/secure\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "processor808"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyhandyman.com",
-                "www.familyhandyman.com"
-            ]
-        },
-        {
-            "rule": "shoppable\\.com\\/secure\\/U2FsdGVkX19xJRKKckgiCf3mHHG5sjeNDUMb5xTAlg321X0JDkn9o7E7Kxzimkv1Q8SfnbZg94H36mpSHXSqiFo48XFaqdy%2FGNi7IolWxgOJN1xdr8xm1wlxuVx4qiMw89oI742d%2BR8A%2BaYHmzgUirdCOj%2B27%2BsZNZHQd5cAs9RSOPf7puRbOpmtq25yrPaog5laxtO0Od3Y17Rt9zE50eAibb6bqxaSO7UXcSQFdhTNBOghjPDerme1Bm6QQqSI53N31T7VqouYYr8Qpr7t%2Bsc9cCPkkoVzZBpX8h0eOQVKoABlXg%2FPr6nlGNmGu6ol8y8YUJH3As%2FfvUTTDnb92fVtSLkAGb9vw2bpfRlAVu6BovZIF4UoXQiqbfqVsSekjHmUUXCYasqCWEgEGp1RNGngt4PBg2FGLzV8e5cEfuuaN8FBC19lhCNmp80kGcEbbuJOo939P31HZBFhNMk2dGe5uelgGxmkOrTbUPa01TSFDG3NkEGCi0Vk4VkJV%2F1XJm8WNN4Um98uRA7O2d4V%2BBLxZYcJzrdTFLzXtkoqVC9kHc3%2B3d2KvUUsBlOIh2EpOyT5zdkZgz%2F%2FS1gZ3HkEK3OoqzK0WkqWA4OEEDv2qHQ5Geu2YNPqtyXjTYchnCWiKb7NKKks1LHJX%2BsaSG%2BDASRh5sOZKjGq%2F%2FeypDBHOJ74CX%2FXEWPy2Mrx%2BaCZi3rxcxM3sCzvIiHQaHaE1oTo9Q%3D%3D",
+            "rule": "shoppable\\.com\\/static\\/css\\/main\\.7e7be57b\\.chunk\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -133,29 +93,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2563f3c72a1b939aa285b8b8e687cf34026958312b4a704e7b61a7b1448b0b8d"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familyhandyman.com",
-                "www.familyhandyman.com"
-            ]
-        },
-        {
-            "rule": "shoppable\\.com\\/static\\/css\\/main\\.b8049bdc\\.chunk\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "processor808"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2f359f696af42c029f72d52c6c8a44fba18f2f1466087d82c0310c86fa1bd479"
+                "d6dbb0382103548e39a77c1dde0bc09a612dd56c1c03de0993bd4051c6855e7a"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -166,7 +104,7 @@
             ]
         },
         {
-            "rule": "shoppable\\.com\\/static\\/js\\/2\\.43a634ef\\.chunk\\.js",
+            "rule": "shoppable\\.com\\/static\\/js\\/2\\.343f5522\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -181,7 +119,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "83bf3575984198a25e6713b5266476ae5dc58c6c3cee07469a3084dd95f422de"
+                "d2b43a08dd1c2eeb09104dfb2d78aa687854dd32e7306378d9e59a6e2bcd7824"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -192,7 +130,7 @@
             ]
         },
         {
-            "rule": "shoppable\\.com\\/static\\/js\\/main\\.88f26afb\\.chunk\\.js",
+            "rule": "shoppable\\.com\\/static\\/js\\/main\\.23621698\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -202,9 +140,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "d7064f319a7107d006901418b3c14f254bf525c76aa685bc878e80d97180e022"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -214,7 +150,49 @@
             ]
         },
         {
-            "rule": "shoppable\\.com\\/secure\\/U2FsdGVkX18G4HK9JwllagEbmq2zNEs4z4dHNH4bgDmVbVCadgwxUaovw70aObxJ1p4JWZTEdmFnP0E4KYNE6LNCg%2B5Qle8onAwYHc4dt8a0HqnuMIgTPSikKWsmg3r%2ByehV%2FMaGl9GXQBuPjKkikgOtF6%2BaXXxTlyAlI1Zn%2Bl%2BI4lgg%2FBqChlRUdAVzb85%2B1dffJnwiSU6g6L%2FgEnhDpyx3m7twVsl2d2%2Ba8MLa0NmHYxevi2%2FZwLcppm5PReu6z%2FazJBRlWoOhiWbuUUQz5d9KhFvvMdLlh3EZYgntFFLaiZIPuMFGNarOOaPFJch8nw0xLRdM2%2F5kcAFGpFcrmAvO7TQ0GqHC7h4jyMfI8HCBywwchgY8J8nmlQ0%2FOsf47v00I2MSWmv3NtK0v%2B8PE52BoboHYFjnFWS%2Fai9lt%2FPSFspWo6I4pXyOYNnGBURLiFkPb1kl5YpxJL8ZCAPa%2FMMJYVFr8rvvCmp90Ak%2FYFHRavLlbNMQL2AGknYB%2FKxYXEwh%2BkAlDxoQHxaICkLDtDQPUx%2FidekdlSVJqXUvW0fKCvg0lWIm4ywmSoKeGETCBUmjssZdShY1D4h0F0wDDP8W6lSZ6OemXbQ2F75V8wObDp8csQNefV2eCgUWvltrwL2akyofHYiUEHN9a86a%2ByQ761Zo8CsgCJ1ZHFmjka0XujZ9rGGfIYlMaQyfOGyROm3yr6AAsZDKNHCneeUmkg%3D%3D",
+            "rule": "shoppable\\.com\\/v3\\/cart\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2d11c2f85c24c74d5dda5794f223687d7fbb5d7612d2c42761457094e529b7fc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyhandyman.com",
+                "www.familyhandyman.com"
+            ]
+        },
+        {
+            "rule": "shoppable\\.com\\/v3\\/cart\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyhandyman.com",
+                "www.familyhandyman.com"
+            ]
+        },
+        {
+            "rule": "shoppable\\.com\\/secure\\/U2FsdGVkX1%2B3ryGSksp2XcmK0QhUo66Aj%2BPIdw1rO1t898qoepnikgAluCocP6mXig9t5NDrNF%2Fi%2B3iZ%2BIjy1PqxFmYOY2yEqc8fIfJ1wDxebtmhQBs2JUBvXbo6a4iaqsGwbx6iUoPkLX1u1cH9Hx2T7PJoXUpeSgwX6OxHPwRiWlFJwsk8lV%2FKL%2F3fKsN7k2mNfr5GZVh5CWf%2FC5411c1c63uwjHV26rlg2DR1ZaKZBQrp7zvvE1HwTElnX16oWu0Di%2FL7RZ8Dbk0F%2FJR279hVaQ8KYYiF0lc8L9Td%2FbAgN8RCu0njGseoy1K54gonICaSQkdAl%2FwQ9pQ7vydR%2B%2BuVEwDwIKwD1FXzSXfN2xcJJlo0%2B0gjc0aLZdwxIiiO6bYca7LpRc1Qcob3ljRVdB4gugChyfAI5pCCqU35viAWmJlHziqLo0EQ5kgeS3%2BaAd3Vb8mDZ3aN3lXf3KB%2B1yQL%2FvXvEcwxZuEgkF0zKlciE2l8TqalK42YR76Ar7z01Q%2BkEB3fN6fTPn%2BwKTi%2FtuQcgeA33Lx3WWgp48QYLprZbxpYmj6B82Rnc%2Fpwk%2FwFeKwwoLAgCzuvzPogjtIpj90nKjXH3pq9dLVRi9p3yekXOcDxgnbqezF3iy7aN9xIs3NKiKF6EuffAKgiz%2BoK51U99AlwD6h25cFLhtUesEz%2BR3%2FGT7o4UushWevhMrqCIroHxXJWbqjOHUnOe6c%2FCA%3D%3D",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -225,7 +203,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2563f3c72a1b939aa285b8b8e687cf34026958312b4a704e7b61a7b1448b0b8d"
+                "b3efe48eed53128ad432049cb9a968ec995d06f21f385955ef447b0251be8c4a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyhandyman.com",
+                "www.familyhandyman.com"
+            ]
+        },
+        {
+            "rule": "shoppable\\.com\\/secure\\/U2FsdGVkX18aeMmhu1F7BsabOMWZPH472x%2BdbcrwgZbJuPcNB8XUihYTSo3t%2BzG2j%2BljBArhgG6EP9QFOZxU3TA7mzs9TxZNTC0C72gB%2B%2FjQ9XZuL58%2BVimiUy3V9t8vWLuFo0NUJur54iyfse%2BqCqFpqajsBms93uKRjrHt%2BtFL7%2ByVz1cUh0w2AHXK5mXhzJHZZf5fG0mHwQ2scQPkpyuyNd%2FmpEnOm35hYQZNSYhNSvuZ%2FQN9frNsQ2rZpNmNRCb3fjpSdhaYYrj6MAj8K2N74np%2F%2Bz4HppEomYXhUPUzSK1IXDb6HsGBeoWPpM146AubVTp2D1RE2rwI7Wv8Dm%2Fcm7bsY8YxgVVnXPr0%2FBa%2BMxwr5MMu9QULmPY4hUmWlML%2FH7ScTH0cQPhDC%2BStaED6FJCMUl9ZYXMNKA1pFkWLaWDrNytDisGZogExU%2BJE82RPMxp%2BFpUhRhvdc8ei96PN%2FOdP8cVB8TxFE6FDPKgMIbQRuSbJYgdsgRl%2BH8OIgyCYeQ7Hfpe7fff2QYwMXxIfqsiBYRxMFoVK8P14RoqhqEAKOYkSO4w4DiBjLS8emYNdFKccoSXunNg6C%2FkIXyOkXmpzTUGsJevefA59P37lAjJO%2FLRpbl5AN7%2FRMmIvoh2D6DaLq1yCEDxSFy4LNCylfjmrpsOkma2jCKlY5mFuKLGIbHSF1wL24w1arty56tsEPFAgye4eKgN7E1JrHw%3D%3D",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "processor808"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3efe48eed53128ad432049cb9a968ec995d06f21f385955ef447b0251be8c4a"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -240,9 +240,9 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "XHR": 4,
-        "Preflight": 4,
         "Document": 6,
+        "Preflight": 4,
+        "XHR": 4,
         "Stylesheet": 2,
         "Script": 4
     },

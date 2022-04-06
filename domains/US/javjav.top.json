@@ -8,7 +8,7 @@
     "sites": 9,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 2,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "javjav\\.top\\/asset\\/default\\/player\\/base\\.js",
@@ -16,11 +16,13 @@
             "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.plugins": 7,
-                "Event.prototype.timeStamp": 7,
-                "PerformanceTiming.prototype.navigationStart": 5,
-                "window.localStorage": 5
+                "Navigator.prototype.userAgent": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.plugins": 4,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4,
+                "Event.prototype.timeStamp": 4
             },
             "sites": 9,
             "prevalence": 0.0000613,
@@ -33,14 +35,14 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hdjavfull.com",
-                "javfather.com",
                 "javfullmovie.com",
                 "javhd.watch",
                 "javhd.world",
                 "javhun.com",
                 "javmelon.com",
                 "javmomporn.com",
-                "javonline.watch"
+                "javonline.watch",
+                "javtubefree.com"
             ]
         },
         {
@@ -49,23 +51,41 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "9e82376e792bd358c46048e2f7e602180770fe58919d040abefe3b53ab77e7e7"
+                "c3a355c15fa60eaf119608483422d94c5739884632a5361e544bd04cf5347f83"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hdjavfull.com",
-                "javfather.com",
-                "javhd.watch",
-                "javhd.world",
                 "javhun.com",
                 "javmelon.com",
                 "javmomporn.com"
+            ]
+        },
+        {
+            "rule": "javjav\\.top\\/v\\/rz30-be8edd3de7",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "javhd.watch",
+                "javhd.world",
+                "javtubefree.com"
             ]
         }
     ],
@@ -74,10 +94,11 @@
     "cookies": 0,
     "types": {
         "Script": 9,
-        "XHR": 7
+        "XHR": 4,
+        "Document": 3
     },
     "nameservers": [
-        "hank.ns.cloudflare.com",
-        "tegan.ns.cloudflare.com"
+        "tegan.ns.cloudflare.com",
+        "hank.ns.cloudflare.com"
     ]
 }

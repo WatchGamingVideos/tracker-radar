@@ -9,21 +9,113 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00211,
-    "sites": 310,
+    "prevalence": 0.00225,
+    "sites": 331,
     "subdomains": [
+        "admin",
+        "sadmin",
         "metrics",
         "edge.api",
-        "f1.media",
-        "sadmin",
-        "admin",
         "assets.map",
         "map",
+        "f1.media",
         "gallery-metrics.api"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "brightcove\\.com\\/js\\/BrightcoveExperiences\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "admin",
+                "sadmin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 35,
+                "Navigator.prototype.plugins": 35,
+                "HTMLMediaElement.prototype.canPlayType": 35,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 40,
+            "prevalence": 0.000272,
+            "cnames": [],
+            "responseHashes": [
+                "c9408cf5d8e0d12fb2b1d5ad6b4489be392384a4687962a0fc2a2877a57775c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.bandt.com.au",
+                "www.nikonusa.com",
+                "www.gia.edu",
+                "www.tuiholidays.ie",
+                "www.bafta.org",
+                "www.facinghistory.org",
+                "premier.ticketek.com.au",
+                "www.canon-europe.com",
+                "www.cancer.net",
+                "www.asme.org",
+                "www.canon.fr",
+                "state.gov",
+                "www.canon.de",
+                "www.ford.com.au",
+                "www.adb.org",
+                "www.out.com",
+                "racer.com",
+                "www.imgmodels.com",
+                "www.canon.co.uk",
+                "uk.sagepub.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/v2\\/tracker",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 202,
+            "prevalence": 0.00137,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00003403189469170507,
+                "_cb_svref": 0.00002041913681502304,
+                "muuid_origin": 0.000054451031506728105,
+                "get_top_level_domain_cookie": 0.00003403189469170507,
+                "_li_dcdm_c": 0.00003403189469170507
+            },
+            "exampleSites": [
+                "abcnews.go.com",
+                "nypost.com",
+                "people.com",
+                "www.politico.com",
+                "www.bd.com",
+                "www.farmersjournal.ie",
+                "www.capitalxtra.com",
+                "www.exploratorium.edu",
+                "mercati.ilsole24ore.com",
+                "www.pantone.com",
+                "www.net-a-porter.com",
+                "childrenshealthdefense.org",
+                "www.bbcearth.com",
+                "exchange.telstra.com.au",
+                "www.radiox.co.uk",
+                "www.fitchratings.com",
+                "www.sky.co.nz",
+                "www.nabtrade.com.au",
+                "www.lifehacker.com.au",
+                "jamaica-gleaner.com"
+            ]
+        },
         {
             "rule": "brightcove\\.com\\/v2\\/tracker",
             "cookies": 0,
@@ -58,8 +150,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "887f8ae7c699fdc448f5331cd9239955f9b90819fac3fcf334efcded4b10033f",
-                "9f5b4355fece1975c87926eccd684a4ba804f39987811f7263b36514fbe6e3be"
+                "6568718feaaf59629bbd7eb44b7a219a0ed8b6abd0d8629ebe4315c25171fb23",
+                "5510ac941ac92b47eed8e101058f06df5b58f2be53848527430aa3df247fc773"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -92,206 +184,6 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1611106596001\\/videos\\/5245825091001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oup.com",
-                "academic.oup.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1611106596001\\/videos\\/5245825091001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a120bb233e30d73d4c433911ca96a6a5e0e85189cbd7d623eb3ed4436d1d1aa3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oup.com",
-                "academic.oup.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/v2\\/tracker",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "metrics"
-            ],
-            "apis": {},
-            "sites": 188,
-            "prevalence": 0.00128,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "muuid_origin": 0.000040863027133050016,
-                "IR_gbd": 0.00003405252261087501,
-                "_li_dcdm_c": 0.000020431513566525008,
-                "get_top_level_domain_cookie": 0.00002724201808870001,
-                "lotame_domain_check": 0.000013621009044350005
-            },
-            "exampleSites": [
-                "nypost.com",
-                "people.com",
-                "www.ilsussidiario.net",
-                "drjoedispenza.com",
-                "www.northerntool.com",
-                "www.business.hsbc.uk",
-                "www.theserverside.com",
-                "www.lovehoney.com",
-                "www.fnn.jp",
-                "honey.nine.com.au",
-                "www.quest.com",
-                "www.ecb.co.uk",
-                "www.health.com",
-                "www.tbvsc.com",
-                "www.out.com",
-                "www.pride.com",
-                "www.iplt20.com",
-                "www.delltechnologies.com",
-                "www.rugbyworldcup.com",
-                "uktvplay.uktv.co.uk"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/8\\/1611106596001\\/1611106596001_5246108336001_5245825091001-vs\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "f1.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cb4eb5e674640d2c4f81d488b7ce5a73ad563fdc3a8366ab5c6eaf43db180381"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "oup.com",
-                "academic.oup.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/js\\/BrightcoveExperiences\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sadmin",
-                "admin"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 35,
-                "Navigator.prototype.plugins": 34,
-                "HTMLMediaElement.prototype.canPlayType": 34
-            },
-            "sites": 40,
-            "prevalence": 0.000272,
-            "cnames": [],
-            "responseHashes": [
-                "c9408cf5d8e0d12fb2b1d5ad6b4489be392384a4687962a0fc2a2877a57775c8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.ftc.gov",
-                "www.autocar.co.uk",
-                "www.tui.co.uk",
-                "www.docusign.co.uk",
-                "www.bafta.org",
-                "www.tuiholidays.ie",
-                "www.hp.com",
-                "www.docusign.com.au",
-                "news.un.org",
-                "quickview.cloudapps.cisco.com",
-                "www.readingrockets.org",
-                "www.nikonusa.com",
-                "www.gia.edu",
-                "www.canon.fi",
-                "www.01net.com",
-                "uk.sagepub.com",
-                "www.morganstanley.com",
-                "stomp.straitstimes.com",
-                "www.canon.de",
-                "www.zurich.co.uk"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1464976755001\\/videos\\/6286972049001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "us.pandora.net",
-                "www.pandora.net"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1464976755001\\/videos\\/6286972049001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "0092e9e6f95e621cbd883761482076f93e2b7873a290d7b3dc9555eee97428a1",
-                "905a1bd21f2216241f1d8ccc9b903c06ab2ce95b1fc2fbf2389207d496f24156"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pandora.net",
-                "us.pandora.net",
-                "www.pandora.net"
-            ]
-        },
-        {
             "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/664969388001\\/videos",
             "cookies": 0,
             "fingerprinting": 0,
@@ -299,8 +191,8 @@
                 "edge.api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -309,7 +201,8 @@
             "exampleSites": [
                 "nine.com.au",
                 "coach.nine.com.au",
-                "honey.nine.com.au"
+                "honey.nine.com.au",
+                "www.nine.com.au"
             ]
         },
         {
@@ -320,12 +213,13 @@
                 "edge.api"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "51048eecf8f891577031c6a457eac6e4b8a5c8b50ba20e7825c3c94124b1c9a2",
-                "bae44349d40c0c7e87d7422c8ffa2ce9864314a5dfba835ddd0f92ce7e578058"
+                "7e416cf9016e95ca89fa8881e9f0ada25dcd42d13ddee40969945c5cc0b4677e",
+                "194eeaada2ba375e1d20fb5719cba803c9ebdaba092e147731945eda0266f288",
+                "eac455a43705201509cf0a617e8cc96d54e7b173a2ee3d80dcc11ec9d411c2e5"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -333,7 +227,28 @@
             "exampleSites": [
                 "nine.com.au",
                 "coach.nine.com.au",
-                "honey.nine.com.au"
+                "honey.nine.com.au",
+                "www.nine.com.au"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1496514754001\\/videos\\/6158986938001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hsbc.com",
+                "ciiom.hsbc.com"
             ]
         },
         {
@@ -348,7 +263,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1fbdcef2466fec98c125aabb4d8f806bfd3481185c70e8c8e0483157bb19c3fc"
+                "55211d9056cab5c572530b8095d79dd6bf126a298024667ddd90d482381d4f16"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -369,8 +284,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "648068f2b84a861f4aa40f9b789706728fe40a0028f64a917b1365314f41512b"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -389,10 +306,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "02a4facc979c9090ff3f408e5e3fce7009876680af49df3b27f8cb12ecb3e293"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -409,8 +324,8 @@
                 "admin"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "ab7854b2ea112514c2435eeb373ab36576f593ebf8da19aa2711ca01107dda0c"
@@ -421,35 +336,9 @@
             "exampleSites": [
                 "samsung.com",
                 "displaysolutions.samsung.com",
-                "rmc.bfmtv.com",
-                "semiconductor.samsung.com",
                 "shop.samsung.com",
                 "www.01net.com",
-                "www.samsung.com",
-                "www.tui.co.uk",
                 "www.tuiholidays.ie"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4649896750001\\/videos\\/6285035271001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f5d8831559217279ea1a4ba5ae04cf4a3dc6277c0471e209678dda5ca34933aa"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "draftkings.com",
-                "dknation.draftkings.com"
             ]
         },
         {
@@ -460,11 +349,11 @@
                 "assets.map"
             ],
             "apis": {
-                "Date.prototype.getTime": 6,
-                "Document.cookie getter": 4
+                "Date.prototype.getTime": 7,
+                "Document.cookie getter": 5
             },
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "220fa5a8e8bc3dd2a8593f0afaa886328f40dedb972085098369d6287eddca6f"
@@ -474,48 +363,75 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wiley.com",
-                "www.aon.com",
+                "www.asme.org",
                 "www.bd.com",
+                "www.cato.org",
                 "www.cisco.com",
-                "www.fisglobal.com",
                 "www.fitchratings.com",
                 "www.sonicwall.com",
-                "www.weightwatchers.com",
                 "www.wtwco.com"
             ]
         },
         {
             "rule": "brightcove\\.com\\/config",
-            "cookies": 0.0000409,
+            "cookies": 0.0000476,
             "fingerprinting": 0,
             "subdomains": [
                 "map"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
-                "4d90b326ef076ac376763014ffd8ce0b9cda95bbeaeaaacbf8538e46d3855412",
-                "3195bae267dad49c07fb639207b2291568b33db63cde1d0dfb8f54e6971fb786",
-                "92b0b144c9d7bd0a64c056838b941eb1cfa4d4a9d9f32f615950d99a72ee9dd1",
-                "3d1bf60e69d8b21a3249de336d5670b1784c95305f299a7e9a4634b355acb4c6",
-                "b6d0d4dadf6ea948244aabbc34d5585e9ebad6066d57b04c4dbbcedfc85b2b03"
+                "e506878c38a5c861357b7e06e2cd3c51755a7b76640f28d55ec5bc4725d99a2b",
+                "4a4be93b4e546421b6116a6da53cfa84955cf7f2b0fc6bce1883624624e6f362",
+                "67bf7af7cb2c046e8954c10da3e583584945cc08e2c229c84977f66ba6132366",
+                "c183d9165e3edd1b50cd178deef3fbd8153245b6e0b7c13d9c0d228c1fcd6721",
+                "6f4097b3bda6fc2880b4e9cd62db2caf35a94121dd28e4d15acdc6fccae68c2b",
+                "c0dc806291cfd9bad200dec353d633f99564d6764506993fc3d63c6bc777429a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "wiley.com",
+                "www.asme.org",
                 "www.bd.com",
+                "www.cato.org",
                 "www.cisco.com",
-                "www.fisglobal.com",
                 "www.fitchratings.com",
                 "www.wtwco.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/18140046001\\/videos\\/6283881399001",
+            "rule": "brightcove\\.com\\/js\\/BrightcoveExperiences_all\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sadmin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.plugins": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ded1984bd12bb5d3e04997ebe9e34c865c4932da4eb0f2974d337c1429a1ea5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sagepub.com",
+                "journals.sagepub.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/18140046001\\/videos\\/ref%3Ad280f484-ac52-11ec-a789-21a119105e9c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -535,7 +451,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/18140046001\\/videos\\/6283881399001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/18140046001\\/videos\\/ref%3Ad280f484-ac52-11ec-a789-21a119105e9c",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -546,7 +462,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9730cebf6a30e7f021a213415df910b2995ec5b82f9b85b947b8038a4daffb5c"
+                "8e70c685cb7ab959af4e5123b4558dc5b9516c2a1747f82eb368b170d12fec57"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -554,48 +470,6 @@
             "exampleSites": [
                 "ilsole24ore.com",
                 "mercati.ilsole24ore.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/268012963001\\/videos\\/5067238270001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sagepub.com",
-                "methods.sagepub.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/268012963001\\/videos\\/5067238270001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f138909951fad962a2a43d44d55abd049810304cb0ef86430a6bb4154dd71e9a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sagepub.com",
-                "methods.sagepub.com"
             ]
         },
         {
@@ -630,7 +504,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "28364599f65696e09daa32e43fc22f1f5d5d9d8685fc171a324a9049f01b234f"
+                "1ae20176006d4045c86a47a713abf26494021a0c98c784a42966f427f6f2abda"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -641,20 +515,40 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/8\\/268012963001\\/268012963001_5067348594001_5067238270001-vs\\.jpg",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/268012963001\\/videos\\/5067238270001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "f1.media"
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sagepub.com",
+                "methods.sagepub.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/268012963001\\/videos\\/5067238270001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ee8afb72a7a12ca168b467be4d7ae4ed3cda91901364f459995fd3262fce2c62"
+                "db17dd9634f3381b6967cb8e79b70c5b35f699821720867ac8e9acd3a7cce880"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -685,6 +579,28 @@
             ]
         },
         {
+            "rule": "brightcove\\.com\\/8\\/268012963001\\/268012963001_5067348594001_5067238270001-vs\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f1.media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee8afb72a7a12ca168b467be4d7ae4ed3cda91901364f459995fd3262fce2c62"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sagepub.com",
+                "methods.sagepub.com"
+            ]
+        },
+        {
             "rule": "brightcove\\.com\\/js\\/api\\/SmartPlayerAPI\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -692,8 +608,8 @@
                 "sadmin"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "94942fad1063c2770548acc8fdc17cf8eaadc13738178d70dbd0d408d590e778"
@@ -702,12 +618,36 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ticketek.com.au",
+                "ticketek.co.nz",
+                "premier.ticketek.com.au",
+                "premier.ticketek.co.nz",
                 "www.nikonusa.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1464976755001\\/videos\\/6293535751001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6232633676001\\/playlists\\/1718719166029892311",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c819a1bec622b31770895a1faa42f49a2976129a73e0007094ac50970e5fda43"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "box.com",
+                "support.box.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6232633676001\\/playlists\\/1718719166029892311",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -722,12 +662,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pandora.net",
-                "uk.pandora.net"
+                "box.com",
+                "support.box.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1464976755001\\/videos\\/6293535751001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1242911124001\\/videos\\/5817325125001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -738,18 +678,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1a1900b65d3b6de85e35d36e57c73b2e192b79b4b9e48b4383586288ee973497"
+                "e566e9d9cdfacd21a8064b5d00f7e943606a3c49ba58390ec5b22d5383cc4e89"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "pandora.net",
-                "uk.pandora.net"
+                "uktv.co.uk",
+                "uktvplay.uktv.co.uk"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1242911124001\\/videos\\/5817325125001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6101136455001\\/playlists\\/1656539773458699304",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -764,12 +704,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "uktv.co.uk",
-                "uktvplay.uktv.co.uk"
+                "sixnationsrugby.com",
+                "www.sixnationsrugby.com"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1242911124001\\/videos\\/5817325125001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6101136455001\\/playlists\\/1656539773458699304",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -780,14 +720,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cf0fafdd8aea767a39ea9bb5b49f1a46043e23cbd6f7b8396d94369cfd14196d"
+                "ac3f13c01d397c7897245f91da09a1489487f49a9e386a4ad9ebe32b28667b6b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "uktv.co.uk",
-                "uktvplay.uktv.co.uk"
+                "sixnationsrugby.com",
+                "www.sixnationsrugby.com"
             ]
         },
         {
@@ -823,8 +763,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "4f75a7cc38c6a59d1db352f77124a092be16e75af1d0b8fed7f937cc23f7ffb9",
-                "9e12b908aeabad3c8cb0ed68e864d5f9032bc2ce20d399c9b09ee84f5a648705"
+                "895004d542283577f742d115a9eb04a54cdbd23bb38d720e8f3c8e305fd433c3",
+                "da92856ef42879737024dee0a5783d3b2d729a17959fc89612c71cad16de6c64"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -836,27 +776,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6139825499001\\/videos\\/6297829303001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "alexandermcqueen.com",
-                "www.alexandermcqueen.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6139825499001\\/videos\\/6297829303001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/665001584001\\/videos\\/5146642090001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -867,18 +787,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "14bfbd42f9b7c8e1eda2a2d230cceef72a2475c125c91488261498fc87052b57"
+                "083d8a81d8f8f821939de4d9b54853c99835c9b4811dcb2dfaa3c8ed06fdbf74"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "alexandermcqueen.com",
-                "www.alexandermcqueen.com"
+                "aljazeera.net",
+                "www.aljazeera.net"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6293977148001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6272511119001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -898,7 +818,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6293977148001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6272511119001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -909,7 +829,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "86d67843858c36656e2cc354af35d8bb2b60a547d743ddada8d6c27d87298e28"
+                "051aca0e8c674bc9c35f35894618142595680ad8a83ff1027354b2181c748eee"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -920,27 +840,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6217516011001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aman.com",
-                "www.aman.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5814665388001\\/videos\\/6217516011001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5420905012001\\/playlists\\/1721949669515175929",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -951,14 +851,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f490224fe8c468157625ef16a350f14aca365ce2afa48f904c41b9e8103c7ec7"
+                "4d0e0b6ad6c29e0805a125a26329b0bb418e35a26befca2512b14feee7132e2b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aman.com",
-                "www.aman.com"
+                "aopa.org",
+                "www.aopa.org"
             ]
         },
         {
@@ -982,7 +882,27 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5420905012001\\/playlists\\/1721949669515175929",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4772533039001\\/videos\\/6286800370001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blick.ch",
+                "www.blick.ch"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/4772533039001\\/videos\\/6286800370001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -993,14 +913,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "68a419d30ec1d78011de094aabf96036406b0a429271a93a4a5d7dfb9b6034ae"
+                "b0a2b52cb9961a7e0eeba18615701e50cbe95ae334478c3420fd892a8d3e89a4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aopa.org",
-                "www.aopa.org"
+                "blick.ch",
+                "www.blick.ch"
             ]
         },
         {
@@ -1026,6 +946,54 @@
             ]
         },
         {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1239686373001\\/videos\\/6299898924001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
+                "www.bose.nl",
+                "www.bose.co.uk",
+                "www.bose.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1239686373001\\/videos\\/6299898924001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "8858e4814465fd0363625cb7e97054ffb4bee411b3875dfe25289c66ad6e3992",
+                "034816a6a74c1a1adbaf5fbd9adc940128dde4e5b1a44a60382e73d011870280",
+                "07191ef18cca10656933834571abc3d66e6d067e7ff5b2f65e8632fe33df31e5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bose.com.au",
+                "www.bose.nl",
+                "www.bose.co.uk",
+                "www.bose.com"
+            ]
+        },
+        {
             "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/2995123072001\\/videos\\/6136987347001",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1037,7 +1005,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8f644872191dfd0777b97ea42b76881b7f52e215124527a3dfc2980acca64060"
+                "8b3af0351a2028f63cd1336a53c58de595adabb880b3c4fd63299b6cbb63ba38"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1079,7 +1047,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "49a798b63353ac08bdf1122f52f9fecf17b6e7ac8513cc9cf3ad5beb3b1252dc"
+                "077aebf2fff77ccd65f3588d715f9d0c7f38fc62ad6c97c42549a6346cfb86c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1121,7 +1089,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "96a376d3575109aa2b3557252c53201c9a6928371466bafc6f2969fd8b1d1c26"
+                "4bb85254e3223c1e8746e20410de9d87218e2cbb3f478af14abfb1b87ec562cf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1132,7 +1100,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5966354453001\\/playlists\\/6074514464001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6249007626001\\/playlists\\/1701040998979537055",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1143,18 +1111,58 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a75cb1b1b6d9c806320a3257af0d0c789fa4ac40e055afe4ef23a8107c105731"
+                "03ae64ffa1f8f10b084e1daea8d43c2dc684dc6ba5c5caf87959e969bf63b7e3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elle.com.hk",
-                "www.elle.com.hk"
+                "farmersjournal.ie",
+                "www.farmersjournal.ie"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/5966354453001\\/playlists\\/6085293350001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6249007626001\\/playlists\\/1701040998979537055",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "farmersjournal.ie",
+                "www.farmersjournal.ie"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/66043936001\\/videos\\/6300887814001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalreserve.gov",
+                "www.federalreserve.gov"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/66043936001\\/videos\\/6300887814001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1165,18 +1173,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b877a1a899de9f531edf2da57cececdc2c080426ea62b95df2a412703d680918"
+                "5ba314a407fb0b46f54e3b0f1a273ec92a776cf009c5fd13b54d9206877bfc7b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elle.com.hk",
-                "www.elle.com.hk"
+                "federalreserve.gov",
+                "www.federalreserve.gov"
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1301119679001\\/videos\\/6291219336001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1301119679001\\/videos\\/6301852037001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1187,7 +1195,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e663df98f6bed59ae6a32f39dac8328a01b6c8d580b140838409d9d8a1cc1df4"
+                "07bac1799a4b90a2557df588d35efe459eb3308f218d6d21b0a99ee57d10e5cb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1209,7 +1217,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "48b1c59f87216d188f83fa5d79f81a9d9f4cc2c6333f2b74d1c5979b0d0c6329"
+                "75c7e2f27bddc32307c34b5242520134e9c3ed0c3995a63c2bc77ae1f5e82996"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1237,90 +1245,6 @@
             "exampleSites": [
                 "forces.net",
                 "www.forces.net"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6149438623001\\/videos\\/6263393290001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "freightwaves.com",
-                "www.freightwaves.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6149438623001\\/videos\\/6263393290001",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a32d85bfb99bd630dffd13b2cc65836e6e5d7ac3a93852d0a4bd5fc6821f1c17"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "freightwaves.com",
-                "www.freightwaves.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6149438623001\\/playlists\\/1711818022495006195",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "freightwaves.com",
-                "www.freightwaves.com"
-            ]
-        },
-        {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6149438623001\\/playlists\\/1711818022495006195",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "edge.api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0e2777e4d019c3bc780a7ec311f534e249abd5271467017a6e53004caa25ff4b"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "freightwaves.com",
-                "www.freightwaves.com"
             ]
         },
         {
@@ -1397,7 +1321,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "94f446b6789ebfa38f387d8d2e048470a18d82751758002a8947bee9bf4a73d4"
+                "aaf98da2fbdcf630368b244c892ec919e53d52bce1f09cafb20a2b1ee4efe5a9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1405,6 +1329,180 @@
             "exampleSites": [
                 "hsbc.com.ar",
                 "www.hsbc.com.ar"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6298392098001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6298392098001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "98fb306a376676855e8de3b6118cf4b7f94285f842e74bf8e4ef1efcaae4843e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6302102194001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6302102194001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2eb3b76b317aa39e776b8f86ee25060a388fceed735e2d1933a7d65004a7bca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6294117053001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1268729919001\\/videos\\/6294117053001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6ecf2e80354cde82b8cff23c9c86ca0570731bfb4066d69e8eba88ed1bc0533"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hugoboss.com",
+                "www.hugoboss.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/734546229001\\/videos\\/6276171677001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intel.co.uk",
+                "www.intel.de",
+                "www.intel.fr",
+                "www.intel.ru"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/734546229001\\/videos\\/6276171677001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9ee61463ba29463398d07081089356986d67a109f2bf354a93fc06d32e6e09be",
+                "f553cf629be8f547bd677264e5aa2911cce94327d9f7f262f605c690158600fc",
+                "72c10957a2e8dfe956a1601c2885cc1d4cfca55eb9e6c4e2f849b82cfbd3f0e1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intel.co.uk",
+                "www.intel.de",
+                "www.intel.fr",
+                "www.intel.ru"
             ]
         },
         {
@@ -1452,7 +1550,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1453524588001\\/playlists\\/5136251235001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1453524588001\\/playlists\\/5108445178001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1472,7 +1570,7 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1453524588001\\/playlists\\/5136251235001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1453524588001\\/playlists\\/5108445178001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1483,7 +1581,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "97285e86891f4599273dcf2d9611ac3aa27cb81d4a17222455457617574206e3"
+                "e7dcdf48e990a52ef5d6ad46b4c0da6a34dd58563424ccc96f4f2018c8610f8e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1491,6 +1589,92 @@
             "exampleSites": [
                 "metservice.com",
                 "www.metservice.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/88951765001\\/videos\\/6301726418001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4857348c1841a54a5687888ea0eddd12860970c4196455c2bb3bdf9331ebac24"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "net-a-porter.com",
+                "www.net-a-porter.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/664969388001\\/videos\\/6146180976001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nine.com.au",
+                "www.nine.com.au"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/664969388001\\/videos\\/6146180976001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8067d2b2212304acd82797470094acb9ee13ec215e13dc6567aa9485376f5ec6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nine.com.au",
+                "www.nine.com.au"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/664969388001\\/videos\\/6146180976001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8067d2b2212304acd82797470094acb9ee13ec215e13dc6567aa9485376f5ec6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nine.com.au",
+                "www.nine.com.au"
             ]
         },
         {
@@ -1685,7 +1869,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a42a9eb729c576546e0fd931bae07466a884ceca8970e5ad02204a44070173b0"
+                "1cd82a75e244dafee38226e5d4ee45f041040eb95db7858af002b302d432ce41"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1707,7 +1891,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4e8dd036deef31cfc5f510c8e50986e85726c65b95a5757a2432f1f9e57e761c"
+                "abd78f30931bb31c5c94da3b72dad48902c68ebcd4593528652eaeac5e560109"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1729,7 +1913,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0d365445669332ac97dfc9aa3903898267299cd7a0dcf65cc2f42f436b77695a"
+                "7559d5e75cadcb095b3a9721d451b4d0ccb9ec7c5205b97f5cba77a849fb1844"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1751,7 +1935,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b20f8f9df496fad214babb8aca1cc89d5db25bf20e036aca606b297898834662"
+                "eb5cfd341d04511b0e12f97598a55f2a62496a5486b1704d04fbe4321de6ceab"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1773,7 +1957,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d55a19afd53a4f3f8fb32c7220cf97f38dfe1e30239ed494c2138e8979c8112"
+                "e14d270e0b0e3969fce366a610bcd5ae3edcc6c960296cdf2a41f70bf034ab60"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1795,7 +1979,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ed1695819a4fafdc3112c5b5ba0ba499df656277b1f886b225fe79ab6e8e2de0"
+                "bbf377ec53582b31057ed44e26e10e4cc375be669ed3d17839459b7be3d9448d"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1817,7 +2001,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5cbd3a1374fa2ea82c4e7621ac541b96d8abb1386b9f44b8dd269171210f5e32"
+                "c86c43239bf9c4ca40ca012e8cb96a35594ff1a39c6391a26a010d68c05bb8b4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1839,7 +2023,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "28bbcb12068e7bbc2ac8a1ab300eebb8181f252694c4c49b033009a39ea20aad"
+                "c8bcf681e34a612bb20871ef44e4df07042265cf49428818de2be1d0379000c9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1861,7 +2045,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "186e6c2262fce79fc6fd141184029e3fb2e1e03078f2a2b68b21f54580fb244a"
+                "f27a00c6252e678b7ea4d91626be9aad41ae2c17185257804eacc8b201298988"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1925,7 +2109,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "067cd860df36a6402875a08b7c4f9d36e63d6e30f69914e878b7cdd45411a1af"
+                "cdb2ce405486233c3fe29e45ed34b6ef9b370596ad3147a0c90cabd22540e084"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2009,7 +2193,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "364613ba66fed35ef7254d6101076aafb2dec193ce4734d42f9738d051b9d4f9"
+                "c2a75e0be5d41195db2d77953bed995f45c427c3c79bb1fdd57560229e453756"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2053,7 +2237,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "23e7ba18ac65d4f63897280c15138ac12b8d35de4c3fe0571a0854223c0131a3"
+                "302afbc45b1399d6ff66c035d63100d05839244f917ea2c4acf7689df6ff46d6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2075,7 +2259,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6c6d2085775c459871401bddc1fa91e6b7fd9d6ba0f6e150d71dd7f7aa1b47b6"
+                "e4f1169894921e93664ca7ef33ad8ade3e6f7851aaa1e42bda30490c11844555"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2086,7 +2270,27 @@
             ]
         },
         {
-            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/627968409001\\/videos\\/6275859305001",
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1534342432001\\/videos\\/6288358976001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vmware.com",
+                "www.vmware.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/1534342432001\\/videos\\/6288358976001",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2097,14 +2301,78 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7bafc96ee58167315a930158ac8d4b8b38752410c13d2da6abd52eed2f081e6f"
+                "9b737452ec033a78bb75dfb48b14d3f6570a540bbbd099d2915aa89b584064b2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "weightwatchers.com",
-                "www.weightwatchers.com"
+                "vmware.com",
+                "www.vmware.com"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6057984922001\\/videos\\/ref%3AQ5eWUxaTE6GOa6kJ-aak6ycb7mHiCplr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3cb3a00632c99b8dd0ff992c4de9bfb7ab06040764cf209d936c9f4fcf81c3fe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "westcoasteagles.com.au",
+                "www.westcoasteagles.com.au"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6068525061001\\/videos\\/6301732029001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.rugby",
+                "www.world.rugby"
+            ]
+        },
+        {
+            "rule": "brightcove\\.com\\/playback\\/v1\\/accounts\\/6068525061001\\/videos\\/6301732029001",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f5f2b5d9820afeca4bdfba9e89e0951ec63d57613e7e9400dd171ff63793a3c9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.rugby",
+                "www.world.rugby"
             ]
         },
         {
@@ -2139,7 +2407,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1fa96e3ca20506ff6324566aca049ce45c852b1cbbb68a5611e4a654876d0d92"
+                "dddf85a5ac70310a4dd04122bc7ae2defdf45f39b350042311ace2a6c187a3f6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2157,14 +2425,14 @@
         "Embedded Content"
     ],
     "performance": {},
-    "cookies": 0.0000477,
+    "cookies": 0.0000545,
     "types": {
-        "Ping": 2,
-        "XHR": 95,
-        "Preflight": 74,
-        "Image": 200,
         "Script": 66,
-        "Fetch": 3,
+        "Image": 212,
+        "Ping": 2,
+        "XHR": 108,
+        "Preflight": 90,
+        "Fetch": 6,
         "Media": 2
     },
     "nameservers": [

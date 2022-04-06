@@ -9,15 +9,19 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
         "www2c.cdc",
         "production.healthcare",
-        "www.defense",
-        "iservprod.medicare"
+        "iservprod.medicare",
+        "sancert.weather"
     ],
     "cnames": [
+        {
+            "original": "api.weather.gov",
+            "resolved": "sancert.weather.gov.edgekey.net"
+        },
         {
             "original": "assets.cms.gov",
             "resolved": "production.healthcare.gov.edgekey.net"
@@ -25,10 +29,6 @@
         {
             "original": "frontend.medicare.gov",
             "resolved": "iservprod.medicare.gov.edgekey.net"
-        },
-        {
-            "original": "stats.defense.gov",
-            "resolved": "www.defense.gov.edgekey.net"
         },
         {
             "original": "www2c.cdc.gov",
@@ -39,14 +39,14 @@
     "resources": [
         {
             "rule": "gov\\.edgekey\\.net\\/podcasts\\/feed\\.asp",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "www2c.cdc"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [
                 {
                     "original": "www2c.cdc.gov",
@@ -54,8 +54,9 @@
                 }
             ],
             "responseHashes": [
-                "fa8835bfdd0c4f45318dd9de833c3d53e225e0e089e10e22336a50f57e985d21",
-                "31442f51c42ec75b2cb829a159a808b77a99558a06c36b27cc154dc8ac8865cd"
+                "b85ff2e58dfcc6be50e376ed340d80499fd33310124f6816abc0af9c0783a2ae",
+                "a0b2143c8a234ebc4cb171fe782354d46e63dc971dd81c0b158e29d8d56d05c0",
+                "d7a8b4a48910e3459ba0ea3132e0ea1101ab2988814598ec6322999e2a39b3dc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -63,7 +64,8 @@
             "exampleSites": [
                 "cdc.gov",
                 "espanol.cdc.gov",
-                "www.atsdr.cdc.gov"
+                "www.atsdr.cdc.gov",
+                "www.cdc.gov"
             ]
         },
         {
@@ -148,60 +150,6 @@
             ]
         },
         {
-            "rule": "gov\\.edgekey\\.net\\/piwik\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "www.defense"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "stats.defense.gov",
-                    "resolved": "www.defense.gov.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "5c166a5d40aeefd0679a14f95e47ff28824e66abba82adfa30be41803cc25632"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "defense.gov",
-                "www.defense.gov"
-            ]
-        },
-        {
-            "rule": "gov\\.edgekey\\.net\\/piwik\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www.defense"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "stats.defense.gov",
-                    "resolved": "www.defense.gov.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "defense.gov",
-                "www.defense.gov"
-            ]
-        },
-        {
             "rule": "gov\\.edgekey\\.net\\/asset-manifest\\.json",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -218,7 +166,7 @@
                 }
             ],
             "responseHashes": [
-                "dacacfffee22aa667d21cedf6208cab0bb6c6cb0ed1d585a12efb28cbb602be1"
+                "8b79c304c283ee90ac75ffbcb5bb202ac3b51fa0bfef5ca2c74f725a470a26c4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -256,7 +204,7 @@
             ]
         },
         {
-            "rule": "gov\\.edgekey\\.net\\/static\\/js\\/2\\.d1257723\\.chunk\\.js",
+            "rule": "gov\\.edgekey\\.net\\/static\\/js\\/2\\.d739af00\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -272,7 +220,7 @@
                 }
             ],
             "responseHashes": [
-                "69037dc1a262eca6e49191bb31c7fece1886fc4702e255e7ce237f4f5e808c21"
+                "3b0bd4737b7e2a3abb68d9533019b754b7d585ce2dd216f59764cbc63ad47500"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -283,7 +231,7 @@
             ]
         },
         {
-            "rule": "gov\\.edgekey\\.net\\/static\\/css\\/main\\.66eaaab7\\.chunk\\.css",
+            "rule": "gov\\.edgekey\\.net\\/static\\/css\\/main\\.296b8249\\.chunk\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -299,7 +247,7 @@
                 }
             ],
             "responseHashes": [
-                "f42468f266f6d1f61e1bf9ff0753576ef38022229ddc71faed5bdec9ce8d4a91"
+                "d40984b693ffa95941dc28a6c025bb153eb13c85d3cb31199ff4cad745f7b4c4"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -310,7 +258,7 @@
             ]
         },
         {
-            "rule": "gov\\.edgekey\\.net\\/static\\/js\\/main\\.a0e1647b\\.chunk\\.js",
+            "rule": "gov\\.edgekey\\.net\\/static\\/js\\/main\\.ee55eccf\\.chunk\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -326,7 +274,7 @@
                 }
             ],
             "responseHashes": [
-                "d956a1f3fd4b4d0641a46d4fd842e37d08d24d871e1fed55a48b6df204b47605"
+                "f9cdaab917d67256a1acd4a6de3f48cb89e8d7e1fbcc14961525582a3852cc4c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -497,16 +445,43 @@
                 "medicare.gov",
                 "www.medicare.gov"
             ]
+        },
+        {
+            "rule": "gov\\.edgekey\\.net\\/products\\/types\\/SFT\\/locations\\/ILN",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sancert.weather"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.weather.gov",
+                    "resolved": "sancert.weather.gov.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a3a518379ce90599ea38b6ad094b0d5f636764756657e6383c28954ff0794984"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weather.gov",
+                "www.weather.gov"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000477,
+    "cookies": 0.0000408,
     "types": {
-        "Script": 17,
-        "Image": 14,
-        "XHR": 2,
-        "Stylesheet": 2
+        "Script": 16,
+        "XHR": 4,
+        "Stylesheet": 2,
+        "Image": 12
     },
     "nameservers": []
 }

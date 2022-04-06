@@ -4,12 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
+        "cs549.can",
         "cs87.can"
     ],
     "cnames": [
+        {
+            "original": "api.security.pagseguro.uol.com.br",
+            "resolved": "cs549.can.transactcdn.com"
+        },
         {
             "original": "gateway.verizonwireless.com",
             "resolved": "cs87.can.transactcdn.com"
@@ -17,6 +22,58 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "transactcdn\\.com\\/sessions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs549.can"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.security.pagseguro.uol.com.br",
+                    "resolved": "cs549.can.transactcdn.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uol.com.br",
+                "pagseguro.uol.com.br"
+            ]
+        },
+        {
+            "rule": "transactcdn\\.com\\/sessions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs549.can"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.security.pagseguro.uol.com.br",
+                    "resolved": "cs549.can.transactcdn.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uol.com.br",
+                "pagseguro.uol.com.br"
+            ]
+        },
         {
             "rule": "transactcdn\\.com\\/glassbox\\/VZW\\/SHOP\\/reporting\\/cls_report",
             "cookies": 0.0000136,
@@ -34,13 +91,13 @@
                 }
             ],
             "responseHashes": [
-                "84d19497a2ef57a8bcff5fb38680d522611dda3135ab848d961aaf36a8683e96"
+                "57db0f43f0043dc9db13dd997cf76315962efb3f641194e7df1a03f828e68cfb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_cls_v": 0.000013621009044350005,
-                "_cls_s": 0.0000068105045221750025
+                "_cls_v": 0.000013612757876682026,
+                "_cls_s": 0.000006806378938341013
             },
             "exampleSites": [
                 "verizon.com",
@@ -50,9 +107,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.00000681,
     "types": {
-        "XHR": 2
+        "Preflight": 2,
+        "XHR": 4
     },
     "nameservers": []
 }

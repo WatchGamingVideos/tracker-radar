@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "daemon",
         "management.ident"
@@ -15,14 +15,14 @@
     "resources": [
         {
             "rule": "indapass\\.hu\\/http\\/session_request",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "daemon"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -30,98 +30,96 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "femina.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
             "rule": "indapass\\.hu\\/jsfejlec2\\/passportHeader\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "window.localStorage": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "38eff721a58b9a2387712829cc5dec89b999c6f743890997d0fdfc9038b4c86b",
-                "f2417330929b2424028470972231f50c76b757b160a9ed30236fbb01438f09c6"
+                "f67d168220711b5d377d0ce96825969e802aae45b5512e061fcdbf6e704ddd56"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ident": {
-                    "ttl": 1209605,
+                    "ttl": 1209603,
                     "length": 24,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 },
                 "rp_init": {
                     "ttl": 86408,
                     "length": 1,
-                    "prevalence": 0.000020431513566525008,
-                    "uniqueness": 0.3333333333333333
-                },
-                "passportHeader_ef508725968d5dd5e14f73361e20b25e": {
-                    "ttl": 2592008,
-                    "length": 1,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
+                    "prevalence": 0.000027225515753364053,
+                    "uniqueness": 0.25
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
             "rule": "indapass\\.hu\\/management\\/getimage",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "management.ident"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "index.hu",
+                "port.hu"
+            ]
+        },
+        {
+            "rule": "indapass\\.hu\\/management\\/getcookie",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "management.ident"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "388fd0c7ed540a3b338e787354fb6cad404ee7cf231f906539b8d8bf2a17d959",
+                "baf5219d7df131348cf6cad40cae0e30bef32a440232f4c06b88b0f1d24c8e98"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "femina.hu",
-                "index.hu"
-            ]
-        },
-        {
-            "rule": "indapass\\.hu\\/management\\/getcookie",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "management.ident"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "167b976b720eede34fc5817ceb190726b14dc8c1a307d3f8b3da6f62a8e24357"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "femina.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
@@ -130,8 +128,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "c332942c8ed7285d8268ac97f77b3dc14a82e1e5d9722342a89ceba8cea71f15",
@@ -143,19 +141,20 @@
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
             "rule": "indapass\\.hu\\/management\\/rpFingerprint",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "management.ident"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
@@ -166,17 +165,18 @@
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
             "rule": "indapass\\.hu\\/static\\/logo\\.php",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -185,19 +185,20 @@
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
             "rule": "indapass\\.hu\\/http\\/session_request",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "daemon"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -206,7 +207,8 @@
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
@@ -217,8 +219,8 @@
                 "management.ident"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
@@ -226,12 +228,13 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "ident": 0.000013621009044350005
+                "ident": 0.00002041913681502304
             },
             "exampleSites": [
                 "femina.hu",
                 "forum.index.hu",
-                "index.hu"
+                "index.hu",
+                "port.hu"
             ]
         },
         {
@@ -256,14 +259,14 @@
         },
         {
             "rule": "indapass\\.hu\\/http\\/session_request",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "daemon"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -271,7 +274,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "index.hu",
-                "forum.index.hu"
+                "forum.index.hu",
+                "port.hu"
             ]
         },
         {
@@ -297,16 +301,16 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000545,
     "types": {
-        "Script": 12,
-        "Stylesheet": 3,
-        "Image": 11,
+        "Script": 17,
+        "Stylesheet": 4,
+        "Image": 14,
         "Font": 2,
-        "Document": 2
+        "Document": 3
     },
     "nameservers": [
-        "ns.index.hu",
-        "ns.inventra.hu"
+        "ns.inventra.hu",
+        "ns.index.hu"
     ]
 }

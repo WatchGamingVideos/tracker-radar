@@ -4,67 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000123,
-    "sites": 18,
+    "prevalence": 0.000211,
+    "sites": 31,
     "subdomains": [
-        "cdn",
         "autocomplete",
-        "tracking"
+        "tracking",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "diginetica\\.net\\/2100\\/client\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "window.devicePixelRatio": 2
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c6673061f6e7871995ca1d4d37be64e18a72419d43a914666f04c00668e3a4f8"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_userGUID": {
-                    "ttl": 63072000,
-                    "length": 43,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                },
-                "dSesn": {
-                    "ttl": 1803,
-                    "length": 36,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                },
-                "_dvs": {
-                    "ttl": 1800,
-                    "length": 43,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vseinstrumenti.ru",
-                "m.vseinstrumenti.ru",
-                "www.vseinstrumenti.ru"
-            ]
-        },
         {
             "rule": "diginetica\\.net\\/_health",
             "cookies": 0,
@@ -73,8 +22,8 @@
                 "autocomplete"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
+            "sites": 14,
+            "prevalence": 0.0000953,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -83,17 +32,20 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "vseinstrumenti.ru",
-                "m.vseinstrumenti.ru",
+                "baucenter.ru",
+                "goldapple.ru",
+                "hoff.ru",
+                "petrovich.ru",
+                "pnevmat24.ru",
                 "re-store.ru",
                 "rivegauche.ru",
+                "ru.siberianhealth.com",
                 "sunlight.net",
                 "www.alltime.ru",
-                "www.kant.ru",
+                "www.castorama.ru",
                 "www.muztorg.ru",
                 "www.sima-land.ru",
-                "www.sportmaster.ru",
-                "www.vseinstrumenti.ru"
+                "www.xcom-shop.ru"
             ]
         },
         {
@@ -104,8 +56,8 @@
                 "tracking"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "sites": 14,
+            "prevalence": 0.0000953,
             "cnames": [],
             "responseHashes": [
                 "05e6e6dab50a2ed29baa52bb9cd3d88afa3c5392fb53c2ac026c8d316da72a32"
@@ -113,22 +65,48 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dSesn": 0.00005448403617740002,
-                "ssaid": 0.0000068105045221750025,
-                "_ym_uid": 0.000013621009044350005,
-                "_ym_d": 0.000013621009044350005
+                "dSesn": 0.00008167654726009216,
+                "_ym_uid": 0.000006806378938341013,
+                "_ym_d": 0.000006806378938341013,
+                "ssaid": 0.000006806378938341013
             },
             "exampleSites": [
-                "vseinstrumenti.ru",
-                "m.vseinstrumenti.ru",
+                "baucenter.ru",
+                "goldapple.ru",
+                "hoff.ru",
+                "petrovich.ru",
+                "pnevmat24.ru",
                 "re-store.ru",
                 "rivegauche.ru",
+                "ru.siberianhealth.com",
                 "sunlight.net",
                 "www.alltime.ru",
-                "www.kant.ru",
+                "www.castorama.ru",
                 "www.muztorg.ru",
                 "www.sima-land.ru",
-                "www.vseinstrumenti.ru"
+                "www.xcom-shop.ru"
+            ]
+        },
+        {
+            "rule": "diginetica\\.net\\/autocomplete",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "autocomplete"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "237d3c42338957028e6c498efbc894f749254eac4c54846db578c5205e4b70e8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldapple.ru",
+                "sunlight.net"
             ]
         },
         {
@@ -147,9 +125,11 @@
                 "Screen.prototype.availHeight": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
+                "window.devicePixelRatio": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
                 "Navigator.prototype.appName": 2,
-                "window.localStorage": 2,
-                "window.devicePixelRatio": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -162,13 +142,13 @@
                 "_userGUID": {
                     "ttl": 63072000,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_dvs": {
                     "ttl": 1800,
                     "length": 43,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -179,7 +159,7 @@
             ]
         },
         {
-            "rule": "diginetica\\.net\\/1447\\/client\\.js",
+            "rule": "diginetica\\.net\\/385\\/client\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
@@ -193,39 +173,107 @@
                 "Screen.prototype.availHeight": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "window.devicePixelRatio": 1
+                "window.localStorage": 1,
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "acab3b3c3ffe2d86666fd7195695feb184c77d65e00e69e63c7e90c329a2e61f"
+                "5d9366a8d0de6b64996dc83e6c25b8f5bd0efbe231ca5d6b593f1ee7f6b901cb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_userGUID": {
                     "ttl": 63072000,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "dSesn": {
-                    "ttl": 1828,
+                    "ttl": 1803,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_dvs": {
                     "ttl": 1800,
                     "length": 43,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kant.ru",
-                "www.kant.ru"
+                "castorama.ru",
+                "www.castorama.ru"
+            ]
+        },
+        {
+            "rule": "diginetica\\.net\\/385\\/autocomplete\\/template\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3a41bb6344e6c390ce4b0d24e5acf38f97d65165c5e9901e7ef7352dbb1e417c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "castorama.ru",
+                "www.castorama.ru"
+            ]
+        },
+        {
+            "rule": "diginetica\\.net\\/385\\/autocomplete\\/template\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d18b670662f362456b9f5b1d6d90da10591cc74168257b22aed0eef448b8d6cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "castorama.ru",
+                "www.castorama.ru"
+            ]
+        },
+        {
+            "rule": "diginetica\\.net\\/283\\/client\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citilink.ru",
+                "www.citilink.ru"
             ]
         },
         {
@@ -243,32 +291,35 @@
                 "Screen.prototype.availHeight": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
-                "window.devicePixelRatio": 2
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.localStorage": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "57bfac54b79c5c1e8f8f3fc2fc868b8bda15426eba5c4f286d2b241def1a8882"
+                "33407b0ef13328649f6f518c7b83bdddbf59e5d787b2697b4deda2f94a55e1fe"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_userGUID": {
                     "ttl": 63072000,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "dSesn": {
-                    "ttl": 1805,
+                    "ttl": 1803,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_dvs": {
                     "ttl": 1800,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -312,7 +363,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "13faef8bd9ccd910f3adc2168050880fd0d9aaae341a079587289454eb57b44d"
+                "569db4bc08c175fb4b2e36fb44f3078c05542cb0c7159f5b3d2e418c4a14b38b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -337,8 +388,10 @@
                 "Screen.prototype.availHeight": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
+                "window.localStorage": 1,
                 "window.devicePixelRatio": 2,
-                "window.localStorage": 1
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -351,25 +404,25 @@
                 "_userGUID": {
                     "ttl": 63072000,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "digiGroup": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "dSesn": {
-                    "ttl": 1802,
+                    "ttl": 1801,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_dvs": {
                     "ttl": 1800,
                     "length": 43,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -378,17 +431,92 @@
                 "sima-land.ru",
                 "www.sima-land.ru"
             ]
+        },
+        {
+            "rule": "diginetica\\.net\\/522\\/client\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "technopark.ru",
+                "www.technopark.ru"
+            ]
+        },
+        {
+            "rule": "diginetica\\.net\\/308\\/client\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "window.devicePixelRatio": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.appName": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "477133cbeb6d9951d2b62e6671287313cad678c343bb56f77dfc386e140b577e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dSesn": {
+                    "ttl": 1804,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "_userGUID": {
+                    "ttl": 63072000,
+                    "length": 43,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "_dvs": {
+                    "ttl": 1800,
+                    "length": 43,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xcom-shop.ru",
+                "www.xcom-shop.ru"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000123,
+    "cookies": 0.000177,
     "types": {
-        "Script": 11,
-        "Fetch": 11,
-        "Image": 10,
-        "Stylesheet": 2,
-        "XHR": 2
+        "Fetch": 14,
+        "Image": 14,
+        "XHR": 6,
+        "Script": 14,
+        "Stylesheet": 4
     },
     "nameservers": [
         "dns1.name-services.com",

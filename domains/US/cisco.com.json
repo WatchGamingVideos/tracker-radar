@@ -11,8 +11,8 @@
     "sites": 8,
     "subdomains": [
         "www",
-        "smetrics",
         "cisco-tags",
+        "smetrics",
         "secure-web"
     ],
     "cnames": [],
@@ -26,14 +26,14 @@
                 "www"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0a1095a3e679a2545e7d657275948b8988041ca112a375db3b2f54005051f986"
+                "6158419e5ebbbbd193509aba34056418cdc10e1d5be3e4a1fd69df670145fb52"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -51,19 +51,19 @@
                 "www"
             ],
             "apis": {
+                "Navigator.prototype.platform": 3,
                 "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
                 "window.localStorage": 3,
                 "Document.cookie getter": 3,
                 "Navigator.prototype.cookieEnabled": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.platform": 1
+                "Navigator.prototype.doNotTrack": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "fb58fd12d668c780638a0ed6063043a64758f4a02fccc30d520b46f7cdda21ec"
+                "451856d337ef8c0f39816376c620218dc7fd6c33f3bed8cc9705ef53aa9ee01d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -98,28 +98,6 @@
             ]
         },
         {
-            "rule": "cisco\\.com\\/id",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "smetrics"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c0e0005a8b69a29033fac6ffb947f1720efdcd7c0648cbaa8f21a3b6f172324d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "meraki.com",
-                "community.meraki.com"
-            ]
-        },
-        {
             "rule": "cisco\\.com\\/tag\\/ntpagetag\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -136,13 +114,35 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "gpv_v9": 0.000013621009044350005,
-                "_ga": 0.0000068105045221750025
+                "gpv_v9": 0.000013612757876682026,
+                "_ga": 0.000006806378938341013
             },
             "exampleSites": [
                 "meraki.com",
                 "community.meraki.com",
                 "www.thousandeyes.com"
+            ]
+        },
+        {
+            "rule": "cisco\\.com\\/id",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smetrics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9dd9ec4092961daa874622c7a29d08d513162a475d0a82623cac9d54e581b16f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meraki.com",
+                "community.meraki.com"
             ]
         },
         {
@@ -177,8 +177,8 @@
         "XHR": 2
     },
     "nameservers": [
-        "ns1.cisco.com",
+        "ns2.cisco.com",
         "ns3.cisco.com",
-        "ns2.cisco.com"
+        "ns1.cisco.com"
     ]
 }

@@ -11,7 +11,6 @@
     "sites": 8,
     "subdomains": [
         "st",
-        "www",
         "st-test",
         "im"
     ],
@@ -31,8 +30,8 @@
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "04b46f39285a99b19316200550397dd716c4ca0e67ad0f8d103bf3255800a62f"
@@ -42,8 +41,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "luukku.com",
-                "www.luukku.com",
-                "www.mtvuutiset.fi"
+                "www.luukku.com"
             ]
         },
         {
@@ -72,22 +70,20 @@
             ]
         },
         {
-            "rule": "mtv\\.fi\\/multimedia\\/nocache\\/scripts\\/embed-rockery\\.min\\.js",
+            "rule": "mtv\\.fi\\/static\\/images\\/spinner\\.png",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
-                "www"
+                "st"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "876bd085d9a056f19dfb50b0f3d285ead2dbf204f18c4895fcd5f7e933c4009b"
+                "bc71c4713ed474075dee17f58ad268867e3245dd68c71227c176f649984f4f88"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -108,28 +104,6 @@
             "cnames": [],
             "responseHashes": [
                 "b7bf3c885c3421d2cdff2147e6516afc1d7355717c3126bbb964e7e6c0ff0b59"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mtvuutiset.fi",
-                "www.mtvuutiset.fi"
-            ]
-        },
-        {
-            "rule": "mtv\\.fi\\/static\\/images\\/mtv_play_backup\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "st"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a101cfd7cdeb35336966383476841a9d58cd67d1e24bb56856d346864fe56d0a"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -170,7 +144,12 @@
                 "st"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Date.prototype.getTime": 2,
+                "window.indexedDB": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
@@ -240,7 +219,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1
+                "window.innerWidth": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -273,7 +253,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "adobePrevPage": 0.0000068105045221750025
+                "adobePrevPage": 0.000006806378938341013
             },
             "exampleSites": [
                 "studio55.fi",
@@ -395,14 +375,14 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 14,
+        "Script": 11,
         "Image": 16,
         "Stylesheet": 4
     },
     "nameservers": [
-        "ns-1199.awsdns-21.org",
         "ns-30.awsdns-03.com",
         "ns-858.awsdns-43.net",
+        "ns-1199.awsdns-21.org",
         "ns-2010.awsdns-59.co.uk"
     ]
 }

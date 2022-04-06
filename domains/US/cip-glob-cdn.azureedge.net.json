@@ -13,8 +13,32 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/js\\/lazysizes\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3754bd78c095cb3ed44283c024a084e7f9ef4b23fc7f90f29f6c088afbfd5fd0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "calor.co.uk",
+                "www.calor.co.uk"
+            ]
+        },
         {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/assets\\/fonts\\/CharterITCStd-Regular\\.woff2",
             "cookies": 0,
@@ -76,28 +100,6 @@
             ]
         },
         {
-            "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/js\\/lazysizes\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3754bd78c095cb3ed44283c024a084e7f9ef4b23fc7f90f29f6c088afbfd5fd0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "calor.co.uk",
-                "www.calor.co.uk"
-            ]
-        },
-        {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/css\\/shvwebfonts\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -127,7 +129,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0e4b340c0166fe030cce9655165fc517f589ba9f2112df7e3523d94fb4f814e5"
+                "5a25f00c8b0828488f4a5af120f63e84d2ec891d99022f5c00434300aa88164c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -158,33 +160,15 @@
             ]
         },
         {
-            "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/css\\/print\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "293930b9661ac646e0050eff34e7eba6e83b25c0d411e3d57bc160b73ac9b803"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "calor.co.uk",
-                "www.calor.co.uk"
-            ]
-        },
-        {
             "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/js\\/vendor\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Event.prototype.timeStamp": 2,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -214,7 +198,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8da0a5eda5efe750079b2bdd98f8db8122721cc076b3970cbc9dba978f8bfb51"
+                "688f7a5510eaddde137af6eb66496197aaab96b3a32176bce7acfca179794c54"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -230,9 +214,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
                 "Event.prototype.timeStamp": 2,
                 "Element.prototype.getClientRects": 2,
-                "Navigator.prototype.userAgent": 1
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -247,6 +232,26 @@
                 "calor.co.uk",
                 "www.calor.co.uk"
             ]
+        },
+        {
+            "rule": "cip-glob-cdn\\.azureedge\\.net\\/dist\\/css\\/print\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "293930b9661ac646e0050eff34e7eba6e83b25c0d411e3d57bc160b73ac9b803"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "calor.co.uk",
+                "www.calor.co.uk"
+            ]
         }
     ],
     "categories": [
@@ -255,8 +260,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Font": 6,
         "Script": 8,
+        "Font": 6,
         "Stylesheet": 6,
         "Image": 2
     },

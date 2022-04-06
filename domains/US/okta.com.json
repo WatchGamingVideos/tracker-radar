@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000245,
-    "sites": 36,
+    "prevalence": 0.000293,
+    "sites": 43,
     "subdomains": [
         "sas.customdomains",
         "infapassport",
@@ -17,17 +17,25 @@
         "ea",
         "logon",
         "ligonier.customdomains",
-        "veritassso.customdomains",
         "bmc",
         "benjaminmoore.customdomains",
+        "monashuni",
+        "myfox",
         "login",
         "churchofjesuschrist.customdomains",
-        "myfox"
+        "mdc-prd.customdomains",
+        "cramo",
+        "milb.customdomains",
+        "albertsons"
     ],
     "cnames": [
         {
             "original": "auth.ligonier.org",
             "resolved": "ligonier.customdomains.okta.com"
+        },
+        {
+            "original": "auth.moodys.com",
+            "resolved": "mdc-prd.customdomains.okta.com"
         },
         {
             "original": "auth.sas.com",
@@ -38,19 +46,19 @@
             "resolved": "churchofjesuschrist.customdomains.okta.com"
         },
         {
-            "original": "okta.benjaminmoore.com",
-            "resolved": "benjaminmoore.customdomains.okta.com"
+            "original": "ids.milb.com",
+            "resolved": "milb.customdomains.okta.com"
         },
         {
-            "original": "sso.veritas.com",
-            "resolved": "veritassso.customdomains.okta.com"
+            "original": "okta.benjaminmoore.com",
+            "resolved": "benjaminmoore.customdomains.okta.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
             "rule": "okta\\.com\\/api\\/v1\\/users\\/me",
-            "cookies": 0.0000409,
+            "cookies": 0.0000408,
             "fingerprinting": 0,
             "subdomains": [
                 "sas.customdomains",
@@ -59,7 +67,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [
                 {
                     "original": "auth.sas.com",
@@ -67,11 +75,11 @@
                 }
             ],
             "responseHashes": [
-                "ae70c5a0c9fb9db96516fc97390df6dd673482637b61eeb87aaa474c20cdc8c3",
-                "5154f482cadbe9da21e504a45138e0ba08556631c9a51b75d6d055d5596fb2de",
-                "57e97616e4bfddedb3f3f00f7c00e3c0ee6e5c67f9a98e2c49e8ff56aca4f35a",
-                "459c23462a8b0973bc298668c3d771ab66d5e91c8ac58896d7fbc3a90b1217f4",
-                "65ae4b3277173ad54f8348c3e0aa4c47ce55bec48c63bb22e4a8bf507b11da2b"
+                "a4fb5e368370932cf057863e80c10ce0de2142a672a59840c94605ba1e9c6214",
+                "4364112713eff6818a2df19b209d4124cad73d4607565dd1bc13795348d373bb",
+                "c21c9bada0af3083542c25c16ac55e99b3124a84e308a3e519878af6a2acba4b",
+                "afc1a8d8d100303d8d79dab41a6e4e55f2012232bf0cdce1bd6b290699eb8e51",
+                "2a9b1b78a09fae501eb04cfa5a8049e09c59b5c941b67c4b4f1e70369b341e68"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -87,27 +95,22 @@
         },
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.0000613,
+            "cookies": 0.0000545,
             "fingerprinting": 0,
             "subdomains": [
                 "servicenowsignon",
                 "ea",
                 "logon",
                 "myasco",
-                "ligonier.customdomains",
-                "veritassso.customdomains"
+                "ligonier.customdomains"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [
                 {
                     "original": "auth.ligonier.org",
                     "resolved": "ligonier.customdomains.okta.com"
-                },
-                {
-                    "original": "sso.veritas.com",
-                    "resolved": "veritassso.customdomains.okta.com"
                 }
             ],
             "responseHashes": [],
@@ -122,46 +125,37 @@
                 "www.bcg.com",
                 "www.cancer.net",
                 "www.ligonier.org",
-                "www.servicenow.com",
-                "www.veritas.com"
+                "www.servicenow.com"
             ]
         },
         {
             "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
-            "cookies": 0.0000681,
+            "cookies": 0.0000545,
             "fingerprinting": 0,
             "subdomains": [
                 "servicenowsignon",
                 "bmc",
                 "ea",
-                "logon",
                 "benjaminmoore.customdomains",
-                "myasco",
-                "veritassso.customdomains"
+                "myasco"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [
                 {
                     "original": "okta.benjaminmoore.com",
                     "resolved": "benjaminmoore.customdomains.okta.com"
-                },
-                {
-                    "original": "sso.veritas.com",
-                    "resolved": "veritassso.customdomains.okta.com"
                 }
             ],
             "responseHashes": [
-                "9bb055f59f901b6bf5388b27c30441dbfd6030c4ff262970a97c96186b0a6faa",
-                "d0d67c3577a51359372b656e33d8c41d6c072dea25690fb7217401e70baebbee",
-                "bdd53266b7068fb440eb985eabfe9b2c45a1b42f89f792d0fbcf452c913183be",
-                "1dd4e7421f790ce6776e35d18fb66595cb8d28a9301b9eb9ec52147971a16b0c",
-                "09fdd3ee49171b02af94755abe9a66ab2028b69bf69ba6e34c8af3798e8c1ef8",
-                "094e8dc2aedc6cb916945abf83e407f24575ca8a10f51b64413fddf268c96248",
-                "4837b17ac3cbe53a5297619e4d1c754aa7a77f2516d64a1e7569861db203e843",
-                "0f3fe4e5ccb2f183c09e1a7001580053b788d8479da039ce0a1ef3fe6d0aa25b",
-                "ad49727eadb2e9fceb9888de85aaa4cee7374bc6e564dd83b18c1faad312e93c"
+                "03039a3ae8f9f44e28dc0cb06766c32ab94961fc28cdf3f202fd4be8d5720f84",
+                "fb764d231d20e8716ab524a3fb90824da0ba03dae2974cafc356e7d6fc233972",
+                "1654294d1d042936ff4f01403696c512eada47bcd423bc528b665faea77d57fb",
+                "176bada7579aa5c877a9f6d94e97ff2f831e31f3363903d4097a514ec53f14c9",
+                "bb1028f5c673a4cb2432d3ee09e0638ea3bd7b977a099e6bc7d6ff5b7d49e604",
+                "a4c3443e2731953b5b78fcdd8a6a866398631a51a8dceca84e2eab633aa4caee",
+                "6a170eec7360851f8adfb9257250be3307d420873e690ca70ec7979f2d394dcc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -172,11 +166,67 @@
                 "developer.servicenow.com",
                 "docs.bmc.com",
                 "login.ea.com",
-                "www.bcg.com",
                 "www.benjaminmoore.com",
                 "www.cancer.net",
-                "www.servicenow.com",
-                "www.veritas.com"
+                "www.servicenow.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/login\\/login\\.htm",
+            "cookies": 0.000034,
+            "fingerprinting": 1,
+            "subdomains": [
+                "monashuni",
+                "myfox"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.cookieEnabled": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "38a8ffd583e434c10ddd7737479a129f86c7b4413558be5d2f6f4234fa788bf5",
+                "71204f56d6c6ecf723074ef09256c45a8a44e1e10ca9432eef8fb5640cba45cc",
+                "183fce598aacd46496b33513075b71756183b6c164a9a9e8719cbcb1e496ed5d",
+                "84d97d3785c55aa89c173be6e287b1182a4359a615509b787eb7d07958890f61"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my.monash",
+                "www.fox35orlando.com",
+                "www.fox5ny.com",
+                "www.foxla.com",
+                "www.q13fox.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/internal\\/brand\\/theme\\/style-sheet",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "monashuni",
+                "myfox"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "9af30b5e4695010f9be253f861784e638c81274ca0390214629886029ca9b509"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "my.monash",
+                "www.fox35orlando.com",
+                "www.fox5ny.com",
+                "www.foxla.com",
+                "www.q13fox.com"
             ]
         },
         {
@@ -188,7 +238,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "c71558cf94e0875c93b552d52dd5974ae4697ba14e5a8d7c3694247a291ca9b8"
@@ -197,9 +247,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "unimelb.edu.au",
-                "www.fox10phoenix.com",
-                "www.fox2detroit.com",
+                "my.monash",
+                "my.unimelb.edu.au",
+                "www.fox35orlando.com",
                 "www.fox5ny.com",
                 "www.foxla.com",
                 "www.q13fox.com"
@@ -213,11 +263,11 @@
                 "login"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 6
             },
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "e899060d294cd2e7db4544c88c031272590fe5f9b72a8334dc42ee1f1868ce6a"
@@ -226,12 +276,42 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "unimelb.edu.au",
-                "www.fox10phoenix.com",
-                "www.fox2detroit.com",
+                "my.monash",
+                "my.unimelb.edu.au",
+                "www.fox35orlando.com",
                 "www.fox5ny.com",
                 "www.foxla.com",
                 "www.q13fox.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logon",
+                "ligonier.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "auth.ligonier.org",
+                    "resolved": "ligonier.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "da13b98ff12827af9f73b1251f2dc60ecc002daf4fb3ab91136d6b3714dff404",
+                "7e23d3f0ccae9668464a1fb9ce6c388aa92e1ddbe810797b4df065491effda99"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bcg.com",
+                "www.bcg.com",
+                "www.ligonier.org"
             ]
         },
         {
@@ -256,150 +336,317 @@
         },
         {
             "rule": "okta\\.com\\/oauth2\\/default\\/v1\\/authorize",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
-                "churchofjesuschrist.customdomains"
+                "churchofjesuschrist.customdomains",
+                "mdc-prd.customdomains"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "id.churchofjesuschrist.org",
                     "resolved": "churchofjesuschrist.customdomains.okta.com"
+                },
+                {
+                    "original": "auth.moodys.com",
+                    "resolved": "mdc-prd.customdomains.okta.com"
                 }
             ],
-            "responseHashes": [],
+            "responseHashes": [
+                "3a7952fcf766871c94fa603a6092ebddc0a16a33a6076e9308d929d1dcf7a1db"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "churchofjesuschrist.org",
-                "www.churchofjesuschrist.org"
+                "www.churchofjesuschrist.org",
+                "www.moodys.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/default\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cramo",
+                "mdc-prd.customdomains"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "auth.moodys.com",
+                    "resolved": "mdc-prd.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cramo.se",
+                "www.cramo.se",
+                "www.moodys.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/default\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cramo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aded7645bc4637fe2a576bbd4e1dd49d4f0a63057705fa14ef4ace4404a864a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cramo.se",
+                "www.cramo.se"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/default\\/v1\\/keys",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cramo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cramo.se",
+                "www.cramo.se"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/default\\/v1\\/keys",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cramo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8d1fd017e627cdaa32cfa9f5d7ec90265bb976b2640b8db5c2f20e40f560318"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cramo.se",
+                "www.cramo.se"
             ]
         },
         {
             "rule": "okta\\.com\\/app\\/akamai\\/exkr5nsl9cYbvvxII356\\/sso\\/saml",
-            "cookies": 0.0000409,
+            "cookies": 0.000034,
             "fingerprinting": 0,
             "subdomains": [
                 "myfox"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "fox10phoenix.com",
-                "www.fox10phoenix.com",
-                "www.fox2detroit.com",
+                "fox35orlando.com",
+                "www.fox35orlando.com",
                 "www.fox5ny.com",
                 "www.foxla.com",
                 "www.q13fox.com"
             ]
         },
         {
-            "rule": "okta\\.com\\/login\\/login\\.htm",
-            "cookies": 0.0000409,
-            "fingerprinting": 1,
-            "subdomains": [
-                "myfox"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.cookieEnabled": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [
-                "de4ae83eab151778d53c00eddbade8c07af051d65d1aa64e4ff8ae320adf704e",
-                "00f228f3b54725118d9cd7797645d16c08687e8a2428fd12204d353be33080c4",
-                "b6fe93295cc894ca98fe128b774d04e9c2140e1e03eae77008ba80dbb1f5b591",
-                "6fd0e4e9b0522250b04dd866b4c20d2d91a968d0b08c11ec8344f265fa4752e6",
-                "c828ece2bf3125c19b00fdca8e24dd443669c4107ab6f16eadad0e4344f0667c"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fox10phoenix.com",
-                "www.fox10phoenix.com",
-                "www.fox2detroit.com",
-                "www.fox5ny.com",
-                "www.foxla.com",
-                "www.q13fox.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/internal\\/brand\\/theme\\/style-sheet",
-            "cookies": 0.0000409,
-            "fingerprinting": 0,
-            "subdomains": [
-                "myfox"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [
-                "9af30b5e4695010f9be253f861784e638c81274ca0390214629886029ca9b509"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fox10phoenix.com",
-                "www.fox10phoenix.com",
-                "www.fox2detroit.com",
-                "www.fox5ny.com",
-                "www.foxla.com",
-                "www.q13fox.com"
-            ]
-        },
-        {
-            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me",
+            "rule": "okta\\.com\\/oauth2\\/aus9hfi7yyG0nCpgc356\\/v1\\/authorize",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "ligonier.customdomains"
+                "milb.customdomains"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "auth.ligonier.org",
-                    "resolved": "ligonier.customdomains.okta.com"
+                    "original": "ids.milb.com",
+                    "resolved": "milb.customdomains.okta.com"
                 }
             ],
             "responseHashes": [
-                "84e54beaaa48c7bb1c5fc03e1f3a4d3de4bedc64ddf4b45c6bddbee59d70172d"
+                "0efcbc3fdd8b04f447f1a690c73ae939016828386d57f7bb05dc36597191d510"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milb.com",
+                "www.milb.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/default\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mdc-prd.customdomains"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.moodys.com",
+                    "resolved": "mdc-prd.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "9bdc3b4420bef950b025073c955abe38717fdefb437545a90418bca220710bec"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ligonier.org",
-                "www.ligonier.org"
+                "moodys.com",
+                "www.moodys.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/api\\/v1\\/sessions\\/me\\/lifecycle\\/refresh",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "albertsons"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e8ad8168e183043284aa5a4b76c2a5024f36bde79670aeadbd777f531f2d4eb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "safeway.com",
+                "www.safeway.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/ausahp1sb9nUNn5Cq2p7\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "www.sas.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/ausahp1sb9nUNn5Cq2p7\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "bd54c3aeed89899ffd07cf51232fd27c1b139d4fd1410694f36eb4239cc14ecc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "www.sas.com"
+            ]
+        },
+        {
+            "rule": "okta\\.com\\/oauth2\\/ausahp1sb9nUNn5Cq2p7\\/v1\\/authorize",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sas.customdomains"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.sas.com",
+                    "resolved": "sas.customdomains.okta.com"
+                }
+            ],
+            "responseHashes": [
+                "d33d4161d7eea1301d5faf04c9eeab0b3a6e768146cc6fd0175438515b4d7b53"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sas.com",
+                "www.sas.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000238,
+    "cookies": 0.000272,
     "types": {
-        "XHR": 16,
-        "Preflight": 11,
-        "Document": 20,
+        "XHR": 20,
+        "Preflight": 17,
+        "Document": 23,
+        "Stylesheet": 5,
         "Script": 6,
-        "Stylesheet": 6,
-        "Fetch": 2
+        "Fetch": 7
     },
     "nameservers": [
         "edns5.ultradns.biz",

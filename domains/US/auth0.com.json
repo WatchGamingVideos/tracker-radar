@@ -7,35 +7,37 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000681,
-    "sites": 100,
+    "prevalence": 0.000796,
+    "sites": 117,
     "subdomains": [
+        "cdn",
         "autotrader-cd-huzk09q5tsfnet06.edge.tenants.au",
         "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
-        "cdn",
         "cdn.au",
         "chegg-experts.us",
         "netapp-cloud-account",
         "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
         "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
+        "latam-xp-prod",
         "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
         "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants",
         "telefe",
         "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
         "alrcom-prod-cd-xl01mhjzyl4wy4lk.edge.tenants",
         "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
-        "iden-prod-cd-eaw1hs3njqxohbsm.edge.tenants.us",
+        "bpp-cd-qectjinlwly1ojgt.edge.tenants.eu",
         "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
         "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
         "mindvalley-cd-lyqfe0h32cchuc2l.edge.tenants",
         "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-        "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu",
         "be-pearle-production-cd-c1ynksj756vci1uf.edge.tenants.eu",
-        "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us",
-        "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us",
+        "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu",
+        "prageru-cd-0qyos3zmmqobf8rm.edge.tenants",
+        "sothebys-cd-dzueayqubhnx9cfb.edge.tenants",
         "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
         "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu",
         "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au",
+        "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu",
         "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au"
     ],
     "cnames": [
@@ -46,6 +48,10 @@
         {
             "original": "accounts.messari.io",
             "resolved": "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants.auth0.com"
+        },
+        {
+            "original": "accounts.sothebys.com",
+            "resolved": "sothebys-cd-dzueayqubhnx9cfb.edge.tenants.auth0.com"
         },
         {
             "original": "auth.beautybay.com",
@@ -76,12 +82,8 @@
             "resolved": "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu.auth0.com"
         },
         {
-            "original": "auth.subaru.jp",
-            "resolved": "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us.auth0.com"
-        },
-        {
-            "original": "auth.theblockcrypto.com",
-            "resolved": "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us.auth0.com"
+            "original": "auth.prageru.com",
+            "resolved": "prageru-cd-0qyos3zmmqobf8rm.edge.tenants.auth0.com"
         },
         {
             "original": "auth.virginexperiencedays.co.uk",
@@ -96,12 +98,20 @@
             "resolved": "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au.auth0.com"
         },
         {
+            "original": "auth.williamsf1.com",
+            "resolved": "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu.auth0.com"
+        },
+        {
             "original": "auth.yha.com.au",
             "resolved": "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au.auth0.com"
         },
         {
             "original": "bcauth.tradelink.com.au",
             "resolved": "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au.auth0.com"
+        },
+        {
+            "original": "id.bpp.com",
+            "resolved": "bpp-cd-qectjinlwly1ojgt.edge.tenants.eu.auth0.com"
         },
         {
             "original": "lala.lendi.com.au",
@@ -120,16 +130,62 @@
             "resolved": "mindvalley-cd-lyqfe0h32cchuc2l.edge.tenants.auth0.com"
         },
         {
-            "original": "my.breville.com",
-            "resolved": "iden-prod-cd-eaw1hs3njqxohbsm.edge.tenants.us.auth0.com"
-        },
-        {
             "original": "secure.autotrader.com.au",
             "resolved": "autotrader-cd-huzk09q5tsfnet06.edge.tenants.au.auth0.com"
         }
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gymshark.com",
+                "au.gymshark.com",
+                "uk.gymshark.com",
+                "www.gymshark.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/ulp\\/react-components\\/1\\.58\\.13\\/css\\/main\\.cdn\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6a347b9a380d57e1ae5b3f13c6dda63d703ed8e11381492643ed9b45d480661"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "streamotion.com.au",
+                "gmb.io"
+            ]
+        },
         {
             "rule": "auth0\\.com\\/usernamepassword\\/challenge",
             "cookies": 0.0000204,
@@ -169,8 +225,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "274a08ddc700fc754cb977c38b9fa34cc0dac17b9d768da40c81b502b97862f6"
@@ -180,7 +236,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "autotrader.com.au",
-                "www.autotrader.com.au"
+                "www.autotrader.com.au",
+                "www.williamsf1.com"
             ]
         },
         {
@@ -241,6 +298,32 @@
             ]
         },
         {
+            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\.4\\/auth0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "battlefy.com",
+                "www.carsguide.com.au"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/js\\/auth0\\/9\\.11\\/auth0\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 1,
@@ -248,13 +331,13 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.appName": 5,
-                "Date.prototype.getTime": 5,
-                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appName": 6,
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.userAgent": 6,
                 "Document.cookie setter": 2
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "2ae5aed8aab32ad79a23003eee65fec603ddbeed83b296ba4735ff840e12b005"
@@ -267,42 +350,45 @@
                 "cloud.netapp.com",
                 "uk.vwr.com",
                 "us.vwr.com",
-                "www.honeywellhome.com"
+                "www.honeywellhome.com",
+                "www.inquirer.com"
             ]
         },
         {
             "rule": "auth0\\.com\\/authorize",
-            "cookies": 0.000177,
+            "cookies": 0.000191,
             "fingerprinting": 0,
             "subdomains": [
                 "netapp-cloud-account",
                 "arduino-prod-cd-7d4guw5p2tbeio38.edge.tenants",
                 "chegg-experts.us",
                 "homesnz-cd-zmq2n6ogmq12iykl.edge.tenants.au",
+                "latam-xp-prod",
                 "hashicorp-cd-uiujfnz9rprgm4yc.edge.tenants",
                 "messari-cd-uxuyfsbhh8l0f9d7.edge.tenants",
                 "telefe",
                 "tradelink-bigcommerce-prod-cd-xikfehzx64xu37pk.edge.tenants.au",
                 "alrcom-prod-cd-xl01mhjzyl4wy4lk.edge.tenants",
                 "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu",
-                "iden-prod-cd-eaw1hs3njqxohbsm.edge.tenants.us",
+                "bpp-cd-qectjinlwly1ojgt.edge.tenants.eu",
                 "nl-eyewish-production-cd-4i8px71jmi9ncrqg.edge.tenants.eu",
                 "ireland-cd-h39uezdgwfs4i0nj.edge.tenants.eu",
                 "lendi-customer-production-cd-rdlslelgydlwue81.edge.tenants.au",
                 "mindvalley-cd-lyqfe0h32cchuc2l.edge.tenants",
                 "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu",
-                "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu",
                 "be-pearle-production-cd-c1ynksj756vci1uf.edge.tenants.eu",
-                "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us",
-                "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us",
+                "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu",
+                "prageru-cd-0qyos3zmmqobf8rm.edge.tenants",
+                "sothebys-cd-dzueayqubhnx9cfb.edge.tenants",
                 "virginexperiencedays-cd-2fbfqocluxro6ea1.edge.tenants.eu",
                 "gb-visionexpress-production-cd-kzxbrkbacflvzqzk.edge.tenants.eu",
                 "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au",
+                "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu",
                 "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 28,
+            "prevalence": 0.000191,
             "cnames": [
                 {
                     "original": "login.arduino.cc",
@@ -333,8 +419,8 @@
                     "resolved": "beautybay-cd-0bajnkkecpwemtdi.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "my.breville.com",
-                    "resolved": "iden-prod-cd-eaw1hs3njqxohbsm.edge.tenants.us.auth0.com"
+                    "original": "id.bpp.com",
+                    "resolved": "bpp-cd-qectjinlwly1ojgt.edge.tenants.eu.auth0.com"
                 },
                 {
                     "original": "auth.eyewish.nl",
@@ -357,20 +443,20 @@
                     "resolved": "native-prod-cd-yncplrbkvveyjcxu.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "auth.pearle.nl",
-                    "resolved": "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu.auth0.com"
-                },
-                {
                     "original": "auth.pearle.be",
                     "resolved": "be-pearle-production-cd-c1ynksj756vci1uf.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "auth.subaru.jp",
-                    "resolved": "scm-id-prod-cd-vgbheljgfc9r2feg.edge.tenants.us.auth0.com"
+                    "original": "auth.pearle.nl",
+                    "resolved": "nl-pearle-production-cd-r5rywauugxl8k8co.edge.tenants.eu.auth0.com"
                 },
                 {
-                    "original": "auth.theblockcrypto.com",
-                    "resolved": "prod-theblock-cd-xbo49hgjjcmuwvrq.edge.tenants.us.auth0.com"
+                    "original": "auth.prageru.com",
+                    "resolved": "prageru-cd-0qyos3zmmqobf8rm.edge.tenants.auth0.com"
+                },
+                {
+                    "original": "accounts.sothebys.com",
+                    "resolved": "sothebys-cd-dzueayqubhnx9cfb.edge.tenants.auth0.com"
                 },
                 {
                     "original": "auth.virginexperiencedays.co.uk",
@@ -385,64 +471,96 @@
                     "resolved": "westfield-prd-cd-xjlzsx4rkldlpzoc.edge.tenants.au.auth0.com"
                 },
                 {
+                    "original": "auth.williamsf1.com",
+                    "resolved": "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu.auth0.com"
+                },
+                {
                     "original": "auth.yha.com.au",
                     "resolved": "yhaaus-prod-cd-vw7tge8wm5bpg5co.edge.tenants.au.auth0.com"
                 }
             ],
             "responseHashes": [
-                "633f0c4a381d5698970c712314e2ea4ca398dbedab845cae59e7f1695bb3a407",
-                "893d3a328b80cc8bc13f55332459c8c507b5914872a4c6fcf042652e82360034",
-                "b3377453eae5baf444ac0bd8e7852ff000b4cea3554585fa1a4ea1cb0e2319ef",
-                "17153cfdbf2c6afbb88114c1875b14a3633be2b65a0df8c9e071da179c20f7ab",
-                "f6eae3eed36d8da6a6cbd06f8145d7b9419d9b5a7aa270a1d13b5372c367f11b",
-                "6d2c01af7b92691ae814d92b88ba0e58d70ada0869fc929099bd8fcfef8392bd",
-                "c4af66af56722953da07812329f373f796c625e5190133e88f53b425c12e8c15",
-                "0e476a139edda200f4ae0fe8e067babdafd4445deace33a092581299ba233a91",
+                "65148e2719fdde76c7a32ec7500112d21a0932925802a92bae58443759deec3f",
+                "f1d2a3dcdd5d23fa391365b216a31319966d23d111c0a1706fa2ffac7215edbe",
+                "4c97f159312b76560930e7b35e6470848ecdc4b2c7630f2e87e7f4c4c99f34c5",
+                "2c203cb9ca69039c12f61af8d3facad21f02e53074683bdf585fd5a3d71478b0",
+                "08b19f484dbb1df4b9c20b61adb2e4bf10e43b23f20ab781162fd3c8cbcd3ab0",
+                "4975837416e404c232d34c627111bd1ff38009e55f0eb3f0327f265c097b9c28",
+                "908b70a4f5c0962df8311e2a54cc9ae8dd54f45dc433797d569c62bcd20ec006",
+                "5d51bbf1803d107f9c1143a38e05d4d72130cc5dde29d2ff35526c73d699a663",
+                "c530c38507c2e15509b8f8c1d4e212a1e179fa170abca7a7a9fb204dc2ba0bdc",
                 "b136e925c4c7bfed0192d68c435d5fc041b2bf210e3654fd8cf563f65edb3250",
-                "e33a7f5d89d0ad1f4845efd7d07226d5aad4a0032c24ee2ffdf146fc4ba365b9",
-                "7c2ee0101a8b0c455a4b70f45576c3e58d059a72af9645e51cf3920b28b549f6",
-                "533761d294a62200ccbddea876267c6177a926dfb584bc1ed6432bafd7d6c26a",
-                "cbb56e5f2220bb49d2ba6a49b27306d9936b7491d77d63c624481062309f26cb",
-                "7493008e65a3af842a1319852756f9cbe48a945a93896cec503a289a32b29c97",
-                "61106b244b0d042126f5c8e1b577927f5aa888465e1cf333d0b1d1f5b31e55cc",
-                "86f644721b43d9ded6c4ddbbf582fee469f5746e7a30241af147132b73ab96ba",
-                "c6f3756db8a389b7c79174ea10ab96ac036e16a56f42f304822387f74fbf903f",
-                "4e00f5de5ca0b8c7a500738e1ee27b8a464f31ec1edbd6af4662ea153298be76",
-                "3ad71e7c080ae71df22a2387509b64576aaa5b3789ae0775b768e6751f9a7fa2",
-                "e8c0eea106f07524f77069c859dbeae686d121eaef018985603250fb18aabf51"
+                "21b4cdb88768749477fd1c0cb97075fffddbe941ecf4ac9d52bfe320758efa35",
+                "c1d292d4ea12c1bc3b868971156aacf817a20099a98e1505cbbcaeeb75fa6371",
+                "060ba958f9774e8b68158850b623bf73a22f16d9952ad3a17da404a854da587c",
+                "f8735e30a716d0e3d830f33e7bea43a0a4543e1a3c86f325227c459bebfea3af",
+                "5fdfe4156b2dc73a3caab9e751942f29e16fd4990eb035cae55d21b4a397de57",
+                "a7767b578752339c893c8a26aa16498464fcd50d462e89b7d57c56e5e334067f",
+                "113316c431e439e3d270e1af8fcaa12b130dfe51d70bb56b009e84422a7b7ad6",
+                "faf851a2f6558a89c57404eca55188fadb58cdd5e08082913b6bed7287dd6a88",
+                "c8c520cb19c53bbe15e7f48f37fc2bc83ba5c22b75c8e62c6c72439463ac5a4e",
+                "54f164b5d3c078c4ebf8fd4f019cd8ae43275b56106687616663594a1f7988b9",
+                "cfb08409811fdc80a09dacc69fd4bcf9ec0e1cbaea98971883941bdf30cbfdc5",
+                "62e65d4285d358d0dc66b2dc4fd4945e126fb193b0529c2336e28ede39ecf3e9"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_hjTLDTest": 0.000013621009044350005,
-                "muuid_origin": 0.0000068105045221750025,
-                "muuid_channel": 0.0000068105045221750025,
-                "muuid_current_channel": 0.0000068105045221750025,
-                "_li_dcdm_c": 0.0000068105045221750025,
-                "IR_gbd": 0.000013621009044350005,
-                "dy_fs_page": 0.0000068105045221750025
+                "_hjTLDTest": 0.000013612757876682026,
+                "muuid_channel": 0.000006806378938341013,
+                "muuid_current_channel": 0.000006806378938341013,
+                "_li_dcdm_c": 0.000006806378938341013,
+                "dy_fs_page": 0.000006806378938341013,
+                "IR_gbd": 0.000006806378938341013
             },
             "exampleSites": [
                 "www.allrecipes.com",
-                "www.ireland.com",
-                "docs.arduino.cc",
-                "create.arduino.cc",
-                "www.theblockcrypto.com",
-                "tradelink.com.au",
-                "mitelefe.com",
-                "www.native-instruments.com",
-                "www.virginexperiencedays.co.uk",
-                "homes.co.nz",
-                "www.breville.com",
-                "expert.chegg.com",
                 "learn.hashicorp.com",
-                "www.lendi.com.au",
-                "www.subaru.jp",
-                "www.mindvalley.com",
-                "www.visionexpress.com",
+                "expert.chegg.com",
+                "homes.co.nz",
+                "www.westfield.com.au",
+                "www.virginexperiencedays.co.uk",
+                "www.ireland.com",
+                "www.eyewish.nl",
                 "www.pearle.be",
-                "cloud.netapp.com",
-                "www.yha.com.au"
+                "www.beautybay.com",
+                "www.mindvalley.com",
+                "docs.arduino.cc",
+                "messari.io",
+                "www.yha.com.au",
+                "www.lendi.com.au",
+                "tradelink.com.au",
+                "www.williamsf1.com",
+                "www.prageru.com",
+                "www.bpp.com",
+                "www.pearle.nl"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\.3\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5509fee50650802a1a85aaf9d9235405ded9af09cf8e7228c88f0afc92f5d97d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linuxfoundation.org",
+                "training.linuxfoundation.org"
             ]
         },
         {
@@ -457,7 +575,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b56fe1ddc7ebe7cf485c49af1a927895a3e7675b3a10f51414d08d194e37994b"
+                "ca538a4970be7591efa4aad231e6ced35da90ffe73022eb35315ff18bae9becc"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -475,14 +593,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.appName": 3,
-                "Date.prototype.getTime": 3,
-                "window.localStorage": 3,
-                "Event.prototype.timeStamp": 3
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b0a4cddde7716328b8e087a35ffc5bb30ba06bf6a2493c579eaf88a8e79ade90"
@@ -492,8 +611,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chegg.com",
-                "expert.chegg.com",
-                "www.findmypast.co.uk"
+                "expert.chegg.com"
             ]
         },
         {
@@ -504,8 +622,8 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "274a08ddc700fc754cb977c38b9fa34cc0dac17b9d768da40c81b502b97862f6"
@@ -515,8 +633,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "chegg.com",
-                "expert.chegg.com",
-                "www.findmypast.co.uk"
+                "expert.chegg.com"
             ]
         },
         {
@@ -571,10 +688,11 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 1,
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
                 "Event.prototype.timeStamp": 2
             },
             "sites": 2,
@@ -589,30 +707,6 @@
             "exampleSites": [
                 "zipmoney.com.au",
                 "merchant.zipmoney.com.au"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "8ce9f639d0609bbca3d5362034f3d85efc0d75830259b3b1f56e6387fe9153a9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mitelefe.com",
-                "tradelink.com.au",
-                "www.ireland.com",
-                "www.yha.com.au"
             ]
         },
         {
@@ -660,66 +754,138 @@
             ]
         },
         {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\/auth0\\.min\\.js",
+            "rule": "auth0\\.com\\/styleguide\\/components\\/1\\.0\\.8\\/media\\/logos\\/img\\/badge\\.png",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "Navigator.prototype.appName": 4,
-                "Date.prototype.getTime": 4,
-                "Navigator.prototype.userAgent": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
+                "8ce9f639d0609bbca3d5362034f3d85efc0d75830259b3b1f56e6387fe9153a9"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gymshark.com",
-                "nl.gymshark.com",
-                "uk.gymshark.com",
-                "www.gymshark.com"
+                "telefe.com",
+                "ssl.cloud.telefe.com",
+                "tradelink.com.au",
+                "www.ireland.com",
+                "www.yha.com.au"
             ]
         },
         {
-            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
+            "rule": "auth0\\.com\\/js\\/lock\\/11\\.3\\.1\\/es\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {
-                "window.localStorage": 5,
-                "Navigator.prototype.userAgent": 6,
-                "window.sessionStorage": 4,
-                "Document.cookie getter": 4
-            },
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+                "21ccfa838fc9d5496d4a4970192f47a345e2294174e91b85f736706d9d05ba43"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "appledaily.com",
-                "tw.appledaily.com",
-                "www.bostonherald.com",
-                "www.clarin.com",
-                "www.dailynews.com",
-                "www.denverpost.com",
-                "www.eastbaytimes.com",
-                "www.mercurynews.com",
-                "www.ocregister.com",
-                "www.ole.com.ar"
+                "telefe.com",
+                "ssl.cloud.telefe.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/client\\/AoXFsRahR7w4qW4d3T6LZQ4wCcOtWxGf\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6dffd5a91a7ccdd9afcc6472e785f7eeac0339097fd686d3edee0024db32bc57"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telefe.com",
+                "ssl.cloud.telefe.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/styleguide\\/latest\\/index\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c10c601443eeb6d79100eaca7911ad24334ccb39f0861e697ea7f33684c35d86"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telefe.com",
+                "ssl.cloud.telefe.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/backend-templates\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "082c7dcaed1c848b1b6f7ca58609f1f0bc28c5797630b87ad9e2108c66c117d0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telefe.com",
+                "ssl.cloud.telefe.com"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/backend-templates\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f10f0982087c01de72c16baf674d8107d41d10ecff66667b0f7b0890ef52edd1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "telefe.com",
+                "ssl.cloud.telefe.com"
             ]
         },
         {
@@ -748,6 +914,41 @@
             ]
         },
         {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.13\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 10,
+                "window.sessionStorage": 6,
+                "window.localStorage": 6,
+                "Document.cookie getter": 5
+            },
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "01d6389de5581a2a3eb0cd4d6a05cb136bf07d221306f89173a080c73a38e392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bostonherald.com",
+                "www.bostonherald.com",
+                "www.clarin.com",
+                "www.dailycamera.com",
+                "www.dailynews.com",
+                "www.denverpost.com",
+                "www.eastbaytimes.com",
+                "www.mercurynews.com",
+                "www.ocregister.com",
+                "www.ole.com.ar"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/js\\/lock\\/11\\.29\\.1\\/lock\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -772,32 +973,6 @@
             "exampleSites": [
                 "bostonherald.com",
                 "www.bostonherald.com"
-            ]
-        },
-        {
-            "rule": "auth0\\.com\\/js\\/auth0\\/9\\.10\\.4\\/auth0\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c0d6b64bfbad44b071a08b23499a4490148c6c5821db36d77a257c96bfd4d90f"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "carsguide.com.au",
-                "www.carsguide.com.au"
             ]
         },
         {
@@ -887,7 +1062,8 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -948,6 +1124,58 @@
             ]
         },
         {
+            "rule": "auth0\\.com\\/js\\/lock\\/11\\.21\\/lock\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "109cdd7ef931af5342f8282754524658d3817fbb3f4476f46548fb66a9fb2e3e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nasjonalmuseet.no",
+                "www.nasjonalmuseet.no"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/js\\/auth0-spa-js\\/1\\.9\\/auth0-spa-js\\.production\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e170fb31d1c2cd73263298aa862807ab608864d9aac575b1f286a4d39502abb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "omaze.com",
+                "www.omaze.com"
+            ]
+        },
+        {
             "rule": "auth0\\.com\\/client\\/X1H2hrWVisAKMKsDqqfk43rTX2g90MYC\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -967,6 +1195,33 @@
             "exampleSites": [
                 "pointhacks.com.au",
                 "www.pointhacks.com.au"
+            ]
+        },
+        {
+            "rule": "auth0\\.com\\/client\\/bbj02u8jqRMcb9gPoHpt7UqSTBF2s9AM\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.williamsf1.com",
+                    "resolved": "doriltonmotorsports-cd-sfukeyucqhcmbzdx.edge.tenants.eu.auth0.com"
+                }
+            ],
+            "responseHashes": [
+                "7061760acabd7cd17e884114818fb70b19ee9c861cb00cc37fb9f424e063cee3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "williamsf1.com",
+                "www.williamsf1.com"
             ]
         },
         {
@@ -1022,16 +1277,17 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000334,
+    "cookies": 0.00034,
     "types": {
+        "Script": 73,
+        "Stylesheet": 6,
         "Preflight": 3,
-        "Script": 59,
         "XHR": 6,
-        "Document": 28,
-        "Image": 6
+        "Document": 30,
+        "Image": 7
     },
     "nameservers": [
-        "kolton.ns.cloudflare.com",
-        "monroe.ns.cloudflare.com"
+        "monroe.ns.cloudflare.com",
+        "kolton.ns.cloudflare.com"
     ]
 }

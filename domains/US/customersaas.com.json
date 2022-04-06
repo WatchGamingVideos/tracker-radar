@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
-        "insided-remote-content"
+        "insided-remote-content",
+        "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "customersaas\\.com\\/",
@@ -37,13 +38,36 @@
                 "fr.forum.proximus.be",
                 "nl.forum.proximus.be"
             ]
+        },
+        {
+            "rule": "customersaas\\.com\\/objectservice\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e53d3faeb3c4c039380a389a62f3e0cd6041396a5130cc6b6693b9de8c67577a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solcon.nl",
+                "www.solcon.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
         "ns-254.awsdns-31.com",

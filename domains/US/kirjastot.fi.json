@@ -4,15 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
         "kirkanta",
         "www",
-        "gfx"
+        "gfx",
+        "hakemisto"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "kirjastot\\.fi\\/files\\/photos\\/medium\\/kirjastonetusivu-4fd1d4ac\\.jpg",
@@ -61,11 +62,13 @@
         {
             "rule": "kirjastot\\.fi\\/kifi\\/kirjastotfi-footer-fi\\.html",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "gfx"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -209,6 +212,30 @@
                 "kirjasampo.fi",
                 "www.kirjasampo.fi"
             ]
+        },
+        {
+            "rule": "kirjastot\\.fi\\/embed\\/v1\\/launcher\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hakemisto"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "07d5684111a6ccca27683f029aa3c4af8a58f18b277821e636ebca7df3e3343e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nokiankaupunki.fi",
+                "www.nokiankaupunki.fi"
+            ]
         }
     ],
     "categories": [],
@@ -216,13 +243,13 @@
     "cookies": 0,
     "types": {
         "Image": 6,
-        "Script": 4,
+        "Script": 6,
         "Document": 2,
         "Stylesheet": 4,
         "XHR": 2
     },
     "nameservers": [
-        "ns.lib.hel.fi",
-        "ns.lasipalatsi.fi"
+        "ns.lasipalatsi.fi",
+        "ns.lib.hel.fi"
     ]
 }

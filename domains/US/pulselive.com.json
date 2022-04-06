@@ -8,14 +8,10 @@
     "sites": 21,
     "subdomains": [
         "translations.platform",
-        "sdk.fdp.ecb",
-        "fdp.ecb",
-        "events.fdp.ecb",
-        "cricketapi-ecb",
+        "resources.cwg-qbr",
         "sso.evertonfc",
         "api-fcb",
         "cricketapi-icc",
-        "content-icc",
         "footballapi-lcfc",
         "footballapi",
         "translations.wr",
@@ -29,6 +25,50 @@
     ],
     "fingerprinting": 3,
     "resources": [
+        {
+            "rule": "pulselive\\.com\\/qbr-commonwealth-games\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "translations.platform"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2360a10fb8b47c6f6f3ce8b9e310911f9b591869e9685643e042cac6d3ff0d35"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "birmingham2022.com",
+                "www.birmingham2022.com"
+            ]
+        },
+        {
+            "rule": "pulselive\\.com\\/photo-resources\\/2022\\/02\\/22\\/e52ab280-fd1d-4363-9049-a3463dbd44c1\\/9ee69a44-9510-4068-9fff-e50cdb75d7a8\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources.cwg-qbr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b5abf940017bdb6d8909ad563f74253d7db8e53b96b7703f88caa92f5b94a44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "birmingham2022.com",
+                "www.birmingham2022.com"
+            ]
+        },
         {
             "rule": "pulselive\\.com\\/bhafc\\/en\\.js",
             "cookies": 0,
@@ -49,174 +89,6 @@
             "exampleSites": [
                 "brightonandhovealbion.com",
                 "www.brightonandhovealbion.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/sdk-client-web\\/latest\\/client\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 3,
-            "subdomains": [
-                "sdk.fdp.ecb"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.webdriver": 2,
-                "Navigator.prototype.language": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.deviceMemory": 2,
-                "Navigator.prototype.hardwareConcurrency": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.availWidth": 2,
-                "Screen.prototype.availHeight": 2,
-                "Date.prototype.getTimezoneOffset": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "window.sessionStorage": 2,
-                "window.indexedDB": 2,
-                "Navigator.prototype.platform": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.plugins": 2,
-                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
-                "HTMLCanvasElement.prototype.toDataURL": 2,
-                "WebGLRenderingContext.prototype.getExtension": 2,
-                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
-                "WebGLRenderingContext.prototype.getParameter": 2,
-                "WebGLRenderingContext.prototype.getContextAttributes": 2,
-                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
-                "Navigator.prototype.languages": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Navigator.prototype.productSub": 2,
-                "OfflineAudioContext.prototype.constructor": 2,
-                "AudioBuffer.prototype.getChannelData": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "42fc88353453429845ddc2511983490740343deadc9c135aee931a33a7c2cc96"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "fdp-fingerprint": {
-                    "ttl": 2592005,
-                    "length": 32,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/widget-resources\\/import-map\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "fdp.ecb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "11dad6094ad5c5bfcce8f9af36e03806c509d3212162b7c2bbb7466ea155b738"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/consents",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.fdp.ecb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c6099064e22d452642f37992f0c1f997e51958c78f8ce92818e90c1c82d646c8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/consents",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "events.fdp.ecb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/\\/fixtures",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-ecb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/\\/fixtures",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-ecb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0b021ce3f46c2acf99a6a441136cdbe736c9a2685de7e609c9afefa44a4f5020"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ecb.co.uk",
-                "www.ecb.co.uk"
             ]
         },
         {
@@ -248,8 +120,8 @@
         },
         {
             "rule": "pulselive\\.com\\/auth\\/realms\\/Everton\\/protocol\\/openid-connect\\/3p-cookies\\/step1\\.html",
-            "cookies": 0.00000681,
-            "fingerprinting": 1,
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
                 "sso.evertonfc"
             ],
@@ -275,8 +147,8 @@
         },
         {
             "rule": "pulselive\\.com\\/auth\\/realms\\/Everton\\/protocol\\/openid-connect\\/3p-cookies\\/step2\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [
                 "sso.evertonfc"
             ],
@@ -366,7 +238,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e2184f6ffc6349b8ccb2b1cd798e5cfce98103dc094f873fe59788e25a543843"
+                "89e11ad2f6ac174eb50cc7126bc40bdf17e446ff40caa8c060eb1b988a58898c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -399,7 +271,7 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/football\\/\\/stats\\/player\\/7120",
+            "rule": "pulselive\\.com\\/football\\/\\/stats\\/player\\/5110",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -410,7 +282,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "43848871947079142e2c21ec8cbe4b214c66a75422dedaf386c7e2947e6917b6"
+                "da15baee29b7f1e9268e17ca4a58c11bc4e7f7648156281ac9a57fe39f607048"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -432,7 +304,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fba84f8c04eac6260cfb491b1d79f5cc335194fd6c629c7b45f705a67288a23b"
+                "6fd485c944d5c08c1c9d302d9b4dd5d3c2ddef902f61fb3d2e2108cf1d4cf4c6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -463,7 +335,7 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/fixtures\\/34368\\/scoring",
+            "rule": "pulselive\\.com\\/fixtures\\/34377\\/scoring",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -474,73 +346,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7be80f5a710cb23b367447f76afc8ecb9c91baffdbe4bcffabac26bab62b1184"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/liveblog\\/ICC\\/EN\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2283689ca62853b5c68af58d289512b3e63266d1951519288c5f4527849bf139"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/fixtures\\/34361\\/scoring",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cricketapi-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "26cb1c4e218778a94568fbc85ff54241588255452ed5365ed5a6063fb9dce9fc"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "icc-cricket.com",
-                "www.icc-cricket.com"
-            ]
-        },
-        {
-            "rule": "pulselive\\.com\\/content\\/icc\\/photo\\/EN\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "content-icc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8efdb15792a4434b48835a32da7ab8ea66f234711ab876003fd3da37fada2f82"
+                "f274abfdfc9e14528d0bb94fa3b5bb505b146d8d9c4fb6e1bd58c6ab871e0bc6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -586,7 +392,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "71d2ccfea1b0c23ea0f1f9fed34e6282291e5a80253a77c6e0e9faef380b5627"
+                "a67e2474ed005d35493609fdc1c71cd34ebf1ff228096fd1e98aa980f9c082a5"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -608,7 +414,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "23c2a8912169773c26cba2415fdad9c4c6472d4c1680793df725e606bfcddf3c"
+                "47d191f4c95c09916b4664f2f1a35e15ca638f35ead0d7ce36311c92bf9c9382"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -630,7 +436,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4a94e9008178c1fb4011dab661ec27ac3902385b188b32e026ae4465c73cd887"
+                "d91e8e79a5a95c5d7da9fe6a46697a8864f51e3d0b2c4eadab0cb97855004c96"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -652,7 +458,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1a4c2ce7236aec7b68103b30b8627aeb1576794709e2b60cb105c04f5416a3ed"
+                "103f36d316e4f8dcac038506f129cd096283d19d7a5a9c8d90cba7731fd1e9cc"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -674,7 +480,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2af2e2492e622b4b727ebd7f97dfb941b35caf2f28086419f0c9c048d2efb10e"
+                "9afbcf304df8c005f710df7934e96f377c9631f4ccb27e7dab50ba43e63d2418"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -696,7 +502,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "f2432120d9cb5322269727b6c6e2ffe4220db50ef95cd9df25f6a0a20f5410b9"
+                "f2432120d9cb5322269727b6c6e2ffe4220db50ef95cd9df25f6a0a20f5410b9",
+                "dc5da4313dd759790a0fa53c85ef19167e1b15322929dd38efd21e16dd9f8596"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -730,28 +537,6 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/rugby\\/country",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cmsapi"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e9ba976fe24b549a89aea8af560f41c991f93d805554522abdf37d4a3b5def16"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "world.rugby",
-                "www.world.rugby"
-            ]
-        },
-        {
             "rule": "pulselive\\.com\\/rugby\\/match",
             "cookies": 0,
             "fingerprinting": 0,
@@ -763,7 +548,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bc6b33b34863e166a5c7bcd839bb1d924364ec366617e8ad2a7a6c98166409e1"
+                "2170325d542c63fc81ea8d64f26175e9de21be4c221907fd6e6f58e640e697e1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -774,7 +559,7 @@
             ]
         },
         {
-            "rule": "pulselive\\.com\\/rugby\\/event",
+            "rule": "pulselive\\.com\\/rugby\\/country",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -785,7 +570,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "19f60289eb62487b60620974ee62fd3d82cea0ff11075b0fbe1a4382d014b39e"
+                "ce084ce262b30b830001a299407bf1418c1ab826113357c024bbe9a37f207831"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -807,7 +592,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "eb35b8faea510b8f223f4ffece28aea8d2f3f910c17cbc7f0d4655da542eadd0"
+                "9cb78d41354f0fb509b9978111569510629dc6a9b58cbca7014357d3cf04e6b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -820,18 +605,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.0000136,
     "types": {
         "Script": 14,
-        "Fetch": 11,
-        "XHR": 30,
-        "Preflight": 6,
-        "Document": 6
+        "Image": 2,
+        "Document": 6,
+        "XHR": 18,
+        "Preflight": 2,
+        "Fetch": 9
     },
     "nameservers": [
+        "ns-663.awsdns-18.net",
         "ns-494.awsdns-61.com",
         "ns-1093.awsdns-08.org",
-        "ns-1815.awsdns-34.co.uk",
-        "ns-663.awsdns-18.net"
+        "ns-1815.awsdns-34.co.uk"
     ]
 }

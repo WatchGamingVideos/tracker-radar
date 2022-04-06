@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000477,
+    "prevalence": 0.0000476,
     "sites": 7,
     "subdomains": [
-        "sys"
+        "sys",
+        "dmp"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,12 +21,12 @@
                 "sys"
             ],
             "apis": {
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "window.localStorage": 5
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "window.localStorage": 4
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
@@ -34,17 +35,39 @@
             "exampleSites": [
                 "eldorado.ru",
                 "blog.eldorado.ru",
-                "leroymerlin.ru",
-                "www.obi.ru",
+                "www.castorama.ru",
                 "www.svyaznoy.ru"
+            ]
+        },
+        {
+            "rule": "refocus\\.ru\\/pclicks\\/demography",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "techinfus.com",
+                "buildex.techinfus.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
-        "Script": 5
+        "Script": 4,
+        "Fetch": 2
     },
     "nameservers": [
         "ns3-l2.nic.ru",

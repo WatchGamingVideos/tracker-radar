@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "api"
     ],
@@ -13,35 +13,14 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "faqbot\\.co\\/app\\/getInfosCompany",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c2c1342075884d169c787369ea1b2ec493e45c5319fe2c37b5e7a7c8f685389a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ulb.be",
-                "trendstop.levif.be",
-                "trendstop.knack.be"
-            ]
-        },
-        {
             "rule": "faqbot\\.co\\/ToBI\\/bundle\\.js",
             "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
                 "Document.cookie getter": 3,
                 "Document.cookie setter": 3,
                 "Event.prototype.timeStamp": 3
@@ -57,10 +36,34 @@
                 "faqbot_uid": {
                     "ttl": null,
                     "length": 16,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "levif.be",
+                "trendstop.knack.be",
+                "trendstop.levif.be"
+            ]
+        },
+        {
+            "rule": "faqbot\\.co\\/app\\/getInfosCompany",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c2c1342075884d169c787369ea1b2ec493e45c5319fe2c37b5e7a7c8f685389a",
+                "ff07a3d59dea1dd51b98936c685b99bc7b07f41835a166613f92cb8f7ac30007"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "levif.be",
@@ -116,10 +119,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000272,
     "types": {
-        "XHR": 3,
         "Script": 3,
+        "XHR": 3,
         "Image": 5
     },
     "nameservers": [

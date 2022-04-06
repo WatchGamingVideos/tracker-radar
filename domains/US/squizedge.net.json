@@ -4,13 +4,23 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
+        "griff",
+        "comcare",
         "hss",
         "tcc"
     ],
     "cnames": [
+        {
+            "original": "search.comcare.gov.au",
+            "resolved": "comcare.squizedge.net"
+        },
+        {
+            "original": "squiz.my.griffith.edu.au",
+            "resolved": "griff.squizedge.net"
+        },
         {
             "original": "whatson.townsville.qld.gov.au",
             "resolved": "tcc.squizedge.net"
@@ -22,6 +32,114 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "squizedge\\.net\\/__data\\/assets\\/image\\/0022\\/901930\\/loader\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "griff"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "squiz.my.griffith.edu.au",
+                    "resolved": "griff.squizedge.net"
+                }
+            ],
+            "responseHashes": [
+                "911a03ed82cfa36ab48facf2e8ea21f1344af9d0ed4ba4541a14e2163ebf4f05"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "griffith.edu.au",
+                "my.griffith.edu.au"
+            ]
+        },
+        {
+            "rule": "squizedge\\.net\\/s\\/resources\\/comcare\\/_default\\/typeahead\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "comcare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.comcare.gov.au",
+                    "resolved": "comcare.squizedge.net"
+                }
+            ],
+            "responseHashes": [
+                "9e0b384535ec3909e77b80d5eff20e56792fd4a47311b2df1d6e9e96b59a4868"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comcare.gov.au",
+                "www.comcare.gov.au"
+            ]
+        },
+        {
+            "rule": "squizedge\\.net\\/s\\/resources-global\\/js\\/handlebars\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "comcare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.comcare.gov.au",
+                    "resolved": "comcare.squizedge.net"
+                }
+            ],
+            "responseHashes": [
+                "acc39238ce470f35443285594efdb5f3df912924d2818e5929f4df6a9eeadb31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comcare.gov.au",
+                "www.comcare.gov.au"
+            ]
+        },
+        {
+            "rule": "squizedge\\.net\\/s\\/resources-global\\/js\\/funnelback\\.autocompletion\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "comcare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "search.comcare.gov.au",
+                    "resolved": "comcare.squizedge.net"
+                }
+            ],
+            "responseHashes": [
+                "8415e8c7f73bd81bc6c58ddf25e7f352eaafd6ada546de4c2bc9b8cc7da00ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "comcare.gov.au",
+                "www.comcare.gov.au"
+            ]
+        },
         {
             "rule": "squizedge\\.net\\/__data\\/assets\\/image\\/0005\\/497849\\/Twitter\\.png",
             "cookies": 0,
@@ -108,8 +226,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 4,
-        "Script": 2
+        "Image": 6,
+        "Script": 8
     },
     "nameservers": []
 }

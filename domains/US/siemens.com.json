@@ -7,15 +7,102 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
+        "api.s.sw",
         "w3",
         "prod.ste.dc"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "siemens\\.com\\/v1\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.s.sw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mendix.com",
+                "www.mendix.com"
+            ]
+        },
+        {
+            "rule": "siemens\\.com\\/onetrust\\/siemens-com\\/scripttemplates\\/otSDKStub\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "w3"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8305d86074fdee76ef38a7e264f3ac0bfab4051d8f13625b4bbd5396120b1fe1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mendix.com",
+                "www.mendix.com"
+            ]
+        },
+        {
+            "rule": "siemens\\.com\\/onetrust\\/siemens-com\\/consent\\/acd04522-101c-434d-8257-01b5704642e2\\/acd04522-101c-434d-8257-01b5704642e2\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "w3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mendix.com",
+                "www.mendix.com"
+            ]
+        },
+        {
+            "rule": "siemens\\.com\\/ste\\/cookiemonster\\/cookiemonster\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "w3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8457a15bc6b285538fe22d263d89c5c7b894d846c828d8cdfc9b7fb9442c4491"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mendix.com",
+                "www.mendix.com"
+            ]
+        },
         {
             "rule": "siemens\\.com\\/ote\\/ote_config\\.js",
             "cookies": 0,
@@ -50,7 +137,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9e1a4d1ac8dbe79ff1e8c3d195ed0d8556b0af7102f69ebe9231c8c846b9587a"
+                "4646bde9eee9bd549dc06b4233207d2b7ebad5b94193c26fc5df66698548d611"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -65,7 +152,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4
+        "Fetch": 2,
+        "Script": 8,
+        "XHR": 2
     },
     "nameservers": [
         "a11-66.akam.net",

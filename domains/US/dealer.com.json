@@ -7,11 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "assets.prod.analytics",
-        "cc2"
+        "pixall-config.prod.analytics"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -32,20 +32,26 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e2000d4cc4f07cd393e7edacb6af2390a9688bf86e41fe139b96f1e095391573"
+                "79a3d479fd870d5cf18d950a8985451cf7b3b1b03b3631b23788a969225e6f17"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pxa_id": {
-                    "ttl": 31536003,
+                    "ttl": 31536002,
                     "length": 24,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "pxa_at": {
-                    "ttl": 2588403,
+                    "ttl": 2592003,
                     "length": 4,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "pxa_bc": {
+                    "ttl": 259215,
+                    "length": 36,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -56,52 +62,76 @@
             ]
         },
         {
-            "rule": "dealer\\.com\\/off-platform\\/pixall\\.js",
+            "rule": "dealer\\.com\\/pixall\\/pix-aop\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
-                "cc2"
+                "assets.prod.analytics"
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Document.cookie setter": 2
+                "Document.cookie setter": 2,
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cbc7e277c39fab915f61544a22a43fb3377f31b93323e59ca0869a48445560bb"
+                "9969f99a500dd3c957b48c87bd589d39d6a7e2b4d2786198589c3bf3a7ac6920"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "pxa_id": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 24,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "pxa_at": {
-                    "ttl": 2588404,
+                    "ttl": 2592003,
                     "length": 4,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "audiusa.com",
-                "www.audiusa.com"
+                "subaru.com",
+                "www.subaru.com"
+            ]
+        },
+        {
+            "rule": "dealer\\.com\\/aop\\/soat1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixall-config.prod.analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "38f6eae96686bd1a2cfc10b7bbfa50bc0ed71ec6cdcabe197d79acef951ea7fb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subaru.com",
+                "www.subaru.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000408,
     "types": {
-        "Script": 4
+        "Script": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "ns2.dealer.com",
-        "ns1.dealer.com"
+        "ns1.dealer.com",
+        "ns2.dealer.com"
     ]
 }

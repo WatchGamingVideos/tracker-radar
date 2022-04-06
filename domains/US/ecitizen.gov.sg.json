@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "va"
     ],
@@ -18,14 +18,11 @@
         {
             "rule": "ecitizen\\.gov\\.sg\\/CFP\\/Script\\/Jquery\\/jquery\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "va"
             ],
-            "apis": {
-                "Event.prototype.timeStamp": 1,
-                "Element.prototype.getClientRects": 1
-            },
+            "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -37,7 +34,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ica.gov.sg",
-                "www.nea.gov.sg"
+                "www.moh.gov.sg"
             ]
         },
         {
@@ -48,8 +45,8 @@
                 "va"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "62a04cb63ecd17461b5cfcd2fcefcf1e9a7260e4e66aa6f8160940d8a7b54ac8"
@@ -59,8 +56,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ica.gov.sg",
-                "www.iras.gov.sg",
-                "www.nea.gov.sg"
+                "www.iras.gov.sg"
             ]
         },
         {
@@ -71,8 +67,8 @@
                 "va"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "8eca22eb08687d2408771ccb9b7c7de94511637e4520b95812dff632fc2a12f5"
@@ -82,9 +78,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ica.gov.sg",
-                "www.iras.gov.sg",
-                "www.lta.gov.sg",
-                "www.nea.gov.sg"
+                "www.iras.gov.sg"
             ]
         },
         {
@@ -95,7 +89,9 @@
                 "va"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -112,30 +108,6 @@
             ]
         },
         {
-            "rule": "ecitizen\\.gov\\.sg\\/CFP\\/VA\\/LTA\\/js\\/loadsource_new\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "va"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3985b186ecef2dae29eba99626479c380fba02b62d3608bfa77f3635c55155b3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lta.gov.sg",
-                "www.lta.gov.sg"
-            ]
-        },
-        {
             "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/base-code\\/scripts\\/va-loader\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -147,13 +119,63 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d33c9941b3a51293053ac120d411bc41bfb535fed0435f4c2a495ab7767b1611"
+                "789b6bd87692ebc13f5dd6d300124226acf2fdcc3f52169b2baf8232c9a67dea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mfa.gov.sg",
+                "nparks.gov.sg",
+                "www.nparks.gov.sg"
+            ]
+        },
+        {
+            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/VA\\/NParks\\/config\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "va"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "26ea959b6ca2fdc0e87cb5a205643f38cc0e6c8caaa8e885197a54bfe37680e5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nparks.gov.sg",
+                "www.nparks.gov.sg"
+            ]
+        },
+        {
+            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/base-code\\/va\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "va"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "995d4c2de1e3bb099678c081cc959860fc5911769a8005d60f50d9564829a9f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nparks.gov.sg",
                 "www.nparks.gov.sg"
             ]
         },
@@ -175,7 +197,29 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mfa.gov.sg",
+                "nparks.gov.sg",
+                "www.nparks.gov.sg"
+            ]
+        },
+        {
+            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/base-code\\/1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "va"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "15290f29cd791f04b7d42aa27446a8fbae6e588d78415f77c5587d5162fc652f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nparks.gov.sg",
                 "www.nparks.gov.sg"
             ]
         },
@@ -194,76 +238,6 @@
                 "4b3cdd3738c33b1f2870f99e1891bdaa1d995f44a9c27b62546f970cb768a1a0"
             ],
             "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mfa.gov.sg",
-                "www.nparks.gov.sg"
-            ]
-        },
-        {
-            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/VA\\/NParks\\/config\\/config\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "va"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d912706e8cf89a808c5a501e182975da1f99a352391d2a139e7b1b8c73bec3f9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nparks.gov.sg",
-                "www.nparks.gov.sg"
-            ]
-        },
-        {
-            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/base-code\\/va\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "va"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.product": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "66007214ff9af47463af55990d4f52c0838a77e44f105b83732bd4d45479db23"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nparks.gov.sg",
-                "www.nparks.gov.sg"
-            ]
-        },
-        {
-            "rule": "ecitizen\\.gov\\.sg\\/CFP2\\/base-code\\/1\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "va"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e4c496a10d5051529132f71f4e6ed7af03dc8d1572b908f7f7adcda2d2160b80"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -305,7 +279,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b523b421a4c60ac0a7018a41db27ff97f93fa0dbf780e053ec278dca8d551db4"
+                "20115df1f39636372dae324be07191899fe6293950aa02e55498b37a04c91332"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -327,7 +301,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "934449a35e381ce8e353127aecee2f9e44508e02090327a674aa895988dcd2fd"
+                "37cddf3605ac05fceb87f42e8c729fb2a3ff7de8ba1752ad4af0d89f018298d2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -349,7 +323,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b538edf82989ef7416ec24514ea70de22f1ee1b4bfa48aaba4d260414962cfce"
+                "26a9e53a1d535264018d800e42bb9a5ab77d426f159a2e8b602f2cbe3d2577a9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -371,7 +345,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "055185386196bd4f01b0f75d37308f57dca4bf10e727d28d3f9c66063eb048ba"
+                "8d5c9d95481a1636cb1ba946c9ae1781b1ad407a95a929a988f36a8929c71cb5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -393,7 +367,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9772d24ba3980ee59c931ec7ca7a5a407f63d8e235e92e5714b42a0fc5693ac0"
+                "f4f30e4c7fa234a74fe645895870bed98b6e6467ef1306c25d90ec721b3655bc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -415,7 +389,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d188225d4fce6c6c083f7b850f6ead9d8a5e4813acf28c584b8933b568749502"
+                "33cb7245976c7d155655fbb56a894064de8be2fa2e1c0ee06c0e82df2014feec"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -437,7 +411,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "332cb0f5ac97f4224d3956fe29734f393d0ffcb82d4d180682b307b69e5ceda4"
+                "d7f972db81b018bef018de70f302e32d3db9f9486fd3af64ce3aeba2189dfa82"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -452,23 +426,23 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 35,
-        "Stylesheet": 2,
+        "Script": 30,
         "XHR": 2,
+        "Stylesheet": 2,
         "Fetch": 2
     },
     "nameservers": [
-        "ns3.gdnsec.com",
-        "a1-6.akam.net",
-        "ns12.gdnsdef.com",
-        "a2-65.akam.net",
-        "a20-66.akam.net",
-        "a3-67.akam.net",
-        "ns7.gdnsdef.com",
-        "ns10.gdnsdef.com",
         "a8-64.akam.net",
-        "ns12.gdnsec.com",
+        "a20-66.akam.net",
         "ns9.gdnsec.com",
-        "a9-65.akam.net"
+        "a3-67.akam.net",
+        "a9-65.akam.net",
+        "ns12.gdnsdef.com",
+        "a1-6.akam.net",
+        "ns10.gdnsdef.com",
+        "ns12.gdnsec.com",
+        "a2-65.akam.net",
+        "ns7.gdnsdef.com",
+        "ns3.gdnsec.com"
     ]
 }

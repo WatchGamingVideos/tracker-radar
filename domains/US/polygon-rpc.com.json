@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 0,
@@ -16,18 +16,40 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "7bf6ff425af70c4977649f9e682952dd777580e299c1be680cdd95948bfdce03"
+                "15b89515171e4afeafe54f21ac1494807993f7887abd23bbab06a3f936233326",
+                "a81627a2cba08aad0c5efc72d257e15eff8034c7c87ea1ee14c2f6e2e79ddd8b"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "quickswap.exchange",
-                "synapseprotocol.com"
+                "aave.com",
+                "app.sphere.finance",
+                "quickswap.exchange"
+            ]
+        },
+        {
+            "rule": "polygon-rpc\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aave.com",
+                "app.beefy.finance",
+                "app.sphere.finance",
+                "quickswap.exchange"
             ]
         },
         {
@@ -39,13 +61,15 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f8bbada294fe7e0a54462897f9f8835c502a8ae4f3d43c73fdebfd9b425c2026"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "quickswap.exchange",
-                "synapseprotocol.com"
+                "beefy.finance",
+                "app.beefy.finance"
             ]
         }
     ],
@@ -53,11 +77,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2,
-        "Preflight": 2
+        "Fetch": 3,
+        "Preflight": 4,
+        "XHR": 2
     },
     "nameservers": [
-        "maria.ns.cloudflare.com",
-        "merlin.ns.cloudflare.com"
+        "merlin.ns.cloudflare.com",
+        "maria.ns.cloudflare.com"
     ]
 }

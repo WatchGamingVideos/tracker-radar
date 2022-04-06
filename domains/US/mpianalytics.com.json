@@ -4,42 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "cis",
-        "collector",
-        "sdk"
+        "sdk",
+        "collector"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
-            "cookies": 0.0000272,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cis"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "5019909aa4a88b370ed77b469f903820b0a692e62c52107892a218ca29ae91e6",
-                "c0d9495b85bb5c64fd79b1b72398e87b9f05f33977f7596bd5660693a89dd640",
-                "d8c50d2ee4f70edf126babfedb43bcc591ff066362a3223c615be98fc9c164b7"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "subito.it",
-                "www.subito.it",
-                "www.willhaben.at",
-                "www.yapo.cl"
-            ]
-        },
         {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
             "cookies": 0,
@@ -48,30 +22,100 @@
                 "cis"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "subito.it",
+                "yapo.cl",
+                "m.yapo.cl",
                 "www.subito.it",
                 "www.willhaben.at",
                 "www.yapo.cl"
             ]
         },
         {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/sync",
-            "cookies": 0.0000272,
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/identify",
+            "cookies": 0.000034,
             "fingerprinting": 0,
             "subdomains": [
                 "cis"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "465481efd9db33b0b446819637a159cd1c97a6c47a81053e1b8233a91b9784bb",
+                "95157cca7515e7f17a301cac2bea2aba8482d109183faf58618aa18955cffc7c",
+                "2850ade67ab54d2f859c2ea922b55966e8dee66c7f68b577f4960d8b6901d460",
+                "bd34ce23e379f332324f9e9c247b2255476de38f40c5bca33462c39a7f0a583a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapo.cl",
+                "m.yapo.cl",
+                "www.subito.it",
+                "www.willhaben.at",
+                "www.yapo.cl"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/pulse\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "window.localStorage": 4,
+                "Document.cookie setter": 2
+            },
             "sites": 4,
             "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "663446d641542a3a484f56067c4765b2f6b968b8aed26da8ffd84b23566fa557"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pulse2data": {
+                    "ttl": 63072007,
+                    "length": 555,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapo.cl",
+                "m.yapo.cl",
+                "www.willhaben.at",
+                "www.yapo.cl"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/sync",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cis"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -80,9 +124,33 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "subito.it",
+                "yapo.cl",
+                "m.yapo.cl",
                 "www.subito.it",
                 "www.willhaben.at",
+                "www.yapo.cl"
+            ]
+        },
+        {
+            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:yapocl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yapo.cl",
+                "m.yapo.cl",
                 "www.yapo.cl"
             ]
         },
@@ -109,44 +177,6 @@
             ]
         },
         {
-            "rule": "mpianalytics\\.com\\/pulse\\.min\\.js",
-            "cookies": 0.0000204,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sdk"
-            ],
-            "apis": {
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3,
-                "Navigator.prototype.language": 3,
-                "Screen.prototype.width": 3,
-                "Screen.prototype.height": 3,
-                "Navigator.prototype.userAgent": 3,
-                "window.localStorage": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "5ed3a33f8205b62c1d8f09af330700c68ad0c836701f88981bf8bb1518c059e2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "_pulse2data": {
-                    "ttl": 63072005,
-                    "length": 564,
-                    "prevalence": 0.000020431513566525008,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "willhaben.at",
-                "www.willhaben.at",
-                "www.yapo.cl"
-            ]
-        },
-        {
             "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:willhabenat",
             "cookies": 0,
             "fingerprinting": 0,
@@ -167,38 +197,16 @@
                 "willhaben.at",
                 "www.willhaben.at"
             ]
-        },
-        {
-            "rule": "mpianalytics\\.com\\/api\\/v1\\/track\\/sdrn:schibsted:client:yapocl",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "90687150c18ec51580a40877532d01b82c479d207966f5b51972f0efee916f18"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "yapo.cl",
-                "www.yapo.cl"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000545,
     "types": {
-        "Fetch": 10,
-        "Preflight": 4,
-        "Image": 4,
-        "Script": 3
+        "Preflight": 5,
+        "Fetch": 12,
+        "Script": 4,
+        "Image": 5
     },
     "nameservers": [
         "ns-221.awsdns-27.com",

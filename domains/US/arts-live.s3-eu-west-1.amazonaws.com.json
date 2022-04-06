@@ -13,10 +13,10 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "arts-live\\.s3-eu-west-1\\.amazonaws\\.com\\/pattern-library\\/version\\/1\\.11\\.6\\/assets\\/css\\/styles\\.min\\.css\\.gz",
+            "rule": "arts-live\\.s3-eu-west-1\\.amazonaws\\.com\\/pattern-library\\/latest\\/assets\\/css\\/styles\\.min\\.css\\.gz",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
@@ -25,7 +25,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4ddbf3be1c7fc5a9e6e13c46177a57fd2b013da2d494df694ff025db46c275a6"
+                "edee4f84fd8b36ce132d2823d4ce3dfb55ef2dcef144884f8877c933ea81c6e6"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -36,16 +36,20 @@
             ]
         },
         {
-            "rule": "arts-live\\.s3-eu-west-1\\.amazonaws\\.com\\/pattern-library\\/version\\/1\\.11\\.6\\/assets\\/js\\/main\\.min\\.js\\.gz",
+            "rule": "arts-live\\.s3-eu-west-1\\.amazonaws\\.com\\/pattern-library\\/version\\/1\\.11\\.10\\/assets\\/js\\/main\\.min\\.js\\.gz",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3c0169836d63b10deff0d203332ecae436c8bc78ac4a3c5582082dee4cd98ca7"
+                "197be54270d6ea2f5e1250144ea2b0c836551703c2329e322b2b1c04667e8cda"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -66,9 +70,9 @@
         "Script": 2
     },
     "nameservers": [
-        "ns-1228.awsdns-25.org",
-        "ns-777.awsdns-33.net",
         "ns-56.awsdns-07.com",
-        "ns-1961.awsdns-53.co.uk"
+        "ns-1961.awsdns-53.co.uk",
+        "ns-1228.awsdns-25.org",
+        "ns-777.awsdns-33.net"
     ]
 }

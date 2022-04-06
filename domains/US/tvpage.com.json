@@ -7,25 +7,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
+        "v",
         "a",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "tvpage\\.com\\/tvpa\\.min\\.js",
+            "rule": "tvpage\\.com\\/1759219\\/177301439\\/thumbnail\\/image-thumbnail-640-173994149c51b583380c28137a0e0b3f\\.jpg",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autozone.com",
+                "www.autozone.com"
+            ]
+        },
+        {
+            "rule": "tvpage\\.com\\/tvpa\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
             "subdomains": [
                 "a"
             ],
             "apis": {
                 "Navigator.prototype.platform": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.language": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -34,10 +58,17 @@
                 "692820f3a8ce197f6bdf2f93b4d9d3802fc78c911c724032a28faefefef4ad66"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "__tvpa": {
+                    "ttl": 31536004,
+                    "length": 32,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bedbathandbeyond.com",
+                "autozone.com",
                 "www.bedbathandbeyond.com"
             ]
         },
@@ -53,21 +84,22 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d62836f8b428eec25fec01284cf6446c89c4799dc439e6c6850093293eaa218d"
+                "2519ff9ee4ce5c91cfaf248a8becd433bf9611ba20044761893c29039bb18c30"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bedbathandbeyond.com",
+                "autozone.com",
                 "www.bedbathandbeyond.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "types": {
+        "Image": 2,
         "Script": 4
     },
     "nameservers": [

@@ -4,10 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "backend-ssp"
+        "backend-ssp",
+        "ftp",
+        "endpoint1",
+        "cookiesync",
+        "cs.ssp",
+        "tags"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,35 +25,200 @@
                 "backend-ssp"
             ],
             "apis": {
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "40e6bb5891e14471856008e7095753ce6a9ff1048e28ff0a6dc18c8fcf1d888f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adaderana.lk",
+                "www.adaderana.lk",
+                "www.baiscopelk.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/adstudio-logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ftp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b364e51d8d2146ca831996ab9c5fa1c5ce6da13d3d36a0be8b11896999075ea9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baiscopelk.com",
+                "www.baiscopelk.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "endpoint1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baiscopelk.com",
+                "www.baiscopelk.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/sync",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cookiesync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baiscopelk.com",
+                "www.baiscopelk.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/c949756a2bf92a95ad754382bf79e480\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cs.ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baiscopelk.com",
+                "www.baiscopelk.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/1901-6d50d7751badff94141df4ddfcd3f7f8\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ftp"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "7aa872273519ca6cb6e2b549004fa524ff3ef16538da0fb18845873980edb81e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gossiplankanews.com",
+                "www.gossiplankanews.com"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "backend-ssp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "lotame_domain_check": 0.0000068105045221750025
+                "lotame_domain_check": 0.000013612757876682026
             },
             "exampleSites": [
-                "walkathalokaya.com",
-                "www.walkathalokaya.com"
+                "gossiplankanews.com",
+                "www.gossiplankanews.com",
+                "www.newsfirst.lk"
+            ]
+        },
+        {
+            "rule": "adstudio\\.cloud\\/newsfirst\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tags"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73661117d381aee9f1d765d340bc8be7503563ea5ece9e7c1711b60429006f3e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newsfirst.lk",
+                "www.newsfirst.lk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
-        "Script": 2
+        "Script": 7,
+        "Image": 8,
+        "Document": 3
     },
     "nameservers": [
-        "ns-40.awsdns-05.com",
-        "ns-927.awsdns-51.net",
         "ns-1202.awsdns-22.org",
-        "ns-1614.awsdns-09.co.uk"
+        "ns-1614.awsdns-09.co.uk",
+        "ns-40.awsdns-05.com",
+        "ns-927.awsdns-51.net"
     ]
 }

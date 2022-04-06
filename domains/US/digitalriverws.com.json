@@ -7,42 +7,24 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "api",
-        "store.izotope.com.wipext"
+        "store.izotope.com.wipext",
+        "store.us.vive.com.wipext"
     ],
     "cnames": [
         {
             "original": "store.izotope.com",
             "resolved": "store.izotope.com.wipext.digitalriverws.com"
+        },
+        {
+            "original": "store.us.vive.com",
+            "resolved": "store.us.vive.com.wipext.digitalriverws.com"
         }
     ],
     "fingerprinting": 0,
     "resources": [
-        {
-            "rule": "digitalriverws\\.com\\/v1\\/shoppers\\/me\\/products",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "38c939d060d87ed46b32834d1053332f6f46cde903008d6a3092bc991d7e3d32"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "crucial.com",
-                "www.crucial.com"
-            ]
-        },
         {
             "rule": "digitalriverws\\.com\\/store\\/izotope\\/DisplayDRCartSummary\\/Version\\.2",
             "cookies": 0.0000136,
@@ -60,7 +42,7 @@
                 }
             ],
             "responseHashes": [
-                "dc30179e89bf99a3e95fa97776b0d3b251a14815ce898cf136e06471888260d1"
+                "f1d9f095c0f54089bcbfea825a5e34d35322ba19b3426b325ce54813c9c1ca6f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -69,19 +51,40 @@
                 "izotope.com",
                 "www.izotope.com"
             ]
+        },
+        {
+            "rule": "digitalriverws\\.com\\/store\\/htcus\\/SessionToken",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "store.us.vive.com.wipext"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "store.us.vive.com",
+                    "resolved": "store.us.vive.com.wipext.digitalriverws.com"
+                }
+            ],
+            "responseHashes": [
+                "fb70dca0a9353f15cc371e0acb5bb162f46be6e948ec017e1e37d7f8245c69ec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vive.com",
+                "www.vive.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000272,
     "types": {
-        "XHR": 2,
-        "Script": 2
+        "Script": 4
     },
-    "nameservers": [
-        "ns-250.awsdns-31.com",
-        "dns1.p04.nsone.net",
-        "dns2.p04.nsone.net",
-        "ns-1538.awsdns-00.co.uk"
-    ]
+    "nameservers": []
 }

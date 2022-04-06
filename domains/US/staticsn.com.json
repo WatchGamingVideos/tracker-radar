@@ -81,8 +81,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "0f34b2d286b9bb1604c8ce897abf95a23a106d57c9f59f7de1ff133b7047c99d"
@@ -92,6 +92,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "starnow.co.uk",
+                "www.starnow.co.uk",
                 "www.starnow.com.au"
             ]
         },
@@ -101,9 +102,10 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "window.localStorage": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.innerWidth": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -123,9 +125,11 @@
         {
             "rule": "staticsn\\.com\\/_scripts\\/facebook\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 3
+            },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
@@ -251,7 +255,8 @@
             "apis": {
                 "Date.prototype.getTime": 3,
                 "Event.prototype.timeStamp": 3,
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 1,
+                "window.innerHeight": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -299,7 +304,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "78ee6af0277b38502cbd04b3ca9405946ce8fb8ad07b77322c9bfdb406be9f86"
+                "948ec6ea45081e7cf078dfd9bcda05ab90cd77af91cebc2e7787298b7aa67fb2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -480,7 +485,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ce537a308527b2949399a3502a619f2875536ba2b9b734d9d6a0d6f7fafb606c"
+                "c2f62da0e91d772052d990a872e6dc4afa4836f9f3afadec14a920a6805d3964"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -761,7 +766,8 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -838,6 +844,26 @@
             ]
         },
         {
+            "rule": "staticsn\\.com\\/images\\/bullets\\/black-tick\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cfcc1f424e9d9183f21bf2e22b6b4a365295075240999b5e9f96244ff4e9bab4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "starnow.co.uk",
+                "www.starnow.com.au"
+            ]
+        },
+        {
             "rule": "staticsn\\.com\\/Scripts\\/dist\\/prod\\/195\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -887,7 +913,7 @@
     "cookies": 0,
     "types": {
         "Script": 38,
-        "Image": 57,
+        "Image": 60,
         "Stylesheet": 3
     },
     "nameservers": [

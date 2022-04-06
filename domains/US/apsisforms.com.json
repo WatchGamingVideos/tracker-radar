@@ -4,26 +4,25 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "forms"
+        "forms",
+        "tr"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "apsisforms\\.com\\/formbuilder\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "forms"
             ],
-            "apis": {
-                "Document.cookie getter": 1
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "d85a7f13ce92e2cc3a24be03616ad04c1069f2612b8c53df73811a763d666ab3"
@@ -34,7 +33,31 @@
             "exampleSites": [
                 "forskning.se",
                 "www.forskning.se",
-                "www.hafjell.no"
+                "www.maxizoo.dk",
+                "www.minfot.se"
+            ]
+        },
+        {
+            "rule": "apsisforms\\.com\\/tracker\\/track\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tr"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f858eca321eba2bfabd9ff5f82b3e64df5cc798e793d13946a5d4705ff164ede"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maxizoo.dk",
+                "www.maxizoo.dk",
+                "www.minfot.se"
             ]
         }
     ],
@@ -42,7 +65,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 7
     },
     "nameservers": [
         "ns-50.awsdns-06.com",

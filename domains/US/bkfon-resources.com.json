@@ -8,19 +8,15 @@
     "sites": 2,
     "subdomains": [
         "origin",
-        "clientsapi51",
-        "clientsapi510",
-        "clientsapi31",
-        "clientsapi11",
-        "clientsapi52",
-        "line110",
-        "line59",
-        "clientsapi110",
-        "clientsapi12",
-        "line52",
-        "line21",
-        "line51",
-        "line32"
+        "clientsapi51w",
+        "clientsapi03w",
+        "clientsapi52w",
+        "clientsapi04w",
+        "clientsapi31w",
+        "line52w",
+        "line55w",
+        "line03w",
+        "line09w"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -94,7 +90,7 @@
             ]
         },
         {
-            "rule": "bkfon-resources\\.com\\/webStaticRed\\/fon\\/static\\/4\\.14\\.50\\/style\\.css",
+            "rule": "bkfon-resources\\.com\\/webStaticRed\\/fon\\/static\\/4\\.14\\.53\\/style\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -138,9 +134,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "footer.lang": {
-                    "ttl": 86400005,
+                    "ttl": 86400001,
                     "length": 2,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -173,7 +169,7 @@
                 "CS.deviceIdCookie": {
                     "ttl": null,
                     "length": 19,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -232,12 +228,43 @@
             "type": "Script",
             "firstPartyCookies": {
                 "headerApi.lang": {
-                    "ttl": 86400005,
+                    "ttl": 86400001,
                     "length": 2,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/webStaticRed\\/fon\\/static\\/4\\.14\\.53\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "window.indexedDB": 1,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "31f859096297631449413079c8be3b8a73187f95c139b7314e165cf7af510d31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fonbet.ru",
@@ -532,11 +559,11 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/getMyScopeMarket",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi51",
-                "clientsapi510"
+                "clientsapi51w",
+                "clientsapi03w"
             ],
             "apis": {},
             "sites": 2,
@@ -555,18 +582,18 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/getDeviceId",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi31",
-                "clientsapi510"
+                "clientsapi52w",
+                "clientsapi51w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0552cb64df1970d9df8896d124a855f342f568841849ec3046254dd3b61d4fb8"
+                "98260fc7b325a404facfdaba97f7423b6ced50a5a4e30faa75a14dbc85b57080"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -578,18 +605,41 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/content\\/getActualContentByAlias",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi510",
-                "clientsapi11"
+                "clientsapi52w",
+                "clientsapi51w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "34577996dddc692417d3e9907cd45a08df7d37eb3fee3dfd943a6621220813c5"
+                "6459df236477205b897be824bbf9d41f88bc9ac60c96ab59bfe7fa3313c310e2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/content\\/getActualContent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientsapi51w",
+                "clientsapi52w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a96ad16068da215435b93756863ce19d189b064392d6ba667bb91d7d0775368"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -601,67 +651,19 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/getApiState",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi510",
-                "clientsapi51"
+                "clientsapi03w",
+                "clientsapi04w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "003fe4633aff1ae497eb9114dee484ae6a2c11874df770aaa3c571996e2ea021"
+                "d34ec1f424c38790db97b7122791f5c9cd8d391e1a74e550e362ba21b8603b5d"
             ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fonbet.ru",
-                "www.fonbet.ru"
-            ]
-        },
-        {
-            "rule": "bkfon-resources\\.com\\/webStaticRed\\/fon\\/static\\/4\\.14\\.50\\/main\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "origin"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie getter": 2,
-                "window.indexedDB": 1,
-                "Event.prototype.timeStamp": 1,
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fonbet.ru",
-                "www.fonbet.ru"
-            ]
-        },
-        {
-            "rule": "bkfon-resources\\.com\\/content\\/getActualContent",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "clientsapi52"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -672,18 +674,18 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/serverTime",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi510",
-                "clientsapi52"
+                "clientsapi31w",
+                "clientsapi04w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "58554a9f3969645fca7b58209faba08aae2e27f1216f1bff8b81a39fbe3e633b"
+                "42a7d75cc1767189cba922cb4a40c7eef7a1316cd7fbc1f4370c55171c59b3c1"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -698,15 +700,84 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "line110",
-                "line59"
+                "line52w",
+                "line55w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f7aca5d9e712247244b6a01349d4c8e8d7e6212b83f8efbae06ed141fef30f47"
+                "c8a9e343135f8c98a49f7a25d3804a11893faf79a25bf4318d3bbae416c47b72"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/content\\/getContentFromVersion",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientsapi51w",
+                "clientsapi52w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "735e1ccd0b3562bfd419a943192f2cf378fadf50d75d3abcbf43adc65d23078e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/analytics\\/ranges",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientsapi51w",
+                "clientsapi52w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dfce05964c66e28192a2b23c741e36f24f5edfc1174438913b56ff0c6c8cad8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/analytics\\/experiments",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientsapi51w",
+                "clientsapi52w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d4ac7f13aeadb6acba577cf4e6d98c6ab1707ec4d02811dc059e7463a77c2d6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -739,81 +810,12 @@
             ]
         },
         {
-            "rule": "bkfon-resources\\.com\\/content\\/getContentFromVersion",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "clientsapi11",
-                "clientsapi510"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "805e871368cc1605e0252df07fe5221d0277afce8a1fc851ca7a772b4b03cb99"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fonbet.ru",
-                "www.fonbet.ru"
-            ]
-        },
-        {
-            "rule": "bkfon-resources\\.com\\/analytics\\/ranges",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "clientsapi52",
-                "clientsapi51"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "dfce05964c66e28192a2b23c741e36f24f5edfc1174438913b56ff0c6c8cad8a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fonbet.ru",
-                "www.fonbet.ru"
-            ]
-        },
-        {
-            "rule": "bkfon-resources\\.com\\/analytics\\/experiments",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "clientsapi52",
-                "clientsapi510"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "9d4ac7f13aeadb6acba577cf4e6d98c6ab1707ec4d02811dc059e7463a77c2d6"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fonbet.ru",
-                "www.fonbet.ru"
-            ]
-        },
-        {
             "rule": "bkfon-resources\\.com\\/geoIp\\/checkGeoAccess",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi510",
-                "clientsapi110"
+                "clientsapi03w",
+                "clientsapi04w"
             ],
             "apis": {},
             "sites": 2,
@@ -854,18 +856,17 @@
         },
         {
             "rule": "bkfon-resources\\.com\\/content\\/getContentById",
-            "cookies": 0.0000136,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "clientsapi12",
-                "clientsapi510"
+                "clientsapi52w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "935911c27eb91ee754a5df77f1f5e6056d427134af7a0c997f0b50576b96c44b"
+                "8671c53388be020ec6f44363acdfb36f7cff239b940d40cd857b9e092d9194e4"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -880,17 +881,1292 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "line52",
-                "line21"
+                "line03w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2da6c9fa9968aacdb0e7376bcb6f633c2a888af00594124cfef5474b60bc9cff"
+                "a6d8466b05a37a42ef5febd430c099ef6ef53ddd489766a804624ed9b2643aab"
             ],
             "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Loyalty\\/VIP_Cashback_Express\\/RU-VIP_996h558_Banner_3\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "09c789679095995c5943c05dfbe6a54f738d284d32250358cf926c8fcc86201e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/broadcast-tt\\/events\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientsapi04w"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8cb12a90de867e456dd632c31b3e2df359ade083ac6aa09d1e844cebb26c261d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/2-hockey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "09aa05525bb32801ba4876f395bd6d02ae2d31724e664c6f69318b871b3bd907"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/3-basketball\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a8b3cddee020893177f2e7d142ca357d261bdf31ceb2ec479d5cc90385820c53"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/1-football\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db7c33f5b87a9c68e806385e443fee30222e50282d3e5b11d9cf2521433bb042"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/9-volleyball\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e220c923878e112a1f02297e85c0094cdc6ec5b8cdd27cd80af8eb79beeb7b1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/table-tennis\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7675a51fed0e95a1f9be13153b8252f579a76624721b9ab2d37e4c3c535bafa4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/TeamLogos\\/Football\\/1461\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e86afbbb0a4e9850ab0b5395b56893bb7b82a6ef75d61d5f8c097676186c543b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/TeamLogos\\/Football\\/Mexico\\/Coat_of_arms_Atlas_Guadalajara\\.svg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fcfa753a0f690eb7b85c48d94b46c69bb3939ec19e7b01a4b5d3f74691ad05c6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_cska_1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d04a54509d19b040ab98dd18f6d8b6e1a1efe3811af958853e43852abe1dffdf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/Loko_color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f05231c12cae4655bd34cfe4ac1ee319d3d2571707875c5630bb5364ae69e68"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/Rubin_120\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b031b68d9a0d3fb058f9585c7decd462287007892cf4c53fb2322f55b7b5584"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_rfs_1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b1cf2d125c659a0004685d890af2407ed0ca1eb993e308bf90a097c1898e446"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_khl_1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2416bd12ed36b2f1cd972568e45c5e8a1ab8879c3305ca52fbde0ffa2768f6de"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_Avangard\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e0b8c5c8b140ed624592ece0a892e77a19d45257c1d5f7ef91afff3deb911b19"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_Dinamo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe69581b8eb0335b1eabe4ff88cffd6e8e4f75d2687ba69d2d3c4a5fe2850397"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/Logo_salavat_120\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d34926e729d19f0c87b8f8c0596540e2435de9d832867ba4e0a364d5a90c8b65"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_severstal\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a7dc6ccfa44f3e885294194b6a5af76fb2a53673a80620df944698cc35039c9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/logo\\/logo_admiral\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3035199aa22541ddcf00c3085a5d0076879d8d24e7326f0cd12f2c653a95f3d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentRed\\/Banners\\/templates\\/996x558\\/996h558-Ovechkin\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f0fc1d98430fc12dc2d222574819f17ed9c2dff38bb28863d8009be377584fb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/996x558\\/cska_200821\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f5dc6fd64623b8ab1a006fe09105a991acda05b2676b462e6ca92a6fbef70026"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-Locomotive-bg\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "16347c63e12664245f60a604324b17799a9369cd69ef2bbd59c1a05795885165"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_rubin_7F111D_23\\.03\\.22\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6c6f92815b4967e7961ea23bce415ce379dcb1cd31b0c95f8b11f84fadadb1c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/996x558\\/rfs\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a3a501c3afb5fb4a3be6aa1389f3b1b8d9945e73e616622120333352bb998675"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-kHL-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bbaff745b484977629a39dc8fba5fbd9db20ae961251205712a2ce5c45de3649"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-Avangard-1-360\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dde5cce0ee47650c1908e9353cc6418c772f9e858b77fce4b2f01f7eec36ca97"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-Dinamo-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "29b412082f46237838fcd68603ef6bb4f6cc9933fe60c8a1809c663ef4fccd0b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-Salavat-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee8d2cb749835d6043c07f7986d1d1bbb068721a0d23e246e96bea4fa10ddb14"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-SevSl-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2ec02d19ef0849a8a86376fc82d5df449a3bc00456a5dd02407963fc295a04a8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Banners\\/templates\\/2022\\/996x558\\/996x558_web_banner-Admiral-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87e1d9ac32d9a69cf6faabb9d787ebb30ed77005a652107641f036077abc9646"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/SportKinds\\/new-design\\/white_new\\/29086_Cyber_Sport\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d3d8eb0567605ae1c1840f245bb5993c1b53fadf49b302634107f22276aa93e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/Logotypes\\/CompetitionLogos\\/Games\\/cs_15_black\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "91fd1b68b03df8a9adef353f2248dfd72ced12fb9862592ac74897e135913fd9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/vk-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20474ab7ed8dae0e2cf68f00ec39fe6ba935d3a34782e035a28b32ffb6ee5c52"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/vk-color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50a2a4d3e10df3aa7aaacbbbeab10a452987e8e804f63cfe75e8e93d5809a706"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/tg-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e007f64c9a7b2ae2d5b4e9d9cd4682b7dd1ae7700677fa527e20639667ea53d4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/tg-color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "242174f0c691c129f5d24dcf57d6c5eaba11f8743f6c6b026e534975be791931"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/whatsapp-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50e827bb9d4f4af491747645e7de02a7d50c3261e78ae68d452a258fa420bf58"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Socials\\/new\\/whatsapp-color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c75c6a707ebe95f86965e441cfcc40f20b841bbc8681c2c94ad7c26db7634c63"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/RFS-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "be9599b468914bb5540e5bed785d232f67934d21f41b57d450a778dbd0e8c754"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/rfs_color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "75a46716c3db248c906b1b30497247747bba93b75f6c1da1dd898cd905860eac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/KHL-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "729ffa28b767e84c4abeeeab848d680b11a5ec9ac075c9e33752967530d280a6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/khl\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab7b36180c603e0720dd08db1c719aae05cce2a8a520db9d9c7ede6568bffc1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/CSKA-grey-2\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb02660972e80a36e8734ade08136c572c0fbe1fc8cb3c7b26d734dd560b9d7c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/cska_color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bcb72f95b4215f8413471160d674e146b32cbee2f05fd79fc934ad0a5d18d2b9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/Loko_gray\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4364960d7d2814ae31b0f5c8f09dbf84db24d6b68f6a2f47f37a933a77ea6705"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/Loko_color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f05231c12cae4655bd34cfe4ac1ee319d3d2571707875c5630bb5364ae69e68"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/Rubin_logo_gray2\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1aa49255b6b84b5b44f34a046a2a25a4a251aeb9e286e5e501106a1679cffdf0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/Rubin_logo_new\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee3b868953ffb189d24da196a9e13bb7ad44b2479bf5b5cab3c0b1533ae47f10"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/Avangard-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a08b4ef6a9445d4200b4c2ed0268a1eb380274e08ac0ae9b67bf231fc6809b30"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/avangard_color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b551bb8bed16ac2a0bf1eb2f7249a3a6bbf6f229a2d704b1c096196b37a3ae4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/Dynamo_Moscow_grey1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3bb337aa4128d1969130aadec8eccf2b9180f7b0a78c6557ff8727abbd8c006f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/gray\\/Dynamo_Moscow\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84c65f1c8e9615c75a933711ad8475e8e24227db616435aca098197bbf271868"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/Salavat_Yulaev_gray\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f315fad9620503bc277eb2c7e4bb011d90e09abd02c28a6093e860e1d95a9812"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Sponsors\\/Salavat_Yulaev\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2eac633e810368b6d1a9933ab619135963d93dd13528033332afa915de5d2170"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Apps\\/gray\\/apple-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1266266e97aff166b41ebffb2cc504db4747c68574efc5493f5d98aaa534305a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Apps\\/apple-color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2747c6329c40f22dc3c514ad623be89a1f61bbd82bd36a6bbed943e092b08cb5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Apps\\/android-grey\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d94dbf5472a179ba91d098894de18f2ab21ca0e2e29c4185255581fdb418803f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fonbet.ru",
+                "www.fonbet.ru"
+            ]
+        },
+        {
+            "rule": "bkfon-resources\\.com\\/ContentCommon\\/NewFooter\\/Apps\\/android-color\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1075b22fb0c7e3896666ff6d4cd94bf01422ce99ded10aa6f298971004d589e1"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -903,15 +2179,15 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "line51",
-                "line32"
+                "line09w",
+                "line55w"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "67605ff64673fdd0303afa9f3c4300dcddcfb8e7f849c02e0060710736866862"
+                "c9898855c91004e29beda04ae4a2bf7d7ca50daa651cdd4533b4f0164a86f0fe"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -928,13 +2204,13 @@
     "types": {
         "Script": 10,
         "Stylesheet": 6,
-        "Image": 30,
-        "XHR": 28
+        "Image": 144,
+        "XHR": 30
     },
     "nameservers": [
-        "ns4.bkfon-resources.com",
-        "ns3.bkfon-resources.com",
-        "ns2.bkfon-resources.com",
-        "ns1.bkfon-resources.com"
+        "ns1.selectel.org",
+        "ns2.selectel.org",
+        "ns4.selectel.org",
+        "ns3.selectel.org"
     ]
 }

@@ -4,35 +4,47 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
-        "cdn",
-        "delivery"
+        "delivery",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "pbgrd\\.com\\/v\\.js",
+            "rule": "pbgrd\\.com\\/network\\/adjs\\.php",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "delivery"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "d4137ff41962f6e1f34335151da47814daf034c1888343054daba8d12471ee6d"
+                "cd7eb9f7ae128e3d209014fce09f82b4d656d0ec268c18c65e2bba9ab633f5e1",
+                "8cf2b30177fc96007908fb68f07461ea9d4e0aa626efb71ed695cc1e065a7dc9",
+                "c06685135eb3397afa115473c75946d4a26426ca5619341c96934672872bdfd2",
+                "e1c4a3209caf5575c9ce5f72b52b4cde4230ac15f876e1354b0acbefd3da4692",
+                "7a79cdec21f15505c4770cb190bf63656a132a81106a7051a33c0e188c771b82",
+                "cfa8a04ba19bb6fa8b30809c28d83c2dbb8e9a29e20dff1ffd3d61d9edd42d67",
+                "d2b2bd778ccbf4d81efb53cf429e48f7501fdbf1f7d9d0498c1bc25f522e73f4"
             ],
-            "type": "Script",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ashpublications.org",
-                "journals.physiology.org"
+                "biomedcentral.com",
+                "bmcpublichealth.biomedcentral.com",
+                "journals.physiology.org",
+                "journals.plos.org",
+                "link.springer.com",
+                "rd.springer.com",
+                "www.cell.com",
+                "www.springer.com"
             ]
         },
         {
@@ -43,8 +55,8 @@
                 "delivery"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
@@ -53,12 +65,66 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ashpublications.org",
+                "biomedcentral.com",
                 "bmcpublichealth.biomedcentral.com",
                 "journals.physiology.org",
                 "journals.plos.org",
+                "link.springer.com",
                 "rd.springer.com",
                 "www.springer.com"
+            ]
+        },
+        {
+            "rule": "pbgrd\\.com\\/core-theaps\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27b9ac06795d787bfb3144739a512db99a04a0f43230e6f833a658847ec123d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "physiology.org",
+                "journals.physiology.org"
+            ]
+        },
+        {
+            "rule": "pbgrd\\.com\\/v\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4137ff41962f6e1f34335151da47814daf034c1888343054daba8d12471ee6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "physiology.org",
+                "journals.physiology.org"
             ]
         },
         {
@@ -79,105 +145,6 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ashpublications.org",
-                "journals.physiology.org"
-            ]
-        },
-        {
-            "rule": "pbgrd\\.com\\/network\\/adjs\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "delivery"
-            ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000817,
-            "cnames": [],
-            "responseHashes": [
-                "a3a42034c1e0f26c178fd8518d223c6ad17121d6c8bdb6c2199eac3a9bcbf898",
-                "4f217c1faa9d4e7737e98d238f73ed29b255afbedde3deb12f75e32af36d0a36",
-                "0980c090811b35c4029a8e04f652d846bfc17a905fa2d736d88ec1268da8f1d7",
-                "fa91e5b85eee6909182d7696cd54abc061505f9a9acfce3fdc92188d1e9bdf2f",
-                "110656f4ff7b941adae3a3986459e2761264da30c886144eca7cd62daa0af1f4",
-                "907a11094111cee1b3f4541f436eb8d834d30f507ff6f90e982fcb0519666e63",
-                "63449ae5584da3178c822a930c5ac9313138a073461f365ef113cb9bf0f0a9eb",
-                "3835f1dd7e0f8819907b783e81f8046c0db8853415cebed2094d9146500daabd",
-                "dffdf90fb2986b8768246132ed3367ffe28adf0504f71ec3c70eb535ce68bc7e",
-                "86c22dd2bd9a1fe8254cbae879cfe3fc224cc8ffbf2992d69781fcd402816f80",
-                "86212da27acadd14651dccbfe24d58e2cdb3c7db3543e50d1c2ff7875e1ceb4c"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "RefTrackGroup": 0.00002724201808870001
-            },
-            "exampleSites": [
-                "biomedcentral.com",
-                "bmcpublichealth.biomedcentral.com",
-                "gut.bmj.com",
-                "jme.bmj.com",
-                "jnnp.bmj.com",
-                "journals.physiology.org",
-                "journals.plos.org",
-                "link.springer.com",
-                "pmj.bmj.com",
-                "rd.springer.com",
-                "www.cell.com",
-                "www.springer.com"
-            ]
-        },
-        {
-            "rule": "pbgrd\\.com\\/core-bmjjournals\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Screen.prototype.height": 5,
-                "Screen.prototype.width": 5,
-                "Date.prototype.getTime": 5
-            },
-            "sites": 5,
-            "prevalence": 0.0000341,
-            "cnames": [],
-            "responseHashes": [
-                "a292ab0e3bcdf2a86aad0531ed7ba642c741ae307760cd4623a0a89eba2d0e9c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bmj.com",
-                "gut.bmj.com",
-                "jme.bmj.com",
-                "jnnp.bmj.com",
-                "pmj.bmj.com"
-            ]
-        },
-        {
-            "rule": "pbgrd\\.com\\/core-theaps\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Date.prototype.getTime": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "670eaadde85d97957f8b75fe2d11d1bfdd90a115efa0361b7a7067de54594bd3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
                 "physiology.org",
                 "journals.physiology.org"
             ]
@@ -192,13 +159,14 @@
             "apis": {
                 "Screen.prototype.height": 2,
                 "Screen.prototype.width": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c3b5b4b1a14362c49d14a7b7235ed1535c10eb32f76cd1635066168c6816a4a6"
+                "b0dcc6be0a8dfc7abcbe2d3faeaaaa6044fb307791493a9275f0b8edf54c3c66"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -216,21 +184,22 @@
                 "cdn"
             ],
             "apis": {
-                "Screen.prototype.height": 3,
-                "Screen.prototype.width": 3,
-                "Date.prototype.getTime": 3
+                "Screen.prototype.height": 4,
+                "Screen.prototype.width": 4,
+                "Date.prototype.getTime": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "8119428bcc52d6e1cc556ff778f8ab2d829ca83fda6ac239027bcb335766ec49"
+                "a7ce1b4d626cce8317a11785e8206a6a33bacb2b132e17bb0b338aefd96232a0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "springer.com",
+                "link.springer.com",
                 "rd.springer.com",
                 "www.springer.com"
             ]
@@ -240,10 +209,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 14,
-        "Image": 6,
-        "Ping": 2,
-        "XHR": 12
+        "XHR": 8,
+        "Image": 7,
+        "Script": 10,
+        "Ping": 2
     },
     "nameservers": [
         "ns.udag.de",

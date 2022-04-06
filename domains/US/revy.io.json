@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.000177,
+    "sites": 26,
     "subdomains": [
-        "api"
+        "api",
+        "upsell"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,18 +21,20 @@
                 "api"
             ],
             "apis": {
-                "Navigator.prototype.product": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Event.prototype.timeStamp": 6,
-                "Date.prototype.getTime": 6,
-                "window.sessionStorage": 6,
-                "Document.cookie getter": 6
+                "Navigator.prototype.product": 9,
+                "Navigator.prototype.userAgent": 9,
+                "Event.prototype.timeStamp": 9,
+                "Date.prototype.getTime": 8,
+                "window.sessionStorage": 8,
+                "Document.cookie getter": 8
             },
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
-                "debb159f58434b8ecf367bc3fc18dc6a1da6b7b4b54ec79bc0a95a1602cf5d11"
+                "65edd09040bf837b022757b275176b3e84c7842d2929669029a24b763741ac93",
+                "06457a42bbc286a49ecc89306f003f6453b8f07d4ba690fadfdcc08fa74e8b85",
+                "ed5a326cea1b4734fd6f45cf8af6d3909d000bc197678679861f213d198c493d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,8 +44,11 @@
                 "uk.kef.com",
                 "usstore.tenga.co",
                 "www.blublox.com",
+                "www.correct.nl",
                 "www.elegoo.com",
-                "www.soundseasy.com.au"
+                "www.fiido.com",
+                "www.soundseasy.com.au",
+                "www.yorkshiretrading.com"
             ]
         },
         {
@@ -53,8 +59,8 @@
                 "api"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "e7353f28aef96ce159bacb046baddb36d64d68dd10876898e4f98e05bae243c7"
@@ -67,8 +73,130 @@
                 "uk.kef.com",
                 "usstore.tenga.co",
                 "www.blublox.com",
+                "www.correct.nl",
                 "www.elegoo.com",
-                "www.soundseasy.com.au"
+                "www.fiido.com",
+                "www.soundseasy.com.au",
+                "www.yorkshiretrading.com"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/upsell\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8eff564d727a84cf68b2afdd4e3329bbcc72431fef7bd6248ac8daeb5df4ffe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/api\\/data\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "upsell"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5c25b98b3dce5fc95321174ba3b02af2b44eb14955623279c9670acad9a07d4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/api\\/data\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "upsell"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/css\\/upsell\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25f304f90330136a0149f950b1c9c7cc8b367a8b565358fdeb59aa26dd979b18"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "klevarange.com.au",
+                "www.bluettipower.com.au"
+            ]
+        },
+        {
+            "rule": "revy\\.io\\/discounts\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "22d9550801b4c14abe6ca841c3197128591f3019705115232dccd049411d1b5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "modiphius.net",
+                "www.modiphius.net"
             ]
         }
     ],
@@ -76,11 +204,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6,
-        "Stylesheet": 6
+        "Script": 13,
+        "Stylesheet": 11,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
-        "jerome.ns.cloudflare.com",
-        "venus.ns.cloudflare.com"
+        "venus.ns.cloudflare.com",
+        "jerome.ns.cloudflare.com"
     ]
 }

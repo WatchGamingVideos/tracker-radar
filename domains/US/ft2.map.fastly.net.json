@@ -9,10 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [],
     "cnames": [
+        {
+            "original": "ads-api.ft.com",
+            "resolved": ".ft2.map.fastly.net"
+        },
         {
             "original": "markets-data-api-proxy.ft.com",
             "resolved": ".ft2.map.fastly.net"
@@ -38,12 +42,12 @@
     "resources": [
         {
             "rule": "ft2\\.map\\.fastly\\.net\\/ingest",
-            "cookies": 0.00000681,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [
                 {
                     "original": "spoor-api.ft.com",
@@ -59,6 +63,32 @@
             "exampleSites": [
                 "ft.com",
                 "ig.ft.com",
+                "rankings.ft.com",
+                "www.ft.com"
+            ]
+        },
+        {
+            "rule": "ft2\\.map\\.fastly\\.net\\/v2\\/user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ads-api.ft.com",
+                    "resolved": ".ft2.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "aebf7be57e60fad40f8d0712289df64729d7f33254c1c52202860ec40e35e7ec"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ft.com",
                 "www.ft.com"
             ]
         },
@@ -68,8 +98,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "privacy.ft.com",
@@ -84,30 +114,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ft.com",
+                "rankings.ft.com",
                 "www.ft.com"
-            ]
-        },
-        {
-            "rule": "ft2\\.map\\.fastly\\.net\\/px\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "spoor-api.ft.com",
-                    "resolved": ".ft2.map.fastly.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ft.com",
-                "markets.ft.com"
             ]
         },
         {
@@ -136,6 +144,29 @@
             ]
         },
         {
+            "rule": "ft2\\.map\\.fastly\\.net\\/px\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "spoor-api.ft.com",
+                    "resolved": ".ft2.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ft.com",
+                "markets.ft.com"
+            ]
+        },
+        {
             "rule": "ft2\\.map\\.fastly\\.net\\/research\\/webservices\\/securities\\/v1\\/quotes",
             "cookies": 0,
             "fingerprinting": 0,
@@ -150,7 +181,7 @@
                 }
             ],
             "responseHashes": [
-                "89b111ae21a533573c356181053dae99197abdf561635e2daa07a59ddff288f5"
+                "d355b3b782f6586d8ff1a2430856a5ecba8ae42a4479166cd10de0f403c596a2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -202,12 +233,12 @@
         "Session Replay"
     ],
     "performance": {},
-    "cookies": 0.0000477,
+    "cookies": 0.0000613,
     "types": {
-        "Ping": 3,
-        "Fetch": 4,
-        "Preflight": 2,
+        "Ping": 4,
+        "Fetch": 7,
         "XHR": 2,
+        "Preflight": 2,
         "Script": 3
     },
     "nameservers": []

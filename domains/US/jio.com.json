@@ -10,12 +10,35 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
+        "jioimages.cdn",
         "prod.media",
-        "collect.media"
+        "collect.media",
+        "sdlhivkecdnems05.cdnsrv",
+        "snoidcdnems07.cdnsrv"
     ],
     "cnames": [],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "jio\\.com\\/media_uploads\\/20220325211855\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "jioimages.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
         {
             "rule": "jio\\.com\\/apis\\/common\\/v3\\.1\\/getconfig\\/geturl\\/39ee6ded40812c593ed8",
             "cookies": 0,
@@ -48,29 +71,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "53f580ae23d81eb3a64b37d1258c3f906503d716e30026350df6d476398197ec"
+                "0c39118f2b0b2fce3a53fabac9a73c7b8a6771259b013260c612c4efc11b894c"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jiocinema.com",
-                "www.jiocinema.com"
-            ]
-        },
-        {
-            "rule": "jio\\.com\\/postdata\\/event",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collect.media"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -111,10 +114,31 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jiocinema.com",
+                "www.jiocinema.com"
+            ]
+        },
+        {
+            "rule": "jio\\.com\\/jioimages\\.cdn\\.jio\\.com\\/media_uploads\\/20220325211855\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdlhivkecdnems05.cdnsrv",
+                "snoidcdnems07.cdnsrv"
             ],
-            "type": "Fetch",
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5d215339c2cbf4f4efa68535628b4289750d3e1243f897b0e9c6a7994fa5060"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -127,9 +151,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Image": 4,
         "Preflight": 4,
-        "XHR": 4,
-        "Fetch": 2
+        "XHR": 4
     },
     "nameservers": [
         "ns1.jio.com",

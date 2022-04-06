@@ -4,75 +4,96 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "api",
-        "tagproxy"
+        "s3"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "action-media\\.ru\\/callback",
-            "cookies": 0.0000341,
+            "rule": "action-media\\.ru\\/metrics\\/backend\\/api\\/v1\\/gauge-raw_set",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "00570044e06fffd20b6ec8d8124b329a889a3781558406e611038782c76caebf",
-                "121c230a8d6fd8d810f3818f78be8368ee6c4f6599e801a297f9e03294da558b",
-                "905a2baba778b0b483e9911504555f4eec10faaccc9707458ca70f513ab92c56"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "buhsoft.ru",
-                "www.buhsoft.ru",
-                "www.glavbukh.ru",
-                "www.kdelo.ru",
-                "www.law.ru"
+                "1cont.ru",
+                "www.1cont.ru"
             ]
         },
         {
-            "rule": "action-media\\.ru\\/get-blocks",
+            "rule": "action-media\\.ru\\/callback",
             "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
-                "tagproxy"
+                "api"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "1cb18ae2f475112c4fa50d1c69a8f9ccb81f915a32a1a9868b5c622def279abf",
-                "108b9cab55b96e4a934910e9b709cb9f5c58d620ecb2e967058873fc3c661adb"
+                "0774c911028a10240e6dea6af64682c33ae299499926da596ab4925cc57559ae",
+                "484aecf3844a23e973671d4aa0d631013496992a7fea15c91c50021afbe25cbb"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "1cont.ru",
+                "www.buhsoft.ru",
+                "www.glavbukh.ru"
+            ]
+        },
+        {
+            "rule": "action-media\\.ru\\/widgets\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b192754973609f260c45a26fc57d4b6cfb350287106247283b6ffe76c7825374"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
                 "buhsoft.ru",
-                "www.kdelo.ru",
-                "www.law.ru"
+                "www.buhsoft.ru",
+                "www.glavbukh.ru"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000545,
+    "cookies": 0.0000408,
     "types": {
-        "XHR": 8
+        "XHR": 5,
+        "Script": 3
     },
     "nameservers": [
-        "ns1.fr.ru",
-        "ns2.fr.ru"
+        "ns2.fr.ru",
+        "ns1.fr.ru"
     ]
 }

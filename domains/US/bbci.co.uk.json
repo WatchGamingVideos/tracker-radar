@@ -7,15 +7,47 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000129,
-    "sites": 19,
+    "prevalence": 0.000143,
+    "sites": 21,
     "subdomains": [
+        "static.files",
         "news.files",
         "ichef"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "bbci\\.co\\.uk\\/ws-partner-analytics\\/v5\\/js\\/pageTracker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.files"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 1,
+                "Date.prototype.getTime": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.pixelDepth": 1,
+                "Screen.prototype.colorDepth": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bf590624842a1884f4d9e9a920d7490f797c17582bb44616d537b997f7ccf443"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delfi.ee",
+                "rus.delfi.ee"
+            ]
+        },
         {
             "rule": "bbci\\.co\\.uk\\/ws\\/partner-analytics\\/js\\/pageTracker\\.min\\.js",
             "cookies": 0,
@@ -24,15 +56,17 @@
                 "news.files"
             ],
             "apis": {
-                "Navigator.prototype.language": 1,
-                "Date.prototype.getTime": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.pixelDepth": 1,
-                "Screen.prototype.colorDepth": 1
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "3df543c1a396625b6033ae60a5cbcaf60d676a8f9f6ea114b8704630be723229"
@@ -42,7 +76,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elimparcial.com",
-                "www.masrawy.com"
+                "www.eluniversal.com.mx",
+                "www.prensalibre.com"
             ]
         },
         {
@@ -70,19 +105,19 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
-        "Script": 2,
+        "Script": 5,
         "Image": 2
     },
     "nameservers": [
+        "ddns0.bbc.co.uk",
         "dns0.bbc.co.uk",
-        "ddns1.bbc.co.uk",
+        "dns1.bbc.co.uk",
+        "ddns1.bbc.com",
         "dns0.bbc.com",
         "ddns0.bbc.com",
-        "ddns0.bbc.co.uk",
-        "dns1.bbc.co.uk",
-        "dns1.bbc.com",
-        "ddns1.bbc.com"
+        "ddns1.bbc.co.uk",
+        "dns1.bbc.com"
     ]
 }

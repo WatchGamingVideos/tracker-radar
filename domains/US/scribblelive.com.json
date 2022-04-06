@@ -4,18 +4,106 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "counter",
-        "apiv1secure",
-        "cdn",
         "embed",
-        "api"
+        "counter",
+        "stencil-files",
+        "cdnlove",
+        "cdnlastmodified",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "scribblelive\\.com\\/widgets\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9857b4b059c3ef76bfd24ee1d9759b6ac2ad33ef459976d429d4d18c4a7b92d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "www.lbc.co.uk"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/Embed\\/v7\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70f1f09572040b5a2e6b1d18da90581193f87214fc087e5e41748af878bf3e66"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "SLStatUid": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "SLStatHist": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "www.lbc.co.uk"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/widgets\\/embed\\/post\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8358ef993a9b31c12725c5d985463b94886639d4f78054e518f20b675a3dac61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "www.lbc.co.uk"
+            ]
+        },
         {
             "rule": "scribblelive\\.com\\/",
             "cookies": 0.0000204,
@@ -33,71 +121,139 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "SLStatUid": 0.000020431513566525008,
-                "_li_dcdm_c": 0.0000068105045221750025
+                "SLStatUid": 0.00002041913681502304,
+                "_li_dcdm_c": 0.000006806378938341013
             },
             "exampleSites": [
-                "ctvnews.ca",
-                "montreal.ctvnews.ca",
+                "stuff.co.nz",
+                "www.lbc.co.uk",
                 "www.startribune.com"
             ]
         },
         {
-            "rule": "scribblelive\\.com\\/event\\/2419082\\/all",
+            "rule": "scribblelive\\.com\\/widgets\\/embed\\/post\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "window.name": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "90bce3938b351466140c2e42dc69571521cda5ab04c7a11a131aba7dcfdc0e44",
+                "3e94a3d228e98731beeb98f6512272882acc89f9bf4b4dfc06d068690041d42a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "i.stuff.co.nz",
+                "www.lbc.co.uk"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/scripts\\/engage-spa\\/prod\\/styles\\/node-static\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "apiv1secure"
+                "stencil-files"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "36d5a5b1f42e5f6d77e2de55278c701c014a8199b24d99f76f1cde3eb8b078b0"
+                "99af9dbc0b45e2f4deb2ecfcc3e377cce61db4d3cbdfd32c2b9e9735a60ecd43"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stuff.co.nz",
+                "i.stuff.co.nz"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/likes\\/event\\/2931956",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlove"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0d929200a76c770292136ce71f15dee1d8a64b2a7c57c0b4de340e6de2b88c73"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ctvnews.ca",
-                "montreal.ctvnews.ca"
+                "stuff.co.nz",
+                "i.stuff.co.nz"
             ]
         },
         {
-            "rule": "scribblelive\\.com\\/Style\\/Images\\/transparent\\.png",
+            "rule": "scribblelive\\.com\\/lastmodified\\/2931956",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "cdnlastmodified"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "42cb83775409ffcbef65996152d4b8599da25825825da540100e65f541506b6c"
+                "1f0ef18254ef9001b4cb0b19bb2ecd16e74767b0b81764fe9d20eecd09ded83f"
             ],
-            "type": "Image",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ctvnews.ca",
-                "www.startribune.com"
+                "stuff.co.nz",
+                "i.stuff.co.nz"
+            ]
+        },
+        {
+            "rule": "scribblelive\\.com\\/likes\\/event\\/2985017",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnlove"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lbc.co.uk",
+                "www.lbc.co.uk"
             ]
         },
         {
             "rule": "scribblelive\\.com\\/modules\\/lib\\/addons\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [
-                "cdn",
-                "embed"
+                "embed",
+                "cdn"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -110,55 +266,37 @@
                 "SLStatUid": {
                     "ttl": null,
                     "length": 23,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "SLStatHist": {
                     "ttl": null,
-                    "length": 10,
-                    "prevalence": 0.000013621009044350005,
+                    "length": 9,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ctvnews.ca",
+                "startribune.com",
                 "www.startribune.com"
-            ]
-        },
-        {
-            "rule": "scribblelive\\.com\\/v1\\/replies\\/context\\/stream\\/2419082\\/recent",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ctvnews.ca",
-                "montreal.ctvnews.ca"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "types": {
-        "Image": 5,
-        "XHR": 4,
-        "Script": 2
+        "Script": 8,
+        "Document": 5,
+        "Image": 3,
+        "Stylesheet": 2,
+        "XHR": 4
     },
     "nameservers": [
-        "ns-1046.awsdns-02.org",
-        "ns-1922.awsdns-48.co.uk",
+        "ns-717.awsdns-25.net",
         "ns-309.awsdns-38.com",
-        "ns-717.awsdns-25.net"
+        "ns-1046.awsdns-02.org",
+        "ns-1922.awsdns-48.co.uk"
     ]
 }

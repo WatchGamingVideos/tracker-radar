@@ -4,51 +4,168 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
+        "widget",
         "widget-ru",
-        "widget"
+        "api-ru",
+        "ws-ru",
+        "ws"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "anycomment\\.io\\/comment\\/embed\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "widget-ru",
-                "widget"
+                "widget",
+                "widget-ru"
             ],
             "apis": {
+                "window.innerHeight": 4,
                 "Navigator.prototype.product": 1,
                 "Navigator.prototype.userAgent": 1,
-                "window.localStorage": 1
+                "window.localStorage": 1,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "0070185aa3393ec361c152db2595d09fdbc93e7fbc51d932a4dcce13ff0032d6"
+                "f7ab241c43712ed18b76a9fa4b44cef9adbf9a3bbd056a58cd9577f45ae78a5f",
+                "d18cdf63a546b6b6e32a3a4be78e98dd292c377ef4abb2c3df1059eba0b7b340"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "hug.ru",
                 "matchtv.ru",
+                "tgram.me",
                 "www.unisender.com"
+            ]
+        },
+        {
+            "rule": "anycomment\\.io\\/v2\\/user\\/auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ru"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1f583424bc34ce60584a3d96064fdd4242a5e1b36ea3e8e589228eea2455df3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matchtv.ru",
+                "tgram.me"
+            ]
+        },
+        {
+            "rule": "anycomment\\.io\\/v2\\/user\\/auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ru"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matchtv.ru",
+                "tgram.me"
+            ]
+        },
+        {
+            "rule": "anycomment\\.io\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-ru",
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matchtv.ru",
+                "tgram.me"
+            ]
+        },
+        {
+            "rule": "anycomment\\.io\\/v2\\/comment",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ru"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb1ec7b0783a9f591d6a7b48b00c490814cb6ea78b3a1850fb653e0a99e48803"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matchtv.ru",
+                "tgram.me"
+            ]
+        },
+        {
+            "rule": "anycomment\\.io\\/v2\\/comment",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ru"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "matchtv.ru",
+                "tgram.me"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 4,
+        "XHR": 4,
+        "Preflight": 4,
+        "WebSocket": 2
     },
     "nameservers": [
-        "dns2.yandex.net",
-        "dns1.yandex.net"
+        "dns1.yandex.net",
+        "dns2.yandex.net"
     ]
 }

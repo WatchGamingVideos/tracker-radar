@@ -4,16 +4,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
+    "prevalence": 0.0000408,
     "sites": 6,
     "subdomains": [
-        "cdn2_incap1",
-        "cdn22_incap1"
+        "cdn1s_incap1",
+        "cdn22_incap1",
+        "cdn22"
     ],
     "cnames": [
         {
             "original": "api.elconfidencial.com",
-            "resolved": "cdn2_incap1.titania.es"
+            "resolved": "cdn22_incap1.titania.es"
+        },
+        {
+            "original": "datos.elconfidencial.com",
+            "resolved": "cdn1s_incap1.titania.es"
+        },
+        {
+            "original": "images.ecestaticos.com",
+            "resolved": "cdn22.titania.es"
+        },
+        {
+            "original": "player.elconfidencial.com",
+            "resolved": "cdn22_incap1.titania.es"
         },
         {
             "original": "secure.elconfidencial.com",
@@ -23,11 +36,85 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "titania\\.es\\/item\\/trigger\\/front\\/",
-            "cookies": 0,
+            "rule": "titania\\.es\\/_Incapsula_Resource",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn1s_incap1",
+                "cdn22_incap1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "datos.elconfidencial.com",
+                    "resolved": "cdn1s_incap1.titania.es"
+                },
+                {
+                    "original": "secure.elconfidencial.com",
+                    "resolved": "cdn22_incap1.titania.es"
+                },
+                {
+                    "original": "player.elconfidencial.com",
+                    "resolved": "cdn22_incap1.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "e3416c27147daaf1ed5363dc1b4337499e9178d76ef04bc7192e820d18201f48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.alimente.elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/_Incapsula_Resource",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn2_incap1"
+                "cdn1s_incap1",
+                "cdn22_incap1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "datos.elconfidencial.com",
+                    "resolved": "cdn1s_incap1.titania.es"
+                },
+                {
+                    "original": "secure.elconfidencial.com",
+                    "resolved": "cdn22_incap1.titania.es"
+                },
+                {
+                    "original": "player.elconfidencial.com",
+                    "resolved": "cdn22_incap1.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.alimente.elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/item\\/trigger\\/front\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22_incap1"
             ],
             "apis": {},
             "sites": 3,
@@ -35,12 +122,12 @@
             "cnames": [
                 {
                     "original": "api.elconfidencial.com",
-                    "resolved": "cdn2_incap1.titania.es"
+                    "resolved": "cdn22_incap1.titania.es"
                 }
             ],
             "responseHashes": [
-                "cff84d75692079ea410c4bd7ec038f57454070f77094dabede5a886dd25423ac",
-                "fb112de5e89edfac33f14249e7a81863c829f46f145fca83fd5094b6777253aa"
+                "10ef7e3c4a471966eff7dfef234fad9099b21a772cef75f12a5292f31e01b213",
+                "a54e774e569f4305266f4800208f2f704eec3b1dae64a41da22ecd2b7b3cdbd8"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -53,7 +140,7 @@
         },
         {
             "rule": "titania\\.es\\/storage\\/store\\.php",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn22_incap1"
@@ -68,8 +155,7 @@
                 }
             ],
             "responseHashes": [
-                "f9762a3c686544f4c6e08ca6f90bdd394459f381c15f81e9b7d1a1937fb6e9b8",
-                "19adfc3a4069b966816588fc6852d7b1e2e2a769f2cbb59683fac7b5cddfcc00"
+                "c24b49a5f560b0feda6e6d302d07b0f4caff255b65f43f1b444cbaef86cb91e0"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -82,7 +168,7 @@
         },
         {
             "rule": "titania\\.es\\/libraries\\/plugins\\/xdLocalStorage\\/xdLocalStoragePostMessageApi\\.min\\.js",
-            "cookies": 0,
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn22_incap1"
@@ -109,71 +195,149 @@
             ]
         },
         {
-            "rule": "titania\\.es\\/_Incapsula_Resource",
-            "cookies": 0.0000204,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn22_incap1"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "secure.elconfidencial.com",
-                    "resolved": "cdn22_incap1.titania.es"
-                }
-            ],
-            "responseHashes": [
-                "e0657a7d7910e67d29d2e9ae1ba7e6e8fd2b3fe33dcbb3ce06f4d1d773439c1b",
-                "17130f44b46ca253177500dc20c63ddf75a2d0b8fb0f4c363e25fc10afa3e505"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elconfidencial.com",
-                "www.elconfidencial.com",
-                "www.vanitatis.elconfidencial.com"
-            ]
-        },
-        {
-            "rule": "titania\\.es\\/_Incapsula_Resource",
+            "rule": "titania\\.es\\/m1yg4nTC1IzxoLPk4Gpo4z12ZYE=\\/filters:format\\(jpg\\):quality\\(99\\):fill\\(white\\)\\/f\\.elconfidencial\\.com%2Ffront%2F4ca%2F396%2F1dc%2F4ca3961dc49a636dbc09fba302720828\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn22_incap1"
+                "cdn22"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "secure.elconfidencial.com",
-                    "resolved": "cdn22_incap1.titania.es"
+                    "original": "images.ecestaticos.com",
+                    "resolved": "cdn22.titania.es"
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "6cff839231b48fb9ee3391971c5bd6ca0ed7bd7108687d2ad6b641d7bd12be3e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "elconfidencial.com",
-                "www.elconfidencial.com",
-                "www.vanitatis.elconfidencial.com"
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/HhzafzAZDeiEJFy8u36MZdg9Kow=\\/filters:format\\(jpg\\):quality\\(99\\):fill\\(white\\)\\/f\\.elconfidencial\\.com%2Ffront%2F949%2F976%2Fdf6%2F949976df65ad4087cabba0faf4406662\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images.ecestaticos.com",
+                    "resolved": "cdn22.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "169d918a955f1b349972067049b35f74915d95c44ccb93cff56086385ac5c98a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/43QP60R3JqCVVzlrIZ8nk0pHjnw=\\/filters:format\\(jpg\\):quality\\(99\\):fill\\(white\\)\\/f\\.elconfidencial\\.com%2Ffront%2F9f3%2F7f1%2Fabf%2F9f37f1abf7f2785ca454adbae8237b95\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images.ecestaticos.com",
+                    "resolved": "cdn22.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "acd1c6ee7a5720ae7fdb855db0023d746126a07e51267443f7df2280c2365fdd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/oWjg0P5ZPw_ito7CHdfSXoP-86U=\\/filters:format\\(jpg\\):quality\\(99\\):fill\\(white\\)\\/f\\.elconfidencial\\.com%2Ffront%2F2bb%2F544%2F580%2F2bb54458072da0df7716509195591032\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images.ecestaticos.com",
+                    "resolved": "cdn22.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "5d35b070581b376d86f84ca18fec530dc0ec8cc77b49f0fdbbc5bf4e5fd1dacb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.elconfidencial.com"
+            ]
+        },
+        {
+            "rule": "titania\\.es\\/_LlbG_bHB5uJU0jX80lWZj1cD0w=\\/filters:format\\(jpg\\):quality\\(99\\):fill\\(white\\)\\/f\\.elconfidencial\\.com%2Ffront%2F2ac%2F897%2Fe63%2F2ac897e638cf646f61c7b9c2953922aa\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn22"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "images.ecestaticos.com",
+                    "resolved": "cdn22.titania.es"
+                }
+            ],
+            "responseHashes": [
+                "fc8c33c4669efea075df142b954d2d6d788ca38784ece93791b50546e52ab4d6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elconfidencial.com",
+                "www.elconfidencial.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000204,
+    "cookies": 0.000034,
     "types": {
-        "XHR": 3,
-        "Document": 3,
         "Script": 6,
-        "Image": 3
+        "Image": 13,
+        "XHR": 3,
+        "Document": 3
     },
     "nameservers": []
 }

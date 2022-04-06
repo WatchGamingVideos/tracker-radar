@@ -4,12 +4,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "j.gamersky.com"
+        "global.ceair.com",
+        "j.gamersky.com",
+        "image.haier.com"
     ],
     "cnames": [
+        {
+            "original": "global.ceair.com",
+            "resolved": "global.ceair.com.cdn20.com"
+        },
+        {
+            "original": "image.haier.com",
+            "resolved": "image.haier.com.cdn20.com"
+        },
         {
             "original": "j.gamersky.com",
             "resolved": "j.gamersky.com.cdn20.com"
@@ -17,6 +27,33 @@
     ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "cdn20\\.com\\/analysize\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "global.ceair.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "global.ceair.com",
+                    "resolved": "global.ceair.com.cdn20.com"
+                }
+            ],
+            "responseHashes": [
+                "30f254ada53333ce43da9b9b15c2f08db1ac05d5928e95a7447592f140b6da5b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ceair.com",
+                "oa.ceair.com"
+            ]
+        },
         {
             "rule": "cdn20\\.com\\/web2015\\/css\\/QZnav\\.css",
             "cookies": 0,
@@ -61,7 +98,7 @@
                 }
             ],
             "responseHashes": [
-                "ce1c39fcc501cef221d7ce43ce37586c974b2011646b27a6717b6af380391e25"
+                "33cd3c5f049a7c989e17830f90178dcb0dd828c7516e2e92202839942c2cb433"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -73,7 +110,7 @@
         },
         {
             "rule": "cdn20\\.com\\/js\\/",
-            "cookies": 0,
+            "cookies": 0.00000681,
             "fingerprinting": 1,
             "subdomains": [
                 "j.gamersky.com"
@@ -88,7 +125,7 @@
                 }
             ],
             "responseHashes": [
-                "325e32627501df19451afeb15493dd8beb2c443ea8d2e8aa83e5bef659e137e3"
+                "caba669636f7506ce4fe5d6dec8392ce98ba0c383827f3d0b57460ac001bc66b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -99,34 +136,7 @@
             ]
         },
         {
-            "rule": "cdn20\\.com\\/g\\/QZnav_n\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "j.gamersky.com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "j.gamersky.com",
-                    "resolved": "j.gamersky.com.cdn20.com"
-                }
-            ],
-            "responseHashes": [
-                "4d3c107781af51e8f4f49fe035cb845e0a6bfe88f82c49be434a6d3dc94db902"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gamersky.com",
-                "www.gamersky.com"
-            ]
-        },
-        {
-            "rule": "cdn20\\.com\\/g\\/paho-mqtt\\.js",
+            "rule": "cdn20\\.com\\/web2015\\/js\\/Search\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -142,7 +152,7 @@
                 }
             ],
             "responseHashes": [
-                "2655cad54d8a27c55862f065130d42f8e68984656b33e78afd6e109e3ab68b92"
+                "ac28a9e16ad9dcd1a14125711656afc9442ff4f86efd275a3316d63287596227"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -207,6 +217,60 @@
             ]
         },
         {
+            "rule": "cdn20\\.com\\/g\\/QZnav_n\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "j.gamersky.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "j.gamersky.com",
+                    "resolved": "j.gamersky.com.cdn20.com"
+                }
+            ],
+            "responseHashes": [
+                "4d3c107781af51e8f4f49fe035cb845e0a6bfe88f82c49be434a6d3dc94db902"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamersky.com",
+                "www.gamersky.com"
+            ]
+        },
+        {
+            "rule": "cdn20\\.com\\/g\\/paho-mqtt\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "j.gamersky.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "j.gamersky.com",
+                    "resolved": "j.gamersky.com.cdn20.com"
+                }
+            ],
+            "responseHashes": [
+                "2655cad54d8a27c55862f065130d42f8e68984656b33e78afd6e109e3ab68b92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamersky.com",
+                "www.gamersky.com"
+            ]
+        },
+        {
             "rule": "cdn20\\.com\\/common\\/tg\\/allsite\\.tg\\.monitor\\.pc\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -261,9 +325,9 @@
             ]
         },
         {
-            "rule": "cdn20\\.com\\/web2015\\/js\\/Search\\.js",
+            "rule": "cdn20\\.com\\/app\\/js\\/test2_app6\\.0_lengQiDongApi\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "j.gamersky.com"
             ],
@@ -277,7 +341,7 @@
                 }
             ],
             "responseHashes": [
-                "ac28a9e16ad9dcd1a14125711656afc9442ff4f86efd275a3316d63287596227"
+                "0c8b5a1bed13f3804524b02aeca8f09224cd62fca8247ef346ba9d3e3aa54625"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -286,14 +350,69 @@
                 "gamersky.com",
                 "www.gamersky.com"
             ]
+        },
+        {
+            "rule": "cdn20\\.com\\/in\\/images\\/jquery\\.cookie\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "image.haier.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image.haier.com",
+                    "resolved": "image.haier.com.cdn20.com"
+                }
+            ],
+            "responseHashes": [
+                "b84161c9fbf7520cd14e7019f92120bd87a928a074156e91a992eba9fc9436e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haier.com",
+                "www.haier.com"
+            ]
+        },
+        {
+            "rule": "cdn20\\.com\\/publichw\\/icon-font\\/material\\/iconfont\\/iconfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image.haier.com"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image.haier.com",
+                    "resolved": "image.haier.com.cdn20.com"
+                }
+            ],
+            "responseHashes": [
+                "17184b65b435a2c91bee9ca4602dbe90bb1de0aa522684c381ef5c8ec0262557"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haier.com",
+                "www.haier.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.000034,
     "types": {
+        "Script": 22,
         "Stylesheet": 4,
-        "Script": 16
+        "Font": 2
     },
     "nameservers": []
 }

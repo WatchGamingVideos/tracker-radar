@@ -4,14 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "svc-1001-usf",
-        "svc-1-usf"
+        "svc-1-usf",
+        "cdn-usf"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "hotyon\\.com\\/search",
@@ -26,7 +27,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "87504df8f975e31d1f9e6439faa2fdf56060abde0bb7feaa25cf6485e808ae0f"
+                "93336bee7ed286e6f3e7828bcba8aa8aa1dac3af7714aeb4862435b0e6b6c99a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -35,13 +36,38 @@
                 "hifitalo.fi",
                 "www.waltons.co.uk"
             ]
+        },
+        {
+            "rule": "hotyon\\.com\\/store-2d7c9\\.mybigcommerce\\.com\\/ca0cd250-155c-013a-136e-2a96fbc18b7d\\/usf-boot\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-usf"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "621205831d743afd6f805db26f307d4d97738ac5cc754106b76d044b01f0b52d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "megamotorcyclestore.co.uk",
+                "www.megamotorcyclestore.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 2,
+        "Script": 2
     },
     "nameservers": [
         "ns-168.awsdns-21.com",

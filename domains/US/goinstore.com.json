@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000143,
-    "sites": 21,
+    "prevalence": 0.000191,
+    "sites": 28,
     "subdomains": [
-        "gis"
+        "gis",
+        "static-gis"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -22,6 +23,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -33,14 +35,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "15db26d2acf1d2b20ecf34a805b2649d4999bcd4e6bf8c850fa2d4b577fde2a8"
+                "9c010f8132b02617adcb70e11fc250f70be4f472e0e9a268bcf7848718c7d771"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -52,37 +54,41 @@
         },
         {
             "rule": "goinstore\\.com\\/gis\\/jsapi\\/init-info\\/gisCallbacks\\.initInfo",
-            "cookies": 0.000102,
+            "cookies": 0.000123,
             "fingerprinting": 0,
             "subdomains": [
                 "gis"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
+            "sites": 18,
+            "prevalence": 0.000123,
             "cnames": [],
             "responseHashes": [
-                "7f19009cddf7e51ccbf38cff970452dedb8b7522f6293c14de7738e46a5353ff",
-                "ee4a6ec66c743dfd2729d9c20ed51ca7c9b0ff324a7c1dbc56c44a196f6920a6",
-                "fcf6117a926a1fa2652eb4b0bf04cc26975af3b18ee0b1c0db1d8e4faf10fa8d",
-                "cbfe5d75d725bb69634522acf4cdbedda4540609f16ebcb71061f3f05281b1e0",
-                "def2f674143dc7e46a5a81e3b3af2afabbab6cb0903ad9cfea13e61c362e0c84",
-                "0f43ca38a9e73dfa743db9d8a2acba19423913990f0db30acb0df67a689e188f",
-                "1506432d2aa014539a599b7a74a0c0deaa514b478a52c1357b3d6b216229815d",
-                "1ec5c922036bed7f91315333d4cf97466032137dde8aa1d761af34b63d1342b0",
-                "596be82f064388df1d9252a0e89f992ee64c65f13635b99dc15bda8f5707dd8d",
-                "4908566c8c143c21bb19f070a3bda5417c202be65ba54e06136323d3aabb02c8",
-                "519aaf0c4de7d903c56117d00c64948ad97e3c82c603d584bd401d9525b58abb",
-                "52a1e28cf2597e99de596c9555b21f5f8937ef0948caec9fc0accf8bd31b4030",
-                "8c9a8abf73fe4d907289890bfed94fd769c17893f6674970e16f390b08ba2664"
+                "ac23cb93205b4a4473f4b204161d7f95c18a1b68ac0105360fce6f4009de0da1",
+                "3821da579468fe6a7f8a7d7771ef430911fc99cae4174b7e957ed2e928497072",
+                "d6b03361670818f33743f5c702e18fc6b86e019667f3ac0ac459632ffd6076d3",
+                "f49c160d536e87495530b2ab9b8e04e7bf1e1ed691018d90f9d3da0a77a2b3fb",
+                "c47e36455f9be686460422983e473d60ddb4713c5d2c19fbaa429eafc07280f4",
+                "036e795217b19fe1925215e0701083184863ce82fc68984754c377d6a44c1330",
+                "1cb0aee42df77d700b38e17bb518ba38c810167196e529ffb8a2247644a7f609",
+                "aa2dd07b08b2b015a2fb71468e46ff1ab9c7f5797db0ca43ad44796e4c4abd69",
+                "d0a1887617b3e72b39d19324da76b8232fadafd81133a816f09923b110139304",
+                "b8171e6bec9e70e5be2029492bdf36bef68b55b5be0e757e1bfc868e99d60161",
+                "77f30d2755b0ca4dbdf35b97aaf71399c5227baa0c3013b3f394063d6ab6a07e",
+                "7b3539af539def25c570eb42dba9ba44d9778fd123764efc4973687406ae553b",
+                "d39d5f7ec838235cab6b85c91c3cd61b8af58f854a6c32beba4eef7e2e6bdff3",
+                "14362408a9842af5ed88ed9bb95e2f6b4465effd111360306380f39eb5f7acc4",
+                "67b59ef70fbffa1835fe30613c1c68cd10ee58d66af678d95d99062a379e01dc",
+                "168a5bfaa3d9386da2ac8345e6b9449dadf9ed9c4652cbf0f5cf027e1de9fe47"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "giscalluseruuid": 0.000013621009044350005,
-                "IR_gbd": 0.0000068105045221750025,
-                "gis": 0.000013621009044350005,
-                "dy_fs_page": 0.0000068105045221750025
+                "giscalluseruuid": 0.00002041913681502304,
+                "IR_gbd": 0.000006806378938341013,
+                "gpv_url": 0.000006806378938341013,
+                "gis": 0.000013612757876682026,
+                "dy_fs_page": 0.000006806378938341013
             },
             "exampleSites": [
                 "currys.co.uk",
@@ -90,11 +96,14 @@
                 "shop.miele.com.au",
                 "us.pandora.net",
                 "www.carpetright.co.uk",
+                "www.cotswoldco.com",
+                "www.currys.co.uk",
                 "www.ernestjones.co.uk",
+                "www.ezlivingfurniture.ie",
                 "www.flooringsupplies.co.uk",
                 "www.hsamuel.co.uk",
+                "www.hyttetorget.no",
                 "www.miele.com.au",
-                "www.miele.co.uk",
                 "www.naturalbabyshower.co.uk",
                 "www.ribblecycles.co.uk",
                 "www.scs.co.uk",
@@ -104,29 +113,32 @@
         },
         {
             "rule": "goinstore\\.com\\/gis\\/css",
-            "cookies": 0.000102,
+            "cookies": 0.000123,
             "fingerprinting": 0,
             "subdomains": [
                 "gis"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
+            "sites": 18,
+            "prevalence": 0.000123,
             "cnames": [],
             "responseHashes": [
-                "779adc52e3d5c1b102a5a5e6d1222a447d8d1329931de18a5e048dd490752dae",
-                "8f458d058aa6f31a15f6727dc9020d7c612737dde21f6fe6fdcd9ebc22cbd155",
-                "a3e6a79c3448f9ed9a1269a17ca8ab93dade37b7c20e2a209b17de2aa0f03400",
-                "c5c2020b7881597e6c53bf333b7bd6e4f9dbb477bbb2e05a1838b1b4ef9d549c",
-                "8fe7f04a87d0d003ef5b3c4aa921048f208a80caf0aa9009e0b5ab41437c8f06",
-                "dc911c71eaec9b6be80e430125c47f45cb0812e50299a2b194742d81bc78217b",
-                "3a2d09e88eb8cc03fac92017eaaf4711ef88f692cafd8be146b573a4176808d5",
-                "ab0db490f0c93e21d37d6b56d74d47d7d15284c6c6b13e22d251cafbb790826d",
-                "38d0af209b96d8397af0999010061865975b3b2b52690e699b72b5737622745f",
-                "8ccd991783bf7a1b05649a7d86599ce9f8982cc1ee299a954ea813a764c357ac",
-                "e442603e2f35e8c5bc094fb7e9bfb4d41006e0a4d462729f6d9c20970f1ef854",
-                "be660c355dc8c6e1d7b78f6c20f72f3bc7402768f1281cba48f825044ed53951",
-                "9f3836be4096bf33010f5c63e108de42b94a78b4446643d3410f39d0f0cd1cf4"
+                "2e4bf906e0836cc4dc6bf1ab0569bb667d54b9bac15123b3b022a9a39f17b89d",
+                "b2d00dd28bfe21569e8b67fa9d9de7342099d8c18c45e0b776a073f8391e73e9",
+                "f4fbc7898f833023d086aaee308bd72396101cc37a167ce2591783af30279b58",
+                "a43667dbdb2de56e407ec806c5145ca44bb7f4938311cf0e1b1bda75c36f0c77",
+                "96afa3455a36161b907d7070de249e54af0c8fb45d504ef0996d2b8ff79d7aa6",
+                "09a6cba4d13940378b0dac2f9d8047d84d310a7be677b60d98b28944a7fc2fea",
+                "d0342c5bc98a6c422c347e611627d958c675ae6e5d63f4f68884a5f455fc91f0",
+                "081a5c3f7c2afc4ab474fff99a6ff4a4d826dc09ae80b1a118bf28ada0e258e2",
+                "0f7ede11459308ddf874feeec51ddd06f5696fd2270dd268af3ce1ad269d0482",
+                "42227056bf0d696d92f484d7cc2920496e8bcfa82303968844140d2a1ef0e720",
+                "dfc11a2fa31c6919f07d9ad522aa7ae2b2f648a38aab36a7ec9b1fc6ad1e7646",
+                "32965dc97c367038278df34cd0a40597d56a8f8dd669241c0ae848eb5b846029",
+                "f7ef73467fa857ba4c5c2ebb5915067167a16697c8305b284ccdfcb38adadd92",
+                "7b6a2adcca359a6d79a4011165b11173cc8de0ecf6c9e3e487f0992ce46b8f04",
+                "c71972dce841249f7227a8f5acba920acf85d5207e48acd5da543378357ae66e",
+                "98de03b8541e32e1dafd7bb034e0f17806615d72bc34abbfbed923579bd6e5b5"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -137,11 +149,14 @@
                 "shop.miele.com.au",
                 "us.pandora.net",
                 "www.carpetright.co.uk",
+                "www.cotswoldco.com",
+                "www.currys.co.uk",
                 "www.ernestjones.co.uk",
+                "www.ezlivingfurniture.ie",
                 "www.flooringsupplies.co.uk",
                 "www.hsamuel.co.uk",
+                "www.hyttetorget.no",
                 "www.miele.com.au",
-                "www.miele.co.uk",
                 "www.naturalbabyshower.co.uk",
                 "www.ribblecycles.co.uk",
                 "www.scs.co.uk",
@@ -151,14 +166,14 @@
         },
         {
             "rule": "goinstore\\.com\\/gis\\/jsapi\\/isClerkAvailable\\/clerkIsAvailable\\/clerkIsNotAvailable",
-            "cookies": 0.0000817,
+            "cookies": 0.000102,
             "fingerprinting": 0,
             "subdomains": [
                 "gis"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000817,
+            "sites": 15,
+            "prevalence": 0.000102,
             "cnames": [],
             "responseHashes": [
                 "df954db012c7d79eaa2a26637f758ef3c3ecbde0c3b199f3d38084303d2abdac",
@@ -167,17 +182,22 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "giscalluseruuid": 0.000013621009044350005,
-                "dy_fs_page": 0.0000068105045221750025
+                "giscalluseruuid": 0.00002041913681502304,
+                "IR_gbd": 0.000006806378938341013,
+                "gpv_url": 0.000006806378938341013,
+                "dy_fs_page": 0.000006806378938341013
             },
             "exampleSites": [
                 "currys.co.uk",
                 "business.currys.co.uk",
                 "shop.miele.com.au",
+                "us.pandora.net",
                 "www.carpetright.co.uk",
+                "www.cotswoldco.com",
+                "www.currys.co.uk",
                 "www.flooringsupplies.co.uk",
+                "www.hyttetorget.no",
                 "www.miele.com.au",
-                "www.miele.co.uk",
                 "www.naturalbabyshower.co.uk",
                 "www.ribblecycles.co.uk",
                 "www.scs.co.uk",
@@ -199,11 +219,11 @@
             "responseHashes": [
                 "2b3a9135d08d10fa9e42afdb16282f0021f7c784d1cbe20b14ca7e01f5736980",
                 "a96f9e9996cc08a64b9d035fdee9a5ef39ea8bf263107c4bcff1272cb1a12452",
-                "6745331a42eac2bbb637c6fe2910cb7859133727d004ce55869a49bfdf60ab30",
+                "dda7f9788ffb02abead3d525151729ce3ec7656d14558c45ad365a7a8daf5d25",
+                "8e3e2cdc22f770fe1898e0a68f2223d4bb82ec30927324e8afaa64e05487105f",
                 "bfca6361ab1e2085a51287ad5967f030820a48f6dcdbe18ede33d9eab444550e",
                 "0127953e9a52a56f9657cd30b5404da4fecd31952c794482e21c73a0612ce444",
                 "82811d41168dc28114f1f40dd6cf0e49b3a475e16e94d636b6be9a7bc9de5f83",
-                "e708ad52fe11dd13b5c860fb2ca4a11e3158243a3148487e184ec1cfb2e55d63",
                 "67ae6493adb9ffa16a6f316107f73fdfd44d7073ce9de694017e28da033caa21"
             ],
             "type": "Image",
@@ -213,12 +233,12 @@
                 "currys.co.uk",
                 "business.currys.co.uk",
                 "shop.miele.com.au",
-                "www.carpetright.co.uk",
+                "www.cotswoldco.com",
+                "www.hyttetorget.no",
                 "www.miele.com.au",
                 "www.naturalbabyshower.co.uk",
                 "www.ribblecycles.co.uk",
                 "www.scs.co.uk",
-                "www.sonos.com",
                 "www.stokke.com"
             ]
         },
@@ -232,6 +252,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -243,20 +264,20 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7dd680868ab7539c19875de5737f2e39659cd1e1f74fd52622f03b5af4961f8d"
+                "47dd6fcc6ec1f60545ce39a003f96de84caa32af3ac1ccba298621875e4ca567"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "giscalluseruuid": {
                     "ttl": 86400003,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -264,6 +285,137 @@
             "exampleSites": [
                 "miele.com.au",
                 "www.miele.com.au"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/script\\/097ae180-47c4-424c-bf07-4ff2ae971712",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84dfc18f7bcf49706a5457a8acb4ebf3a15201fb431d932ed07958e12a07d260"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cotswoldco.com",
+                "www.cotswoldco.com"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/fonts\\/Montserrat\\/montserrat-v23-vietnamese_latin-ext_latin_cyrillic-ext_cyrillic-300\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-gis"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "69503885789ac620f103da84571b74f84e61cb4834264e015a6abae5257243ca"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cotswoldco.com",
+                "www.cotswoldco.com",
+                "www.hsamuel.co.uk",
+                "www.scs.co.uk"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/script\\/896db04c-d570-4b42-853a-1b7d11ed0511",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a4d6003587951aaede67814b08d13d96bc93292c54f23bb6513b1d6a11426c25"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "currys.co.uk",
+                "www.currys.co.uk"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/jsapi\\/all-active-broadcasts\\/broadcastCallback",
+            "cookies": 0.0000408,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "e04d4ca6efa19dfc0085d9826d7387b5cb3ee41d3dfc3d20d1f46e85c06e5305",
+                "bdbf8cd29181e56b043553c421f914cb094a918231a956c47b9af5b0dfed8e49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpv_url": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "currys.co.uk",
+                "www.currys.co.uk",
+                "www.hyttetorget.no",
+                "www.naturalbabyshower.co.uk",
+                "www.ribblecycles.co.uk",
+                "www.stokke.com"
             ]
         },
         {
@@ -276,6 +428,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -286,20 +439,20 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "611aa081e2b001be25e3615da4fceb775f05f70a72840bfdbb308990da9fdf01"
+                "207647138860caf88c9ba44e0c2e6dd51ae1501fc6058322a4f7e225e9fcf3bb"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "gis": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -307,6 +460,44 @@
             "exampleSites": [
                 "ernestjones.co.uk",
                 "www.ernestjones.co.uk"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/script\\/179566b0-91ba-4e77-9aba-d086ca15a940",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c45d811a0f5f60dbaf621112c7e664571028f920435803858a58beed0e318c27"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ezlivingfurniture.ie",
+                "www.ezlivingfurniture.ie"
             ]
         },
         {
@@ -319,6 +510,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -330,14 +522,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cb2c61f7ba3a683ef7f826935b56e6e0c4732d07aebbcd687b8a53d7ae5d4c5a"
+                "c76e6f943aed75841bda6c8080b70358bc901c0f643cc463a0eb4c93fbd87ace"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -357,6 +549,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -367,20 +560,20 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8ea80e4ab0f47365411870b03d7b72b9fc39919d1cc68c503e230a8962eaebd2"
+                "692fb5701be2e0e08e660dbb4e9e9cad17a9680d86e72624507a991d434265b7"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "gis": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -388,6 +581,92 @@
             "exampleSites": [
                 "hsamuel.co.uk",
                 "www.hsamuel.co.uk"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/script\\/bb00f5c5-5270-44d1-b69e-abf1d2446304",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c823085a7bf93aa47611ce68a5ae1932b3a0c23e1ba1ebece19e84d156c2a92c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyttetorget.no",
+                "www.hyttetorget.no"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/fonts\\/Roboto\\/roboto-v29-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-gis"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0c3575d736b4b0a00903974bbe00fafb3fc232581fc37039056f15ee47e06ad9"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyttetorget.no",
+                "www.hyttetorget.no",
+                "www.naturalbabyshower.co.uk"
+            ]
+        },
+        {
+            "rule": "goinstore\\.com\\/fonts\\/Roboto\\/roboto-v29-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-500\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-gis"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "69ee9d1ba9cb53a716a4d9a1f4bac8fe1147e74d044b8007d67a7a4d81335e6f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyttetorget.no",
+                "www.hyttetorget.no",
+                "www.naturalbabyshower.co.uk"
             ]
         },
         {
@@ -400,25 +679,27 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "83f21a185efa1e66bfa864e8177b99ba8e1e04a49e518e81ad7a7763e743fee8"
+                "1cc0364f5ea3194d2906010a6d31a08f2e48f1c5dba2379b987bf8c049046b69"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -426,31 +707,6 @@
             "exampleSites": [
                 "naturalbabyshower.co.uk",
                 "www.naturalbabyshower.co.uk"
-            ]
-        },
-        {
-            "rule": "goinstore\\.com\\/gis\\/jsapi\\/all-active-broadcasts\\/broadcastCallback",
-            "cookies": 0.0000272,
-            "fingerprinting": 0,
-            "subdomains": [
-                "gis"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "e04d4ca6efa19dfc0085d9826d7387b5cb3ee41d3dfc3d20d1f46e85c06e5305",
-                "32554e93a512f271fe4dafd81cf05edcca930eaaddf8d7573df0b35bec8b378d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "naturalbabyshower.co.uk",
-                "www.naturalbabyshower.co.uk",
-                "www.ribblecycles.co.uk",
-                "www.stokke.com"
             ]
         },
         {
@@ -463,6 +719,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -474,14 +731,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0e2a3603f05995625785fdbca084def5794af002ee6241acd5ea17f79ecc1693"
+                "22e27bb8099009672efe6fac254c95697e58c29cb83ebd4bdda82a0d126d9e7a"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -501,6 +758,7 @@
             "apis": {
                 "Navigator.prototype.platform": 2,
                 "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Document.cookie getter": 2,
                 "Document.cookie setter": 2,
@@ -512,14 +770,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1c2bca1b697e707faf9f1c4c9f75556a93c0f84f5d078e95560f726265a3c22b"
+                "9dd55f632bb044972ecf605f12697b7b0623e334f887d1abcf048b73535a7a08"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "logglytrackingsession": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -528,15 +786,55 @@
                 "scs.co.uk",
                 "www.scs.co.uk"
             ]
+        },
+        {
+            "rule": "goinstore\\.com\\/gis\\/script\\/1d1b8162-18d8-49b2-8c9b-2ee31afe7a9d",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gis"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e0bc07ac569a8f48fc00bb572e19806ede92fdab6d63fa888b50f8be48674447"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "logglytrackingsession": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stokke.com",
+                "www.stokke.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000143,
+    "cookies": 0.000191,
     "types": {
-        "Script": 47,
-        "Stylesheet": 15,
-        "Image": 10
+        "Script": 65,
+        "Stylesheet": 18,
+        "Image": 10,
+        "Font": 10
     },
     "nameservers": [
         "ns-655.awsdns-17.net",

@@ -4,10 +4,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "dva1.analytics",
+        "dvat.analytics",
         "dvenv01.analytics"
     ],
     "cnames": [],
@@ -30,6 +31,8 @@
                 "Screen.prototype.height": 2,
                 "Screen.prototype.orientation": 2,
                 "Screen.prototype.availHeight": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Document.cookie getter": 2,
                 "window.localStorage": 2,
                 "Document.cookie setter": 2,
@@ -47,7 +50,7 @@
                 "TLTSID": {
                     "ttl": null,
                     "length": 32,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -58,8 +61,54 @@
             ]
         },
         {
-            "rule": "solteq\\.solutions\\/dvenv01\\/tealeaf\\.js",
+            "rule": "solteq\\.solutions\\/dvat\\/tealeaf\\.js",
             "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dvat.analytics"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.orientation": 2,
+                "Screen.prototype.availHeight": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b2317553bc3225bbfd41d12be888a95fa0c6aa17b33c104fc6f7ee04d46a61d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "TLTSID": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atea.se",
+                "www.atea.se"
+            ]
+        },
+        {
+            "rule": "solteq\\.solutions\\/dvenv01\\/tealeaf\\.js",
+            "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "dvenv01.analytics"
@@ -67,15 +116,18 @@
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
                 "Date.prototype.getTimezoneOffset": 2,
                 "window.devicePixelRatio": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Screen.prototype.orientation": 2,
                 "Screen.prototype.availHeight": 2,
-                "window.sessionStorage": 2
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 1,
+                "window.name": 1,
+                "PerformanceTiming.prototype.navigationStart": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -84,14 +136,7 @@
                 "9c2a6892966ce8a1f5205462772c15424b91c86a7df26bd76ae0a0bdc5c5b186"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "teaSession": {
-                    "ttl": null,
-                    "length": 7,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "puuilo.fi",
@@ -103,12 +148,12 @@
     "performance": {},
     "cookies": 0.0000272,
     "types": {
-        "Script": 4
+        "Script": 6
     },
     "nameservers": [
-        "ns-1687.awsdns-18.co.uk",
-        "ns-1324.awsdns-37.org",
         "ns-237.awsdns-29.com",
-        "ns-681.awsdns-21.net"
+        "ns-681.awsdns-21.net",
+        "ns-1324.awsdns-37.org",
+        "ns-1687.awsdns-18.co.uk"
     ]
 }

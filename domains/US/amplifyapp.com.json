@@ -4,10 +4,9 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000953,
-    "sites": 14,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
-        "main.d2rkj8velojj5s",
         "develop.dhc69ymcgx3lx",
         "dev.d378jgpjj0hlj4",
         "vedixdev.d378jgpjj0hlj4",
@@ -20,31 +19,6 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "amplifyapp\\.com\\/jfm\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "main.d2rkj8velojj5s"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d7a115a9a460dcd378d78719f34717aca4acc5c0ec789a3102b2c4dc5569b919"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fyens.dk",
-                "jv.dk"
-            ]
-        },
-        {
             "rule": "amplifyapp\\.com\\/cookieconsent\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -52,7 +26,8 @@
                 "develop.dhc69ymcgx3lx"
             ],
             "apis": {
-                "Document.cookie getter": 2
+                "Document.cookie getter": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -82,13 +57,15 @@
             "apis": {
                 "Navigator.prototype.userAgent": 1,
                 "window.localStorage": 1,
+                "Navigator.prototype.appVersion": 1,
                 "speechSynthesis.__proto__.getVoices": 1
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "0fd92bcb6c31b4f64cb69062a5b6f6c6c5b667c98c153974079674e36a925843",
+                "7d1dbdcb7d8a21af8f9881ab8e66e310d7a494d1eb5d9124885c237087d47477",
+                "3507258efa26f40b395eb2eab2d999ff51acdd0ad51a2d49ac76c7421b70a52b",
                 "6562560d02058f89b2f35d75f3efddbaf675938910ecb6a2e627a393a7ab0ea7",
                 "d69497bba696328dc74b325fdc520a25c818e92c0a35bf94222b4a5f78c0f1a8"
             ],
@@ -119,6 +96,7 @@
                 "Navigator.prototype.platform": 2,
                 "window.devicePixelRatio": 2,
                 "Navigator.prototype.languages": 2,
+                "window.matchMedia(\"prefers-color-scheme\")": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.language": 2
             },
@@ -126,7 +104,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d7b83e090a1f81580a1369ad6dbcf50d54968f289f8e30ac780d64f23fb622c3"
+                "dde3d6012efae0f561ad89aef7b7cb51046bfcc38525576bc70425bcba10be35"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -240,10 +218,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "76aefea9c4c88abcdb6227b195aab9c94f578eebb937787bf9d906e491d5bd5a"
-            ],
-            "type": "Other",
+            "responseHashes": [],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -264,7 +240,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0fd92bcb6c31b4f64cb69062a5b6f6c6c5b667c98c153974079674e36a925843"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -290,6 +266,7 @@
                 "Navigator.prototype.platform": 2,
                 "window.devicePixelRatio": 2,
                 "Navigator.prototype.languages": 2,
+                "window.matchMedia(\"prefers-color-scheme\")": 2,
                 "window.indexedDB": 2,
                 "Navigator.prototype.language": 2
             },
@@ -443,11 +420,13 @@
         {
             "rule": "amplifyapp\\.com\\/neo-riafy\\.master\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "master.d31fnlrtqby2rx"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -499,6 +478,26 @@
                 "114b979cafc4ed18daf65d53b47c62d25767ed1ee7baa3ae7bb6f5719b72793b"
             ],
             "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/audio\\/mogo\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -573,26 +572,6 @@
             ]
         },
         {
-            "rule": "amplifyapp\\.com\\/audio\\/mogo\\.mp3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "master.d31fnlrtqby2rx"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "federalbank.co.in",
-                "www.federalbank.co.in"
-            ]
-        },
-        {
             "rule": "amplifyapp\\.com\\/css\\/swiper\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -627,6 +606,74 @@
             "cnames": [],
             "responseHashes": [
                 "c4e99d73f34f06e9937df469d07015e23cc2612ca9633b2ac514ad21a3351f4f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/css\\/keyboard\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bed7e55d9ce6df70f350b1d1ab44c386529831978b24b85edb3800d2c0c7a3ab"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/js\\/keyboard\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "728e9460d499880d6deeba677dd286f7a62c5c704ff9673bd965051922832d3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/intltel\\/css\\/intlTelInput\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c6956e8710cf477f7014440385ae16ee4b8cc7ecfd02fddd4d2f0c6c7fd15845"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -714,6 +761,28 @@
             ]
         },
         {
+            "rule": "amplifyapp\\.com\\/intltel\\/js\\/intlTelInput\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51d702570938a018bdb27854f81d657a9851272854831e9fb7b38ff0af848a48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
             "rule": "amplifyapp\\.com\\/js\\/recorder\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -728,6 +797,114 @@
                 "2e952b9d6243c41be56956f27c8494c9e294a6dc70b39f4e20e2b25d5c770757"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/font\\/fontello\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/query\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96aaa677242d9d3f84f0f3261a5f7de4e5719df598480a9bf1518e88b83bea8b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/audio\\/start-stop\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "06967e7832ea1e7670fd199049f9b4e3e4b113af360f6bd8147c5e1737d1749b"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/audio\\/send\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "af7f85fc5c6e494374facc0ce2eca5c4f25d44744ac45c0d37e41ae72d782324"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
+            "rule": "amplifyapp\\.com\\/audio\\/got\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "master.d31fnlrtqby2rx"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a53d8ca5d3e3e9fa00c884d5adda48c40e8568a52b26a4bd08924b074bec762"
+            ],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -837,20 +1014,21 @@
                 "main.dgjvwr5wei7tc"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Document.cookie getter": 2
+                "window.localStorage": 3,
+                "Document.cookie getter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "ae08ee37b445024f05c5c05181c6f1077dc488a5a5619d62335f722c4db63c12"
+                "d04172e7c95db2e605a2ebe0a97a99913e925fd960b0a04fff83b70d5f482938"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "timex.com",
+                "timex.co.uk",
+                "www.timex.co.uk",
                 "www.timex.com"
             ]
         }
@@ -859,19 +1037,19 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 20,
+        "Script": 25,
         "Document": 5,
-        "XHR": 4,
+        "XHR": 6,
         "Fetch": 18,
-        "Other": 2,
-        "Stylesheet": 8,
+        "Stylesheet": 12,
         "Image": 14,
-        "Media": 2
+        "Media": 8,
+        "Font": 2
     },
     "nameservers": [
-        "ns-1165.awsdns-17.org",
-        "ns-1683.awsdns-18.co.uk",
         "ns-169.awsdns-21.com",
-        "ns-904.awsdns-49.net"
+        "ns-904.awsdns-49.net",
+        "ns-1683.awsdns-18.co.uk",
+        "ns-1165.awsdns-17.org"
     ]
 }

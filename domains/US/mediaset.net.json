@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000129,
-    "sites": 19,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
         "api",
+        "assets",
         "api.cloud",
-        "api-ott-prod-fe",
-        "assets"
+        "api-ott-prod-fe"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -39,12 +39,76 @@
                 "ricette.giallozafferano.it",
                 "www.focus.it",
                 "www.giallozafferano.it",
+                "www.iene.mediaset.it",
                 "www.mediasetplay.mediaset.it",
                 "www.my-personaltrainer.it",
-                "www.sorrisi.com",
                 "www.sportmediaset.mediaset.it",
                 "www.studenti.it",
                 "www.tgcom24.mediaset.it"
+            ]
+        },
+        {
+            "rule": "mediaset\\.net\\/Customer\\/amp\\/authorize\\.jsp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaset.it",
+                "www.iene.mediaset.it"
+            ]
+        },
+        {
+            "rule": "mediaset\\.net\\/leiene\\/tagmanager\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e1167d57d4dffbbde6208cde7fc24c8ad1fc424f838f58030c2d052bedbdf394"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaset.it",
+                "www.iene.mediaset.it"
+            ]
+        },
+        {
+            "rule": "mediaset\\.net\\/js\\/jquery-3\\.2\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87083882cc6015984eb0411a99d3981817f5dc5c90ba24f0940420c5548d82de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaset.it",
+                "www.iene.mediaset.it"
             ]
         },
         {
@@ -68,51 +132,6 @@
             ]
         },
         {
-            "rule": "mediaset\\.net\\/PROD\\/play\\/idm\\/anonymous\\/login\\/v2\\.0",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-ott-prod-fe"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mediaset.it",
-                "www.mediasetplay.mediaset.it",
-                "www.tgcom24.mediaset.it"
-            ]
-        },
-        {
-            "rule": "mediaset\\.net\\/PROD\\/play\\/idm\\/anonymous\\/login\\/v2\\.0",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api-ott-prod-fe"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c8309d5bc5de35b2108d4f11f45c6f8289b09146a86b85ccd659151e6d97d142",
-                "ce8d7bda13bd6736d43c4c6efa4f4bc08e8e77d3883347b616a7e9cab6173052"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "mediaset.it",
-                "www.mediasetplay.mediaset.it",
-                "www.tgcom24.mediaset.it"
-            ]
-        },
-        {
             "rule": "mediaset\\.net\\/PROD\\/play\\/feed\\/allListingFeedFilter\\/v2\\.0",
             "cookies": 0,
             "fingerprinting": 0,
@@ -124,9 +143,51 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4f82e7f185c78df1f257ff4920c6b8a2393cd9c2132180b636fedef610a61e89"
+                "51bb8fe32e4d204ad7ce463574e7a0d8f6246632f681eb2032b6a795485598de"
             ],
             "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaset.it",
+                "www.mediasetplay.mediaset.it"
+            ]
+        },
+        {
+            "rule": "mediaset\\.net\\/PROD\\/play\\/idm\\/anonymous\\/login\\/v2\\.0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ott-prod-fe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d55641714042fc78aef8c43281d4db5a00cf8c8f193ae1d6ed968b2fca8224eb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mediaset.it",
+                "www.mediasetplay.mediaset.it"
+            ]
+        },
+        {
+            "rule": "mediaset\\.net\\/PROD\\/play\\/idm\\/anonymous\\/login\\/v2\\.0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-ott-prod-fe"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -289,7 +350,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9fe8c52be7924a6ed9cb5f842b38c28b4f8271f4f7c723acf0752b414d09818b"
+                "6a12d257bb40bc802028a3edc92b431fe8b639f569841500e11f4c3a0b188190"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -304,13 +365,15 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 19,
-        "Fetch": 4,
-        "Preflight": 3,
-        "Script": 9,
+        "XHR": 18,
+        "Fetch": 6,
+        "Document": 2,
+        "Script": 11,
+        "Preflight": 2,
         "Image": 6
     },
     "nameservers": [
+        "ns4.mediaset.net",
         "ns3.mediaset.net",
         "ns2.mediaset.net",
         "ns1.mediaset.net"

@@ -4,14 +4,48 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "www",
         "tracking"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "corereporting\\.co\\.uk\\/tracker\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3a8fed96280ac96cec2a7e75c2b494abde4270956d412d9a9a12d030690969c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_cuid": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hendy.co.uk",
+                "www.hendy.co.uk"
+            ]
+        },
         {
             "rule": "corereporting\\.co\\.uk\\/api\\/collect",
             "cookies": 0,
@@ -57,8 +91,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "types": {
+        "Script": 2,
         "XHR": 2,
         "Preflight": 2
     },

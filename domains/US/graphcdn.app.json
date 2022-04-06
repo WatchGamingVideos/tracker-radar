@@ -4,13 +4,18 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
+    "prevalence": 0.000034,
     "sites": 5,
     "subdomains": [
-        "rugby-au-cms",
-        "drive-boot"
+        "cointelegraph",
+        "rugby-au-cms"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "graphcdn.cointelegraph.com",
+            "resolved": "cointelegraph.graphcdn.app"
+        }
+    ],
     "fingerprinting": 0,
     "resources": [
         {
@@ -18,20 +23,25 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "rugby-au-cms",
-                "drive-boot"
+                "cointelegraph",
+                "rugby-au-cms"
             ],
             "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
-            "cnames": [],
+            "cnames": [
+                {
+                    "original": "graphcdn.cointelegraph.com",
+                    "resolved": "cointelegraph.graphcdn.app"
+                }
+            ],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "cointelegraph.com",
                 "reds.rugby",
-                "www.drive.com.au",
                 "www.rugby.com.au"
             ]
         },
@@ -47,7 +57,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "363873f6a66db6a88faf1fcf9e6ce2a25a57a09a383a5431305dd498b8d932f4"
+                "0a3f68f9669a643843274da4e51582e2d9e76acc57bbb929f3e9209c78215f78"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -56,28 +66,6 @@
                 "reds.rugby",
                 "www.rugby.com.au"
             ]
-        },
-        {
-            "rule": "graphcdn\\.app\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "drive-boot"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "056777961644c7e8601a4b47c93795b92041b19f2cfe7440a58ec016ad47eda9"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drive.com.au",
-                "www.drive.com.au"
-            ]
         }
     ],
     "categories": [],
@@ -85,8 +73,7 @@
     "cookies": 0,
     "types": {
         "Preflight": 3,
-        "Fetch": 2,
-        "XHR": 2
+        "Fetch": 2
     },
     "nameservers": [
         "sloan.ns.cloudflare.com",

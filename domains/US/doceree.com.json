@@ -4,15 +4,87 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
-        "bidder",
-        "servedbydoceree"
+        "servedbydoceree",
+        "bidder"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "doceree\\.com\\/script\\/render-header\\.js",
+            "cookies": 0.000034,
+            "fingerprinting": 1,
+            "subdomains": [
+                "servedbydoceree"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "aca809ac77fd4475844de76245713d327833be89452846fe1ea79544dc7fa422"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_docereeId": {
+                    "ttl": null,
+                    "length": 70,
+                    "prevalence": 0.00003403189469170507,
+                    "uniqueness": 1
+                },
+                "_docereeDmdContext": {
+                    "ttl": 2592006,
+                    "length": 8,
+                    "prevalence": 0.00003403189469170507,
+                    "uniqueness": 0.2
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "druggenius.com",
+                "radiopaedia.org",
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
+            ]
+        },
+        {
+            "rule": "doceree\\.com\\/v1\\/doceree-init",
+            "cookies": 0.0000408,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "677f6f1202846cd83d71516220e70e507cbb9fc3e6df10ab15b5045dd9b17d48",
+                "92e5b1751dcd9ad46209c8370f260aa08ea471f26cabc6770d307826f2cb1fad",
+                "fa894878bc98746bee35e766a012098a5385de54b1ec2a18c575b94bc63df062",
+                "d0ef74a1e387d4388c0bc375d75898c78351230b011478481c7833d77e4d200d",
+                "6cc84201d260d8fa7535c28b598c184ba9aa5d6308dfe5489f9fe8b575f11841"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "druggenius.com",
+                "journals.sagepub.com",
+                "radiopaedia.org",
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
+            ]
+        },
         {
             "rule": "doceree\\.com\\/v1\\/doceree-init",
             "cookies": 0,
@@ -21,41 +93,20 @@
                 "bidder"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sagepub.com",
+                "druggenius.com",
+                "journals.sagepub.com",
                 "radiopaedia.org",
-                "www.cureus.com"
-            ]
-        },
-        {
-            "rule": "doceree\\.com\\/v1\\/doceree-init",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "bidder"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "cd90e997f5699c2096dc357f9242710356ee19a6551cd71f60a288fc6943e2c1",
-                "299d4d6ba89cf337546f34d2146cbb41e6bd0f80738d185ca8778e3f8582c719"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sagepub.com",
-                "radiopaedia.org",
-                "www.cureus.com"
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
             ]
         },
         {
@@ -66,17 +117,46 @@
                 "bidder"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sagepub.com",
+                "druggenius.com",
+                "journals.sagepub.com",
                 "radiopaedia.org",
-                "www.cureus.com"
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
+            ]
+        },
+        {
+            "rule": "doceree\\.com\\/v1\\/adrequest",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5aff7c5952efc45b6d04b4b0eff4543769020b77a63c5622e6bc1df307fbad41",
+                "0e1c0f2d5d12c1ca4f769b8d675a49917af1f934203a635de64d37e4698301da"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_docereeDmdContext": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "druggenius.com",
+                "www.cureus.com",
+                "www.goodrx.com"
             ]
         },
         {
@@ -87,74 +167,118 @@
                 "bidder"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sagepub.com",
+                "druggenius.com",
+                "journals.sagepub.com",
                 "radiopaedia.org",
-                "www.cureus.com"
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
             ]
         },
         {
-            "rule": "doceree\\.com\\/script\\/render-header\\.js",
-            "cookies": 0.0000136,
+            "rule": "doceree\\.com\\/v1\\/inittapad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidder"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "druggenius.com",
+                "journals.sagepub.com",
+                "radiopaedia.org",
+                "www.cancertherapyadvisor.com",
+                "www.cureus.com",
+                "www.pulsetoday.co.uk"
+            ]
+        },
+        {
+            "rule": "doceree\\.com\\/resources\\/p\\/render\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "servedbydoceree"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "796180f41c816d21375c7a821612b0d096798b23b93fa6d2cfd90e57d63823cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cureus.com",
+                "www.cureus.com",
+                "www.goodrx.com"
+            ]
+        },
+        {
+            "rule": "doceree\\.com\\/resources\\/p\\/render-es6\\.js",
+            "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
                 "servedbydoceree"
             ],
             "apis": {
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "Date.prototype.getTime": 2
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "fc674dc14474a18680da68b090875c2978069e108fd03bbed21c8b1423a61157"
+                "03dd5faea0e3b3dbf5d25bf1f8af670ad62d58fef4e50ccd7bda0d750d51f220"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_docereeId": {
-                    "ttl": null,
+                    "ttl": 31536000,
                     "length": 70,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
-                },
-                "_docereeDmdContext": {
-                    "ttl": 2592011,
-                    "length": 8,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "radiopaedia.org",
-                "www.cureus.com"
+                "cureus.com",
+                "www.cureus.com",
+                "www.goodrx.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000341,
+    "cookies": 0.0000817,
     "types": {
-        "Preflight": 3,
-        "XHR": 3,
-        "Image": 6,
-        "Script": 2
+        "Script": 11,
+        "XHR": 9,
+        "Preflight": 6,
+        "Image": 18
     },
     "nameservers": [
-        "ns-214.awsdns-26.com",
         "ns-1006.awsdns-61.net",
         "ns-1241.awsdns-27.org",
-        "ns-1908.awsdns-46.co.uk"
+        "ns-1908.awsdns-46.co.uk",
+        "ns-214.awsdns-26.com"
     ]
 }

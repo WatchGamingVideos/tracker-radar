@@ -1,14 +1,20 @@
 {
     "domain": "vidora.com",
-    "owner": {},
+    "owner": {
+        "name": "Vidora, Inc.",
+        "displayName": "Vidora",
+        "privacyPolicy": "https://www.vidora.com",
+        "url": "http://vidora.com"
+    },
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000252,
-    "sites": 37,
+    "prevalence": 0.000272,
+    "sites": 40,
     "subdomains": [
         "assets",
-        "a"
+        "a",
+        "cortex"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -16,34 +22,30 @@
         {
             "rule": "vidora\\.com\\/js\\/vidora-client-rt\\.1\\.x\\.x\\.min\\.js",
             "cookies": 0.00000681,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
             "apis": {
                 "window.sessionStorage": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.connection": 1,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.orientation": 1,
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3451f111da549ba2e887f3459c1485d251311ab8e2241edefad30a1f6c4c2dfd"
+                "997a3678d43860216e7b352ac4a19733044cd83df4cda76f19364cbc337c979e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "vidoraUserId": {
                     "ttl": 5256000,
                     "length": 30,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -54,12 +56,66 @@
             ]
         },
         {
+            "rule": "vidora\\.com\\/js\\/vidora-client\\.1\\.x\\.x\\.min\\.js",
+            "cookies": 0.0000953,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.sessionStorage": 24,
+                "window.localStorage": 24,
+                "Date.prototype.getTime": 16,
+                "Navigator.prototype.userAgent": 15,
+                "Document.cookie getter": 14,
+                "Document.cookie setter": 14
+            },
+            "sites": 27,
+            "prevalence": 0.000184,
+            "cnames": [],
+            "responseHashes": [
+                "d1b0735de14504c0b9103947b5315e86f7a555f8ec74b0ee226469d564ea2337"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "vidoraUserId": {
+                    "ttl": 5256007,
+                    "length": 30,
+                    "prevalence": 0.00009528930513677418,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nypost.com",
+                "people.com",
+                "www.bodyandsoul.com.au",
+                "supercoach.dailytelegraph.com.au",
+                "www.heraldsun.com.au",
+                "supercoach.heraldsun.com.au",
+                "www.thechronicle.com.au",
+                "www.southernliving.com",
+                "www.townsvillebulletin.com.au",
+                "www.cairnspost.com.au",
+                "www.cookinglight.com",
+                "www.taste.com.au",
+                "www.goldcoastbulletin.com.au",
+                "www.kidspot.com.au",
+                "www.barrons.com",
+                "www.skynews.com.au",
+                "www.fnlondon.com",
+                "www.ntnews.com.au",
+                "www.adelaidenow.com.au",
+                "www.dailytelegraph.com.au"
+            ]
+        },
+        {
             "rule": "vidora\\.com\\/v1\\/validate",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "a",
-                "assets"
+                "assets",
+                "a"
             ],
             "apis": {},
             "sites": 20,
@@ -95,57 +151,25 @@
             ]
         },
         {
-            "rule": "vidora\\.com\\/js\\/vidora-client\\.1\\.x\\.x\\.min\\.js",
-            "cookies": 0.0000953,
-            "fingerprinting": 1,
+            "rule": "vidora\\.com\\/v1\\/capi\\/users\\/123\\/recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
             "subdomains": [
-                "assets"
+                "cortex"
             ],
-            "apis": {
-                "window.sessionStorage": 23,
-                "window.localStorage": 23,
-                "Document.cookie getter": 14,
-                "Date.prototype.getTime": 17,
-                "Document.cookie setter": 14,
-                "Navigator.prototype.userAgent": 16
-            },
-            "sites": 24,
-            "prevalence": 0.000163,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "78abaf22c6280a5cbe423f6a51ae48141c0bb7d089f0212fa21a309320d2d742"
+                "9c168b304b24fa2a473265acfea14c9c0a6cbd0a3f553e0d7c5999571c71ca4b"
             ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "vidoraUserId": {
-                    "ttl": 5256008,
-                    "length": 30,
-                    "prevalence": 0.00009534706331045004,
-                    "uniqueness": 1
-                }
-            },
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nypost.com",
-                "people.com",
-                "www.dailytelegraph.com.au",
-                "www.weeklytimesnow.com.au",
-                "www.goldcoastbulletin.com.au",
-                "www.geelongadvertiser.com.au",
-                "www.bodyandsoul.com.au",
-                "www.news.com.au",
-                "www.adelaidenow.com.au",
-                "www.southernliving.com",
-                "www.cookinglight.com",
-                "www.realsimple.com",
-                "www.taste.com.au",
-                "www.skynews.com.au",
-                "www.heraldsun.com.au",
-                "www.couriermail.com.au",
-                "www.townsvillebulletin.com.au",
-                "www.themercury.com.au",
-                "www.ntnews.com.au",
-                "www.kidspot.com.au"
+                "barrons.com",
+                "www.fnlondon.com"
             ]
         },
         {
@@ -167,29 +191,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fnlondon.com",
-                "www.fnlondon.com"
-            ]
-        },
-        {
-            "rule": "vidora\\.com\\/newscorp\\/wsj_logo\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "328e711ea6e4528fb25ced0732508b1b3857ef92ba71959313258d8266b7f7d9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "fnlondon.com",
-                "www.fnlondon.com"
+                "www.mansionglobal.com"
             ]
         },
         {
@@ -200,8 +202,8 @@
                 "assets"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "272f49c2cdacba8919e24e9e5e42774459b1560f250f70163d6f372adc6c34c6"
@@ -211,23 +213,23 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fnlondon.com",
-                "www.fnlondon.com",
                 "www.mansionglobal.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000129,
+    "cookies": 0.000143,
     "types": {
-        "Script": 26,
+        "Script": 29,
         "Ping": 20,
-        "Image": 7
+        "Fetch": 2,
+        "Image": 4
     },
     "nameservers": [
-        "ns-240.awsdns-30.com",
-        "ns-548.awsdns-04.net",
+        "ns-1412.awsdns-48.org",
         "ns-1819.awsdns-35.co.uk",
-        "ns-1412.awsdns-48.org"
+        "ns-240.awsdns-30.com",
+        "ns-548.awsdns-04.net"
     ]
 }

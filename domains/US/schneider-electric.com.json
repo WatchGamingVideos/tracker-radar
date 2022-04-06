@@ -7,13 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "tagmanager",
         "intstatcheck.wsecure",
-        "download",
-        "selectandconfig-widget"
+        "download"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -34,6 +33,8 @@
                 "Screen.prototype.height": 2,
                 "Screen.prototype.pixelDepth": 2,
                 "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.language": 2,
                 "Navigator.prototype.javaEnabled": 2,
                 "Navigator.prototype.userAgent": 2,
@@ -48,9 +49,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "atoptedout": {
-                    "ttl": -1645141848,
+                    "ttl": -1648909036,
                     "length": 152,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -93,8 +94,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "096c8ddcef8353f5f986a76fa6ee1e8b2a6a9c816b1e3912fc53ab2a63865cc7",
-                "19e838df51f43c71ed012443ce65746b99bcc0347003611283d3562abcbe58e9"
+                "f1f8b1e83ecf443d98f4e2663700a73c895af3efe3346874ace15e5b28076e4e",
+                "9f4838400e664c41efec0b699ed483d08ca189375be4cf7fde6aa34269157b60"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -106,24 +107,52 @@
             ]
         },
         {
-            "rule": "schneider-electric\\.com\\/release\\/wrapper\\/2\\.X\\/wrapper\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "schneider-electric\\.com\\/sdl2\\/configuration-stat\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
             "subdomains": [
-                "selectandconfig-widget"
+                "tagmanager"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c8d00b8adc8fc4975e09287612b7ebd1692521ddb1a096ccbd800a92fb7e58a3"
+                "0ac907124897fc3285acb3344308494676c33af19b103deb563527abf83cebea"
             ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
+            "type": "Script",
+            "firstPartyCookies": {
+                "atoptedout": {
+                    "ttl": -1648894994,
+                    "length": 152,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                },
+                "atidvisitor": {
+                    "ttl": 15724800,
+                    "length": 180,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "etm.ru",
+                "se.com",
                 "www.se.com"
             ]
         },
@@ -146,48 +175,6 @@
                 "se.com",
                 "www.se.com"
             ]
-        },
-        {
-            "rule": "schneider-electric\\.com\\/sdl2\\/configuration-stat\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tagmanager"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.pixelDepth": 2,
-                "Screen.prototype.colorDepth": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "fc56a5fef3057d384cb26f0c29029cc9e9ed4fd8b52238d9142080380af3b50e"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "atoptedout": {
-                    "ttl": -1645127566,
-                    "length": 152,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "se.com",
-                "www.se.com"
-            ]
         }
     ],
     "categories": [],
@@ -196,7 +183,6 @@
     "types": {
         "Script": 4,
         "Image": 6,
-        "Stylesheet": 2,
         "XHR": 2
     },
     "nameservers": [

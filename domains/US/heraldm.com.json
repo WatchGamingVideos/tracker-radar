@@ -10,7 +10,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "res"
+        "res",
+        "adw"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -49,7 +50,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "74acadfded9e34335f35273a1bbf74b851ac9e334af856931f9fcf2341b7bf62"
+                "3407fc763d4459daedd131eefe20c958116b3d0480c444656c86d990d56705d7"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -84,11 +85,13 @@
         {
             "rule": "heraldm\\.com\\/koreaherald\\/version02\\/www\\/js\\/aos\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "res"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -150,28 +153,6 @@
             ]
         },
         {
-            "rule": "heraldm\\.com\\/banner\\/koreaherald\\/2021\\/KIS_Korea-Herald-Banner-0630\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d3fca8cd6c4b872f99e7e1cbab96e4d99f7fccdd2a4c0eaa07c0c034d03d02db"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "koreaherald.com",
-                "www.koreaherald.com"
-            ]
-        },
-        {
             "rule": "heraldm\\.com\\/phpwas\\/restmb_idxmake\\.php",
             "cookies": 0,
             "fingerprinting": 0,
@@ -183,29 +164,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ddd404c0391d1723841ce36c6957258eaa49b89148ee86ebd537f62023585959"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "koreaherald.com",
-                "www.koreaherald.com"
-            ]
-        },
-        {
-            "rule": "heraldm\\.com\\/koreaherald\\/version02\\/www\\/images\\/special\\/20200911_kh_podcast_pc\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "res"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "87b8fb79a55a3207c2213fa3da8c0f16beffb622edc3600f1eb49378d3a8feb6"
+                "095944cf8dd62f2dea842df2d7d6b5a60669d520930f5d654a27396e0f13aea4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -282,6 +241,28 @@
             ]
         },
         {
+            "rule": "heraldm\\.com\\/cgi-bin\\/conad\\.fcgi\\/koreaherald\\/KH_Main_Top2_234",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adw"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "koreaherald.com",
+                "www.koreaherald.com"
+            ]
+        },
+        {
             "rule": "heraldm\\.com\\/font_new\\/NotoSansKR-Bold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -319,6 +300,8 @@
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.javaEnabled": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.plugins": 2,
                 "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
@@ -333,9 +316,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "WT_FPC": {
-                    "ttl": 315410405,
+                    "ttl": 315406803,
                     "length": 2,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -376,9 +359,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "ACEFCID": {
-                    "ttl": 31104006,
+                    "ttl": 31104003,
                     "length": 28,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -395,8 +378,9 @@
     "types": {
         "Stylesheet": 6,
         "Script": 10,
-        "Image": 6,
-        "Font": 8
+        "Image": 2,
+        "Font": 8,
+        "Document": 2
     },
     "nameservers": [
         "ns6.cninet.co.kr",

@@ -4,14 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
+        "api",
         "static"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "youreko\\.com\\/v1\\/energy-labels\\/set-user-id-cookie\\.php",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "yourekoUserId": 0.00002041913681502304
+            },
+            "exampleSites": [
+                "beko.co.uk",
+                "www.did.ie",
+                "www.hughes.co.uk"
+            ]
+        },
         {
             "rule": "youreko\\.com\\/js\\/partners\\/gb\\/hotpoint\\/youreko\\.energy-review\\.hotpoint\\.all\\.min\\.js",
             "cookies": 0,
@@ -26,7 +52,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "18de5efc938d076e553c8ea20b23f95fcb4b1d2f7579aac9d52e813e8f67566f"
+                "5314e3f86b4c8223ab8a83026a9bdb1f8a2ae178acb5cdf735e6d6a90e9a45b1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -48,7 +74,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f992de370089e5b01c4111b48bf83fd855d75043e26cb3b1a85c526b347daacb"
+                "ec4e1aa829e5c8f8dc765975fe61651317f1f59600a4e6eb64de8fb632a7460f"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -60,20 +86,31 @@
         },
         {
             "rule": "youreko\\.com\\/js\\/partners\\/gb\\/hughes-direct\\/youreko\\.energy-review\\.hughes-direct\\.all\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1242d22fd4618d711db865867507343dd31f9693a92b826e7830803400436e0b"
+                "47d4063f890ad52c50111f085e2118026079e0dfa98eb25010818e800dff3e6c"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "yourekoUserId": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "hughes.co.uk",
@@ -83,8 +120,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000272,
     "types": {
+        "Image": 3,
         "Script": 4,
         "Stylesheet": 2
     },

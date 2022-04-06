@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "sharecdn"
+        "sharecdn",
+        "cdn",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,12 +22,20 @@
                 "sharecdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1,
-                "window.name": 1,
-                "window.devicePixelRatio": 1,
-                "window.indexedDB": 1,
-                "window.sessionStorage": 1,
-                "window.localStorage": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.screenX": 2,
+                "window.screenY": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "window.devicePixelRatio": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -109,15 +119,81 @@
                 "mapometer.com",
                 "gb.mapometer.com"
             ]
+        },
+        {
+            "rule": "social9\\.com\\/js\\/socialshare\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e1c221cfe152f4e8a3bb2d28fb3618726211d08c4a20b1f31c95990cbbdb5524"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ideasqueayudan.com",
+                "www.vervelogic.com"
+            ]
+        },
+        {
+            "rule": "social9\\.com\\/api\\/v1\\/widgets\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5b2e5d54d37c6c8f6618fa049e25a99f8cc0594c2db4146c58839679e7f4969"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ideasqueayudan.com",
+                "www.vervelogic.com"
+            ]
+        },
+        {
+            "rule": "social9\\.com\\/api\\/v1\\/widgets\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ideasqueayudan.com",
+                "www.vervelogic.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 6,
+        "Script": 8,
         "Stylesheet": 3,
-        "Image": 2
+        "Image": 2,
+        "Fetch": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "andy.ns.cloudflare.com",

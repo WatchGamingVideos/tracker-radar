@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.000116,
+    "sites": 17,
     "subdomains": [
         "cdn"
     ],
@@ -16,27 +16,30 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "adnext\\.fr\\/wrapper-dirigeant\\.com\\.js",
+            "rule": "adnext\\.fr\\/wrapper\\/societe\\.com\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "0799199f0ac7fb450d07a28d16131ef74b3b0167a709a3354d87502552f401fb"
+                "950e203a5ffe4e4d6dc682d2c55ac5e898136376087babe948a16218aa992936"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "societe.com",
-                "dirigeant.societe.com"
+                "dirigeant.societe.com",
+                "www.societe.com"
             ]
         },
         {
@@ -47,11 +50,11 @@
                 "cdn"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "fe89a3466194d5ca4525d89a8d4c387abcc2d6449d81e6f27508688a46fecabb"
+                "7281ff8d47ba8c747bc54beb953a684b091e8b2e1d11c1515b008befc2aac836"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -59,52 +62,127 @@
             "exampleSites": [
                 "societe.com",
                 "dirigeant.societe.com",
-                "www.laposte.net",
                 "www.laposte.fr",
+                "www.laposte.net",
                 "www.latribune.fr",
                 "www.lesfoodies.com",
+                "www.lonelyplanet.fr",
                 "www.petitfute.com",
                 "www.pourquoidocteur.fr",
                 "www.societe.com"
             ]
         },
         {
-            "rule": "adnext\\.fr\\/vendor\\/prebid\\.js\\/prebid-6\\.10\\.0\\.js",
+            "rule": "adnext\\.fr\\/vendor\\/prebid\\.js\\/prebid-6\\.14\\.0\\.js",
             "cookies": 0.00000681,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 9,
-                "Navigator.prototype.cookieEnabled": 9,
-                "Navigator.prototype.appName": 9,
-                "Date.prototype.getTime": 9,
-                "window.sessionStorage": 8,
-                "window.localStorage": 8,
-                "Document.cookie getter": 8,
+                "Navigator.prototype.userAgent": 10,
+                "Navigator.prototype.cookieEnabled": 10,
+                "window.sessionStorage": 10,
+                "Navigator.prototype.appName": 10,
+                "Date.prototype.getTime": 10,
+                "window.localStorage": 10,
+                "Document.cookie getter": 10,
+                "Document.cookie setter": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1,
-                "Screen.prototype.colorDepth": 1,
-                "Date.prototype.getTimezoneOffset": 1,
                 "Navigator.prototype.language": 1,
                 "Navigator.prototype.doNotTrack": 1,
+                "Date.prototype.getTimezoneOffset": 1,
                 "PerformanceTiming.prototype.navigationStart": 1,
-                "Document.cookie setter": 1
+                "Screen.prototype.colorDepth": 1
             },
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "62ee67140c21bc46a01b51591d33427dcb976166ed494a3f602e6ad8a1c96d4c",
-                "efbb1647ca5f5e69ff7bef465808a7c30879852524829e5ccfb595711043d100"
+                "b90836944f0155d5863bfacb10d8c588014470e744147e5c17caa39c34d9da02",
+                "21c43c0bcb2a005e955d7f0e28ba660d2dcb6613b16fbae24dd685b3fb4baaac"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_pbjs_userid_consent_data": {
-                    "ttl": 2592010,
+                    "ttl": 2592008,
                     "length": 16,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_304_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "pbjs-id5id_last": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id.1st": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id.1st_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id.1st_304_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id.1st_last": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id_304_nb": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "id5id_last": {
+                    "ttl": -86392,
+                    "length": 3,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -112,10 +190,11 @@
             "exampleSites": [
                 "societe.com",
                 "dirigeant.societe.com",
-                "www.laposte.net",
                 "www.laposte.fr",
+                "www.laposte.net",
                 "www.latribune.fr",
                 "www.lesfoodies.com",
+                "www.lonelyplanet.fr",
                 "www.petitfute.com",
                 "www.pourquoidocteur.fr",
                 "www.societe.com"
@@ -129,20 +208,21 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "55b14f3c3f651c27d67da7c6a11bb4ba8655634dc8cc92a3c7c03a81904242c7"
+                "8b8d41d2a1a4eb31eb24f08b4ddf8ab24b89de0e6f0db101c45ce5f7910d5e24"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "laposte.net",
-                "www.laposte.fr",
+                "laposte.fr",
                 "www.laposte.net"
             ]
         },
@@ -154,13 +234,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a8b17123baf5c0cf0818a51ffeb1565a302ad24e50543de96fe18ac202ac301d"
+                "08a6de12ef7a05c81a0b6cb99b760b0d217ee0a25623730abc83cca091c42aca"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -178,13 +260,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ea2801261fda611912b54ec854ee5f8a6c40a2161a6e9d574644ec1de6633a7c"
+                "9f4f56f4f08c4898d87b6dd82fd02c2c56aceae598b53633e09ed935b235efb1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -195,6 +279,32 @@
             ]
         },
         {
+            "rule": "adnext\\.fr\\/wrapper-lonelyplanet\\.fr\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "72d995984aea5aa3d4a025195d8e4cc5217afedc18cd499fe2e126e2454f3db0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lonelyplanet.fr",
+                "www.lonelyplanet.fr"
+            ]
+        },
+        {
             "rule": "adnext\\.fr\\/wrapper-petitfute\\.com\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -202,13 +312,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d91d588e509d5555d8d73dbaeccbd694e7243bd5737832cd648f816fd872fa46"
+                "fd8a00fa44cf9aadbe6d1ef6bf6f90cc72ba5f5ad224df58390f9c09f810809d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -226,13 +338,15 @@
                 "cdn"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fea3f20df66a39970cc0e668e87f8f12087100516b5e3284ab361a0b11f8f9ac"
+                "d0871500c71536cbf190019842ceec79c05a764df5674e59d88828c1f69f129e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -241,40 +355,16 @@
                 "pourquoidocteur.fr",
                 "www.pourquoidocteur.fr"
             ]
-        },
-        {
-            "rule": "adnext\\.fr\\/wrapper-societe\\.com\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3e09bd00ca2c3b62ca83266b96c03e646bc3dddd83150538810d12b03460ac9b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "societe.com",
-                "www.societe.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 33
+        "Script": 35
     },
     "nameservers": [
-        "ns1.reagi.com",
-        "ns2.reagi.com"
+        "ns2.reagi.com",
+        "ns1.reagi.com"
     ]
 }

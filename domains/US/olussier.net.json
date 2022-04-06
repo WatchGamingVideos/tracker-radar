@@ -10,16 +10,19 @@
         "overlays"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "olussier\\.net\\/lib\\/overlays\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "overlays"
             ],
-            "apis": {},
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -66,7 +69,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fa9c0b96be78cbc473e8b03fcc388da8099e84e1b139694feaadd756ba6436f2"
+                "b878be6d5e9d152e50402ea628096a752a9804ff90ba412b4a468896a39d99d9"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -77,8 +80,8 @@
             ]
         },
         {
-            "rule": "olussier\\.net\\/assets\\/button-no\\.png",
-            "cookies": 0,
+            "rule": "olussier\\.net\\/api\\/lib\\/nyom91nds7brfgpj58ci\\/log",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "overlays"
@@ -87,10 +90,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "bd04d87f4385d73a0df89ffc062581e3f6a3716f5c56119f80fbbe5038506b7c"
-            ],
-            "type": "Image",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -99,7 +100,7 @@
             ]
         },
         {
-            "rule": "olussier\\.net\\/assets\\/lock\\.png",
+            "rule": "olussier\\.net\\/api\\/lib\\/nyom91nds7brfgpj58ci\\/log",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -110,9 +111,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0e8d588bfd54dab86fa53dfb8eef1905399613629383a8e8744f65e345fef894"
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -126,9 +127,8 @@
     "cookies": 0.0000136,
     "types": {
         "Script": 2,
-        "Preflight": 2,
-        "XHR": 2,
-        "Image": 4
+        "Preflight": 4,
+        "XHR": 4
     },
     "nameservers": [
         "ns-539.awsdns-03.net",

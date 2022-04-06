@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
+    "prevalence": 0.000034,
     "sites": 5,
     "subdomains": [
         "public-assets",
@@ -80,6 +80,28 @@
             ]
         },
         {
+            "rule": "blocketcdn\\.se\\/static\\/fonts\\/Blocket-Display\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e48fcb16288efe363613d3d954944a1b0c520563babf6f0a2975bb130c7ceb94"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
             "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/ed5ad760\\.7e0cbcd78abcafadaa12\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -104,18 +126,20 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/5970\\.5d60d3d5a0c22a7c2e56\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/5970\\.cae9d2f3d8ae46141b7b\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "window.sessionStorage": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0a335738208ad78eeaeaccd6c40b3a215b53e44152334a5e904f037b2305673e"
+                "6cba81ce74e2e07acc2070755aaad6789d83803011b36a1ef1ac33e62b3c8713"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -126,7 +150,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/webpack-ef2681179a4c94f7e4a1\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/webpack-6a3305e9341a5bfff371\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -137,7 +161,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c96a08d48642c49dea8fe3e1b01a4554e869fbebc9d00ae6b865c4468d8c7fed"
+                "878320a527bb4beb6e3e482a15eb2b892dc83807242a1db4bc992f6f5df8fc94"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -148,7 +172,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/framework-45675cc5db0516c1abe6\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/framework-ea28de81a5a5ace53ddc\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -159,7 +183,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5b9dc17cb0be3ee212aa0af58ae8d2976975a18e783579f36d9f8f3c5953fcd2"
+                "835924309785cf9a5420929590d2d3fa4a7f771294e9d9600ca2f42f9f5170ce"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -170,7 +194,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/main-4c51656e0ad7edfe3364\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/main-6470b701e36709f8d64a\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -183,7 +207,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "58e33d4da6ae50ae944cf8510f7ebd3f3acbce2d0e5e8d767f2919ddc18857dd"
+                "f33c6434b2a204e2b8623b8f44c8651d2ad53698f3cd60447d7324ec2c61530a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -194,47 +218,56 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/_app-82aaa6d425ef130fad1f\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/_app-514541223a22bc47ad53\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "assets"
             ],
             "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.product": 2,
-                "Date.prototype.getTime": 2,
                 "Document.cookie getter": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
                 "window.localStorage": 2,
                 "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
                 "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "924f93f3dfd1a00a188d00b145ff8126c9d7faeb9a2bb162b7e9d0b646233ca1"
+                "c1a9645fb4885db092733e3d3bcee62272aee07cc500712775205d0d3d71788f"
             ],
             "type": "Script",
             "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1648838460,
+                    "length": 1,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                },
                 "hero": {
                     "ttl": 10800,
                     "length": 4,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "_pulse2data": {
-                    "ttl": 63072007,
-                    "length": 571,
-                    "prevalence": 0.000013621009044350005,
+                    "ttl": 63072005,
+                    "length": 555,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_pulsesession": {
-                    "ttl": 1805,
+                    "ttl": 1804,
                     "length": 109,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -289,18 +322,20 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9346-adae6fef03d9cdce1882\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1216-b6cf4c3d99b8eae91651\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "356384e8bbda4ee6e19603121a950cd378e6fdd007abec2629c023b3a5393368"
+                "9e51bd899baeca3718a5eb64534eeb89111aafbb3d8a39651f6531c86c00dc01"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -311,7 +346,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8099-8f8731064d5ef22eb227\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4897-f870f5e067483904f45f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -322,7 +357,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f56f429d0ff350ba42dd547fc58acd07577acad0c97d999083033c2473276074"
+                "2974885212ead91a7bfb817cb9295326cc4b9b21dfbe71f589d68da2174672ea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -333,7 +368,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7993-af7c7533f8b989ae50f7\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7993-92cde9c69222b5a38b39\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -344,7 +379,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ea4544fe6dd4ccd233ac276d2c5c5989065733feb7e8b5cc770e5a2ae5669bb2"
+                "5d4b9b2b8860298710f302a22a3e724538cb754092918f055bd54f421f56b55f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -355,7 +390,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6208-aa432e82b76f3f1a347b\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6208-d60ebaec8429b3bba931\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -366,7 +401,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "62e013ac66aa0562de3313ec4083b7010f193f4f07964a57c0877d222e010b9a"
+                "99e8fb8a13f65dc16b82a9455c6f533897a4d5f7c4504e35871e107f7ede6161"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -377,7 +412,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8764-4d9bf7c7511068439914\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8764-e64d6bddaed64ef95d47\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -388,7 +423,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa0ee4447957301b1085b8e3fc85931a8553b7a2ec83c646f5fd9c6186b1713b"
+                "d645fa6a4d1e8071d4bf4337521224f350a2e83aabf0b1038bec17b066364d27"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -399,7 +434,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7738-f9f68a3cb193830753c2\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2031-d3c8e0a48ffed2bce5d9\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -412,7 +447,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "00e27d7bdac4a3ad2cedceffbdaf015a91f02084e96d06d0a160a44da55396ef"
+                "c7b4bc5ae96947692e71e77d1dc6d0ab55cf602ae6a297a5e5e79d4000ef3879"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -423,7 +458,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6799-d3dc8b943efc39e914c1\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6799-3b9cddd20e5d8e3a36ae\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -434,7 +469,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6ee1397d54f1a3d82a3bc728110793fe8731728ce5d07a83a1482ac7e5d9ee57"
+                "5d1eb8a6328c36e4900fba8b3d51fe2fbd732d3a0ce1080e274709bb1db1aca3"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -445,7 +480,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2933-2d3f91290ba096711ee7\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4641-106f2231c08bbe97fdb3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -456,7 +491,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2fb99e31dbab56c7926a0c1625bc45378eb4312ac9f771adf853075ea325e9ae"
+                "b4a8d831d91fdeabdb92846988eb711741d013788298886b784203000f225d6b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -467,7 +502,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/index-5a4dc9bc05c2af7e804d\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/index-5da16cdee2afa446289d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -478,7 +513,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0a74786209eb5d2b06c52cd89f0dcbf0840f6957d98e3daade7e0d20bbb93596"
+                "26bc7912135dce0f5c787cd3fed0b90357982e415a02f7d26691cc20123bfb76"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -489,7 +524,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/Mo3SN6fEKSfuPpSH7gf69\\/_buildManifest\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/4sLY0tcmk-MFNJMtC2CNO\\/_buildManifest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -500,7 +535,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a8988c884af29d8678756cd5cd58051a1d1515b82cc54d2c8452a35e0c71143b"
+                "7dcf404f874821b48505e476627e0b58c08c60de3750cb0a501813c76aa55b07"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -511,7 +546,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/Mo3SN6fEKSfuPpSH7gf69\\/_ssgManifest\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/4sLY0tcmk-MFNJMtC2CNO\\/_ssgManifest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -522,7 +557,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6f5b4aa00d2f8d6aed9935b471806bf7acef464d0c1d390260e5fe27f800c67e"
+                "adc71f2db7eda15a80caa1a55fc601965834f51954655effa311e491a7e7cb96"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -540,9 +575,15 @@
                 "assets"
             ],
             "apis": {
-                "window.localStorage": 1,
+                "window.localStorage": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "window.screenY": 1,
+                "window.screenTop": 1,
+                "window.screenX": 1,
+                "window.screenLeft": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -559,7 +600,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/49964b8f\\.03a1167e4d0753c53715\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/49964b8f\\.c0c9ac23325e055ff438\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -567,13 +608,13 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "117d1c7a4ebf6c27096b20a618fbe0d8c2738b9a6ef1b52f0aa87d52ad7501d7"
+                "8b3331fffa4c81bcd701d998b73d0970a50c03cff3eb5fd16d9b7ebe4e8e5236"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -606,33 +647,24 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/glimr\\.d136fd00a999f5f2c81e\\.js",
-            "cookies": 0.00000681,
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/glimr\\.d1b6bd2a9eeeb4616ea4\\.js",
+            "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
             "apis": {
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "window.localStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7014b022d3f86ad67466bcc8532d3ed8f709fdbae47f1f1b113d90305e6f4535"
+                "5a8fdc5f4827916598c09fbf240b45ad00071f63714522631f2d5d25302bafad"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "__glmrid": {
-                    "ttl": null,
-                    "length": 36,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "blocket.se",
@@ -706,7 +738,31 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9346-adae6fef03d9cdce1882\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1216-b6cf4c3d99b8eae91651\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4897-f870f5e067483904f45f\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -728,7 +784,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8099-8f8731064d5ef22eb227\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7993-92cde9c69222b5a38b39\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -750,7 +806,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7993-af7c7533f8b989ae50f7\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6208-d60ebaec8429b3bba931\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -772,7 +828,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6208-aa432e82b76f3f1a347b\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8764-e64d6bddaed64ef95d47\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -794,29 +850,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8764-4d9bf7c7511068439914\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/7738-f9f68a3cb193830753c2\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2031-d3c8e0a48ffed2bce5d9\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -840,7 +874,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6799-d3dc8b943efc39e914c1\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6799-3b9cddd20e5d8e3a36ae\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -862,7 +896,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2933-2d3f91290ba096711ee7\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4641-106f2231c08bbe97fdb3\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -884,7 +918,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/index-5a4dc9bc05c2af7e804d\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/index-5da16cdee2afa446289d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -906,13 +940,15 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8909-6bd464d7b7d79b30685f\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2473-582328aeb85ffd6891c3\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -928,7 +964,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/984-09af0685156280390f1f\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/984-67ea974de1eb910334aa\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -972,7 +1008,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6291-987299229bda230cf0f6\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9593-f2b8cf7bfbf05a2b8815\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -994,7 +1030,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9523-cf9aed2f2beb863db295\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9523-cfa520bc2c9b8799acf4\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1016,7 +1052,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1217-0f54cd2002186d7a8575\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1217-2dd70f8ab4bf0c35fad8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1038,7 +1074,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/639-d7d6f24569e5c8ee8f59\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/457-d1b82becf618765b1cf9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1060,7 +1096,31 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8920-3fa0d764f68066363b10\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8293-be662c3a1690d9e91820\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4787-47a286a5c9c7fd91ee8e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1082,7 +1142,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4787-4a8f1e2d88c58f82dcf1\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/%5B%5B\\.\\.\\.slug%5D%5D-79439acb3d97d4f327bd\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1104,7 +1164,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/%5B%5B\\.\\.\\.slug%5D%5D-edeaec2d9af02bf1eb06\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/5781-dd6ffcc8104328603618\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1126,7 +1186,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9344-d770e6a15027a243cc8e\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/sparade\\/bevakningar\\/%5BadWatchId%5D-ad3904021b07190bef6c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1148,40 +1208,20 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/sparade\\/bevakningar\\/%5BadWatchId%5D-43e286d3a7753de148e5\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/2473-582328aeb85ffd6891c3\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "assets"
             ],
-            "apis": {},
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8909-6bd464d7b7d79b30685f\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ff3085015c8f0b46787beb6afebf92b460523854b01f380d087f4e294916ea2e"
+                "88f844ad0ea5883438d0b977e5cf02e7aa6e2ccf48f183097db0dd1647d2ea7b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1192,7 +1232,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/984-09af0685156280390f1f\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/984-67ea974de1eb910334aa\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1203,95 +1243,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0a98cab3efd652a41681d48e6bff5474a24a2257e63d3eda2f4401cec933ba1d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9344-d770e6a15027a243cc8e\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f038cecf3773c0bcda7fe09ce8e5b40c2ffeba7da0459c8bf5d5fcfb93c9da42"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9523-cf9aed2f2beb863db295\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c2146c67818b489c911d51a8656eedf256af4c2a0a3ab1e1f91102d963bb0148"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1217-0f54cd2002186d7a8575\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1c042e56f110609ea5623da056141c0b397daccd8f90204436f33a36709d2965"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blocket.se",
-                "www.blocket.se"
-            ]
-        },
-        {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/sparade\\/bevakningar\\/%5BadWatchId%5D-43e286d3a7753de148e5\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "assets"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cf877c50f6e6838cb909fdc999468b3873a89891ef476dbc2b6f0e2d84aad02e"
+                "31978f521ba2650b7e7465e8d1bf6df7aeb893ffda94e9855c1d69097ca4e900"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1324,7 +1276,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/6291-987299229bda230cf0f6\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9593-f2b8cf7bfbf05a2b8815\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1335,7 +1287,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3dcd8c9360b0017119a6ac46ee07096a7f6c44fb51a046d43bf7ed8fc215d727"
+                "d25f9e20386208398bf119a8812c12f3c1e0c847d4dc1d5393aad2f8edb1c452"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1346,7 +1298,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/639-d7d6f24569e5c8ee8f59\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/9523-cfa520bc2c9b8799acf4\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1357,7 +1309,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cc42e34afc0b06951435f03b880b9d47391c5d7f5f88945a45bcb09e5fe379d4"
+                "77d7fe2c078644c701a51225ad186f95e76516cd21e7ccd9655a275aafbb668f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1368,7 +1320,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8920-3fa0d764f68066363b10\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/1217-2dd70f8ab4bf0c35fad8\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1379,7 +1331,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "22b50a67642e2fb61731e373ad0abba3dcd387a20f67a211a1a8baff54feab6b"
+                "ace0b6114f3548460973a9b095da4e38e0a876da1c9ddaa0630cf4a7d5319f3b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1390,7 +1342,7 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4787-4a8f1e2d88c58f82dcf1\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/457-d1b82becf618765b1cf9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1401,7 +1353,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "cb15446c20e30a76a4d156c03233b733106d719461cc4f8c647af3dd39fc56cd"
+                "3a81f071ba5cbccfaaa5832b83f54c6b58ec5b5970048f7cb1090ec4eb32f89e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1412,7 +1364,31 @@
             ]
         },
         {
-            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/%5B%5B\\.\\.\\.slug%5D%5D-edeaec2d9af02bf1eb06\\.js",
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/8293-be662c3a1690d9e91820\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ed1dc70008a101830f1e58fcd520746650ed8467082024ed0f37a407f4ccdde"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/4787-47a286a5c9c7fd91ee8e\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1423,7 +1399,117 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "78ec8d977e64fff4b2cda5eb71d84c6dd258e14a3a5b6210c3692ee6d7ec8022"
+                "4d827b1cc46e324e798c2f16ed9a9194dfe5fcd9ef5c76d4d9b3fd8fd21c8865"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/%5B%5B\\.\\.\\.slug%5D%5D-79439acb3d97d4f327bd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3c3e00ce5517ac312aff636ee7c54032d35a514cee5e1676e03a787721e7c1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/5781-dd6ffcc8104328603618\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02f496a861ebabaf42e73673fc9eb11cc15e04ea7539ecff6d48a9e2f472e54b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/sparade\\/bevakningar\\/%5BadWatchId%5D-ad3904021b07190bef6c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bde1ddb3fbd48ffa40823ef3b3e2088604c1d30df905f36b5aa843bd4167ee1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/bostad-1eb5a96b7dedd1d06228\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blocket.se",
+                "www.blocket.se"
+            ]
+        },
+        {
+            "rule": "blocketcdn\\.se\\/adout\\/public\\/_next\\/static\\/chunks\\/pages\\/list\\/%5Bregion%5D\\/bostad-1eb5a96b7dedd1d06228\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f31b20826e2c7a1b1937bf5f38d4e9594af8bf04e4ee5b3576a3a9ee3e9d2eea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1438,14 +1524,14 @@
     "performance": {},
     "cookies": 0.0000272,
     "types": {
-        "Font": 6,
-        "Script": 72,
-        "Other": 46
+        "Font": 8,
+        "Script": 74,
+        "Other": 48
     },
     "nameservers": [
         "ns-129.awsdns-16.com",
-        "ns-631.awsdns-14.net",
         "ns-1344.awsdns-40.org",
-        "ns-1549.awsdns-01.co.uk"
+        "ns-1549.awsdns-01.co.uk",
+        "ns-631.awsdns-14.net"
     ]
 }

@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
-        "plusfr",
-        "pluscom",
+        "ymprove",
+        "plus",
         "pluscouk",
-        "plus"
+        "pluscom",
+        "plusfr"
     ],
     "cnames": [
         {
@@ -28,54 +29,85 @@
         {
             "original": "plus.gmx.net",
             "resolved": "plus.g-ha-gmx.net"
+        },
+        {
+            "original": "ymprove.gmx.net",
+            "resolved": "ymprove.g-ha-gmx.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "g-ha-gmx\\.net\\/traffic_p\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ymprove"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ymprove.gmx.net",
+                    "resolved": "ymprove.g-ha-gmx.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gmx.net",
+                "anmelden.gmx.net"
+            ]
+        },
+        {
             "rule": "g-ha-gmx\\.net\\/lt",
             "cookies": 0.0000204,
             "fingerprinting": 1,
             "subdomains": [
-                "plusfr",
-                "pluscom",
+                "plus",
                 "pluscouk",
-                "plus"
+                "pluscom",
+                "plusfr"
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [
                 {
-                    "original": "plus.gmx.fr",
-                    "resolved": "plusfr.g-ha-gmx.net"
-                },
-                {
-                    "original": "plus.gmx.com",
-                    "resolved": "pluscom.g-ha-gmx.net"
+                    "original": "plus.gmx.net",
+                    "resolved": "plus.g-ha-gmx.net"
                 },
                 {
                     "original": "plus.gmx.co.uk",
                     "resolved": "pluscouk.g-ha-gmx.net"
                 },
                 {
-                    "original": "plus.gmx.net",
-                    "resolved": "plus.g-ha-gmx.net"
+                    "original": "plus.gmx.com",
+                    "resolved": "pluscom.g-ha-gmx.net"
+                },
+                {
+                    "original": "plus.gmx.fr",
+                    "resolved": "plusfr.g-ha-gmx.net"
                 }
             ],
             "responseHashes": [
-                "b73e1b39e415c9d68bd8b850233d688dc4f5b2beca1073446554da6920b91755",
-                "22ac30e9686f132b1ba0981c667bd9deb4c3eec9f4bf8f77f869300bd20dc2a4",
+                "ab8a6df687bec3383862faee1a7e6d82391f0104996b55e084a8cfc37f549b03",
+                "2ddcc9ab4e1011a2f8bca4e0cb4d387ea1ff942482be2a0e2e3509513a18e572",
                 "5b07c7aa76febdbcc74f853b52ecf8226e1c64afd7b8f7e794550314b5ef63cb",
-                "775503e4e6a38839bdeebcfa62dc9307547de4aa73ffa2f06eec5fcda88676db"
+                "a5ed6a46e82245c0aa3b686886b0dabc5600e66ed2014f5183e088c1ebf29d68"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gmx.fr",
-                "www.gmx.com",
+                "gmx.net",
                 "www.gmx.co.uk",
+                "www.gmx.com",
                 "www.gmx.net",
                 "www.gmx.fr"
             ]
@@ -83,8 +115,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000545,
     "types": {
+        "Image": 2,
         "Document": 5
     },
     "nameservers": []

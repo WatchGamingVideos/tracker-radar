@@ -4,12 +4,22 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000613,
-    "sites": 9,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
-        "cookie-consent-prod"
+        "cookie-consent-prod",
+        "public-prod-sp-cluster"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "api.querobolsa.com.br",
+            "resolved": "public-prod-sp-cluster.quero.space"
+        },
+        {
+            "original": "qb-api.mundovestibular.com.br",
+            "resolved": "public-prod-sp-cluster.quero.space"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -23,7 +33,7 @@
                 "Document.cookie getter": 5
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "5994bfc00327cdd1d63d3958d873d1b2974c54833473c7bd12b00429c3d545f7"
@@ -40,6 +50,97 @@
             ]
         },
         {
+            "rule": "quero\\.space\\/api\\/qb\\/v1\\/users\\/me",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-prod-sp-cluster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.querobolsa.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                },
+                {
+                    "original": "qb-api.mundovestibular.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                }
+            ],
+            "responseHashes": [
+                "31e73b9980e59f55f2c2717e2a4cfc45be303d4af2b32c70c9e3bc45c17e9c68"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "querobolsa.com.br",
+                "www.mundovestibular.com.br"
+            ]
+        },
+        {
+            "rule": "quero\\.space\\/api\\/qb\\/v1\\/recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-prod-sp-cluster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.querobolsa.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                },
+                {
+                    "original": "qb-api.mundovestibular.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "querobolsa.com.br",
+                "www.mundovestibular.com.br"
+            ]
+        },
+        {
+            "rule": "quero\\.space\\/api\\/qb\\/v1\\/recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "public-prod-sp-cluster"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.querobolsa.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                },
+                {
+                    "original": "qb-api.mundovestibular.com.br",
+                    "resolved": "public-prod-sp-cluster.quero.space"
+                }
+            ],
+            "responseHashes": [
+                "5fc5b4d3997f8e120c6de5fc7d3370f0bd2203333e56226257c622e46ba50a2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "querobolsa.com.br",
+                "www.mundovestibular.com.br"
+            ]
+        },
+        {
             "rule": "quero\\.space\\/cookie-consent\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -48,7 +149,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "e4ee244e4f1825874b1c64125b8067160f42d3d2dc3eed26dafc2517ad0fe874"
@@ -67,9 +168,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000204,
     "types": {
         "Script": 5,
+        "Fetch": 2,
+        "Preflight": 2,
+        "XHR": 2,
         "Stylesheet": 5
     },
     "nameservers": [

@@ -4,14 +4,61 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "ssl"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "gft2\\.de\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d8bb31b8928defb22116e2790783913d9c68b7b476c71f1e38e117132c7c8338"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "helpster.de",
+                "www.helpster.de"
+            ]
+        },
+        {
+            "rule": "gft2\\.de\\/gf-ub-server\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5490600e1a3941edb32faebddea1e7225dba3c91903db733353c949b47f26eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "helpster.de",
+                "www.helpster.de"
+            ]
+        },
         {
             "rule": "gft2\\.de\\/__ub\\.gif",
             "cookies": 0,
@@ -39,6 +86,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Document": 2,
+        "Script": 2,
         "Image": 2
     },
     "nameservers": [

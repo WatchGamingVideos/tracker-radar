@@ -4,21 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.0000885,
+    "sites": 13,
     "subdomains": [
         "oasjs",
-        "scripts",
         "login",
-        "box",
-        "annunci"
+        "scripts",
+        "logger"
     ],
-    "cnames": [
-        {
-            "original": "annunci.ilpiccolo.gelocal.it",
-            "resolved": "annunci.kataweb.it"
-        }
-    ],
+    "cnames": [],
     "fingerprinting": 1,
     "resources": [
         {
@@ -33,27 +27,28 @@
                 "Document.cookie getter": 3,
                 "Date.prototype.getTime": 3,
                 "Document.cookie setter": 3,
-                "window.localStorage": 3
+                "window.localStorage": 3,
+                "window.sessionStorage": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "365f5da94c75f56826e0350bddc3140c44c1ffaaa204b8b34179f1c9960a0c47",
-                "ddd1a05ad0ff37ef08f34195fe746191c3f3285abb793bea925dda156563fa4d"
+                "6569b14b9049fac5bea0707b10f51e8edc055cb6dbf51b383314270a642cd610",
+                "cff2ae5306a650382c940d8f9f4f19d52e69375f608dc691ce49089fc4500a87"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "kw_1pc_enableds": {
-                    "ttl": 311040001,
+                    "ttl": 311040000,
                     "length": 4,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 0.3333333333333333
                 },
                 "kw_prevUsrSts": {
-                    "ttl": 31536001,
+                    "ttl": 31536000,
                     "length": 5,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 0.3333333333333333
                 }
             },
@@ -61,70 +56,6 @@
             "exampleSites": [
                 "repubblica.it",
                 "dizionari.repubblica.it",
-                "www.repubblica.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/wt\\/wt\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "scripts"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
-            "cnames": [],
-            "responseHashes": [
-                "167ec3f6d0760dc2ae6bca3908a489b24bb54facb1f72e8ae56afdd520505d58",
-                "5d0b8950d2c806ae52ae5792c1943fcf98663c46b6851770aca43198cbcab7e5",
-                "5941483a3f17d0ca39d43bb53881387ef7c848ef152b1618d6a179b13cacc99b",
-                "235018208f7d768996188ead3b8a6417537ff755fafc756ee77f0a9b54b8ae80",
-                "cec96c0b8430dd43071e26cee09f55c0327b63d7bfe6fd4f0dc74128ffbad93c",
-                "88a4476c7f3f0237a3a4938c1ddf5f65175a6b8a01c76ae5a51e50dd4dd6c569"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "repubblica.it",
-                "dizionari.repubblica.it",
-                "ilpiccolo.gelocal.it",
-                "www.huffingtonpost.it",
-                "www.lastampa.it",
-                "www.mymovies.it",
-                "www.repubblica.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/adsetup\\.real\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "oasjs"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3
-            },
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [
-                "8d849ca4aa17e4399d8324699a9898d762fd307bf94dfdb3dc660f19d0a15fc3",
-                "86c327095b162f0fe2ddf7a3c832543270291407c18ac784309dfa23c06d81d3",
-                "0af5fce12650af28a8718eac81ab35344b595df57609b9f57ce88ed3647fc8c4",
-                "f10d2720fd6d1f6406709159880bc4e3b74f7184abcd6141a623826c21fedf03",
-                "c3e8f6843f7783180bcbf5fd66cd6a7428e5cf37f651349e405b383d768d428b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "repubblica.it",
-                "dizionari.repubblica.it",
-                "ilpiccolo.gelocal.it",
-                "www.huffingtonpost.it",
-                "www.lastampa.it",
                 "www.repubblica.it"
             ]
         },
@@ -137,13 +68,13 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "306fa08a172a2f41c358f0f1fc0da4e18a753b0494d3ab22f2830e98b93b5922",
-                "60ba3af0da2eb63a5e330ed10a8d1662b98ed20e3ebb2eef53838c5adb1a6fb0",
                 "047b8c39275a020cc768fcdbf77f51bedb28f25cd4ec5386f032372254ec1408",
                 "b1b9d366356c0feb547d2114b6bbc035d63eb81cae44c30b085a38280a271635",
+                "c2f5d8a35856f084b596fd28165423fb63f772a4ab5ddb0f267bab5b5a404223",
                 "7c5160f70ad4216584222ee82b73c616502768ae901d3d63d3f8fbb7c1d16de9"
             ],
             "type": "Document",
@@ -152,15 +83,48 @@
             "exampleSites": [
                 "repubblica.it",
                 "dizionari.repubblica.it",
-                "ilpiccolo.gelocal.it",
                 "www.huffingtonpost.it",
                 "www.lastampa.it",
+                "www.limesonline.com",
+                "www.repubblica.it"
+            ]
+        },
+        {
+            "rule": "kataweb\\.it\\/wt\\/wt\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "1ca386f135b4fe831b1e65db2ca6f32b4236d0c912e97e6961e1675147354c30",
+                "60865708ff43ffa8258544284df84707511ef190132d1ad97df195c872880b2d",
+                "f86d49be815945507bd5e943c0fd3dfe6324ef422c381e3e8231e3350db304e8",
+                "06f99d11fbd2512e33401372a2cbdeae2cf162c35968b287e6007b3b56fc1450",
+                "2778067ce9fe64760b6334dc10800c61bf658bc2a09807999b82c84e2a7b0514",
+                "cec96c0b8430dd43071e26cee09f55c0327b63d7bfe6fd4f0dc74128ffbad93c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "repubblica.it",
+                "dizionari.repubblica.it",
+                "www.huffingtonpost.it",
+                "www.informazione.it",
+                "www.lastampa.it",
+                "www.limesonline.com",
+                "www.mymovies.it",
                 "www.repubblica.it"
             ]
         },
         {
             "rule": "kataweb\\.it\\/login\\/js\\/api\\/sso-frame\\.js",
-            "cookies": 0.0000409,
+            "cookies": 0.0000408,
             "fingerprinting": 1,
             "subdomains": [
                 "login"
@@ -171,7 +135,7 @@
                 "Document.cookie setter": 6
             },
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "5b29976fa5119a3208f17c80978dc43bc6f0b6ecb50d9db3d4e7721b781bcca0"
@@ -179,9 +143,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "kwsso-3pc": {
-                    "ttl": 4579200004,
+                    "ttl": 4579200002,
                     "length": 1,
-                    "prevalence": 0.000040863027133050016,
+                    "prevalence": 0.00004083827363004608,
                     "uniqueness": 0.16666666666666666
                 }
             },
@@ -189,8 +153,34 @@
             "exampleSites": [
                 "repubblica.it",
                 "dizionari.repubblica.it",
-                "ilpiccolo.gelocal.it",
                 "www.huffingtonpost.it",
+                "www.lastampa.it",
+                "www.limesonline.com",
+                "www.repubblica.it"
+            ]
+        },
+        {
+            "rule": "kataweb\\.it\\/adsetup\\.real\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "oasjs"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f5b9e10c1587a1b3132124f18d4eb433ac2ca6a18af911428b007acd2c02e4b1",
+                "062e76602785f27c4b624526f10072aa833197732d216c0653aac85cc54e0530"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "informazione.it",
                 "www.lastampa.it",
                 "www.repubblica.it"
             ]
@@ -213,107 +203,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "487d03e05ff2f92ae6fffe400a329718431e3ebdafc7761e6f0503a72af0afcf"
+                "3620e098adbc22ce416a3f44f152efd8f480f5d45ce8a7e9db8cf210eb524837"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "kw_1pc_enableds": {
                     "ttl": 311040001,
                     "length": 4,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
-                },
-                "kw_prevUsrSts": {
-                    "ttl": 31536001,
-                    "length": 5,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
-                },
-                "kw_ilpiccolo_lpv_ls": {
-                    "ttl": 481,
-                    "length": 126,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
+                "limesonline.com",
+                "www.limesonline.com"
             ]
         },
         {
-            "rule": "kataweb\\.it\\/zerocomputing\\/necrologie\\/v2\\/ilpiccolo\\.html",
+            "rule": "kataweb\\.it\\/csp\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "box"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1421fe5f9cfb32539a93c386a36ae7602cc912903b796b663a4a810e8f94ce14"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/zerocomputing\\/astegiudiziarie\\/v2\\/ilpiccolo\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "box"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "8a23a5e42cdbe5da6c0aa8f8bb249351332c2b5d25e1d22310ea926c4871c3b6"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/zerocomputing\\/annunci\\/v2\\/ilpiccolo\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "box"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7a7214319543a42fafebf674156cfc60dcd684f1ee822d336b18cadcc2cafb89"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/zerocomputing\\/annunci\\/v2\\/ilpiccolo\\.html",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "box"
+                "logger"
             ],
             "apis": {},
             "sites": 2,
@@ -322,66 +234,12 @@
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/adimages\\/D\\/604604861\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "annunci"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "annunci.ilpiccolo.gelocal.it",
-                    "resolved": "annunci.kataweb.it"
-                }
-            ],
-            "responseHashes": [
-                "94fd8f19c9cb70205b2efa9b169f0a94984c9f0527191084c51b0a279d88b6d0"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
-            ]
-        },
-        {
-            "rule": "kataweb\\.it\\/adimages\\/D\\/596546460\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "annunci"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "annunci.ilpiccolo.gelocal.it",
-                    "resolved": "annunci.kataweb.it"
-                }
-            ],
-            "responseHashes": [
-                "3709b21ea5385376e98e9cac3ab08edb269e285e9c7031a8931b0b17d94bf3ea"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gelocal.it",
-                "ilpiccolo.gelocal.it"
+                "limesonline.com",
+                "www.limesonline.com"
             ]
         },
         {
@@ -411,14 +269,14 @@
     "performance": {},
     "cookies": 0.0000681,
     "types": {
-        "Script": 26,
-        "Document": 12,
-        "Image": 6
+        "Script": 24,
+        "Document": 6,
+        "Other": 2
     },
     "nameservers": [
         "ns-30.awsdns-03.com",
-        "ns-953.awsdns-55.net",
+        "ns-1380.awsdns-44.org",
         "ns-1737.awsdns-25.co.uk",
-        "ns-1380.awsdns-44.org"
+        "ns-953.awsdns-55.net"
     ]
 }

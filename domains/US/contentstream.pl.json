@@ -7,16 +7,42 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "emisja"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "contentstream\\.pl\\/aldente\\/kd_process_function\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "emisja"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a19c94bcb17f58091dd384de6517fab3028cc0f6aef73fc9447e3fa7dab923ee",
+                "a8d5b4bb0afdc55ab170ccb57dd828c6c17ae8689488606350c276140f456316"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radiozet.pl",
+                "wiadomosci.radiozet.pl",
+                "www.planeta.pl"
+            ]
+        },
+        {
+            "rule": "contentstream\\.pl\\/placement\\/stylesheet\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -27,14 +53,38 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "87da5512496e6b935910ec20e8a3b57b7ed72cc77c6418f6f17f81e0b31151e0"
+                "93eab46f824f32397ed675dac8de3a41d3f321c90f458154b4151d4b6f5313c5"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "mojegotowanie.pl",
-                "www.mojegotowanie.pl"
+                "radiozet.pl",
+                "www.planeta.pl"
+            ]
+        },
+        {
+            "rule": "contentstream\\.pl\\/_\\/getImageII\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "emisja"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0d853a223038b617396d65ff2267caf27fa412de5c5964ed9b9fd44b4b9c85f1",
+                "5f07f0f80789e407e0877cc4f63b9e06b391343d89bf453c29779daaeaf3fff0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "radiozet.pl",
+                "wiadomosci.radiozet.pl",
+                "www.planeta.pl"
             ]
         }
     ],
@@ -42,7 +92,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "Stylesheet": 2,
+        "Image": 3
     },
     "nameservers": [
         "dns200.anycast.me",

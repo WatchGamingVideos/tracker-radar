@@ -9,8 +9,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "video-api",
         "san"
@@ -28,7 +28,32 @@
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/audio\\/css\\/audioplayer\\.min\\.css",
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/js\\/vendors~hls\\.86c7ab173b594324e29e\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "video-api.wsj.com",
+                    "resolved": "video-api.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barrons.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/css\\/video\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -44,7 +69,7 @@
                 }
             ],
             "responseHashes": [
-                "18e53795f94b71c7bf85c4109b29fac0afcacf7d6a1fd1aed2da28da9b7df3d2"
+                "785395a9a8dbe4359ad96f5a5c223825a3aa1db7643320929e0810884a428f57"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -55,7 +80,7 @@
             ]
         },
         {
-            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/audio\\/js\\/audioplayer\\.min\\.js",
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/js\\/video\\.min\\.js",
             "cookies": 0.00000681,
             "fingerprinting": 2,
             "subdomains": [
@@ -71,6 +96,61 @@
                 }
             ],
             "responseHashes": [
+                "427fe25a0a54f0c24042fa500252d58584167dbbc844ad644a4d0910dde995dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/audio\\/css\\/audioplayer\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "video-api.wsj.com",
+                    "resolved": "video-api.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "18e53795f94b71c7bf85c4109b29fac0afcacf7d6a1fd1aed2da28da9b7df3d2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marketwatch.com",
+                "www.marketwatch.com",
+                "www.wsj.com"
+            ]
+        },
+        {
+            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/audio\\/js\\/audioplayer\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "video-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "video-api.wsj.com",
+                    "resolved": "video-api.wsj.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
                 "9cfb3a0e89b87ba9a6ce32ac8c2bd553031a724120dc935599150771c0bc51bb"
             ],
             "type": "Script",
@@ -78,13 +158,14 @@
                 "djvideovol": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "marketwatch.com",
+                "www.marketwatch.com",
                 "www.wsj.com"
             ]
         },
@@ -130,7 +211,7 @@
                 }
             ],
             "responseHashes": [
-                "b555f09644ed434bfec9246be00159c3857580fd5fcf8f944d601d410575f2df"
+                "eeff3411b97d018fd6fe88cf6375c750c445c32f7f5e6e6e8544cc6879488346"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -139,68 +220,14 @@
                 "marketwatch.com",
                 "www.wsj.com"
             ]
-        },
-        {
-            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/css\\/video\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "video-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "video-api.wsj.com",
-                    "resolved": "video-api.wsj.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "8e9f45d1e9c6658609e2ed89b1cb6aa143202b8e8269a722267a7dc1f45b3883"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wsj.com",
-                "www.wsj.com"
-            ]
-        },
-        {
-            "rule": "wsj\\.com\\.edgekey\\.net\\/api-video\\/player\\/v3\\/js\\/video\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "video-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "video-api.wsj.com",
-                    "resolved": "video-api.wsj.com.edgekey.net"
-                }
-            ],
-            "responseHashes": [
-                "428278d9634e7d051f3e7c0f4662854bd49da94801a60082024ed062710815b4"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "wsj.com",
-                "www.wsj.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "types": {
-        "Stylesheet": 4,
-        "Script": 4,
+        "Script": 7,
+        "Stylesheet": 5,
         "Preflight": 2,
         "XHR": 2
     },

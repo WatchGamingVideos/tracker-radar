@@ -7,31 +7,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
         "pulse.cro",
+        "cdn-cf.cms",
+        "honeycomb",
+        "api.cms",
         "global.api",
-        "cdn-cf.cms"
+        "honeycomb-icons.hive",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "flixbus\\.com\\/static\\/pulse\\.js",
-            "cookies": 0.0000341,
+            "cookies": 0.0000545,
             "fingerprinting": 1,
             "subdomains": [
                 "pulse.cro"
             ],
             "apis": {
-                "Document.cookie getter": 5,
-                "window.localStorage": 5,
-                "Document.cookie setter": 5,
-                "Date.prototype.getTime": 5
+                "Document.cookie getter": 8,
+                "window.localStorage": 8,
+                "Document.cookie setter": 8,
+                "Date.prototype.getTime": 8
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "3f0bac772fce9a9f5f01a1f753cf5113dd5cb9700129fb7e74674616eed136ea"
@@ -41,8 +45,8 @@
                 "ab_bucket": {
                     "ttl": 31536000,
                     "length": 1,
-                    "prevalence": 0.00003405252261087501,
-                    "uniqueness": 1
+                    "prevalence": 0.000054451031506728105,
+                    "uniqueness": 0.75
                 }
             },
             "firstPartyCookiesSent": {},
@@ -50,46 +54,104 @@
                 "flixbus.co.uk",
                 "www.flixbus.co.uk",
                 "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
                 "www.flixbus.nl",
+                "www.flixbus.pt",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/logos\\/flixbus\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000476,
+            "cnames": [],
+            "responseHashes": [
+                "3e12e7154251f66d4a839b8e3888167335a4b7d8e353927f7bfed2501f187d78"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.co.uk",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.pt",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/dist\\/4\\.0\\.1\\/js\\/classToggler\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "honeycomb"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "d570888a2007cf2b24b5ee4a8c93598705f285b5e1406cee22fa660412d95024"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.pt",
                 "www.flixbus.se"
             ]
         },
         {
             "rule": "flixbus\\.com\\/QFH9M\\.js",
-            "cookies": 0.0000341,
+            "cookies": 0.0000545,
             "fingerprinting": 1,
             "subdomains": [
                 "pulse.cro"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 5,
-                "Navigator.prototype.appVersion": 5,
-                "Document.cookie getter": 5,
-                "Date.prototype.getTime": 5,
-                "Document.cookie setter": 5,
-                "PerformanceTiming.prototype.navigationStart": 5,
-                "Navigator.prototype.connection": 5
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.appVersion": 8,
+                "Document.cookie getter": 8,
+                "Date.prototype.getTime": 8,
+                "Document.cookie setter": 8,
+                "PerformanceTiming.prototype.navigationStart": 8,
+                "Navigator.prototype.connection": 8
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "e2f03ae0959afc350250396403ec113781f73f87d428f4a76bef66fdd6b6ce35",
-                "cafbc54c896e5952bf16dc4b9d2f88e8d88718bee64c715889ed48d277f73d5c",
-                "5dabf8074a035aa737fcc22d3a7bf0c642f3504c2d97380ee3812278d4a2cdce"
+                "b79e3ca11e3c19bec4df5d9c3fc9603493e13d194cd5f8c2294b361387586991",
+                "1250096cfb903d0fd21457770d12e59d5743a6f6e8334a249d9b8ff31e6046e9",
+                "d6bf3961cca613deca6674ab461c995e5f54c1c4282975262d012815e8571e47",
+                "f846da1d09336e8023e178ccc1dade6ddd5ef1a16bcfdd8bee1c4d68091cb32a",
+                "232cb79004fe621b29b6478e3fbd6ec21832f93be36eded8f55284cf4f65c3c4"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "affiliate": {
                     "ttl": 1800,
                     "length": 10,
-                    "prevalence": 0.00003405252261087501,
-                    "uniqueness": 0.2
+                    "prevalence": 0.000054451031506728105,
+                    "uniqueness": 0.125
                 },
                 "_gcl_au": {
                     "ttl": 7776002,
                     "length": 24,
-                    "prevalence": 0.00003405252261087501,
+                    "prevalence": 0.000054451031506728105,
                     "uniqueness": 1
                 }
             },
@@ -98,6 +160,139 @@
                 "flixbus.co.uk",
                 "www.flixbus.co.uk",
                 "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.pt",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/language-icons\\/flags--en-gb\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "800797699753712acaeefbee8fa9750d1dbbeffe3f124229f3f788b44e6080ba"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.co.uk"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/static\\/ge2dl\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pulse.cro"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "9446e285cdf3ff22ca0f7c329bc0c6cfa871d2bedf368a2713558cede55ec8c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.co.uk",
+                "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.pt",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/2021-10\\/desktop-flix-hero-q4-2021\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "b5e3fb9fb1523a3e9be05758895c233db79802f92a113624dd16a946fd5460b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/gql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.cms"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000476,
+            "cnames": [],
+            "responseHashes": [
+                "a98b3c89715d6229f1e647488b58837b521c5f62ad39a25a9830e7a8dfccf6d8",
+                "351d1e78de31296f434a9174a0e9d8757f8e53b213fbd7d635a11c55a298008a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
+                "www.flixbus.nl",
+                "www.flixbus.pt",
+                "www.flixbus.se"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/styles\\/exploration_map_teaser_0_5x\\/s3\\/2021-05\\/map-teaser-flix\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "b5ee2dba5aa73465477896142d4bff1a80d0bf0633c1c9cebdaafa3741804cfa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.co.uk",
+                "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
                 "www.flixbus.nl",
                 "www.flixbus.se"
             ]
@@ -110,14 +305,16 @@
                 "global.api"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "b3edb9551c9a0d468ba548b3748a35794c5d21c026d368db44bb30cb5afe3f67",
-                "61372de0a775d96cd777d491a576907e170e27d4913dd884ef0663f27db02e5a",
-                "853f8548be7fb0de1d04cbffab22ac88e4449edba569c9f23ddf8746f29f5984",
-                "c3c4e4ebefea8853bb0db36006ca6868daf25a303e9cda3185d60d8e88268fde"
+                "9da76b9e39ee14cfc3c90ccea52d8f9ad2308eb305734359debad0e132c2724c",
+                "05e76c9d1a2b0c47574de34c03d3b4008b339b33c3bd4e0f05cdbe1b9c64d077",
+                "26140ad5f0b563d11c197e885a00b9353e59dc1db96660fd664d95cd93b5ffdb",
+                "df3fe6ee98d14bec83055c3ef4c094df2baa9a73f4c4cb8b3562fa016e8187ae",
+                "6f866cb496cd148d963681e5d6a63359ab8e10a79153831fc9d6005680db9973",
+                "4295b087d6f62dce29ae69a5b7f60d391bd65e92d16fe395e3bbdc5b98af0f87"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -126,37 +323,61 @@
                 "flixbus.co.uk",
                 "www.flixbus.co.uk",
                 "www.flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
                 "www.flixbus.nl",
+                "www.flixbus.pt",
                 "www.flixbus.se"
             ]
         },
         {
-            "rule": "flixbus\\.com\\/static\\/ge2dl\\.js",
+            "rule": "flixbus\\.com\\/1\\.0\\.5\\/flix-icons\\/svg\\/arrow-down\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "pulse.cro"
+                "honeycomb-icons.hive"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "531cdf3717748bcdc69b219b4e353ec88bfc8608706e32ab55556bf509a9dc63"
+                "8c5c020ca2ea9bfcc0de6aa8ea353523990bb397ea2010fd5e41b69bd8ff8d2c"
             ],
-            "type": "Script",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.co.uk",
-                "www.flixbus.co.uk",
-                "www.flixbus.de",
-                "www.flixbus.nl",
+                "flixbus.de",
+                "www.flixbus.dk",
+                "www.flixbus.fr",
                 "www.flixbus.se"
             ]
         },
         {
-            "rule": "flixbus\\.com\\/drupal-assets\\/logos\\/flixbus\\.svg",
+            "rule": "flixbus\\.com\\/drupal-assets\\/language-icons\\/flags--da\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8abe8c79d06d5a6241c5dd9f6615a5f328c3c233610d47db0bb6f5d5684910a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.dk",
+                "www.flixbus.dk"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/2020-10\\/flixbus-hero-image\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -167,64 +388,60 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "3e12e7154251f66d4a839b8e3888167335a4b7d8e353927f7bfed2501f187d78"
+                "daff7e10bc20d15ddafbe5d847b6b24cf8ab952a324d33b4fad1af00d0319dad"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.co.uk",
-                "www.flixbus.de",
+                "flixbus.dk",
+                "www.flixbus.fr",
                 "www.flixbus.nl",
                 "www.flixbus.se"
             ]
         },
         {
-            "rule": "flixbus\\.com\\/drupal-assets\\/2021-10\\/desktop-flix-hero-q4-2021\\.jpg",
+            "rule": "flixbus\\.com\\/drupal-assets\\/language-icons\\/flags--fr\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn-cf.cms"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b5e3fb9fb1523a3e9be05758895c233db79802f92a113624dd16a946fd5460b4"
+                "bfcff6a1d05657191d4f9a6b212dd7e6230131f853a801797dbbba82182c5552"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.co.uk",
-                "www.flixbus.de",
-                "www.flixbus.nl",
-                "www.flixbus.se"
+                "flixbus.fr",
+                "www.flixbus.fr"
             ]
         },
         {
-            "rule": "flixbus\\.com\\/drupal-assets\\/styles\\/exploration_map_teaser_0_5x\\/s3\\/2021-05\\/map-teaser-flix\\.jpeg",
+            "rule": "flixbus\\.com\\/drupal-assets\\/language-icons\\/flags--nl\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "cdn-cf.cms"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b5ee2dba5aa73465477896142d4bff1a80d0bf0633c1c9cebdaafa3741804cfa"
+                "f117e05ee9fb303141f3a50676feeacb49d58f92a2a0aa93f89e8e41ed07895b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.co.uk",
-                "www.flixbus.de",
-                "www.flixbus.nl",
-                "www.flixbus.se"
+                "flixbus.nl",
+                "www.flixbus.nl"
             ]
         },
         {
@@ -235,32 +452,73 @@
                 "global.api"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aba7ac54037fbb68956bf157cd5e1503e30ddb2bd1e383ec65c138747f9ce462",
-                "4988b6c51df2b2111c1dddf5f598b25570d0fe7028c748977d4237d458719c8b",
-                "582031ebf11e53f57199fea38c4bfbd4dc800d0539d44736f3028b6f21404dac"
+                "d74da881dc6287cd9e0401293fb0c0c242e95349b0a40f495327cd3e7c13d433"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "flixbus.co.uk",
-                "www.flixbus.de",
-                "www.flixbus.nl",
+                "flixbus.nl",
+                "www.flixbus.pt"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/flux\\/cujo\\/com\\.coconut\\.island\\/strawberry",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.pt",
+                "www.flixbus.pt"
+            ]
+        },
+        {
+            "rule": "flixbus\\.com\\/drupal-assets\\/language-icons\\/flags--sv\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-cf.cms"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd8de8320f2dea82989154ac16c284943fe55256e32fb31802c65abb1c4e4afd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flixbus.se",
                 "www.flixbus.se"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000545,
+    "cookies": 0.0000953,
     "types": {
-        "Script": 15,
-        "Fetch": 9,
-        "Image": 12
+        "Script": 30,
+        "Image": 37,
+        "Fetch": 17,
+        "XHR": 2
     },
     "nameservers": [
         "ns-649.awsdns-17.net",

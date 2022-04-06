@@ -4,12 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000749,
-    "sites": 11,
-    "subdomains": [],
+    "prevalence": 0.0000885,
+    "sites": 13,
+    "subdomains": [
+        "eu"
+    ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "httpbin\\.org\\/stream-bytes\\/50000000",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "418e1e801a2bb14033eef13dff50da8e5cef0ea128ee951c93dffb2e40c9c4a7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msf.org",
+                "www.msf.org"
+            ]
+        },
         {
             "rule": "httpbin\\.org\\/base64\\/PHNjcmlwdD5vbm1lc3NhZ2UgPSBlID0+IGUuZGF0YS5wb3N0TWVzc2FnZShuYXZpZ2F0b3IuY29va2llRW5hYmxlZCk8L3NjcmlwdD4=",
             "cookies": 0,
@@ -19,7 +43,7 @@
                 "Navigator.prototype.cookieEnabled": 6
             },
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "c33bd70b7e0ec05c821754c7865567cb7fbd81fc28e5acb125b151324a674774"
@@ -28,12 +52,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "thelocal.ch",
-                "www.thelocal.ch",
+                "thelocal.de",
                 "www.thelocal.de",
                 "www.thelocal.dk",
                 "www.thelocal.es",
                 "www.thelocal.fr",
+                "www.thelocal.it",
                 "www.thelocal.se"
             ]
         }
@@ -42,6 +66,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Fetch": 2,
         "Document": 7
     },
     "nameservers": [

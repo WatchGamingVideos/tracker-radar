@@ -965,7 +965,7 @@
                 "has_js": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -1452,11 +1452,13 @@
         {
             "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/js\\/scripts\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "www"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -1560,7 +1562,7 @@
                 "civicAllowCookies": {
                     "ttl": 7776002,
                     "length": 3,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
@@ -1681,6 +1683,26 @@
             ]
         },
         {
+            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-r-webfont-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vandale.be",
+                "www.vandale.be"
+            ]
+        },
+        {
             "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/images\\/translate-form-submit\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1695,26 +1717,6 @@
                 "8c92b7aa5d84004e8f6edceebe0d66f6d4ecdf4d6aab34b1b1ff86ece5a9582b"
             ],
             "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vandale.be",
-                "www.vandale.be"
-            ]
-        },
-        {
-            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-r-webfont-webfont\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1787,6 +1789,46 @@
             ]
         },
         {
+            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-r-webfont-webfont\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vandale.be",
+                "www.vandale.be"
+            ]
+        },
+        {
+            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-i-webfont-webfont\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vandale.be",
+                "www.vandale.be"
+            ]
+        },
+        {
             "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/images\\/translate-options-selected\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1829,46 +1871,6 @@
                 "vandale.be",
                 "www.vandale.be"
             ]
-        },
-        {
-            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-r-webfont-webfont\\.ttf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vandale.be",
-                "www.vandale.be"
-            ]
-        },
-        {
-            "rule": "vandale\\.nl\\/sites\\/all\\/themes\\/vandale\\/fonts\\/gentiumplus-i-webfont-webfont\\.ttf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vandale.be",
-                "www.vandale.be"
-            ]
         }
     ],
     "categories": [],
@@ -1881,8 +1883,8 @@
         "Font": 8
     },
     "nameservers": [
-        "ns1.nines.nl",
         "ns2.nines.nl",
-        "ns3.9-9-9-9-9.net"
+        "ns3.9-9-9-9-9.net",
+        "ns1.nines.nl"
     ]
 }

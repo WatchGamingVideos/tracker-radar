@@ -17,10 +17,10 @@
             "resolved": "lb.oas.me"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "oas\\.me\\/tour\\/public\\/js\\/manifest-40ef529788dac1124948\\.js",
+            "rule": "oas\\.me\\/tour\\/public\\/js\\/manifest-b45539e57a65aa11fc2d\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -31,7 +31,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "572035a29c5c1fa132579d513f9b57a99185839e0828f0279860b9ff2502eefe"
+                "6b17eb370b62ec5cfb2bbc28731dce63c4b5915f939868efb1c7460ccfea16cb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "rule": "oas\\.me\\/tour\\/public\\/css\\/old-b5064d693fa226ad39fa2574098c4bd1\\.css",
+            "rule": "oas\\.me\\/tour\\/public\\/css\\/old-bf5ec2cf643cf64b7841cf6c7c36587c\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -53,7 +53,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2520971d134d2ff035e0a644ddc1bff671a12e07d63c43f7247266b6f3b90541"
+                "02cd7f7cfa318d283e3121def384c3bfec3361f6949d31adbb1bafa18a31fa0f"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -71,9 +71,9 @@
                 "p"
             ],
             "apis": {
-                "Document.cookie getter": 1,
-                "Navigator.prototype.cookieEnabled": 1,
-                "Navigator.prototype.userAgent": 1
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -119,7 +119,9 @@
                 "p"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 1
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -169,7 +171,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e6696aa52af2bbe46def8b127cfc6c9bbc928970c7f6f55532a58a224155ad14"
+                "110477b09de5360873b58baa41e485fad6758675963abd735a0d9d63342a754c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -224,20 +226,23 @@
             ]
         },
         {
-            "rule": "oas\\.me\\/assets\\/fonts\\/bebas\\.ttf",
+            "rule": "oas\\.me\\/tour\\/home\\/sample_video\\/sample_video\\.mp4",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "p"
+                "lb"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "84970aae6371b7d037ed8b83ac4b89ec2c99996c77a8a10cd12731ac780ee700"
+            "cnames": [
+                {
+                    "original": "tour.onlytease.com",
+                    "resolved": "lb.oas.me"
+                }
             ],
-            "type": "Font",
+            "responseHashes": [],
+            "type": "Media",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -268,6 +273,28 @@
             ]
         },
         {
+            "rule": "oas\\.me\\/assets\\/fonts\\/bebas\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84970aae6371b7d037ed8b83ac4b89ec2c99996c77a8a10cd12731ac780ee700"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onlytease.com",
+                "www.onlytease.com"
+            ]
+        },
+        {
             "rule": "oas\\.me\\/mtc\\/event",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -279,7 +306,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9b356c7e2381b556afee7c15e7e6d0457265c09bdf38ae26ab61f4e7cdcd48cc"
+                "91574e40c26285add8ea5c70570948ebabc46c3ee8d60584b249d88c9796b58a"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -308,31 +335,6 @@
                 "onlytease.com",
                 "www.onlytease.com"
             ]
-        },
-        {
-            "rule": "oas\\.me\\/tour\\/home\\/sample_video\\/sample_video\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lb"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "tour.onlytease.com",
-                    "resolved": "lb.oas.me"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onlytease.com",
-                "www.onlytease.com"
-            ]
         }
     ],
     "categories": [],
@@ -343,12 +345,12 @@
         "Stylesheet": 4,
         "Image": 2,
         "Font": 8,
+        "Media": 2,
         "XHR": 2,
-        "Preflight": 2,
-        "Media": 2
+        "Preflight": 2
     },
     "nameservers": [
-        "amit.ns.cloudflare.com",
-        "alla.ns.cloudflare.com"
+        "alla.ns.cloudflare.com",
+        "amit.ns.cloudflare.com"
     ]
 }

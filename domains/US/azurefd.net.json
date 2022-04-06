@@ -4,39 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0012,
-    "sites": 176,
+    "prevalence": 0.00118,
+    "sites": 173,
     "subdomains": [
+        "origin-dwww-prod",
         "consentdeliveryfd",
         "consentdeliveryfd-int",
-        "origin-dwww-prod",
-        "armaccount",
+        "toto-portal-prd",
         "clb-euw-magento-prod-waf-afd",
         "fd-sisu-api-pcr",
         "func-app-frnt-door-prem.z01",
+        "p2pcontent-fd-prod",
         "fd-nhsbt-live",
+        "cineplanetchile",
         "fdcolesapimprod",
+        "dozproduction",
         "drinkawarefd",
         "tf-frontdoor",
         "fps-prod-na-frontdoor.z01",
+        "lwpixel",
         "waypoint-content-prod",
         "hbpulse",
         "voilaloginseconnecter",
         "sd-tagging",
+        "museumnlprod-frontdoor",
         "prdnwgraph",
         "ouigo-p-window-sales-fd-01",
         "ouigo-p-window-data-fd-01",
         "tcrprduwfd001",
-        "toto-portal-prd",
         "vfdso-frontdoor-prd",
-        "cep-apim-fd-prd",
-        "vivaairfd"
+        "cep-apim-fd-prd"
     ],
     "cnames": [
-        {
-            "original": "account.arm.com",
-            "resolved": "armaccount.azurefd.net"
-        },
         {
             "original": "api-data-fr.ouigo.com",
             "resolved": "ouigo-p-window-data-fd-01.azurefd.net"
@@ -62,8 +61,24 @@
             "resolved": "fdcolesapimprod.azurefd.net"
         },
         {
+            "original": "azcdn.doz.pl",
+            "resolved": "dozproduction.azurefd.net"
+        },
+        {
+            "original": "casino-cdn.toto.nl",
+            "resolved": "toto-portal-prd.azurefd.net"
+        },
+        {
+            "original": "cdn.museum.nl",
+            "resolved": "museumnlprod-frontdoor.azurefd.net"
+        },
+        {
             "original": "cdn.vattenfalleldistribution.se",
             "resolved": "vfdso-frontdoor-prd.azurefd.net"
+        },
+        {
+            "original": "chile.apis.cineplanet.cl",
+            "resolved": "cineplanetchile.azurefd.net"
         },
         {
             "original": "cms.fiji.travel",
@@ -114,78 +129,12 @@
             "resolved": "consentdeliveryfd.azurefd.net"
         },
         {
-            "original": "webapis.vivaair.com",
-            "resolved": "vivaairfd.azurefd.net"
-        },
-        {
             "original": "wpcontent.svc.halowaypoint.com",
             "resolved": "waypoint-content-prod.azurefd.net"
         }
     ],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "azurefd\\.net\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
-            "cookies": 0.000381,
-            "fingerprinting": 1,
-            "subdomains": [
-                "consentdeliveryfd",
-                "consentdeliveryfd-int"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Document.cookie getter": 3,
-                "Document.cookie setter": 3
-            },
-            "sites": 57,
-            "prevalence": 0.000388,
-            "cnames": [
-                {
-                    "original": "wcpstatic.microsoft.com",
-                    "resolved": "consentdeliveryfd.azurefd.net"
-                },
-                {
-                    "original": "wcpstatic-int-cn.microsoft.com",
-                    "resolved": "consentdeliveryfd-int.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "919dca34db91911735f214ed2cff5e08f37459d94a364afb3df187baf1f77aff",
-                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "MSCC": {
-                    "ttl": 86401,
-                    "length": 2,
-                    "prevalence": 0.00016345210853220007,
-                    "uniqueness": 0.041666666666666664
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "answers.microsoft.com",
-                "docs.microsoft.com",
-                "social.msdn.microsoft.com",
-                "social.technet.microsoft.com",
-                "support.microsoft.com",
-                "www.microsoft.com",
-                "appsource.microsoft.com",
-                "zone.msn.com",
-                "live.com",
-                "community.powerbi.com",
-                "support.skype.com",
-                "powerautomate.microsoft.com",
-                "developer.microsoft.com",
-                "account.microsoft.com",
-                "code.visualstudio.com",
-                "www.typescriptlang.org",
-                "todo.microsoft.com",
-                "templates.office.com",
-                "powerapps.microsoft.com",
-                "forzamotorsport.net"
-            ]
-        },
         {
             "rule": "azurefd\\.net\\/core\\/modules\\/system\\/css\\/components\\/hidden\\.module\\.css",
             "cookies": 0,
@@ -275,8 +224,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -291,6 +240,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -383,8 +333,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -399,6 +349,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -410,8 +361,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -426,6 +377,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -437,8 +389,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -453,6 +405,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -464,8 +417,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -480,6 +433,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -491,8 +445,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -507,6 +461,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -518,8 +473,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -534,6 +489,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -545,8 +501,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -561,6 +517,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -572,8 +529,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -588,6 +545,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -599,8 +557,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -615,6 +573,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -626,8 +585,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -642,6 +601,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -653,8 +613,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -669,6 +629,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -680,8 +641,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -696,6 +657,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -707,8 +669,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -723,6 +685,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -734,8 +697,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -750,6 +713,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -761,8 +725,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -777,6 +741,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -788,8 +753,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -804,6 +769,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -815,8 +781,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -831,6 +797,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -842,8 +809,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -858,6 +825,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -869,8 +837,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -885,6 +853,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -896,8 +865,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -912,6 +881,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -923,8 +893,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -939,6 +909,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -950,8 +921,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -966,33 +937,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
-                "www.o2.co.uk"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/fonticon\\/o2-icon-font\\/fonts\\/o2-icon-font\\.ttf",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "origin-dwww-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "static-www.o2.co.uk",
-                    "resolved": "origin-dwww-prod.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "64d369bd643f15b82529b47e795f2166228e806c13335fd5a535d5a597c8695c"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -1004,8 +949,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -1020,6 +965,35 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/fonticon\\/o2-icon-font\\/fonts\\/o2-icon-font\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "64d369bd643f15b82529b47e795f2166228e806c13335fd5a535d5a597c8695c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -1031,8 +1005,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -1047,6 +1021,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
@@ -1058,8 +1033,8 @@
                 "origin-dwww-prod"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [
                 {
                     "original": "static-www.o2.co.uk",
@@ -1074,63 +1049,1522 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "o2.co.uk",
+                "stores.o2.co.uk",
                 "www.o2.co.uk"
             ]
         },
         {
-            "rule": "azurefd\\.net\\/tfp\\/armb2c\\.onmicrosoft\\.com\\/b2c_1a_arm_accounts\\.susi\\/v2\\.0\\/\\.well-known\\/openid-configuration",
-            "cookies": 0.0000136,
+            "rule": "azurefd\\.net\\/mscc\\/lib\\/v2\\/wcp-consent\\.js",
+            "cookies": 0.000374,
+            "fingerprinting": 1,
+            "subdomains": [
+                "consentdeliveryfd",
+                "consentdeliveryfd-int"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 55,
+            "prevalence": 0.000374,
+            "cnames": [
+                {
+                    "original": "wcpstatic.microsoft.com",
+                    "resolved": "consentdeliveryfd.azurefd.net"
+                },
+                {
+                    "original": "wcpstatic-int-cn.microsoft.com",
+                    "resolved": "consentdeliveryfd-int.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "daf7759fedd9af6c4d7e374b0d056547ae7cb245ec24a1c4acf02932f30dc536"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "MSCC": {
+                    "ttl": 86400,
+                    "length": 2,
+                    "prevalence": 0.00013612757876682027,
+                    "uniqueness": 0.05
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "microsoft.com",
+                "answers.microsoft.com",
+                "docs.microsoft.com",
+                "social.msdn.microsoft.com",
+                "social.technet.microsoft.com",
+                "support.microsoft.com",
+                "www.microsoft.com",
+                "www.mono-project.com",
+                "products.office.com",
+                "code.visualstudio.com",
+                "social.microsoft.com",
+                "techcommunity.microsoft.com",
+                "devblogs.microsoft.com",
+                "blogs.microsoft.com",
+                "www.seaofthieves.com",
+                "flow.microsoft.com",
+                "powerapps.microsoft.com",
+                "community.dynamics.com",
+                "todo.microsoft.com",
+                "powerusers.microsoft.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/Uniform-Regular-webfont\\.woff2",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "armaccount"
+                "toto-portal-prd"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "account.arm.com",
-                    "resolved": "armaccount.azurefd.net"
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
                 }
             ],
             "responseHashes": [
-                "76b15c0b5488ad38fc44d5de84bf29eee2789ccb227c07dd94cd18bda4bd3dec"
+                "ca112b5624cbf37b842bbbe4d9c62a5c10b17371ceb41534956bba4c55b4af38"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/Uniform-Bold-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3dcc19a264940f7079e081f636ae5ab9bcbaf9c1b6a168c8150cde80fddfc0f1"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/generated\\/shared\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "09ab2073d250c92340e537edcd2af6a1aaa9a5cce1704bcfe22c2461c38f8162"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/nlportal-header\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e10336cc8822885cf76c4bdbb2e89da6dfe4a29ca5314b7804835a8ae228dd6c",
+                "0942ca910a2db72768b7ca77f12b881864249115e2f0b4f06c33171e81fef5c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/nlportal-browser-detection\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "072099a5825d6a0d046e1306a07e69a19db503f74fd9672f54a9bbdabec01883"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/Uniform-Bold-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "355499e02730d41d064d35f4c41e7ca039abe97b840a52c2f77ddbd38b13507e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/Uniform-Regular-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "64a0677a659b538dded21aec62d6e38b824c32b7ec1f032b5a2546b6b2174add"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/UniformCondensed-Black-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "d14db62a7f73238fc3daa26849c1be9452c25713fb326838d80fa8118423ca81"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/fonts\\/UniformCondensed-Bold-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e5900e5a2b7ba5b66c1cb1afbf63aa2f540c6cf332d80b7b81e87f5b96a302c6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fonts\\/Uniform-Regular-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ca112b5624cbf37b842bbbe4d9c62a5c10b17371ceb41534956bba4c55b4af38"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fonts\\/Uniform-Bold-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3dcc19a264940f7079e081f636ae5ab9bcbaf9c1b6a168c8150cde80fddfc0f1"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fonts\\/UniformCondensed-Bold-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "4707d96f7a927aa0d517c4f325e5f8deb7dc70456cccf5d0f659f34a7a2cbb21"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/fonts\\/UniformCondensed-Black-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a10b06b731fd9577289b84b14ea2c0ace1380e55d3b2aaa5af4734525f69b782"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/logos\\/logo-toto-wok\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "246838183a108a80e94cce34f28ac1dbf398af545ed830a7772f849a0bc18bc1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/nlportal-footer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "8d21ad53880d3473eb13f07c4a1d31f4ffc6670487f9266d19364ece35409a56",
+                "620b2b8762f93ad5a419d18678af5ed770292131e10078dcb4f88420c5725657"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/generated\\/shared\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "cd537975b59439be17382fe1ca6213a1dc8d99fbff82ba6415882cb160b1f693"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/service-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "46fd538616b574ccbd349cc25f2807e7f322213599c9540fe737d2ebf7a8160a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/statics\\/generated\\/symbols\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "69f4b9681255a4f094fcd90425fdb6afc7f8ac113e8d3b9b5fa491b667ebfc04"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arm.com",
-                "developer.arm.com"
+                "toto.nl",
+                "casino.toto.nl"
             ]
         },
         {
-            "rule": "azurefd\\.net\\/armb2c\\.onmicrosoft\\.com\\/b2c_1a_arm_accounts\\.susi\\/oauth2\\/v2\\.0\\/authorize",
-            "cookies": 0.0000136,
+            "rule": "azurefd\\.net\\/images\\/ksa-logo\\.jpeg",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "armaccount"
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "8e93a055a2e160c1a2ce650997b3700181a19201f4498f7d090c42ee605e5a52"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/images\\/nederlandse-loterij-logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-header-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "22468eec3e58fe267c3022e93bc56ca5988ad7a6cbfe9c023dafd42621b4a6d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/dfb9cdd3-68ac-4ea6-abf1-fb142c083678",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "account.arm.com",
-                    "resolved": "armaccount.azurefd.net"
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
                 }
             ],
-            "responseHashes": [],
-            "type": "Document",
+            "responseHashes": [
+                "378dde6df9c6f7ced9ca3b3b0d70e9abd13c8ae34c9f71ec432338306fe14373"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arm.com",
-                "developer.arm.com"
+                "toto.nl",
+                "casino.toto.nl"
             ]
         },
         {
-            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/M-EXPAND-EUR\\.jpg",
+            "rule": "azurefd\\.net\\/assets\\/a2f82fc5-496a-440c-8d44-d6c4f6df64de",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "60a458e11fda79628c32a8c4eb1106c04dbdff24f12d9820fa4a354629c882df"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/4fca8264-df81-4d4a-b053-027032a45f72",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e7e6d7fb572f16804137a1756b307f0712b8a330f8c26398da4308255336240e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/c6f62bf5-653f-4b7e-af0f-32d7998c8bb7",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "bf1c0d268936199ee991cba69460195f2ea37dc756a1729b4b417598385bdbeb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/1c740396-62c2-4a07-bf40-e7f64e956ebc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "b6f0bc8117266998430cfb76fea2f4f7c8c2d0afb016748725ecd071d5c9e540"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/2a8ae4fe-5dec-4269-9be0-b2417cc63752",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "cef0044e9569cdf0119eada0474728a696e99f9fe9b2a769dc1db46d0759d37d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/8c88aecd-7260-433b-8791-dabc9f85bdec",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f39ff2b644d9c5b8900f56a3c8b7aad34d19e8f15434040d5e3014e838ad0c00"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/a01e13be-f6de-477e-8bb9-f5241a4e8e12",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f6826ea9f606fa0a7b39c30364c388c26c148d06aa2fcc383b194aff1b28534d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/28445419-0bd6-41a4-84f5-4c3365a35fa5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5bffbae98c8f694dcad1418132f6febc7173405ca9f125aeacdf350929be1e12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/36027f31-0a5a-4e65-bb43-a63d061a82eb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "7b8635f11574216d52ce5e5787559f26f325c7292370c696531d527f915a0ff5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/dd26611f-6477-4121-becd-040c2f9b501c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "34a20dfde95b72bc9ae6f410b4cf3069c5c8715c53b6774a35ac0b17c7bca86d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/99946866-bcad-48a8-862b-bc9f5c09ce0a",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "21399e1735ecccedc463adedd65dca8145eb7196c6f01017ac7fda1b54bee0fe"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/b75b2c15-2514-482f-ba9e-f9d55c718b54",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f5edffe2ba675403648e1ce7834bdbee7f84ba49de8a18a4ee1db3e93b4e8da2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/47f1180a-eafe-455e-898d-fce872ceecba",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3fc4e08449303d5ba9993e9cb76546081e6e7059f1e5d8f908228ebc56f598eb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/e084b59b-3085-462f-a2ac-07890468d065",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "2cbd75e162e36a84f86616bbe19293adc641da259b2fb7361aa1b843c3bb391f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/175a6c27-779b-4692-a72a-5bc106d78983",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "991a00e6d26c4b24d70df8ce42642b4c1ca015915054262c85410c40e4fa7ca8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/4086f883-cd43-498a-bd15-ea534088751c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "aafa6a2bc031b874b382e77be0ff215729998facc73869b64cd2bfd565a71afc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/766fced7-b2ea-401e-8822-46deccd23ee3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5c54c7e3496b202adbe0f9d5bd01b6b5e2f45532a218402c3a8d44ee81468903"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/3cdaf816-7713-406d-b2c8-df0f9541ebd3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "942e4e274b6863fe15d91c1a97c0f093023af89e599b251b0f96bdffd4f10a17"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/68d65a20-5f40-4792-9ffb-8fd0604ef51e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a0f96afe3efee72166f339d76c2c086b3511708bbf2ffd38c9ba087c942ad0df"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/6597a725-629d-4c70-9d73-5cc1dde05ef4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "b11c0e72a03f72ac98d3c45e3de71a3192fedbb8dd76d91a7ac2502d262955af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/ecce6513-7d70-4a59-8548-255624c67205",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5dbf2540ca20c71dd96931de56d6d890b3875961e1d3ca67ec67c4ffb56559ec"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/ddf05bd2-3486-4f54-86e6-a89d85b02c78",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e557cf36fcf3433a450595130525922d2cd7cfaba0402ff20936eec9421e872c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/cdc90a07-ed78-42e2-b22f-c5f527422c58",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "27d4688464767a0584ece92fd902822584c98ec4855e8fda2e5d8b5916113e28"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/d91a34e8-47be-45a8-b487-656c71670df8",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "eb880e343dd782c9353e7d67020ef0e1bb868452f385836153ecad450ca36b2c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/ba76b52e-11f5-4a97-9fce-5bfc3960e733",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "b6dc2f13bdce1111f4e2a004e27e1a54f5c933b779847878a9a36f20f28e43dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/481b3933-9a0e-40c2-9035-8f2f63d14121",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "22d4b8a581aa8c484452d4ec4ee834631fdd048e9b01bab79fd0fd420b77f23e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/2d1a54c3-c9ba-478b-ac66-f789aeb1a8b0",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3fc02895718960cb07fa4370eae55ddc54a5b2bd4c40b710abd609b9a37b774c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl",
+                "extra.toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/65ba08e4-37de-4a91-8b4c-7d97002ea545",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ed5afe04e07d45ba708f31bd366acb47152ca8ac56edc018e6ceb51fa164cd59"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/65ba08e4-37de-4a91-8b4c-7d97002ea545",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ed5afe04e07d45ba708f31bd366acb47152ca8ac56edc018e6ceb51fa164cd59"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/05aa6c8c-c1f2-4c88-b5e0-b591aba81f56",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "bfe26f21640a6a0a4055da25dbf3389d311fcb77e5d302f002ffa1b52e8dc546"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/05aa6c8c-c1f2-4c88-b5e0-b591aba81f56",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "casino-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "bfe26f21640a6a0a4055da25dbf3389d311fcb77e5d302f002ffa1b52e8dc546"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "casino.toto.nl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/W-EXPAND-1-EUR_3\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1146,7 +2580,7 @@
                 }
             ],
             "responseHashes": [
-                "6ef20fd2eed14195adde92da0475023c6aeabc7d44ef24290d1c6032f1e9a182"
+                "ce7407717518775d80289ccdf9d5baa31a714db39aca1171a29e313e02593fdf"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1157,7 +2591,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/W-EXPAND-CARASKY\\.jpg",
+            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/W-EXPAND-1-EUR_2\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1173,7 +2607,7 @@
                 }
             ],
             "responseHashes": [
-                "37a39af609d29da2a37d86ee58c94fd9cb421cf9f2d3043c864e6e32404c40a1"
+                "94f9a02ab92ce3a9af3e0a9225d8d265016bc1910ead40e357e642eb09f7d16f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1184,7 +2618,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/M-EXPAND-1-EUR\\.jpg",
+            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/M-EXPAND-1-EUR_2\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1200,7 +2634,7 @@
                 }
             ],
             "responseHashes": [
-                "f3d850c6feec1c196fde41ed9415b8e0aff2d902a259b05a21ac024a7afdf85c"
+                "8b03128edeba3e6c245ff02cc9a33d6fcfe2b9d7cce1d60e22b0a2374f72950f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1211,7 +2645,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/M2_M_EXPAND_2\\.jpg",
+            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/M-EXPAND-2-EUR_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1227,7 +2661,7 @@
                 }
             ],
             "responseHashes": [
-                "70dfcec724ae3ca328577aeaf065f9da81656447d8a05a8124530bb657193cf7"
+                "58fe93e3ae9100e46b82a34a72857e5b14ed5111517efe4e4698590823910f48"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1238,7 +2672,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/MENU_ME_ST_VAL\\.jpeg",
+            "rule": "azurefd\\.net\\/media\\/wysiwyg\\/EXPAND_M2\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1254,7 +2688,7 @@
                 }
             ],
             "responseHashes": [
-                "dc3e836f759bf164b14d985b6ba39afea5b9afaf68b5d3a8b85580e7df88c8e2"
+                "4809def0a58c82776df7adbab0a896691fc4d009706f78cdf227d828d21fc12c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1373,6 +2807,33 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/assets\\/b9a64e39-ed53-43bf-9364-1ba0692ed921",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "toto-portal-prd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "portal-cdn.toto.nl",
+                    "resolved": "toto-portal-prd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "085d8c5ed0306875fa799b1473fbe36b57814f24ded04e96190f8f53493b51b9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toto.nl",
+                "www.toto.nl"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/api\\/v1\\/oferta\\/categoria",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -1416,7 +2877,7 @@
                 }
             ],
             "responseHashes": [
-                "1be87447ac590bc81ff1a6c7248e3d9220e94bc360fc56471f04f2e981b67106"
+                "fe6e28b08544aa6df3bb8ad5d2429c18899439686643dbc55dfd58a37abaf238"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1451,6 +2912,493 @@
             "exampleSites": [
                 "mec.gov.br",
                 "sisu.mec.gov.br"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/img\\/header-xxl\\/header-xxl-grad-1px-repeat\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "8c157facfedfa62ac0943e7ab32e9870b2925d4edc3c667f390db814e2db282b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/img\\/header-xxl\\/header-xxl-diagonal\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3ec156875e1dd36add183ea111943bbadfa4fb2758a9b01b8e0158c4aaaa8c0b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/img\\/label-xxl\\/label-xxl-shadow1100\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5d0667a375d3115795a44ef0a21faa19051d5bffc8a444f071da2dee6db71fea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/img\\/label-xxl\\/label-xxl-line1100\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f9f0b469bde5beabf18994d00d57d3501d5679a0c71b4119a97a66aaee4f0b80"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/img\\/global\\/promo-cta-arrow\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "47058a5bd29f6e3bb7cdd685090c53be712937c9c070f1176db05d838561e491"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "stores.o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/css\\/css_X1EZyHOc9LQkLtctIvcQqW-5iAnRdXb_5sBqKEsUC8g\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5f5119c8739cf4b4242ed72d22f710a96fb98809d17576ffe6c06a284b140bc8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/css\\/bootstrap-theme\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5a03ef3ae970c5aa1c197975c452b2ecced8a358dac6b07e6eee0e4de1d731cd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/css\\/accessibility\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "68a0ce727d0bd6311854d69d221c252fff9f810ae43eb0b22ebac1cf16009878"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/css\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5307b653491f602abebd3b014c4bc2381821768b4c44dfac3bb0b0be26a9e6b7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/js\\/main\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a1bd0d6c83c6a402cfebf749e4dff7027ded400a2905d76310b9bc8dec59e797"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/js\\/js_qqF19QphlsuSePEGQKoa9dOQoSDjz0gQEexwgWMVc7Y\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "aaa175f50a6196cb9278f10640aa1af5d390a120e3cf481011ec7081631573b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/modules\\/custom\\/o2_analytics\\/js\\/eckoh\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f33ccc18bef40240dba26d3464c550f4553481660a52380740739b0ee907a2d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/js\\/custom\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "3acb0c9f88ca1f0187df6d9ab6fa4a7703ea065accddbfa130fc12bb3e8eeb4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/js\\/js_Xx_9cUDVc3zxJQ0fhXa_QBAoEUplPN0tbXeAwwZF6l4\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5f1ffd7140d5737cf1250d1f8576bf401028114a653cdd2d6d7780c30645ea5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/js\\/accessibility\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "95108be50fb9627f99c1546765c4f945864b36cbc28c90945cc89fb6d18674ad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/sites\\/default\\/files\\/js\\/js_7dw8DpOJjvzpSV2bnh4iFzfX15tfl5LNcfJf1M8VUeg\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "eddc3c0e93898efce9495d9b9e1e221737d7d79b5f9792cd71f25fd4cf1551e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/js\\/otherLoadCss\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "fabe9e638587e4a2061852908067e295c3d6f8feb595ab85f84e438cc0815665"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/themes\\/o2_theme\\/js\\/search\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "origin-dwww-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-www.o2.co.uk",
+                    "resolved": "origin-dwww-prod.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "98491f1b6fd4b83608d98f2363dd4bee9748a24338c6078dcd5b62a4edf0c8f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "o2.co.uk",
+                "www.o2.co.uk"
             ]
         },
         {
@@ -1511,6 +3459,52 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/components\\/shared\\/component-base\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p2pcontent-fd-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1daa02690581f9f690e084d1091de946789719cf3652caa3de6580531a3056c7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alaskaair.com",
+                "www.alaskaair.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/components\\/shared\\/component-base\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "p2pcontent-fd-prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d423f732de826a184d244184628c4e9069d35832690df3f1bd6be787294ee996"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alaskaair.com",
+                "www.alaskaair.com"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/Home\\/GetContextMenu\\/",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -1527,7 +3521,7 @@
                 }
             ],
             "responseHashes": [
-                "4574adccb5b4aa8b2d09d886f129bce0198b24417ad4d506ed554093e73617e1"
+                "052d5e8c93237f903178894689519eeaa51f54982c9ddcd7d4c6095a05a6c249"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -1535,6 +3529,370 @@
             "exampleSites": [
                 "blood.co.uk",
                 "www.blood.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/highlights",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/highlights",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "d1413e8c2ac5b8df25a910a1cd5699041ada3ebbf42bc8fd905f3e0e41a2bb50"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/bootstrapdata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "affde8342787dace580052faacb0ec0a17830251aa84f7c640ddbe28b11d733d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/bootstrapdata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/advertisements",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "baad7cd203dc501a6be1883ff644d98cc74bc10daf006d4514f853866a1c0483"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/advertisements",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/cinemascache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "0c99374eca46bccbcefff6780987a30c191b09597126e77beae8f1f9b31984ab"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/cinemascache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/moviescache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5af867b8829155c6fc6334df0f25f25fd1426a1f8db62fe1af33c5e5e7c62ac0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/moviescache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/sessioncache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "40c208120ef7aead0109d67cb0c7b509665ddf08893dee010fa1fa7128e07d70"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/cache\\/sessioncache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/vms\\/api\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cineplanetchile"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chile.apis.cineplanet.cl",
+                    "resolved": "cineplanetchile.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f4b7e00395f4b7e088ec451849cbf5cfff57c88d03f2f5c2af5c789ef8744738"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cineplanet.cl",
+                "www.cineplanet.cl"
             ]
         },
         {
@@ -1562,6 +3920,1194 @@
             "exampleSites": [
                 "coles.com.au",
                 "www.coles.com.au"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/27035ce3\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5aa829abc6e9f9ff1bb637be3801434cfedae9772046e19b3d1f5c7977a123ec"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/c46f974b-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ab65c8d0db06e6481e7d0522e683ad54d8282f477152ebab0dac8ae2c13c37f3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/e6e33260-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "596cdea7d97aacf8195099666644da7bf0c876513db0e823ee48c1dba037ed59"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/54b88819-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "cd587ac44738c07871cfda7149041eb0221a901a712a492b88e64b4d653127dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/bb3a73d5\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "7066c2ac9079ac66f1341b12967118bc850796886f34914d9706fae883140260"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/8b822853-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "38398a3523692c86a42905880e8eda1721aa113e417b3049ede55ec82fcb0909"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/42be28f5-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "c063e2bd8c914df1d50858f1014f7c27085e79510ff3606a4449ca056d61ccec"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/3dd03ea4-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "74f23954d4380592efb3763aac74282832954d6d30dff9d494a5ddfccdaa0fe9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/fe2268dd\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "77649ad1d7e6be699ce72fe77c8a66285c6c7cc7cf909c248239cd305a621999"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/0d54576b-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f1a92e59c0e1c9fabf14facd4019f229b51b2b7cf8df3b70c94254552bc24213"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/a094c9b7-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "7155f41ec71d5310271ba4003ff08c5f9076095b745678cc849e8820d4693935"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/09ce0df0-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ca841cdc0b9e8ffdeb7aa573a42d86bcb20f9a35c1f4b0849836f15c5eaa14a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/44446469\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ff5fe7087daabc3308fce577560d33bf9e2f1002e4a2b7fb69eda2e1a2f2a189"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/8f45fdf7-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a77fadb444f2c9998a95917d1b3eb2f8a9d5351740544951cbcecf703ebbe034"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/51b3c663-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "ba7436a0a0919761446ea7a4d254db85de8ec5d093a38606e5944a81a3fa02de"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/d41c0cb9-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "aa02373419125b429a585b46d49af6c80ff11926728c079bb2d19ac0208f331d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/902c7862\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5636cf5a86a276812dd7070049a539af9d09e569a0f1a0de3283014c05096a60"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/f3489f6a-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "5772f762d6dea6d183e49714f1e713a9802323d297eeea92b25f78cae71a2e8e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/2a5dcfb8-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "d29ed280d6e137571cbddc4a40f94c600ea00eaf7fc18c7d2a5ef02d3aa75075"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/17bffe86-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "05a9c49fc9638868d1360c737d0240ab6f094859b40c430db7da4b838fcd3e62"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/f089da00\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a7afda69ca271cc3c4427fa2c38d57a96bb3bc7b4e88a07a7b23604aff37be71"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/2483788d-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "22dc89db0bd60a0c144952be9c470a5d4bf4357683a1765763f2c84bd195d636"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/dcc1922d-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "4e3b8bcfda41a91c370055361a00d4d76f1e8c14a4abecb04ab3c45d961c9b4b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/10c784ca\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "7d9978f358c9c15c3fe112666a9e41cd35481d2331cba67d7e691990893779c4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/93907f98-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "f18828d1dbd2cc6399583948cacdccf096b11873ad56095df5c79e22f590bdf5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/afabd197-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e43c71d08694be1a3b42a0705d6683b95878970c7155eb11f1230d17df888176"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/53481b33-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "8825eab2d65c69cb39828cf259ff28c31fa6f065a5de07aef3fc914ad17053f8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/bc61cbb9\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "342d516e9bae623bde25eb4a5854aa5cebe2223a80c8cbc4582f3dddaab3a806"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/1a67feed-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "88ab2b7815fa60bd9f6b349067337a86887189359af15a29e953acbe05ba93c2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/04c227aa-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "cfd1b9e82f3d72d5cf0490cfd9767c78320bb82ad7444beec9db7e18f8700a1b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/334ce2a9-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "1e46f3ce59b39bffe2b8b5777a77ab437a00974a99080c5390df819f5e38be38"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/22ac53ae\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "1486537353438a1f787efa21c3f0db8cf5de429488262252481b8edf2e958364"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/435b3254-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "dcc5384de15cbd721cc826f99eb9c03e642fd9b70debcbcc751fbc80bc044e1b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/61fef261-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "4300d95c111c4d8ce0767d81f6121abe6d0c9ecf6e6c1f3cbd1f7c1941f4ac48"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/fccff12b\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "64cd5c7a9b7a60472d5ef5504f6f1e2c9a1b61c427fb922f1021e670176e0496"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/88c298c3-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "e3815b352f8cf44ebb408ed9470a1881aadd735b262897efaef71324a78d07b2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/4b041b09-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "0d64b1933dcb7aab333e4cd7d3c4582ef428fa54500471344ec59dadbc8d5a9b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/a77b2d25\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "8f00d8e909d325ced7b8fcac981ba40728ed99c96c3f94ff6c51aad3e7699162"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/ae0edda9-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "99b864f51c0d1e0fd7b6e612cc3ee7e9a477b777109adeda36e5bfcf7dc4e5e2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/15a5da28\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "eb9905576aefa887d5624e1e02f3344ea12af496aac9ded0dbf3989aa2c13700"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/c09d1210-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "92d91eee8e42d9c039c56e6c30f5da389d0438bf4d8421ec8582165b062e61bc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/96b3e429-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a21f3b0238a2bd16ad98d6e760e53bc4a653a2b8f24536d6231acae9a5ac8e7a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/menu\\/8dffdee7\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "cc01114debe4a704d543eb511d18b09e29f9ca72408c1572c41d49c693faa3ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/image\\/d\\/brand\\/c6421e1e-scalefill-112x112\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dozproduction"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "azcdn.doz.pl",
+                    "resolved": "dozproduction.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "628940103f6d25a572fb06fe6ea0ca13ff0c7a6120ad3bfd54c5b5af462b2009"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doz.pl",
+                "www.doz.pl"
             ]
         },
         {
@@ -2040,7 +5586,7 @@
                 }
             ],
             "responseHashes": [
-                "6c5e875b4a2acce3f0322b2cc0bac7a10d7319323f146e6d6355c4f650ada34e"
+                "27788ec56d9b1f841e3b636d0bd893b6413e87148c6963b82c85bfe0c27d6c55"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2132,33 +5678,6 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/assets\\/fonts\\/GreycliffCF-Medium\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "drinkawarefd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "media.drinkaware.co.uk",
-                    "resolved": "drinkawarefd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "85981c32e3c2207792afc5e7cf47a2053792e7d8db41798bf915cd211826053d"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drinkaware.co.uk",
-                "www.drinkaware.co.uk"
-            ]
-        },
-        {
             "rule": "azurefd\\.net\\/assets\\/fonts\\/GreycliffCF-Heavy\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2186,7 +5705,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/assets\\/images\\/views\\/ctaBackgrounds\\/newsletterBackground\\.svg",
+            "rule": "azurefd\\.net\\/assets\\/fonts\\/GreycliffCF-Medium\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2202,9 +5721,9 @@
                 }
             ],
             "responseHashes": [
-                "015dbd4eff1209827eb9045bb313e0faefd585316a931972539e68ea314c87ad"
+                "85981c32e3c2207792afc5e7cf47a2053792e7d8db41798bf915cd211826053d"
             ],
-            "type": "Image",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -2257,6 +5776,33 @@
             ],
             "responseHashes": [
                 "6fbb8a30f1169346c2fb0cb35c204e7478b1eee40c79e89018300ac5a4c3246d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drinkaware.co.uk",
+                "www.drinkaware.co.uk"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/images\\/views\\/ctaBackgrounds\\/newsletterBackground\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "drinkawarefd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "media.drinkaware.co.uk",
+                    "resolved": "drinkawarefd.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "015dbd4eff1209827eb9045bb313e0faefd585316a931972539e68ea314c87ad"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -2418,7 +5964,7 @@
                 }
             ],
             "responseHashes": [
-                "0c019e9fc4245109b311966710b9824b456596d79c8a329789a6b79371608083"
+                "29b27cafb13ce5a3d9af65d7c4ae25009fbbccf85b4917497b879b0b2fe33a1b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2445,7 +5991,7 @@
                 }
             ],
             "responseHashes": [
-                "65835d8abd7eeae8e33710c9f68b4b86e8ff2e8f8de94d4e64e1d48efc498b05"
+                "d9ab9988bbf821fcbe759be3d04b7694e6786a021b025b0b4779f38af5457489"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2600,7 +6146,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6dcf6a3a87b5521d28821cda68c206ceee32c3611a66551017002d0e9219b7c8"
+                "f18e3cdd053e375fb48a4c4f3b004fe5c176cd6f3e312127f9ed118f2cef3507"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2642,7 +6188,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21dd9a8926a7fa4f8e8df47c5519a45c9d713b0ebacf995a6be3cce9e6fe11bd"
+                "c7fd0032929146f668327f07195da7d5a58b8addff898e00be06bf741cc0c902"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2695,6 +6241,30 @@
             ]
         },
         {
+            "rule": "azurefd\\.net\\/t\\/v2\\/functionofbeauty\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lwpixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5e550ac5d78391b7a8b8938f8fde4f7c8f3a16eceb447098472ae82369f64d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "functionofbeauty.com",
+                "www.functionofbeauty.com"
+            ]
+        },
+        {
             "rule": "azurefd\\.net\\/purchase-content\\/game-purchase-modal",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2737,58 +6307,6 @@
             ],
             "responseHashes": [
                 "f472bbc80ae5286ddabb1698ee8c02bad340985df7263d2a10e3c7a30c25f34d"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "halowaypoint.com",
-                "www.halowaypoint.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/taxonomy\\/article_category",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "waypoint-content-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "wpcontent.svc.halowaypoint.com",
-                    "resolved": "waypoint-content-prod.azurefd.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "halowaypoint.com",
-                "www.halowaypoint.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/taxonomy\\/article_category",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "waypoint-content-prod"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "wpcontent.svc.halowaypoint.com",
-                    "resolved": "waypoint-content-prod.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "c542e62dc7b34577c184dce98bc72fffe429d5ea795f37d21304a071732d7256"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -2862,7 +6380,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ffed858a51a0a7e4769a8901df25b4ac63c9331e6cfbed1510faac2169159e94"
+                "3c158c0b482d367bf766e37f2d3ca9d72fee6a546aaa5bd598f1b60d44a2dbca"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -2933,78 +6451,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "9d185be1cc7cbd4ddd3be323626df57ef38a442007f56dd9250afeefdd457108",
-                "6b4f6670213c68d1d528b8788b52ae300e18f61e1b840a4dee09a6d28fabca2e"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "handelsblatt.com",
-                "www.handelsblatt.com",
-                "www.wiwo.de"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/api\\/v1\\/models\\/lookup\\/X1000",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbpulse"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "ee694a6e9585bc89122db7fabc5e2f9897bf27d94b9f0aabe0b15a5acd46d45e",
-                "5cb3d5f0f0b09d68bef12e3363957dd0212a0f34407719e65de1a162bd930b57"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "handelsblatt.com",
-                "www.handelsblatt.com",
-                "www.wiwo.de"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/api\\/v1\\/ticks\\/X1000",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbpulse"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "0132252dd00cf3709c47d7be1d18fe3bd8bdf8330ff1682dad24bf1fe573222a"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "handelsblatt.com",
-                "www.handelsblatt.com",
-                "www.wiwo.de"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/xts-instrument-drop\\/2022-2-17-X1000-56201e58\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "hbpulse"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "f88202b34ca1e7400fb4032807a5fe4518891e45ea1a0ead709e3a4a0b1f16bd"
+                "e425f5b6ddd6bb71a69e00fedf847d9ae2cd017cefe4fea400c81390e6e1d1ce",
+                "206d3c1737f9be7ed9f3763c7d2d55e274f2cb2307227bba3e9af8a31369d0cf"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3032,7 +6480,7 @@
                 }
             ],
             "responseHashes": [
-                "eed8d46045233738268673da9956e6dc225c9f360b515b9e9813e0263d19a476"
+                "9802cd1512a2e9c655e8d2c04da9b7880464d822a358a4404f594fb7b09d9036"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3065,33 +6513,33 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "a01d387593959dddfb008cdbd9a7572881e3f850a9fde17484d3bcecf99fe73d",
-                "b73ac93706264825df9f0ef3fec343002c49b960bddf1ba61f9acccedf1d3dab"
+                "3a62cdeeaa64383945af02fd98c8214da663c8280b3cea01340e8a71a08edb64",
+                "f46ba29ec6fb33482365e430dcf19fd79c967ee5113f43e14a5af9058ec34e0f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_sda:mazda:T1:user": {
-                    "ttl": 31536006,
+                    "ttl": 31536010,
                     "length": 143,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_sda:mazda:T1:session": {
                     "ttl": null,
                     "length": 174,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "_sda:mbusa:T1:user": {
-                    "ttl": 31536005,
-                    "length": 143,
-                    "prevalence": 0.0000068105045221750025,
+                    "ttl": 31536003,
+                    "length": 141,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "_sda:mbusa:T1:session": {
                     "ttl": null,
-                    "length": 181,
-                    "prevalence": 0.0000068105045221750025,
+                    "length": 179,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -3114,8 +6562,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "4e42b57c396cceeb55feedf4b14c46c3396521c3a919efb440c35cd7e5c778c2",
-                "2f47d9e8e89794eceae6f59dc9228dc46f819cebd1fa0157d290d18654dcb100"
+                "1053a540eb52f043edb521564d3729f786af04fc51cee286acffaa4587cb54db",
+                "a123f3378b9bd1793ffcaf904d65612a40e2e141aa6f9794d13604f7377565e6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3138,7 +6586,7 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "39f8fb64dcda4e11588371862dab319900f54dc7f2a5f592199b2a2d84922b67"
+                "d6797ff01f2d97327847471bd17683659420be85e6cd85ff761c6f1bed7206ff"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3191,6 +6639,33 @@
             "exampleSites": [
                 "mbusa.com",
                 "www.mbusa.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/assets\\/b6be47ec-ba66-4bc8-8143-103c51303619",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "museumnlprod-frontdoor"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.museum.nl",
+                    "resolved": "museumnlprod-frontdoor.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "a79a3a35234528f80a935d255842e4eea37f8690c91ea42caf478168a975b421"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "museum.nl",
+                "www.museum.nl"
             ]
         },
         {
@@ -3287,7 +6762,7 @@
                 }
             ],
             "responseHashes": [
-                "fc05f744d4007a0263d263adb68d606237deb7d07965df70c4bc3e7ea6137b52"
+                "02fcedf066bd9aa92aa1ffe4b321233d9ed5ccab1efea908707752d5469df6a3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3443,7 +6918,34 @@
                 }
             ],
             "responseHashes": [
-                "717b954c397583c057542047a9f4dc5db09faa5ee52095ad6256496fbe980d87"
+                "6f72347998582c23f621edf05207da8c5e1a4cde4669f8ab066394be99dee252"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ouigo.com",
+                "www.ouigo.com"
+            ]
+        },
+        {
+            "rule": "azurefd\\.net\\/api\\/Data\\/GetStations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ouigo-p-window-data-fd-01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-data-fr.ouigo.com",
+                    "resolved": "ouigo-p-window-data-fd-01.azurefd.net"
+                }
+            ],
+            "responseHashes": [
+                "79caa704adb1cddea46160bb65275e45f01d83db5b415806d30d8f4d057ae61e"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3471,33 +6973,6 @@
             ],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ouigo.com",
-                "www.ouigo.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/api\\/Data\\/GetStations",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ouigo-p-window-data-fd-01"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "api-data-fr.ouigo.com",
-                    "resolved": "ouigo-p-window-data-fd-01.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "1e6b4d41d60c2447d7c6598e0613681df61b7aca2040bb939bf021ffc9d49b9e"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -3547,7 +7022,7 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "f1ca63f2a8f339e4d066f8f079b2547d59e96bf309af8dd30cf1678c21dd1781"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -3599,7 +7074,7 @@
                 }
             ],
             "responseHashes": [
-                "937631b7355d1c4a077d5e6e96a34ca329b3e9e49df419a57ce49c7e5a270740"
+                "562a9c467a34ee44bf3a5b33da2b9322e71476bced36b1bef4d113bb7a096161"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -3607,60 +7082,6 @@
             "exampleSites": [
                 "tempcover.com",
                 "www.tempcover.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fonts\\/Uniform-Regular-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "ca112b5624cbf37b842bbbe4d9c62a5c10b17371ceb41534956bba4c55b4af38"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fonts\\/Uniform-Bold-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "3dcc19a264940f7079e081f636ae5ab9bcbaf9c1b6a168c8150cde80fddfc0f1"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
             ]
         },
         {
@@ -3680,7 +7101,7 @@
                 }
             ],
             "responseHashes": [
-                "09c61c5936db4d64806167cd70efc69bd4d10c5c23db653809ef382b3c1533f5"
+                "4dfce494c4f9e6ba3f6e1732604fae4ca86cebf66b83ce30f589ffb22bf9cb1c"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -3707,7 +7128,7 @@
                 }
             ],
             "responseHashes": [
-                "e1419f4367b70df50910aea25ff96f11e22fce2719650960fd65f3164c6abe96"
+                "789ea75bc433f47e2fd927b82964953b44a60a6bc0c31242ae2c89fbfb2bd5cc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3718,574 +7139,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/statics\\/nlportal-header\\.js",
-            "cookies": 0.00000681,
-            "fingerprinting": 1,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "fd6a3a0aad69d81691690b2928b2f904a217141dead2ead6c24f67ae3b404117"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/statics\\/nlportal-browser-detection\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "072099a5825d6a0d046e1306a07e69a19db503f74fd9672f54a9bbdabec01883"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/statics\\/nlportal-footer\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "2b8df4f8f32072754ab7b9da611b5831e2a248b903ba5c8243ab5efbd24caa4c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fonts\\/UniformCondensed-Bold-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "4707d96f7a927aa0d517c4f325e5f8deb7dc70456cccf5d0f659f34a7a2cbb21"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/fonts\\/UniformCondensed-Black-webfont\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "a10b06b731fd9577289b84b14ea2c0ace1380e55d3b2aaa5af4734525f69b782"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/ksa-logo\\.jpeg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "8e93a055a2e160c1a2ce650997b3700181a19201f4498f7d090c42ee605e5a52"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/images\\/nederlandse-loterij-logo\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "22468eec3e58fe267c3022e93bc56ca5988ad7a6cbfe9c023dafd42621b4a6d3"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/logos\\/logo-toto-wok\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-header-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "246838183a108a80e94cce34f28ac1dbf398af545ed830a7772f849a0bc18bc1"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/b9a64e39-ed53-43bf-9364-1ba0692ed921",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "085d8c5ed0306875fa799b1473fbe36b57814f24ded04e96190f8f53493b51b9"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/4086f883-cd43-498a-bd15-ea534088751c",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "aafa6a2bc031b874b382e77be0ff215729998facc73869b64cd2bfd565a71afc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/766fced7-b2ea-401e-8822-46deccd23ee3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "5c54c7e3496b202adbe0f9d5bd01b6b5e2f45532a218402c3a8d44ee81468903"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/3cdaf816-7713-406d-b2c8-df0f9541ebd3",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "942e4e274b6863fe15d91c1a97c0f093023af89e599b251b0f96bdffd4f10a17"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/68d65a20-5f40-4792-9ffb-8fd0604ef51e",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "a0f96afe3efee72166f339d76c2c086b3511708bbf2ffd38c9ba087c942ad0df"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/6597a725-629d-4c70-9d73-5cc1dde05ef4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "b11c0e72a03f72ac98d3c45e3de71a3192fedbb8dd76d91a7ac2502d262955af"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/ecce6513-7d70-4a59-8548-255624c67205",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "5dbf2540ca20c71dd96931de56d6d890b3875961e1d3ca67ec67c4ffb56559ec"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/ddf05bd2-3486-4f54-86e6-a89d85b02c78",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "e557cf36fcf3433a450595130525922d2cd7cfaba0402ff20936eec9421e872c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/cdc90a07-ed78-42e2-b22f-c5f527422c58",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "27d4688464767a0584ece92fd902822584c98ec4855e8fda2e5d8b5916113e28"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/d91a34e8-47be-45a8-b487-656c71670df8",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "eb880e343dd782c9353e7d67020ef0e1bb868452f385836153ecad450ca36b2c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/ba76b52e-11f5-4a97-9fce-5bfc3960e733",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "b6dc2f13bdce1111f4e2a004e27e1a54f5c933b779847878a9a36f20f28e43dc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/481b3933-9a0e-40c2-9035-8f2f63d14121",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "22d4b8a581aa8c484452d4ec4ee834631fdd048e9b01bab79fd0fd420b77f23e"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/assets\\/2d1a54c3-c9ba-478b-ac66-f789aeb1a8b0",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "toto-portal-prd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "portal-cdn.toto.nl",
-                    "resolved": "toto-portal-prd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "3fc02895718960cb07fa4370eae55ddc54a5b2bd4c40b710abd609b9a37b774c"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "toto.nl",
-                "www.toto.nl"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/styles\\.css",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/styles\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4301,7 +7155,7 @@
                 }
             ],
             "responseHashes": [
-                "fb1ac6984b620c1a4cd81fb43194b340bb801d4942e7108e5e99bf036f3d59fd"
+                "0b6a6c5ae5b2f3876e66686a702219d5d3ab0edc57e28ccae0f04393e13d1029"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -4312,7 +7166,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/runtime-es2015\\.js",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/runtime-es2015\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4339,7 +7193,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/polyfills-es2015\\.js",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/polyfills-es2015\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -4366,7 +7220,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/main-es2015\\.js",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/main-es2015\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -4382,7 +7236,7 @@
                 }
             ],
             "responseHashes": [
-                "debd71c9d24edce0bf9f0efb628b34f428693a050013b45c1665b604c53822af"
+                "02974c9cfb2eb4ed63d3d865dfb5cc293d95050bc6b2cbec3e8f57da80f1df4e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -4393,7 +7247,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/VattenfallHall-Bold\\.woff2",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/VattenfallHall-Bold\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4420,7 +7274,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/VattenfallHall-Regular\\.woff2",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/VattenfallHall-Regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4447,7 +7301,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/VattenfallHall-Medium\\.woff2",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/VattenfallHall-Medium\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4474,7 +7328,7 @@
             ]
         },
         {
-            "rule": "azurefd\\.net\\/open-pages\\/0\\.1\\.611\\/vf-icons\\.ttf",
+            "rule": "azurefd\\.net\\/open-pages\\/711360\\.0\\.13\\/vf-icons\\.ttf",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -4542,7 +7396,7 @@
                 }
             ],
             "responseHashes": [
-                "2726ea46aef0e7c5206605aa389a7e3a2f7ce1753f4012ab77c4cf0ea6a55851"
+                "02b192bf5f040d01b2c55b9f257895eac899cdb0d718692d890c4ee5bb24876b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -4551,72 +7405,19 @@
                 "vattenfall.nl",
                 "www.vattenfall.nl"
             ]
-        },
-        {
-            "rule": "azurefd\\.net\\/apm\\/intake\\/v2\\/rum\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vivaairfd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "webapis.vivaair.com",
-                    "resolved": "vivaairfd.azurefd.net"
-                }
-            ],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vivaair.com",
-                "www.vivaair.com"
-            ]
-        },
-        {
-            "rule": "azurefd\\.net\\/apm\\/intake\\/v2\\/rum\\/events",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vivaairfd"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "webapis.vivaair.com",
-                    "resolved": "vivaairfd.azurefd.net"
-                }
-            ],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "vivaair.com",
-                "www.vivaair.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000933,
+    "cookies": 0.000932,
     "types": {
-        "Script": 112,
-        "Stylesheet": 30,
-        "Image": 106,
-        "Font": 32,
-        "XHR": 80,
-        "Document": 2,
-        "Preflight": 34,
-        "Fetch": 4
+        "Stylesheet": 43,
+        "Script": 139,
+        "Image": 297,
+        "Font": 56,
+        "XHR": 67,
+        "Fetch": 22,
+        "Preflight": 44
     },
     "nameservers": [
         "ns1-09.azure-dns.com",

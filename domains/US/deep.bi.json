@@ -4,77 +4,76 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000885,
-    "sites": 13,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
-        "api"
+        "api",
+        "scoring"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "deep\\.bi\\/v3\\/init\\.js",
-            "cookies": 0.0000409,
+            "cookies": 0.000034,
             "fingerprinting": 2,
             "subdomains": [
                 "api"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 6,
-                "window.localStorage": 6,
-                "Screen.prototype.orientation": 6,
-                "Date.prototype.getTime": 6,
-                "Navigator.prototype.doNotTrack": 6,
-                "Screen.prototype.width": 6,
-                "Screen.prototype.height": 6,
-                "Screen.prototype.availWidth": 6,
-                "Screen.prototype.availHeight": 6,
-                "Navigator.prototype.mimeTypes": 6,
-                "Navigator.prototype.userAgent": 6,
-                "Document.cookie getter": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "Document.cookie setter": 6
+                "Date.prototype.getTimezoneOffset": 5,
+                "window.localStorage": 5,
+                "Screen.prototype.orientation": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.availWidth": 5,
+                "Screen.prototype.availHeight": 5,
+                "Navigator.prototype.mimeTypes": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Document.cookie setter": 5
             },
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "c76e1e665df37cdb932f74ae303e63e912e40d5b14af3027bdf6a4bacb509625",
-                "3650d40555b65c92b0a701dcb52783d0dc3d6b8bdd2c70dfaf3f8798635be492"
+                "f2faf7911101f5a49100c25d25b355d0bf995adcf50525c580864fe42fd6fa9f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "deepbi_user_session": {
                     "ttl": 1802,
                     "length": 38,
-                    "prevalence": 0.000040863027133050016,
+                    "prevalence": 0.00003403189469170507,
                     "uniqueness": 1
                 },
                 "deepbi_firstparty_cookie": {
                     "ttl": 31536002,
                     "length": 19,
-                    "prevalence": 0.000040863027133050016,
+                    "prevalence": 0.00003403189469170507,
                     "uniqueness": 1
                 },
                 "deepbi_user_deepcookie": {
                     "ttl": null,
                     "length": 16,
-                    "prevalence": 0.000040863027133050016,
+                    "prevalence": 0.00003403189469170507,
                     "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dorzeczy.pl",
-                "exame.com",
-                "invest.exame.com",
                 "oglobo.globo.com",
                 "www.rappler.com",
-                "www.rp.pl"
+                "www.rp.pl",
+                "www.wprost.pl"
             ]
         },
         {
-            "rule": "deep\\.bi\\/v1\\/streams\\/1nIND4GNRlaGWor7sVVvbzlN8XB\\/events",
+            "rule": "deep\\.bi\\/v1\\/streams\\/j7odeRmIZNFp\\/events",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -85,18 +84,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a1eb76297d7ece1fd1a997225f9af86ea3929696882474327100a2a041428425"
+                "8fa50038f8d2554a50cf0e3841fb03fab4c94fa7a8a0dc3b8e9e8c4110d84ea0"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "exame.com",
-                "invest.exame.com"
+                "dorzeczy.pl",
+                "www.wprost.pl"
             ]
         },
         {
-            "rule": "deep\\.bi\\/v1\\/streams\\/1nIND4GNRlaGWor7sVVvbzlN8XB\\/events",
+            "rule": "deep\\.bi\\/v1\\/streams\\/j7odeRmIZNFp\\/events",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -111,8 +110,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "exame.com",
-                "invest.exame.com"
+                "dorzeczy.pl",
+                "www.wprost.pl"
             ]
         },
         {
@@ -239,15 +238,63 @@
             "exampleSites": [
                 "rp.pl",
                 "www.rp.pl"
+            ]
+        },
+        {
+            "rule": "deep\\.bi\\/score\\/j7odeRmIZNFp\\/cl1l9jyuh0m3cgu1tls",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scoring"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "deepbi_firstparty_cookie": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "wprost.pl",
+                "www.wprost.pl"
+            ]
+        },
+        {
+            "rule": "deep\\.bi\\/score\\/j7odeRmIZNFp\\/cl1l9k0o33x3cgvhaun",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scoring"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "deepbi_firstparty_cookie": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "wprost.pl",
+                "www.wprost.pl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000817,
+    "cookies": 0.0000681,
     "types": {
-        "Script": 6,
-        "XHR": 8,
+        "Script": 5,
+        "XHR": 12,
         "Preflight": 8
     },
     "nameservers": [

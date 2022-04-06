@@ -4,16 +4,36 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
+        "analytex",
         "js",
-        "find",
-        "analytex"
+        "find"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "userpilot\\.io\\/v0\\/events\\/websocket",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytex"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allianceautomotive.co.uk",
+                "www.ntaskmanager.com"
+            ]
+        },
         {
             "rule": "userpilot\\.io\\/sdk\\/latest\\.js",
             "cookies": 0,
@@ -28,7 +48,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1a5cc39de6574b98ec610bd880441b13f57b0073e8c7aed32834c343dc61be97"
+                "4e5d9cb3fd29bef1e4cccd1e0a83c6d1ce44b07069b0b5df93b801e30018fe54"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -39,7 +59,7 @@
             ]
         },
         {
-            "rule": "userpilot\\.io\\/sdk\\/version\\/0\\.793\\/app\\.js",
+            "rule": "userpilot\\.io\\/sdk\\/version\\/0\\.807\\/app\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -49,18 +69,20 @@
                 "Navigator.prototype.userAgent": 2,
                 "window.sessionStorage": 2,
                 "window.indexedDB": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
                 "Navigator.prototype.appVersion": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.platform": 2,
-                "Navigator.prototype.languages": 2
+                "Navigator.prototype.languages": 2,
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6d69e3b2cdf5d106ee52cf9050bb322eb2feab2d4294fea62b0bbf3a973fea55"
+                "00563e4e2145fb2c0e47c1f772b01990f3e08711b9269b1657e0f92c64164b49"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -91,35 +113,15 @@
                 "ntaskmanager.com",
                 "www.ntaskmanager.com"
             ]
-        },
-        {
-            "rule": "userpilot\\.io\\/v0\\/events\\/websocket",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytex"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ntaskmanager.com",
-                "www.ntaskmanager.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
+        "WebSocket": 2,
         "Script": 4,
-        "XHR": 2,
-        "WebSocket": 2
+        "XHR": 2
     },
     "nameservers": [
         "terin.ns.cloudflare.com",

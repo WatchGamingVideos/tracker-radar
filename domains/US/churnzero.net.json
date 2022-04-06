@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
         "analytics",
-        "eu1analytics"
+        "eu1analytics",
+        "sae.us1app"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -19,28 +20,144 @@
         {
             "rule": "churnzero\\.net\\/churnzero\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [
                 "analytics",
                 "eu1analytics"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.sessionStorage": 2,
-                "Date.prototype.getTime": 2
+                "Navigator.prototype.userAgent": 3,
+                "window.sessionStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.cookieEnabled": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5968a4e18a219acd4f4f360e755f116ec088eaaaf245dc95c2aff90e6dd8bf06"
+                "a62ba50d73b7c722179b833e15429eced6fef319eae470616e6f2e8ecfc33b07"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cloudacademy.com",
-                "www.newcastle.nsw.gov.au"
+                "www.newcastle.nsw.gov.au",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/api\\/v1\\/sockets\\/connect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e8324cd90cdf9493c0eb618f5be3021aae1a936aa452854dbfb2556feca45659"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/api\\/v1\\/sockets\\/connectStatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1bed4803879603da8a2f2c90180fb87f068abfe250576c51b2351bbb335556f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/external\\/css\\/independent_frames\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2563bb5ae3df8b5f691db15c92fa14e757a8c6148c18cbeab41888447b95f6ad"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/external\\/css\\/announcements\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ec6ea4ad491118d4e6e79b7a41916e8402bac7283b418a657f3c9f63ccbf4712"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
+            ]
+        },
+        {
+            "rule": "churnzero\\.net\\/api\\/v1\\/sockets\\/poll\\/3562",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sae.us1app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sae.org",
+                "www.sae.org"
             ]
         }
     ],
@@ -48,7 +165,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2
+        "Script": 3,
+        "XHR": 6,
+        "Stylesheet": 4
     },
     "nameservers": [
         "ns-117.awsdns-14.com",

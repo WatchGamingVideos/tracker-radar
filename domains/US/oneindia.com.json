@@ -10,13 +10,55 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "images",
         "rss",
+        "images",
         "polls"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "oneindia\\.com\\/common\\/oi-line-item\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drivespark.com",
+                "www.drivespark.com"
+            ]
+        },
+        {
+            "rule": "oneindia\\.com\\/common\\/oi-line-item\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "91d611a95a47eefc3bfa35760079d831d9e00a5f4ae1f5c9159f6614e907d4ba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drivespark.com",
+                "www.drivespark.com"
+            ]
+        },
         {
             "rule": "oneindia\\.com\\/notification\\/images\\/addr-bar\\.png",
             "cookies": 0,
@@ -106,48 +148,6 @@
             ]
         },
         {
-            "rule": "oneindia\\.com\\/common\\/oi-line-item\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rss"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drivespark.com",
-                "www.drivespark.com"
-            ]
-        },
-        {
-            "rule": "oneindia\\.com\\/common\\/oi-line-item\\.json",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rss"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "92238eace7f9a95d0438fed0cb0cd2e77d0772c6abac3debac2f220269466aa6"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drivespark.com",
-                "www.drivespark.com"
-            ]
-        },
-        {
             "rule": "oneindia\\.com\\/notification\\/images\\/bell-icon-black\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -178,7 +178,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -213,14 +214,26 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "be0a6b7e8d4fd0ba83a23920f372288b2803d98c2b17a1a731b64dd1468e35b0"
+                "eb9bc763b6db9b794fb7cc4bf08c184cce636ee670af7aec03d34daa48de6863"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "dp_user_tracker": {
-                    "ttl": 315360006,
+                    "ttl": 315360010,
                     "length": 37,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "isShown": {
+                    "ttl": 86428,
+                    "length": 1,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "desktop_bsnotification_seen": {
+                    "ttl": 172828,
+                    "length": 1,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -242,31 +255,9 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "177581d563ad626f1c09c9e3d6dd48434aa4345c28b75c47298288c429292b9e"
+                "a031064596d5148c785df8f42bb1be8ceb8938ee0cadaa87fe23f09330177be7"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drivespark.com",
-                "www.drivespark.com"
-            ]
-        },
-        {
-            "rule": "oneindia\\.com\\/scripts\\/cms\\/getArticleDetails\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rss"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5185e842632c8fc3e9e115d282f163117589d7eff71d3238e69966c90b3ec9aa"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -354,31 +345,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "28d18f09e94b36790f82373396bb32276744160c3cfb0e584802d34a68282c48"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "drivespark.com",
-                "www.drivespark.com"
-            ]
-        },
-        {
-            "rule": "oneindia\\.com\\/media\\/js\\/jquery\\.bxslider\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "polls"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1d5c225b948f547b467280385d991cf0afc1ee498c456c5ee0d424fe03face27"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -392,10 +359,10 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Image": 10,
         "Preflight": 2,
-        "Fetch": 4,
-        "Script": 10,
+        "Fetch": 2,
+        "Image": 10,
+        "Script": 8,
         "XHR": 2,
         "Stylesheet": 4
     },

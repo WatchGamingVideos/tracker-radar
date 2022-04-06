@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "client",
         "static"
@@ -15,25 +15,25 @@
     "resources": [
         {
             "rule": "spotmore\\.fi\\/campaigns\\/crmjs",
-            "cookies": 0.0000272,
+            "cookies": 0.000034,
             "fingerprinting": 2,
             "subdomains": [
                 "client"
             ],
             "apis": {
-                "window.localStorage": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.appVersion": 4,
-                "Navigator.prototype.language": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.colorDepth": 4,
-                "Navigator.prototype.platform": 4
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Navigator.prototype.language": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5,
+                "Navigator.prototype.platform": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "67247f846085fb18d6e3b198d40f753955d30d7d1ead3720b7d4e62ba7e8478a"
@@ -41,10 +41,10 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_cgl_id": {
-                    "ttl": 31536004,
+                    "ttl": 31536003,
                     "length": 4,
-                    "prevalence": 0.00002724201808870001,
-                    "uniqueness": 0.25
+                    "prevalence": 0.00003403189469170507,
+                    "uniqueness": 0.2
                 }
             },
             "firstPartyCookiesSent": {},
@@ -52,19 +52,20 @@
                 "euronics.fi",
                 "www.euronics.fi",
                 "www.hotlips.fi",
-                "www.lastenturva.fi"
+                "www.lastenturva.fi",
+                "www.nettimyynti.fi"
             ]
         },
         {
             "rule": "spotmore\\.fi\\/campaigns\\/reg_visit",
-            "cookies": 0.0000272,
+            "cookies": 0.000034,
             "fingerprinting": 0,
             "subdomains": [
                 "client"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -74,7 +75,8 @@
                 "euronics.fi",
                 "www.euronics.fi",
                 "www.hotlips.fi",
-                "www.lastenturva.fi"
+                "www.lastenturva.fi",
+                "www.nettimyynti.fi"
             ]
         },
         {
@@ -85,8 +87,8 @@
                 "client"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "7e81786a771c571e387de99cac81b538f049d15f9cbf0e6ef48f79dd8ad19ada"
@@ -98,7 +100,8 @@
                 "euronics.fi",
                 "www.euronics.fi",
                 "www.hotlips.fi",
-                "www.lastenturva.fi"
+                "www.lastenturva.fi",
+                "www.nettimyynti.fi"
             ]
         },
         {
@@ -112,7 +115,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "45d5f6bcf72a06976b5bc51f1b80096109c8565843bec97d7d8055e1491eb422"
+            ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -194,24 +199,35 @@
         },
         {
             "rule": "spotmore\\.fi\\/jquery\\.cookies\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "631ea2bc942c1791920270ba02eef37774aa10db3994b4936a2b5f891a970ff7"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "nettimyynti-naytetty": {
+                    "ttl": 31536004,
+                    "length": 12,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lastenturva.fi",
-                "www.lastenturva.fi"
+                "www.lastenturva.fi",
+                "www.nettimyynti.fi"
             ]
         },
         {
@@ -235,22 +251,272 @@
                 "lastenturva.fi",
                 "www.lastenturva.fi"
             ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc026c66501f3cefe66cf2ba138d69fbb81370f14aae3d495486f4cd4ca38140"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/jquery\\.fancybox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9154f38a1b3cbd39022108ebbe3a6beb4a2babba73002e223085c050e3893325"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/jquery\\.fancybox\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c78ce6b6d1928630b903084ea9d503643f303ba05455860cc7cd17f7687cc65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3db7885c90e71d127566478e2d7d35aa996d5ac7b35ac1de61e53f61c3d581a5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/fancybox_overlay\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e9c97493a4dbde5f09f8b3991a5c20aab8807f324b9916cf6b44905db1ed6834"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/fancybox_sprite\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "017d9fbd52efc42be18e458af98dc2eaec25846d2d13d633964b038cc4ee2f74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/fancybox_loading\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e08498c754e40abe4c02354770fe09d06e5fe57e17128f1c23c780ed3d48933"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\/css\\/normalize\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "69fcf7682b771176634dc54deb0c412cf9ec40df931d56a0480ee51b47ed1598"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\/css\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f9fafa3c54e9ea5e289bec5dc89aac1633fa1d9df3b5e887a8037693e72a9799"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\/js\\/vendor\\/modernizr-2\\.8\\.3\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.indexedDB": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2b0f8526e7a1b0f1fb42e8acec3c1e7737a1a3065b773ebd13a492952f557967"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
+        },
+        {
+            "rule": "spotmore\\.fi\\/nettimyynti\\/img\\/2021-11-nettimyynti-liity\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "998dc63f75e1d57e96824411abb8ead9a75a44681d94dcb5af2dd4524304cacc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nettimyynti.fi",
+                "www.nettimyynti.fi"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000545,
     "types": {
-        "Script": 8,
-        "Image": 10,
-        "Document": 2,
-        "Stylesheet": 4
+        "Script": 16,
+        "Image": 20,
+        "Document": 4,
+        "Stylesheet": 10
     },
     "nameservers": [
-        "ns1.linode.com",
-        "ns2.linode.com",
         "ns3.linode.com",
+        "ns5.linode.com",
         "ns4.linode.com",
-        "ns5.linode.com"
+        "ns2.linode.com",
+        "ns1.linode.com"
     ]
 }

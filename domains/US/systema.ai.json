@@ -4,7 +4,7 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
+    "prevalence": 0.000034,
     "sites": 5,
     "subdomains": [
         "cdn",
@@ -16,16 +16,20 @@
         {
             "rule": "systema\\.ai\\/Systema\\.2\\.0\\.1\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6c7bd07bb71142ba66759ac72bf756ab47d1f78b9754885a15aeb5981c12ca90"
+                "d415027f4b6dd8b758fa98e866a6a3a4bb2ede3de43141a7057f775c5893e9d7"
             ],
             "type": "Script",
             "firstPartyCookies": {},

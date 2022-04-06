@@ -7,10 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "cybersport"
+        "alparien",
+        "cybersport",
+        "klerk"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -20,25 +22,68 @@
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
-                "cybersport"
+                "alparien",
+                "cybersport",
+                "klerk"
             ],
             "apis": {
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
                 "Notification.permission": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cybersport.ru",
+                "alpari.com",
+                "www.cybersport.ru",
+                "www.klerk.ru"
+            ]
+        },
+        {
+            "rule": "push4site\\.com\\/Content\\/WidgetsStyles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "958be38f983c752fa3ecb5be775b722f9f51657f1da109f79f73bc6a786adbf4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpari.com",
+                "www.klerk.ru"
+            ]
+        },
+        {
+            "rule": "push4site\\.com\\/Sdk\\/WidgetDisplayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alpari.com",
                 "www.cybersport.ru"
             ]
         },
@@ -65,44 +110,25 @@
             ]
         },
         {
-            "rule": "push4site\\.com\\/Sdk\\/WidgetDisplayed",
+            "rule": "push4site\\.com\\/Static\\/Script\\/klerk\\.js",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            "subdomains": [
+                "klerk"
             ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cybersport.ru",
-                "www.cybersport.ru",
-                "www.raiffeisen.ru"
-            ]
-        },
-        {
-            "rule": "push4site\\.com\\/static\\/sw\\/raiffeisen\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ca3864c46d6194cbf6eda25def9ea3a51b3e16db53c885e903c4c3bee5ce34e1"
+                "95a825199a2ac1fbee1e914edb601c9e26a0160e6e5fafc886038e34ada01533"
             ],
-            "type": "Other",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "raiffeisen.ru",
-                "www.raiffeisen.ru"
+                "klerk.ru",
+                "www.klerk.ru"
             ]
         }
     ],
@@ -110,9 +136,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 4,
-        "Fetch": 3,
-        "Other": 2
+        "Script": 7,
+        "Stylesheet": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "gene.ns.cloudflare.com",

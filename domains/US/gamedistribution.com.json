@@ -4,13 +4,15 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000817,
-    "sites": 12,
+    "prevalence": 0.000116,
+    "sites": 17,
     "subdomains": [
         "html5.api",
         "tag.atom",
         "pm",
-        "msgrt"
+        "msgrt",
+        "scraper-service-sgweb",
+        "softgames-kirk-assets-sgweb"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -23,8 +25,10 @@
                 "html5.api"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "window.localStorage": 7,
+                "window.localStorage": 8,
+                "Navigator.prototype.userAgent": 8,
+                "window.innerWidth": 8,
+                "window.innerHeight": 7,
                 "Document.cookie getter": 6,
                 "URL.createObjectURL": 1
             },
@@ -32,7 +36,7 @@
             "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
-                "548b2acb9cb4186111d634daadece04482db388af772beba5cd0b8931a463ad9"
+                "0c0210e48706bef9787c8b5dae5b6a5e911a02fffb24a50e21fd68aa8e2fb53b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -41,8 +45,8 @@
                 "amongusgame.io",
                 "gabigames.co",
                 "googlefeud.games",
-                "kizi.com",
                 "motox3m.co",
+                "patiencespel.net",
                 "speellingo.nl",
                 "www.brightestgames.com",
                 "www.elkspel.nl"
@@ -57,7 +61,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -67,9 +71,9 @@
                 "amongusgame.io",
                 "gabigames.co",
                 "googlefeud.games",
-                "kizi.com",
                 "motox3m.co",
                 "speellingo.nl",
+                "www.brightestgames.com",
                 "www.elkspel.nl"
             ]
         },
@@ -81,10 +85,10 @@
                 "pm"
             ],
             "apis": {
-                "window.localStorage": 3
+                "window.localStorage": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "6f4df1d79600b896a2e01a8ac951e9003a40d40fe25d28bad5633dbc54e74863"
@@ -95,7 +99,8 @@
             "exampleSites": [
                 "amongusgame.io",
                 "gabigames.co",
-                "motox3m.co"
+                "motox3m.co",
+                "www.brightestgames.com"
             ]
         },
         {
@@ -107,7 +112,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
@@ -116,11 +121,3469 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "amongusgame.io",
                 "gabigames.co",
                 "googlefeud.games",
-                "motox3m.co",
-                "speellingo.nl",
-                "www.elkspel.nl"
+                "patiencespel.net",
+                "www.brightestgames.com"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/express\\/header",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/express\\/footer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/express\\/mobile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-quick-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f3ec28414a669e1228bc8a784fee23c71d96c8ceda59786aaded7776571c8e84"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-crusader-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "986ecbbed5061a452cdc5a0cdfacc12e12052b7f0f6974381fecd9429e367a46"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/pa-express-arrowword\\/express\\.co\\.uk\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a822819ec0734b0ea7dff9b9725b9b813d07988731efd8ca964b4f1ce0e4b5c8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/pa-express-word-wheel\\/express\\.co\\.uk\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "986468fa0ff4ff81c9378a65cec408a656eb22b3a84d2bd7cefa92868b256c7f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/the-mergest-kingdom\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3f98ec17c32fd60f2f92577e9ee504e0d7ccd250024fcd3b29a03d3c8a5fd72d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-solitaire-collection\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "18ec0a65e02964024d996e4d5376f1b7fc17a4a45db9b6c1c3eb17c44dbc55dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/jewel-legend\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d4110d4a07ff9bf4b490c22ae244f8379b7b8596584d43877077dc011458a807"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/crocword-crossword-puzzle\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5adffbd2f50767ecda2e9de59757e9c4b339e7133df57a191675e1f511bb0a1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/master-chess\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e75d8b99f22b95d8a11fc26865cf02950e644c9a2b82637c8ad6242cd67bd1a1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-ultimate-word-games\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a2c0de207f0414e943d8f9a678a044517c730575bb6a880eb520365d81a6bdb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/classic-backgammon\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6a0e7989fc2331ee384a62084dd6761f3dbe881b4960bd82313ccc34e52ba7dd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/sudoku-classic\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0bd29c2b35bbfca25557a13d708ffaca01e092622cbb5c11c941d61fd600bbff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/4-in-row-mania\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ded38d26ae67890da25bbd0156cca6860d1227e9df262e7ec3c1bfd59bd1c99e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/master-checkers\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b89876d19f8a59cbe085eaebc69d0a871e493a735f9ca8b2b036ae9bba47f970"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/mahjong-classic\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6817a849a8fc0344f78c216ee68ecac5d08e37b0f5a58c337e99109f2518eeee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-wordament\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "31d2edb6ced5f575ecf4b319d6585ca5bf44d35157ebe30ea124952f71cd782b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-minesweeper\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a0a11fa5fc58e355ea33de123c683d06db2f6cabb4a1f540e262897833b5b08a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-jigsaw\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "fafd48bde69347207003c1bfe4b8ce31937c954e8463535c4ebd739d1ec07e43"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-word-twister\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d517648feb0bdcc7d3c3cc653a5d659886d39fac0a47943f982deb9cb5d3ad3c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/external-games\\/microsoft-sudoku\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "454dd91eccd74ce7bfc6c0e408f92029e6665478e0cd0b3878c709b218fd53c0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-solitaire\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6cb5bdb91243bae008ef6c53b16254788caed833be6497faac1d55803f259ce5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-solitaire\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b302d13ff321454ef149db3656ee382df96a8ba5c66946d75de6e7e60f999e1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-spider-solitaire\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "038ad2685eafa5e0103dbed8511a0204383d6d22653c32a59b4db05d97d93c78"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/solitaire-garden\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7dbaa10d8a21e0219bda4dc9c79ab8370ba803d9bf2bd6170af7d4fdd35c4eb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-freecell-solitaire\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3e04a263bbe029ad5b566280c91a313966914b91424cc241942fde528525b9ec"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/solitaire-daily-challenge\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ef158bc3452975ef1db1c1e3aacc982cf314365267d1d78fb8e352358618ac6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/solitaire-swift\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "80688bd53134b17972f18c547c037f09f516b0650c21ae833f1d375dbda583c1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-pyramid-solitaire\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7be71ebbb458b349634464576f820dbf21a6e46c2932f1773d6d59bbe7326cb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-crusader-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51be9e4094232d5611a76887182a675b1e24ae741234dd2adbbbca9e67e1458c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-daily-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61dfe552593224995c9715d6ebf8a5ff82204943005fcb48747f9619532759cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-cryptic-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4116ff2507ebd82d62fb4f9747ae1ae9f4ff2d6607dce2c50ea936482450cf2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-classic-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "048e5f3d2ac76bdb2b7a3c38b31515d1bfe6b01cba89c15c12e7b536beeaca26"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-quick-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c00b724e796cfb6c5a75588be79bfca855d49cdc7b3de7cde1de2168d5981746"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-quiz-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b1b43f6a564aeae89874b89a00094d1761244748ec83d6dc9b9310c19b6464a7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tv-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b09a4e8ef59fc653bffa0cc0682be0635e7450065b820af6fa3512f483b32e1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-arrowword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dab4cc51f183602c9eff05d0f475de8494a9e62acc213e248dfa531f65482a51"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/express-word-wheel\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79b69a5b624519840ebf8865bd6f8c09502b82f1dc56d8c88f01947ba9568763"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-sudoku\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6300380967da901277be05878e4656a097bfe9a3824e78ea0f399039a0933aa2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/daily-commuter-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4238dcbc4e5c29053d526167afbfca6bfa577899f6a1828f059a309669ed6dbf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/thomas-joseph-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24161968d002f358e8d2f8f8078f4f96561704f54486af6aac7acb79d40e412d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/premier-sunday-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c58e564569c9d75009d30f94e1534adeacae76ea7a9443fdcb59849b62c45b2f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/eugene-sheffer-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "42440e45a097ab007f53a1fd32727a5fadf973e958d96242438dd1144007c3e2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/micro-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87a20dafeb5b61d088d3e71b80e6a4def4d2617a2769b86bc8376da40f1cf3d8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/observer-crossword\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b06dedf3e578d03e312ebbb41a4441eeb319a30c27d4e491ddeef6f64dfc556d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-sudoku-x\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9c6b236f277c2d210b66fcb1161910de5125ab97a38056bbfb71e65b6856fc84"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-killer-sudoku-pro\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "250bd93803d05a4b537e7830f6f82067314939a6d3d5f4bed89486bf1de39a08"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-daily\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "397aaa51251bf3773b5ad7b8042cc49631608b9ef6c21445a2181ef5dfcdbbac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-sunday\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24fbfc6405ea00c1f62d19b8cad07b77ef72c567a200e90b8aaf3068ef80807a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-sudoku\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c2ab52d0ea6999bd8994fd3ccad74f6a009ec0afb36717a44ab57332d70eb08"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-crossword-sunday\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "624f3b787571d456954e662b4f6f995691c47f82d0154cb18712fc36d13a997b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-crossword-daily\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2b9a68dfb6b177eb478188ed18a77b178ad805b3fe698a60410e673645d2378"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-mahjong-connect\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f462e8243ccf30bc4c25897c7e43cbd682f71c897c3d69b07e1884a9a5d2f2d2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-mahjong\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c60cb3418e45c397b85003981491741e795aa0607e657e744f18942686de8854"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/solitaire-mahjong\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b6153835a6ddf296348f126d21ae32248c4f7293fb71004e59304440c69aeadb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/butterfly-kyodai-hd\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7edd59ecff69dc949dee01f77b6dfb5821a319c53e50866a7b9e66623b34bb2f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-story\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ab7e648a39c3df0e15a1a3e8249535acbee7d20344e669b9dc02610aa7d38c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-connect\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "964d813f179da93332a055350d0ff573d32839e6083aa88f9eb12f0fedc37c68"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-frenzy\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "762d53b097beab4895e42a64b9217f24f8e087eec1987702b9f2d9652c77012d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/bubble-shooter-saga-2\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f56238680ab915580002579824d774a58b4cac602826e76a6b0a4b9494d5b4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-pro\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "163890e357109a1586699bd1761ac4f23c493c133838d3c1d5089e2a52b867a2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-hd\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de7329b7200fd63c5ff6956fbb2d36791798deccf650f32510a115052da2c3d4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-candy\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89982824b7e9249bd073ff4dd6b76208029fec6a41c277ddb9b4714aba4aaf58"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/maya\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5464f9ba10d421fbbf7b2b36c56ac418efd32439015b17e17145220c114ffcd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-arcade\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84dba2574eb9e7af990eca5a93cb6dc23191852180abeffe6af985386614bd59"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-free\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a09d3ddc325f8caa7ffc1e7efd698da786032a0558cdd64be45a1a66cdfb1763"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-world-cup\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e98fce7f60f846c738a69c0fcbd5b9b100f057b990930d0b2276a6496aabc310"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/garden-tales\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52c1dbb28babf8845a682b7c8791e49078a3d23b62eb2129464f2d1b1ec5dab5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/jewels-blitz-4\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "42de736f42bcc0320a2a211146bd4db0963993786cd6aee4cfcbc74d65a58718"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/candy-rain-6\\/express\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87901cedaafc58f9b4972fd387ef43ef44ec98cf7c535ecd2a205204b229bbad"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/cookie-crush-3\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "086da6b0e1c19a6276c7500a9b04ed7f8d7fb70143f611eade7933a94f3983e3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-match\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3d657d479f9a4a56c8f4b57357e92cea80cab49963e3c8d63cabbc510a028cf6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/forest-match\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9b54bbc08d33c711a436b3488a84336a0a101cded99f5284c8541df5577e65ad"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/yummy-tales\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "286f60c629b65fd1f2b5a0b96dc67c34aebb9bb5bae1a1560150ea1b0bb01231"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-rain-5\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35c2f6e8e5ae77fc5694339e957f18d4990a529d07027c72473c7ce7d7820c4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/dog-puzzle-story\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "872426e280eb100b4df108a0652c35144fbbedf8ac0f5cf13dba28fb542877a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/fish-story\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f59bbddd4216abbb595cbc7ed55ed150348c74797aa6620f6d729e67b37f4f05"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/pool-party\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ad26d5bed217c8da76aac8f47111e42a033b0be2e1171318c56193b174124304"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/toy-match\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7422133194e36c1b8cfcff869291627009823c658076f712e567e37a6d3e6389"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-jigsaw\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5f500550cacc80db41a90c24481a630ce8f5485791322882a7c1b558017f072b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-connect\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66ff4f050251d4d3bb015a33cd8513f6206541b3113d76678640e30e437c38c8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8871d05d94ccaa69642bdd44360c7631d77372c6604ab110e32f6edd8ac0a74a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-blocks\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b645694899599677ed4612ee27c0a9430088baf3bcaa3ac3e3ea57472af1966f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-plus\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "539b0c36037fc6efff1a97c866dd7fa132a27210668ec0bca2c305849b8f6b59"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2048-lines\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eb0743969eb4ff77cceacfdc3076ce74895241797cf94fb090cfe23a8947ff0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/unite\\/express\\/express_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b107f314376b4f42a1602a33e3298784cb97841803f5fd42ef12add25a030aea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.co.uk",
+                "games.express.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/mirror\\/footer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/mirror\\/socials",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/mirror\\/menu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scraper-service-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-classic-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a15392bdb02f977f5f1839aa97362fe72d0baee04a4a9343d7301713b87cb88"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-quick-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da09ff5cb408fde6c1ce112a29f7fe80c78e5d7e4e91a56994c0863c73c1530e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-cryptic-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c1318cf41bf8d10f08624c743d1cf14f4d0c1e82d52df81b41ccbae24668179"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-quiz-crossword\\/teaser@2x\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f64ca6f495f9ad6c5001bfa42c6ee4b36ca76af8540e6f463130c1dafaf40eb8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-daily-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b27468eba21931d1f23a3e6bd1c1dcd18a85b8bbb6b598a7badd06fd68e7793"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-sudoku\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6532c70792c5e212af2a26d08c9ae65ef61ea8d8ee8caa6128091123b7815ba6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/daily-commuter-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "72a86e05d68c712e1c5af603e949c9220b89c3ddb8273e8a1cc65f9390d3d7d0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/micro-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0871d455c8ad59896a17b109fe52f91751a559e5eedaa88e044cacb3790a7a2b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tv-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62922a1343b2e9514789e8cef3e3efcd4a83287c37410001aad14d6390850639"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/thomas-joseph-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "82896883b861ff8dee912d0490b8c8db8b9e0dd52d637323bc25ea56714f28af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/eugene-sheffer-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "13a8d0d1b5dd675c381e0748895690e273a053b3c5b040b39e5b3988c490b781"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-quick-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bbae85bb90353ab3fe6f42f3e82af7df7793812c3e530ad090759adaeb3625cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-classic-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27d825a4678fb0fe057fff202a35c2d9c1d9ed1c8bcee2875b402ea087de4ce9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-cryptic-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c4661308a1e766ad3490fa7aba1be57871cfebf4a4658f6161aebcb9e7ffa2b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-quiz-crossword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "105f39ec8d223d8fb0ec90c1040c1187a238c8a9e7a196ad38e07c8ab5333d49"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-sudoku-x\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8d62a27d92e948cadea615603738f36ad13fa849682c26e6e20605676832e46"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-sudoku\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6ba9025218e58cb83c1e13917f7d4dc1f93eae9681e54de5f6d70c1f9595b3b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-daily\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "397aaa51251bf3773b5ad7b8042cc49631608b9ef6c21445a2181ef5dfcdbbac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/premier-sunday-crossword\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8b854d829f1bee01f42bd779469da059a9bfb94dd80f47d96343c62b60b3c403"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-arrowword\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mirror-word-wheel\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-killer-sudoku-pro\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb7dcac91592aa23b10066bff0424b52b4261edd2bf6d0d3044c7963fc40f14b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-killer-sudoku\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd761fb18d6113fc756e55a33e33680c00cb00412fa9b6d1d0c16836c291fdac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/tca-jumble-sunday\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51bb187cbe1a0dd4fedad6a80f609b7914975f68c6d7b447ea9399f454d52234"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-solitaire\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b654323c43944dce52536cf7d150ebd811b9e573117516224592a3c34e7ca9fa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-solitaire\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "76e7c00258c4f8271ba15cbde3d8ed36b4fa725b64358be8105b3b855af83bd3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-spider-solitaire\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9f6e04205734d2a2b5ded5eb2ced891e261499086f664b9551d2f08c100a02e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/solitaire-garden\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b44fcbbad0cd54f51f7c35d52974396dec9447ca658825ba8894635d3bf8db5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/solitaire-daily-challenge\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2fae3f4a1fcefb0e49d45beefdb3ba41dcd792aa80525e686b8ed0dbe5bdc65"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/solitaire-swift\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5aa06f823e13e1712314e1bc191876b2459a12a2706ca2dd1e23877d620d07d9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-pyramid-solitaire\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "04add170d11cee66adffd282fedcf40287d0886ac426cb1f76430489261f39d5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-freecell-solitaire\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "40ac34412eb682013d177bed2c0de5308205b57797ee90431e9948048b33ce21"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/solitaire-mahjong\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de9ab87582a6c29df8344a6f21d00795ef4830e11dc10a5d6920dfaed90eb71a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/best-classic-mahjong-connect\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73f717508d9e4070d09916bc6fa3a8210fc208bd1e7b76a06741dcabbdea7037"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-mahjong\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f7a9eabfeb986451d95de2a7678826802fff4ff3c696d5249be2d6b182a7f8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/butterfly-kyodai-hd\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a29289f2ab3011ff7ddd051a368096f050288dab02440abbfbaf3607f2a5480b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-story\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "daa7682d081f24e591f016c25277551602783a7df53d8a9f889b57380c845961"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-connect\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "169d0c7a0315d4a857e62b538e7a657551e96ea3e575d5ca552503876517d5dd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/mahjong-frenzy\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f918f14c0f015aeced5a4b252a6be882eb7cad419d90637c68a431e58918a85"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-free\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eb0da9ff0e050fa47da554a90abf1f00d7903ecaaad8a2c72c0b7fdea5234227"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-hd\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8bd3166648ddbcf3546118d7f6ba8b1d5548da48b9c9d0809bce2f06e5287abc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/bubble-shooter-saga-2\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5d3fd7ce1d5449016f3db46abc0077a2c3fca1aaa6b551191c655b5844d71ed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-pro\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc66facf43454e3aabd30265bf37e14a645953d4724401006172fb5743a04818"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/maya\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5b899324ec5531086e0f7a10d9dece136ef1d1851dc8b4cff480e3bf679ff83"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-arcade\\/mirror\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5fa6577411488a580ee7ee70190e9a4f15a5a75a3e8ea35c09f58d8a1c0ce2f2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-candy\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "99b942e0b48af4d13cce354e8f0d6f4605bb2e96c36c13c2819983684bd00f31"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/bubble-shooter-world-cup\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44186ffa5a716c0035854ad8d624433f87659f00c6cec1090d7ab7fe70eec18a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/whitelabel-assets\\/candy-rain-6\\/mirror\\.co\\.uk\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e314999a37e0515354cc3aebc05e7bf9ab04655e7aeb2fcd79d0ef9f512bf04a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/jewels-blitz-4\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "22c10f80b2f54d3cb085a92bee8f391e07214468c24d2fbb4cb0dfb121b60753"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/garden-tales\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "57727f94bff46e73540dbc8cf6aff0aa8141970c269738fdf9ee6af0be3b97c1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/cookie-crush-3\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ec2517281b4847ce34d17fbb4078bc7353e346f95c1516a4e4fc34998b42f43a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-match\\/mirror\\/teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "961b790c00fe1085abb471981bc4d6ffda92da98bb19b555a156c41654cd309c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/forest-match\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62aa70d34af17fc3b92d36a14c2a1d13e7111c0c93b37bc8f1e213cddcca529b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/yummy-tales\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00fe39ac2149755315178e6db724c57b62cf0a0978b1a38e85f2e37e48918a42"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/candy-rain-5\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d0ec2e6e2abe0f84fd358a6560f54cac326c14612f9a41a8299d53259a243bee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/dog-puzzle-story\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d66f741f0b0b1e7ad661a5f3e314336e66e1df5f9a801afdb1260ea27998ce24"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/fish-story\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f1246e58d962e0d769dd312d823922b123fbc2fc000230558701b49f3d54ac07"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/pool-party\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5edb4d145421285130c88d9036262607b68d2b412c1355d03a7723b5052293a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/toy-match\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "badc2279c4c991322f6c6a22e1053b14f989621158cfdc1a23ae477b66d7fe7b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-connect\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "17602f720dbb7e072cafbbdedc4389d84ddfb245b3384852f300c9421899125e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d3809acdb1bafed40d40b6fc88b533a53881792c22767904bd0709c90c704265"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/daily-jigsaw\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb6b7b9576574d9519cadf8d2e5b211a7ed9ec6f97b52bd84f0ca5ef42f92bb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-blocks\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "683fe89c06ab4f4f0aa8fb8c592b7ab8f7cacf039bc1a3c7707a0b58a77e1823"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2020-plus\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "690c6b27bf727a7179ba9cee6cef00e98c1707d3acd9912fd0e4cef2e3cf9659"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/2048-lines\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "641de1d27dcbe711a4b7f903949828e1002659af003a9669aa964c7ab3c52d26"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
+            ]
+        },
+        {
+            "rule": "gamedistribution\\.com\\/assets\\/games\\/unite\\/mirror\\/mirror_teaser\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "softgames-kirk-assets-sgweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "59ba5fcd9717a000e12730bfaf697c165d06e3014430d0db942a1ef666cd7b1b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirror.co.uk",
+                "games.mirror.co.uk"
             ]
         }
     ],
@@ -128,8 +3591,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 11,
-        "Fetch": 12
+        "Script": 12,
+        "Fetch": 24,
+        "Image": 318
     },
     "nameservers": [
         "max.ns.cloudflare.com",

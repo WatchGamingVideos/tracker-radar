@@ -4,11 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000327,
-    "sites": 48,
+    "prevalence": 0.000306,
+    "sites": 45,
     "subdomains": [
         "aleteia",
-        "abrilid",
+        "longbeard",
+        "apl-1",
         "nbc-sports",
         "abrilvejario",
         "adelaidenow",
@@ -22,12 +23,13 @@
         "thechronicle",
         "themercury",
         "townsvillebulletin",
+        "insidesport-in",
         "technologyreview-com"
     ],
     "cnames": [
         {
-            "original": "id.abril.com.br",
-            "resolved": "abrilid.go-vip.net"
+            "original": "backend.keepup.com.au",
+            "resolved": "apl-1.go-vip.net"
         },
         {
             "original": "origin.cairnspost.com.au",
@@ -82,6 +84,10 @@
             "resolved": "abrilvejario.go-vip.net"
         },
         {
+            "original": "wp.cruxnow.com",
+            "resolved": "longbeard.go-vip.net"
+        },
+        {
             "original": "wp.en.aleteia.org",
             "resolved": "aleteia.go-vip.net"
         },
@@ -102,7 +108,7 @@
             "resolved": "technologyreview-com.go-vip.net"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 0,
     "resources": [
         {
             "rule": "go-vip\\.net\\/wp-content\\/themes\\/aleteia-2017\\/assets\\/images\\/logo\\.svg",
@@ -351,57 +357,96 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/abrID",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "abrilid"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "id.abril.com.br",
-                    "resolved": "abrilid.go-vip.net"
-                }
-            ],
-            "responseHashes": [
-                "ce78a46afefc372985d0f5151e23e2a98fd41e74767ed3c342ab648f84ac4684"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abril.com.br",
-                "casa.abril.com.br"
-            ]
-        },
-        {
-            "rule": "go-vip\\.net\\/abrIDcss",
+            "rule": "go-vip\\.net\\/wp-content\\/themes\\/aleteia-2017\\/assets\\/images\\/page-patron\\/credit-card-2\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "abrilid"
+                "aleteia"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "id.abril.com.br",
-                    "resolved": "abrilid.go-vip.net"
+                    "original": "wp.en.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                },
+                {
+                    "original": "wp.fr.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
                 }
             ],
             "responseHashes": [
-                "c56e0f0444c5265258ead2badcd6860af04e6ff0001fb061a7b87d0e2ab306a0"
+                "5b9f92b614b08f3fa5139e26f112fc07c3b14449433cb690a123c5514c1be383"
             ],
-            "type": "Stylesheet",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "abril.com.br",
-                "casa.abril.com.br"
+                "aleteia.org",
+                "fr.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "longbeard",
+                "apl-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.cruxnow.com",
+                    "resolved": "longbeard.go-vip.net"
+                },
+                {
+                    "original": "backend.keepup.com.au",
+                    "resolved": "apl-1.go-vip.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cruxnow.com",
+                "keepup.com.au"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "longbeard",
+                "apl-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.cruxnow.com",
+                    "resolved": "longbeard.go-vip.net"
+                },
+                {
+                    "original": "backend.keepup.com.au",
+                    "resolved": "apl-1.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "82ec6a9c82d4273bc6b2c87ba63585467257fc492890f789d6728c2f2b06672e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cruxnow.com",
+                "keepup.com.au"
             ]
         },
         {
@@ -432,7 +477,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2021\\/12\\/ES_NEW\\.gif",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/Pave%CC%81-300x250_1\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -448,7 +493,7 @@
                 }
             ],
             "responseHashes": [
-                "35bdcfd511ff2ed08a49208e3384ffc8ad14cfe8d2de7c4d331c5534db8ed9df"
+                "dd7e2744c84fe29f65f61471cae578f63c2a31e24481520a2a2fc4beb10c1677"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -459,7 +504,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2021\\/07\\/shutterstock_1848038737\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/logo-premium-prayers\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -475,7 +520,7 @@
                 }
             ],
             "responseHashes": [
-                "15c07d5882196789cd6df1ec4e2e5bbbe80837124941d6a28cd8fa06c6a6dbf9"
+                "1ec9d0150d509a24cfb74405dc6b84b561e27d3f82795dd3ac784a790512a737"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -486,7 +531,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2020\\/09\\/SAMU-EMERGENCY-FRANCE-A000_Par3015670\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/monasteries\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -502,7 +547,7 @@
                 }
             ],
             "responseHashes": [
-                "ad36d76bd0ca324c99bac810561634ce4e96bfaa195b55801ce28347bd3a7042"
+                "603426618031f49afe09782cb65c7eb6898aa7b857ac26db955543d1082c12a2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -513,7 +558,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/02\\/WEB3-AUSTRAILIAN-RESTAURANT-PHONES_\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/WEB3-TURNING-RED-DISNEY\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -529,7 +574,7 @@
                 }
             ],
             "responseHashes": [
-                "6f1dc0f0163c15deb49e0c86e496cdcc73e29443d90e344864750c10860b6293"
+                "e9fd3f4343b874e1f4cd7e15a58d079114fbfbcf1d74f206a3cd8a98bb73aee3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -540,7 +585,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2021\\/10\\/WEB3-DEVIL-SATAN-Wiki\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/WEB-MARRIAGE-COUPLE-POPE-FRANCIS-CHILE-02-Cortesia\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -556,7 +601,7 @@
                 }
             ],
             "responseHashes": [
-                "6720e565f3ebbb8c5437a8480d56c4d99441d5d98e55e463a64403f048409961"
+                "15a0490eb4070d0429a310b9dad1fa5ee8fb2a005e86b87ff0560d4683a04854"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -567,7 +612,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2015\\/11\\/web-priest-fallen-eucharist-street-arist-photo-courtesy-of-gangjeong-village\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/000_32737KM\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -583,7 +628,7 @@
                 }
             ],
             "responseHashes": [
-                "05d84ceab15385bb04546dc26b49d547ca115c0e8b076b04dbceee760d910d1d"
+                "d1ff75410f8421b47e05e2ff37ea2e560319e794cda36d8dd7b7f5586b628aff"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -594,7 +639,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2020\\/03\\/angeles\\.png",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/EUCHARIST-PROFANATION-CHILE-LOURDES-03-@santuariolourdeschile\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -610,7 +655,7 @@
                 }
             ],
             "responseHashes": [
-                "d3c68e8a53313a730fe25f66df6a8308498ef7c184620ec038abbbe72abedf89"
+                "e13b932e0085327ade5bf3e6b7f4ae068f236d9f0fa4de437f6b57b0536939d4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -621,7 +666,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2018\\/03\\/web3-sindone-christ-3d-italy-youtube-i-tgpadova-telenuovo\\.png",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/WEB3-UKRAINIAN-BOY-SINGS-CROSS-Capture-Twitter-@Sachinettiyil\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -637,7 +682,61 @@
                 }
             ],
             "responseHashes": [
-                "950d1dc75ebd027031fed93961f5089b7817f818149c69f126ca30bc9f0b2fac"
+                "232d7ce3789f38b000abe12d3394a2411c2a8639986d03e5c29404c4ebfcb045"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "es.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/WEB3-MANUEL-ALEJANDRO-COMPOSER-ALEJANDRO-SANZ-Manuel-Alejandro-Oficial-@ASanzOficial\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.es.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "8a485be1288384925f70d6310d0dc14ad07be5638e715cda84ed57cd57e0a769"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "es.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/7\\/2022\\/03\\/Pablo_dOrs-Chema-Castello-CC\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.es.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "a9dfc1618a872979eaf0dbf97a0740d13c2f79cf3205f4d5f30e15b1bd92991b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -675,7 +774,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2021\\/12\\/FR_2_NEW\\.gif",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/04\\/Pave%CC%81-300x250_2-5\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -691,7 +790,7 @@
                 }
             ],
             "responseHashes": [
-                "be98a3d10997b6466cc90b735a29dd050d4bcf01234428612047890af859189b"
+                "ba60a360de48b469b8059042ab380e6e113a64682944394eb9b2f352ae07c3f3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -702,7 +801,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/02\\/TENTATION-DE-SAINT-ANTOINE-aurimages_0045984_6000\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/logo-premium-prayers-1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -718,7 +817,7 @@
                 }
             ],
             "responseHashes": [
-                "c189b23f06c7c0391a22b366919a65c4d6203f12acda2eeae970b470162b118b"
+                "1ec9d0150d509a24cfb74405dc6b84b561e27d3f82795dd3ac784a790512a737"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -729,7 +828,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2021\\/12\\/000_LQ03D\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/monasteries-1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -745,7 +844,7 @@
                 }
             ],
             "responseHashes": [
-                "7158069b57863a87d3bac391e6972e2f640c77a1f3995c91a91726bfd6066d2e"
+                "603426618031f49afe09782cb65c7eb6898aa7b857ac26db955543d1082c12a2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -756,7 +855,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/02\\/Gostivar_07022022-4\\.jpeg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/cooking-woman\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -772,7 +871,7 @@
                 }
             ],
             "responseHashes": [
-                "3992c98a5b93074aa23c3362c01bf001c3f67aeef59640872fe8d8b8192a5e8c"
+                "37749a4e1130a6f89a2707c6b96f770eaa3c7dcb2c2fe71406265527572735a2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -783,7 +882,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2018\\/01\\/web3-woman-wrinkles-red-glasses-grandma-stocksy\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/pape-francois-@Vatican-Media\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -799,7 +898,7 @@
                 }
             ],
             "responseHashes": [
-                "e6ae142b5177e7f4807f72a072f7c56822a1fb5d5573b96766122c443550cede"
+                "5c96f5b329d3fe6dcbbac69b6a91c762e9b0b2b0ae88e262ee6d8b6a1575ec86"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -810,7 +909,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/01\\/WEB2-PERE-JOSEPH-CAPTURE-FACEBOOK\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2020\\/09\\/WEB3-HAPPY-COUPLE-BED-SEX-Shutterstock_165086624\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -826,7 +925,7 @@
                 }
             ],
             "responseHashes": [
-                "e85042dac2b10636686c40cb7ec356a6d1d81b196dd8e5929e2dfa418e9a05c8"
+                "248a4e6f0e6b7bdbb87373ea37fae2fce17996408a2ace97c7f7cf96733de883"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -837,7 +936,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/02\\/shutterstock_1810976710\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/WEB-QUINTUPLETS-MEXICO-ALTAR-BOYS-FAMILY-03-Courtesy\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -853,7 +952,7 @@
                 }
             ],
             "responseHashes": [
-                "85d7643605919f816da67ba6a454229750361b8fbc6d793ec1964b0e8c8f70dd"
+                "2db343d620204ed8d0066a2df28b10ae03a60b7bd9706489dee969327213dc1d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -864,7 +963,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/02\\/WEB3-AUSTRAILIAN-RESTAURANT-PHONES_\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/WEB3-FATHER-LIAM-RYAN-portrait-Facebook\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -880,7 +979,61 @@
                 }
             ],
             "responseHashes": [
-                "6f1dc0f0163c15deb49e0c86e496cdcc73e29443d90e344864750c10860b6293"
+                "9e841619a42ba2e02c965766e990fc2710dc98a627c4815f66e550b6e84e1f6b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "fr.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/pere-vasyl\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.fr.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "d26187b2cb35edbeeb7c53a1433ce08d33f57470ccf71559b40ecc3237ccd73b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "fr.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/6\\/2022\\/03\\/Sans-titre-69\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.fr.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "f81f364b395cbd814ac0d29216fa60194f3df76876fac43e7a949a3b90e69dfa"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -940,6 +1093,33 @@
             ]
         },
         {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/BODER-UKRAINE-POLAND-OK-MWD\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "1fae24defecd04d8c9929793e0c73c7e71ca01ef362fb6b3ef085f1d3193bf2a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
             "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2020\\/12\\/Mobile_app_icon_white-1-copia-1\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -967,7 +1147,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2021\\/12\\/PT300x250\\.gif",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2020\\/03\\/saint-katharine-drexel-public-domain\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -983,7 +1163,7 @@
                 }
             ],
             "responseHashes": [
-                "eb6d49af38efaa17e3674a4643e77b512c32dad3444298c8e09f4b978c975a1a"
+                "b7f90724cea47c78d1bebb55d83f4895ecfd452245e7d41134dad4543231807c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -994,7 +1174,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/02\\/WEB3-AUSTRAILIAN-RESTAURANT-PHONES_\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/Projekt-bez-tytulu-17\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1010,7 +1190,7 @@
                 }
             ],
             "responseHashes": [
-                "6f1dc0f0163c15deb49e0c86e496cdcc73e29443d90e344864750c10860b6293"
+                "8db113524fe5dcf83b86417d12ccb2e914c9ac7c711b6f5214366e088dffa8fe"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1021,7 +1201,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2017\\/05\\/lineasacra\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/Bishop-Hnilica\\.jpeg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1037,7 +1217,7 @@
                 }
             ],
             "responseHashes": [
-                "e9ffd8d8c5859f9a08a53ee0c2816588bec58cdce11d6d893ae52c5878cfc68e"
+                "1757284616935be0b5de70bfe8c32a06848fc119b715046b7a80d927ed6f40ee"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1048,7 +1228,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/02\\/WEB3-BAPTISM-CHILD-BABY-SACRAMENT-Unsplash\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2021\\/11\\/shutterstock_482753347\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1064,7 +1244,7 @@
                 }
             ],
             "responseHashes": [
-                "cd3c5ef2e71189cffeaf3857f22bedfd98c6ec531db8d60ac5b10cc2cfaa2b12"
+                "8a507900997be8ea0f3dc35e103150fbc35f56f088fb0b68014959487f8b116e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1075,7 +1255,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/02\\/MARGARET-AND-DEREK-FIRTH-COUPLE-UK-01-Barbara-Smith\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2019\\/10\\/shutterstock_1212831298\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1091,7 +1271,7 @@
                 }
             ],
             "responseHashes": [
-                "a693be58982443b4bf622ce461a6ce9ed159b2cd0684e0669f83fcaf7598a9c1"
+                "a4fd18600fe7159f7dea8ff6ba72b7b45eb305de9de10f013f382a83c30660a2"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1102,7 +1282,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/02\\/WEB3-Stevo-Pendarovski-Gostivar_07022022-4\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/04\\/shutterstock_594349337\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1118,7 +1298,7 @@
                 }
             ],
             "responseHashes": [
-                "768d11fb4da588a6c60f3c57b8e3d33fb05d0db83b4d8c3678ec7cc1347601d5"
+                "806b5e1b52258852c48179d67650fb54c5627f5302b7a24da1f57af50d0672fd"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1129,7 +1309,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2021\\/04\\/shutterstock_1601795821\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/profanacao-Gurupi\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1145,7 +1325,7 @@
                 }
             ],
             "responseHashes": [
-                "9e1d39809d6044e7d85f64018d2e99c130e837f3bb7287041b1e214674e327e3"
+                "59c1fc13171c7afefea69e5aefb11cce667f7043251938eadd7ddc8daa6d79f0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1156,7 +1336,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2018\\/06\\/web-fatima-apparitions-sister-lucia-pope-john-paul-ii-arturo-mari-afp\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/02\\/Caritas-Ukraine\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1172,7 +1352,547 @@
                 }
             ],
             "responseHashes": [
-                "1e33fd53c8da81f2aef5b0486bae64a06293af6b14415ed1998e1444da9fa90d"
+                "d3ca02cf137e9cfbadb495acae483e57067d09920d6f7a61eb70d05aa66953a3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/Paivi-and-Pohjola\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "9de87b6e65c7f351a3b99894e6f1b7c9f99108d3a7235279ab968c8085857eae"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2021\\/05\\/shutterstock_1046485192\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "34096947173d2f5748a6f95964261e5525ad8ec005322ca31d144bce52f87b5d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2020\\/06\\/WEB2-AM01-Antoine-Mekary-ALETEIA-AM_1554\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "cc64b8c6419f9b85305055b5e671556c8d199c04050f554491c52342227b22e7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2018\\/10\\/web3-san-francisco-de-asis-statue-church-shutterstock_772637167-k505-ai\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "9c892fc4cc23dfd03618d08ec479029d21c32fd06be9fdc4983d768100ae447f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/WEB2-Anton-et-Snizhana-DR\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "77aa004999bed351504424c7cc565c4839bb1d6ee3b7ca28f1a4f3c72665133f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2018\\/02\\/w460\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "e901288ce720319e5536d876e41008e08042b45e4087ef96bd8005dccf1f5d5d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/OMARENY-GARCIA-VENEZUELA-01-@DiocesisSC\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "9f310dca8e237ad663954206e7c881028683d2d59486144a94465d416702887a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/shutterstock_2140265611\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "73dc64a3163a29c92afd7f39609e342479e7326d21bdcba13b7df18920e82287"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/WEB3-SAINT-MICHAEL-STATUE-YouTube\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "cc2cd6e07b41e5fb6ec577de2bef2ed840ff1a481223a4562bcef9a59629d5c7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/04\\/shutterstock_1210689763\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "e1fddc5d4ed3de6c771917365e0344d0cd2f22558eba6536dd79a6ec1febb349"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/Pave%CC%81-300x250_1\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "d64e7b4b021c9c319c2415853a7ce360dea11840fed8a27aed766c5e0290eee8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/logo-premium-prayers-1-1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "1ec9d0150d509a24cfb74405dc6b84b561e27d3f82795dd3ac784a790512a737"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/image-23\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "6ee7f85bd1e3f57a5e3814b38d622229f0efa96117a98b44687e273a6c67803d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/WEB3-DENZEL-WASHINGTON-WILL-SMITH-CHRIS-ROCK-OSCARS-Afp_\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "99b121f72e2841764423695c8c69feb8cbb804659d43f1e6d4eb134c8ab2e541"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/000_32743DK\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "ced6cca412b65e4b1dfd3773205b31bd5a4d5e52a0e68c8c59c601264dde8984"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/WEB3-DENZEL-WASHINGTON-DEVIL-POPE-FRANCIS-Shutterstock-godong\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "564b191b80cebf2e50a2ea08e33108176b70801cab4d7adb0ab97e2b65b3c145"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2020\\/02\\/web3-rio-carnival-christ-075_borba-riocarni200223_npucs-gilson-borba-nurphoto\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "b635ad5ccf5c96e0a21cf60accdc34bc2fc03cc4533424aa06e90d19e5c6acf0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2019\\/12\\/web3-nigeria-christians-death-funeral-sadness-tears-afp-000_1592zo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "36b549519bd0587883db00936c48c186ddc90178a6bf8d826197c3ca72f9d1b0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2022\\/03\\/WEB3-TURNING-RED-DISNEY\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "e9fd3f4343b874e1f4cd7e15a58d079114fbfbcf1d74f206a3cd8a98bb73aee3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aleteia.org",
+                "pt.aleteia.org"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/sites\\/5\\/2018\\/03\\/web3-sindone-christ-3d-italy-youtube-i-tgpadova-telenuovo1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aleteia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "wp.pt.aleteia.org",
+                    "resolved": "aleteia.go-vip.net"
+                }
+            ],
+            "responseHashes": [
+                "e2fed5f3525cbf657c948995a9291572bb2b21ce3043b205b5b40c01bddb1b40"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1199,7 +1919,7 @@
                 }
             ],
             "responseHashes": [
-                "1ce3c965d2d50be120665e57100e4015c842c25a27c9034dc7be16b840cf19ac"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1226,7 +1946,7 @@
                 }
             ],
             "responseHashes": [
-                "107f171bc7ffaa4892a96f9071a16c94831a4e1405c39cb9fe5c66c330c86247"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1323,7 +2043,29 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2021\\/12\\/JF22_DesktopLg\\.jpg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2017\\/02\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insidesport-in"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "016df7334d4982e1c70cd26f42fce4330a9bf141431c8e9856d792c2a087ebb2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "insidesport.in",
+                "www.insidesport.in"
+            ]
+        },
+        {
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/02\\/tr10_Desktop_lg\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1339,7 +2081,7 @@
                 }
             ],
             "responseHashes": [
-                "c4d64cfda0ea47e449deeff4c212159f08c9de7494a90a2aa13d4bab0a94b4ba"
+                "fc91a51d55885843808bfe8221f5a1504cff0891ef47cb93b8b949eaab85a748"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1350,7 +2092,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/01\\/mit-dementia-hi-res_RicardoSantos1\\.png",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/03\\/AI_Hyatt_Intake_Gates_0986_12_07_20\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1366,7 +2108,7 @@
                 }
             ],
             "responseHashes": [
-                "69eeeb5292551e5468205ba08ba5b42bbc5eccaa6077cfb4cb5a462681524b98"
+                "4d3b7cf84c46deb3b5d7a0be46eb470e0271328e08abd91bef56922b18f7e8e5"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1377,7 +2119,7 @@
             ]
         },
         {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/02\\/TCV-purple-plasma-visible-light-cam\\.jpeg",
+            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/02\\/TR10-2022-Featured-Image-large\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1393,61 +2135,7 @@
                 }
             ],
             "responseHashes": [
-                "979e1ce41322ae59e1ccd46c43dd016cd626dab2c2ceee6238424c708bde83a2"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "technologyreview.com",
-                "www.technologyreview.com"
-            ]
-        },
-        {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/02\\/AP_19290763295504\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "technologyreview-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "wp.technologyreview.com",
-                    "resolved": "technologyreview-com.go-vip.net"
-                }
-            ],
-            "responseHashes": [
-                "a5f6452a28f7c2fed941199b328292bd6dcb1590c483fee2534cbf31b70efc22"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "technologyreview.com",
-                "www.technologyreview.com"
-            ]
-        },
-        {
-            "rule": "go-vip\\.net\\/wp-content\\/uploads\\/2022\\/02\\/Copy-of-Orchard_trees\\.2\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "technologyreview-com"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "wp.technologyreview.com",
-                    "resolved": "technologyreview-com.go-vip.net"
-                }
-            ],
-            "responseHashes": [
-                "f0e3ad11919d9ab7789695996b776cbedca856790dd443cd5d6b5c016817d8c0"
+                "8ea351d8c6f4064f845ccdbfae82c6e6778c96bb5e08de3e8e1b556ccb184bbc"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1460,11 +2148,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0,
     "types": {
-        "Image": 107,
-        "Script": 2,
-        "Stylesheet": 2
+        "Image": 157,
+        "Preflight": 2,
+        "Fetch": 2
     },
     "nameservers": [
         "ns1.go-vip.net",

@@ -10,7 +10,7 @@
         "www"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "glimp\\.co\\.nz\\/assets\\/widget_power\\.js\\.erb",
@@ -45,7 +45,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e0e5a3e0fb3b5ca9feebe5689a479cafba42bd5dc3de3d92e3b6520f55f74258"
+            ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -58,14 +60,14 @@
             "rule": "glimp\\.co\\.nz\\/assets\\/compareswitchsave\\.png",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [
-                "www"
-            ],
+            "subdomains": [],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "bad578f4b316a820434c1e6438b085757b897dc70ee58bc41778854f70e64151"
+            ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -77,14 +79,40 @@
         {
             "rule": "glimp\\.co\\.nz\\/assets\\/widget_power_google\\.js\\.erb",
             "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a58efd830813cc50862d8d6b06512cdca1b4a5d0e8b464512f6e938915c04097"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kiwiblog.co.nz",
+                "www.kiwiblog.co.nz"
+            ]
+        },
+        {
+            "rule": "glimp\\.co\\.nz\\/assets\\/Oswald-Regular-9580184a1c067b8956bde91a042c92b55ad5ea8dbeec264d5e500228c11de8ee\\.ttf",
+            "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [],
+            "subdomains": [
+                "www"
+            ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [],
-            "type": "Script",
+            "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -99,12 +127,13 @@
     "types": {
         "Script": 4,
         "Stylesheet": 2,
-        "Image": 2
+        "Image": 2,
+        "Font": 2
     },
     "nameservers": [
-        "ns3.dnsimple.com",
-        "ns4.dnsimple.com",
         "ns1.dnsimple.com",
-        "ns2.dnsimple.com"
+        "ns2.dnsimple.com",
+        "ns3.dnsimple.com",
+        "ns4.dnsimple.com"
     ]
 }

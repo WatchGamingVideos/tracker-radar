@@ -10,19 +10,25 @@
         "analytics"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "lucid\\.app\\/js\\/metriclogger",
             "cookies": 0.0000136,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "334e268c59e79d56db0d888cb7d6c0a98636e21ee68b374ab4ad599b5cfde59a"
+                "d900c542421f7eda01f34bd334f0fd05effe66474fa6f144f06c1037642538e6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -63,26 +69,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lucidchart.com",
-                "www.lucidchart.com"
-            ]
-        },
-        {
-            "rule": "lucid\\.app\\/util\\/ipLocation",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
             "responseHashes": [
-                "0e33e8bc8967612640bbda2597562dd2eefd1d53faad28d2aed9517264144dd1"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -102,9 +90,29 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b0e9790244963256f9f9d26de9e1b074d1da7372132a6ef0c6ebe83fdc77b24a"
+                "08fca7cae0c63e43cf671fc1169ed7d6e0052774ba3a24cca26a6b663df9f62e"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lucidchart.com",
+                "www.lucidchart.com"
+            ]
+        },
+        {
+            "rule": "lucid\\.app\\/util\\/ipLocation",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d77e310773b13b985f4807b25642581849b582e7b9358b4139785a35ef7993a5"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -123,9 +131,9 @@
         "Document": 2
     },
     "nameservers": [
-        "ns-1825.awsdns-36.co.uk",
-        "ns-872.awsdns-45.net",
         "ns-1060.awsdns-04.org",
-        "ns-446.awsdns-55.com"
+        "ns-1825.awsdns-36.co.uk",
+        "ns-446.awsdns-55.com",
+        "ns-872.awsdns-45.net"
     ]
 }

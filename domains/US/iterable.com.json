@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000102,
-    "sites": 15,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
-        "js"
+        "js",
+        "api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -23,8 +24,8 @@
                 "js"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.0000545,
+            "sites": 9,
+            "prevalence": 0.0000613,
             "cnames": [],
             "responseHashes": [
                 "1b07ff9cb3ee66f1f0e4c708320ea5d9d6487d1b15e022416d914e214df163aa"
@@ -37,10 +38,75 @@
                 "marleyspoon.com.au",
                 "nuts.com",
                 "www.allbirds.co.uk",
-                "www.oxo.com",
+                "www.allbirds.com",
+                "www.hydroflask.com",
                 "www.qconcursos.com",
                 "www.stitcher.com",
                 "www.viz.com"
+            ]
+        },
+        {
+            "rule": "iterable\\.com\\/api\\/events\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8fce0e6dfaea602d25b41a8634c243d121f169eef44445870dea63f46bf97332"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nuts.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "iterable\\.com\\/api\\/events\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nuts.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "iterable\\.com\\/iterableUtils\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "067bb9957424e5ba224acc6f41404edd86302de3b419dc5e09daeb458a63de99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hydroflask.com",
+                "www.hydroflask.com"
             ]
         }
     ],
@@ -48,7 +114,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8
+        "Script": 11,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-1028.awsdns-00.org",

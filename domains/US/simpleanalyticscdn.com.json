@@ -4,25 +4,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000123,
-    "sites": 18,
+    "prevalence": 0.000136,
+    "sites": 20,
     "subdomains": [
+        "scripts",
         "queue",
-        "scripts"
+        "queue-es"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "simpleanalyticscdn\\.com\\/latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 6,
+                "NavigatorUAData.prototype.brands": 6,
+                "Navigator.prototype.doNotTrack": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Navigator.prototype.language": 6,
+                "Screen.prototype.width": 6,
+                "Screen.prototype.height": 6,
+                "NavigatorUAData.prototype.getHighEntropyValues": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "cb59de3dd33b777e6a67e949317a094341bc02f3aba22198e8c301e2cf371cc5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brobizz.com",
+                "www.food.gov.uk",
+                "www.hebban.nl",
+                "www.mathler.com",
+                "www.michelinman.com",
+                "www.quorn.co.uk"
+            ]
+        },
+        {
             "rule": "simpleanalyticscdn\\.com\\/simple\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "queue"
+                "queue",
+                "queue-es"
             ],
             "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "sites": 11,
+            "prevalence": 0.0000749,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -31,11 +70,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "brobizz.com",
                 "burnermail.io",
+                "www.atg.se",
                 "www.cinch.co.uk",
                 "www.food.gov.uk",
                 "www.hebban.nl",
-                "www.hyundai.com",
                 "www.mathler.com",
                 "www.michelinman.com",
                 "www.quorn.co.uk",
@@ -44,7 +84,7 @@
             ]
         },
         {
-            "rule": "simpleanalyticscdn\\.com\\/custom\\/cinch\\.js",
+            "rule": "simpleanalyticscdn\\.com\\/custom\\/atg\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -53,23 +93,27 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "NavigatorUAData.prototype.brands": 2,
                 "Navigator.prototype.doNotTrack": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.language": 2,
                 "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2
+                "Screen.prototype.height": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b46ac248cfc5f44ca183e61020179445d30b46693fe0b96e2bdebdabc91402ea"
+                "d5e36ced0d1abad949323a26f581cec517494887d5c260d9bc384a2c8f219d3d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cinch.co.uk",
-                "www.cinch.co.uk"
+                "atg.se",
+                "www.atg.se"
             ]
         },
         {
@@ -93,48 +137,14 @@
                 "food.gov.uk",
                 "www.food.gov.uk"
             ]
-        },
-        {
-            "rule": "simpleanalyticscdn\\.com\\/latest\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "scripts"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 7,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 7,
-                "Navigator.prototype.doNotTrack": 7,
-                "Navigator.prototype.language": 7,
-                "Screen.prototype.width": 7,
-                "Screen.prototype.height": 7
-            },
-            "sites": 7,
-            "prevalence": 0.0000477,
-            "cnames": [],
-            "responseHashes": [
-                "cb59de3dd33b777e6a67e949317a094341bc02f3aba22198e8c301e2cf371cc5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "food.gov.uk",
-                "www.food.gov.uk",
-                "www.hebban.nl",
-                "www.hyundai.com",
-                "www.mathler.com",
-                "www.michelinman.com",
-                "www.quorn.co.uk"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 10,
-        "Script": 11
+        "Script": 10,
+        "Image": 11
     },
     "nameservers": [
         "carter.ns.cloudflare.com",

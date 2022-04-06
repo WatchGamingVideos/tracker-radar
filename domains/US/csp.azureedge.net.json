@@ -9,40 +9,20 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "csp\\.azureedge\\.net\\/cdn\\/widget\\/fonts\\/icomoon\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c6cf008e037f14ff05116417c25d9bed03a8e9fd409e34e64397499432dab01a"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "chicagotribune.com",
-                "www.postguam.com"
-            ]
-        },
         {
             "rule": "csp\\.azureedge\\.net\\/cdn\\/widget\\/WidgetTemplate2\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e1d39256faa607df65dd15fb254dd774699293492ac06bdbdd800b73967d3334"
@@ -51,18 +31,21 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "postguam.com",
+                "eastbayexpress.com",
+                "www.clickorlando.com",
                 "www.postguam.com"
             ]
         },
         {
             "rule": "csp\\.azureedge\\.net\\/cdn\\/js\\/jquery\\.fireSlider\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "window.innerWidth": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "d19425f20bfe1ea505166a8841b2232c795ff72b1c8a34f10a743db915f7494d"
@@ -71,7 +54,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "postguam.com",
+                "eastbayexpress.com",
+                "www.clickorlando.com",
                 "www.postguam.com"
             ]
         },
@@ -81,8 +65,8 @@
             "fingerprinting": 0,
             "subdomains": [],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e03ea88e5149801458dd9cabf62c8871cc27687d7d8a6a0fc2ff59ef434cb645"
@@ -91,8 +75,54 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "postguam.com",
+                "eastbayexpress.com",
+                "www.clickorlando.com",
                 "www.postguam.com"
+            ]
+        },
+        {
+            "rule": "csp\\.azureedge\\.net\\/cdn\\/widget\\/fonts\\/icomoon\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c6cf008e037f14ff05116417c25d9bed03a8e9fd409e34e64397499432dab01a"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eastbayexpress.com",
+                "www.chicagotribune.com",
+                "www.clickorlando.com",
+                "www.postguam.com"
+            ]
+        },
+        {
+            "rule": "csp\\.azureedge\\.net\\/cdn\\/OneCol\\/one\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eee64e7a420c5e70f9c636da84110997eb85bf5e55e56a003ff4b448d4889897"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pix11.com",
+                "www.dailycamera.com"
             ]
         }
     ],
@@ -102,9 +132,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Font": 2,
-        "Stylesheet": 2,
-        "Script": 4
+        "Stylesheet": 3,
+        "Script": 8,
+        "Font": 4
     },
     "nameservers": []
 }

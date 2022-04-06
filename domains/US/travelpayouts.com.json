@@ -7,28 +7,49 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
         "www",
         "suggest",
         "c86",
-        "c24",
         "c116"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
-            "rule": "travelpayouts\\.com\\/mewtwo\\/styles\\.css",
-            "cookies": 0.0000272,
+            "rule": "travelpayouts\\.com\\/whereami",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5df39450d222373281d8acf13225bcd3262e34b6b5c5240c4f03a55ff7e3f3a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flightscanner.com",
+                "realting.com"
+            ]
+        },
+        {
+            "rule": "travelpayouts\\.com\\/mewtwo\\/styles\\.css",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "8f90ca8086e3a8827af8a77f407a2a9533d6c507b22c369f8741b6b83133db66"
@@ -39,6 +60,7 @@
             "exampleSites": [
                 "livingcost.org",
                 "theredlightguide.com",
+                "www.airlinesmap.com",
                 "www.europeanbestdestinations.com",
                 "www.guiadacidade.pt"
             ]
@@ -51,8 +73,8 @@
                 "www"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "c023d384ce2b77b2973fb06c96a6b4242c90cf08980541eebecd07b27dbd687b",
@@ -64,6 +86,7 @@
             "exampleSites": [
                 "livingcost.org",
                 "theredlightguide.com",
+                "www.airlinesmap.com",
                 "www.europeanbestdestinations.com",
                 "www.guiadacidade.pt"
             ]
@@ -115,19 +138,17 @@
         },
         {
             "rule": "travelpayouts\\.com\\/content",
-            "cookies": 0.0000204,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "c86",
-                "c24",
                 "c116"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d2b2283de1971efedfff4e230066d8110dec763ea32d12ff05f51e4e5855265b",
                 "eb5b17a78b77c61598b4ef423c686db82420e66a5750a219d56b6f2212467e53"
             ],
             "type": "Image",
@@ -135,20 +156,19 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "theredlightguide.com",
-                "visasam.ru",
                 "www.nakedwanderings.com"
             ]
         },
         {
             "rule": "travelpayouts\\.com\\/powered_by\\/img\\/tp_white\\.png",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 0,
             "subdomains": [
                 "www"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "895487dd7d145cbb43f937e485608efd70535508bae095519e5135f6275fbb14"
@@ -158,6 +178,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "theredlightguide.com",
+                "www.airlinesmap.com",
                 "www.europeanbestdestinations.com"
             ]
         },
@@ -175,7 +196,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4e0d2f01e58fbd072fab82ea2661a76f3a51c60b6a6bd7fd8a3765325983dd04"
+                "ec916d7bc82b6cecbfb60cc847c1ec14bf4dccf62d86fc4410cd7baf4c1a3669"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -196,7 +217,9 @@
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.appName": 2
+                "Navigator.prototype.appName": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -217,8 +240,9 @@
     "performance": {},
     "cookies": 0.0000613,
     "types": {
-        "Stylesheet": 4,
-        "Script": 8,
+        "XHR": 2,
+        "Stylesheet": 5,
+        "Script": 9,
         "Image": 8,
         "Fetch": 2
     },

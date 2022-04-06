@@ -4,59 +4,140 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000408,
+    "sites": 6,
     "subdomains": [
-        "logging",
-        "www"
+        "www",
+        "logging"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "simanalytics\\.nl\\/piwik\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000272,
             "fingerprinting": 2,
             "subdomains": [
+                "www",
                 "logging"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2,
-                "window.name": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Navigator.prototype.mimeTypes": 2,
-                "Navigator.prototype.javaEnabled": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Navigator.prototype.platform": 2
+                "Navigator.prototype.userAgent": 4,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "window.name": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.javaEnabled": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.platform": 4
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "cf39b5a600499348a26f786ad30287b07b646ef4ab31f5c0520cea5366069134"
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "_pk_id.3.0373": {
-                    "ttl": 33955205,
+                "_pk_id.41.b60c": {
+                    "ttl": 33955203,
                     "length": 28,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "_pk_ses.41.b60c": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                },
+                "_pk_id.158.1091": {
+                    "ttl": 33955201,
+                    "length": 28,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "_pk_ses.158.1091": {
+                    "ttl": 1801,
+                    "length": 1,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "_pk_id.3.0373": {
+                    "ttl": 33955202,
+                    "length": 28,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "_pk_ses.3.0373": {
-                    "ttl": 1805,
+                    "ttl": 1801,
                     "length": 1,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 0.5
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "zoetermeer.nl",
+                "capelleaandenijssel.nl",
+                "www.capelleaandenijssel.nl",
+                "www.heuvelrug.nl",
+                "www.zoetermeer.nl"
+            ]
+        },
+        {
+            "rule": "simanalytics\\.nl\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "logging"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capelleaandenijssel.nl",
+                "www.capelleaandenijssel.nl",
+                "www.heuvelrug.nl",
+                "www.zoetermeer.nl"
+            ]
+        },
+        {
+            "rule": "simanalytics\\.nl\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "logging"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "694ec3d66f5ac0b1b06868221032401c0ce630c5ef29b2c559cc49649215f8f1",
+                "1e6d747eb9066b95290627fbc15ef87fba6c62983bf0bef1617eaf499dc2f352",
+                "85a37e5c13ef2111847aee1fc1723d8a93967a8c513b4e4bcebbc232a3fd8935"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "capelleaandenijssel.nl",
+                "www.capelleaandenijssel.nl",
+                "www.heuvelrug.nl",
                 "www.zoetermeer.nl"
             ]
         },
@@ -75,51 +156,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1bacfb1e38a3a6692acbc52bd35c398111aafe6c4ac71b5537dfa39a50b7555d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "zoetermeer.nl",
-                "www.zoetermeer.nl"
-            ]
-        },
-        {
-            "rule": "simanalytics\\.nl\\/piwik\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "logging"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Ping",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "zoetermeer.nl",
-                "www.zoetermeer.nl"
-            ]
-        },
-        {
-            "rule": "simanalytics\\.nl\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "logging"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "800bcf15b608c594f7bed441521a2a66153a6713c462233c0f80b6de4f986340"
+                "65123febce42fd9c9c64ab0b98385b2349f09e6a8acda64e834805018dbd4392"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -132,10 +169,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000408,
     "types": {
-        "Script": 6,
-        "Ping": 2
+        "Script": 10,
+        "Ping": 4
     },
     "nameservers": [
         "ns-227.awsdns-28.com",

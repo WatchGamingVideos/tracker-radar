@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000204,
+    "sites": 3,
     "subdomains": [
-        "a"
+        "a",
+        "s"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "cdnsbn\\.com\\/images\\/common\\/loading\\.gif",
@@ -57,28 +58,6 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/common\\/star_empty\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b0c71bee0ae035752c64942f12aaf1a223db2a76d8c26ae432a564eb1c864bca"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
             "rule": "cdnsbn\\.com\\/images\\/common\\/star_left\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -91,6 +70,28 @@
             "cnames": [],
             "responseHashes": [
                 "f59a41dd2d70965a548dfb3cbdc3eb5d161afe37cf50abc18075ee19609c9bb1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strawberrynet.com",
+                "www.strawberrynet.com"
+            ]
+        },
+        {
+            "rule": "cdnsbn\\.com\\/images\\/common\\/star_empty\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0c71bee0ae035752c64942f12aaf1a223db2a76d8c26ae432a564eb1c864bca"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -178,7 +179,8 @@
                 "a"
             ],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -197,11 +199,14 @@
         {
             "rule": "cdnsbn\\.com\\/scripts\\/lazyloadxtl\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -276,26 +281,32 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6aaf94713c991221443e0469037aa094e8f3f2a4f13794dca62feb321bbbdbb6"
+                "30f212a525760073167a70e96834105c8f3aef34c6f4731d76e33b474ec5c42b"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "View": {
-                    "ttl": 15552001,
+                    "ttl": 15552000,
                     "length": 4,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 },
-                "newCust": {
+                "SpringSale2Mar22layer": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
                 },
                 "visitid": {
                     "ttl": null,
                     "length": 13,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "newCust": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -308,11 +319,13 @@
         {
             "rule": "cdnsbn\\.com\\/scripts\\/slick\\.min\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "a"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -396,6 +409,26 @@
             ]
         },
         {
+            "rule": "cdnsbn\\.com\\/fonts\\/glyphicons-halflings-regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strawberrynet.com",
+                "www.strawberrynet.com"
+            ]
+        },
+        {
             "rule": "cdnsbn\\.com\\/images\\/common\\/2016CommonSprite\\.png",
             "cookies": 0,
             "fingerprinting": 0,
@@ -408,50 +441,6 @@
             "cnames": [],
             "responseHashes": [
                 "c3d5689a1f4c852659fe3a9ad4037e8e97aa942b34eb8ca060c9f4fab2f11a02"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/common\\/2021JPSGMYcrown1\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ec074f9663217ce760d2e953ce6f2ec632d1b2e7789e56781687b817914b553a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/common\\/2021JPSGMYcrown2\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4863df281fc3645af201c77bf0c7d5a7e4c70bf958fe509648e476f310d480ad"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -506,7 +495,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/fonts\\/glyphicons-halflings-regular\\.ttf",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_SpringSale2Mar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -517,29 +506,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "73e235b1afc6bd6160548436e088f7595d1723affd40a46c8243d8d7db3245ec"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_NaturalBeauty30Aug21_1170_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b3020e5ec5584f16366a49552a2469ee4e1ef2711e677d7825805e49c218314f"
+                "5727748213fcc1e31773d098290f3dea64a8c6272f8cac781cc0ff7a3fb0fb95"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -550,7 +517,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/23578880001\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/25930157001\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -561,7 +528,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4d8a33beebe4368dcde878bc5c0a19dfb13218706315b0ea98e72e13af57a763"
+                "97ad3a9d90c44deb9bff14b0f499a7e2b88bdf316e6786f932a1cfdaec391c09"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -572,7 +539,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/21945285901\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/17482140803\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -583,7 +550,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d464d2beb1123c80e2f8cbe30f122c3960913536606dd2cc75c639a5ebd8a12e"
+                "8e785f5c6c5b7cfc1407c929baf4e34786854249c9d61214ba74e34fd236b2f0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -594,7 +561,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/26912299901\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/19143259701\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -605,29 +572,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2562d0e9df1030dcf30174cc0c05bc41d2ef1158b580b775c9bfe256be780a60"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/products\\/250\\/16760323701\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ae829999ca39a94b2c2737ffb57f99f51253f651f38539d9380eb38199aaff7d"
+                "ef873901483a2737be0e76ca934c873eaa1985070e9f81281cb5f7d90e38bc86"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -737,7 +682,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "9ddf256558144470411d482a1a52bc5fa54277773b99a9ce732b63b64690959b"
+                "5dfab343982af907c5ed90b0448af45cde7657a45f252da41a78f20aa25bfe48"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -748,7 +693,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_SkincareMaskFeb22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_SkincareSciDrivenMar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -759,7 +704,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4aa4ab5f882979813d4dd3da1c84dfa9ac39914e9f8611aa631f5cc1f7d765ba"
+                "dfce4cf4d26ae92c45f9da196a03613e0c5916586e7d19b3d0f331011992a66c"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -770,7 +715,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_EyeSpecialsFeb22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_Mar22SpecialPurchase_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -781,7 +726,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "afb643ece4df79472d5d77b7c4e4cd02394471a00daeb0fde4b73f7bedc974f8"
+                "1a6ec9288b3a7be726035a8d1f483f5eee8d61ed2ed089f58a8cf66a514c8516"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -792,7 +737,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_LipSpecialsLipCareFeb22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_HaircareHealthyHairMar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -803,7 +748,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6c6e2b75fb5c888deb74aed6318a13fcc5e791f8c6fd2d6ef1d00c26ff3aa362"
+                "628e7749456ed6b0295b71028095290c1edc372eba903b4c5159b8c28d46e7b8"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -814,7 +759,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_Feb22SpecialPurchase_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_MakeupFacemakeupMar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -825,7 +770,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b9f0b389cf2c3dc87e67cd361a60a162d0a10003249ed3faa017b475e21147af"
+                "942730a637440888f1b2a3ccaa3cfd68cff0852cb4ea0c0e2878c5d5c410be0b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -836,7 +781,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_MenSkincareFeb22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_SpringScentsMar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -847,7 +792,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1b849aebd50ab9e73047ad1097d22abcac93e087b248b73f795dc5dd1597b4ae"
+                "e1ff39542584ea41a55c6be15b3ae577d8e8c92ba62e48987c3bf436efedbb5d"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -858,7 +803,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_Feb22top40_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_Apr22top40_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -869,7 +814,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b3e6919f0ee342f44917112d59e3762dfb74c4e1b0fae4cfc8dfc98214257ee7"
+                "068047d3464a051058200359c5eff069fe74d6c4d258fe5936ce193d47eb1a5b"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -880,7 +825,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_RisingBrandsFeb22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/english\\/banner_Apr22NewLines_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -891,7 +836,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c1b692f4e5c9d37a03613ab328592639c812bef4429c8a120fdf98f5a1ecbdf0"
+                "ef061e5c12aa449589d88f64d177d960d58a56b2a18a7d99ef2d9d53032b2bf0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -902,7 +847,7 @@
             ]
         },
         {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_DuoPackJan22_1170_1\\.jpg",
+            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_RisingBrandsMar22_1170_1\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -913,73 +858,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ca058e6bbaa211faa2fec2d3e01cfb054ee6ec0f9a17bf5b5210d242c6ce10df"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_Feb22NewLines_1170_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "505e56f8cea57c24bf4cdec84b392cd7ed95aa9ab58e967ade137c9634e50f9a"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_VeganBeautyNov20_1170_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0acf88b3ffe9d6ec5c2e4a8931ba9425a552a8eaf166fe016b6dce15854cd433"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "strawberrynet.com",
-                "www.strawberrynet.com"
-            ]
-        },
-        {
-            "rule": "cdnsbn\\.com\\/images\\/English\\/banner_AshiyaMay21_1170_1\\.jpg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "a"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2d0bcc54703c624b1421ae69ebfeb613cd58e74beeff4bca806cb093cc5eb662"
+                "1889366d381c3fa5c349223611b99bafe4b4d2748c5d748faa99d0bfb0dcd655"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -1010,13 +889,57 @@
                 "strawberrynet.com",
                 "www.strawberrynet.com"
             ]
+        },
+        {
+            "rule": "cdnsbn\\.com\\/images\\/english\\/layer_SpringSale2Mar22_1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96921f7f01f8447ab686ca1bdc01e26e3e88b0dd50d91d9b5707b42eb19e99b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strawberrynet.com",
+                "www.strawberrynet.com"
+            ]
+        },
+        {
+            "rule": "cdnsbn\\.com\\/scripts\\/fancybox\\/fancybox_sprite\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "017d9fbd52efc42be18e458af98dc2eaec25846d2d13d633964b038cc4ee2f74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strawberrynet.com",
+                "www.strawberrynet.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Image": 60,
+        "Image": 52,
         "Script": 20,
         "Font": 2,
         "Stylesheet": 6

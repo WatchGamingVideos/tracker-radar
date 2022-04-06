@@ -7,10 +7,11 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "proxy"
+        "proxy",
+        "ai-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -38,25 +39,45 @@
             ]
         },
         {
-            "rule": "synerise\\.com\\/rtom\\/configs\\/5Di3biuunpg6\\/sw\\.js",
+            "rule": "synerise\\.com\\/events\\/v1\\/single\\/recommendation\\.view",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "proxy"
+                "ai-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sharafdg.com",
+                "uae.sharafdg.com"
+            ]
+        },
+        {
+            "rule": "synerise\\.com\\/events\\/v1\\/single\\/recommendation\\.view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ai-api"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "884e10052e5e20f006298680637dc29b266db7d3d19465577ca2a7baba3a8013"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Other",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "komputronik.pl",
-                "www.komputronik.pl"
+                "sharafdg.com",
+                "uae.sharafdg.com"
             ]
         },
         {
@@ -70,7 +91,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "d8bbc8df86d8f6413c90f9d590cb601c521989550b274e41f1ad63cc22348c37"
+            ],
             "type": "Other",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -78,35 +101,15 @@
                 "mediaexpert.pl",
                 "www.mediaexpert.pl"
             ]
-        },
-        {
-            "rule": "synerise\\.com\\/rtom\\/configs\\/QgKzMCf1evGo\\/sw\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "proxy"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d300e84027af35ca7da380924c1e9a9909236731571d082ef7395c3109888793"
-            ],
-            "type": "Other",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "taniaksiazka.pl",
-                "www.taniaksiazka.pl"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Other": 8
+        "Other": 4,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns1-01.azure-dns.com",

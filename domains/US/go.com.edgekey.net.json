@@ -9,9 +9,10 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000347,
-    "sites": 51,
+    "prevalence": 0.000354,
+    "sites": 52,
     "subdomains": [
+        "stg-ds.cdn.registerdisney",
         "cdn.registerdisney",
         "go4.disney",
         "analytics.disney"
@@ -22,26 +23,121 @@
             "resolved": "analytics.disney.go.com.edgekey.net"
         },
         {
+            "original": "cdn.registerdisney.go.com",
+            "resolved": "cdn.registerdisney.go.com.edgekey.net"
+        },
+        {
             "original": "cdn.unid.go.com",
             "resolved": "cdn.registerdisney.go.com.edgekey.net"
         },
         {
             "original": "go4.disney.go.com",
             "resolved": "go4.disney.go.com.edgekey.net"
+        },
+        {
+            "original": "stg.cdn.registerdisney.go.com",
+            "resolved": "stg-ds.cdn.registerdisney.go.com.edgekey.net"
         }
     ],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/OneID\\.js",
+            "cookies": 0.000034,
+            "fingerprinting": 1,
+            "subdomains": [
+                "stg-ds.cdn.registerdisney",
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000885,
+            "cnames": [
+                {
+                    "original": "stg.cdn.registerdisney.go.com",
+                    "resolved": "stg-ds.cdn.registerdisney.go.com.edgekey.net"
+                },
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "23023a8b8d9e1912edcf6e62df65d60f7d1031f83f6f9d7481c9a67b5a0b0176",
+                "2d2a60eb002366f24eee7a4c8d61ee7068781247c34891240e8e1f546592cc17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536010,
+                    "length": 36,
+                    "prevalence": 0.000027225515753364053,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "6abc.com",
+                "abc11.com",
+                "abc13.com",
+                "abc7.com",
+                "abc.com",
+                "abc7chicago.com",
+                "abc7news.com",
+                "abc7ny.com",
+                "abcnews.go.com",
+                "fivethirtyeight.com",
+                "www.disney.com",
+                "www.disney.com.au",
+                "www.goodmorningamerica.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3af07103fe2267b00a09f3b798e0063f78a170038f4cb7135255551094dd808f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "6abc.com",
+                "abc11.com",
+                "abc13.com",
+                "abc7.com",
+                "abc7chicago.com",
+                "abc7news.com",
+                "abc7ny.com",
+                "abcnews.go.com",
+                "www.disney.com",
+                "www.disney.com.au",
+                "www.goodmorningamerica.com"
+            ]
+        },
+        {
             "rule": "go\\.com\\.edgekey\\.net\\/js\\/unid\\.min\\.js",
-            "cookies": 0.000177,
+            "cookies": 0.000184,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn.registerdisney"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 27,
+            "prevalence": 0.000184,
             "cnames": [
                 {
                     "original": "cdn.unid.go.com",
@@ -54,9 +150,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "UNID": {
-                    "ttl": 157680007,
+                    "ttl": 157680010,
                     "length": 36,
-                    "prevalence": 0.00010896807235480004,
+                    "prevalence": 0.00011570844195179722,
                     "uniqueness": 1
                 }
             },
@@ -64,36 +160,36 @@
             "exampleSites": [
                 "abcnews.go.com",
                 "www.espn.com",
-                "abc13.com",
-                "disneyworld.disney.go.com",
-                "espndeportes.espn.com",
-                "www.starwars.com",
-                "disneyland.disney.go.com",
-                "www.nationalgeographic.com",
-                "6abc.com",
+                "www.espn.com.au",
                 "www.disneylandparis.com",
-                "www.shopdisney.com",
-                "fivethirtyeight.com",
-                "abc11.com",
-                "www.marvel.com",
-                "abc7news.com",
+                "www.disney.com.au",
+                "abc7chicago.com",
+                "6abc.com",
                 "www.espn.com.br",
-                "www.goodmorningamerica.com",
-                "abc7.com",
+                "disneyland.disney.go.com",
+                "abc13.com",
+                "www.nationalgeographic.com",
+                "fivethirtyeight.com",
+                "www.espn.in",
+                "www.shopdisney.com",
+                "abc11.com",
                 "abc7ny.com",
-                "abc.com"
+                "espndeportes.espn.com",
+                "www.disney.com",
+                "abc.com",
+                "abc7news.com"
             ]
         },
         {
             "rule": "go\\.com\\.edgekey\\.net\\/inner\\/",
-            "cookies": 0.000163,
+            "cookies": 0.00017,
             "fingerprinting": 1,
             "subdomains": [
                 "cdn.registerdisney"
             ],
             "apis": {},
-            "sites": 26,
-            "prevalence": 0.000177,
+            "sites": 27,
+            "prevalence": 0.000184,
             "cnames": [
                 {
                     "original": "cdn.unid.go.com",
@@ -109,24 +205,51 @@
             "exampleSites": [
                 "abcnews.go.com",
                 "www.espn.com",
-                "www.disneylandparis.com",
-                "fivethirtyeight.com",
-                "www.disney.com",
-                "disneyland.disney.go.com",
-                "www.marvel.com",
-                "espndeportes.espn.com",
-                "abc7ny.com",
-                "www.espn.co.uk",
+                "www.goodmorningamerica.com",
                 "www.nationalgeographic.com",
-                "abc7.com",
-                "6abc.com",
-                "abc13.com",
-                "www.espn.com.au",
+                "fivethirtyeight.com",
+                "www.starwars.com",
+                "disneyland.disney.go.com",
+                "disneyworld.disney.go.com",
                 "abc7chicago.com",
-                "www.shopdisney.com",
+                "abc7.com",
+                "www.espn.in",
                 "abc7news.com",
-                "www.espn.com.br",
-                "www.disney.com.au"
+                "abc11.com",
+                "www.disneylandparis.com",
+                "6abc.com",
+                "www.marvel.com",
+                "www.espn.com.au",
+                "abc13.com",
+                "espndeportes.espn.com",
+                "abc7ny.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/bundle\\/web\\/DATG-ABCNEWSWEB\\.WEB\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "10547bb853188338d5fea1b28776c85f187791a58e82cad3893a0073a30aac40"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "abcnews.go.com"
             ]
         },
         {
@@ -146,15 +269,15 @@
                 }
             ],
             "responseHashes": [
-                "56a34eb2b5746bc6e20fa4d370e771926791fa373e2e4e5901d1539568a5e3ec"
+                "e4dc75c93982ced4d18f618b37021f0bb176f5b3aa1a027e66b93f6af296907a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "go.com",
-                "disneyworld.disney.go.com",
-                "disneyland.disney.go.com"
+                "disneyland.disney.go.com",
+                "disneyworld.disney.go.com"
             ]
         },
         {
@@ -264,14 +387,458 @@
                 "go.com",
                 "disneyland.disney.go.com"
             ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/outer\\/DisneyID\\.js",
+            "cookies": 0.0000476,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000953,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "930e6e87abad58fa50fd295b498cffa7bd3550b6a8382b2e29f7775e7120b8ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SWID": {
+                    "ttl": 31536001,
+                    "length": 36,
+                    "prevalence": 0.00003403189469170507,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "disneyland.disney.go.com",
+                "espndeportes.espn.com",
+                "www.disneylandparis.com",
+                "www.espn.co.uk",
+                "www.espn.com.au",
+                "www.espn.com.br",
+                "www.espn.com.mx",
+                "www.espn.in",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.shopdisney.com",
+                "www.starwars.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/TPR-DLR-LBJS\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5abb178af855d799b64157faf70629029e8a2b087914b7fcc56265599fef70b8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "disneyland.disney.go.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/responder\\/responder\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000953,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6d816bacccdf3f6fc29e60dda16cf40ef4a3c9270579c95449102896084210d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go.com",
+                "disneyland.disney.go.com",
+                "espndeportes.espn.com",
+                "www.disneylandparis.com",
+                "www.espn.co.uk",
+                "www.espn.com.au",
+                "www.espn.com.br",
+                "www.espn.com.mx",
+                "www.espn.in",
+                "www.espn.com",
+                "www.marvel.com",
+                "www.nationalgeographic.com",
+                "www.shopdisney.com",
+                "www.starwars.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/es-LA",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "027743b3e33871d87c438d1cdf7bdcdb910a82eee5990ceb138d76fa9d430d2d",
+                "ffeb9d169080c781118c6188221ec8058596ec1eebd22f30c6faf6e701b80d15"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "espn.com",
+                "espndeportes.espn.com",
+                "www.espn.com.mx"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/bundle\\/web\\/WDI-DISNEYAUSTRALIA\\.WEB\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2452793830232b5d3c8a9951c526272484734f74e426ec98f2343313ec069dc0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "disney.com.au",
+                "www.disney.com.au"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-UK",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e0c70ab875f259c0287ecc31ea290355af60eb57451b151b278c9f944adf76dc"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.co.uk",
+                "www.espn.co.uk"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-AU",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dc266e0e40a75903409d0fe8e2be567424d8ac443491314a21097cd9eb7540ee"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com.au",
+                "www.espn.com.au"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/pt-BR",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6df1e4f76b4c047ec9d230d097a26d143a467c8b96cc45f152dc2299af5fd168"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.com.br",
+                "www.espn.com.br"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-IN",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d1d232e5bc882f1315306a9d4c0a0a731dbe49ff6f521a7dfe52dda875d00721"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "espn.in",
+                "www.espn.in"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/ESPN-ONESITE\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "166cbdd7476590f09fdd1807465bcfb4e9ae0d54eed1fe3bb8cbbcc256b23d4c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "espn.com",
+                "www.espn.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v4\\/bundle\\/web\\/DATG-GOODMORNINGAMERICAWEB\\.WEB\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d10953df07edaab8e3a33d2c5e21f802ed752c0d684e086cface7520f26dc03d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodmorningamerica.com",
+                "www.goodmorningamerica.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/MARVEL-MARVEL\\.COM\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "09cbce9d26b24a6074cf7b212ad691eb67e8cbe4b338faa52469a4d5bf6ac9fa"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marvel.com",
+                "www.marvel.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/DTCI-NATGEO\\.CONSUMER\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8e6d9917d8ca794a33ee442a5a38f595a70e7df734080d0c1df4efc714e33959"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_cb_svref": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "nationalgeographic.com",
+                "www.nationalgeographic.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/DCP-DISNEYSTORE\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "3df9ea5970eec305d0c00c4afbab85e0a87a964b117ff769d6f3b9d0b392034d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shopdisney.com",
+                "www.shopdisney.com"
+            ]
+        },
+        {
+            "rule": "go\\.com\\.edgekey\\.net\\/v2\\/DI-STARWARS\\.WEB-PROD\\/en-US",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.registerdisney"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.registerdisney.go.com",
+                    "resolved": "cdn.registerdisney.go.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6dbcf057c369058cef612227e9571fd6f27a01ee7fb4d3633efae83c021a7a76"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "starwars.com",
+                "www.starwars.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000347,
+    "cookies": 0.000354,
     "types": {
-        "Script": 37,
-        "Document": 26
+        "Script": 90,
+        "Document": 56
     },
     "nameservers": []
 }

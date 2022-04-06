@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00015,
-    "sites": 22,
+    "prevalence": 0.00017,
+    "sites": 25,
     "subdomains": [
         "rs",
         "t",
-        "michelin",
-        "analytics"
+        "analytics",
+        "michelin"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -50,8 +50,8 @@
                 "t"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000817,
+            "sites": 13,
+            "prevalence": 0.0000885,
             "cnames": [],
             "responseHashes": [
                 "d867f9f21d76196e9da8e652dac4e082c66d22478f70e64b17493f0b24997052"
@@ -65,11 +65,12 @@
                 "www.beerwulf.com",
                 "www.bigredpowertools.co.uk",
                 "www.bricomarche.com",
-                "www.dackonline.se",
                 "www.direct-powertools.co.uk",
+                "www.ffx.co.uk",
                 "www.intertoys.nl",
                 "www.lobbes.nl",
                 "www.protrade.co.uk",
+                "www.reifendirekt.de",
                 "www.tradecounterdirect.com",
                 "www.yesss.co.uk"
             ]
@@ -99,30 +100,6 @@
             ]
         },
         {
-            "rule": "clic2buy\\.com\\/retailers\\/dackonline-delivery-se\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "rs"
-            ],
-            "apis": {
-                "Navigator.prototype.appName": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "78201fcc2dd0a9f47a499e3f2010e812ca1190be2a0160a7b76433b48b81054d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "dackonline.se",
-                "www.dackonline.se"
-            ]
-        },
-        {
             "rule": "clic2buy\\.com\\/retailers\\/direct-powertools-delivery-gb\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -144,6 +121,98 @@
             "exampleSites": [
                 "direct-powertools.co.uk",
                 "www.direct-powertools.co.uk"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/retailers\\/ffx-delivery-gb\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b6d0cc239e4d04899f3712fce1eeb56083de7631bab5151bdb21fb96ba57551"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ffx.co.uk",
+                "www.ffx.co.uk"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/c2b-analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "aa00607299fe59e439e9c120aea496778db2db7197ef32148d29b34c20e9fbba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "legrand.fr",
+                "www.michelin.co.uk",
+                "www.michelin.com.au",
+                "www.michelinman.com"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/api\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "legrand.fr",
+                "www.legrand.fr"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/api\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "legrand.fr",
+                "www.legrand.fr"
             ]
         },
         {
@@ -184,32 +253,7 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5d4ba7fee20753ea4ecfc90992039777835d878962495839e974f68a23a7d3b2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "michelin.co.uk",
-                "www.michelin.com.au",
-                "www.michelinman.com"
-            ]
-        },
-        {
-            "rule": "clic2buy\\.com\\/c2b-analytics\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "analytics"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "aa00607299fe59e439e9c120aea496778db2db7197ef32148d29b34c20e9fbba"
+                "8939420117f8363caa94b529987914f957fd2d418fe8396f2e3b79f5a58c1be7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -245,6 +289,52 @@
             ]
         },
         {
+            "rule": "clic2buy\\.com\\/retailers\\/_protrade-delivery-gb_\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "protrade.co.uk",
+                "www.protrade.co.uk"
+            ]
+        },
+        {
+            "rule": "clic2buy\\.com\\/retailers\\/reifendirekt-delivery-de\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e906806483be94c8e4b9971438588e0a94e4bc1d0661a3e8c2dd9ddc49943057"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reifendirekt.de",
+                "www.reifendirekt.de"
+            ]
+        },
+        {
             "rule": "clic2buy\\.com\\/retailers\\/trade-counter-direct-delivery-gb\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -258,7 +348,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "676ae0269e146ce4ddf6831ae968333b86bc3a14ff784af4dd73b6df446ced35"
+                "120c1a64ee8d5d23eaa11b3d98abd59da32b9c207d10451ff3d12938a19478fc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -297,8 +387,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 22,
-        "Document": 12
+        "Script": 27,
+        "Document": 13,
+        "XHR": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "dns200.anycast.me",

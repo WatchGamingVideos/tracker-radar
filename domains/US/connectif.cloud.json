@@ -4,10 +4,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
-        "tracker"
+        "tracker",
+        "cdn",
+        "cl1-api",
+        "eu3-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -35,18 +38,154 @@
                 "erasmusu.com",
                 "www.cajalosandes.cl"
             ]
+        },
+        {
+            "rule": "connectif\\.cloud\\/eu4\\/client-script\\/6be110df-28a1-480a-aa1e-7bf0aa1893ee",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5bdc4774aa9039757f7a03252d2c9fd595d64c867cd6ee8e00230e9b5972f4f9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nutritienda.com",
+                "www.nutritienda.com"
+            ]
+        },
+        {
+            "rule": "connectif\\.cloud\\/cl1\\/client-script\\/e07cad9e-8882-4bbb-9c5f-aa423116cff7",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.platform": 2,
+                "Notification.permission": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e09d79b1d4f3523d617c10c0b10431c99b5950feb1754f117852a2e547484b96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pccomponentes.pt",
+                "www.pccomponentes.pt"
+            ]
+        },
+        {
+            "rule": "connectif\\.cloud\\/integration-type\\/system\\/scrippet-notification\\/e07cad9e-8882-4bbb-9c5f-aa423116cff7",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cl1-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f58cc91c800fce8657d9da4a02d0c753908dcf55cda3949b597333b1b33a03ec"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pccomponentes.pt",
+                "www.pccomponentes.pt"
+            ]
+        },
+        {
+            "rule": "connectif\\.cloud\\/eu3\\/client-script\\/3e81d860-00d2-48e5-8b27-a2259d368c34",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Notification.permission": 2,
+                "window.localStorage": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d373b748dff07dc1fb7ce6877a0ade3b6231bdc83cda9be2f4bf80b792b69b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "powerplanetonline.com",
+                "www.powerplanetonline.com"
+            ]
+        },
+        {
+            "rule": "connectif\\.cloud\\/integration-type\\/system\\/scrippet-notification\\/3e81d860-00d2-48e5-8b27-a2259d368c34",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu3-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d8b25b587d5ed4e6b8e0ab87f742573e4566fecc1b08f096e986380dc538a3f2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "powerplanetonline.com",
+                "www.powerplanetonline.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Document": 2
+        "Document": 2,
+        "Script": 6,
+        "XHR": 4
     },
     "nameservers": [
-        "ns4-08.azure-dns.info",
-        "ns2-08.azure-dns.net",
         "ns1-08.azure-dns.com",
-        "ns3-08.azure-dns.org"
+        "ns2-08.azure-dns.net",
+        "ns3-08.azure-dns.org",
+        "ns4-08.azure-dns.info"
     ]
 }

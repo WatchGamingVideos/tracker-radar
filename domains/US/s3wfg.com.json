@@ -12,7 +12,8 @@
     "subdomains": [
         "vm",
         "vtx",
-        "rsrc"
+        "rsrc",
+        "img2"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -27,10 +28,11 @@
             "apis": {
                 "Document.cookie getter": 5,
                 "Date.prototype.getTime": 4,
-                "Navigator.prototype.mimeTypes": 5
+                "Navigator.prototype.mimeTypes": 5,
+                "window.innerWidth": 5
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "e11a769ccda5da6d1a01e1647d570875695c3d813e0580c86588b6e867e55231"
@@ -55,7 +57,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "4b6d63a0b46289437d9ec3d6f542988c1bfc275357d76eb0aa30449e3c82a0b0"
@@ -74,16 +76,19 @@
         {
             "rule": "s3wfg\\.com\\/js\\/es_burbujaeconomica\\.jv6\\.abf\\.cc\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "vm"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "26d5482fb1bbbd6b79b0571ffff18de65bbdefa3adf3c7807fd9057ea93371ad"
+                "dd5d583d3e01f514019699381bba7076af582f9b442d59e559054d322eceff09"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -94,7 +99,7 @@
             ]
         },
         {
-            "rule": "s3wfg\\.com\\/pb\\/e9f972a81634a8fc7e578fb1eda3c283\\.js",
+            "rule": "s3wfg\\.com\\/pb\\/d1e04dc47b232ca23814302dff6efa26\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -106,12 +111,14 @@
                 "window.sessionStorage": 2,
                 "Navigator.prototype.appName": 2,
                 "Date.prototype.getTime": 2,
-                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.connection": 2,
                 "Screen.prototype.width": 2,
                 "Document.cookie getter": 2,
                 "Screen.prototype.height": 2,
                 "Navigator.prototype.hardwareConcurrency": 2,
+                "window.localStorage": 2,
                 "Screen.prototype.colorDepth": 2,
                 "Date.prototype.getTimezoneOffset": 2
             },
@@ -153,16 +160,16 @@
         },
         {
             "rule": "s3wfg\\.com\\/web\\/js_comun\\/lightstreamer\\/ls\\/lightstreamer-7\\.0\\.3\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 3,
             "subdomains": [
                 "rsrc"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.userAgent": 3,
                 "Date.prototype.getTime": 3,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
                 "window.localStorage": 3,
                 "URL.createObjectURL": 3,
                 "SharedWorker.prototype.constructor": 3,
@@ -176,16 +183,22 @@
             ],
             "type": "Script",
             "firstPartyCookies": {
-                "LS__cookie_test882": {
+                "LS__cookie_test112": {
                     "ttl": null,
                     "length": 7,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
-                "LS__cookie_test810": {
-                    "ttl": -86400,
+                "LS__cookie_test54": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "LS__cookie_test705": {
+                    "ttl": -86399,
                     "length": 8,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -316,28 +329,6 @@
             ]
         },
         {
-            "rule": "s3wfg\\.com\\/web\\/img\\/loading\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rsrc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b05b1303b7c872575887e2fbb9c1fd619722406e62c2546cf8dc9f776927f5e8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eldiestro.es",
-                "www.eldiestro.es"
-            ]
-        },
-        {
             "rule": "s3wfg\\.com\\/web\\/fonts\\/boxicon\\/boxicons\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -360,28 +351,6 @@
             ]
         },
         {
-            "rule": "s3wfg\\.com\\/js\\/es_eldiestro\\.jv6\\.abf\\.cc\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eldiestro.es",
-                "www.eldiestro.es"
-            ]
-        },
-        {
             "rule": "s3wfg\\.com\\/js\\/es_lwp\\.jv6\\.abf\\.cc\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -393,7 +362,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "3310860c0522bc43c5c1ce9cfa8153330cf3e02caa546c0307aea290227ae784"
+                "09b7d065fc0667e63255b8924f7860b5adc23e5fac8fe379160fd4e82191feb7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -404,7 +373,7 @@
             ]
         },
         {
-            "rule": "s3wfg\\.com\\/pb\\/bc2673fe548fec5e1534b94d5c0b0e48\\.js",
+            "rule": "s3wfg\\.com\\/pb\\/74b3f3325f3ff80186f6aaaf44d926c2\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -416,14 +385,16 @@
                 "window.sessionStorage": 3,
                 "Navigator.prototype.appName": 3,
                 "Date.prototype.getTime": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
                 "Screen.prototype.width": 1,
                 "Screen.prototype.height": 1,
+                "Navigator.prototype.connection": 1,
+                "Document.cookie getter": 1,
                 "Screen.prototype.colorDepth": 1,
                 "Date.prototype.getTimezoneOffset": 1,
-                "window.localStorage": 1,
-                "Document.cookie getter": 1,
-                "Navigator.prototype.connection": 1,
-                "Navigator.prototype.hardwareConcurrency": 1
+                "Navigator.prototype.hardwareConcurrency": 1,
+                "window.localStorage": 1
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -452,29 +423,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "32e679517d17583740037585db48d9b0ae9a7a44c8e532e9a8a4d1bb7f0c924a"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sharecast.com",
-                "www.sharecast.com"
-            ]
-        },
-        {
-            "rule": "s3wfg\\.com\\/web\\/css\\/common\\/v1\\/icons\\/materialdesignicons\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "rsrc"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0fcbf334721832981b55f4ec9a36e70153dfdd61721ecdbf1493733eb1b197a5"
+                "2a0160244773f1547d7c75d7c8d3b8965c662e58fa0e7093ca6754fa0cfe501e"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -499,6 +448,28 @@
                 "4dc61c17d58ab88db67e818194c88d2b1205e42f618f2bab070c6cd95dba2725"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sharecast.com",
+                "www.sharecast.com"
+            ]
+        },
+        {
+            "rule": "s3wfg\\.com\\/web\\/css\\/common\\/v1\\/icons\\/materialdesignicons\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rsrc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fcbf334721832981b55f4ec9a36e70153dfdd61721ecdbf1493733eb1b197a5"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -560,6 +531,8 @@
             "apis": {
                 "Navigator.prototype.userAgent": 2,
                 "Event.prototype.timeStamp": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
                 "Navigator.prototype.mimeTypes": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.cookieEnabled": 2,
@@ -572,7 +545,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b727e5348224d2c5df173d69e2681dfa462bc6b831dceb24576f9a592703fb40"
+                "13bb7c4e2463c84282ef86d9bcaba9273f9edf8effec973de39dae3d1876f838"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -597,28 +570,6 @@
                 "66109dc47a2a5848e3e799e5e9dfc70a6f5ff092c4b0f78a8b3754234a466fde"
             ],
             "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sharecast.com",
-                "www.sharecast.com"
-            ]
-        },
-        {
-            "rule": "s3wfg\\.com\\/js\\/uk_sharecast\\.jv6\\.abf\\.cc\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vm"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "df831a96698afde969d299be813cd6a279df1d571c77dfcebcc7c4433334cf23"
-            ],
-            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1439,13 +1390,60 @@
                 "sharecast.com",
                 "www.sharecast.com"
             ]
+        },
+        {
+            "rule": "s3wfg\\.com\\/web\\/img\\/images_uploaded\\/e\\/2\\/dl-london-tower-bridge-river-thames-grey-day-weather-river-thames_87x67\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "40c2d211f29226b9ac7b44c4e5fb3ca40d41121a339eeef6c3e19a34ef4b8ca4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sharecast.com",
+                "www.sharecast.com"
+            ]
+        },
+        {
+            "rule": "s3wfg\\.com\\/js\\/uk_sharecast\\.jv6\\.abf\\.cc\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vm"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "42458a9a61685bad91562f08457d004ba54cf77dcad425eedd3a351459fc0b70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sharecast.com",
+                "www.sharecast.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000272,
     "types": {
-        "Script": 35,
+        "Script": 33,
         "XHR": 5,
         "Stylesheet": 6,
         "Font": 6,

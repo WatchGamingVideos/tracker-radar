@@ -4,31 +4,40 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
         "pixel"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "roughgroup\\.com\\/Content\\/orichipixel\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "pixel"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "26febacca01272128833c28c28e6f791d70d297e015b4c76ba24d2857ea71c6a"
+            ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elegoo.com",
+                "fullsend.com",
+                "www.bluettipower.com",
+                "www.bluettipower.com.au",
+                "www.dakine.com",
                 "www.elegoo.com"
             ]
         },
@@ -40,17 +49,23 @@
                 "pixel"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
+                "c54039fa3140f298a38c549113b582f9e6ea3b568e37c62590f7ed38ff538f2e",
+                "80cf648dcee0f13f850348e69e86bba33df10f6bcf9c71d63ef5ca2ece366437",
+                "4c5233d96aca129e7203cb8da3d47f579da3054a9e3f2776f41a82cabc02ae17",
                 "1617c6664e783bcdd83b4d7d1b1ee162520df3bbeeb42c9e6c5e5a72efa9976c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elegoo.com",
+                "fullsend.com",
+                "www.bluettipower.com",
+                "www.bluettipower.com.au",
+                "www.dakine.com",
                 "www.elegoo.com"
             ]
         }
@@ -59,8 +74,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "XHR": 2
+        "Script": 5,
+        "XHR": 5
     },
     "nameservers": [
         "ns1.matbao.com",

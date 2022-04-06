@@ -13,59 +13,36 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
-            "rule": "d5x2n72glkaxl\\.cloudfront\\.net\\/js\\/cookieSyncClient",
+            "rule": "d5x2n72glkaxl\\.cloudfront\\.net\\/js\\/bacon",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.onLine": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "window.indexedDB": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e220dd949cde3e952cb622e10f4c85a50da1253564ddfe732055293f7b4eb9b7"
+                "a8506e28dd54e9c0e0bda1c868b3e1fbbb7d94857420aa5d006b96d2c147d694"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lucidchart.com",
-                "www.lucidchart.com"
-            ]
-        },
-        {
-            "rule": "d5x2n72glkaxl\\.cloudfront\\.net\\/js\\/bacon",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Document.cookie getter": 2,
-                "Document.cookie setter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "38fb8acf8f8cca6634511e96d59bf26fedebdd9526410ae0c6446aab5485e52b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "lt-session-data": {
-                    "ttl": null,
-                    "length": 75,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                },
-                "lt-anonymous-id": {
-                    "ttl": null,
-                    "length": 23,
-                    "prevalence": 0.000013621009044350005,
-                    "uniqueness": 1
-                }
-            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lucidchart.com",
@@ -77,9 +54,9 @@
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0,
     "types": {
-        "Script": 4
+        "Script": 2
     },
     "nameservers": [
         "ns-1338.awsdns-39.org",

@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "bg.search",
+        "rs.search",
+        "hr.search",
         "sk.search"
     ],
     "cnames": [],
@@ -36,6 +38,31 @@
             ]
         },
         {
+            "rule": "etargetnet\\.com\\/generic\\/header_bidding\\.php",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rs.search",
+                "hr.search"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "eb7e96e8acfc581f4f05941e3c7a95c04b7dcd319a5dfab47df0c91550cc3a1f",
+                "e7717ccddfa114f9b8502854eaabcc0da869ffa5e026570994a465e987df83e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pravda.rs",
+                "prvobitno.com",
+                "www.pravda.rs"
+            ]
+        },
+        {
             "rule": "etargetnet\\.com\\/consent\\.php",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -53,48 +80,25 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ftv.bg",
+                "prvobitno.com",
                 "varecha.pravda.sk"
-            ]
-        },
-        {
-            "rule": "etargetnet\\.com\\/generic\\/uni\\.php",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "bg.search",
-                "sk.search"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f257169c90ff4a25ac0f910bab21cf5052d0395a69492535006d1ea3ea08bc64"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "ftv.bg",
-                "www.filmovix.net"
             ]
         },
         {
             "rule": "etargetnet\\.com\\/generic\\/branding-common\\.php",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "sk.search"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d3501730455b40312dc69bd13002b0413e86eabcf3085c9fe96e4cf531863301"
+                "ab5e5f2bcc89fbe85972298f60d6f80c5f8e9fd775056b0d55b4309b228203c7"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -107,9 +111,9 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000545,
     "types": {
-        "Script": 6,
+        "Script": 7,
         "XHR": 2
     },
     "nameservers": [

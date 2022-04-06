@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [],
     "cnames": [
         {
@@ -13,8 +13,33 @@
             "resolved": ".cloud-cdn.co"
         }
     ],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "cloud-cdn\\.co\\/app-costco\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "media-cdn.costco.com",
+                    "resolved": ".cloud-cdn.co"
+                }
+            ],
+            "responseHashes": [
+                "37258a3bdef1d5d9d9500b45d36ad868e5e2447da1a0f1838bf390c0855b06b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "costco.com",
+                "www.costco.com"
+            ]
+        },
         {
             "rule": "cloud-cdn\\.co\\/www3\\/",
             "cookies": 0,
@@ -55,7 +80,7 @@
                 }
             ],
             "responseHashes": [
-                "2f53134ed4e9fc71f8286635870542f1b700841c6a2f6b2eb3f4037833415a90"
+                "639e23e57720ab209f908bb4548c40531da5e5fa55ae1cf0ff6d6c3b66ff9ac6"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -95,6 +120,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Script": 2,
         "XHR": 2,
         "Image": 4
     },

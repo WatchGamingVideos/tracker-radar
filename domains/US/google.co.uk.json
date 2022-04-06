@@ -9,13 +9,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000279,
-    "sites": 41,
+    "prevalence": 0.000306,
+    "sites": 45,
     "subdomains": [
         "maps",
         "www",
         "cse",
-        "trends"
+        "adservice"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -25,11 +25,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "maps"
+                "maps",
+                "www"
             ],
             "apis": {},
-            "sites": 9,
-            "prevalence": 0.0000613,
+            "sites": 11,
+            "prevalence": 0.0000749,
             "cnames": [],
             "responseHashes": [],
             "type": "Document",
@@ -37,11 +38,13 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "checkphonenumber.co.uk",
+                "www.fowlers.co.uk",
                 "www.gigantic.com",
+                "www.megamotorcyclestore.co.uk",
                 "www.motorcyclefinder.co.uk",
                 "www.northyorkmoors.org.uk",
                 "www.opening-hours-uk.co.uk",
-                "www.premier-inn.net",
+                "www.postboxfinder.co.uk",
                 "www.stgeorges.nhs.uk",
                 "www.streetmapz.co.uk",
                 "www.thrifty.co.uk"
@@ -56,11 +59,11 @@
                 "cse"
             ],
             "apis": {
-                "Navigator.prototype.appName": 10,
-                "Navigator.prototype.platform": 10
+                "Navigator.prototype.appName": 7,
+                "Navigator.prototype.platform": 7
             },
-            "sites": 14,
-            "prevalence": 0.0000953,
+            "sites": 11,
+            "prevalence": 0.0000749,
             "cnames": [],
             "responseHashes": [
                 "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
@@ -69,20 +72,40 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kingofsat.net",
-                "en.kingofsat.net",
                 "open4u.co.uk",
                 "phoneky.co.uk",
                 "phoneky.com",
                 "swarb.co.uk",
                 "www.bathantiquesonline.com",
                 "www.eliteukforces.info",
-                "www.historyofwar.org",
                 "www.overclock3d.net",
                 "www.parkrun.com",
                 "www.recyclethis.co.uk",
                 "www.toptiplondon.com",
                 "www.weightlossresources.co.uk"
+            ]
+        },
+        {
+            "rule": "google\\.co\\.uk\\/adsid\\/integrator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservice"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "courses.ie",
+                "www.courses.ie",
+                "www.hot-dinners.com"
             ]
         },
         {
@@ -120,7 +143,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8a5bfe619cd0932d63092d16cd4980bd6e3bb0a2b774d2326258e0e638e4288a"
+                "9df6bec610263171a61709ae9d4f5cfefb168f4282e1b82c8679ed049ee34c62"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -131,40 +154,64 @@
             ]
         },
         {
-            "rule": "google\\.co\\.uk\\/trends\\/embed\\/explore\\/TIMESERIES",
-            "cookies": 0.00000681,
+            "rule": "google\\.co\\.uk\\/cse\\/brand",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lathes.co.uk",
+                "www.whatprice.co.uk"
+            ]
+        },
+        {
+            "rule": "google\\.co\\.uk\\/maps\\/vt",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "trends"
+                "www"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "55de6dcd2a610dbdc9101a96e81b3b2f6cef03658004f77bc76152116620c693"
+                "3fc843c39e21ec835fdb8e1f42d34124ea5a5293decfa2869439bf70ffbb8573"
             ],
-            "type": "Document",
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ifsecglobal.com",
-                "www.ifsecglobal.com"
+                "ucl.ac.uk",
+                "www.ucl.ac.uk"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.00000681,
     "types": {
         "Document": 11,
-        "Script": 14,
-        "Image": 5
+        "Script": 16,
+        "Image": 7
     },
     "nameservers": [
+        "ns4.google.com",
         "ns1.google.com",
         "ns2.google.com",
-        "ns3.google.com",
-        "ns4.google.com"
+        "ns3.google.com"
     ]
 }

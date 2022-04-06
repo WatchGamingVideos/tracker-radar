@@ -37,11 +37,13 @@
         {
             "rule": "gfx\\.no\\/js\\/mobile-preamble-title\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -112,7 +114,7 @@
                 "static"
             ],
             "apis": {
-                "console.memory": 1
+                "console.memory": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -176,6 +178,30 @@
             ]
         },
         {
+            "rule": "gfx\\.no\\/js\\/neosites\\/article\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6a178c5c725bb1350a241e0bf5f26f21afecb77ba93b5bbdcd0109e541d2a6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digi.no",
+                "www.tu.no"
+            ]
+        },
+        {
             "rule": "gfx\\.no\\/js\\/neosites\\/abtest\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -198,35 +224,16 @@
             ]
         },
         {
-            "rule": "gfx\\.no\\/js\\/neosites\\/article\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e6a178c5c725bb1350a241e0bf5f26f21afecb77ba93b5bbdcd0109e541d2a6d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "digi.no",
-                "www.tu.no"
-            ]
-        },
-        {
             "rule": "gfx\\.no\\/js\\/dfp\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -338,8 +345,8 @@
         "Script": 18
     },
     "nameservers": [
-        "ns-zoo.linpro.net",
-        "ns-foo.linpro.net",
-        "ns-bar.linpro.net"
+        "ns-zoo.i.bitbit.net",
+        "ns-bar.i.bitbit.net",
+        "ns-foo.i.bitbit.net"
     ]
 }

@@ -7,7 +7,8 @@
     "prevalence": 0.0000204,
     "sites": 3,
     "subdomains": [
-        "pixon"
+        "pixon",
+        "tag-store"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,8 +25,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "0d1d0a61cc604593be01ccb664e86702987cf1323b4f047162a9d9bce24822b0",
-                "1d55dff88b9694d82dcd565473c9b29229f2d82fde6cbfe8138635a733408503"
+                "efb6f2cbd903937a190d57007b629bd1ff375d42f3973602b9d774ff8f571d0d",
+                "bea9fbacd570948e8487af36a5620834ec92c3a96338c0d0a61d00ba69a1a9b8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -58,6 +59,30 @@
                 "dic.pixiv.net",
                 "www.pixiv.net"
             ]
+        },
+        {
+            "rule": "ads-pixiv\\.net\\/categorize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag-store"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7a59938576b94a039008e8810cedc95d5e3983586e63dae0db9fc75d39bd1ce6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "tag_view_ranking": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "pixiv.net",
+                "www.pixiv.net"
+            ]
         }
     ],
     "categories": [],
@@ -65,7 +90,8 @@
     "cookies": 0,
     "types": {
         "Script": 3,
-        "Image": 3
+        "Image": 3,
+        "Fetch": 2
     },
     "nameservers": [
         "ns-cloud-e1.googledomains.com",

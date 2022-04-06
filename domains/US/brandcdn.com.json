@@ -4,16 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "adservices"
+        "insight-event",
+        "adservices",
+        "tag"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "brandcdn\\.com\\/pixel\\/cv_pixel\\.js",
+            "rule": "brandcdn\\.com\\/track\\/evnt\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insight-event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llu.edu",
+                "news.llu.edu"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/pixel\\/cv_img",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,27 +46,163 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bc530c3c75bb87677cb79d645697759ea411ab9ca7ba55cb28d5e040ff44f603"
+                "2ae01f5534cdabc9918de7f805bc85ac59ccdb6f2289aad4d6ed5c879c2544c9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llu.edu",
+                "news.llu.edu"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/track\\/conv\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insight-event"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llu.edu",
+                "news.llu.edu"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/autoscript\\/provenwinners_vg1wck1rmvjqvda9\\/adamsoutdoor\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23dbddfd76f410dbd8e575ff916f77ef3bab636f3496660292d050e77538ec43"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cbs17.com",
-                "www.cbs17.com"
+                "provenwinners.com",
+                "www.provenwinners.com"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/pixel\\/cv_pixel\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "adservices"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc530c3c75bb87677cb79d645697759ea411ab9ca7ba55cb28d5e040ff44f603"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "brandcdn_uid": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "provenwinners.com",
+                "www.provenwinners.com"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/pixel\\/cv",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "adservices"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d4bfc379f8f81d76a205639ac01b9e876aa346c3eec763d2c0ce8c5b709a2fe"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "brandcdn_uid": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "brandcdn_uid": 0.000027225515753364053
+            },
+            "exampleSites": [
+                "provenwinners.com",
+                "www.provenwinners.com"
+            ]
+        },
+        {
+            "rule": "brandcdn\\.com\\/pixel\\/cv_confirm\\.png",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "brandcdn_uid": 0.000027225515753364053
+            },
+            "exampleSites": [
+                "provenwinners.com",
+                "www.provenwinners.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.000034,
     "types": {
-        "Script": 2
+        "Image": 8,
+        "Script": 4,
+        "Document": 2
     },
     "nameservers": [
-        "ns-225.awsdns-28.com",
-        "ns-528.awsdns-02.net",
+        "ns-1497.awsdns-59.org",
         "ns-1663.awsdns-15.co.uk",
-        "ns-1497.awsdns-59.org"
+        "ns-225.awsdns-28.com",
+        "ns-528.awsdns-02.net"
     ]
 }

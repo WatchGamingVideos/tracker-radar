@@ -13,7 +13,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "mgcdn-assets\\.azureedge\\.net\\/bundles\\/css\\/styles-new\\.min\\.css",
@@ -43,7 +43,9 @@
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2
+                "Event.prototype.timeStamp": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -78,6 +80,26 @@
                 "myget.org",
                 "www.myget.org"
             ]
+        },
+        {
+            "rule": "mgcdn-assets\\.azureedge\\.net\\/bundles\\/js\\/ace\\/worker-html\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3559c77ecaeace4e01aa59f65094510218bc1066e93b5947a1b12b394328a286"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myget.org",
+                "www.myget.org"
+            ]
         }
     ],
     "categories": [
@@ -88,7 +110,8 @@
     "types": {
         "Stylesheet": 2,
         "Script": 2,
-        "Image": 2
+        "Image": 2,
+        "Other": 2
     },
     "nameservers": []
 }

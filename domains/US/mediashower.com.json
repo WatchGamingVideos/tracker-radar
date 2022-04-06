@@ -6,9 +6,11 @@
     ],
     "prevalence": 0.0000204,
     "sites": 3,
-    "subdomains": [],
+    "subdomains": [
+        "a"
+    ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mediashower\\.com\\/msi\\/m\\.css",
@@ -33,17 +35,83 @@
         },
         {
             "rule": "mediashower\\.com\\/msi\\/m\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "683d0dbc6c7611372bb05ea6d2c5dfb1e38e020293035d18f1a5af5696e20907"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ms_session": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "ms_bid": {
+                    "ttl": null,
+                    "length": 8,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "ms_fiid": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitcoinmarketjournal.com",
+                "www.bitcoinmarketjournal.com"
+            ]
+        },
+        {
+            "rule": "mediashower\\.com\\/jsonrpc\\/impression\\/log",
             "cookies": 0,
             "fingerprinting": 0,
-            "subdomains": [],
+            "subdomains": [
+                "a"
+            ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e836fdf2724b52933e67ad1bf20f03f157661fec0ac544f520fdce97ae561424"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitcoinmarketjournal.com",
+                "www.bitcoinmarketjournal.com"
+            ]
+        },
+        {
+            "rule": "mediashower\\.com\\/static\\/ms-magic\\/images\\/curtain\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0084f6aa2ec3279533629be5e4758d545e20b2963d8b592513893ec025b8a3ba"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -54,10 +122,11 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
         "Stylesheet": 3,
-        "Script": 2
+        "Script": 4,
+        "Image": 2
     },
     "nameservers": [
         "gordon.ns.cloudflare.com",

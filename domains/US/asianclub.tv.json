@@ -8,14 +8,21 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "asianclub\\.tv\\/asset\\/default\\/player\\/base\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.plugins": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -24,7 +31,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "av-subthai.net",
+                "javshujin.com",
                 "xbube.com"
             ]
         }

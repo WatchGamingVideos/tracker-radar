@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000341,
-    "sites": 5,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
         "frontend-services",
         "sentry",
@@ -32,17 +32,39 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "368f50acc190b427b441a032662990e190f65dd92087b3510a60ff42e6a0901a"
+                "688db8b38b27caea683b566fac4e74879fd32debedd4196dc726cbf5f9e6aade"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "supportsBrowserPush": {
-                    "ttl": 86401,
+                    "ttl": 86400,
                     "length": 4,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ionos.co.uk",
+                "login.ionos.co.uk"
+            ]
+        },
+        {
+            "rule": "ionos\\.com\\/api\\/14\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ionos.co.uk",
@@ -57,10 +79,10 @@
                 "frontend-services"
             ],
             "apis": {
-                "PerformanceTiming.prototype.navigationStart": 3
+                "PerformanceTiming.prototype.navigationStart": 5
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "57fcb0666b6bcab41f3bc537a9d648f89dd464897b62c5e8e207231921b62994"
@@ -71,7 +93,9 @@
             "exampleSites": [
                 "ionos.co.uk",
                 "login.ionos.co.uk",
-                "mail.ionos.co.uk"
+                "mail.ionos.co.uk",
+                "www.ionos.es",
+                "www.ionos.it"
             ]
         },
         {
@@ -84,13 +108,14 @@
             "apis": {
                 "window.sessionStorage": 3,
                 "window.localStorage": 3,
-                "Navigator.prototype.userAgent": 3
+                "Navigator.prototype.userAgent": 3,
+                "window.innerHeight": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "07cd19ca5808ba2d050ca8fe50614cefc0cd1cdc9c54cd42c852cb86c6918a59"
+                "e6578d96c196472731b613a4e97bf5821d07060b002f70420a23b17cb3f97c16"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -109,11 +134,11 @@
                 "frontend-services"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "106dfc4682bac272b1d925be1fd411045fc0b6e07de3d40ab3164156708ec136"
+                "fe189aad2cfa6ce8dfec2cbca4baf81bfc801be9e7ac94a998b168b971a8b9e9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -121,7 +146,9 @@
             "exampleSites": [
                 "ionos.co.uk",
                 "login.ionos.co.uk",
-                "mail.ionos.co.uk"
+                "mail.ionos.co.uk",
+                "www.ionos.es",
+                "www.ionos.it"
             ]
         },
         {
@@ -167,7 +194,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c7dcf4c3381d1a9a790fbc50801ed99d756a94755485a844b3e051eea23e8de9"
+                "4d519db7ad1507ab9f358f4b20b199cc6e3f495cd8ea76da149a17b9b1df92ea"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -208,16 +235,16 @@
                 "frontend-services"
             ],
             "apis": {
-                "window.sessionStorage": 3,
-                "window.localStorage": 3,
                 "Document.cookie getter": 3,
-                "Date.prototype.getTime": 3
+                "Date.prototype.getTime": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "852e6e6b78954cb70041aa7d0a2b6c9ce18ee5295ac5c03eb3587d41ce7d6c20"
+                "8f118de624ffd649260cca1408c103a5445672d5af9eacbecbd122993e4e2203"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -229,25 +256,29 @@
             ]
         },
         {
-            "rule": "ionos\\.com\\/api\\/14\\/envelope\\/",
+            "rule": "ionos\\.com\\/t\\/surveys\\/js\\/surveys\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "sentry"
+                "frontend-services"
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "apis": {
+                "window.sessionStorage": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "38ea5b0bbb28a9c8230ba01e827f7eb4c90d3582ed8b11c83648dde7bcd30525"
+                "af2d4e67ca5a8ad096d87e4f55587c1a4d48e48e0344e001ed7be9ae36d5a20e"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "ionos.co.uk",
-                "login.ionos.co.uk"
+                "login.ionos.co.uk",
+                "mail.ionos.co.uk"
             ]
         },
         {
@@ -262,7 +293,7 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "0f1245261419fb130d70f136afd99edbfba9bb73298a46058a7806aebc9dbdf1"
+                "1c7097c5a25f351333cdbd426d7e1b7613bb756a15b8e9eda7eebaaab2488ded"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -285,7 +316,7 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "2474d333b71480071be8409b9d2c8c428eea4802ae96cd7bbef39414dad84c63"
+                "45e5379b779eacc0d42e57b39828aee583202b312260be2baada48f269a10191"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -304,11 +335,11 @@
                 "frontend-services"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "0c520b4dfbf0664baec9364c2ece366e13f083961298ecfc078886274e03f1b5"
+                "d8ad1e5af35493db3bfaec51151bcad989fdeaaa674257c69dfec65beb8150f2"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -316,7 +347,9 @@
             "exampleSites": [
                 "ionos.co.uk",
                 "login.ionos.co.uk",
-                "mail.ionos.co.uk"
+                "mail.ionos.co.uk",
+                "www.ionos.es",
+                "www.ionos.it"
             ]
         },
         {
@@ -354,7 +387,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d86209eba8fd5648438b104e19b92eaf28f76ee51ffee71ee126a8523305870c"
+                "8915466fd3d5a2502a5656604d1a261bc6671432a58c636c428e522b38d8db8b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -363,20 +396,44 @@
                 "ionos.co.uk",
                 "mail.ionos.co.uk"
             ]
+        },
+        {
+            "rule": "ionos\\.com\\/t\\/tag\\/IONOS\\/digitalguide\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "frontend-services"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5f8e1d2cb25ec26829e5e4c3ce9e78b50268131894c0a27778d275d98a0e8d73"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ionos.es",
+                "www.ionos.it"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 24,
+        "Script": 33,
         "Fetch": 2,
         "XHR": 3,
-        "Stylesheet": 9
+        "Stylesheet": 11
     },
     "nameservers": [
-        "ns-1and1.ui-dns.biz",
         "ns-1and1.ui-dns.com",
+        "ns-1and1.ui-dns.biz",
         "ns-1and1.ui-dns.de",
         "ns-1and1.ui-dns.org"
     ]

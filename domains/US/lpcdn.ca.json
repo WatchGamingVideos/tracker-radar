@@ -11,7 +11,7 @@
     "sites": 2,
     "subdomains": [
         "static",
-        "files"
+        "mobile-img"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -111,7 +111,7 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/login\\.bundle\\.ba70c2777805e14df5c4\\.js",
+            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/login\\.bundle\\.78d17a6284309cfebdb2\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -122,7 +122,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0c544815c45c5bfe03f70ce370643cb621f5e651693f3ad9761a8dab35ec4e5f"
+                "3b0168787d34ab8638d54f25ec5018978846da7cb18784a8bb255af0fc081e33"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -183,18 +183,21 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/componentBraze\\.bundle\\.dd07fc24e01d1ae16ccf\\.js",
+            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/componentBraze\\.bundle\\.f828293388aed2cd4d08\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "static"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "df1f90258cb3242a1ed4c24850c67ec14a205f4d253b50a5172f564a7e56e207"
+                "aa334c4c31d73f6057c3158444015212f6c471b441a1d1df905a46175a095ae6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -359,6 +362,28 @@
             ]
         },
         {
+            "rule": "lpcdn\\.ca\\/fonts\\/museoSlab\\/MuseoSlab-700\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "454ebebfb431c3cc36be53543365f00b89d49a43803a17b528c147e817541a6d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
             "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-Regular\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
@@ -371,72 +396,6 @@
             "cnames": [],
             "responseHashes": [
                 "12c52b4fa23ebc0eb27df4d56f5c56bd5237e64eb25d36e6b9b64ecf825f109f"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-SemiBold\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e0562522fec89e97565dde08f5d33393bd9db052f8025978f4d4a705fa25631b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Book\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ff86798005be9a7d7c91154ab2e69bc7b72a80e9211a22a3aa3d783adda3578b"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Black\\.woff2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7c849aed6cc721fb81b1a8ef78b3e7e64549ae97322c4e6c1e863aab329e82ea"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -469,7 +428,7 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-Light\\.woff2",
+            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Book\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -480,7 +439,51 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "941ccc36301320e11771694b57e83ee8c3467d7fc02ce533e3e2d2ba6e79bebb"
+                "ff86798005be9a7d7c91154ab2e69bc7b72a80e9211a22a3aa3d783adda3578b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-SemiBold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e0562522fec89e97565dde08f5d33393bd9db052f8025978f4d4a705fa25631b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Black\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c849aed6cc721fb81b1a8ef78b3e7e64549ae97322c4e6c1e863aab329e82ea"
             ],
             "type": "Font",
             "firstPartyCookies": {},
@@ -535,106 +538,18 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/fonts\\/museoSlab\\/MuseoSlab-700\\.woff2",
+            "rule": "lpcdn\\.ca\\/v2\\/357x\\/r3996\\/431392e8601a340db22a1ee31ddb24ad\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "static"
+                "mobile-img"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "454ebebfb431c3cc36be53543365f00b89d49a43803a17b528c147e817541a6d"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/342d5a589e6498ad19e8ee\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f5bf9edba7984525e10825e4dd866020d2665f6f1363329645182593ad52307c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/312d5a589e6498ad19e8ee\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "52c7f231c391f234f5407901431e715dec3c6e47a167c881774543e521534c90"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/332d5a589e6498ad19e8ee\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5b38d4dfb40586944bd52edb6e3945f38fdc4b3d491e5c6b3a0b0df9f26227f5"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lapresse.ca",
-                "www.lapresse.ca"
-            ]
-        },
-        {
-            "rule": "lpcdn\\.ca\\/lpweb\\/lapresse\\/img\\/meteo\\/icone_une\\/rn\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "853f9d44a962080198b2b8825e74975e9245bff1fed59de728aa5d949e0ebcb4"
+                "d0bfe2e5da39a275062cce50aae08a85cc8321382fa6d997f5af167d413e2c04"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -645,18 +560,18 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/produits\\/sondage\\/ic-close@2x\\.png",
+            "rule": "lpcdn\\.ca\\/v2\\/357x\\/r3996\\/b4e58a6a613a34caac78b0e647141b14\\.webp",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "files"
+                "mobile-img"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bc1770b9c082ca0b634b2eb413165e768709809f6787724d48a05d7954974636"
+                "e81a82cfcdb5aab12abdb9e6b14518b3a8d1d2f6fd1cbea774d45cff153fdc1e"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -667,7 +582,7 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Bold\\.woff",
+            "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-Light\\.woff2",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -677,7 +592,9 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "941ccc36301320e11771694b57e83ee8c3467d7fc02ce533e3e2d2ba6e79bebb"
+            ],
             "type": "Font",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -687,7 +604,7 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/fonts\\/verlag\\/Verlag-Book\\.woff",
+            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/34898bc399487a3ac167b9\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -697,8 +614,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
+            "responseHashes": [
+                "33f978bbe64a8c2b0b82849bdacc29d3a3756d4c29b3c19d818f1482058a10b6"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -707,7 +626,7 @@
             ]
         },
         {
-            "rule": "lpcdn\\.ca\\/fonts\\/rubrik\\/Rubrik-SemiBold\\.woff",
+            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/31898bc399487a3ac167b9\\.bundle\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -717,8 +636,98 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Font",
+            "responseHashes": [
+                "217d6f89d6c78c3411e6c2052e504c0e06ff6aa6a5d8a0352503c12371bd9f39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/lpweb\\/dist\\/js\\/33898bc399487a3ac167b9\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c12814ae898a349b4656264735d24eafaa7fecf491806355f58979d784ac0af8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/v2\\/357x\\/r3996\\/baec0086\\/fd6f696b2ff4324d88ef300ba6f8ded7\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mobile-img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02773631395f5a9e1f928bbe6b175c5fbc686a5b374c7956212e6918aa9e53c2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/v2\\/357x\\/r3996\\/1090d91a110e32538d2357b29a9c9d8c\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mobile-img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e314bd3ef270cf324b6af86ca4b29fb420aca7f7cb9fd833d3ecd1933ddb318"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapresse.ca",
+                "www.lapresse.ca"
+            ]
+        },
+        {
+            "rule": "lpcdn\\.ca\\/lpweb\\/lapresse\\/img\\/meteo\\/icone_une\\/on\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f8dbe54d27445c8870ca1258511a886c5df76e29e8c36142bbddf8cea6962e1"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -733,8 +742,8 @@
     "types": {
         "Script": 20,
         "Stylesheet": 2,
-        "Image": 18,
-        "Font": 24
+        "Image": 24,
+        "Font": 18
     },
     "nameservers": [
         "theo.ns.cloudflare.com",

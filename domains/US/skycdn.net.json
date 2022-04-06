@@ -11,8 +11,30 @@
         "img"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "skycdn\\.net\\/homedeal\\/css\\/bootstrap-custom\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18dc29a327bcf885139b2108a58dd7e9460d0e07c73a8f65f15080c67c951859"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homedeal.nl",
+                "www.homedeal.nl"
+            ]
+        },
         {
             "rule": "skycdn\\.net\\/homedeal\\/fonts\\/sofia-pro\\/373187_1_0\\.woff2",
             "cookies": 0,
@@ -102,28 +124,6 @@
             ]
         },
         {
-            "rule": "skycdn\\.net\\/homedeal\\/css\\/bootstrap-custom\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "resources"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cf188f0249a9d26f609778b7a71f417d30797ee0bb46048cea1d2daa06d9869b"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "homedeal.nl",
-                "www.homedeal.nl"
-            ]
-        },
-        {
             "rule": "skycdn\\.net\\/homedeal\\/elements\\/runtime\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -135,7 +135,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "39b1ab3772d7a8b7abe5de75779255cadcc30f4b6a4bcb2c59ab0137535df727"
+                "fa138902ae683cc67dd2dc875af8391f7486b49652950d8283f53cae3078dc2f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -148,11 +148,13 @@
         {
             "rule": "skycdn\\.net\\/homedeal\\/elements\\/polyfills\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "resources"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
@@ -190,6 +192,28 @@
             ]
         },
         {
+            "rule": "skycdn\\.net\\/homedeal\\/elements\\/assets\\/i18n\\/nl-NL\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dc14220d4cf1109198acb2ec5610722597411abc69d9d8cc8396d30f90c1ed3b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homedeal.nl",
+                "www.homedeal.nl"
+            ]
+        },
+        {
             "rule": "skycdn\\.net\\/icons\\/svg\\/homedeal\\/logo-web-homedeal\\.svg",
             "cookies": 0,
             "fingerprinting": 0,
@@ -216,9 +240,10 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Font": 8,
         "Stylesheet": 2,
+        "Font": 8,
         "Script": 6,
+        "XHR": 2,
         "Image": 2
     },
     "nameservers": [

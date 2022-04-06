@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000136,
-    "sites": 2,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
-        "logos"
+        "logos",
+        "politicas"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "bireme\\.org\\/img\\/pt\\/bvs_color\\.svg",
@@ -33,16 +34,87 @@
                 "saude.gov.br",
                 "bvsms.saude.gov.br"
             ]
+        },
+        {
+            "rule": "bireme\\.org\\/cookiebar\\/cookiebar-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "politicas"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0defd9e666ba9218d3a5a5471c457eecdd00a513b057c18faadd472bdfdb8717"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bvsalud.org",
+                "pesquisa.bvsalud.org"
+            ]
+        },
+        {
+            "rule": "bireme\\.org\\/cookiebar\\/themes\\/cookiebar-vhl\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "politicas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c453c052f1d35a9953fb6099d17bd7581272b6efc9bc3ba195a71aa5e20720dd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bvsalud.org",
+                "pesquisa.bvsalud.org"
+            ]
+        },
+        {
+            "rule": "bireme\\.org\\/cookiebar\\/lang\\/pt\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "politicas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6aed4714265e99f4190e91ccfd36bfb29cad8fb3f981f4e01f6e562c95df02eb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bvsalud.org",
+                "pesquisa.bvsalud.org"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 2
+        "Image": 2,
+        "Script": 2,
+        "Stylesheet": 2,
+        "XHR": 2
     },
     "nameservers": [
-        "dns2.bireme.br",
-        "dns.bireme.br"
+        "dns.bireme.br",
+        "dns2.bireme.br"
     ]
 }

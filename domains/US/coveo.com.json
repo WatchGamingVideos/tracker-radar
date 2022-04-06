@@ -7,20 +7,128 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00101,
-    "sites": 148,
+    "prevalence": 0.0011,
+    "sites": 161,
     "subdomains": [
         "static.cloud",
+        "usageanalytics",
         "platform.cloud",
         "platform-eu.cloud",
-        "usageanalytics",
         "analytics.cloud",
-        "analytics-eu.cloud",
-        "analytics-au.cloud"
+        "platform-au.cloud",
+        "analytics-au.cloud",
+        "analytics-eu.cloud"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "coveo\\.com\\/coveo\\.analytics\\.js\\/coveoua\\.js",
+            "cookies": 0.0000885,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 14,
+                "window.localStorage": 13,
+                "Navigator.prototype.cookieEnabled": 13,
+                "Date.prototype.getTime": 13,
+                "Document.cookie setter": 13,
+                "Document.cookie getter": 13
+            },
+            "sites": 14,
+            "prevalence": 0.0000953,
+            "cnames": [],
+            "responseHashes": [
+                "3f6537f85f71e5ca9672d7cb7d73eebc9cbbbba5233b04ca04f0983d2283ecca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xero.com",
+                "developer.arm.com",
+                "docs.paloaltonetworks.com",
+                "kb.tableau.com",
+                "knowledge.informatica.com",
+                "support.cloudflare.com",
+                "support.quest.com",
+                "www.acog.org",
+                "www.advisory.com",
+                "www.dlapiper.com",
+                "www.icaew.com",
+                "www.imf.org",
+                "www.medtronic.com",
+                "www.pingidentity.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/view",
+            "cookies": 0.0000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usageanalytics"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "e84be1a4a3a81eca375795b43031062858112f4e346b7341aa20af545c9381af",
+                "3706938eaf858c3d09d77748d51a3971f8001e1b4421b602ea65c25e517b42b3",
+                "e29f896343db4854ecd6e600dd12f8ef22b95d3579f4e6922dca65fd40e7e775",
+                "0a9d6186571a5ad5f37829cfb04de67d3bf8b95035460da9734d57e26d21143d",
+                "0027284738b3a790040da84600f54a24fc1e7049bdaabf071cdb0280cbd1ba1b",
+                "0ab75759008f3dae39aa9fb2227f50e89e0dc54c89bd84d862ed4b90d77d9761",
+                "58ad084ec85ed13d4efe6305d161cfbdf44507ce89cc4e8990350f4fc27b1a07",
+                "0b93545c65df9aa835965d9eba2ea59d72d162152fe84a5aab25b925fb2a2be2",
+                "320cad547448038637342c73049c9c1cb3da9d98338e1f17a18463d2ef27ffb9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xero.com",
+                "developer.arm.com",
+                "docs.paloaltonetworks.com",
+                "kb.tableau.com",
+                "knowledge.informatica.com",
+                "knowledgebase.paloaltonetworks.com",
+                "support.cloudflare.com",
+                "support.quest.com",
+                "www.medtronic.com",
+                "www.pingidentity.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usageanalytics"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xero.com",
+                "developer.arm.com",
+                "docs.paloaltonetworks.com",
+                "kb.tableau.com",
+                "knowledge.informatica.com",
+                "knowledgebase.paloaltonetworks.com",
+                "support.cloudflare.com",
+                "support.quest.com",
+                "www.medtronic.com",
+                "www.pingidentity.com"
+            ]
+        },
         {
             "rule": "coveo\\.com\\/searchui\\/v2\\.10083\\/css\\/CoveoFullSearch\\.css",
             "cookies": 0,
@@ -76,14 +184,14 @@
                 "static.cloud"
             ],
             "apis": {
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.doNotTrack": 5,
                 "window.localStorage": 5,
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.doNotTrack": 4,
-                "Navigator.prototype.language": 4
+                "Navigator.prototype.language": 5,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "848cce5fc32283a97d0c4d6dc42ce3b9de7681708604e21a02bb4a2a49c2eb34"
@@ -132,7 +240,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "83b08dc1b928da20b0dbf1be80f7971b55bf7841cda0b4474a2852848a5f2b78"
@@ -157,7 +265,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "96e128fc624c27a44d7f45e3cd42111858597a3761cfab8399443280fdc46365"
@@ -246,82 +354,6 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud",
-                "platform-eu.cloud"
-            ],
-            "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aviva.co.uk",
-                "central.xero.com",
-                "developer.arm.com",
-                "docs.paloaltonetworks.com",
-                "help.salesforce.com",
-                "kb.tableau.com",
-                "kb.vmware.com",
-                "knowledge.informatica.com",
-                "knowledgebase.paloaltonetworks.com",
-                "support.okta.com",
-                "support.quest.com",
-                "support.sophos.com",
-                "www.famousfootwear.com",
-                "www.wedgwood.com",
-                "www.xilinx.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud"
-            ],
-            "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000817,
-            "cnames": [],
-            "responseHashes": [
-                "c88bb1afe4d2bb42a2855622544468c9db850b1335097e2836e509d01e9466cb",
-                "afb9baaf2fb1da7c954fcb4749f1d0b2a23e7ba339ca4411cc217d7df9a5723b",
-                "dd2d2636261ee6969703eacfd5dd879ddb5ef2b7399d208f12deafb34a39ca75",
-                "15d24132ede9c4b625ca771cd551a23a07e88ed26056f386fe6a83874cd0d0ce",
-                "5eb307870f2fe7db6ae145a3b0be972a4a7055e4e40cb1b25435f578bbcba078",
-                "051ad02450de62d2599fe80edf78870153b1aef649957691f691179eaed18bfc",
-                "da7706e355fff7f84b9eaaae47aeecd16535d2dd0f9484ce4b88e7a61298b96b",
-                "7852535f5b13a3d45129d2c594fed621213f50f4388d97c1dee79ef78ec1aa96",
-                "7d0a3a1af41a92a8c64f5cbcb560beaaab10f19220b9eada36cae4a81d24f364",
-                "86db11bca4bb818ad24a81267db3b0fc5f0d7b13846d4280ded4ece1d36fa9ad",
-                "1fed1617ca327298fe4661958879a0317acd196fcf88357bd2a668a34862a08f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "aviva.co.uk",
-                "central.xero.com",
-                "docs.paloaltonetworks.com",
-                "kb.tableau.com",
-                "kb.vmware.com",
-                "knowledge.informatica.com",
-                "knowledgebase.paloaltonetworks.com",
-                "support.okta.com",
-                "support.quest.com",
-                "support.sophos.com",
-                "www.famousfootwear.com",
-                "www.xilinx.com"
-            ]
-        },
-        {
             "rule": "coveo\\.com\\/searchui\\/v2\\.7968\\/css\\/CoveoFullSearch\\.css",
             "cookies": 0,
             "fingerprinting": 0,
@@ -329,8 +361,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "9bdc6985a06ecde660f6d225b6d365d29ffaedf63263354d053bc453b9b7c3ff"
@@ -342,30 +374,29 @@
                 "perficient.com",
                 "blogs.perficient.com",
                 "taxsummaries.pwc.com",
-                "www.cfainstitute.org",
                 "www.mitel.com"
             ]
         },
         {
             "rule": "coveo\\.com\\/searchui\\/v2\\.7968\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000409,
+            "cookies": 0.000034,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 6,
-                "Navigator.prototype.doNotTrack": 6,
-                "window.localStorage": 6,
-                "Navigator.prototype.cookieEnabled": 6,
-                "Date.prototype.getTime": 6,
-                "Document.cookie setter": 6,
-                "Document.cookie getter": 6,
-                "Navigator.prototype.language": 6,
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "window.localStorage": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.language": 5,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 3
             },
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "dae9322bc3a50df35356f53202bb17cc44f36fb8e115b55b00235a4ac0cce1bb"
@@ -377,7 +408,6 @@
                 "perficient.com",
                 "blogs.perficient.com",
                 "taxsummaries.pwc.com",
-                "www.cfainstitute.org",
                 "www.hackensackmeridianhealth.org",
                 "www.mitel.com"
             ]
@@ -390,8 +420,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "2171df396d6ab3e003c7d470eb5999d2646358d77682de2b90252627fe6c7bca"
@@ -401,7 +431,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "business.gov.au",
-                "vcahospitals.com"
+                "vcahospitals.com",
+                "www.cfainstitute.org"
             ]
         },
         {
@@ -412,16 +443,16 @@
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.maxTouchPoints": 1
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.language": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Date.prototype.getTime": 1
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "6eb2e85d0c02488e09c8e6ae8ef0b551f8a19ee1cbcdda973b28a070d34284cc"
@@ -431,7 +462,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "business.gov.au",
-                "vcahospitals.com"
+                "vcahospitals.com",
+                "www.cfainstitute.org"
             ]
         },
         {
@@ -442,8 +474,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "8888d483a6374a2589e38d5854c08f95eb46d674dfdfc243c18763757e6c931c"
@@ -453,7 +485,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "business.gov.au",
-                "vcahospitals.com"
+                "vcahospitals.com",
+                "www.cfainstitute.org"
             ]
         },
         {
@@ -488,15 +521,60 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10089\\/js\\/Searchbox\\.min__87a2f876e355bf8ecbd9\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "usageanalytics"
+                "static.cloud"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "034f9fdae1e9b90dd3ef5ae7cb73a30a4a0523342e681563376bf4f098262143"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "business.gov.au",
+                "www.cfainstitute.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10089\\/js\\/FieldSuggestions\\.min__87a2f876e355bf8ecbd9\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35aff9b2711155e785b62d637ea43e8bbd04ecb16b2916fabfc1b36d3fc52647"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "business.gov.au",
+                "www.cfainstitute.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -505,31 +583,48 @@
             "exampleSites": [
                 "xero.com",
                 "central.xero.com",
+                "core.vmware.com",
+                "developer.arm.com",
                 "docs.paloaltonetworks.com",
+                "docs.sophos.com",
+                "help.salesforce.com",
+                "kb.juniper.net",
+                "kb.tableau.com",
                 "kb.vmware.com",
-                "knowledgebase.progress.com",
-                "support.quest.com",
-                "support.sophos.com"
+                "knowledge.informatica.com",
+                "knowledgebase.paloaltonetworks.com",
+                "support.okta.com",
+                "support.sophos.com",
+                "www.famousfootwear.com",
+                "www.twobirds.com",
+                "www.wedgwood.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
-            "cookies": 0.0000477,
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "usageanalytics"
+                "platform.cloud",
+                "platform-eu.cloud"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "sites": 13,
+            "prevalence": 0.0000885,
             "cnames": [],
             "responseHashes": [
-                "f9441791f2a0290d646396a0679ec829a395d9a7f9877b831577b464dcaabb36",
-                "10577ad366dc196f7a5b97151c58aac96fefbc1c74b505649e71983a0165d9c3",
-                "e8586eaaa7c312d0a355d9ae8159b321438dc6c33abd1ba11bc0d084120208c0",
-                "f3b92c99aaea9fb223539f1669520adefdb060c75b9244eb71257422c3d53b79",
-                "e3e41a8ce967b51d5fd0c0c58c66b5ff238d44dac3bd686bd64f5675a790b7e8",
-                "fee9df8e4d040361819be97567c696434922a6ed759370a260cad8eef084e8ba"
+                "f63593e8cbf266f293c51dd4485f517046e4c0f47e305704cd6fe5255205af50",
+                "983fae68b83e61a991cc768e4e4afdcc677defa0a1a2f3ef031180bb7232dd76",
+                "6807f5ff3116f676b60f0d42dae56ddb9319ff5ddb9a0dc56bc157005eee7eae",
+                "66ffe20698b476c1e7b1c983470fcb8115bb09a3204820df83b4033527567856",
+                "5c1ac728dc56b5f37c437cb322cf8f2bc4f5f4a3806b448ecd96b1101759a772",
+                "b5246b214eff2e966ce608160c92f9d0f078cbddcde0b45fc061641dae832df3",
+                "882f555a3f7a6bf7c3d4623d35ae5b1a857706fd874d2114acc9212cd8ab1f1f",
+                "f16b0152ba80cf721a14e63578f833d280f2e5c5bb0b9267bfbb98cb6e2ca645",
+                "9669124237b7e28ccf5ad5f9bfc8b2b31a8db3f78930fc606865d7085da1bc92",
+                "51b5251a5b1b0081d7963dc33014af0f39223390dcc22e4f4d263d56dd2615b7",
+                "a15c759a4aa5e8daf587dbcbfc32f8679f687ca45ae4ac58fe5c8ee1998688c7",
+                "18ea47170204d18f5ca24d3e17cbb6e8860651c4eb719b53f1c117c31c26eadc"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -538,120 +633,67 @@
                 "xero.com",
                 "central.xero.com",
                 "docs.paloaltonetworks.com",
-                "kb.vmware.com",
-                "knowledgebase.progress.com",
-                "support.quest.com",
-                "support.sophos.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/coveo\\.analytics\\.js\\/coveoua\\.js",
-            "cookies": 0.0000885,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.doNotTrack": 14,
-                "window.localStorage": 13,
-                "Navigator.prototype.cookieEnabled": 13,
-                "Date.prototype.getTime": 13,
-                "Document.cookie setter": 13,
-                "Document.cookie getter": 13
-            },
-            "sites": 14,
-            "prevalence": 0.0000953,
-            "cnames": [],
-            "responseHashes": [
-                "3f6537f85f71e5ca9672d7cb7d73eebc9cbbbba5233b04ca04f0983d2283ecca"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arm.com",
-                "community.arm.com",
-                "developer.arm.com",
-                "docs.paloaltonetworks.com",
-                "kb.tableau.com",
-                "knowledge.informatica.com",
-                "support.cloudflare.com",
-                "support.quest.com",
-                "www.acog.org",
-                "www.advisory.com",
-                "www.dlapiper.com",
-                "www.icaew.com",
-                "www.imf.org",
-                "www.medtronic.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/view",
-            "cookies": 0.0000749,
-            "fingerprinting": 0,
-            "subdomains": [
-                "usageanalytics"
-            ],
-            "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
-            "cnames": [],
-            "responseHashes": [
-                "401738d9821c86fbe2a715a6ad1312db82b30a8246aefae271e9e6fb40e1beba",
-                "2985f7b4468778754e5254c708b2a0fc42cb06d0d8b9d7bfdb360a14c4bd4fa2",
-                "74413f85b9b7ee517991d1fd037bb00b545fa59c81203e60421d9024fd52db56",
-                "acc90dc9ee31870c8ace380256052cc218d1c1df6ff3675b0b68e060538d9535",
-                "26386732257fd5f551b91c92293d92c88159f3528f7527fc79e6dbb95f41fe23",
-                "580b5971c748ffb0e4b86d99f34755f8400a8f4ead7d9e4b5c9abb6b9c2d3191",
-                "e09500528887e9781999a53a5de94bd388547725726a8932966910ef66822b60",
-                "7f10cd4cc932ddc05bbae56bfc24bd228ae19d306caf023781333880def1578f",
-                "b238f5cf03fb7a207ec6c9be8e898731d71f434ee7f1264140e66a87784a4102",
-                "0f4406ec27271991b811aab949d87d63c5a689d388a74d809a33101b4d2309e1"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arm.com",
-                "community.arm.com",
-                "developer.arm.com",
-                "docs.paloaltonetworks.com",
+                "docs.sophos.com",
+                "kb.juniper.net",
                 "kb.tableau.com",
                 "kb.vmware.com",
                 "knowledge.informatica.com",
                 "knowledgebase.paloaltonetworks.com",
-                "support.cloudflare.com",
-                "support.quest.com",
-                "www.medtronic.com"
+                "support.okta.com",
+                "support.sophos.com",
+                "www.famousfootwear.com",
+                "www.twobirds.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/view",
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "usageanalytics"
             ],
             "apis": {},
-            "sites": 11,
-            "prevalence": 0.0000749,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "arm.com",
-                "community.arm.com",
-                "developer.arm.com",
+                "xero.com",
+                "central.xero.com",
                 "docs.paloaltonetworks.com",
-                "kb.tableau.com",
-                "kb.vmware.com",
-                "knowledge.informatica.com",
-                "knowledgebase.paloaltonetworks.com",
-                "support.cloudflare.com",
-                "support.quest.com",
-                "www.medtronic.com"
+                "knowledgebase.progress.com",
+                "support.sophos.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/v15\\/analytics\\/searches",
+            "cookies": 0.000034,
+            "fingerprinting": 0,
+            "subdomains": [
+                "usageanalytics"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "4791456435ac0428f482a1dbc2716eb1371d61d4a1510240cfc930d708721fea",
+                "1efa2f9e73fa284068d207aaf50d5765561efa4cd777dd2085fefc586b2ae044",
+                "fb0ebadd901dd3f0bd3bc911781c3b96251631e45fc9ccc7b5d1a5d61f80905d",
+                "bcc71943a444e2efb6835590e3c38bd234d0fbfbed21511da45c50df65e1fc9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xero.com",
+                "central.xero.com",
+                "docs.paloaltonetworks.com",
+                "knowledgebase.progress.com",
+                "support.sophos.com"
             ]
         },
         {
@@ -677,59 +719,75 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.6063\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000204,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.language": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "5bd40d6822c02c3fbd134fefd3d7fad98f240297eb99de5ca70c0e668f54c5d2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "f-secure.com",
-                "community.f-secure.com",
-                "leica-geosystems.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.6063\\/js\\/Searchbox\\.min__895ca4ddd33d59c3a66c\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/4\\/css\\/CoveoFullSearch\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ae558b8584dd4d80e56576eaf1b67fab63be17006bce691129b780f23ee362b6"
+                "64444b8e7a8be85cbeb67b969e60f21f3ccb029ffb76c5ed2dbf2eacd83f7e3d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f-secure.com",
+                "community.f-secure.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/4\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "22e90d24c38fc6c6eb18354e324a2256136718cd62d73eb8bc392ccf39362638"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "f-secure.com",
-                "community.f-secure.com",
-                "leica-geosystems.com"
+                "community.f-secure.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/4\\/js\\/Searchbox\\.min__49712323a660e3a8d936\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc196976da6718b873e39423749c0e3f4d1cb5d5284602436cdd069fdf6b7ac9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f-secure.com",
+                "community.f-secure.com"
             ]
         },
         {
@@ -929,8 +987,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "c2cc2786f91ecd79b136e6d88814b42f4c66f462c2b1ab0ec25b90f49d569e3b"
@@ -940,7 +998,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "sophos.com",
-                "community.sophos.com"
+                "community.sophos.com",
+                "www.hostgator.com"
             ]
         },
         {
@@ -998,6 +1057,91 @@
             ]
         },
         {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "65e2456cf1e2086719d16a0e41c0cfaa3eac01f913f3e26fc82067023993a5ae",
+                "f6b9830307b215979748cbbe5a66ed71cb54a586b37759dd141b96e9e704c2fd",
+                "33c67a5468dcf9ccd7223e4676a46b9d751144d8b5374cabb585a58293a34649",
+                "553843d2a501cb34888c1e98c1b9e8705ddaf25253de44328d4eeb4f02818ac9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vmware.com",
+                "core.vmware.com",
+                "developer.arm.com",
+                "help.salesforce.com",
+                "www.wedgwood.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/search",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "analytics.cloud",
+                "platform-au.cloud"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "cce4b23c1872999b8f62f700eee645626e27f25c9138d8591919fd0729df11b0",
+                "2024b5c6766b00e43b96a8731d680322c50ca97a485268491192a5bee7245c28",
+                "b3be581719c630cd217e67b29e623e55832ff0bccd7c49a89600194c39a4c929"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "coveo_visitorId": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "vmware.com",
+                "core.vmware.com",
+                "developer.arm.com",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "analytics.cloud",
+                "platform-au.cloud"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "coveo_visitorId": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "vmware.com",
+                "core.vmware.com",
+                "developer.arm.com",
+                "www.bunnings.co.nz"
+            ]
+        },
+        {
             "rule": "coveo\\.com\\/rest\\/search\\/v2\\/querySuggest",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1009,7 +1153,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ca0cdc9d13ca4861a3b884b3bdff651d734cb8a1b53056da75580f17f053518f"
+                "5d9fc25fbd53a9797136480353141d1967d91b0c3c5845b591841c9dd7b0d9a2"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1032,55 +1176,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arm.com",
-                "developer.arm.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud",
-                "platform-eu.cloud"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "f051faee6e9ea43e1ef086e377966024e9653008d47ff17df4ccc81230dc5124",
-                "aee978d41ae31f0fd42d539ff2be483d2c801e5ec7fff75c30b5244292c4788a",
-                "ae11e2f141db03a286f879e2c76c1c89700979c0400f5c25f9348f9bde199f46"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "arm.com",
-                "developer.arm.com",
-                "help.salesforce.com",
-                "www.wedgwood.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/search",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "90a75c22313909d09a14a0c5718d3d729d109e37c72f335d6308b64317313b9c"
-            ],
-            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -1187,24 +1282,24 @@
         },
         {
             "rule": "coveo\\.com\\/searchui\\/v2\\.8959\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.language": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "3993639fe80faa8898fa96a10836288db673f558f3c6ec4fb9bc4fcc4e6b3a36"
@@ -1214,7 +1309,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nginx.com",
-                "docs.nginx.com"
+                "docs.nginx.com",
+                "knowledgebase.paloaltonetworks.com"
             ]
         },
         {
@@ -1247,8 +1343,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "fdfdab22a372b54b5024abb44e5d95ec3890c3c22c84bc5527e62c3f5da9ed1f"
@@ -1258,7 +1354,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "nginx.com",
-                "docs.nginx.com"
+                "docs.nginx.com",
+                "knowledgebase.paloaltonetworks.com"
             ]
         },
         {
@@ -1344,7 +1441,7 @@
                 "coveo_visitorId": {
                     "ttl": 864000002,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -1423,24 +1520,24 @@
         },
         {
             "rule": "coveo\\.com\\/searchui\\/v2\\.4609\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000204,
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.language": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "69368ca042ab8ca7f705b72a77cfdade1a72a36f0e0c8b81408429441894071a"
@@ -1450,8 +1547,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snowflake.com",
-                "docs.snowflake.com",
-                "www.brother-usa.com"
+                "docs.snowflake.com"
             ]
         },
         {
@@ -1506,8 +1602,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "c4804b4e553257e230112e5ab941440a8cd2ffbda8a7533343b60ab10549e859"
@@ -1517,8 +1613,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snowflake.com",
-                "docs.snowflake.com",
-                "www.brother-usa.com"
+                "docs.snowflake.com"
             ]
         },
         {
@@ -1529,8 +1624,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "b7e797b95af785c5074304fc7e10a98bae6ed38431d8892a9b89efcc02c3325b"
@@ -1540,35 +1635,79 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "snowflake.com",
-                "docs.snowflake.com",
-                "www.brother-usa.com"
+                "docs.snowflake.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/css\\/CoveoFullSearch\\.min\\.css",
-            "cookies": 0,
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/searches",
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
-                "static.cloud"
+                "platform.cloud",
+                "platform-eu.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
-                "3b4092a39babe73827cf40829ba4c7ca70e4339da37b8633a1e5cb1f838b7fc7"
+                "507a47c74e91a9beda2a5caba3636a5b137af8664428344c85680ccebe3a60b2",
+                "d7854dc24a723502bb688606d66ac57e84b2a3657e8301613e56d4211b6f2d45",
+                "8b2c247d578dbe8f0af58643f2826bb60e1964b93e708edb6baa56e9b9712a8a",
+                "b266c7e25515a047bd8742a4dd61e47c69f98d2a5bddd8b484ce6842f9587a9d",
+                "7c4fd2b3c17d8c020cbd66e9e7cf5cc803190ccf6abbc752b95e01015635d7ef",
+                "320f9d47bc3fda3d87b3851b07cdbff502e5090a41e6e134e11652259608c1cd",
+                "6a6294ed5eede93804030e1ba31bfe11f6a622a39509f974a624ececbb06e43a",
+                "c995b2ef7dfd90ac55b66743b42af1295c667fb998322038f2d338565e548a9b",
+                "f615649c2e967ce81b70279356ddd8635cc627123edd8ea1d858bcbf9a120825"
             ],
-            "type": "Stylesheet",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com"
+                "sophos.com",
+                "docs.sophos.com",
+                "kb.juniper.net",
+                "kb.tableau.com",
+                "kb.vmware.com",
+                "knowledge.informatica.com",
+                "knowledgebase.paloaltonetworks.com",
+                "support.okta.com",
+                "www.famousfootwear.com",
+                "www.twobirds.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/searches",
             "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sophos.com",
+                "kb.juniper.net",
+                "kb.tableau.com",
+                "kb.vmware.com",
+                "knowledge.informatica.com",
+                "knowledgebase.paloaltonetworks.com",
+                "support.okta.com",
+                "www.famousfootwear.com",
+                "www.twobirds.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.5395\\/js\\/CoveoJsSearch\\.min\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
@@ -1577,48 +1716,28 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.doNotTrack": 2,
                 "window.localStorage": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.maxTouchPoints": 2
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7a05dd604328a635f2f0a4fb7bac31149979220495493a0cc8df757343d11dfd"
+                "cdc2abf86e977a95226a3a0225171e82c51f40dbba8ec7cbbdf9e57c848009ca"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com"
+                "solarwinds.com",
+                "documentation.solarwinds.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/templates\\/templates\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "ada1fdadc5df29e79689862f2823a4dce498b79ca372dde1839eee4e7c71caf0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10087\\/js\\/cultures\\/en\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.5395\\/js\\/templates\\/templates\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1629,19 +1748,19 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "8888d483a6374a2589e38d5854c08f95eb46d674dfdfc243c18763757e6c931c"
+                "2957ad5bbbff2b173497040d1ec51cea32d6a8862a3fd3b70885cca4547fd765"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com",
-                "experienceleague.adobe.com"
+                "solarwinds.com",
+                "documentation.solarwinds.com",
+                "support.solarwinds.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/Searchbox\\.min__48e45fb841cb6a5c6e38\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.5395\\/css\\/CoveoFullSearch\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1652,14 +1771,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "fc9a5839fff7b311d5e4452cc72590dd44b950879995d5e3ef40e721d1f3cec0"
+                "8c00f87c9eeb0a4dfe1877a36ca1cc09b970f4abd27a1254a6f338212e10944b"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "adobe.com",
-                "experienceleaguecommunities.adobe.com"
+                "solarwinds.com",
+                "documentation.solarwinds.com"
             ]
         },
         {
@@ -1736,6 +1855,29 @@
             ]
         },
         {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10087\\/js\\/cultures\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8888d483a6374a2589e38d5854c08f95eb46d674dfdfc243c18763757e6c931c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com"
+            ]
+        },
+        {
             "rule": "coveo\\.com\\/searchui\\/v2\\.10081\\/js\\/Searchbox\\.min__4da234f0fccb61abb03c\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1756,6 +1898,101 @@
                 "adobe.com",
                 "experienceleague.adobe.com",
                 "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/css\\/CoveoFullSearch\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b4092a39babe73827cf40829ba4c7ca70e4339da37b8633a1e5cb1f838b7fc7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleaguecommunities.adobe.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7a05dd604328a635f2f0a4fb7bac31149979220495493a0cc8df757343d11dfd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleaguecommunities.adobe.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/templates\\/templates\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ada1fdadc5df29e79689862f2823a4dce498b79ca372dde1839eee4e7c71caf0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleaguecommunities.adobe.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/Searchbox\\.min__48e45fb841cb6a5c6e38\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc9a5839fff7b311d5e4452cc72590dd44b950879995d5e3ef40e721d1f3cec0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleaguecommunities.adobe.com"
             ]
         },
         {
@@ -1918,7 +2155,7 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "d3002310176d112d8299b37701cab94cec32484786ded450fa51c12036d9248a"
+                "d966af4fec99f601a5640f70372db00363c778b9e4f7cdf869968ec7a0ea5e35"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -1976,60 +2213,66 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/searches",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
-            "cnames": [],
-            "responseHashes": [
-                "267ac02249d4dbf00f1ad37df6800084bdc806712fd7e331b605f1003e1f1842",
-                "4e59623bc2c8cd964cb57e77a6cd69c44abb279846f5f0f0b070ebddb7269c1b",
-                "3be1dcd457fa660cb351b7c7c952c76068d6611d7493a786d89ad75e3750a413",
-                "83142fb119fdf5d2e7041bcea24eb835e199208f0d760bcaf62318ca522597fc",
-                "2200395ce0f16c0124df70001b29a1f32c58c5f4842464b39ce4bc5c0d7c70cd",
-                "41f960d3c5c60b463fa8b310fd611efdd186c806e055ce83f031e23de65e0453"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tableau.com",
-                "kb.tableau.com",
-                "knowledge.informatica.com",
-                "knowledgebase.paloaltonetworks.com",
-                "support.okta.com",
-                "www.famousfootwear.com",
-                "www.xilinx.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/searches",
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "platform.cloud"
+                "platform.cloud",
+                "analytics.cloud",
+                "analytics-au.cloud",
+                "platform-au.cloud"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tableau.com",
-                "kb.tableau.com",
-                "knowledge.informatica.com",
-                "knowledgebase.paloaltonetworks.com",
-                "support.okta.com",
+                "vmware.com",
+                "www.basspro.com",
+                "www.blackwoods.com.au",
+                "www.bunnings.co.nz",
+                "www.cabelas.com",
                 "www.famousfootwear.com",
-                "www.xilinx.com"
+                "www.leevalley.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "analytics.cloud",
+                "analytics-au.cloud",
+                "platform-au.cloud"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000476,
+            "cnames": [],
+            "responseHashes": [
+                "758a6958e5724a9a5e229c8fceb5d08ac46d86c3b9fc63c969f1aa484075f877",
+                "16b78ac05b45c0ea3f1fd955f68076db125b2c8365207ef813c6f35baf04e457",
+                "e8b4261d469f07cb06a2ffcfe6072e5a2fb9411211b281a2ffa0476cb3cf3bf9",
+                "63fd9be3a432d5e979ddeda53059be15c93db915ee2f66bbafdec05396424192",
+                "093aa771aca86e59e3970e9aecca83a718d7e0674c22526197d4b84cfeb3a6b8",
+                "09ab71c1c59897fcca1a3b757a0b9154bed79a915620be5f7cff35b20dd8445d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vmware.com",
+                "www.basspro.com",
+                "www.blackwoods.com.au",
+                "www.bunnings.co.nz",
+                "www.cabelas.com",
+                "www.famousfootwear.com",
+                "www.leevalley.com"
             ]
         },
         {
@@ -2040,8 +2283,29 @@
                 "platform.cloud"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paloaltonetworks.com",
+                "knowledgebase.paloaltonetworks.com",
+                "knowledgebase.progress.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -2052,30 +2316,7 @@
             "exampleSites": [
                 "paloaltonetworks.com",
                 "knowledgebase.paloaltonetworks.com",
-                "knowledgebase.progress.com",
-                "www.motorolasolutions.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/search\\/v2\\/log",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "platform.cloud"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "paloaltonetworks.com",
-                "knowledgebase.paloaltonetworks.com",
-                "knowledgebase.progress.com",
-                "www.motorolasolutions.com"
+                "knowledgebase.progress.com"
             ]
         },
         {
@@ -2108,15 +2349,15 @@
                 "static.cloud"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
                 "window.localStorage": 2,
                 "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.doNotTrack": 1,
-                "Navigator.prototype.language": 1
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -2184,15 +2425,15 @@
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.maxTouchPoints": 2
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.language": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Navigator.prototype.maxTouchPoints": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "8d243040e72191782d22e338a9451320f3feca013bccc18639e515fc0dab914e"
@@ -2202,7 +2443,8 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "cloudflare.com",
-                "support.cloudflare.com"
+                "support.cloudflare.com",
+                "www.informatica.com"
             ]
         },
         {
@@ -2228,27 +2470,57 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/view",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d42edb0d0a30d833e14b90d8b1356d8a9f98e70f690ccad3da93f0ea397879b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hpe.com",
+                "www.endocrine.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/css\\/CoveoFullSearch\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "platform.cloud",
-                "analytics-eu.cloud"
+                "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "f7663e1a35f3df7026b302ca52bdb73d04fa7458f748420004fa6f50f2bf448e"
+            ],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "coveo_visitorId": 0.0000068105045221750025
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "okta.com",
-                "support.okta.com",
-                "www.rolex.com"
+                "hpe.com",
+                "www.pennmedicine.org"
             ]
         },
         {
@@ -2264,13 +2536,13 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "8ea69bfe97e9120eca6658e785f6ae8169d490c96ba29291d8223047ddc5e27e",
-                "f32e2fa72ad34aecaf95d7123cbf07b1f83b3de079660e3bbb79e4aea4d14687"
+                "612f4aba7bd8da6baed247cbb9a8827183f6844f8216a544d6b0c141d87ea3cb",
+                "aec292307257094e1c881244eab75a5407161c7f15eaba9376033b4939236231"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "coveo_visitorId": 0.0000068105045221750025
+                "coveo_visitorId": 0.000006806378938341013
             },
             "exampleSites": [
                 "okta.com",
@@ -2279,30 +2551,57 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/css\\/CoveoFullSearch\\.min\\.css",
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/view",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform.cloud",
+                "platform-eu.cloud",
+                "analytics-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "coveo_visitorId": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "okta.com",
+                "support.okta.com",
+                "www.mobilepay.dk",
+                "www.rolex.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10091\\/css\\/CoveoFullSearch\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "64444b8e7a8be85cbeb67b969e60f21f3ccb029ffb76c5ed2dbf2eacd83f7e3d"
+                "ddbeadcd840e8e058da587074b6b2e6dc323c8b159fe60d92108488aab9d6ff1"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "polycom.com",
-                "www.poly.com"
+                "zoom.us",
+                "support.zoom.us",
+                "www.informatica.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0,
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10091\\/js\\/CoveoJsSearch\\.min\\.js",
+            "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
@@ -2313,24 +2612,26 @@
                 "window.localStorage": 2,
                 "Navigator.prototype.language": 2,
                 "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
-                "Navigator.prototype.maxTouchPoints": 1
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4c33295141100a86a85b3a6cd66a98d9391da240494069ab22e2f868ca24a6ab"
+                "d12ff3ba58a257879d53e6c00abe28ea1383f70dffa1aa1fde3a66f89bec6176"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "polycom.com",
-                "www.poly.com"
+                "zoom.us",
+                "support.zoom.us"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/templates\\/templates\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10091\\/js\\/templates\\/templates\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -2347,8 +2648,30 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "polycom.com",
-                "www.poly.com"
+                "zoom.us",
+                "support.zoom.us"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10091\\/js\\/cultures\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc191e1288c1c2748ba9fd421dfd870586c1b96b551834f6359938ae64e7db83"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zoom.us",
+                "support.zoom.us"
             ]
         },
         {
@@ -2371,13 +2694,101 @@
             "exampleSites": [
                 "pwc.com",
                 "taxsummaries.pwc.com",
-                "www.cfainstitute.org",
-                "www.hackensackmeridianhealth.org"
+                "www.hackensackmeridianhealth.org",
+                "www.mitel.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.55\\.8\\/css\\/CoveoForSitecore\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "127f46d8e3c5e2ef9eea5a261168b1ac975bf01de34202d90a1c7fa87fb2cd41"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vcahospitals.com",
+                "www.cfainstitute.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.55\\.8\\/js\\/CoveoForSitecore\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae2380d7785b8ad1e0621ce5d54ea37c857e15b813257ed929eee8b7e65164e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vcahospitals.com",
+                "www.cfainstitute.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.55\\.8\\/js\\/CoveoForSitecoreBindWithUserContext\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8f8a0186f3ef43fe514579317e1f9627d49c83bddc93c78a948a62c78eccf6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vcahospitals.com",
+                "www.cfainstitute.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.55\\.8\\/js\\/CoveoForSitecoreExpressions\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23bfcecbdebbd0141036e613fd3677defae7d220f3da99692023d8915b738540"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vcahospitals.com",
+                "www.cfainstitute.org"
             ]
         },
         {
             "rule": "coveo\\.com\\/coveo\\.analytics\\.js\\/2\\/coveoua\\.js",
-            "cookies": 0.0000409,
+            "cookies": 0.0000476,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
@@ -2386,13 +2797,13 @@
                 "window.localStorage": 9,
                 "Navigator.prototype.cookieEnabled": 9,
                 "Navigator.prototype.doNotTrack": 9,
-                "Document.cookie getter": 6,
-                "Document.cookie setter": 6,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Screen.prototype.colorDepth": 5,
-                "Navigator.prototype.language": 5,
-                "Navigator.prototype.userAgent": 6,
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 7,
+                "Screen.prototype.width": 6,
+                "Screen.prototype.height": 6,
+                "Screen.prototype.colorDepth": 6,
+                "Navigator.prototype.language": 6,
+                "Navigator.prototype.userAgent": 7,
                 "Date.prototype.getTime": 1
             },
             "sites": 9,
@@ -2406,7 +2817,7 @@
                 "coveo_visitorId": {
                     "ttl": null,
                     "length": 36,
-                    "prevalence": 0.000040863027133050016,
+                    "prevalence": 0.00004764465256838709,
                     "uniqueness": 1
                 }
             },
@@ -2450,9 +2861,9 @@
             "type": "Script",
             "firstPartyCookies": {
                 "coveo_visitorId": {
-                    "ttl": 864000005,
+                    "ttl": 864000006,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -2487,159 +2898,6 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.doNotTrack": 4,
-                "window.localStorage": 4,
-                "Navigator.prototype.language": 4,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
-                "Navigator.prototype.maxTouchPoints": 1
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "b558b6f9009af1fb5ed34c70a683687d588943c198953c76f18fffde37d97877"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "axa.be",
-                "www.axa.be",
-                "www.ird.govt.nz",
-                "www.mskcc.org"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/templates\\/templates\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "462cc1b53f4e037c9d5dbdb2c33c102ffd7747a95d00738d98d62d7ef59687fb"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "axa.be",
-                "www.axa.be"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/Omnibox\\.min__fe0f55536087d7403a98\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3249e16fb1c892dedc33087596cc82c5b029d3035ee11c67cc70e167e250a777"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "axa.be",
-                "www.ird.govt.nz"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/SearchButton\\.min__fe0f55536087d7403a98\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e47965f0964a331f2b7f484f13f7ed891aeb5c30d1717427edc6626dfeec5286"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "axa.be",
-                "www.ird.govt.nz"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics.cloud",
-                "analytics-au.cloud"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "basspro.com",
-                "www.basspro.com",
-                "www.blackwoods.com.au",
-                "www.cabelas.com",
-                "www.famousfootwear.com",
-                "www.leevalley.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/collect",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "analytics.cloud",
-                "analytics-au.cloud"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [
-                "c366367e471d4d8d0b3cac577e7973a53a9b3aee9bdf2df5dd9a972b70c24fed",
-                "c4dfc638f6fe99a8da78207ba9f7ecba25ad08b679ceb6a511ec2f0f173e57ad",
-                "1c93e607a01c52ebae46302de5c159a68c57e71ef3f7e5da0bb6db51a710400d",
-                "56d6d65f0af3f1d8ba646addf828b92201e031da2cd0669bbd44145a84d119cf",
-                "60092dbb92ee015bed327a8fbf9a0e2154a932899536f655eefe45c6d6cde955"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "basspro.com",
-                "www.basspro.com",
-                "www.blackwoods.com.au",
-                "www.cabelas.com",
-                "www.famousfootwear.com",
-                "www.leevalley.com"
-            ]
-        },
-        {
             "rule": "coveo\\.com\\/searchui\\/v2\\.5926\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
@@ -2668,7 +2926,7 @@
                 "coveo_visitorId": {
                     "ttl": 864000002,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -2730,8 +2988,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "35a5190dd8f31ea8e9d9dc19ecfecfd3a851ddc4fda47009bea8927096f68598"
@@ -2742,29 +3000,30 @@
             "exampleSites": [
                 "cancercenter.com",
                 "www.cancercenter.com",
-                "www.milwaukeetool.com"
+                "www.milwaukeetool.com",
+                "www.slb.com"
             ]
         },
         {
             "rule": "coveo\\.com\\/searchui\\/v2\\.9159\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000272,
+            "cookies": 0.000034,
             "fingerprinting": 2,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.doNotTrack": 4,
-                "window.localStorage": 4,
-                "Navigator.prototype.cookieEnabled": 4,
-                "Date.prototype.getTime": 4,
-                "Document.cookie setter": 4,
-                "Document.cookie getter": 4,
-                "Navigator.prototype.language": 4,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 4
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.doNotTrack": 5,
+                "window.localStorage": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Navigator.prototype.language": 5,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "0451aa5fab1b63f58a03c1435e3ae0a73c57c6b3ef584af002c82f8d89050af0"
@@ -2776,7 +3035,8 @@
                 "cancercenter.com",
                 "www.cancercenter.com",
                 "www.healthspan.co.uk",
-                "www.milwaukeetool.com"
+                "www.milwaukeetool.com",
+                "www.slb.com"
             ]
         },
         {
@@ -2787,8 +3047,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "c0b4500151e7f7dd327f30d9b503b361d8fb59cc68520783306dfa13615283ce"
@@ -2800,7 +3060,8 @@
                 "cancercenter.com",
                 "www.cancercenter.com",
                 "www.healthspan.co.uk",
-                "www.milwaukeetool.com"
+                "www.milwaukeetool.com",
+                "www.slb.com"
             ]
         },
         {
@@ -2836,7 +3097,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "dcc4d7b5d87c2cacfa9362308b326f65556b56f7ff33166c82d7640df27f1cfa"
@@ -2861,7 +3122,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "3adfaa9910b7ffe1cdade00c342d2593833e7cefd9093ce3b5eb5dca8cb59345"
@@ -2886,7 +3147,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "f8f8a0186f3ef43fe514579317e1f9627d49c83bddc93c78a948a62c78eccf6c"
@@ -2911,7 +3172,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "23bfcecbdebbd0141036e613fd3677defae7d220f3da99692023d8915b738540"
@@ -2925,6 +3186,50 @@
                 "www.honeywellhome.com",
                 "www.nortonrosefulbright.com",
                 "www.wtwco.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/css\\/CoveoFullSearch\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25670ac442a83940b107f8076813b411657cf59e27bb9bc4a1ae4afd7b1a0ae8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endocrine.org",
+                "www.endocrine.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/js\\/Searchbox\\.min__6e08047bce5c55720e37\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0baf6668601b4468dd09da663b29b88be5e504eae74a5395324f416787e2884"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "endocrine.org",
+                "www.endocrine.org"
             ]
         },
         {
@@ -2989,8 +3294,8 @@
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "23a633212addaecd6edef9a14b775570db16a1484b26d0cd340d27ab82ca0c97"
@@ -3002,7 +3307,8 @@
                 "extremenetworks.com",
                 "www.extremenetworks.com",
                 "www.healthspan.co.uk",
-                "www.milwaukeetool.com"
+                "www.milwaukeetool.com",
+                "www.slb.com"
             ]
         },
         {
@@ -3025,6 +3331,60 @@
             "exampleSites": [
                 "extremenetworks.com",
                 "www.extremenetworks.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.4710\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "963aad4ff356902a0d03cd9ef9974ecfbfb0d159517458600f463a5692cef368"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "g4s.com",
+                "www.imf.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.4710\\/js\\/Searchbox\\.min__3eb9c07b01d15e8bb712\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "46833bc1e6f8f9a3819fe0e5ba8236a27e1afac357abc81dc7be0b1e5b7eb81a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "g4s.com",
+                "www.imf.org"
             ]
         },
         {
@@ -3165,6 +3525,160 @@
             ]
         },
         {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10081\\/css\\/CoveoFullSearch\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f5f8625b59e3eaa335c35fcc9324d99981aab5ed1e338585ef13ccb793627f70"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.51\\.5\\/css\\/CoveoForSitecore\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eeb11bd521b056e3353924df9585403d013b2ccca5122db56ae4272816bfc349"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.51\\.5\\/js\\/CoveoForSitecore\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcc4d7b5d87c2cacfa9362308b326f65556b56f7ff33166c82d7640df27f1cfa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10081\\/js\\/cultures\\/en\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b59191854f38e66c426c080f420a7c81a818b9b86310f88748ef05ea4195a48f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.51\\.5\\/js\\/CoveoForSitecoreConfigureSearchHub\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3adfaa9910b7ffe1cdade00c342d2593833e7cefd9093ce3b5eb5dca8cb59345"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.51\\.5\\/js\\/CoveoForSitecoreBindWithUserContext\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8f8a0186f3ef43fe514579317e1f9627d49c83bddc93c78a948a62c78eccf6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/coveoforsitecore\\/ui\\/v0\\.51\\.5\\/js\\/CoveoForSitecoreExpressions\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23bfcecbdebbd0141036e613fd3677defae7d220f3da99692023d8915b738540"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heart.org",
+                "www.heart.org"
+            ]
+        },
+        {
             "rule": "coveo\\.com\\/searchui\\/v2\\.9856\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -3217,7 +3731,7 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.4710\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/js\\/CoveoJsSearch\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
             "subdomains": [
@@ -3232,42 +3746,20 @@
                 "Document.cookie setter": 2,
                 "Document.cookie getter": 2,
                 "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "963aad4ff356902a0d03cd9ef9974ecfbfb0d159517458600f463a5692cef368"
+                "bb937ec65b1d4680139388a75da61658c6f19be9faf17eb6d4d0290214650806"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "imf.org",
-                "www.imf.org"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.4710\\/js\\/Searchbox\\.min__3eb9c07b01d15e8bb712\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "46833bc1e6f8f9a3819fe0e5ba8236a27e1afac357abc81dc7be0b1e5b7eb81a"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "imf.org",
-                "www.imf.org"
+                "hostgator.com",
+                "www.smartsheet.com"
             ]
         },
         {
@@ -3291,6 +3783,80 @@
                 "ird.govt.nz",
                 "www.ird.govt.nz",
                 "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "window.localStorage": 3,
+                "Navigator.prototype.language": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Navigator.prototype.maxTouchPoints": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b558b6f9009af1fb5ed34c70a683687d588943c198953c76f18fffde37d97877"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ird.govt.nz",
+                "www.ird.govt.nz",
+                "www.mskcc.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/Omnibox\\.min__fe0f55536087d7403a98\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3249e16fb1c892dedc33087596cc82c5b029d3035ee11c67cc70e167e250a777"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ird.govt.nz",
+                "www.ird.govt.nz"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/SearchButton\\.min__fe0f55536087d7403a98\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e47965f0964a331f2b7f484f13f7ed891aeb5c30d1717427edc6626dfeec5286"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ird.govt.nz",
+                "www.ird.govt.nz"
             ]
         },
         {
@@ -3492,6 +4058,70 @@
             ]
         },
         {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/visit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d19fb6529914e2e86f554a128b32a3aafb497c085440f9acc0b14d0cbec1853d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobilepay.dk",
+                "www.mobilepay.dk"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/visit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobilepay.dk",
+                "www.mobilepay.dk"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/rest\\/ua\\/v15\\/analytics\\/view",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "platform-eu.cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe63b8458bf71d616e6df4726b86424c0d29394ba577f9792f6f122ad08503ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mobilepay.dk",
+                "www.mobilepay.dk"
+            ]
+        },
+        {
             "rule": "coveo\\.com\\/searchui\\/v2\\.10090\\/js\\/Searchbox\\.min__fe0f55536087d7403a98\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -3612,29 +4242,7 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/css\\/CoveoFullSearch\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "25670ac442a83940b107f8076813b411657cf59e27bb9bc4a1ae4afd7b1a0ae8"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "pennmedicine.org",
-                "www.pennmedicine.org"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/CoveoJsSearch\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/CoveoJsSearch\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
@@ -3652,6 +4260,33 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
+                "2ff56e53df83001fb5e87cb24cd288f7bbd035b0b1f1e36ab33e5cc6103a47ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pennmedicine.org",
+                "www.pennmedicine.org"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10082\\/js\\/CoveoJsSearch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
                 "5406d9414b367b9dce8d4e96380a5294ce9dbb57e0080920f2b13fd5c96835dd"
             ],
             "type": "Script",
@@ -3663,7 +4298,7 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/Searchbox\\.min__a9b0c0df44822bb24a08\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/css\\/CoveoFullSearch\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3674,7 +4309,35 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8c82b1881a35688c37fb3671abe5b93235a3e8d7c86d6c9d601a4002989a86c3"
+                "64444b8e7a8be85cbeb67b969e60f21f3ccb029ffb76c5ed2dbf2eacd83f7e3d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "poly.com",
+                "www.poly.com"
+            ]
+        },
+        {
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f5e720d6f60d2a4895cf3a53a4b1b388efe877b5d6e30fb34232e1f9864dff8"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -3685,7 +4348,7 @@
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.5652\\/css\\/CoveoFullSearch\\.css",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/templates\\/templates\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -3696,125 +4359,36 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5ea487d1ca4a6b6b67bf53f9e8f92166ee36defeb28e4abb620c02c12bdd634c"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "slb.com",
-                "www.slb.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.5652\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000204,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Navigator.prototype.doNotTrack": 3,
-                "window.localStorage": 3,
-                "Navigator.prototype.cookieEnabled": 3,
-                "Date.prototype.getTime": 3,
-                "Document.cookie setter": 3,
-                "Document.cookie getter": 3,
-                "Navigator.prototype.language": 3,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "a785f29483b8bfbd41df5bfbc0f2a27ce4ed885f1a240f70608dab49fe4e7999"
+                "462cc1b53f4e037c9d5dbdb2c33c102ffd7747a95d00738d98d62d7ef59687fb"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "slb.com",
-                "www.slb.com",
-                "www.support.xerox.com"
+                "poly.com",
+                "www.poly.com"
             ]
         },
         {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.5652\\/js\\/cultures\\/en\\.js",
+            "rule": "coveo\\.com\\/searchui\\/v2\\.10093\\/js\\/Searchbox\\.min__4a401bd73497e38dfcc6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "static.cloud"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "d678171b729108e09bcc05798f08530701ef22d9fd9b44c9d370d0dc5c1d0804"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "slb.com",
-                "www.slb.com",
-                "www.support.xerox.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.5652\\/js\\/Searchbox\\.min__390e3adfdebe4db92344\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "8db8ccc3460f1e29220cc7bc69ce64949cbc078564a523cff300bfa0e1c303da"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "slb.com",
-                "www.slb.com",
-                "www.support.xerox.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.7219\\/js\\/CoveoJsSearch\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
-            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "bb937ec65b1d4680139388a75da61658c6f19be9faf17eb6d4d0290214650806"
+                "23c74caf1aa2945582a3acaed216edfaf32a1e5ad5cb37211cc25b0098d17ecd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "smartsheet.com",
-                "www.smartsheet.com"
+                "poly.com",
+                "www.poly.com"
             ]
         },
         {
@@ -4008,100 +4582,17 @@
                 "wtwco.com",
                 "www.wtwco.com"
             ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.9159\\/6\\/js\\/CoveoJsSearch\\.Lazy\\.min\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 2,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "Date.prototype.getTime": 2,
-                "Document.cookie setter": 2,
-                "Document.cookie getter": 2,
-                "Navigator.prototype.language": 2,
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "4a06b8d76e0a06eb26715358ebabf741da8af5463f56e6b63d32f3635b06fb4c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "coveo_visitorId": {
-                    "ttl": 864000002,
-                    "length": 36,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xilinx.com",
-                "www.xilinx.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.9159\\/6\\/css\\/CoveoFullSearch\\.min\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "f32a1eb60fc1a05fe19ff76acdf58a70e828ca02b09ec1c067cc23fbd8315ae0"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xilinx.com",
-                "www.xilinx.com"
-            ]
-        },
-        {
-            "rule": "coveo\\.com\\/searchui\\/v2\\.9159\\/6\\/js\\/Searchbox\\.min__41bd4eb8ca03dff7950b\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static.cloud"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "c0b4500151e7f7dd327f30d9b503b361d8fb59cc68520783306dfa13615283ce"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "xilinx.com",
-                "www.xilinx.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000681,
+    "cookies": 0.000749,
     "types": {
-        "Stylesheet": 82,
-        "Script": 293,
-        "Preflight": 58,
-        "XHR": 33,
-        "Fetch": 28,
+        "Script": 317,
+        "Fetch": 31,
+        "Preflight": 66,
+        "Stylesheet": 94,
+        "XHR": 38,
         "Image": 2
     },
     "nameservers": [

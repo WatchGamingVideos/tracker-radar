@@ -9,16 +9,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000163,
-    "sites": 24,
+    "prevalence": 0.000231,
+    "sites": 34,
     "subdomains": [
-        "www",
+        "maps",
         "adservice",
-        "maps"
+        "www"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "google\\.nl\\/maps",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "maps"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123shoppen.in",
+                "nederland-web.nl",
+                "www.eten-bestellen.nl",
+                "www.waarligt.org"
+            ]
+        },
+        {
+            "rule": "google\\.nl\\/adsid\\/integrator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adservice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "datumprikker.nl",
+                "www.datumprikker.nl"
+            ]
+        },
         {
             "rule": "google\\.nl\\/coop\\/cse\\/brand",
             "cookies": 0,
@@ -27,22 +71,23 @@
                 "www"
             ],
             "apis": {
-                "Navigator.prototype.appName": 3,
-                "Navigator.prototype.platform": 3
+                "Navigator.prototype.appName": 7,
+                "Navigator.prototype.platform": 7
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
-            "responseHashes": [
-                "6395e6f9f6fbcd953f0ffa40615094c565d86c265fb5028e64dd2dc872b5ce69"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "rubriek.nl",
+                "www.am-pm.nl",
                 "www.dichters.nl",
+                "www.kamperen-bij-de-boer.com",
                 "www.leukste-moppen.nl",
+                "www.moestuintips.nl",
                 "www.telefoonnummeropzoeken.nl"
             ]
         },
@@ -59,9 +104,7 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "297577d52fce5df45a53b1d2e06469f65ee1dcf2e9bfbc8e2f45dbd06a0de8b4"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -78,8 +121,8 @@
                 "adservice"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "a4a1824defec1084ca81d496ee77891684c26196924bdc4fc21dd3482ce15e14"
@@ -88,31 +131,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "crypto-insiders.nl",
-                "www.crypto-insiders.nl",
+                "dentalinfo.nl",
                 "www.sneeuwhoogte.nl",
                 "www.wasmachines.nl"
-            ]
-        },
-        {
-            "rule": "google\\.nl\\/maps",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "maps"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "eten-bestellen.nl",
-                "www.eten-bestellen.nl",
-                "www.waarligt.org"
             ]
         },
         {
@@ -138,19 +159,95 @@
                 "www.spaarbaak.nl",
                 "www.theagenda.nl"
             ]
+        },
+        {
+            "rule": "google\\.nl\\/maps\\/api\\/js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "maps"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fef5b8b85e075606e4eaca785c796b9bcd0b80223462e8862c9d25ad37e018d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vegetariers.nl",
+                "www.vegetariers.nl"
+            ]
+        },
+        {
+            "rule": "google\\.nl\\/maps-api-v3\\/api\\/js\\/48\\/7a\\/intl\\/nl_ALL\\/common\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "maps"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "579004005e8714e28d2b6eba1779cd81bea2e2593d8edd6021b6d4bd38676c3c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vegetariers.nl",
+                "www.vegetariers.nl"
+            ]
+        },
+        {
+            "rule": "google\\.nl\\/maps-api-v3\\/api\\/js\\/48\\/7a\\/intl\\/nl_ALL\\/util\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "maps"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8b11162cea0fd312872535b0a476e1071c40a8480565a0abbb3c363a9806c171"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vegetariers.nl",
+                "www.vegetariers.nl"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.00000681,
     "types": {
-        "Script": 13,
-        "Document": 3
+        "Document": 4,
+        "Other": 2,
+        "Script": 21
     },
     "nameservers": [
-        "ns3.google.com",
-        "ns2.google.com",
         "ns1.google.com",
+        "ns2.google.com",
+        "ns3.google.com",
         "ns4.google.com"
     ]
 }

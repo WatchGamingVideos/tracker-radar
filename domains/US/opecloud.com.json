@@ -4,21 +4,162 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00187,
-    "sites": 274,
+    "prevalence": 0.00163,
+    "sites": 239,
     "subdomains": [
         "tagger",
         "profiles.tagger",
         "cdn",
+        "gedi.tagger",
         "mediaconsortium.profiles.tagger",
         "inquirer.profiles.tagger",
         "asmi.profiles.tagger",
-        "scmpmagazine.profiles.tagger",
-        "italiaonline.profiles.tagger"
+        "lefigaro.profiles.tagger",
+        "italiaonline.profiles.tagger",
+        "tagger-scmp",
+        "profiles-scmp.tagger"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "profiles.ope.scmp.com",
+            "resolved": "profiles-scmp.tagger.opecloud.com"
+        },
+        {
+            "original": "tagger.ope.scmp.com",
+            "resolved": "tagger-scmp.opecloud.com"
+        }
+    ],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "opecloud\\.com\\/taboola\\/v2\\/tagger\\.js",
+            "cookies": 0.000225,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 27,
+                "Screen.prototype.width": 27,
+                "Screen.prototype.height": 27,
+                "Screen.prototype.colorDepth": 27
+            },
+            "sites": 42,
+            "prevalence": 0.000286,
+            "cnames": [],
+            "responseHashes": [
+                "de337890581c251ad5d3c3aae19914d1bff54d340acc1c6b98e78c9e4e9f853b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weather.com",
+                "www.cbssports.com",
+                "www.petsradar.com",
+                "www.azcentral.com",
+                "www.deperu.com",
+                "www.brasil247.com",
+                "www.carbuyer.co.uk",
+                "meaww.com",
+                "www.fitandwell.com",
+                "www.rustica.fr",
+                "www.maltatoday.com.mt",
+                "www.newzimbabwe.com",
+                "www.conjur.com.br",
+                "www.drivingelectric.com",
+                "www.ynet.co.il",
+                "www.gazetaesportiva.com",
+                "www.chilloutpoint.com",
+                "www.farminguk.com",
+                "www.acidadeon.com",
+                "www.omelete.com.br"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/taboola\\/v2\\/pixel\\.gif",
+            "cookies": 0.000184,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 28,
+            "prevalence": 0.000191,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00012932119982847926,
+                "get_top_level_domain_cookie": 0.000013612757876682026,
+                "cookies.js_dtest": 0.00004083827363004608,
+                "parsely_uuid": 0.00004083827363004608,
+                "_li_dcdm_c": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "www.cbssports.com",
+                "noticias.canal1.com.co",
+                "www.expressandstar.com",
+                "www.farminguk.com",
+                "www.brasil247.com",
+                "www.gardeningetc.com",
+                "www.acidadeon.com",
+                "www.golfmonthly.com",
+                "www.today.com",
+                "www.carbuyer.co.uk",
+                "www.cincinnati.com",
+                "www.maltatoday.com.mt",
+                "www.fitandwell.com",
+                "ndtv.in",
+                "mouthsofmums.com.au",
+                "www.chilloutpoint.com",
+                "www.azcentral.com",
+                "www.ynet.co.il",
+                "www.lexpress.mu",
+                "www.omelete.com.br"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/taboola\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.00015,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.cbssports.com",
+                "ndtv.in",
+                "www.today.com",
+                "mouthsofmums.com.au",
+                "www.ynet.co.il",
+                "www.acidadeon.com",
+                "10reviewz.com",
+                "www.jamaicaobserver.com",
+                "www.fitandwell.com",
+                "www.ndtv.com",
+                "www.chilloutpoint.com",
+                "www.deperu.com",
+                "www.azcentral.com",
+                "www.brasil247.com",
+                "www.lexpress.mu",
+                "www.drivingelectric.com",
+                "www.cincinnati.com",
+                "www.gardeningetc.com",
+                "www.rustica.fr",
+                "www.omelete.com.br"
+            ]
+        },
         {
             "rule": "opecloud\\.com\\/lefigaro\\/v2\\/tcf-tagger\\.js",
             "cookies": 0,
@@ -27,13 +168,13 @@
                 "tagger"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 17,
-                "Screen.prototype.width": 16,
-                "Screen.prototype.height": 16,
-                "Screen.prototype.colorDepth": 16
+                "Date.prototype.getTimezoneOffset": 15,
+                "Screen.prototype.width": 15,
+                "Screen.prototype.height": 15,
+                "Screen.prototype.colorDepth": 15
             },
-            "sites": 23,
-            "prevalence": 0.000157,
+            "sites": 22,
+            "prevalence": 0.00015,
             "cnames": [],
             "responseHashes": [
                 "24c6612de1da047a4a8b295ac292fc290e0b603d217a34f8527ac932a94530cb"
@@ -42,26 +183,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "sante.journaldesfemmes.fr",
-                "bricolage.linternaute.com",
-                "www.lefigaro.fr",
-                "codespromo.lefigaro.fr",
-                "avis-deces.linternaute.com",
-                "www.linternaute.fr",
-                "www.jeux-gratuits.com",
-                "linternaute.com",
-                "droit-finances.commentcamarche.com",
-                "www.journaldesfemmes.fr",
-                "www.journaldunet.fr",
-                "leconjugueur.lefigaro.fr",
-                "www.linternaute.com",
-                "forums.commentcamarche.net",
-                "immobilier.lefigaro.fr",
-                "viadeo.journaldunet.com",
                 "cuisine.journaldesfemmes.fr",
-                "www.journaldunet.com",
+                "www.linternaute.fr",
+                "sante-medecine.journaldesfemmes.fr",
+                "codes-sources.commentcamarche.net",
+                "entreprises.lefigaro.fr",
+                "leconjugueur.lefigaro.fr",
+                "immobilier.lefigaro.fr",
+                "avis-deces.linternaute.com",
+                "www.jeux-gratuits.com",
+                "copainsdavant.linternaute.com",
+                "forums.commentcamarche.net",
+                "www.journaldesfemmes.fr",
+                "bricolage.linternaute.com",
+                "www.commentcamarche.net",
+                "www.lefigaro.fr",
+                "droit-finances.commentcamarche.com",
+                "sante.journaldesfemmes.fr",
                 "www.lachainemeteo.com",
-                "www.commentcamarche.net"
+                "linternaute.com",
+                "codespromo.lefigaro.fr"
             ]
         },
         {
@@ -94,85 +235,6 @@
                 "www.journaldesfemmes.fr",
                 "www.journaldunet.com",
                 "www.journaldunet.fr",
-                "www.linternaute.com",
-                "www.linternaute.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 14,
-            "prevalence": 0.0000953,
-            "cnames": [],
-            "responseHashes": [
-                "694068064315b99875324121cda864e91d079fc71b5b588748ed2a6584257120",
-                "4bb6db0409a0c04cfa6630bbbb082b8e099d15eb6166f2d47f6cc1a8c1aec1ff",
-                "ead6e6fef735919f2e7364283e5926fcbb0a8e8bb601fc8cc8cae3bb6777d157",
-                "d4a508e87de312d114b7f485e940232303756c76fe1367b53c28540a5587cf9d",
-                "769bbdfc4cbfd9c6e4499480014622836e43994078228483f4d5533c6b70ef34",
-                "da5956eb40499755436091829dc92f137f6a7d076a34df1aed00e74ca4689141",
-                "366b02a8a4c2aefecefc531a61170a6597faf67b86ce6838e8b37a59c07c637a",
-                "55149fb6be6c81c273c23a090d42a680104337b26b9590c1152fe3d12cceac28",
-                "bc9f292c520eba8ebf6243c70abf05d58c5d4f832a3b28d64c0ed27ed5faa8cf",
-                "b105d2bd257c8b9892b1db8736b3a7eb3d0093c29b64fc0474c7a503ba98a254"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "linternaute.com",
-                "avis-deces.linternaute.com",
-                "bricolage.linternaute.com",
-                "cuisine.journaldesfemmes.fr",
-                "droit-finances.commentcamarche.com",
-                "forums.commentcamarche.net",
-                "sante-medecine.journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr",
-                "www.commentcamarche.net",
-                "www.journaldesfemmes.fr",
-                "www.journaldunet.com",
-                "www.journaldunet.fr",
-                "www.linternaute.com",
-                "www.linternaute.fr"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 18,
-            "prevalence": 0.000123,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "linternaute.com",
-                "avis-deces.linternaute.com",
-                "bricolage.linternaute.com",
-                "cuisine.journaldesfemmes.fr",
-                "droit-finances.commentcamarche.com",
-                "forums.commentcamarche.net",
-                "madame.lefigaro.fr",
-                "sante-medecine.journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr",
-                "sante.lefigaro.fr",
-                "tvmag.lefigaro.fr",
-                "www.commentcamarche.net",
-                "www.journaldesfemmes.fr",
-                "www.journaldunet.com",
-                "www.journaldunet.fr",
-                "www.lefigaro.fr",
                 "www.linternaute.com",
                 "www.linternaute.fr"
             ]
@@ -214,6 +276,83 @@
             ]
         },
         {
+            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000885,
+            "cnames": [],
+            "responseHashes": [
+                "da5956eb40499755436091829dc92f137f6a7d076a34df1aed00e74ca4689141",
+                "eb9d39c8259e154465d4dc5e1d7305573e0e68cade6653078a50aa0a788b0f60",
+                "b745e9f1171b44414851ab5f56beca0e1cc9042c2adf6affcde45ad02c23da4d",
+                "6798c46cea6c8e6a2d149a784a057f1df8e60710b716021417cff3982150a64e",
+                "e7d977ebed252b7412ce6f7e5475d12b20d67ed7d74e2c0aeec691c77d6572df",
+                "00869240bd443e2c5bb9b4e2698862b7dbafdd293bca2d8fd92da5d32313d26a",
+                "60a6a9c4cfb14b9283c0c6cf652eb63c37f85c474c06ce285c5b4f8b17746b73",
+                "a1855271ac8fd021cc07a56c116e691154658f53cbd4dccdac9687fdacb9c0b1",
+                "078d0bd119507f5c914cb9e0f86ca5e8c4cd4bf33d0e23f4cce6927c132b6a60",
+                "cd7870cdcf2d6491d9dc5d7697ddefbdb1b219b74bd7c84f8153b0d2f81448f5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linternaute.com",
+                "avis-deces.linternaute.com",
+                "bricolage.linternaute.com",
+                "cuisine.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com",
+                "forums.commentcamarche.net",
+                "sante-medecine.journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr",
+                "www.commentcamarche.net",
+                "www.journaldesfemmes.fr",
+                "www.lachainemeteo.com",
+                "www.linternaute.com",
+                "www.linternaute.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linternaute.com",
+                "avis-deces.linternaute.com",
+                "bricolage.linternaute.com",
+                "cuisine.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com",
+                "forums.commentcamarche.net",
+                "madame.lefigaro.fr",
+                "sante-medecine.journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr",
+                "sante.lefigaro.fr",
+                "tvmag.lefigaro.fr",
+                "www.commentcamarche.net",
+                "www.journaldesfemmes.fr",
+                "www.lachainemeteo.com",
+                "www.lefigaro.fr",
+                "www.linternaute.com",
+                "www.linternaute.fr"
+            ]
+        },
+        {
             "rule": "opecloud\\.com\\/appnexus\\/pbfs\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
@@ -221,8 +360,8 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 74,
-            "prevalence": 0.000504,
+            "sites": 28,
+            "prevalence": 0.000191,
             "cnames": [],
             "responseHashes": [
                 "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
@@ -231,26 +370,26 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "i-voce.jp",
-                "www.orangepage.net",
-                "lee.hpplus.jp",
-                "www.asahi.com",
-                "www.bluewin.ch",
-                "www.chunichi.co.jp",
-                "marisol.hpplus.jp",
-                "eclat.hpplus.jp",
-                "courrier.jp",
-                "leconjugueur.lefigaro.fr",
-                "www.ricardo.ch",
+                "www.linternaute.com",
+                "www.commentcamarche.net",
+                "forums.commentcamarche.net",
+                "sante.journaldesfemmes.fr",
                 "www.letemps.ch",
                 "sante-medecine.journaldesfemmes.fr",
-                "yomidr.yomiuri.co.jp",
-                "nonno.hpplus.jp",
-                "oggi.jp",
-                "k-tai.watch.impress.co.jp",
-                "www.fnn.jp",
-                "www.commentcamarche.net",
-                "plus.chunichi.co.jp"
+                "www.journaldunet.com",
+                "www.lematin.ch",
+                "www.homegate.ch",
+                "www.lachainemeteo.com",
+                "www.20min.ch",
+                "immobilier.lefigaro.fr",
+                "linternaute.com",
+                "www.ricardo.ch",
+                "www.lefigaro.fr",
+                "www.journaldesfemmes.fr",
+                "gendai.ismedia.jp",
+                "www.bluewin.ch",
+                "droit-finances.commentcamarche.com",
+                "toyokeizai.net"
             ]
         },
         {
@@ -261,37 +400,36 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 93,
-            "prevalence": 0.000633,
+            "sites": 43,
+            "prevalence": 0.000293,
             "cnames": [],
             "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4",
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "www.roomie.jp",
-                "www.biteki.com",
+                "sabq.org",
+                "sante.journaldesfemmes.fr",
+                "www.linternaute.fr",
                 "leconjugueur.lefigaro.fr",
-                "number.bunshun.jp",
+                "toyokeizai.net",
+                "www.journaldunet.fr",
+                "www.letemps.ch",
+                "www.journaldesfemmes.fr",
+                "linternaute.com",
+                "mawdoo3.com",
+                "www.lachainemeteo.com",
+                "www.homegate.ch",
+                "immobilier.lefigaro.fr",
+                "www.supermama.me",
+                "www.asahi.com",
+                "www.linternaute.com",
                 "www.lefigaro.fr",
                 "www.ricardo.ch",
-                "www.9news.com",
-                "www.scmp.com",
-                "www.watch.impress.co.jp",
-                "www.journaldesfemmes.fr",
-                "www.homegate.ch",
-                "sotor.com",
-                "www.lematin.ch",
-                "precious.jp",
-                "www.elle.com.hk",
-                "droit-finances.commentcamarche.com",
-                "www.linternaute.com",
-                "lifestyle.inquirer.net",
-                "mawdoo3.com",
-                "diamond.jp"
+                "forums.commentcamarche.net",
+                "www.albayan.ae"
             ]
         },
         {
@@ -374,8 +512,8 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 23,
-            "prevalence": 0.000157,
+            "sites": 24,
+            "prevalence": 0.000163,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -383,25 +521,25 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "www.foxnews.com",
-                "cuisine.journaldesfemmes.fr",
-                "www.journaldunet.com",
-                "forums.commentcamarche.net",
                 "www.foxsports.com",
-                "www.lachainemeteo.com",
-                "www.lefigaro.fr",
-                "droit-finances.commentcamarche.com",
-                "www.linternaute.fr",
-                "sante.journaldesfemmes.fr",
-                "leconjugueur.lefigaro.fr",
+                "www.journaldunet.com",
                 "immobilier.lefigaro.fr",
-                "sante-medecine.journaldesfemmes.fr",
+                "www.lefigaro.fr",
                 "www.foxbusiness.com",
-                "bricolage.linternaute.com",
-                "www.commentcamarche.net",
-                "video.foxnews.com",
                 "www.journaldunet.fr",
-                "linternaute.com",
-                "www.linternaute.com"
+                "droit-finances.commentcamarche.com",
+                "nation.foxnews.com",
+                "www.journaldesfemmes.fr",
+                "avis-deces.linternaute.com",
+                "www.linternaute.com",
+                "forums.commentcamarche.net",
+                "www.linternaute.fr",
+                "video.foxnews.com",
+                "sante-medecine.journaldesfemmes.fr",
+                "leconjugueur.lefigaro.fr",
+                "www.fox.com",
+                "www.commentcamarche.net",
+                "www.lachainemeteo.com"
             ]
         },
         {
@@ -412,36 +550,34 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 23,
-            "prevalence": 0.000157,
+            "sites": 24,
+            "prevalence": 0.000163,
             "cnames": [],
-            "responseHashes": [
-                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "www.foxnews.com",
                 "www.journaldesfemmes.fr",
-                "www.linternaute.fr",
-                "sante-medecine.journaldesfemmes.fr",
-                "sante.journaldesfemmes.fr",
-                "avis-deces.linternaute.com",
-                "leconjugueur.lefigaro.fr",
-                "www.foxbusiness.com",
-                "nation.foxnews.com",
-                "www.linternaute.com",
-                "bricolage.linternaute.com",
-                "video.foxnews.com",
-                "immobilier.lefigaro.fr",
-                "www.lachainemeteo.com",
-                "www.commentcamarche.net",
                 "www.journaldunet.com",
+                "video.foxnews.com",
+                "www.journaldunet.fr",
                 "www.foxsports.com",
-                "forums.commentcamarche.net",
+                "sante-medecine.journaldesfemmes.fr",
+                "nation.foxnews.com",
                 "www.lefigaro.fr",
-                "www.journaldunet.fr"
+                "linternaute.com",
+                "avis-deces.linternaute.com",
+                "www.fox.com",
+                "cuisine.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com",
+                "www.lachainemeteo.com",
+                "bricolage.linternaute.com",
+                "leconjugueur.lefigaro.fr",
+                "sante.journaldesfemmes.fr",
+                "www.linternaute.fr",
+                "www.linternaute.com"
             ]
         },
         {
@@ -475,137 +611,25 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/tagger\\.js",
-            "cookies": 0.000279,
-            "fingerprinting": 2,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 40,
-                "Screen.prototype.width": 40,
-                "Screen.prototype.height": 40,
-                "Screen.prototype.colorDepth": 40
-            },
-            "sites": 41,
-            "prevalence": 0.000279,
-            "cnames": [],
-            "responseHashes": [
-                "e7f863e433397577aae12831d4169cd1b6eaf45f16e8365a9397ad8738f481e1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "www.gizmodo.jp",
-                "precious.jp",
-                "www.yomiuri.co.jp",
-                "www.orangepage.net",
-                "www.biteki.com",
-                "www.chunichi.co.jp",
-                "withonline.jp",
-                "mi-mollet.com",
-                "oggi.jp",
-                "yomidr.yomiuri.co.jp",
-                "style.nikkei.com",
-                "diamond.jp",
-                "domani.shogakukan.co.jp",
-                "www.sankeibiz.jp",
-                "gendai.ismedia.jp",
-                "madamefigaro.jp",
-                "crea.bunshun.jp",
-                "www.tokyo-np.co.jp",
-                "www.fnn.jp",
-                "www.hokkaido-np.co.jp"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1",
+            "rule": "opecloud\\.com\\/italiaonline\\/v2\\/metrics\\/sdk-consent-delayed",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "mediaconsortium.profiles.tagger"
+                "tagger"
             ],
             "apis": {},
-            "sites": 19,
-            "prevalence": 0.000129,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "54b74ca1868ebd5d218359595a27be593d69c77c4eab047ac6ca5696b207fd59",
-                "3791c9e6b6bc757dec37673c867f6feeb0cfe23210a9950821f709aaaa4c3c9a",
-                "7d36d8892ccdb75f6d65b601719034475fd13343b685faef7a7b1a5e9cf17585",
-                "6d05db6cc3b5c305dfd00c8ea4289691dca7f4d1759c2ce80aa88dd03c08d745",
-                "7cc622b6d49db9c7e806fa37205337cbe4f90bf92b1b0cc9818d1d80b7e751b9",
-                "da5956eb40499755436091829dc92f137f6a7d076a34df1aed00e74ca4689141"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bunshun.jp",
-                "car.watch.impress.co.jp",
-                "crea.bunshun.jp",
-                "eclat.hpplus.jp",
-                "internet.watch.impress.co.jp",
-                "k-tai.watch.impress.co.jp",
-                "maquia.hpplus.jp",
-                "marisol.hpplus.jp",
-                "nonno.hpplus.jp",
-                "number.bunshun.jp",
-                "pc.watch.impress.co.jp",
-                "plus.chunichi.co.jp",
-                "toyokeizai.net",
-                "www.jiji.com",
-                "www.nishinippon.co.jp",
-                "www.tokyo-np.co.jp",
-                "www.watch.impress.co.jp",
-                "www.yomiuri.co.jp",
-                "yomidr.yomiuri.co.jp"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/pixel\\.gif",
-            "cookies": 0.000327,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 49,
-            "prevalence": 0.000334,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "krt_oo": 0.0000068105045221750025,
-                "cookies.js": 0.00006129454069957502,
-                "sc_c50": 0.0000068105045221750025,
-                "get_top_level_domain_cookie": 0.000020431513566525008
-            },
-            "exampleSites": [
-                "www.businessinsider.jp",
-                "eclat.hpplus.jp",
-                "www.sankeibiz.jp",
-                "president.jp",
-                "www.hokkaido-np.co.jp",
-                "www.asahi.com",
-                "crea.bunshun.jp",
-                "www.orangepage.net",
-                "www.tokyo-np.co.jp",
-                "number.bunshun.jp",
-                "spur.hpplus.jp",
-                "www.sankei.com",
-                "oggi.jp",
-                "forbesjapan.com",
-                "www.yomiuri.co.jp",
-                "withonline.jp",
-                "www.nishinippon.co.jp",
-                "toyokeizai.net",
-                "pc.watch.impress.co.jp",
-                "forzastyle.com"
+                "virgilio.it",
+                "www.virgilio.it"
             ]
         },
         {
@@ -616,14 +640,14 @@
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 6,
-                "Date.prototype.getTimezoneOffset": 7,
-                "Screen.prototype.width": 6,
-                "Screen.prototype.height": 6,
-                "Screen.prototype.colorDepth": 6
+                "window.localStorage": 8,
+                "Date.prototype.getTimezoneOffset": 8,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "Screen.prototype.colorDepth": 8
             },
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
@@ -633,6 +657,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "businessinsider.com.pl",
+                "oferta.poczta.onet.pl",
                 "wiadomosci.onet.pl",
                 "www.fakt.pl",
                 "www.komputerswiat.pl",
@@ -649,8 +674,8 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -660,61 +685,56 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "businessinsider.com.pl",
+                "wiadomosci.onet.pl",
+                "www.fakt.pl",
                 "www.komputerswiat.pl",
                 "www.medonet.pl",
-                "www.onet.pl",
                 "zapytaj.onet.pl"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/api\\/v1",
+            "rule": "opecloud\\.com\\/ope-asmi\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 2,
             "subdomains": [
-                "mediaconsortium.profiles.tagger"
+                "cdn"
             ],
-            "apis": {},
-            "sites": 27,
-            "prevalence": 0.000184,
+            "apis": {
+                "window.localStorage": 19,
+                "Date.prototype.getTimezoneOffset": 19,
+                "Screen.prototype.width": 19,
+                "Screen.prototype.height": 19,
+                "Screen.prototype.colorDepth": 19
+            },
+            "sites": 19,
+            "prevalence": 0.000129,
             "cnames": [],
             "responseHashes": [
-                "7cc622b6d49db9c7e806fa37205337cbe4f90bf92b1b0cc9818d1d80b7e751b9",
-                "00b4a7e821078a00a6977e63b186bbf2c2c3c11732a7a45c9043971d774f7887",
-                "6ec3e803ffc67d4b498dbdd9c33ff318bf10b43374e63d39b3bf53daf1f2af78",
-                "54b74ca1868ebd5d218359595a27be593d69c77c4eab047ac6ca5696b207fd59",
-                "6d05db6cc3b5c305dfd00c8ea4289691dca7f4d1759c2ce80aa88dd03c08d745",
-                "e8139cfec1c38b61a4a12e7ab9aa612a770a94236da3651d0109afb0b9fcd971",
-                "85bbeafc55247c9426714bac6203e46665b9f91d8d500bc2f7e9cb0b303d20ea",
-                "67026a2626ea1c61b56a100f7932bd949b60c8ad448e459f352a96f942df7bbd",
-                "37b2ba95ac7b8bdc34bc0d84a39f027e6d6315c54f859301122adce1001bf96f",
-                "5ee64987c6cfc2922ceb5a6396d718e9f02e8e35d76a106663cacd9b22d0926a"
+                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
             ],
-            "type": "Fetch",
+            "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000020431513566525008
-            },
+            "firstPartyCookiesSent": {},
             "exampleSites": [
-                "style.nikkei.com",
-                "gendai.ismedia.jp",
-                "president.jp",
-                "www.iza.ne.jp",
-                "diamond.jp",
-                "jbpress.ismedia.jp",
-                "www.fnn.jp",
-                "serai.jp",
-                "www.gizmodo.jp",
-                "i-voce.jp",
-                "www.businessinsider.jp",
-                "cancam.jp",
-                "www.sanspo.com",
-                "www.zakzak.co.jp",
-                "www.sankeibiz.jp",
-                "www.sankei.com",
-                "forzastyle.com",
-                "domani.shogakukan.co.jp",
-                "www.hokkaido-np.co.jp",
-                "oggi.jp"
+                "clever-tanken.de",
+                "fragen.lifeline.de",
+                "tipps.computerbild.de",
+                "www.autobild.de",
+                "www.bild.de",
+                "www.businessinsider.de",
+                "www.bz-berlin.de",
+                "www.clever-tanken.de",
+                "www.computerbild.de",
+                "www.finanzen.net",
+                "www.formel1.de",
+                "www.gesundheit.de",
+                "www.lifeline.de",
+                "www.sport1.de",
+                "www.techbook.de",
+                "www.transfermarkt.de",
+                "www.travelbook.de",
+                "www.welt.de",
+                "www.wieistmeineip.de"
             ]
         },
         {
@@ -762,130 +782,29 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/kodansha\\/v2\\/uid",
+            "rule": "opecloud\\.com\\/gedi\\/v2\\/uid",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tagger"
+                "gedi.tagger"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "courrier.jp",
-                "forzastyle.com",
-                "i-voce.jp",
-                "mi-mollet.com",
-                "withonline.jp"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/api\\/v1\\/kodansha\\/profile",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "profiles.tagger"
-            ],
-            "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "courrier.jp",
-                "forzastyle.com",
-                "i-voce.jp",
-                "mi-mollet.com",
-                "withonline.jp"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/ope-mediaconsortium\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 9,
-                "Date.prototype.getTimezoneOffset": 9,
-                "Screen.prototype.width": 9,
-                "Screen.prototype.height": 9,
-                "Screen.prototype.colorDepth": 9
-            },
-            "sites": 9,
-            "prevalence": 0.0000613,
-            "cnames": [],
-            "responseHashes": [
-                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hpplus.jp",
-                "eclat.hpplus.jp",
-                "forbesjapan.com",
-                "lee.hpplus.jp",
-                "maquia.hpplus.jp",
-                "marisol.hpplus.jp",
-                "nonno.hpplus.jp",
-                "spur.hpplus.jp",
-                "www.asahi.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/ope-asmi\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 19,
-                "Date.prototype.getTimezoneOffset": 20,
-                "Screen.prototype.width": 20,
-                "Screen.prototype.height": 20,
-                "Screen.prototype.colorDepth": 20
-            },
-            "sites": 20,
-            "prevalence": 0.000136,
-            "cnames": [],
-            "responseHashes": [
-                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "lifeline.de",
-                "fragen.lifeline.de",
-                "m.bild.de",
-                "sportbild.bild.de",
-                "tipps.computerbild.de",
-                "www.autobild.de",
-                "www.bild.de",
-                "www.businessinsider.de",
-                "www.bz-berlin.de",
-                "www.clever-tanken.de",
-                "www.computerbild.de",
-                "www.finanzen.net",
-                "www.gesundheit.de",
-                "www.lifeline.de",
-                "www.sport1.de",
-                "www.techbook.de",
-                "www.transfermarkt.de",
-                "www.travelbook.de",
-                "www.welt.de",
-                "www.wieistmeineip.de"
+                "repubblica.it",
+                "dizionari.repubblica.it",
+                "www.huffingtonpost.it",
+                "www.lastampa.it",
+                "www.limesonline.com",
+                "www.repubblica.it"
             ]
         },
         {
@@ -896,8 +815,8 @@
                 "tagger"
             ],
             "apis": {},
-            "sites": 15,
-            "prevalence": 0.000102,
+            "sites": 10,
+            "prevalence": 0.0000681,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -907,115 +826,118 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lifeline.de",
-                "m.bild.de",
-                "sportbild.bild.de",
-                "tipps.computerbild.de",
                 "www.autobild.de",
                 "www.bild.de",
-                "www.bz-berlin.de",
-                "www.computerbild.de",
+                "www.clever-tanken.de",
                 "www.gesundheit.de",
                 "www.lifeline.de",
                 "www.techbook.de",
                 "www.transfermarkt.de",
                 "www.travelbook.de",
-                "www.welt.de",
-                "www.wieistmeineip.de"
+                "www.welt.de"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/dms\\/v2\\/tagger\\.js",
-            "cookies": 0.0000681,
+            "rule": "opecloud\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaconsortium.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "09600f79ec05f435941af3e73c4629ad9a3a169c0200b7e498a1f7bdff946e0c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ismedia.jp",
+                "gendai.ismedia.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/tagger\\.js",
+            "cookies": 0.0000204,
             "fingerprinting": 2,
             "subdomains": [
                 "tagger"
             ],
             "apis": {
-                "Date.prototype.getTimezoneOffset": 10,
-                "Screen.prototype.width": 10,
-                "Screen.prototype.height": 10,
-                "Screen.prototype.colorDepth": 10
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
             },
-            "sites": 10,
-            "prevalence": 0.0000681,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "bc9399a1d9cf60902f99fc281b1f891001e088e5da2a9eabd80b989a693f0bd2"
+                "e7f863e433397577aae12831d4169cd1b6eaf45f16e8365a9397ad8738f481e1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "motory.com",
-                "ksa.motory.com",
-                "mawdoo3.com",
-                "sabq.org",
-                "sotor.com",
-                "www.hawaaworld.com",
-                "www.hellooha.com",
-                "www.kooora.com",
-                "www.supermama.me",
-                "www.webteb.com"
+                "ismedia.jp",
+                "gendai.ismedia.jp",
+                "toyokeizai.net"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/dms\\/v2\\/custom-no-tagger",
-            "cookies": 0.0000409,
+            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "motory.com",
-                "ksa.motory.com",
-                "sabq.org",
-                "www.hawaaworld.com",
-                "www.kooora.com",
-                "www.supermama.me"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/dms\\/v2\\/pixel\\.gif",
-            "cookies": 0.0000613,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 10,
-            "prevalence": 0.0000681,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "cookies.js_dtest": 0.000013621009044350005,
-                "parsely_uuid": 0.0000068105045221750025,
-                "cookies.js": 0.0000068105045221750025
+                "cookies.js": 0.000006806378938341013,
+                "sc_c50": 0.000006806378938341013
             },
             "exampleSites": [
-                "motory.com",
-                "ksa.motory.com",
-                "mawdoo3.com",
-                "sabq.org",
-                "sotor.com",
-                "www.hawaaworld.com",
-                "www.hellooha.com",
-                "www.kooora.com",
-                "www.supermama.me",
-                "www.webteb.com"
+                "ismedia.jp",
+                "gendai.ismedia.jp",
+                "toyokeizai.net",
+                "www.asahi.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaconsortium.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "6d05db6cc3b5c305dfd00c8ea4289691dca7f4d1759c2ce80aa88dd03c08d745",
+                "a25d172623ca52f1cc93d1d7bed6bc565bb0be0a8b8809347405cfd02b59f580",
+                "54b74ca1868ebd5d218359595a27be593d69c77c4eab047ac6ca5696b207fd59"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "sc_c50": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "yomiuri.co.jp",
+                "komachi.yomiuri.co.jp",
+                "toyokeizai.net",
+                "www.asahi.com"
             ]
         },
         {
@@ -1055,7 +977,7 @@
             "subdomains": [
                 "inquirer.profiles.tagger",
                 "asmi.profiles.tagger",
-                "scmpmagazine.profiles.tagger"
+                "lefigaro.profiles.tagger"
             ],
             "apis": {},
             "sites": 9,
@@ -1063,26 +985,25 @@
             "cnames": [],
             "responseHashes": [
                 "da5956eb40499755436091829dc92f137f6a7d076a34df1aed00e74ca4689141",
-                "40817fd4f921453221a60504a243adf7705e15007024a909a26ae727af6e29ab",
-                "2c88d80c9338ca9d79100a0d33e6da0bfb3f84e4c51948b1f2a79c49a32adddd",
-                "267bcd8e3feb0106ed344bd8bb02979292f8f2c1814c70757901f44d066bd613",
-                "9f1f320ea8e38c7d63c8f39801afb1527f630f96381adc8835f82e8972670397",
-                "6c7d059e3514b94b72d5a43f62cc633ad5f33628baf470143663a52875b05802"
+                "a6a1f884bf6a20e42fdd1481c3579a6074ee27e2cf2996c4bbefbfd74ab9db32",
+                "14fbdedd230f9ac59257297ba0920f3f1e196870388ccfc4c087f564d45df345",
+                "bc9f292c520eba8ebf6243c70abf05d58c5d4f832a3b28d64c0ed27ed5faa8cf",
+                "d44ab627fc74fefd936f6fd61c39239c96789926021889e581e4acf48dde1944"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.0000068105045221750025
+                "get_top_level_domain_cookie": 0.000006806378938341013
             },
             "exampleSites": [
                 "inquirer.net",
                 "lifestyle.inquirer.net",
                 "newsinfo.inquirer.net",
                 "www.businessinsider.de",
-                "www.cosmopolitan.com.hk",
-                "www.elle.com.hk",
                 "www.finanzen.net",
                 "www.inquirer.net",
+                "www.journaldunet.com",
+                "www.journaldunet.fr",
                 "www.sport1.de"
             ]
         },
@@ -1109,6 +1030,51 @@
             ]
         },
         {
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "italiaonline.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "libero.it",
+                "login.libero.it",
+                "www.tuttocitta.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "italiaonline.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5694c87c52dd0155917009d780d0ea38a6d9b6c956afe727a781ca61973504c1",
+                "7ac42d91a61bf004873f06b6dadbb7d7188bcda31b719b0b417c69fda9515eea"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "libero.it",
+                "login.libero.it",
+                "www.tuttocitta.it"
+            ]
+        },
+        {
             "rule": "opecloud\\.com\\/api\\/v1\\/lefigaro\\/profile",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1117,12 +1083,13 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "da5956eb40499755436091829dc92f137f6a7d076a34df1aed00e74ca4689141",
-                "22222d67215106394d6a817cbb328cf449523d27e3cdf1f49e261d7ea98be3d8",
-                "8a1fd49ee6840a99c869b9d9fe039f1d9a3e3f348fa3b6f0b41cacefc824ebaa"
+                "f6db95035bb473ba0a694cf911b191d4592fffca084824d0404fd673bc0cbb22",
+                "bcd34cb8c98ca95dd50a1c88a24c10911c681e0dce74a77b30035cb3c04c163f",
+                "c019ac48546056fb21f40fc705afc4a9a3a29c060be51c389fcfbf852788b602",
+                "2bbae5d2edcd2629726b8f4466f3bc6f655325e11be388002df42ccd20b99782"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1144,7 +1111,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [],
             "type": "Fetch",
@@ -1156,6 +1123,39 @@
                 "sante.lefigaro.fr",
                 "tvmag.lefigaro.fr",
                 "www.lefigaro.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/dms\\/v2\\/tagger\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 8,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "Screen.prototype.colorDepth": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "bc9399a1d9cf60902f99fc281b1f891001e088e5da2a9eabd80b989a693f0bd2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mawdoo3.com",
+                "sabq.org",
+                "sotor.com",
+                "www.albayan.ae",
+                "www.hellooha.com",
+                "www.kooora.com",
+                "www.supermama.me",
+                "www.webteb.com"
             ]
         },
         {
@@ -1180,6 +1180,36 @@
             ]
         },
         {
+            "rule": "opecloud\\.com\\/dms\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cookies.js_dtest": 0.00002041913681502304,
+                "parsely_uuid": 0.000006806378938341013,
+                "cookies.js": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "mawdoo3.com",
+                "sabq.org",
+                "sotor.com",
+                "www.albayan.ae",
+                "www.hellooha.com",
+                "www.kooora.com",
+                "www.supermama.me",
+                "www.webteb.com"
+            ]
+        },
+        {
             "rule": "opecloud\\.com\\/ope-fox\\.js",
             "cookies": 0,
             "fingerprinting": 2,
@@ -1191,11 +1221,10 @@
                 "Date.prototype.getTimezoneOffset": 6,
                 "Screen.prototype.width": 6,
                 "Screen.prototype.height": 6,
-                "Screen.prototype.colorDepth": 6,
-                "Document.prototype.interestCohort": 6
+                "Screen.prototype.colorDepth": 6
             },
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "3b47e06e1b0a1ccafbb7bbc7078a44a6199d4d09ac3fbe1d00a6f7c7a7c27b94"
@@ -1214,14 +1243,14 @@
         },
         {
             "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
-            "cookies": 0.0000477,
+            "cookies": 0.0000476,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -1246,7 +1275,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
@@ -1270,7 +1299,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "796607630eef439a161ea47cac86f6771174b48ddde2ed5b2e9e4ded36b02e4d"
@@ -1287,21 +1316,21 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/ope-tegna\\.js",
+            "rule": "opecloud\\.com\\/ope-goldbach\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.colorDepth": 4
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
             },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
@@ -1310,56 +1339,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "11alive.com",
-                "www.11alive.com",
-                "www.9news.com",
-                "www.wusa9.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/tegna\\/v2\\/pixel\\.gif",
-            "cookies": 0.0000272,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "11alive.com",
-                "www.11alive.com",
-                "www.9news.com",
-                "www.wusa9.com"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/simplifi\\/pbfs\\.gif",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "11alive.com",
-                "www.11alive.com",
-                "www.9news.com",
-                "www.wusa9.com"
+                "20min.ch",
+                "www.20min.ch"
             ]
         },
         {
@@ -1371,7 +1352,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -1391,20 +1372,20 @@
         },
         {
             "rule": "opecloud\\.com\\/goldbach\\/v2\\/custom-no-tagger",
-            "cookies": 0.0000409,
+            "cookies": 0.0000408,
             "fingerprinting": 0,
             "subdomains": [
                 "tagger"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "dakt_2_uuid": 0.000040863027133050016
+                "dakt_2_uuid": 0.00004083827363004608
             },
             "exampleSites": [
                 "20min.ch",
@@ -1413,6 +1394,129 @@
                 "www.lematin.ch",
                 "www.ricardo.ch",
                 "www.tagesanzeiger.ch"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/goldbach\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "20min.ch",
+                "www.20min.ch"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-tegna\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9news.com",
+                "www.9news.com",
+                "www.wusa9.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tegna\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9news.com",
+                "www.9news.com",
+                "www.wusa9.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/simplifi\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9news.com",
+                "www.9news.com",
+                "www.wusa9.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-mediaconsortium\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff484a62114e13fdc65a8c929bbee5b1b53c755d48cb159f585f03e655e350d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asahi.com",
+                "www.asahi.com"
             ]
         },
         {
@@ -1473,7 +1577,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000013621009044350005
+                "get_top_level_domain_cookie": 0.000013612757876682026
             },
             "exampleSites": [
                 "businessinsider.de",
@@ -1483,18 +1587,18 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/ope-scmpmagazine\\.js",
+            "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
             "cookies": 0,
             "fingerprinting": 2,
             "subdomains": [
                 "cdn"
             ],
             "apis": {
-                "window.localStorage": 2,
+                "window.localStorage": 3,
                 "Date.prototype.getTimezoneOffset": 3,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.colorDepth": 2
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
             },
             "sites": 3,
             "prevalence": 0.0000204,
@@ -1506,79 +1610,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "cosmopolitan.com.hk",
-                "www.cosmopolitan.com.hk",
-                "www.elle.com.hk"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/scmpmagazine\\/v2\\/pixel\\.gif",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cosmopolitan.com.hk",
-                "www.cosmopolitan.com.hk",
-                "www.elle.com.hk"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/scmpmagazine\\/v2\\/uid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "222579b92b13782fdb5be4c3363617424e3e03b5f2829bf8b1a2f62f8e5f2db5",
-                "b573b239643da6db734cf5add15b57ba166f5080c7d265605b7904e7ecb60df3"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "cosmopolitan.com.hk",
-                "www.cosmopolitan.com.hk",
-                "www.elle.com.hk"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/scmpmagazine\\/v2\\/custom-no-tagger",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tagger"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ga": 0.0000068105045221750025
-            },
-            "exampleSites": [
-                "cosmopolitan.com.hk",
-                "www.cosmopolitan.com.hk",
-                "www.elle.com.hk"
+                "journaldunet.com",
+                "www.journaldunet.com",
+                "www.journaldunet.fr"
             ]
         },
         {
@@ -1620,7 +1654,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "09cf74038c25bc2e2e376dce48a49bbf7fdf767713d973b876c74911373cc265"
+                "a656a26a989b99afcfb93cc31124e6e0404f895fe4c7684494421cb008ae0227"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -1645,11 +1679,148 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000013621009044350005
+                "get_top_level_domain_cookie": 0.000013612757876682026
             },
             "exampleSites": [
                 "komputerswiat.pl",
                 "www.komputerswiat.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/tagger\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [
+                "ba68df5927db027992e21fea7cdd562d8ecb61767b6e608763cab08cfdff67cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/scmp\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles-scmp.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "profiles.ope.scmp.com",
+                    "resolved": "profiles-scmp.tagger.opecloud.com"
+                }
+            ],
+            "responseHashes": [
+                "ada945622d489b1a49c8bffef62c6502e529378cc510b8e83db967c995244142"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [
+                "fa1141a6d5e602e61ccbb4906e7cb1cd7d78fa04efa72bbb5e38413e23027d27"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/custom-no-tagger",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
             ]
         },
         {
@@ -1667,7 +1838,7 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "get_top_level_domain_cookie": 0.000013621009044350005
+                "get_top_level_domain_cookie": 0.000013612757876682026
             },
             "exampleSites": [
                 "scmp.com",
@@ -1675,47 +1846,34 @@
             ]
         },
         {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "rule": "opecloud\\.com\\/tagger\\.opecloud\\.com\\/pbfs\\.gif",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "italiaonline.profiles.tagger"
+                "tagger-scmp"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "tuttocitta.it",
-                "www.tuttocitta.it"
-            ]
-        },
-        {
-            "rule": "opecloud\\.com\\/v1\\/targeting",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "italiaonline.profiles.tagger"
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
             ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "tuttocitta.it",
-                "www.tuttocitta.it"
+                "scmp.com",
+                "www.scmp.com"
             ]
         },
         {
-            "rule": "opecloud\\.com\\/api\\/v1\\/asmi\\/profile",
+            "rule": "opecloud\\.com\\/api\\/v1\\/raspl\\/profile",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -1726,26 +1884,48 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ba4b460b73ecfde34eb24379b8291a498703bfc1c05c4a5eff7c28c7c6e6bed6"
+                "659c6b5340430e76a8e4e7780b072d545c5ea7dc19464d60d56c4abe815ba7cd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "welt.de",
-                "www.welt.de"
+                "skapiec.pl",
+                "www.skapiec.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v2\\/tcf-tagger\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "af88b52a9fd73b84f3e1f7b6466419101cb16f99668fd8bd040625db89a8ba7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skapiec.pl",
+                "www.skapiec.pl"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0013,
+    "cookies": 0.000905,
     "types": {
-        "Script": 140,
-        "XHR": 90,
+        "Script": 139,
+        "Image": 284,
+        "XHR": 75,
         "Preflight": 20,
-        "Image": 383,
-        "Fetch": 53
+        "Fetch": 25
     },
     "nameservers": [
         "ns-1454.awsdns-53.org",

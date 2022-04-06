@@ -8,7 +8,7 @@
     "sites": 2,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "jovianarchive\\.lpages\\.co\\/leadbox-1535579449\\.js",
@@ -17,6 +17,8 @@
             "subdomains": [],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.platform": 2
             },
             "sites": 2,
@@ -74,31 +76,12 @@
             ]
         },
         {
-            "rule": "jovianarchive\\.lpages\\.co\\/serve-leadbar\\/LCL3aF9eKBTypFjrZDz2JM\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "de01267c00670201b7a5c2e8b24e35f8553592a1002840cee1da7adfb2ea91e2"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jovianarchive.com",
-                "www.jovianarchive.com"
-            ]
-        },
-        {
             "rule": "jovianarchive\\.lpages\\.co\\/serve-leadbox\\/pSkvMwM2Rb4t8nawAxmg3m\\/",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
+                "window.devicePixelRatio": 1,
                 "Date.prototype.getTime": 1
             },
             "sites": 2,
@@ -121,13 +104,37 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 1
+                "window.devicePixelRatio": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "a8b6d62f6f287716b7cd947d99673ad27a5208d70ce22770c7ea59fe33c2d813"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jovianarchive.com",
+                "www.jovianarchive.com"
+            ]
+        },
+        {
+            "rule": "jovianarchive\\.lpages\\.co\\/serve-leadbar\\/PVExAmBSwGPmkGunBWEN9d\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "63f6792ad151d5518ba6d393f791ffee7317be535a41a28b0b4eaed7b6baf05d"
             ],
             "type": "Document",
             "firstPartyCookies": {},

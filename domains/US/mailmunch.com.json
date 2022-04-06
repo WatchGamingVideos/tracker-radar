@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.000102,
+    "sites": 15,
     "subdomains": [
-        "cf"
+        "cf",
+        "app"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mailmunch\\.com\\/partner\\/mailmunch\\/logo_branding\\.png",
@@ -20,8 +21,8 @@
                 "cf"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 8,
+            "prevalence": 0.0000545,
             "cnames": [],
             "responseHashes": [
                 "c76c91df932c7ce2ec724dd9a8823274fb91ba6cd93639d53b5e7f95037a7e75"
@@ -31,8 +32,38 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "dawnkelly.com.au",
+                "florencetrust.org",
+                "moralfibres.co.uk",
+                "thespiritnomad.com",
                 "www.imfdb.org",
+                "www.investmentwatchblog.com",
+                "www.mygorgeousrecipes.com",
                 "www.vanguardngr.com"
+            ]
+        },
+        {
+            "rule": "mailmunch\\.com\\/app\\/v1\\/site\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f14c0277ff9d9a5e4e811741677e537c699d00575532913eb05c144c071b8a0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popsci.com",
+                "www.popsci.com"
             ]
         }
     ],
@@ -40,7 +71,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 3
+        "Image": 8,
+        "Script": 2
     },
     "nameservers": [
         "cass.ns.cloudflare.com",

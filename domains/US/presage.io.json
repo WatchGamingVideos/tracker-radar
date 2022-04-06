@@ -7,10 +7,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000163,
-    "sites": 24,
+    "prevalence": 0.000204,
+    "sites": 30,
     "subdomains": [
         "ads-engagement",
+        "mwtw",
+        "ms-ads-monitoring-events",
+        "mweb-hb",
+        "ms-cookie-sync",
         "ext-inv-cdn"
     ],
     "cnames": [],
@@ -24,10 +28,10 @@
                 "ads-engagement"
             ],
             "apis": {
-                "Date.prototype.getTime": 5
+                "Date.prototype.getTime": 2
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
                 "13867abfb05149b0e534387345c54432a329da0167a1e51d121d98a6d5b3daa4"
@@ -37,10 +41,7 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "uq.edu.au",
-                "www.guess.com",
-                "www.guess.eu",
-                "www.nib.com.au",
-                "www.technogym.com"
+                "www.nib.com.au"
             ]
         },
         {
@@ -51,8 +52,8 @@
                 "ads-engagement"
             ],
             "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
@@ -62,38 +63,200 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "uq.edu.au",
-                "www.guess.com",
-                "www.guess.eu",
                 "www.nib.com.au",
-                "www.qut.edu.au",
-                "www.starhub.com",
-                "www.technogym.com"
+                "www.qut.edu.au"
             ]
         },
         {
-            "rule": "presage\\.io\\/pv\\/img\\.gif",
+            "rule": "presage\\.io\\/v1\\/tag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mwtw"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f0c12089b0b1b0af81d10cc7405bd03379b52a7012f418f96c95e1c01c8cd188"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodyfeed.com",
+                "sea.mashable.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/tag",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "ext-inv-cdn"
+                "ms-ads-monitoring-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodyfeed.com",
+                "sea.mashable.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-ads-monitoring-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodyfeed.com",
+                "sea.mashable.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-ads-monitoring-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodyfeed.com",
+                "sea.mashable.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/api\\/header-bidding-request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mweb-hb"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
-                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatsong.net",
+                "m.greatsong.net",
+                "m.marketscreener.com",
+                "m.zonebourse.com",
+                "www.firmenwissen.com",
+                "www.videogamer.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/api\\/header-bidding-request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mweb-hb"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatsong.net",
+                "m.greatsong.net",
+                "m.marketscreener.com",
+                "m.zonebourse.com",
+                "www.firmenwissen.com",
+                "www.videogamer.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/v1\\/init-sync\\/bid-switch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-cookie-sync"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "kaiserpermanente.org",
-                "www.bose.com",
-                "www.jcu.edu.au",
-                "www.ozlotteries.com",
-                "www.sbs.ox.ac.uk",
-                "www.theupsstore.com"
+                "greatsong.net",
+                "m.greatsong.net",
+                "m.marketscreener.com",
+                "m.zonebourse.com",
+                "www.firmenwissen.com",
+                "www.videogamer.com"
+            ]
+        },
+        {
+            "rule": "presage\\.io\\/ttd\\/init-sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ms-cookie-sync"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatsong.net",
+                "m.greatsong.net",
+                "m.marketscreener.com",
+                "m.zonebourse.com",
+                "www.firmenwissen.com",
+                "www.videogamer.com"
             ]
         },
         {
@@ -117,18 +280,46 @@
                 "raa.com.au",
                 "www.raa.com.au"
             ]
+        },
+        {
+            "rule": "presage\\.io\\/pv\\/img\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ext-inv-cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kaiserpermanente.org",
+                "www.jcu.edu.au",
+                "www.ozlotteries.com",
+                "www.sbs.ox.ac.uk",
+                "www.theupsstore.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 7,
-        "Image": 13
+        "Script": 6,
+        "Image": 20,
+        "Fetch": 2,
+        "Preflight": 8,
+        "XHR": 8
     },
     "nameservers": [
-        "b.dns.gandi.net",
+        "a.dns.gandi.net",
         "c.dns.gandi.net",
-        "a.dns.gandi.net"
+        "b.dns.gandi.net"
     ]
 }

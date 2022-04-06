@@ -4,14 +4,59 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
+        "cdn",
         "api"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "carrotquest\\.app\\/api\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.width": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc9571fce0e2b737c14a55e6341437a4b35ea9f26d0ccd7b53419c3c51d19e72"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "carrotquest_testcookie": {
+                    "ttl": -1649139863,
+                    "length": 1,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
+                },
+                "carrotquest_session": {
+                    "ttl": 3604,
+                    "length": 32,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.io",
+                "www.movavi.io"
+            ]
+        },
         {
             "rule": "carrotquest\\.app\\/v1\\/jsconnect",
             "cookies": 0,
@@ -30,21 +75,22 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "spark.ru",
-                "zakon.ru"
+                "movavi.io",
+                "www.movavi.io"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
+        "Script": 2,
         "XHR": 2
     },
     "nameservers": [
         "ns-287.awsdns-35.com",
+        "ns-1235.awsdns-26.org",
         "ns-1560.awsdns-03.co.uk",
-        "ns-593.awsdns-10.net",
-        "ns-1235.awsdns-26.org"
+        "ns-593.awsdns-10.net"
     ]
 }

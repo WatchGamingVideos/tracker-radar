@@ -7,11 +7,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "psm",
-        "receive"
+        "receive",
+        "inbrain"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -24,18 +25,22 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "fbe0c1e0a40178d27cdcdd5ae99c60c6e8545e36aaa44f14d0d767b842a91d31"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "www.bleacherreport.com",
+                "hbomax.com",
+                "roosterteeth.com",
+                "www.hbomax.com",
                 "www.hbo.com",
-                "www.hbomax.com"
+                "www.rataalada.com"
             ]
         },
         {
@@ -46,20 +51,20 @@
                 "psm"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [
-                "fbe0c1e0a40178d27cdcdd5ae99c60c6e8545e36aaa44f14d0d767b842a91d31"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "www.bleacherreport.com",
+                "hbomax.com",
+                "roosterteeth.com",
+                "www.hbomax.com",
                 "www.hbo.com",
-                "www.hbomax.com"
+                "www.rataalada.com"
             ]
         },
         {
@@ -70,8 +75,32 @@
                 "receive"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bleacherreport.com",
+                "hbomax.com",
+                "roosterteeth.com",
+                "www.hbomax.com",
+                "www.hbo.com",
+                "www.rataalada.com"
+            ]
+        },
+        {
+            "rule": "wmcdp\\.io\\/v1\\/reg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "receive"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -81,31 +110,39 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "bleacherreport.com",
-                "www.bleacherreport.com",
+                "hbomax.com",
+                "roosterteeth.com",
+                "www.hbomax.com",
                 "www.hbo.com",
-                "www.hbomax.com"
+                "www.rataalada.com"
             ]
         },
         {
-            "rule": "wmcdp\\.io\\/v1\\/reg",
+            "rule": "wmcdp\\.io\\/v1\\/render",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "receive"
+                "inbrain"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "CDPID": 0.000013612757876682026
+            },
             "exampleSites": [
                 "bleacherreport.com",
-                "www.bleacherreport.com",
+                "hbomax.com",
+                "roosterteeth.com",
+                "www.hbomax.com",
                 "www.hbo.com",
-                "www.hbomax.com"
+                "www.rataalada.com"
             ]
         }
     ],
@@ -113,8 +150,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 8,
-        "XHR": 8
+        "XHR": 18,
+        "Preflight": 12
     },
     "nameservers": [
         "ns-505.awsdns-63.com",

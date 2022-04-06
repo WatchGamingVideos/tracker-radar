@@ -4,32 +4,35 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "powferads\\.com\\/t\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 2,
             "subdomains": [],
             "apis": {
-                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "window.innerHeight": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "07fd9038466a2ab3df297a31206514c1ffdbcc69424b4b9be7733bbac066f31c"
+                "e9f3b807c835b41721a0e3e8600a497034b7d6ea0b63b270ec72799326f1878f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mrlabtest.com",
-                "www.vagas.com.br"
+                "www.prensalibre.com",
+                "www.vagas.com.br",
+                "www.weatherbug.com"
             ]
         },
         {
@@ -38,20 +41,61 @@
             "fingerprinting": 1,
             "subdomains": [],
             "apis": {
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "87906eff8c7c4e5a552e9a2c88d43ed14629b23bf9f1142e61b214b555471d07"
+                "bc035e704d68315b8e8324f4c2d54b292337450a6312370d51b26c4c30266021"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "mrlabtest.com",
-                "www.mrlabtest.com"
+                "www.mrlabtest.com",
+                "www.prensalibre.com",
+                "www.vagas.com.br",
+                "www.weatherbug.com"
+            ]
+        },
+        {
+            "rule": "powferads\\.com\\/c\\/k6v1o62sct6hmtjtexbr6\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "prensalibre.com",
+                "www.prensalibre.com"
+            ]
+        },
+        {
+            "rule": "powferads\\.com\\/c\\/zi8kl3cbwiv2qczjddqmw\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56250ad8f20bd92ee63d59bcedf20bb9feb9ef59c8816610979955e52274973a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "weatherbug.com",
+                "www.weatherbug.com"
             ]
         }
     ],
@@ -59,8 +103,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 2,
-        "Document": 2
+        "Script": 4,
+        "Document": 5,
+        "Fetch": 4
     },
     "nameservers": [
         "ns-601.awsdns-11.net",

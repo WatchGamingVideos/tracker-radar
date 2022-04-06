@@ -7,24 +7,29 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
         "travel"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "mediaalpha\\.com\\/js\\/serve\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "travel"
             ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.height": 1,
+                "window.outerHeight": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "a355b32c41340f1a1a5e1805ad0ab9a7e3ba0188fe93b9b56088833949c5391b"
@@ -33,18 +38,41 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "holiday-weather.com",
+                "withinhours.com",
+                "www.fly.com",
                 "www.holiday-weather.com",
                 "www.oyster.com",
                 "www.rentcars.com"
+            ]
+        },
+        {
+            "rule": "mediaalpha\\.com\\/js\\/serve_\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "travel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23b6647bf725353e6780b5aecc47bd87a8969f65767370d38f0b0b8006180240"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "withinhours.com",
+                "www.holiday-weather.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000136,
+    "cookies": 0.0000204,
     "types": {
-        "Script": 4
+        "Script": 7
     },
     "nameservers": [
         "ns-403.awsdns-50.com",

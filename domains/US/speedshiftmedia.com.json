@@ -4,13 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "services.cdn",
         "aan.cdn",
         "api",
-        "adserving.aan"
+        "adserving.aan",
+        "adserving",
+        "scripts",
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -64,21 +67,21 @@
             "type": "Script",
             "firstPartyCookies": {
                 "SSM_GFU": {
-                    "ttl": 63072006,
+                    "ttl": 63158405,
                     "length": 143,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 },
                 "SSM_UTC": {
-                    "ttl": 63072006,
+                    "ttl": 63158405,
                     "length": 59,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 },
                 "SSM_UTC_LS": {
-                    "ttl": 63072006,
+                    "ttl": 63158405,
                     "length": 59,
-                    "prevalence": 0.000020431513566525008,
+                    "prevalence": 0.00002041913681502304,
                     "uniqueness": 1
                 }
             },
@@ -100,7 +103,9 @@
                 "Navigator.prototype.mimeTypes": 2,
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "Element.prototype.getClientRects": 2
+                "Element.prototype.getClientRects": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -134,9 +139,9 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "SSM_GFU": 0.0000068105045221750025,
-                "SSM_UTC": 0.0000068105045221750025,
-                "SSM_UTC_LS": 0.0000068105045221750025
+                "SSM_GFU": 0.000006806378938341013,
+                "SSM_UTC": 0.000006806378938341013,
+                "SSM_UTC_LS": 0.000006806378938341013
             },
             "exampleSites": [
                 "oodle.com",
@@ -146,17 +151,19 @@
         },
         {
             "rule": "speedshiftmedia\\.com\\/p\\/pixel\\.gif",
-            "cookies": 0,
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
-                "adserving.aan"
+                "adserving.aan",
+                "adserving"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f"
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f",
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -164,6 +171,7 @@
             "exampleSites": [
                 "oodle.com",
                 "cars.oodle.com",
+                "www.autotrader.com",
                 "www.topspeed.com"
             ]
         },
@@ -191,47 +199,83 @@
             ]
         },
         {
-            "rule": "speedshiftmedia\\.com\\/ar_vars\\.php",
-            "cookies": 0,
-            "fingerprinting": 0,
+            "rule": "speedshiftmedia\\.com\\/products\\/dynamicwebads\\/adserving\\/includes\\/javascript\\/loaderExpandAutotrader\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
             "subdomains": [
-                "adserving.aan"
+                "scripts",
+                "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.name": 1,
+                "window.sessionStorage": 1,
+                "window.indexedDB": 1,
+                "Document.cookie setter": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "21eb6b0c46ac6b8167397a6726c03d67bb1d803ec35bb6462c1d6352d571ff82"
+                "a562cf78166f2faf0890c4051c503f3f32c476fc0b4cd2daa6bf2a11ff923dc4"
             ],
             "type": "Script",
-            "firstPartyCookies": {},
+            "firstPartyCookies": {
+                "SSM_GFU": {
+                    "ttl": 63158431,
+                    "length": 143,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "SSM_UTC": {
+                    "ttl": 63158431,
+                    "length": 59,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                },
+                "SSM_UTC_LS": {
+                    "ttl": 63158431,
+                    "length": 59,
+                    "prevalence": 0.000006806378938341013,
+                    "uniqueness": 1
+                }
+            },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "oodle.com",
-                "www.topspeed.com"
+                "autotrader.com",
+                "www.autotrader.com"
             ]
         },
         {
-            "rule": "speedshiftmedia\\.com\\/tracker\\.php",
-            "cookies": 0,
+            "rule": "speedshiftmedia\\.com\\/gfu\\/v2\\/co",
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
-                "adserving.aan"
+                "adserving"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "79047d2f3e435b238c48b232df2add8a3ca77793e7372173a671ceef0fdee2f4"
+                "76ed7d66e600ad772932b2893edeb415404b42a3623c0f62341972eead1a8781"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "SSM_GFU": 0.000006806378938341013,
+                "SSM_UTC": 0.000006806378938341013,
+                "SSM_UTC_LS": 0.000006806378938341013
+            },
             "exampleSites": [
-                "oodle.com",
-                "www.topspeed.com"
+                "autotrader.com",
+                "www.autotrader.com"
             ]
         },
         {
@@ -266,9 +310,7 @@
             "apis": {
                 "Navigator.prototype.mimeTypes": 2,
                 "Date.prototype.getTime": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Element.prototype.getClientRects": 1,
-                "Event.prototype.timeStamp": 1
+                "Navigator.prototype.userAgent": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -287,15 +329,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.000034,
     "types": {
         "Script": 21,
-        "Image": 3
+        "Image": 4
     },
     "nameservers": [
-        "ns-1866.awsdns-41.co.uk",
         "ns-229.awsdns-28.com",
         "ns-905.awsdns-49.net",
-        "ns-1052.awsdns-03.org"
+        "ns-1052.awsdns-03.org",
+        "ns-1866.awsdns-41.co.uk"
     ]
 }

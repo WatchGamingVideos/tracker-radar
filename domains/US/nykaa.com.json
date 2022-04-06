@@ -7,7 +7,8 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
-        "o1.ingest.sentry-prod"
+        "o1.ingest.sentry-prod",
+        "prod-retina-api"
     ],
     "cnames": [],
     "fingerprinting": 0,
@@ -33,13 +34,57 @@
                 "nykaafashion.com",
                 "www.nykaafashion.com"
             ]
+        },
+        {
+            "rule": "nykaa\\.com\\/v1\\/events\\/fashion",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-retina-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52448415641715ed5cad1fe8fbcf4966b6997aefe77fc06549259363bb89700b"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nykaafashion.com",
+                "www.nykaafashion.com"
+            ]
+        },
+        {
+            "rule": "nykaa\\.com\\/v1\\/events\\/fashion",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-retina-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nykaafashion.com",
+                "www.nykaafashion.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Fetch": 2
+        "Fetch": 2,
+        "Ping": 2,
+        "Preflight": 2
     },
     "nameservers": [
         "ns-61.awsdns-07.com",

@@ -4,46 +4,58 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
-        "currencies.gymshark.com"
+        "webextend"
     ],
-    "cnames": [
-        {
-            "original": "currencies.gymshark.com",
-            "resolved": "currencies.gymshark.com.ems-ci.com"
-        }
-    ],
-    "fingerprinting": 0,
+    "cnames": [],
+    "fingerprinting": 1,
     "resources": [
         {
-            "rule": "ems-ci\\.com\\/gymshark\\/customScarabQueueV2\\.js",
+            "rule": "ems-ci\\.com\\/js\\/customScarabQueue_currency_conversion_v2\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
-                "currencies.gymshark.com"
+                "webextend"
             ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [
-                {
-                    "original": "currencies.gymshark.com",
-                    "resolved": "currencies.gymshark.com.ems-ci.com"
-                }
-            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
             "responseHashes": [
-                "ca92c6f7802ea6b7026fd3052428d1c1af4b9723ebfcf466d7a3811d9e75aad1",
-                "12543fd1975ac601233413c8f61767721fdd83e820116de604a302361fa1047c"
+                "1d0819c91ccd272775f50b1fb5d1a735d72cb2f094c3ed58b56301c53ec914c5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "gymshark.com",
-                "nl.gymshark.com",
-                "www.gymshark.com"
+                "camilla.com",
+                "au.camilla.com"
+            ]
+        },
+        {
+            "rule": "ems-ci\\.com\\/currency_conversion_json\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webextend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "beb8f859401096a930f630a8089be2c8dda8066439468f370895b1c439c442d3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camilla.com",
+                "au.camilla.com"
             ]
         }
     ],
@@ -51,7 +63,13 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 3
+        "Script": 2,
+        "Fetch": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "nsa2.schlundtech.de",
+        "nsb2.schlundtech.de",
+        "nsc2.schlundtech.de",
+        "nsd2.schlundtech.de"
+    ]
 }

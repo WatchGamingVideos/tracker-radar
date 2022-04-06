@@ -4,24 +4,60 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00136,
-    "sites": 200,
+    "prevalence": 0.000858,
+    "sites": 126,
     "subdomains": [
-        "analytics",
+        "ughr",
         "ug",
-        "adria",
         "alo",
+        "adria",
+        "analytics",
         "tracker_ug",
-        "tracker_adria",
         "tracker_alo",
+        "tracker_adria",
         "collector_sr",
         "images4",
         "www",
-        "hb"
+        "hb",
+        "match"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "contentexchange\\.me\\/static\\/tracker\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ughr",
+                "ug",
+                "alo",
+                "adria"
+            ],
+            "apis": {
+                "Document.cookie setter": 4,
+                "Document.cookie getter": 4
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "aeb8949e99bf96a19ae9bf8a1f0f5330bc43e78061e1420d2599bebc37b03912",
+                "38175c312ab4063066388058cfe9d0fe1d03c6ee3fa7579b75f86ce8080b73a4",
+                "847971a94e3eedec5c911101b179d4196ee3acc45afad8e819813f6cf671115e",
+                "a8e747263466a9d536cc6483f1a5f7a8d7b1f22b7462ddbc0cdcb6e0d2b185d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnevnik.hr",
+                "rs.n1info.com",
+                "www.b92.net",
+                "www.logicno.com",
+                "www.telegraf.rs"
+            ]
+        },
         {
             "rule": "contentexchange\\.me\\/bex\\/load\\/5f85aef32f8be553873579ef",
             "cookies": 0.0000136,
@@ -37,7 +73,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5d5344c5a5941ae8c0af4844a6ed9573b14e49f9ef5c40e438d6bcc8f57677dc"
+                "26091d7df2965a7de7b8ed1e084dbee7c82f7170b029199f722ebda6cf3ed60a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -48,71 +84,37 @@
             ]
         },
         {
-            "rule": "contentexchange\\.me\\/static\\/tracker\\.js",
-            "cookies": 0.0000409,
-            "fingerprinting": 1,
-            "subdomains": [
-                "ug",
-                "adria",
-                "alo"
-            ],
-            "apis": {
-                "Document.cookie setter": 6,
-                "Document.cookie getter": 6
-            },
-            "sites": 6,
-            "prevalence": 0.0000409,
-            "cnames": [],
-            "responseHashes": [
-                "c14352b41128dcd6e091dac94ba2e8876679c70dc3f9210ef0def1b235fa50a9",
-                "9be55359d3055128627501b73c8e50efe87663c6b7bc38f2df5dec4e1d5ef689",
-                "0ee932aa718e3c939e6ff313248b0f40f2cb537d51e45181fcff28aee9e99fcc"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "n1info.com",
-                "rs.n1info.com",
-                "srbin.info",
-                "www.b92.net",
-                "www.logicno.com",
-                "www.telegraf.rs"
-            ]
-        },
-        {
             "rule": "contentexchange\\.me\\/boot",
-            "cookies": 0.0000409,
+            "cookies": 0.000034,
             "fingerprinting": 2,
             "subdomains": [
                 "tracker_ug",
-                "tracker_adria",
-                "tracker_alo"
+                "tracker_alo",
+                "tracker_adria"
             ],
             "apis": {
-                "Document.cookie setter": 4,
-                "Date.prototype.getTimezoneOffset": 4,
-                "Date.prototype.getTime": 4,
-                "Screen.prototype.height": 4,
-                "Screen.prototype.width": 4,
-                "Screen.prototype.colorDepth": 4
+                "Document.cookie setter": 5,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Date.prototype.getTime": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.colorDepth": 5
             },
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "192f0066df2b2e193e56d4e8715f951707eb5ff6193fa6a763983e0261b939eb",
-                "5d7f1da1254a0a4d48e2ca8f368a220351e7500ff3840ee2a6a4de1266c336be",
-                "f60e3ffce1fd6992fda9c7eb3f426812d24898bf09d30533ecd7ea0b930e354b",
-                "23e1e553aebeece44a04ac3e52d119a75f2544a0f3bfdd072a6d860e5f3eac44",
-                "1afbeb0188fda4b67b940084f3bfcceb4d2b4059dd8d090401455df96bf6a313"
+                "dd838a908588d0d27eb98972600e857aceb84adf1a0f0e746d311db13f2decfd",
+                "c3cc21f310b0e28f688b9fb036add3f3b3b3c2f395b060b40b29dda917d22fe3",
+                "f5868fa46cef72120755c050086882c808028dd4cfea8d08d49afeb7aaef076f",
+                "6c94656a84980a6c1eeedd4cd08eb44c7a26372867a8d2a52dffacd168a9b4b2"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cx_id": {
-                    "ttl": 62208008,
+                    "ttl": 62208005,
                     "length": 24,
-                    "prevalence": 0.00002724201808870001,
+                    "prevalence": 0.00003403189469170507,
                     "uniqueness": 1
                 }
             },
@@ -120,7 +122,6 @@
             "exampleSites": [
                 "n1info.com",
                 "rs.n1info.com",
-                "srbin.info",
                 "www.b92.net",
                 "www.logicno.com",
                 "www.telegraf.rs"
@@ -129,39 +130,55 @@
         {
             "rule": "contentexchange\\.me\\/bex\\/boot\\/5f85aef32f8be553873579ef",
             "cookies": 0.0000136,
-            "fingerprinting": 2,
+            "fingerprinting": 1,
             "subdomains": [
                 "analytics"
             ],
             "apis": {
                 "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Document.cookie setter": 1,
-                "Date.prototype.getTimezoneOffset": 1,
-                "Date.prototype.getTime": 1,
-                "Screen.prototype.height": 1,
-                "Screen.prototype.width": 1,
-                "Screen.prototype.colorDepth": 1
+                "window.sessionStorage": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "37eba9445da8a55fdf78fbd1c1dbed5fe1af561f585deb693ac59655f88080e2"
+                "3ff2e2546af079c40975bbf53e810013ba78957c02270c42f3260a936196d5db"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "cx_id": {
-                    "ttl": 62208002,
-                    "length": 24,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "n1info.com",
                 "rs.n1info.com"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/sr\\/collect",
+            "cookies": 0.0000408,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector_sr"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cx_id": 0.00004083827363004608,
+                "_ym_d": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "n1info.com",
+                "rs.n1info.com",
+                "www.b92.net",
+                "www.logicno.com",
+                "www.srbijadanas.com",
+                "www.telegraf.rs"
             ]
         },
         {
@@ -190,36 +207,6 @@
             ]
         },
         {
-            "rule": "contentexchange\\.me\\/sr\\/collect",
-            "cookies": 0.0000477,
-            "fingerprinting": 0,
-            "subdomains": [
-                "collector_sr"
-            ],
-            "apis": {},
-            "sites": 7,
-            "prevalence": 0.0000477,
-            "cnames": [],
-            "responseHashes": [
-                "09a0c890af3d005cfbd79eb86ed85457ea6c400f116f7185e5caebc50a537c13"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_ym_d": 0.0000068105045221750025,
-                "cx_id": 0.000040863027133050016
-            },
-            "exampleSites": [
-                "n1info.com",
-                "rs.n1info.com",
-                "srbin.info",
-                "www.b92.net",
-                "www.logicno.com",
-                "www.srbijadanas.com",
-                "www.telegraf.rs"
-            ]
-        },
-        {
             "rule": "contentexchange\\.me\\/fit\\/magic\\/",
             "cookies": 0,
             "fingerprinting": 0,
@@ -231,7 +218,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "59cbe7d3938edb93e5e8c45903015d17b9b7d20a08690d34954d62561d7e59ac"
+                "37a1993a4637d76ccf6e6abe383cd7c3029127eeea999544168343f481f47650"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -275,9 +262,31 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "be1fff3a1bbaea1bf7136ed7222da81ac2ebca32fc2fd3fa80c52c2fe48e4abb"
+                "9d7c16a3b10f0aa92d73935708bae24f7f5b3f341ed2ee59fa28901fde65b4eb"
             ],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "n1info.com",
+                "rs.n1info.com"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/resize\\/magic\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images4"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3547f76fb47c16cd06dfebe4dbf3e3263640d772221b368eb278b67101ea9126"
+            ],
+            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -302,7 +311,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "900bf0a6a7e6d68b093ae97e36d0ae5fa73439501b54b32d9c18778edc8eba3a"
+                "239d680fbab8595308467c529a3f86da782970d8a5c9a1ea42a8f65c046f8079"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -313,25 +322,44 @@
             ]
         },
         {
-            "rule": "contentexchange\\.me\\/resize\\/magic\\/",
+            "rule": "contentexchange\\.me\\/dsp\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "images4"
+                "match"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "59a37d838a73623d676c84df0c7b70257eb50e74b1de5ed4e55523ffe90e1363"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "n1info.com",
                 "rs.n1info.com"
+            ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/tracker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker_ug",
+                "tracker_adria"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "n1info.com",
+                "www.telegraf.rs"
             ]
         },
         {
@@ -369,7 +397,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d4431ec05840750bca220aba4f4ca0bb3f223c9436e59aa8a606a0bf4f711369"
+                "f021c38484873d0d111e9958544d9cc08507a5683e434b58df786750719dc371"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -400,14 +428,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "1ff7a32c52c2be5dffb10705397433ef07c3b0e4e4d8864721aa635ffcfedd15"
+                "d3c85be77d56e0341f385e52c0d69d1550c398817d8e643865533091e5a73f9f"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "cx_id": {
-                    "ttl": 62208005,
+                    "ttl": 62208006,
                     "length": 24,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -416,20 +444,42 @@
                 "srbijadanas.com",
                 "www.srbijadanas.com"
             ]
+        },
+        {
+            "rule": "contentexchange\\.me\\/bex\\/load\\/5f9ae8347f08c7237d8609f9",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ea1654c5bbc1f412324bda7f1b2fe5766943f1bf5718c5e323477c99d93bd8c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vbox7.com",
+                "www.vbox7.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000749,
+    "cookies": 0.0000613,
     "types": {
-        "Script": 24,
+        "Script": 26,
+        "Image": 14,
         "Document": 3,
-        "Image": 13,
         "XHR": 2
     },
     "nameservers": [
+        "dns3.siel.si",
         "dns1.siel.si",
-        "dns2.siel.si",
-        "dns3.siel.si"
+        "dns2.siel.si"
     ]
 }

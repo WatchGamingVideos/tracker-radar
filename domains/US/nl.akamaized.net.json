@@ -12,12 +12,13 @@
     "prevalence": 0.0000545,
     "sites": 8,
     "subdomains": [
-        "graphdata.buienradar",
         "image.buienradar",
+        "graphdata.buienradar",
         "photovideoapi.buienradar",
         "forecast.buienradar",
         "api.buienradar",
-        "data.buienradar"
+        "data.buienradar",
+        "screenshots.rtl"
     ],
     "cnames": [
         {
@@ -43,10 +44,43 @@
         {
             "original": "photovideoapi.buienradar.nl",
             "resolved": "photovideoapi.buienradar.nl.akamaized.net"
+        },
+        {
+            "original": "screenshots.rtl.nl",
+            "resolved": "screenshots.rtl.nl.akamaized.net"
         }
     ],
     "fingerprinting": 0,
     "resources": [
+        {
+            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/hqmedia",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image.buienradar"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "image.buienradar.nl",
+                    "resolved": "image.buienradar.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "61faab34f50e75d8a829cb1ed6716a185cc22ec15b149d714a01a9df4ed66906",
+                "490722f3798b6b3850c0ca217684d47f4701a2e84d4f2063ef447bdce1cacb0a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buienradar.nl",
+                "www.buienradar.nl",
+                "www.buienradar.be"
+            ]
+        },
         {
             "rule": "nl\\.akamaized\\.net\\/2\\.0\\/forecast\\/geo\\/Rain3Hour",
             "cookies": 0.0000136,
@@ -64,8 +98,8 @@
                 }
             ],
             "responseHashes": [
-                "0bbe8dddc245c456cb954c69de4ba6568044699976de827451ef6e529d3c5d8d",
-                "e9b15a23b0e4f94ed1545887da134c011c9b45ca14412dfc70014745b7582f17"
+                "f9a5122b7978018436025a4385fe1fad81b25b3312ef60af9d5c30dd41c557e6",
+                "eb80f272e6465eba089b22e9e5fcc2dfb3afb95f739713565301c3662fec3e4b"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -78,7 +112,7 @@
         },
         {
             "rule": "nl\\.akamaized\\.net\\/2\\.0\\/image\\/single\\/RadarMapRainWebmercatorNL",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
                 "image.buienradar"
@@ -118,36 +152,9 @@
                 }
             ],
             "responseHashes": [
-                "46b6058c01531f4e7fabaeb285945a55679e89405f06a3bebe135bb80f9075ab"
+                "e22a1771129d985533c5207c22fac1c5064e9fb7dfeaba4d118e14fdf8b4c140"
             ],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "buienradar.nl",
-                "www.buienradar.be"
-            ]
-        },
-        {
-            "rule": "nl\\.akamaized\\.net\\/2\\.0\\/hqmedia",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "image.buienradar"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "image.buienradar.nl",
-                    "resolved": "image.buienradar.nl.akamaized.net"
-                }
-            ],
-            "responseHashes": [
-                "490722f3798b6b3850c0ca217684d47f4701a2e84d4f2063ef447bdce1cacb0a"
-            ],
-            "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -172,7 +179,7 @@
                 }
             ],
             "responseHashes": [
-                "c138fe8223d75152feb55bab804307fd240eea13e1072ec8b8357f862e3abd63"
+                "39dc502264c9647c84e7574f2f696fd51b712fd98da5ba013ad9a9e74095fca2"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -198,9 +205,7 @@
                     "resolved": "api.buienradar.nl.akamaized.net"
                 }
             ],
-            "responseHashes": [
-                "5711f95d104ba01a13cea16733e2582c0d8a668b2b050846447e93d64f220155"
-            ],
+            "responseHashes": [],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -226,7 +231,7 @@
                 }
             ],
             "responseHashes": [
-                "c9af372d9a1034c037018052e386c1a1d02422a86e410dfb5a281d20da285cd5"
+                "d9dce23301f58b73a0522c40e84dfbd677ae4809edaa9d9b4d3276aca80b0aba"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -235,16 +240,43 @@
                 "rtlnieuws.nl",
                 "www.rtlnieuws.nl"
             ]
+        },
+        {
+            "rule": "nl\\.akamaized\\.net\\/system\\/thumb\\/sz=720x404\\/uuid=fd62c3b9-810f-4874-bf36-a193d7112858",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "screenshots.rtl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "screenshots.rtl.nl",
+                    "resolved": "screenshots.rtl.nl.akamaized.net"
+                }
+            ],
+            "responseHashes": [
+                "9c991644206fe39f7773d8721346982dc0856a46b05811ba86d4ac5eec4646b6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtlnieuws.nl",
+                "www.rtl.nl"
+            ]
         }
     ],
     "categories": [
         "CDN"
     ],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000408,
     "types": {
-        "XHR": 11,
-        "Image": 4
+        "Image": 7,
+        "XHR": 11
     },
     "nameservers": []
 }

@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "syndication",
         "api",
@@ -15,20 +15,22 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "target-video\\.com\\/native-player\\.js",
+            "rule": "target-video\\.com\\/native-player-component\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
                 "syndication"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "677699031c1ebb860b1279ae8df48844f72195efaee9a06e0cddfc53b6ec0b52"
+                "5e57b851fd55854044004da550097e03ff7ea8a3d0e885e9a42712c9fb0d7a1e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -70,14 +72,14 @@
             "apis": {
                 "Date.prototype.getTime": 2,
                 "Navigator.prototype.userAgent": 2,
-                "URL.createObjectURL": 2,
-                "window.localStorage": 2
+                "window.localStorage": 2,
+                "URL.createObjectURL": 1
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "afa93ee3df7cc7b85c59de172146481514bbbe8a0711f46675f91a784ede928b"
+                "11d25e279c688b5544b6b4306e701dfdff067fa8a8a4c035be301948ef97dfd9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -132,7 +134,7 @@
             ]
         },
         {
-            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/slideinview\\/1\\.1\\.32\\/bplr\\.slideinview\\.min\\.js",
+            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/slideinview\\/1\\.2\\.34\\/bplr\\.slideinview\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -143,7 +145,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d1c465ffddd2bb7b8b3d5098ee9ffce90db29f5609199464c3c6d54c6ee2c3e0"
+                "52f9ce36849572b1b2d2c61e07cb0dce93c7caa9e1a69fcb333b7f69be2c4304"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -154,7 +156,7 @@
             ]
         },
         {
-            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/controls\\/1\\.0\\.18\\/bplr\\.controls\\.min\\.js",
+            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/controls\\/1\\.0\\.24\\/bplr\\.controls\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -165,7 +167,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e9b848ab1eedd26a07c2a88a90dfa7f7a05057c545c92d8b2e7ad396f7eee440"
+                "66bc1ea919230de5a678b7354d62dd845eac752e1a6b099376540f1f1a2a32a0"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -176,7 +178,7 @@
             ]
         },
         {
-            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/gima\\/1\\.0\\.35\\/bplr\\.gima\\.min\\.js",
+            "rule": "target-video\\.com\\/player\\/build\\/plugins\\/gima\\/1\\.1\\.37\\/bplr\\.gima\\.min\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -187,7 +189,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "c1a5c89f0731bb6ca159d437130e5f266127a47584788cbc2aa99f2fe8217761"
+                "169b1782461cc8345e4d47be0ffffcdd9d305749521a0ee6681133c5013eadc2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -195,29 +197,6 @@
             "exampleSites": [
                 "baby-vornamen.de",
                 "www.heilpraxisnet.de"
-            ]
-        },
-        {
-            "rule": "target-video\\.com\\/syndication-player\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "syndication"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "7eceb61147c50dd6ee86a77297417a725e606114ccc3be4641a739e3d68b50a6"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "familie.de",
-                "www.heilpraxisnet.de",
-                "www.netmoms.de"
             ]
         }
     ],
@@ -225,7 +204,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 17,
+        "Script": 14,
         "Fetch": 2
     },
     "nameservers": [

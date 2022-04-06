@@ -4,68 +4,17 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000116,
-    "sites": 17,
+    "prevalence": 0.0000953,
+    "sites": 14,
     "subdomains": [
-        "sales-pop",
-        "tracking-sales-pop",
         "app",
         "tracking-app-sas",
-        "app-countdown-pro",
-        "app-visitor-counter"
+        "app-visitor-counter",
+        "app-countdown-pro"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
-        {
-            "rule": "carecart\\.io\\/lib\\/salesnotifier\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "sales-pop"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Document.cookie getter": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7abefa773eef91ece45fdcc907fe47fbedbf0ae09b5b84f8e21340f3dce03fba"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "australianorganicproducts.com.au",
-                "peachybbies.com"
-            ]
-        },
-        {
-            "rule": "carecart\\.io\\/index\\.php\\/FrontController\\/checkStore\\/",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tracking-sales-pop"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "a46e4f9fb7c5bd05f45c7ce6eb27dc2ef408e25ec08e0898fea9d9bc56735f00"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "australianorganicproducts.com.au",
-                "peachybbies.com"
-            ]
-        },
         {
             "rule": "carecart\\.io\\/api\\/abandoned-cart\\/js-script",
             "cookies": 0.0000272,
@@ -80,9 +29,7 @@
             "sites": 4,
             "prevalence": 0.0000272,
             "cnames": [],
-            "responseHashes": [
-                "d413d5ff9317e175f908b80d8c7863e6404c5be185876c6d4c82b4e53ae1548b"
-            ],
+            "responseHashes": [],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
@@ -140,53 +87,6 @@
             ]
         },
         {
-            "rule": "carecart\\.io\\/lib\\/stockcountdown\\.js",
-            "cookies": 0.0000136,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app-countdown-pro"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "792332a94498f28afdb1417ced45e9ff3ff686bfd7a336e6b35c43a23c7bd315"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hammeronline.in",
-                "www.clarkrubber.com.au"
-            ]
-        },
-        {
-            "rule": "carecart\\.io\\/FrontController\\/checkStore\\/",
-            "cookies": 0.0000204,
-            "fingerprinting": 0,
-            "subdomains": [
-                "app-countdown-pro",
-                "app-visitor-counter"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "de4d52e8fbcdc67d45360a26250e03b936367baf9e66716386f66f0b9857b6a8",
-                "38a09a95660109c825e9bb9debf7d1b530a51e9f803f00f1f21f088e80b03b38"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "hammeronline.in",
-                "www.bstore.com.au",
-                "www.clarkrubber.com.au"
-            ]
-        },
-        {
             "rule": "carecart\\.io\\/lib\\/visitorcounter\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 0,
@@ -207,18 +107,65 @@
                 "bstore.com.au",
                 "www.bstore.com.au"
             ]
+        },
+        {
+            "rule": "carecart\\.io\\/FrontController\\/checkStore\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-visitor-counter",
+                "app-countdown-pro"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "de4d52e8fbcdc67d45360a26250e03b936367baf9e66716386f66f0b9857b6a8",
+                "38a09a95660109c825e9bb9debf7d1b530a51e9f803f00f1f21f088e80b03b38"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bstore.com.au",
+                "www.bstore.com.au",
+                "www.clarkrubber.com.au"
+            ]
+        },
+        {
+            "rule": "carecart\\.io\\/lib\\/stockcountdown\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app-countdown-pro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "792332a94498f28afdb1417ced45e9ff3ff686bfd7a336e6b35c43a23c7bd315"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clarkrubber.com.au",
+                "www.clarkrubber.com.au"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000116,
+    "cookies": 0.0000953,
     "types": {
-        "Script": 15,
+        "Script": 11,
         "Preflight": 4,
         "XHR": 4
     },
     "nameservers": [
-        "noah.ns.cloudflare.com",
-        "karina.ns.cloudflare.com"
+        "karina.ns.cloudflare.com",
+        "noah.ns.cloudflare.com"
     ]
 }

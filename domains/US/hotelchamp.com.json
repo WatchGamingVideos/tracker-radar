@@ -4,10 +4,12 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000476,
+    "sites": 7,
     "subdomains": [
-        "ws"
+        "ws",
+        "cdn",
+        "ws-api"
     ],
     "cnames": [],
     "fingerprinting": 3,
@@ -20,44 +22,23 @@
                 "ws"
             ],
             "apis": {
-                "console.memory": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2
+                "console.memory": 3,
+                "window.localStorage": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "ff378c9a83e1615f2839f3380ad220c9e1183d0584d0b60d2c9e6e7ad7fe9aeb"
+                "a744aa429fa1b3be9c375ea2bc28e477b8699bd8b5e7faffa50ea6046e879585",
+                "c03844155c79d5c2375fe80a60ab435feef50c64988baf30433d7e0c51001662"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "langhamhotels.com",
-                "www.stayokay.com"
-            ]
-        },
-        {
-            "rule": "hotelchamp\\.com\\/pub\\/latest\\/ws\\/manifest\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ws"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e270e027fcdad4ea33e912042053603bd6b795adc8c43395d6131b2cf255ec80"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "langhamhotels.com",
-                "www.stayokay.com"
+                "www.stayokay.com",
+                "www.thestudenthotel.com"
             ]
         },
         {
@@ -68,25 +49,31 @@
                 "ws"
             ],
             "apis": {
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Screen.prototype.width": 2,
-                "Screen.prototype.height": 2,
-                "PerformanceTiming.prototype.navigationStart": 2
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "window.outerWidth": 3,
+                "window.outerHeight": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "PerformanceTiming.prototype.navigationStart": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "d2dba9c8ca1880297410c15c7b7b59695f21957f0149ac46c65185518420bd93"
+                "e072accc1427f6a4cf3883d8e3ab7d3c2145beaf6b516368539ab5b76bdc6b11",
+                "03ad4140716f7482e079fb9fd4090e4245fe750ab9e330db0d046537bba90614"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "langhamhotels.com",
-                "www.stayokay.com"
+                "www.stayokay.com",
+                "www.thestudenthotel.com"
             ]
         },
         {
@@ -97,22 +84,24 @@
                 "ws"
             ],
             "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "af85fff04a44360f7efe936412b24a53825f7e5fd2244e3ae1955401b9396ac1"
+                "11981d0e49fb8c60476b899ee525bbde3ec68a54cfd70e6da141a2115f2709d7",
+                "c822fc53855e1adaae477dcc2ea1933cd22f0969cf817586dd8443a340779792"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "langhamhotels.com",
-                "www.stayokay.com"
+                "www.stayokay.com",
+                "www.thestudenthotel.com"
             ]
         },
         {
-            "rule": "hotelchamp\\.com\\/pub\\/latest\\/storage-relay\\/main\\.js",
+            "rule": "hotelchamp\\.com\\/pub\\/latest\\/storage-relay\\/main\\.e6bc30decf822279a9e8\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -125,7 +114,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "829c797461e33fe0b1f0d5b9a883540b7b2f08c037d5e986072338d012776c01"
+                "d68a7d3fd8354677776e465ef29abf344685983c177080baf843cf302793dcf1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -134,14 +123,151 @@
                 "langhamhotels.com",
                 "www.stayokay.com"
             ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/app\\/launcher\\/preloader-Sew0SgBIsa\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0e04d468284dbeb3ecb217a975eb493cb5375c317eaca58d2e921e6d2264097"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stayokay.com",
+                "www.stayokay.com"
+            ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/app\\/launcher\\/Sew0SgBIsa\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5cbf51985f1c78f39435fd8f42cc0d176c2889893b8100fbd38d1dc99e97d32"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stayokay.com",
+                "www.stayokay.com"
+            ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/ws\\/814ccf0c-c42c-4cd4-8c0c-40740b3d59de",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d88caa621d7ab97f47634dc381c6f6570d1744e57d77ad869e33b811fd2f4cce"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stayokay.com",
+                "www.stayokay.com"
+            ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/engines\\/-\\/engine-contexts\\/Sew0SgBIsa",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0363afbf9b7e1311b20dfb259f177f7c8eb9c7eaffb1040b2cf54bc4167070bf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stayokay.com",
+                "www.stayokay.com"
+            ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/ws\\/fdb6b6fb-18d9-4b3f-bd15-38595eb07a79",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc7b212ad1a62aa90ade2515263ba061ee627451c58b786a22079dc38d2c2916"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thestudenthotel.com",
+                "www.thestudenthotel.com"
+            ]
+        },
+        {
+            "rule": "hotelchamp\\.com\\/pub\\/latest\\/storage-relay\\/main\\.5d2d0ef51e839a75ff20\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a0d35cbe98f13cfc2747d8d104efcbda892ba890b414aa7f50503ef897e7e19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thestudenthotel.com",
+                "www.thestudenthotel.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 8,
-        "Document": 2
+        "Script": 14,
+        "Document": 3,
+        "Fetch": 6
     },
     "nameservers": [
         "ivan.ns.cloudflare.com",

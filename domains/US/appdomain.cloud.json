@@ -4,18 +4,81 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000136,
-    "sites": 20,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
+        "integrations.us-east.assistant.watson",
+        "integrations.us-south.assistant.watson",
+        "integrations.eu-gb.assistant.watson",
+        "integrations.eu-de.assistant.watson",
         "web-chat.global.assistant.watson",
         "chat-portal.s3-web.us-south.cloud-object-storage",
         "api.eu-gb.apiconnect",
-        "integrations.eu-gb.assistant.watson",
         "us-east.functions"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "appdomain\\.cloud\\/analytics\\/2\\/httpapi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "integrations.us-east.assistant.watson",
+                "integrations.us-south.assistant.watson",
+                "integrations.eu-gb.assistant.watson",
+                "integrations.eu-de.assistant.watson"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [
+                "e5f29a85e1cc6a865c5227c2a0f3418bc300769f3aa13b50c54741fdde7701eb",
+                "d2e2c9182db0757529e44e3f9cb65aecfcf7ccfb6fdcc99cb259a7f06fe29b54",
+                "4b75a3d70e60a50ebbf7414a0d6ee75ee4b1fcf1f10c0719256683c1a2b6ee27",
+                "e5ddff8e63bc989f844552f72820fa386839631fdaa8cdc7b9ad5634b6e728cc",
+                "1b35c32ac64c037f1a083d72705bec66a245655e8360932758e9150d31830f9d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kobo.com",
+                "jamaica-gleaner.com",
+                "recordtv.r7.com",
+                "www.onem.be",
+                "www.portaldasfinancas.gov.pt",
+                "www.rva.be"
+            ]
+        },
+        {
+            "rule": "appdomain\\.cloud\\/analytics\\/2\\/httpapi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "integrations.us-east.assistant.watson",
+                "integrations.us-south.assistant.watson",
+                "integrations.eu-gb.assistant.watson",
+                "integrations.eu-de.assistant.watson"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000408,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kobo.com",
+                "jamaica-gleaner.com",
+                "recordtv.r7.com",
+                "www.onem.be",
+                "www.portaldasfinancas.gov.pt",
+                "www.rva.be"
+            ]
+        },
         {
             "rule": "appdomain\\.cloud\\/loadWatsonAssistantChat\\.js",
             "cookies": 0,
@@ -29,7 +92,7 @@
                 "window.sessionStorage": 4
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "2e9e04f4c511cdba74106449191167020f931d81d610f1fa461d3ce55d46c5ef"
@@ -53,11 +116,11 @@
                 "web-chat.global.assistant.watson"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.0000409,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "5e644a8ff8488a25a9acea057f9bdab154528377b24cacbf3f71ed2653ddd1fd"
+                "b418f027fd852d0c4d937f24bc17a0c753f022c674c54da4642f9b38d1703887"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -67,12 +130,11 @@
                 "recordtv.r7.com",
                 "www.onem.be",
                 "www.portaldasfinancas.gov.pt",
-                "www.rva.be",
-                "www.sechenov.ru"
+                "www.rva.be"
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/WatsonAssistantChat\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/WatsonAssistantChat\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -84,10 +146,10 @@
                 "window.sessionStorage": 5
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "27e812f2a2d6ca883bf3e75ab2b2ba8c43a8713a1c09fd908a93787693268938"
+                "c1a65359979921a89031728850f0756261182f9a61363648efb2f1ea86008986"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -101,7 +163,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/7594\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/2015\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -109,10 +171,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "d82259985d10e567692aae495df35d890c48e8fee9e731f9678d063ba6e0f4c3"
+                "f9bd9b1af2e3ca1c5cd1e3a38455cf0a00f0d31286a9ca448689ea9a91e1e05a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -126,7 +188,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/6415\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/7417\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -134,10 +196,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "fc8edb23421c11f31fe1fc72f4d6b80ae1f14b9cbee00e038048405f043d5983"
+                "c3a627ac1d9b23b52a1afb80e0faab8423cf932823396c5e9079cc8561c1dc3a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -151,7 +213,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/3009\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/4655\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -161,10 +223,10 @@
                 "window.sessionStorage": 5
             },
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "4d17225e60035b828f9f0264320a196963c796ff13c2ee8307f5276cf8acae0c"
+                "eac099c57fc9f521973312eda23facd715281d63f300ff5d5aebe8d12cbc24f2"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -178,7 +240,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/render\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/render\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -186,10 +248,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "5af0f8e7f741bc59d804adc9fc396e81aac17bddac764fbb52747064fd2a5364"
+                "accdb9275c96c813b09b534a7de33b6a8de913d616ae4cf8f3039c18e1156849"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -203,7 +265,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/variables-g10\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/variables-g10\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -211,10 +273,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "5e08c7ecdd4843eb9c5e7c75fd4bb4fc04d14f533d582ff0c4dc72b64f6193a3"
+                "8e2ecb0a6c7c62d9670473265f6d79d08601be6dd119938b4c9a8631d2791059"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -228,7 +290,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/styles\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/styles\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -236,7 +298,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "979c1d5eda515519115014a087529b6d6d1807fea0ed41001ffda03ff51c8394"
@@ -253,7 +315,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/component-styles\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/component-styles\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -261,10 +323,10 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "e6867457f0ad483ef5e196644cb9a9a81bba25d19123751b5c9c6a4454b41c63"
+                "d9f8a89434277f3af0dff972e7b8431de5e134923af5fe5e80a479a33775c6b1"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -278,7 +340,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/8934\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/8934\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -286,7 +348,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "48eb9d09f7b83605d156d2edc85b0e0db149091fbd6c0efa04781605505cc723"
@@ -303,20 +365,18 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/services\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/6470\\.Legacy\\.js",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "web-chat.global.assistant.watson"
             ],
-            "apis": {
-                "window.sessionStorage": 5
-            },
+            "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "ada351bfcc3c44d8cbaa46ea62dabd03657bed12deff32a502f47dac8e423983"
+                "90c4bf92464911988ea3476f24a321155c3f7c1ce7a9d708d6a6ebdb18d1d555"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -330,7 +390,34 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/experiment-config\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/services\\.Legacy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web-chat.global.assistant.watson"
+            ],
+            "apis": {
+                "window.sessionStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "6627d25328711f02ec968ebc3a3e62da0bac46f4fb46415838fcef8de3aa276d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jamaica-gleaner.com",
+                "recordtv.r7.com",
+                "www.onem.be",
+                "www.portaldasfinancas.gov.pt",
+                "www.rva.be"
+            ]
+        },
+        {
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/experiment-config\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -338,7 +425,7 @@
             ],
             "apis": {},
             "sites": 5,
-            "prevalence": 0.0000341,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "ad81bf763a40925dab6dfedf7496a5a51ae80d07a7307b252d847b67e92fb839"
@@ -453,6 +540,8 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "window.sessionStorage": 2,
                 "Date.prototype.getTimezoneOffset": 2
             },
@@ -725,10 +814,8 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [
-                "065ffab5aa28c93444a1c4bdf31fcc3cf6fee06f74ec3b81b7517810a645781a"
-            ],
-            "type": "XHR",
+            "responseHashes": [],
+            "type": "Preflight",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -747,8 +834,10 @@
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
+            "responseHashes": [
+                "065ffab5aa28c93444a1c4bdf31fcc3cf6fee06f74ec3b81b7517810a645781a"
+            ],
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -779,7 +868,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/lang_fr_private\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/lang_fr_private\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -801,7 +890,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/lang_fr\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/lang_fr\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -812,7 +901,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2236c5f8b86fa4913f30399ffdb00cab8c483553b81496675cff198fa3f38a3a"
+                "3c8f6bff3b434dea7e437071e76f80ab003374c11e0a559a8564daaf1e4a598d"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -823,7 +912,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/locale_fr\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/locale_fr\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -867,7 +956,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/lang_nl_private\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/lang_nl_private\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -889,7 +978,7 @@
             ]
         },
         {
-            "rule": "appdomain\\.cloud\\/versions\\/6\\.1\\.0\\/lang_nl\\.Legacy\\.js",
+            "rule": "appdomain\\.cloud\\/versions\\/6\\.3\\.0\\/lang_nl\\.Legacy\\.js",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -900,7 +989,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "95d898940b110c70f3e8bf8d0822a3932667a48e3caf9336cb15783fb9a169d2"
+                "c800193d112089b3bcb298670bf23788cbea1e7694a77e31cf7c513a201ad00b"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -908,28 +997,6 @@
             "exampleSites": [
                 "rva.be",
                 "www.rva.be"
-            ]
-        },
-        {
-            "rule": "appdomain\\.cloud\\/6\\.1\\.0\\/WatsonAssistantChat\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "web-chat.global.assistant.watson"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sechenov.ru",
-                "www.sechenov.ru"
             ]
         },
         {
@@ -944,7 +1011,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "54adcee717e70b798215f63dd2a8481a02962632cd724c158b55ba286ce4563f"
+                "016fb3c23f7948daa25ff4c25c3955553367baf8886cd111840b90644c8f82df"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -959,11 +1026,11 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 100,
-        "XHR": 14,
+        "XHR": 19,
+        "Preflight": 8,
+        "Script": 103,
         "Document": 2,
-        "Fetch": 2,
-        "Preflight": 2
+        "Fetch": 2
     },
     "nameservers": [
         "ns119.name.cloud.ibm.com",

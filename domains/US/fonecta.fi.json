@@ -7,33 +7,34 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000681,
-    "sites": 10,
+    "prevalence": 0.0000817,
+    "sites": 12,
     "subdomains": [
-        "insight"
+        "insight",
+        "insight-api"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
             "rule": "fonecta\\.fi\\/fi\\.js",
-            "cookies": 0.0000341,
+            "cookies": 0.0000476,
             "fingerprinting": 1,
             "subdomains": [
                 "insight"
             ],
             "apis": {
-                "Navigator.prototype.cookieEnabled": 5,
-                "Document.cookie getter": 5,
-                "Screen.prototype.width": 5,
-                "Screen.prototype.height": 5,
-                "Navigator.prototype.userAgent": 5,
-                "window.localStorage": 5,
-                "Date.prototype.getTime": 5,
-                "Document.cookie setter": 5
+                "Navigator.prototype.cookieEnabled": 7,
+                "Document.cookie getter": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "47bbecb682351e15b1babab65838d89a9fda1b7725a017d68428ea0b8920ae9c"
@@ -41,26 +42,28 @@
             "type": "Script",
             "firstPartyCookies": {
                 "fi-visitor-id": {
-                    "ttl": 315360002,
+                    "ttl": 315360001,
                     "length": 36,
-                    "prevalence": 0.00003405252261087501,
+                    "prevalence": 0.00004764465256838709,
                     "uniqueness": 1
                 },
                 "fi-session": {
                     "ttl": 1802,
-                    "length": 51,
-                    "prevalence": 0.00003405252261087501,
+                    "length": 52,
+                    "prevalence": 0.00004764465256838709,
                     "uniqueness": 1
                 },
                 "fi-do-not-track": {
-                    "ttl": -86398,
+                    "ttl": -86399,
                     "length": 1,
-                    "prevalence": 0.00003405252261087501,
-                    "uniqueness": 0.2
+                    "prevalence": 0.00004764465256838709,
+                    "uniqueness": 0.14285714285714285
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "liiga.fi",
+                "old.liiga.fi",
                 "sydan.fi",
                 "www.audiokauppa.fi",
                 "www.pam.fi",
@@ -70,27 +73,32 @@
         },
         {
             "rule": "fonecta\\.fi\\/fi_init\\.js",
-            "cookies": 0.0000341,
+            "cookies": 0.0000476,
             "fingerprinting": 1,
             "subdomains": [
                 "insight"
             ],
             "apis": {
-                "window.localStorage": 5
+                "window.localStorage": 7,
+                "Navigator.prototype.doNotTrack": 2
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
-                "5d53581890dd858b89bc1358a513c572b397e07c93778bd3aa516759c271f734",
-                "555449a657817af6671ef251d3073dcb8c670893eafe92f36660c71f292f5f62",
-                "877b2bb1f8857ae3238f4e01c377876f558e8546751995cbce137bb391373cec",
-                "df35a933957dafe2e2244106add8d505bfa7462c01af177c7e18d0df97a7034c"
+                "116867b627bea0fbbb9965d0bc2713b40fecbdfa0b4c2087a8b4309117bfc1d7",
+                "ecfc01920a5d1632ab4987eb9cc7633e257185612fd222a3d6b5fae439234324",
+                "21c622b27e3456327ba24fcf11f7060b63676339f899a8b3f681121b138a8515",
+                "25e7f6fdc49aabc6e3f153a754335e44df4268b55b06f574d6e69f2a93bef6c9",
+                "f552e4c1b9048d6c17ed4a00ab6a827701b99f3bf8b96a5b72ea9cfd87e900ae",
+                "b09d95f8f5697bf4510c4f96a6b6b3ea2a60dc9d8846c5faf2df5f1a997a6d10"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "liiga.fi",
+                "old.liiga.fi",
                 "sydan.fi",
                 "www.audiokauppa.fi",
                 "www.pam.fi",
@@ -99,15 +107,39 @@
             ]
         },
         {
+            "rule": "fonecta\\.fi\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insight-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fi-visitor-id": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "liiga.fi",
+                "old.liiga.fi"
+            ]
+        },
+        {
             "rule": "fonecta\\.fi\\/fi\\.gif",
-            "cookies": 0.0000341,
+            "cookies": 0.0000476,
             "fingerprinting": 0,
             "subdomains": [
                 "insight"
             ],
             "apis": {},
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
@@ -115,9 +147,11 @@
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "fi-visitor-id": 0.00002724201808870001
+                "fi-visitor-id": 0.00004083827363004608
             },
             "exampleSites": [
+                "liiga.fi",
+                "old.liiga.fi",
                 "sydan.fi",
                 "www.audiokauppa.fi",
                 "www.pam.fi",
@@ -128,15 +162,15 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000681,
+    "cookies": 0.0000817,
     "types": {
-        "Script": 10,
-        "Image": 5
+        "Script": 16,
+        "Image": 7
     },
     "nameservers": [
-        "ns-1049.awsdns-03.org",
-        "ns-1750.awsdns-26.co.uk",
         "ns-342.awsdns-42.com",
-        "ns-917.awsdns-50.net"
+        "ns-917.awsdns-50.net",
+        "ns-1049.awsdns-03.org",
+        "ns-1750.awsdns-26.co.uk"
     ]
 }

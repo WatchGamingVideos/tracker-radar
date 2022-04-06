@@ -4,16 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
         "tracking-cdn",
         "rr",
         "statics-cdn",
-        "analytics",
-        "tdh",
-        "tdw",
-        "variations-cdn"
+        "variations-cdn",
+        "analytics"
     ],
     "cnames": [],
     "fingerprinting": 2,
@@ -47,14 +45,14 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8c50fa2952467d018a0962020234ccbcf00ef7555d55e175ec911f06e7426a6a"
+                "8e3f814b23ac5e30c1fe5bdc88a13e825f7ce283c9fc2b8af1329e0d0a301830"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_FPCI": {
                     "ttl": 31536004,
                     "length": 220,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -76,8 +74,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "b5ce3baf191d07a0574202ce9ea036b08523e620c03baf774d04eab04bd0e00d",
-                "d5442e8cca126821f295933d4bab5deaef170348ae95f3a4e887ddbc248bc4b2"
+                "9190a480ccf2f0b3a298318a176354df1f748bc04213f11c00998ccbe657ebac",
+                "f7e5d2bc2648cfc365a355369cccbceb34c7f89e8d12ae98ac3fbfb4c8ed2dda"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -117,15 +115,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "_FPAC": {
-                    "ttl": 33955202,
+                    "ttl": 33955201,
                     "length": 17,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 },
                 "_FPAC_S": {
-                    "ttl": 1801,
+                    "ttl": 1800,
                     "length": 18,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -159,6 +157,8 @@
                 "window.localStorage": 2,
                 "Document.cookie setter": 2,
                 "Navigator.prototype.permissions": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
                 "Navigator.prototype.language": 2,
                 "Event.prototype.timeStamp": 2
             },
@@ -166,21 +166,21 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "26ac7b20fd7a595c90f9131ba017377938e958eb79a385197e369ccec9dd8379"
+                "d24ff5ecb90b9cdb85db34f0490f430fd74b969f459a2fbccc89b00577b2a497"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "_FPCI": {
-                    "ttl": 31536004,
+                    "ttl": 31536001,
                     "length": 241,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
-                "FIGPII_TE-323106": {
-                    "ttl": 31536002,
+                "FIGPII_TE-323651": {
+                    "ttl": 31536001,
                     "length": 5,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
@@ -234,13 +234,36 @@
             ]
         },
         {
-            "rule": "figpii\\.com\\/rl\\.min\\.js",
+            "rule": "figpii\\.com\\/ab\\/decide",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rr"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blublox.com",
+                "www.blublox.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/js\\/te_page_ext_js_323651_15564_1648743592\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "statics-cdn"
+                "variations-cdn"
             ],
             "apis": {
+                "window.innerWidth": 2,
                 "Date.prototype.getTime": 2
             },
             "sites": 2,
@@ -248,6 +271,26 @@
             "cnames": [],
             "responseHashes": [],
             "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blublox.com",
+                "www.blublox.com"
+            ]
+        },
+        {
+            "rule": "figpii\\.com\\/css\\/te_page_ext_css_323651_15564_1648743592\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "variations-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -268,114 +311,6 @@
             "cnames": [],
             "responseHashes": [],
             "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/v1\\/recorder\\/post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tdh"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/v1\\/recorder\\/post",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tdh"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "762c2749580c286a68d4528d912a4afa02a17dc2025c6c65b17b0dfab8291408"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/v1",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "tdw"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "WebSocket",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/js\\/te_page_ext_js_323106_14893_1643988600\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "variations-cdn"
-            ],
-            "apis": {
-                "Screen.prototype.width": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "58080f2b1da3000116a75af37df7c87d5f530c1b5ac1deb5b8b77609d84115d9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "blublox.com",
-                "www.blublox.com"
-            ]
-        },
-        {
-            "rule": "figpii\\.com\\/css\\/te_page_ext_css_323106_14893_1643988600\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "variations-cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "2056f3534366bd7863992ef237b4124b6d3e19eb4cfbc597c005582c759b27e5"
-            ],
-            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -408,16 +343,36 @@
                 "commentary.org",
                 "www.commentary.org"
             ]
+        },
+        {
+            "rule": "figpii\\.com\\/8e09b3cd773d426825ccc859e7c743cb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0c6e3906e6f08c9b4438e92f74332628babbcc88775189950c1f5e45f1a0cd97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onshape.com",
+                "www.onshape.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000408,
     "types": {
         "Script": 13,
         "XHR": 11,
-        "Preflight": 2,
-        "WebSocket": 2,
         "Stylesheet": 2
     },
     "nameservers": [

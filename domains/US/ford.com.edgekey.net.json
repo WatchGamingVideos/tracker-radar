@@ -12,10 +12,15 @@
     "prevalence": 0.0000272,
     "sites": 4,
     "subdomains": [
+        "www.servicescache",
         "www.account",
-        "www.servicescache"
+        "shop"
     ],
     "cnames": [
+        {
+            "original": "shop.ford.com",
+            "resolved": "shop.ford.com.edgekey.net"
+        },
         {
             "original": "www.account.ford.com",
             "resolved": "www.account.ford.com.edgekey.net"
@@ -27,6 +32,33 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ford\\.com\\.edgekey\\.net\\/api\\/vehicleModel\\/v1\\/describe",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.servicescache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.servicescache.ford.com",
+                    "resolved": "www.servicescache.ford.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d6628f02af8dbd7d9cfdb0fa8468b52e2c44fd97c5088c124e1a420748ba812d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.co.uk",
+                "www.ford.co.uk"
+            ]
+        },
         {
             "rule": "ford\\.com\\.edgekey\\.net\\/etc\\/fd\\/fma\\/bundle\\.js",
             "cookies": 0.0000136,
@@ -44,7 +76,7 @@
                 }
             ],
             "responseHashes": [
-                "582ace7499b33a3ce37746e140a578867e5469b307c3a6086827e934d25faf22"
+                "a596f003f4f6bb655bde025f1f85c71829869ccd6a5e6f92d1c9ae00e9016b11"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -71,7 +103,7 @@
                 }
             ],
             "responseHashes": [
-                "adc3ca5d6c07baa4224e7c17fe80a2dbdef161cc2694cface05ead8b5dc88fb9"
+                "5866c7af6c459862f274a8228d1f7332cd2f36546aec25398436d707849c7729"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -98,7 +130,7 @@
                 }
             ],
             "responseHashes": [
-                "d847c8d48dc0540d4c15a7317c5ffcd9386338774b70ab68c7e166a502aeb4c4"
+                "bf326d451bc87e7b9ad7c037f4bbe32bab3075f97e58275ecff3ebdf1e431ed2"
             ],
             "type": "Document",
             "firstPartyCookies": {},
@@ -109,30 +141,30 @@
             ]
         },
         {
-            "rule": "ford\\.com\\.edgekey\\.net\\/api\\/vehicleModel\\/v1\\/describe",
+            "rule": "ford\\.com\\.edgekey\\.net\\/aemservices\\/common\\/api\\/attributes\\/proxy",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "www.servicescache"
+                "shop"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "www.servicescache.ford.com",
-                    "resolved": "www.servicescache.ford.com.edgekey.net"
+                    "original": "shop.ford.com",
+                    "resolved": "shop.ford.com.edgekey.net"
                 }
             ],
             "responseHashes": [
-                "c3703f27ac7d69c06e941b1ae405126e2d58a3aa3d7817aacb1d998aa7f4e6e0"
+                "44bf201ffcd210e421b72db6d52536054ba7856937c55c501a963089589edc5d"
             ],
-            "type": "XHR",
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ford.co.uk",
-                "www.ford.co.uk"
+                "ford.com",
+                "www.ford.com"
             ]
         }
     ],
@@ -140,9 +172,10 @@
     "performance": {},
     "cookies": 0.0000272,
     "types": {
+        "XHR": 2,
         "Script": 2,
         "Document": 4,
-        "XHR": 2
+        "Fetch": 2
     },
     "nameservers": []
 }

@@ -9,14 +9,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000116,
-    "sites": 17,
+    "prevalence": 0.000129,
+    "sites": 19,
     "subdomains": [
         "in-dataops-cs-nlb-3eb2bf8ed59f4d0e.elb",
         "dchbj6h4x1.execute-api",
+        "qmu4tfsmxd.execute-api",
         "e14ynrnsf9.execute-api",
-        "eeysubngbk.execute-api",
-        "5b0v4gg5o4.execute-api"
+        "eeysubngbk.execute-api"
     ],
     "cnames": [
         {
@@ -74,6 +74,28 @@
             ]
         },
         {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/endpoint\\/neo\\/magic",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qmu4tfsmxd.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "12cdc7df87a797077f7bb7c2f6f603b9b3dc4791ab2a59339933721d0ce0db35"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "federalbank.co.in",
+                "www.federalbank.co.in"
+            ]
+        },
+        {
             "rule": "ap-south-1\\.amazonaws\\.com\\/production\\/getCities",
             "cookies": 0,
             "fingerprinting": 0,
@@ -127,7 +149,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "503c87fa14abc0172e778d7a349599d89b860044211cb6b78a49e2e856bff0a1"
+                "40b597d366f2146304ccb2564714e252b5e317a464d22434ab84fd3ff9694e10"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -135,28 +157,6 @@
             "exampleSites": [
                 "mgmotor.co.in",
                 "www.mgmotor.co.in"
-            ]
-        },
-        {
-            "rule": "ap-south-1\\.amazonaws\\.com\\/release\\/redirect-link",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "5b0v4gg5o4.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "36481234798ad4f148ebdc4b1c86b2b36320f2186c639ae3728d4db5d3d29897"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "primeos.in",
-                "www.primeos.in"
             ]
         }
     ],
@@ -168,9 +168,8 @@
     "types": {
         "WebSocket": 2,
         "Fetch": 2,
-        "XHR": 4,
-        "Preflight": 2,
-        "Image": 2
+        "XHR": 6,
+        "Preflight": 2
     },
     "nameservers": [
         "ns1.p31.dynect.net",

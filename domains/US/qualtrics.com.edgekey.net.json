@@ -9,12 +9,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000136,
+    "sites": 2,
     "subdomains": [
         "cloudenhanced"
     ],
     "cnames": [
+        {
+            "original": "g1-iad.qualtrics.com",
+            "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+        },
         {
             "original": "www-api.qualtrics.com",
             "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
@@ -22,6 +26,37 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "qualtrics\\.com\\.edgekey\\.net\\/www-api\\/geoip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloudenhanced"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www-api.qualtrics.com",
+                    "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+                },
+                {
+                    "original": "g1-iad.qualtrics.com",
+                    "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4d62f3dd13cac69b6a11b490509db7d09b4fdc3715178d4f0b4918cd3aa32bee"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qualtrics.com",
+                "www.qualtrics.com"
+            ]
+        },
         {
             "rule": "qualtrics\\.com\\.edgekey\\.net\\/www-api\\/geoip",
             "cookies": 0,
@@ -54,6 +89,7 @@
     "performance": {},
     "cookies": 0,
     "types": {
+        "Other": 2,
         "Fetch": 2
     },
     "nameservers": []

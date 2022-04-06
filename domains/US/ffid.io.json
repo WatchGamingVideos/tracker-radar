@@ -7,12 +7,35 @@
     "prevalence": 0.0000136,
     "sites": 2,
     "subdomains": [
+        "static",
         "ga",
         "tracking"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "ffid\\.io\\/js\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "014af87f8776f143981ca35625c7630c7316e7f221c618ad940391cdac174b8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123i.com.br",
+                "www.123i.com.br"
+            ]
+        },
         {
             "rule": "ffid\\.io\\/index\\.html",
             "cookies": 0,
@@ -28,6 +51,79 @@
                 "75bbf9ab55517152f01efa1da59afe78f5491f4035af085dec313076bd4cda67"
             ],
             "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123i.com.br",
+                "www.123i.com.br"
+            ]
+        },
+        {
+            "rule": "ffid\\.io\\/js\\/utils\\/onesignal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aa4dc7c76045fd16b5557cf1d9203d3560f9e3a54eb15dd46bcf114d5ffc123c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123i.com.br",
+                "www.123i.com.br"
+            ]
+        },
+        {
+            "rule": "ffid\\.io\\/js\\/utils\\/ouibounce\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a2bcd1e2afa7343f221c11c9bfaacb030ad817cd14b4f0a104e4bf249b37525"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "123i.com.br",
+                "www.123i.com.br"
+            ]
+        },
+        {
+            "rule": "ffid\\.io\\/js\\/utils\\/utm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "706cd4fde9eb40109258add65dc4ca34b77b175db5827fb741a35177bb6686b3"
+            ],
+            "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -66,8 +162,8 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Document": 2,
-        "Script": 2
+        "Script": 10,
+        "Document": 2
     },
     "nameservers": [
         "lucy.ns.cloudflare.com",

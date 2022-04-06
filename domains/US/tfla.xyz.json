@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000749,
+    "sites": 11,
     "subdomains": [
         "stag-core",
         "redis-end"
@@ -14,6 +14,34 @@
     "fingerprinting": 1,
     "resources": [
         {
+            "rule": "tfla\\.xyz\\/serve_onetag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stag-core"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "63d5bab0278db7bdedac79a274c38c9a023c44db5b6f500b2702d3fdb14fd1ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "be-in.ru",
+                "www.be-in.ru",
+                "www.globes.co.il",
+                "www.jpost.com",
+                "www.nationalreview.com"
+            ]
+        },
+        {
             "rule": "tfla\\.xyz\\/pre_onetag",
             "cookies": 0.0000136,
             "fingerprinting": 1,
@@ -21,27 +49,31 @@
                 "stag-core"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie getter": 2,
                 "Document.cookie setter": 2
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "5aedfd258300ff204ca893f4645aeac0a1226f9493df94f64606d2dc15b54b78"
+                "6192232561a37d4eef7b7efe86cd1d1c952e0939e5ddd3bc9d4947d583565595",
+                "c15b815508519df048a1f1a74ad55e4c421be7e34b4f68dac8f337ac0c6646bf"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "ttm_pixalate_user": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "businesstraveller.com",
-                "www.businesstraveller.com"
+                "www.businesstraveller.com",
+                "www.rac.co.uk"
             ]
         },
         {
@@ -65,39 +97,13 @@
                 "businesstraveller.com",
                 "www.businesstraveller.com"
             ]
-        },
-        {
-            "rule": "tfla\\.xyz\\/serve_onetag",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "stag-core"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "e97b1bdcff80534643454edac333a4aa85705823f7471cfa12937f2f9dbe3b06",
-                "d38191b87ebf299feddb49e76bc3e6c3ab25aefe9beb673a9dd94273805baf90"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.0000068105045221750025
-            },
-            "exampleSites": [
-                "jpost.com",
-                "www.jpost.com",
-                "www.nationalreview.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Script": 7
+        "Script": 10
     },
     "nameservers": [
         "dns1.registrar-servers.com",

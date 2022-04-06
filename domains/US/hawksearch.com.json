@@ -7,26 +7,26 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000749,
-    "sites": 11,
+    "prevalence": 0.000109,
+    "sites": 16,
     "subdomains": [
-        "api-3",
-        "tracking",
+        "lusearchapi-na",
         "tracking-na",
-        "pyramydair",
+        "tracking",
         "recs-na",
         "manage",
-        "openuniversity"
+        "openuniversity",
+        "searchapi"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "hawksearch\\.com\\/sites\\/adamandeve\\/includes\\/tracking-events\\.min\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
-                "api-3"
+                "lusearchapi-na"
             ],
             "apis": {
                 "Document.cookie getter": 2,
@@ -42,15 +42,15 @@
             "type": "Script",
             "firstPartyCookies": {
                 "hawk_visit_id": {
-                    "ttl": 14404,
+                    "ttl": 14402,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "hawk_visitor_id": {
-                    "ttl": 31104004,
+                    "ttl": 31104002,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -65,12 +65,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking",
-                "tracking-na"
+                "tracking-na",
+                "tracking"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -80,7 +80,9 @@
                 "adameve.com",
                 "www.adameve.com",
                 "www.blackdiamondequipment.com",
-                "www.chaoscards.co.uk"
+                "www.chaoscards.co.uk",
+                "www.soletrader.co.uk",
+                "www.soletraderoutlet.co.uk"
             ]
         },
         {
@@ -88,12 +90,12 @@
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "tracking",
-                "tracking-na"
+                "tracking-na",
+                "tracking"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -105,43 +107,45 @@
                 "adameve.com",
                 "www.adameve.com",
                 "www.blackdiamondequipment.com",
-                "www.chaoscards.co.uk"
+                "www.chaoscards.co.uk",
+                "www.soletrader.co.uk",
+                "www.soletraderoutlet.co.uk"
             ]
         },
         {
             "rule": "hawksearch\\.com\\/sites\\/airgundepotv2\\/includes\\/hawksearch\\.min\\.js",
-            "cookies": 0.00000681,
-            "fingerprinting": 2,
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
             "subdomains": [
-                "pyramydair"
+                "lusearchapi-na"
             ],
             "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.vendor": 1,
-                "Navigator.prototype.platform": 1,
-                "window.sessionStorage": 1,
-                "Document.cookie getter": 1,
-                "Document.cookie setter": 1
+                "Document.cookie setter": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "89bdba0eb6c0956ccb4fd1c79b85c720e63c65151258bc51105aee2382835921"
+                "f58aba0a8429d13c0fb7aa7e37fb733d8fac5b512622c552df567926270b363e"
             ],
             "type": "Script",
             "firstPartyCookies": {
                 "visitor_id": {
-                    "ttl": 31104001,
+                    "ttl": 31104000,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "visit_id": {
-                    "ttl": 14401,
+                    "ttl": 14400,
                     "length": 36,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -153,7 +157,7 @@
         },
         {
             "rule": "hawksearch\\.com\\/api\\/recommendation\\/v2\\/getwidgetitems",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "recs-na"
@@ -163,7 +167,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e5b658a6d082d325a2d7a9572f070b52b0983e4ec414166c140c3d96df75f99a"
+                "4723e8896a544fac2be68c146452750df29128c1ba6dc100297e0bc8472b9cba"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -175,7 +179,7 @@
         },
         {
             "rule": "hawksearch\\.com\\/api\\/recommendation\\/v2\\/getwidgetitems",
-            "cookies": 0,
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
                 "recs-na"
@@ -220,13 +224,13 @@
                 "visitor_id": {
                     "ttl": 31104001,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "visit_id": {
                     "ttl": 14401,
                     "length": 36,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 }
             },
@@ -264,11 +268,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "manage",
-                "openuniversity"
+                "openuniversity",
+                "lusearchapi-na"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "0e2bebab63664782658f77dd7d372b6296c64446afbcb41d09db2976674e8bfd"
@@ -279,7 +284,8 @@
             "exampleSites": [
                 "intellectualtakeout.org",
                 "www.intellectualtakeout.org",
-                "www.open.ac.uk"
+                "www.open.ac.uk",
+                "www.powells.com"
             ]
         },
         {
@@ -288,14 +294,16 @@
             "fingerprinting": 0,
             "subdomains": [
                 "manage",
-                "openuniversity"
+                "openuniversity",
+                "lusearchapi-na"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "ddeea7ef08f1ffe38132fe7039e03998a6e8a7cb02f65296cd7dbd899806912e"
+                "ddeea7ef08f1ffe38132fe7039e03998a6e8a7cb02f65296cd7dbd899806912e",
+                "3ce2cf958ae2f6a8fb76566e251ec76e9a28c41fd0add9c2d93af2be9d9603ea"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
@@ -303,7 +311,8 @@
             "exampleSites": [
                 "intellectualtakeout.org",
                 "www.intellectualtakeout.org",
-                "www.open.ac.uk"
+                "www.open.ac.uk",
+                "www.powells.com"
             ]
         },
         {
@@ -312,11 +321,12 @@
             "fingerprinting": 0,
             "subdomains": [
                 "manage",
-                "openuniversity"
+                "openuniversity",
+                "lusearchapi-na"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 4,
+            "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
                 "2847a6465797f0a2cc2f7ae81201613efb7b2ccc3df95a98c9932f83e63dd4e2"
@@ -327,7 +337,8 @@
             "exampleSites": [
                 "intellectualtakeout.org",
                 "www.intellectualtakeout.org",
-                "www.open.ac.uk"
+                "www.open.ac.uk",
+                "www.powells.com"
             ]
         },
         {
@@ -351,16 +362,167 @@
                 "intellectualtakeout.org",
                 "www.intellectualtakeout.org"
             ]
+        },
+        {
+            "rule": "hawksearch\\.com\\/sites\\/openuniversity\\/includes\\/hawksearch\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "openuniversity",
+                "lusearchapi-na"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "17c506ce1f1eabb42cbfe6d2de60a9fd5241cdae34d1c4e6164e029ab6d1b264"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "visitor_id": {
+                    "ttl": 31104002,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "visit_id": {
+                    "ttl": 14402,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "open.ac.uk",
+                "www.open.ac.uk"
+            ]
+        },
+        {
+            "rule": "hawksearch\\.com\\/sites\\/powellbooks\\/\\/includes\\/hawksearch\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lusearchapi-na"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b7491248cb0b908020018aff7c7547a0566f32b8878933390a8c63743b52846d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "visitor_id": {
+                    "ttl": 31104000,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                },
+                "visit_id": {
+                    "ttl": 14400,
+                    "length": 36,
+                    "prevalence": 0.000013612757876682026,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "powells.com",
+                "www.powells.com"
+            ]
+        },
+        {
+            "rule": "hawksearch\\.com\\/sites\\/powellbooks\\/\\/includes\\/hawksearch\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lusearchapi-na"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a2829c96cd4a0bcec124ab63b2b1224e889003188741d2aa78305ce50bb753ac"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "powells.com",
+                "www.powells.com"
+            ]
+        },
+        {
+            "rule": "hawksearch\\.com\\/api\\/v2\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9b2c0185d62926132aa8207a931e56e112994b07c392922f97bd63f58a6e69d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soletrader.co.uk",
+                "www.soletraderoutlet.co.uk"
+            ]
+        },
+        {
+            "rule": "hawksearch\\.com\\/api\\/v2\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "searchapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soletrader.co.uk",
+                "www.soletraderoutlet.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000409,
+    "cookies": 0.0000749,
     "types": {
-        "Script": 6,
-        "Preflight": 6,
-        "XHR": 6,
-        "Stylesheet": 11,
+        "Script": 10,
+        "Preflight": 10,
+        "XHR": 10,
+        "Stylesheet": 16,
         "Image": 2
     },
     "nameservers": [

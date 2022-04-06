@@ -8,9 +8,15 @@
     "sites": 18,
     "subdomains": [
         "scripts",
+        "brastemp",
         "laas"
     ],
-    "cnames": [],
+    "cnames": [
+        {
+            "original": "busca.brastemp.com.br",
+            "resolved": "brastemp.neemu.com"
+        }
+    ],
     "fingerprinting": 1,
     "resources": [
         {
@@ -154,49 +160,57 @@
             ]
         },
         {
-            "rule": "neemu\\.com\\/drogariaaraujo\\/neemu_plugin\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "scripts"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "5beca8106f47c2af24006ef16e766d656b43c890e2a5b43ebfb7feee32ced5b2"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "araujo.com.br",
-                "www.araujo.com.br"
-            ]
-        },
-        {
-            "rule": "neemu\\.com\\/drogariaaraujo\\/neemu-autocomplete\\.css",
-            "cookies": 0,
+            "rule": "neemu\\.com\\/manage_cookie\\.php",
+            "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "scripts"
+                "brastemp"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "d256cc0ccec68dda48060b5956a751c9273b9df0caceed752e9e596185386ae3"
+            "cnames": [
+                {
+                    "original": "busca.brastemp.com.br",
+                    "resolved": "brastemp.neemu.com"
+                }
             ],
-            "type": "Stylesheet",
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "araujo.com.br",
-                "www.araujo.com.br"
+                "brastemp.com.br",
+                "www.brastemp.com.br"
+            ]
+        },
+        {
+            "rule": "neemu\\.com\\/manage_cookie\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "brastemp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "busca.brastemp.com.br",
+                    "resolved": "brastemp.neemu.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brastemp.com.br",
+                "www.brastemp.com.br"
             ]
         },
         {
@@ -216,11 +230,57 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "neemu_sid": 0.000013621009044350005
+                "neemu_sid": 0.000013612757876682026
             },
             "exampleSites": [
                 "cec.com.br",
                 "www.cec.com.br"
+            ]
+        },
+        {
+            "rule": "neemu\\.com\\/cobasi\\/neemu_plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1087a57ebef1dccecd314a99db4b8c206a457eaad038b68cf63820fb577daa19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cobasi.com.br",
+                "www.cobasi.com.br"
+            ]
+        },
+        {
+            "rule": "neemu\\.com\\/cobasi\\/neemu-autocomplete\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c125b5bbab8e0f66af00e7bb5a7bebfb21d3b3155c048b713f5c334b5cd99c5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cobasi.com.br",
+                "www.cobasi.com.br"
             ]
         },
         {
@@ -318,10 +378,12 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000136,
     "types": {
         "Script": 15,
-        "Stylesheet": 13
+        "Stylesheet": 13,
+        "Fetch": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-339.awsdns-42.com",

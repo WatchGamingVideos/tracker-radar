@@ -7,7 +7,10 @@
     "prevalence": 0.000109,
     "sites": 16,
     "subdomains": [
-        "static"
+        "static",
+        "api",
+        "dialog",
+        "www"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -20,12 +23,12 @@
                 "static"
             ],
             "apis": {
-                "window.localStorage": 8,
-                "Navigator.prototype.product": 8,
-                "Navigator.prototype.userAgent": 8
+                "window.localStorage": 7,
+                "Navigator.prototype.product": 7,
+                "Navigator.prototype.userAgent": 7
             },
-            "sites": 8,
-            "prevalence": 0.0000545,
+            "sites": 7,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "655e771c896a822c849254dff7e95e62279be9ae862414eec40bd7ff1018f331"
@@ -37,7 +40,6 @@
                 "purdue.edu",
                 "engineering.purdue.edu",
                 "ineosgrenadier.com",
-                "www.bostik.com",
                 "www.coventgarden.london",
                 "www.insead.edu",
                 "www.purdue.edu",
@@ -67,54 +69,6 @@
             ]
         },
         {
-            "rule": "filestackapi\\.com\\/picker\\/1\\.23\\.0\\/picker\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 2,
-                "Event.prototype.timeStamp": 2,
-                "window.sessionStorage": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "3ecb04bd89bf63d32c788421289b939e0f473756707166d5387343ad5b612f89"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nzherald.co.nz",
-                "www.legacy.com"
-            ]
-        },
-        {
-            "rule": "filestackapi\\.com\\/picker\\/1\\.23\\.0\\/main\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "static"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "48e4351fd18738e0a07b609fd3b89764b187fb090a36ecf156f8dc53aa12cf9d"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "nzherald.co.nz",
-                "www.legacy.com"
-            ]
-        },
-        {
             "rule": "filestackapi\\.com\\/v3\\/filestack\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -122,10 +76,10 @@
                 "static"
             ],
             "apis": {
-                "Navigator.prototype.userAgent": 2
+                "Navigator.prototype.userAgent": 3
             },
-            "sites": 2,
-            "prevalence": 0.0000136,
+            "sites": 3,
+            "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
                 "f1bf8dac3f25110d991fa77fc2668d67f0f88e89771a539ee50db3b4b4d563d4"
@@ -134,17 +88,67 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "get-licensed.co.uk",
+                "devicedeal.com.au",
+                "www.get-licensed.co.uk",
                 "www.slumbersearch.com"
+            ]
+        },
+        {
+            "rule": "filestackapi\\.com\\/filestack\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9fd58f081ef4b4904172eca648ccb15b0215e5a263f05da7694e43202cb0ec99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "photocrowd.com",
+                "www.photocrowd.com"
+            ]
+        },
+        {
+            "rule": "filestackapi\\.com\\/dialog\\/comm_iframe\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dialog",
+                "www"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9e16eecb114bb36df2b69c9ce41ca963bed4a810db6bc07f271a076f6f91f495"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "photocrowd.com",
+                "www.photocrowd.com"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0000136,
     "types": {
         "Script": 14,
-        "Stylesheet": 2
+        "Document": 2
     },
     "nameservers": [
         "ns-1035.awsdns-01.org",

@@ -7,13 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000313,
-    "sites": 46,
+    "prevalence": 0.000327,
+    "sites": 48,
     "subdomains": [
         "tok",
+        "cmp",
         "oneline",
-        "ads",
-        "cmp"
+        "ads"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -37,7 +37,6 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "112-nu.nl",
-                "gloednieuw.nl",
                 "hardloopkalender.nl",
                 "promodomo.nl",
                 "synoniemen.net",
@@ -49,12 +48,63 @@
                 "www.encyclo.nl",
                 "www.goalsandglamour.nl",
                 "www.hardnieuws.nl",
+                "www.meemetoranje.nl",
                 "www.mijnwoordenboek.nl",
                 "www.tuxx.nl",
                 "www.vi.nl",
                 "www.voetbalprimeur.be",
                 "www.voetbalprimeur.nl",
                 "www.woorden.org"
+            ]
+        },
+        {
+            "rule": "nextday\\.media\\/cmp\\.custom\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7f926d45ab4275e67c952c7d937183806daeeece21c412213fae8a39a201f4ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geld.nl",
+                "blog.geld.nl",
+                "kennisbank.sparen.nl"
+            ]
+        },
+        {
+            "rule": "nextday\\.media\\/cmp\\.stub\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "82e04271854a15b732be0ce42d1457fe1b1a15e320db5072977bfb869a5a0168"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maxius.nl",
+                "www.biosagenda.nl",
+                "www.hetkontakt.nl"
             ]
         },
         {
@@ -72,7 +122,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "d25cc53bc628676302fa582d24fc6154ae24ee9d34fdcf03fec6ada3ee9260d8"
+                "0afd50792176295f84a8e828917bcd4f54d0748ff2467bdefa6cbf5dafbbcb89"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -90,6 +140,7 @@
                 "ads"
             ],
             "apis": {
+                "window.innerWidth": 2,
                 "Screen.prototype.width": 2
             },
             "sites": 2,
@@ -115,13 +166,15 @@
             ],
             "apis": {
                 "Document.cookie getter": 2,
-                "Date.prototype.getTime": 2
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a039401c435b2b8122a7ac23b6600640330d7b142954d4571540f7860f573211"
+                "7446c020823c1a7d7e53d5f47c62a06c23bc7e9623c464715b758502a54ea93c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -141,6 +194,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -149,7 +204,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "269638ff8b10484ecf187c1326efa566e0916b14ddbe43bb7219b9bf8b6d21d7"
+                "e0ef89c8f4a93e45fb4afaaab75e7dadbda43627746fda796d5ca1d1337dc240"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -157,31 +212,6 @@
             "exampleSites": [
                 "bekendeburen.nl",
                 "www.bekendeburen.nl"
-            ]
-        },
-        {
-            "rule": "nextday\\.media\\/cmp\\.stub\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cmp"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 3
-            },
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "82e04271854a15b732be0ce42d1457fe1b1a15e320db5072977bfb869a5a0168"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "biosagenda.nl",
-                "www.biosagenda.nl",
-                "www.hetkontakt.nl"
             ]
         },
         {
@@ -193,6 +223,7 @@
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 4,
+                "window.innerHeight": 4,
                 "Date.prototype.getTime": 2
             },
             "sites": 4,
@@ -219,6 +250,7 @@
                 "ads"
             ],
             "apis": {
+                "window.innerWidth": 2,
                 "Screen.prototype.width": 2
             },
             "sites": 2,
@@ -249,7 +281,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6a7732b44e9bbf5f3cf102e97bb761aa52eb27e75e8080a84510b6900c1055e1"
+                "f0b86b1801a2fb6ffffa5c5c33b9107805995db1f4512fce52483024f7956a00"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -269,6 +301,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -277,7 +311,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "6d260e235a6eea1df6666e98513f2257c6fba673a8a8d69bdd6d4b8848d1b326"
+                "1a1eaadfca9e0930de42e3af8bed1dcd1da4b2d31c1cea3416727ce335ed79fa"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -285,28 +319,6 @@
             "exampleSites": [
                 "dagelijksestandaard.nl",
                 "www.dagelijksestandaard.nl"
-            ]
-        },
-        {
-            "rule": "nextday\\.media\\/ndm\\/logos\\/gp\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "ads"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "18b95f6f4b62a9bfa41cecc129c2b580e0c5819f4095b5e7110073681fc881bc"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "gpblog.com",
-                "www.gpblog.com"
             ]
         },
         {
@@ -319,6 +331,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -327,7 +341,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8278fcaf8e39a166967cbb16499cdfcca76e609a76818ea10ca19cdedc4da64d"
+                "f0d73bc867bc4e1be1744a8646b304031808185bac688b59cebb85c61e2457a5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -335,6 +349,36 @@
             "exampleSites": [
                 "hardnieuws.nl",
                 "www.hardnieuws.nl"
+            ]
+        },
+        {
+            "rule": "nextday\\.media\\/static\\/tags\\/61c1b1897c9d1fe74f88a201\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "oneline"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f6190348345a2ebbf062ae90afded3969a13f0992b078a122b54ab5a90899431"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meemetoranje.nl",
+                "www.meemetoranje.nl"
             ]
         },
         {
@@ -360,30 +404,6 @@
             ]
         },
         {
-            "rule": "nextday\\.media\\/cmp\\.custom\\.bundle\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cmp"
-            ],
-            "apis": {
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "7f926d45ab4275e67c952c7d937183806daeeece21c412213fae8a39a201f4ea"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "spaarrente.nl",
-                "www.spaarrente.nl"
-            ]
-        },
-        {
             "rule": "nextday\\.media\\/static\\/tags\\/602d3c36437813332bdbc5c4\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -393,6 +413,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -401,7 +423,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "a6dd42f21f3529c78fbb590a970bcc968f7ae0c12e47b8e1cbea8de552252093"
+                "54831210b47c5aca6b3a01db4d36b436850c593f68950d0ffe03a5a5385bdae5"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -426,7 +448,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "426f100eb12037cf18d698600d7a0092caa8c342bbfb8c98d59520242c2214ff"
+                "c0f81f6b785cd28cd6d341ae03ec6b8113b4feb823c4715c0375c8ce8e6b9b1a"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -472,7 +494,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "aa69fb3bf528b8728dccb74e7a74adcf39a4441dbdc89b0c8715f3a406f47f03"
+                "959f0f7be87fa506c3a17b720f18b5e4a4f250ab8d9e86183c504d60987cc8c6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -492,6 +514,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -500,7 +524,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "7db9026a7b363656dc5d9e524ebc02f672a96abc0c07528e92d7455beaaa01f4"
+                "21bfb920f87ee7d2460d09923656636f4ed8fd4deb0dfb45ed791039b46cf62e"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -520,6 +544,8 @@
             "apis": {
                 "Document.cookie getter": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Screen.prototype.width": 2,
                 "Screen.prototype.height": 2
@@ -528,7 +554,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "8fd73449dfb18d1d08a9d40cfa9c70efc0970956c44f7d5052b62d473ece8a7c"
+                "e5c23d90374c39fd8fcc0d22476a5b34d394a7ae4bfd22190b509dc856899acc"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -544,8 +570,8 @@
     "cookies": 0,
     "types": {
         "XHR": 19,
-        "Script": 37,
-        "Image": 4
+        "Script": 40,
+        "Image": 2
     },
     "nameservers": [
         "ns-388.awsdns-48.com",

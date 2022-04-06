@@ -7,12 +7,13 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
         "api",
         "static",
-        "videoads"
+        "videoads",
+        "ads-alpha"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -49,7 +50,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "85ad8e3c07412d88f268a39b75ced6b699b588476d779e5e0a003c2936fffbe1"
+                "855871cebee227ae9717ffc88373de881906e95a4e7f50ba6764ba7cf4881c0f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -60,7 +61,7 @@
             ]
         },
         {
-            "rule": "ewscloud\\.com\\/weathercenter\\/prod\\/static\\/weathericons\\/daytime\\/partlycloudy\\.png",
+            "rule": "ewscloud\\.com\\/weathercenter\\/prod\\/static\\/weathericons\\/daytime\\/cloudy\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -71,7 +72,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ae558cc62a034f10efe1c21034e132ae5b0cbe8263068b911034e99ad94780e6"
+                "61c6394356b359aeb08ff1bf4fa0477ac75daa0a0f551d30065e4deece6e1114"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -102,11 +103,31 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "fox13now.com",
-                "www.wptv.com"
+                "www.kxxv.com"
             ]
         },
         {
-            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.wptv\\/schedules\\/current\\/",
+            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.kxxv\\/schedules\\/current\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kxxv.com",
+                "www.kxxv.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.kxxv\\/schedules\\/current\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -117,13 +138,121 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b90f29a6efedcf64642f6a593654b00744b5b5495eb033c11b2770ad5f39be52"
+                "e9fac2b3a1ea0e58b18a7b1789018fb50cfde97eb2573daa93fee29a971fa147"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "wptv.com",
+                "kxxv.com",
+                "www.kxxv.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/weathercenter\\/prod\\/static\\/weathericons\\/nighttime\\/partlycloudy\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d59d3097b33f7f6a2d10b5c1d50d730db0ba4a470996c9a23dfbb4e9e8bd042c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kxxv.com",
+                "www.kxxv.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/ads",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads-alpha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3410fcdbb066ac9785b3f2533e94583b7d281c06dcd7c119148034bd7ef4ed43"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kxxv.com",
+                "www.wcpo.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.wcpo\\/schedules\\/current\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d34d2d574f9f4364dd2b97303cf5d78caa264a6dd0efc73262d2e3b9ac7ed76c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wcpo.com",
+                "www.wcpo.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.wcpo\\/schedules\\/current\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wcpo.com",
+                "www.wcpo.com"
+            ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/weathercenter\\/prod\\/static\\/weathericons\\/nighttime\\/cloudy\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61c6394356b359aeb08ff1bf4fa0477ac75daa0a0f551d30065e4deece6e1114"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wcpo.com",
                 "www.wptv.com"
             ]
         },
@@ -146,16 +275,39 @@
                 "wptv.com",
                 "www.wptv.com"
             ]
+        },
+        {
+            "rule": "ewscloud\\.com\\/prod\\/scheduler\\/v1\\/com\\.wptv\\/schedules\\/current\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ed9652fd2fb755d71a2ba4a1017e87d802ecdf08afe623fa36b432bd7e03dcd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wptv.com",
+                "www.wptv.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Preflight": 4,
-        "Fetch": 4,
-        "Image": 2,
-        "Script": 2
+        "Preflight": 8,
+        "Fetch": 8,
+        "Image": 6,
+        "Script": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns-523.awsdns-01.net",

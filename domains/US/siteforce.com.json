@@ -4,15 +4,16 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000191,
-    "sites": 28,
+    "prevalence": 0.000197,
+    "sites": 29,
     "subdomains": [
+        "api.appexchange.salesforce.com.00d3u000003xonleaw.live",
         "help.salesforce.com.00d30000000xsfgeas.live",
         "support.okta.com.00da0000000kwydma4.live",
         "help.usa.tommy.com.00d1u000000xmv4uaa.live",
         "www.assistance.bouyguestelecom.fr.00d24000000zs0seas.live",
         "help.calvinklein.com.00d1u000000xmv4uaa.live",
-        "partnerapply.motorolasolutions.com.live",
+        "support.pingidentity.com.00d300000000bldea2.live",
         "advantage.questapartments.com.au.00d28000000ipkoea0.live",
         "community.tastecard.co.uk.00d4j0000002p61uaa.live",
         "authorizeme.roberthalf.com.00dd0000000imubea2.live",
@@ -22,6 +23,10 @@
         {
             "original": "advantage.questapartments.com.au",
             "resolved": "advantage.questapartments.com.au.00d28000000ipkoea0.live.siteforce.com"
+        },
+        {
+            "original": "api.appexchange.salesforce.com",
+            "resolved": "api.appexchange.salesforce.com.00d3u000003xonleaw.live.siteforce.com"
         },
         {
             "original": "authorizeme.roberthalf.com",
@@ -48,12 +53,12 @@
             "resolved": "mit.sparnord.dk.00d0n000000gtiyuay.live.siteforce.com"
         },
         {
-            "original": "partnerapply.motorolasolutions.com",
-            "resolved": "partnerapply.motorolasolutions.com.live.siteforce.com"
-        },
-        {
             "original": "support.okta.com",
             "resolved": "support.okta.com.00da0000000kwydma4.live.siteforce.com"
+        },
+        {
+            "original": "support.pingidentity.com",
+            "resolved": "support.pingidentity.com.00d300000000bldea2.live.siteforce.com"
         },
         {
             "original": "www.assistance.bouyguestelecom.fr",
@@ -62,6 +67,85 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "siteforce\\.com\\/services\\/apexrest\\/v2\\/listings",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.appexchange.salesforce.com.00d3u000003xonleaw.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.appexchange.salesforce.com",
+                    "resolved": "api.appexchange.salesforce.com.00d3u000003xonleaw.live.siteforce.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "appexchange.salesforce.com"
+            ]
+        },
+        {
+            "rule": "siteforce\\.com\\/analytics-collector",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.appexchange.salesforce.com.00d3u000003xonleaw.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.appexchange.salesforce.com",
+                    "resolved": "api.appexchange.salesforce.com.00d3u000003xonleaw.live.siteforce.com"
+                }
+            ],
+            "responseHashes": [
+                "aee408847d35e44e99430f0979c3357b85fe8dbb4535a494301198adbee85f27"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "appexchange.salesforce.com"
+            ]
+        },
+        {
+            "rule": "siteforce\\.com\\/recommendations\\/v1\\/analytics-events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.appexchange.salesforce.com.00d3u000003xonleaw.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.appexchange.salesforce.com",
+                    "resolved": "api.appexchange.salesforce.com.00d3u000003xonleaw.live.siteforce.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "appexchange.salesforce.com"
+            ]
+        },
         {
             "rule": "siteforce\\.com\\/s\\/login\\/",
             "cookies": 0.0000136,
@@ -104,7 +188,7 @@
                 }
             ],
             "responseHashes": [
-                "8be5db6f123565a07d388b0bf86121dc2f5d9687c70a4bfcdf51043f89ca6fa6"
+                "19cc383bb91f358eaaa0caadb70f7a18e9fbdeb2ac9ef89826b758af89742a5f"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -116,7 +200,7 @@
         },
         {
             "rule": "siteforce\\.com\\/resource\\/TH_Chat\\/js\\/bot-prod\\.js",
-            "cookies": 0.0000136,
+            "cookies": 0.00000681,
             "fingerprinting": 0,
             "subdomains": [
                 "help.usa.tommy.com.00d1u000000xmv4uaa.live"
@@ -131,7 +215,7 @@
                 }
             ],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "d358f9a38f9f8483f1366171b7bc48411e20af1e24d760e14bf3a051efb27915"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -303,7 +387,7 @@
         },
         {
             "rule": "siteforce\\.com\\/\\/resource\\/CK_Chat\\/js\\/digitalAssistant-botLoader\\.js",
-            "cookies": 0.00000681,
+            "cookies": 0.0000136,
             "fingerprinting": 1,
             "subdomains": [
                 "help.calvinklein.com.00d1u000000xmv4uaa.live"
@@ -356,84 +440,30 @@
             ]
         },
         {
-            "rule": "siteforce\\.com\\/resource\\/LiveAgentEnglishBotCss",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "partnerapply.motorolasolutions.com.live"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "partnerapply.motorolasolutions.com",
-                    "resolved": "partnerapply.motorolasolutions.com.live.siteforce.com"
-                }
-            ],
-            "responseHashes": [
-                "ee9e1e4db898df90b296ff959438b8afae14abf88308bcc9920977ba137b7195"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "motorolasolutions.com",
-                "www.motorolasolutions.com"
-            ]
-        },
-        {
-            "rule": "siteforce\\.com\\/resource\\/LiveAgentEnglishBotJs",
-            "cookies": 0.0000136,
-            "fingerprinting": 1,
-            "subdomains": [
-                "partnerapply.motorolasolutions.com.live"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [
-                {
-                    "original": "partnerapply.motorolasolutions.com",
-                    "resolved": "partnerapply.motorolasolutions.com.live.siteforce.com"
-                }
-            ],
-            "responseHashes": [
-                "d925404dd361925db96fffe65456c6bcaaa3d0b63aaa10c44947a6833991cbe3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "motorolasolutions.com",
-                "www.motorolasolutions.com"
-            ]
-        },
-        {
-            "rule": "siteforce\\.com\\/services\\/apexrest\\/einsteinconfigurl",
+            "rule": "siteforce\\.com\\/apex\\/SiteLogin",
             "cookies": 0.0000136,
             "fingerprinting": 0,
             "subdomains": [
-                "partnerapply.motorolasolutions.com.live"
+                "support.pingidentity.com.00d300000000bldea2.live"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [
                 {
-                    "original": "partnerapply.motorolasolutions.com",
-                    "resolved": "partnerapply.motorolasolutions.com.live.siteforce.com"
+                    "original": "support.pingidentity.com",
+                    "resolved": "support.pingidentity.com.00d300000000bldea2.live.siteforce.com"
                 }
             ],
             "responseHashes": [
-                "e0af74dadd05195a170abc721d1e74389543b1d09d490d0beba167f991f1e114"
+                "edbb092b9e621d6b47ee59bce02c1ceea706c6cdf30ed20f7818182d08530b60"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "motorolasolutions.com",
-                "www.motorolasolutions.com"
+                "pingidentity.com",
+                "www.pingidentity.com"
             ]
         },
         {
@@ -531,7 +561,7 @@
             "responseHashes": [
                 "c8859aa22567bd093d53f4eba19804d1b23c73c0ac8176764879606e959299e1",
                 "16d49ced45c65ac6b3832344905cef48fed6e9ba9cb0874542df512bc4978f52",
-                "f5276f6d052c8a588f94414695165078a0f73f723ac0c65e7109fe4830e42bd5"
+                "091f3358e20ce158725f67ccbef6183d222b243986e5f04b2b181c26fc9799a6"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -680,7 +710,7 @@
         },
         {
             "rule": "siteforce\\.com\\/resource\\/styling_chat_sparnorddk",
-            "cookies": 0.00000681,
+            "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "mit.sparnord.dk.00d0n000000gtiyuay.live"
@@ -735,12 +765,13 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.000163,
+    "cookies": 0.000177,
     "types": {
+        "XHR": 10,
+        "Ping": 4,
         "Document": 9,
-        "XHR": 8,
-        "Script": 21,
-        "Stylesheet": 10,
+        "Script": 19,
+        "Stylesheet": 8,
         "Image": 2,
         "Font": 2
     },

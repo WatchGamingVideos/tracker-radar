@@ -8,7 +8,8 @@
     "sites": 12,
     "subdomains": [
         "cdn",
-        "nxtc"
+        "nxtc",
+        "apps"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -22,7 +23,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
                 "9422b572c137d294f7e78074e382e7a2f4a42d097329dd43714623bd82e39745"
@@ -93,7 +94,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [],
             "type": "Preflight",
@@ -118,15 +119,11 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.0000477,
+            "prevalence": 0.0000476,
             "cnames": [],
             "responseHashes": [
-                "9d06e9a8ab090d7b1658fadd4194cab7e5184e7c61abb52b275b4711ef354726",
-                "6161f053074727312c455fba924b1aa4cb01bd94fe30e5e82da33ccf9abac2b3",
-                "67c398ce8e7ced88ce9f9caba4601039f408804abd58b8d8adf82f58e9ed155c",
-                "3bc20585add26a39568f929dc6573a28d8483b41138cb8df8d42bf803031f1f7",
-                "9fc003761abb334aa8a8d9fc6f723099ab7d8fc825222bba2d742da75e3f12a7",
-                "9a1e4e14033161152340507aa740b271df50bf557fcb1201cc2fcc7fb1626bfa"
+                "94b4fd8e32a9a2e239f4ae12c76875de8ed95f62eba7c145fabfd380c91bc8ca",
+                "dd4e1869300559c366271fa09fd33871c28594068b303af4cebaef27132c575a"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -150,7 +147,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "f731c9fff2f65bf93aef13ec23d6437f0cc96a97729f685b22586976b4dd4681"
@@ -176,7 +173,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.0000409,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "6c73fa2b35843c1f33e7c8e8d46411d3dcf7acd91b585ed831bfb72a61fd73e5"
@@ -272,6 +269,77 @@
             "cnames": [],
             "responseHashes": [
                 "5443140126ff9aa5e1665270590784c0d96f259f107482029a0f101c32c84721"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kristianstadsbladet.se",
+                "www.kristianstadsbladet.se"
+            ]
+        },
+        {
+            "rule": "gotamedia\\.se\\/rss2html\\/rss2html\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.connection": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7b9a845882ff0cf9f45462e61daadb85354a1a105f0da631a498b1db08f0549"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kristianstadsbladet.se",
+                "www.kristianstadsbladet.se"
+            ]
+        },
+        {
+            "rule": "gotamedia\\.se\\/rss2html\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "58b3d228080b5bcacc53317b0384687de10f7755f3b55a47a13952c2874f5afa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kristianstadsbladet.se",
+                "www.kristianstadsbladet.se"
+            ]
+        },
+        {
+            "rule": "gotamedia\\.se\\/annons\\/kb\\/rsspuffar\\/kristianstadskommun\\/img\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dc8c5bf00f31b236fb6c840c70e5eadecad72269209c27e74d7ecbd834de76d0"
             ],
             "type": "Image",
             "firstPartyCookies": {},
@@ -418,14 +486,16 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Image": 43,
+        "Image": 45,
         "Preflight": 7,
-        "Fetch": 7
+        "Fetch": 7,
+        "Document": 2,
+        "Stylesheet": 2
     },
     "nameservers": [
-        "ns1.netnames.net",
-        "ns2.netnames.net",
-        "ns5.netnames.net",
-        "ns6.netnames.net"
+        "a.ns14.net",
+        "d.ns14.net",
+        "b.ns14.net",
+        "c.ns14.net"
     ]
 }

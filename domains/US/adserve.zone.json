@@ -4,12 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.0000613,
+    "sites": 9,
     "subdomains": [
         "lab3",
+        "lab3-ibv",
         "dynamic",
-        "cdn3"
+        "cdn3",
+        "video3"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -19,26 +21,35 @@
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "lab3"
+                "lab3",
+                "lab3-ibv"
             ],
             "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.userAgent": 2
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4
             },
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
-                "a1f4efafe5a888483ed112b7a4f5e4819e78b0fb28256123bb2b4a29e373c0c5",
-                "75890e8d0a6146fd25bf7d707fa44b24283393f6774b130749b1eac262c58fc4"
+                "71ac65e496911a727aebe3cefbc581957c1f94c9dd7a4d0bd48e573b309d0253",
+                "1269b2097e5b316c6597238d8778510778e7daa938ab49711a25495996da0bb0",
+                "3474de27f2b6b13a74247b564e077a7306ea394e39dba37100f0282a43a113b6",
+                "cf41c5ca15ed6a5ad3f4a01bea2d771d778aea390ac9ac042820ad7f364ab95c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000006806378938341013
+            },
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.morgenbladet.no",
+                "www.vi.no"
             ]
         },
         {
@@ -49,19 +60,23 @@
                 "lab3"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
+            "sites": 5,
+            "prevalence": 0.000034,
             "cnames": [],
             "responseHashes": [
                 "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000006806378938341013
+            },
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.morgenbladet.no",
+                "www.vi.no"
             ]
         },
         {
@@ -72,24 +87,272 @@
                 "lab3"
             ],
             "apis": {},
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "0591a44739270207f3a071cdddb009738e343f947845dbc4706097d9469dfbd8",
+                "0764ee69ceab49bef7e926fd7e2ec1e282bc8721aa018780964aa3bab825c541",
+                "a66ed6eff2436c10d85a89f6f1d1c405debb32fe0994e93f6d37e216e321b233",
+                "db97bbc98387dc7f65e4a5bad89efd51919dfeac17a92e4856e1cb859f5a9af8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000006806378938341013
+            },
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.morgenbladet.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/ydcfpuyhjmwuend\\/ezowmhtofjpcjln\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "a354364db0ac260d4e78772731f380b8f2489320bf0a293b847392aded8ea9fe",
-                "e2e1c8ff1b005c994c2aa8a3d0c9287f3495927c728efb48e2f178ab2e1fe5ea"
+                "5f2ed153a9ff287b3ae9a2f4894095d801dc86b8c26a7fd25bad093eae6b3f86"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
+                "sol.no",
+                "www.dagbladet.no",
+                "www.vi.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/banners\\/cmdkxhmywvzwfyr\\/lyoehvqkvohemmf\\/index\\.html",
+            "rule": "adserve\\.zone\\/js\\/adserve_enabler\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "8e49f9aff1df2915820315fc7c58634849ba0a5419c059eec3f5a884b77894b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.morgenbladet.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/static\\/443\\/TV2_Play_to_kort_script",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dynamic"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "38d8ca0021f826c04ef2712859bd06874cbb07aa9ed223916c0d03ed1a0e60ec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/ydcfpuyhjmwuend\\/ezowmhtofjpcjln\\/images\\/bg-1000x300_980x300_360x115_980x300\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ab203cf18d33c6a9ccce42cb84ccc3674d86c50c1e9f4001ed46d9b2ccd8b35f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/ydcfpuyhjmwuend\\/ezowmhtofjpcjln\\/images\\/tt_980x300\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "39f394935984f25f3419dd5a48fc93b7f770ced09877ee684b53baa16a8f5fa1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansCondensed-Regular\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d04c9fe7cfd261412739f7631fb9f1125515f9eddd8af1a021e6fb2fd25352ce"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansDisplay-Regular\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "6b31fa83bcfe8ba7ad461c5871f6503529aa4ec834c50d37201e16978abaf893"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansDisplay-SemiBold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "03048b794914b00e3a41a33760850caa750f19115b37393d2c2c6fc9762db5a2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/views",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynamic"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/database\\/443\\/TV2_Play_to_kort",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynamic"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "de1825c43d5939f706199e4c5c44cd0d37e938dd5d6e78548b617ed310d100d2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sol.no",
+                "www.dagbladet.no",
+                "www.lommelegen.no",
+                "www.vi.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/nbjcvwrwxgltjlj\\/gwotdsposmmbbda\\/index\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -100,18 +363,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "32d1bcd8bf6f56d8435df1314e109ee71def2457a200da272650125ef9259385"
+                "3e5466f130ffd6408e505bedef54674e78dd685bf845f3bbcf320759459d57d8"
             ],
             "type": "Document",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/banners\\/cmdkxhmywvzwfyr\\/lyoehvqkvohemmf\\/css\\/style\\.css",
+            "rule": "adserve\\.zone\\/banners\\/nbjcvwrwxgltjlj\\/gwotdsposmmbbda\\/css\\/style\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -128,35 +391,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/js\\/adserve_enabler\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "lab3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "842f68841d190d0c0cf8350d5d63f659e61280da4f2f3c73289406a18634bba1"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
-            ]
-        },
-        {
-            "rule": "adserve\\.zone\\/db\\/598\\/script",
+            "rule": "adserve\\.zone\\/static\\/440\\/TV2_Play_script",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
@@ -169,18 +409,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "4fa48d8cc41dfba78229be4c66d65c570ea427d7a7dbf0112bc23d016aa6da6e"
+                "2998610ac5f5f755259d629d16d7c2bd16b91bd19eb17ce1b7826c13739a47f6"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/banners\\/cmdkxhmywvzwfyr\\/lyoehvqkvohemmf\\/images\\/bg-1000x300_980x300_360x115_980x300\\.jpg",
+            "rule": "adserve\\.zone\\/banners\\/nbjcvwrwxgltjlj\\/gwotdsposmmbbda\\/images\\/bg-1000x300-980x300-360x115_980x300\\.jpg",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -191,18 +431,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "2cec44f17436621ea268905bcae9c7cec8e808265e07dfe9371ccc320b6c4372"
+                "812f8aa676127d8456cfe7fbd907678bc295aac85e4a05b3a9a7b2839354b959"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/banners\\/cmdkxhmywvzwfyr\\/lyoehvqkvohemmf\\/images\\/NF_logo_980x300\\.png",
+            "rule": "adserve\\.zone\\/banners\\/nbjcvwrwxgltjlj\\/gwotdsposmmbbda\\/images\\/tt_980x300\\.png",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -213,87 +453,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "948429f371ea41d22f04c0a4e61a1e0ce08c00bac2069bf83573b64f21f2ac15"
+                "f94667a8b1d459fb14844001a221a963e8034453961bdf3fbf163b98711259c3"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansCondensed-Regular\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "d04c9fe7cfd261412739f7631fb9f1125515f9eddd8af1a021e6fb2fd25352ce"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
-            ]
-        },
-        {
-            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansDisplay-Regular\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "6b31fa83bcfe8ba7ad461c5871f6503529aa4ec834c50d37201e16978abaf893"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
-            ]
-        },
-        {
-            "rule": "adserve\\.zone\\/lab3\\/365\\/fonts_new\\/TV2SansDisplay-SemiBold\\.woff",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn3"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "03048b794914b00e3a41a33760850caa750f19115b37393d2c2c6fc9762db5a2"
-            ],
-            "type": "Font",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no",
-                "www.tv2.no"
-            ]
-        },
-        {
-            "rule": "adserve\\.zone\\/views",
+            "rule": "adserve\\.zone\\/database\\/440\\/TV2_Play_database",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -304,40 +475,18 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "76693b3a13db35c558fefa7ba164f3b6969404db7395ca50ac18c2aa312fd911"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
             ]
         },
         {
-            "rule": "adserve\\.zone\\/database\\/598\\/TV2_Play_database",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "dynamic"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "0fe4a9029841258dc548654547b715177c4579a9ee93b2675a8333344d4dfde2"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
-            ]
-        },
-        {
-            "rule": "adserve\\.zone\\/banners\\/cmdkxhmywvzwfyr\\/lyoehvqkvohemmf\\/logo\\.html",
+            "rule": "adserve\\.zone\\/banners\\/nbjcvwrwxgltjlj\\/gwotdsposmmbbda\\/logo\\.html",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -354,25 +503,270 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "elbil24.no",
-                "www.elbil24.no"
+                "sol.no",
+                "www.lommelegen.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49677604572ae4d3fa3e89ee8f21fccb933c724994374f94ad85c83349df6791"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "get_top_level_domain_cookie": 0.000013612757876682026
+            },
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/css\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d81cd1224b380c7a735adfc3806a05367beb8da8254f0f6b76639cce27f3421c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/images\\/posterimage\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02e98aab16e8a3fa6d9d58690551038a874c3fe87008384131e572ee73d8f8f6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/js\\/awx_script\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d6b2b17c021462d97c6e76bd030f1d00dddf7c593837b4a519a34d1d499358a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/static\\/642\\/dynamic_script",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dynamic"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2327527dd32f04d7c0adef74381bb381ae9c7158caa2131ef70baa5f2c8dcea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/images\\/bg\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5998114db192d824ed90532854b05073a258a5336d557a5f8207fcb60cb69c16"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/banners\\/btmuwynakmdrfxx\\/qalxaufvhzcnuhx\\/images\\/sprites\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lab3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac351602459a6a0ec43765395d1f87eb5116dbf7aa9dd8f093b61354b341ff06"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/642\\/GaramondPremrPro-Smbd\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "259a852bbec9714981032b493082af44178c5e1c3b3eb53ae1488ed02f851dae"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/642\\/GaramondPremrPro-Bd\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "17f84921e911da8e967942e3b0aa8e6b8a284b32d2b4a5a4c8ce46ec2963d3d2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/database\\/642\\/dynamic_db",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynamic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "869828de955c4fb84dd4712e50b42ee0deda633a81e997c028e6d5f07a1b715e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
+            ]
+        },
+        {
+            "rule": "adserve\\.zone\\/lab3\\/642\\/northman_980x300\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video3"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "morgenbladet.no",
+                "www.morgenbladet.no"
             ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0,
     "types": {
-        "Script": 8,
-        "XHR": 9,
-        "Document": 5,
-        "Stylesheet": 2,
-        "Image": 4,
-        "Font": 9
+        "Script": 20,
+        "XHR": 19,
+        "Document": 12,
+        "Image": 16,
+        "Font": 16,
+        "Stylesheet": 4,
+        "Media": 2
     },
     "nameservers": [
-        "dns2.itpays.net",
+        "dns1.itpays.net",
         "dns3.itpays.net",
-        "dns1.itpays.net"
+        "dns2.itpays.net"
     ]
 }

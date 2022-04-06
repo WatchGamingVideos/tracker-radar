@@ -4,22 +4,44 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000545,
+    "sites": 8,
     "subdomains": [
-        "sstats",
         "www",
-        "download",
+        "sstats",
         "starget",
         "checkout-sdk",
+        "download",
         "checkout-service"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
         {
+            "rule": "bitdefender\\.com\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "porn93.cc",
+                "laakarinkirja.info"
+            ]
+        },
+        {
             "rule": "bitdefender\\.com\\/id",
-            "cookies": 0.0000204,
+            "cookies": 0.0000272,
             "fingerprinting": 0,
             "subdomains": [
                 "sstats"
@@ -29,16 +51,72 @@
             "prevalence": 0.0000272,
             "cnames": [],
             "responseHashes": [
-                "19bbac874a0fa6168860b1d5e7c2c191dd80a60fdee72f217a8aa414909eb842",
-                "5e23b76b9ddc1a18962be312939eae64fd1dfff914f219d00912928b2af04bcc"
+                "a211600d1a46d97f10a87ecd6f26d911ad31c5706ace0308294c3eeca0655637",
+                "cfd82cc28096826ef1c5ff04e74de6567d157a5a87a6c3f60cdbecacc9c0ca85",
+                "43662227d24b38505adfb36b23c2d8126fcfdb508d942241b7e0287e34915039"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
-                "www.bitdefender.com.au",
+                "bitdefender.co.uk",
                 "www.bitdefender.co.uk",
+                "www.bitdefender.com.au",
+                "www.bitdefender.nl"
+            ]
+        },
+        {
+            "rule": "bitdefender\\.com\\/rest\\/v1\\/delivery",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "starget"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "51e6a899e9a2945bd089e65fd9643d8d587d94c801b22af3845306789cfd7cfc",
+                "21084b3313be947468a531a99be6d5966d264df3825fcb2081cc65fb2ad1d3ca",
+                "028a2f488c3fe58bc7a4d860ab9cce7a5296d12973a98e4b12095cb99350a9c6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitdefender.co.uk",
+                "www.bitdefender.co.uk",
+                "www.bitdefender.com.au",
+                "www.bitdefender.nl"
+            ]
+        },
+        {
+            "rule": "bitdefender\\.com\\/latest\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "checkout-sdk"
+            ],
+            "apis": {
+                "console.memory": 2,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "91eb14d95dfadfff903788fceb06caa755296612437a88edcffa3446f5d07831"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -67,19 +145,19 @@
                 "tagit_session": {
                     "ttl": null,
                     "length": 1,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 },
                 "tagit_params": {
                     "ttl": null,
                     "length": 24,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 0.5
                 }
             },
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -101,7 +179,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -123,7 +201,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -145,12 +223,12 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
         {
-            "rule": "bitdefender\\.com\\/resources\\/themes\\/draco\\/minimize\\/lite_v2\\/csslite_v2\\.v942\\.min\\.css",
+            "rule": "bitdefender\\.com\\/resources\\/themes\\/draco\\/minimize\\/lite_v2\\/csslite_v2\\.v949\\.min\\.css",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -161,31 +239,30 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "037c9dead15da6a7cf3aa26f7aac6b3ab15644a29dd58e4ef28b4825ccb856c3"
+                "b8fbe261347e1515113ff965e91e44ded1a1e9f25ae26211716f33116d16d4b6"
             ],
             "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
         {
-            "rule": "bitdefender\\.com\\/resources\\/themes\\/draco\\/minimize\\/lite_v2\\/jslite_v2\\.v1183\\.min\\.js",
-            "cookies": 0.00000681,
-            "fingerprinting": 2,
+            "rule": "bitdefender\\.com\\/resources\\/themes\\/draco\\/minimize\\/lite_v2\\/jslite_v2\\.v1220\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "download"
             ],
             "apis": {
                 "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 1,
                 "Navigator.prototype.vendor": 2,
                 "Navigator.prototype.platform": 2,
                 "Document.cookie getter": 2,
-                "Navigator.prototype.language": 2,
-                "Date.prototype.getTime": 1,
-                "Document.cookie setter": 1
+                "Navigator.prototype.language": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -194,17 +271,10 @@
                 "59cea3a88f0403d868b309426d7bdbda8feea6b4caa712330294ac479cf29a03"
             ],
             "type": "Script",
-            "firstPartyCookies": {
-                "bitdefenderLoaded": {
-                    "ttl": 7776002,
-                    "length": 1,
-                    "prevalence": 0.0000068105045221750025,
-                    "uniqueness": 1
-                }
-            },
+            "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -226,7 +296,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -248,7 +318,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -270,7 +340,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "bitdefender.com.au",
+                "bitdefender.nl",
                 "www.bitdefender.nl"
             ]
         },
@@ -289,103 +359,6 @@
                 "f62f74dba6c0c1998bbf679520b19bccad74efe33c4ad2d10d918d9554baa550"
             ],
             "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bitdefender.com.au",
-                "www.bitdefender.nl"
-            ]
-        },
-        {
-            "rule": "bitdefender\\.com\\/rest\\/v1\\/delivery",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "starget"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.0000204,
-            "cnames": [],
-            "responseHashes": [
-                "c38d4a038c9254b2837274b4d28e3916474867b455a9a304555bea9b5370964e",
-                "dfce39b07ce94216f0a4b2050fc9ff67f7afe1ab0d367d8795484e5bdc4fd03f"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bitdefender.com.au",
-                "www.bitdefender.co.uk",
-                "www.bitdefender.nl"
-            ]
-        },
-        {
-            "rule": "bitdefender\\.com\\/resources\\/themes\\/draco\\/images\\/lite_v2\\/awards\\/AV_comparatives_2021_osp\\.png",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "download"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "18953d4e6f6ef7dfe45b65aea21c3afbdae7a53441ec6d93d9db5d8f30f95ae7"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bitdefender.com.au",
-                "www.bitdefender.nl"
-            ]
-        },
-        {
-            "rule": "bitdefender\\.com\\/latest\\/sdk\\.js",
-            "cookies": 0,
-            "fingerprinting": 2,
-            "subdomains": [
-                "checkout-sdk"
-            ],
-            "apis": {
-                "console.memory": 2,
-                "window.localStorage": 1,
-                "Date.prototype.getTime": 1,
-                "Navigator.prototype.language": 1,
-                "Navigator.prototype.userAgent": 1,
-                "Navigator.prototype.platform": 1
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cc0bb920e8e6c18d9c91cc8836ce00c60ec37fb9379d25c61c230bf601dc71f9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bitdefender.nl",
-                "www.bitdefender.nl"
-            ]
-        },
-        {
-            "rule": "bitdefender\\.com\\/v1\\/campaign",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "checkout-service"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "1757438c8812d23603b2132f8f1c8e1c083941157a704adb643ea2bb66aa3c64"
-            ],
-            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
@@ -414,6 +387,28 @@
             ]
         },
         {
+            "rule": "bitdefender\\.com\\/v1\\/campaign",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "checkout-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a0721edb93a47a5bd1c64eaf3d4a1a385bd082cf524f3bf71a4f19fb585b7cc9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bitdefender.nl",
+                "www.bitdefender.nl"
+            ]
+        },
+        {
             "rule": "bitdefender\\.com\\/v1\\/product\\/variations\\/price",
             "cookies": 0,
             "fingerprinting": 0,
@@ -425,7 +420,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "5527d7262fd3e5ea17a9d4a308d1c23e4fd32abce06e18c7bf796156d45dea30"
+                "74babbabc752618f6a968793dd618c586e0a444549455d906062db1e5b713b19"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -458,18 +453,18 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.0000272,
+    "cookies": 0.0000545,
     "types": {
-        "XHR": 11,
-        "Script": 10,
-        "Image": 12,
+        "Script": 12,
+        "XHR": 12,
+        "Image": 10,
         "Stylesheet": 2,
         "Preflight": 4
     },
     "nameservers": [
-        "pdns210.ultradns.com",
         "pdns210.ultradns.net",
-        "pdns210.ultradns.biz",
-        "pdns210.ultradns.org"
+        "pdns210.ultradns.com",
+        "pdns210.ultradns.org",
+        "pdns210.ultradns.biz"
     ]
 }

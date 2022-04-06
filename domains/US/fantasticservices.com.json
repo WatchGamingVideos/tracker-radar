@@ -4,14 +4,64 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000204,
-    "sites": 3,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
-        "obfa"
+        "obfa",
+        "accounts"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "fantasticservices\\.com\\/client\\/client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "obfa"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "21118c8a58a81f2d02e549064316bf318ec16e22b20013d66915ae5807f8446f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fantasticgardeners.co.uk",
+                "blog.fantasticgardeners.co.uk",
+                "www.fantasticpestcontrol.co.uk"
+            ]
+        },
+        {
+            "rule": "fantasticservices\\.com\\/\\/ext\\/get-auth",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "accounts"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d495ef85f1721f2c33c09bc75c9b4f6dc6e25e12f9b5343c18b59478c0812b18"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fantasticgardeners.co.uk",
+                "blog.fantasticgardeners.co.uk",
+                "www.fantasticpestcontrol.co.uk"
+            ]
+        },
         {
             "rule": "fantasticservices\\.com\\/client\\/client\\.min\\.js",
             "cookies": 0,
@@ -24,7 +74,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0e53863ffeb87ec3d5d92c6017699506bb481ea0bdf12932de1c3557732e4cd6"
+                "21118c8a58a81f2d02e549064316bf318ec16e22b20013d66915ae5807f8446f"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -37,8 +87,10 @@
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0.00000681,
+    "cookies": 0.0000204,
     "types": {
+        "Script": 3,
+        "Document": 3,
         "Fetch": 2
     },
     "nameservers": [

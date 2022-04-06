@@ -4,14 +4,90 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
-    "sites": 6,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
+        "cdn28.muratordom",
+        "cdn.galleries",
         "cdn.files"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "smcloud\\.net\\/t\\/scripts\\/zpr_basic\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn28.muratordom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "97bc683005c77c4b550611919c6a07b2b551d99fcf404c86ce96ee659ee6a5c9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "forum.muratordom.pl"
+            ]
+        },
+        {
+            "rule": "smcloud\\.net\\/t\\/media\\/cookie_info\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.galleries"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "forum.muratordom.pl"
+            ]
+        },
+        {
+            "rule": "smcloud\\.net\\/t\\/timesa\\.bundle\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.files"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.product": 5,
+                "window.localStorage": 5,
+                "window.innerWidth": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000034,
+            "cnames": [],
+            "responseHashes": [
+                "24cb0db0fc52b22e9edd20e88be88fbc51ff3a154175c3e73f6cee6bd5ff27c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "forum.muratordom.pl",
+                "www.eska.pl",
+                "www.poradnikzdrowie.pl",
+                "www.se.pl"
+            ]
+        },
         {
             "rule": "smcloud\\.net\\/t\\/video_7\\.11\\.4\\.min\\.js",
             "cookies": 0,
@@ -37,7 +113,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eska.pl",
+                "muratordom.pl",
                 "www.eska.pl",
                 "www.poradnikzdrowie.pl",
                 "www.se.pl"
@@ -53,7 +129,7 @@
             "apis": {
                 "Navigator.prototype.product": 4,
                 "Navigator.prototype.userAgent": 4,
-                "window.localStorage": 3
+                "window.localStorage": 2
             },
             "sites": 4,
             "prevalence": 0.0000272,
@@ -65,38 +141,54 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "eska.pl",
+                "muratordom.pl",
                 "www.eska.pl",
                 "www.poradnikzdrowie.pl",
                 "www.se.pl"
             ]
         },
         {
-            "rule": "smcloud\\.net\\/t\\/timesa\\.bundle\\.min\\.js",
+            "rule": "smcloud\\.net\\/t\\/video_7\\.11\\.4\\.min\\.css",
             "cookies": 0,
-            "fingerprinting": 1,
+            "fingerprinting": 0,
             "subdomains": [
                 "cdn.files"
             ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.product": 4,
-                "window.localStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "24cb0db0fc52b22e9edd20e88be88fbc51ff3a154175c3e73f6cee6bd5ff27c2"
+                "5da3370ea81bf9fec16d0edc044663f919e8662c07c1d9e1e346c139f3e3aa0d"
             ],
-            "type": "Script",
+            "type": "Stylesheet",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "eska.pl",
-                "www.eska.pl",
-                "www.poradnikzdrowie.pl",
-                "www.se.pl"
+                "www.eska.pl"
+            ]
+        },
+        {
+            "rule": "smcloud\\.net\\/t\\/photos\\/gf-MZ9J-neBB-xtCs_eska-radio\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.galleries"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6aa5c104766c83a468872667d9d31706ecc1cad6b2722ef6167a8257400b9710"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eska.pl",
+                "www.eska.pl"
             ]
         }
     ],
@@ -104,7 +196,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 12
+        "Stylesheet": 4,
+        "Script": 15,
+        "Image": 2
     },
     "nameservers": [
         "dns3.supermedia.pl",

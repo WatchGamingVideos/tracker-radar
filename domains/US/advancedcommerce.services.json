@@ -11,23 +11,26 @@
         "conranshop-1.store-uk1"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "advancedcommerce\\.services\\/graphenehc\\.js",
             "cookies": 0.0000204,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "celticandco-1.store-uk1",
                 "conranshop-1.store-uk1"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
             "sites": 3,
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "9f9d1d1ddfeed2549c08f5e03e000d274f8e4c4da9f77d97fdcaf3f8a3599a4c",
-                "a352c60e3620062102678caaa9e33f1f3d30d815f92136dcc6b9df939bcfa5b3"
+                "6be81f1691e39a93902227f91a5f96b00301a800749853fb557e3712bd9c1391",
+                "c14817461408c582143cb922d7f12e309c54420df958c880fff58b0083069c0c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -37,20 +40,66 @@
                 "www.celticandco.com",
                 "www.conranshop.co.uk"
             ]
+        },
+        {
+            "rule": "advancedcommerce\\.services\\/api\\/js\\/query",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "celticandco-1.store-uk1",
+                "conranshop-1.store-uk1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "celticandco.com",
+                "www.conranshop.co.uk"
+            ]
+        },
+        {
+            "rule": "advancedcommerce\\.services\\/api\\/js\\/query",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "celticandco-1.store-uk1",
+                "conranshop-1.store-uk1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4cdb336398b909828c44dda8fc718be7cb4f970c84bb80f6a323a9d147cdf670"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "celticandco.com",
+                "www.conranshop.co.uk"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0.0000272,
     "types": {
-        "Script": 3
+        "Script": 3,
+        "Preflight": 2,
+        "XHR": 2
     },
     "nameservers": [
         "ns10.dnsmadeeasy.com",
-        "ns11.dnsmadeeasy.com",
         "ns12.dnsmadeeasy.com",
-        "ns13.dnsmadeeasy.com",
         "ns14.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
         "ns15.dnsmadeeasy.com"
     ]
 }

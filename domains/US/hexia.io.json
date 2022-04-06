@@ -4,13 +4,14 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000545,
-    "sites": 8,
+    "prevalence": 0.0000681,
+    "sites": 10,
     "subdomains": [
-        "sdk"
+        "sdk",
+        "cc-cdn"
     ],
     "cnames": [],
-    "fingerprinting": 1,
+    "fingerprinting": 2,
     "resources": [
         {
             "rule": "hexia\\.io\\/js\\/hexia\\.js",
@@ -20,11 +21,11 @@
                 "sdk"
             ],
             "apis": {
-                "Navigator.prototype.product": 5,
-                "Navigator.prototype.userAgent": 5
+                "Navigator.prototype.product": 6,
+                "Navigator.prototype.userAgent": 6
             },
-            "sites": 5,
-            "prevalence": 0.0000341,
+            "sites": 6,
+            "prevalence": 0.0000408,
             "cnames": [],
             "responseHashes": [
                 "eb16b6d44a7101e00ebcc0644bfe6f2e3eaf5eb9003131eefbd136888942d053"
@@ -33,11 +34,133 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "frieslandhuurt.nl",
+                "duwo.nl",
+                "www.duwo.nl",
                 "www.frieslandhuurt.nl",
                 "www.wooniezie.nl",
                 "www.woonkeus-stedendriehoek.nl",
                 "www.woonnet-haaglanden.nl"
+            ]
+        },
+        {
+            "rule": "hexia\\.io\\/loader\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cc-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fb4b54afb14c64ac99fdfa27b0213068f506aadb2c8095f787f662c57df4ec3a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duwo.nl",
+                "www.duwo.nl"
+            ]
+        },
+        {
+            "rule": "hexia\\.io\\/zigconversational\\.1\\.0\\.9\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cc-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e98cb0a77056e1e3cc0fa0aca9bea29c9fbaa23290cade168780f439f320607"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duwo.nl",
+                "www.duwo.nl"
+            ]
+        },
+        {
+            "rule": "hexia\\.io\\/zigconversational\\.1\\.0\\.9\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cc-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "98ad75ed0e23f82fce2b75ad504d25d3a5b5bb25d18c5b172884fa2c7350d121"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duwo.nl",
+                "www.duwo.nl"
+            ]
+        },
+        {
+            "rule": "hexia\\.io\\/frame\\.1\\.0\\.9\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cc-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20668cc63a697b7abb8dedb00a921f49b663d1beffcd356cb57b4400714057e1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duwo.nl",
+                "www.duwo.nl"
+            ]
+        },
+        {
+            "rule": "hexia\\.io\\/frame\\.1\\.0\\.9\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cc-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "console.memory": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.onLine": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8c423c63d28f4cd3b3bf8af402be40327d40595ad5fba8fb3a5e6e7f0685aa4a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "duwo.nl",
+                "www.duwo.nl"
             ]
         }
     ],
@@ -45,11 +168,12 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 5
+        "Script": 10,
+        "XHR": 2,
+        "Stylesheet": 4
     },
     "nameservers": [
-        "ns1.asp4all.nl",
-        "ns2.asp4all.nl",
-        "ns3.asp4all.nl"
+        "romina.ns.cloudflare.com",
+        "scott.ns.cloudflare.com"
     ]
 }

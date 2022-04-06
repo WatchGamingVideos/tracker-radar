@@ -7,8 +7,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000272,
-    "sites": 4,
+    "prevalence": 0.000034,
+    "sites": 5,
     "subdomains": [
         "s"
     ],
@@ -26,19 +26,21 @@
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.cookieEnabled": 2,
                 "window.sessionStorage": 2,
+                "window.innerWidth": 2,
                 "Date.prototype.getTime": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.connection": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
                 "Navigator.prototype.webdriver": 2,
                 "window.localStorage": 2,
-                "Document.cookie getter": 2,
-                "window.devicePixelRatio": 2,
-                "Navigator.prototype.doNotTrack": 2,
-                "Navigator.prototype.maxTouchPoints": 2,
-                "Screen.prototype.height": 2,
-                "Screen.prototype.width": 2,
-                "Navigator.prototype.language": 2,
-                "Navigator.prototype.connection": 2,
                 "Screen.prototype.colorDepth": 2,
-                "Date.prototype.getTimezoneOffset": 2
+                "Date.prototype.getTimezoneOffset": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.maxTouchPoints": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
@@ -57,16 +59,18 @@
         {
             "rule": "206ads\\.com\\/configs\\/considerable\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "s"
             ],
-            "apis": {},
+            "apis": {
+                "window.innerWidth": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "b6caaa8ce67067bb6c4aabc830048406ec5029095b433c98e7286c46af08e997"
+                "e3833870365dc5a1e6dd8fb44fbee93318d76b7f66d2d3382c462e82e9deed1b"
             ],
             "type": "Script",
             "firstPartyCookies": {},

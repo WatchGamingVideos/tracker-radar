@@ -4,8 +4,8 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.00000681,
-    "sites": 1,
+    "prevalence": 0.0000272,
+    "sites": 4,
     "subdomains": [
         "dsp-eu"
     ],
@@ -13,7 +13,7 @@
     "fingerprinting": 1,
     "resources": [
         {
-            "rule": "surfy\\.dev\\/vast",
+            "rule": "surfy\\.dev\\/bid\\/vast-container",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
@@ -24,14 +24,87 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "46726c42fc404909a352812e241195ad6b0424c0f4e43e2dfaa733220250d789"
+                "1ed98017838b0d9e9160dab258e922fbcdb296693233affcf08661093730f4bd"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "lafa.site",
-                "torr.lafa.site"
+                "tor.lafa.site"
+            ]
+        },
+        {
+            "rule": "surfy\\.dev\\/static\\/vpaid_1\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dsp-eu"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "778a4bb659785899aadda3acc6c210ba6f583a2a3b94ac36243e324837c47520"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lafa.site",
+                "tor.lafa.site",
+                "v-kosmose.com"
+            ]
+        },
+        {
+            "rule": "surfy\\.dev\\/bid\\/vast-multi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dsp-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3225b7b93893c068061a3a543ef5c2f424b8da2e053e439ac769d83425838606",
+                "3dbcea20ca8554cc59b5ed8102bd8625cd5ca09190f2d1a62775e9e5466771f8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lafa.site",
+                "tor.lafa.site",
+                "v-kosmose.com"
+            ]
+        },
+        {
+            "rule": "surfy\\.dev\\/vast",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dsp-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "333210278d92756d7649939e4e280c22be26dcc001e57054c4bc15192ab5cbc0",
+                "1f1c30e79eb999e205e00c752d95120d21f5ed4b4043bdfb066927546dc21a1a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lafa.site",
+                "tor.lafa.site",
+                "v-kosmose.com"
             ]
         }
     ],
@@ -39,7 +112,9 @@
     "performance": {},
     "cookies": 0,
     "types": {
-        "XHR": 2
+        "XHR": 5,
+        "Script": 3,
+        "Fetch": 3
     },
     "nameservers": [
         "plato.ns.cloudflare.com",

@@ -4,19 +4,70 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.0000409,
+    "prevalence": 0.0000408,
     "sites": 6,
     "subdomains": [
-        "pdp",
-        "cdn",
-        "analytics",
         "sandboxanalytics",
+        "analytics",
+        "sandbox",
         "api",
-        "sandbox"
+        "pdp"
     ],
     "cnames": [],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "gokwik\\.co\\/analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sandboxanalytics",
+                "analytics"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0aa09aa48bc4f2c3628bd30efa4c80a53efe7a9e28277f00b21e766ee1935c4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghc.health",
+                "www.boat-lifestyle.com",
+                "www.gonoise.com"
+            ]
+        },
+        {
+            "rule": "gokwik\\.co\\/v1\\/header-analytics\\/userid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sandbox",
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "01546e281d7872f3ccf3acd1dd91abc87d48d3e781ce531bd0d3c38478e0970c",
+                "ce14cf65c67c8e2a274e09a175ce9dbd234d5eb0de6be7ee7b5b100367dbc3d4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghc.health",
+                "www.boat-lifestyle.com",
+                "www.gonoise.com"
+            ]
+        },
         {
             "rule": "gokwik\\.co\\/integration\\.js",
             "cookies": 0,
@@ -41,50 +92,6 @@
             ]
         },
         {
-            "rule": "gokwik\\.co\\/v4\\/images\\/upi-icons\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cccafbb2d82a47e5f8625c751ec9c1c1384c10db5334443928d490547676dcf8"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "www.boat-lifestyle.com"
-            ]
-        },
-        {
-            "rule": "gokwik\\.co\\/v4\\/images\\/right-arrow\\.svg",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "b3fa120842e12361c91f0d573318bff4c01b3861c1c3e7d8ade4d0759f89045d"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "www.boat-lifestyle.com"
-            ]
-        },
-        {
             "rule": "gokwik\\.co\\/build\\/gokwik\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -98,68 +105,13 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "e4ca61ed45e58d62189837cbf2ae4f1ec4609bc3afc3354f5058b3d32c1e308e"
+                "eef30961ac931cebd885e901f3f84a591744351e0c28581b8c799432af74033f"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "boat-lifestyle.com",
-                "www.boat-lifestyle.com",
-                "www.gonoise.com"
-            ]
-        },
-        {
-            "rule": "gokwik\\.co\\/analytics\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "analytics",
-                "sandboxanalytics"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 4,
-                "window.localStorage": 4
-            },
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "0a4899afd461802003f24a38b7099cbb45735fedd58a612f6f812a4938ef9fb6",
-                "0aa09aa48bc4f2c3628bd30efa4c80a53efe7a9e28277f00b21e766ee1935c4d"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "ghc.health",
-                "www.boat-lifestyle.com",
-                "www.gonoise.com"
-            ]
-        },
-        {
-            "rule": "gokwik\\.co\\/v1\\/header-analytics\\/userid",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api",
-                "sandbox"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.0000272,
-            "cnames": [],
-            "responseHashes": [
-                "6c3774b97e946a4710bf648bf4d522a069aaa749b16ad1d7f082979291dc582c",
-                "d60c4e0b1709bd26b1e619e7c38dc6932ddbd41b5bc459185ecce1aa23f23782"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "ghc.health",
                 "www.boat-lifestyle.com",
                 "www.gonoise.com"
             ]
@@ -176,8 +128,8 @@
             "prevalence": 0.0000204,
             "cnames": [],
             "responseHashes": [
-                "a0de6334c888ec43f3be141c051b5a3c8928694079457078f9b946d23e84c808",
-                "58c94be9e973409544174fa362a334a52b3154091612cdb222bf543477006f7b"
+                "f29a69e569fe7bdc8afa02b745fb993fbf9cccb68ff9677f918c2b558a58ae1d",
+                "70ae8c89c426d73ee861f93532643d2c0d3a26efb4d44e919255b278ee6e1104"
             ],
             "type": "Fetch",
             "firstPartyCookies": {},
@@ -187,63 +139,19 @@
                 "www.boat-lifestyle.com",
                 "www.gonoise.com"
             ]
-        },
-        {
-            "rule": "gokwik\\.co\\/v1\\/header-analytics\\/analytics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "78149dd08557c366df4fa21c905fcbc16706c947ddffba98a6f656dcf24331c7"
-            ],
-            "type": "Fetch",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "www.gonoise.com"
-            ]
-        },
-        {
-            "rule": "gokwik\\.co\\/v1\\/header-analytics\\/analytics",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Preflight",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "boat-lifestyle.com",
-                "www.gonoise.com"
-            ]
         }
     ],
     "categories": [],
     "performance": {},
     "cookies": 0,
     "types": {
-        "Script": 10,
-        "Image": 4,
-        "Fetch": 9,
-        "Preflight": 2
+        "Script": 9,
+        "Fetch": 6
     },
     "nameservers": [
         "ns-736.awsdns-28.net",
-        "ns-1485.awsdns-57.org",
         "ns-1786.awsdns-31.co.uk",
-        "ns-120.awsdns-15.com"
+        "ns-120.awsdns-15.com",
+        "ns-1485.awsdns-57.org"
     ]
 }

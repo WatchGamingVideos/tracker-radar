@@ -4,16 +4,38 @@
     "source": [
         "DuckDuckGo-US"
     ],
-    "prevalence": 0.000238,
-    "sites": 35,
+    "prevalence": 0.000252,
+    "sites": 37,
     "subdomains": [
+        "polyfill",
         "apil1",
-        "cdn",
-        "polyfill"
+        "cdn"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "spinnaker-js\\.com\\/v2\\/polyfill\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "polyfill"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cae897bdde94867960ad284a56b1631296eaceddf5710a2857127ca0aa2777d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obos.no",
+                "www.bergans.com"
+            ]
+        },
         {
             "rule": "spinnaker-js\\.com\\/",
             "cookies": 0,
@@ -22,8 +44,8 @@
                 "apil1"
             ],
             "apis": {},
-            "sites": 12,
-            "prevalence": 0.0000817,
+            "sites": 14,
+            "prevalence": 0.0000953,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -32,7 +54,7 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "morgenlevering.no",
+                "obos.no",
                 "www.bergans.com",
                 "www.brl.se",
                 "www.fjordkraft.no",
@@ -40,10 +62,12 @@
                 "www.flygbra.se",
                 "www.happysocks.com",
                 "www.huseierne.no",
+                "www.jotun.com",
                 "www.kappahl.com",
                 "www.kristiania.no",
                 "www.megaflis.no",
-                "www.musto.com"
+                "www.scandinavianphoto.se",
+                "www.skittfiske.no"
             ]
         },
         {
@@ -76,28 +100,6 @@
             ]
         },
         {
-            "rule": "spinnaker-js\\.com\\/v2\\/polyfill\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "polyfill"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [
-                "cae897bdde94867960ad284a56b1631296eaceddf5710a2857127ca0aa2777d3"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bergans.com",
-                "www.bergans.com"
-            ]
-        },
-        {
             "rule": "spinnaker-js\\.com\\/rc\\/12903\\/scripts\\/s\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -105,18 +107,18 @@
                 "cdn"
             ],
             "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
                 "Navigator.prototype.userAgent": 2,
                 "Navigator.prototype.appName": 2,
                 "Navigator.prototype.appVersion": 2,
-                "window.localStorage": 2,
-                "Date.prototype.getTime": 2,
-                "window.sessionStorage": 2
+                "Date.prototype.getTime": 2
             },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "f372b2ad928d164c472c697ecf22656fb309a680a98c0bbc6616f5d6a3c0d15c"
+                "74afac5b45754c6530a38d6ac31806acc6e143d70bbfce13e91d38fd775fd0fd"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -157,6 +159,28 @@
             ]
         },
         {
+            "rule": "spinnaker-js\\.com\\/rc\\/48988\\/scripts\\/s\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0df9a681956d3517ba546fb467fb16450db50fbe22a87f318e12789161f3b78f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elixia.fi",
+                "www.elixia.fi"
+            ]
+        },
+        {
             "rule": "spinnaker-js\\.com\\/rc\\/27889\\/scripts\\/s\\.js",
             "cookies": 0.0000136,
             "fingerprinting": 2,
@@ -185,13 +209,13 @@
                 "RCTclientSID": {
                     "ttl": null,
                     "length": 29,
-                    "prevalence": 0.000013621009044350005,
+                    "prevalence": 0.000013612757876682026,
                     "uniqueness": 1
                 },
                 "memberType": {
                     "ttl": null,
                     "length": 9,
-                    "prevalence": 0.0000068105045221750025,
+                    "prevalence": 0.000006806378938341013,
                     "uniqueness": 1
                 }
             },
@@ -199,32 +223,6 @@
             "exampleSites": [
                 "flygbra.se",
                 "www.flygbra.se"
-            ]
-        },
-        {
-            "rule": "spinnaker-js\\.com\\/rc\\/30067\\/scripts\\/s\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "window.localStorage": 2,
-                "window.sessionStorage": 2,
-                "Navigator.prototype.userAgent": 2,
-                "Navigator.prototype.appName": 2,
-                "Navigator.prototype.appVersion": 2
-            },
-            "sites": 2,
-            "prevalence": 0.0000136,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "jotun.com",
-                "www.jotun.com"
             ]
         },
         {
@@ -304,7 +302,7 @@
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "ecffbaf49ca54335600837db218b5034318533d9407f01c55cbee164d584b58d"
+                "22a8da397c5c63de5728985fd70925f448c4672f2a1ba2be024c1dc2bfef0a06"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -339,16 +337,23 @@
         {
             "rule": "spinnaker-js\\.com\\/rc\\/38545\\/scripts\\/s\\.js",
             "cookies": 0,
-            "fingerprinting": 0,
+            "fingerprinting": 1,
             "subdomains": [
                 "cdn"
             ],
-            "apis": {},
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Date.prototype.getTime": 2
+            },
             "sites": 2,
             "prevalence": 0.0000136,
             "cnames": [],
             "responseHashes": [
-                "0df9a681956d3517ba546fb467fb16450db50fbe22a87f318e12789161f3b78f"
+                "f4d3d3e0110ab147b2cea29a1f4f2d54265953ecefdb6f306248e31d2cf6610c"
             ],
             "type": "Script",
             "firstPartyCookies": {},
@@ -363,8 +368,8 @@
     "performance": {},
     "cookies": 0.0000136,
     "types": {
-        "Ping": 12,
-        "Script": 23
+        "Script": 23,
+        "Ping": 14
     },
     "nameservers": [
         "skrue.drlinux.no",
