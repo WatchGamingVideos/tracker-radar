@@ -13,9 +13,9 @@
     "sites": 19,
     "subdomains": [
         "ghb",
+        "s",
         "sync",
-        "player",
-        "s"
+        "player"
     ],
     "cnames": [],
     "fingerprinting": 1,
@@ -32,8 +32,8 @@
             "prevalence": 0.00151,
             "cnames": [],
             "responseHashes": [
+                "1d485bf39e9a8aa91f74fa4a9aff36197d16e1930b9c03fd9c65b35270647d63",
                 "0492f9b4f39c8cb2a23d4895ce5180b8fdea97d6ba0e46dfe2a3ece9051bebf0",
-                "b047173e30061ee455106f1bc5788baadc7ad74770ed50dc6fb14ac33adf20df",
                 "67b25e5856c34d948acf3bcdcc1680200f8a45f699b16d4eead5e0228eb1ee7b",
                 "f5a1f5ff40480a6248240f6ab82351b8d7ee9fd1c29654b415843bbed1aa864d",
                 "ae7e9eb239f7430a2ca6699b40a2623e9400149397686c3799f754fef512fc20",
@@ -49,9 +49,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "camping-experten.de",
                 "dasfinanzen.de",
                 "de.nextews.com",
-                "camping-experten.de",
                 "downloads.digitaltrends.com",
                 "inet.detik.com",
                 "nypost.com",
@@ -67,15 +67,44 @@
             ]
         },
         {
+            "rule": "adtelligent\\.com\\/sync\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s"
+            ],
+            "apis": {
+                "Document.cookie getter": 4
+            },
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "f11a61f03ad744fcf390f6ce8e6963a91574b4fea728283b343a6f8c70a2dffa",
+                "fc861b9610e5df0adcca64bb527a0de6048699c65d8f5a77862441d8a447b518"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "wordlegame.org",
+                "www.computerhope.com",
+                "www.iplocation.net",
+                "www.statisticshowto.com",
+                "www.systutorials.com"
+            ]
+        },
+        {
             "rule": "adtelligent\\.com\\/csync",
-            "cookies": 0.000603,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "sync"
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000703,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -85,9 +114,9 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
+                "camping-experten.de",
                 "dasfinanzen.de",
                 "de.nextews.com",
-                "camping-experten.de",
                 "wordlegame.org",
                 "www.computerhope.com",
                 "www.iplocation.net",
@@ -96,14 +125,14 @@
         },
         {
             "rule": "adtelligent\\.com\\/csync",
-            "cookies": 0.000603,
+            "cookies": 0.000602,
             "fingerprinting": 0,
             "subdomains": [
                 "sync"
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -112,8 +141,8 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "nextews.com",
                 "camping-experten.de",
+                "de.nextews.com",
                 "inet.detik.com",
                 "wordlegame.org",
                 "www.iplocation.net",
@@ -188,35 +217,6 @@
                 "nypost.com",
                 "pagesix.com"
             ]
-        },
-        {
-            "rule": "adtelligent\\.com\\/sync\\.html",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "s"
-            ],
-            "apis": {
-                "Document.cookie getter": 4
-            },
-            "sites": 6,
-            "prevalence": 0.000603,
-            "cnames": [],
-            "responseHashes": [
-                "f11a61f03ad744fcf390f6ce8e6963a91574b4fea728283b343a6f8c70a2dffa",
-                "fc861b9610e5df0adcca64bb527a0de6048699c65d8f5a77862441d8a447b518"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "wordlegame.org",
-                "www.computerhope.com",
-                "www.iplocation.net",
-                "www.statisticshowto.com",
-                "www.systutorials.com"
-            ]
         }
     ],
     "categories": [],
@@ -256,21 +256,21 @@
             "prevalence": 0.05263157894736842
         },
         {
-            "domain": "deliveryapis.com",
+            "domain": "pubfuture.com",
             "prevalence": 0.05263157894736842
         },
         {
-            "domain": "pubfuture.com",
+            "domain": "deliveryapis.com",
             "prevalence": 0.05263157894736842
         }
     ],
     "types": {
         "XHR": 24,
-        "Image": 7,
-        "Document": 12
+        "Document": 12,
+        "Image": 7
     },
     "nameservers": [
-        "ns.anycastns2.org",
-        "ns.anycastns1.org"
+        "ns.anycastns1.org",
+        "ns.anycastns2.org"
     ]
 }

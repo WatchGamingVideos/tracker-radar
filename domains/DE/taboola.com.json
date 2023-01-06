@@ -7,30 +7,140 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.0167,
-    "sites": 166,
+    "prevalence": 0.0168,
+    "sites": 167,
     "subdomains": [
         "cdn",
-        "trc",
         "trc-events",
+        "trc",
         "pips",
         "cds",
-        "sync",
-        "c2",
-        "nr-events",
         "sync-t1",
+        "sync",
         "vidstat",
         "imprammp",
         "am-match",
         "wf",
         "am-vid-events",
         "vidstatb",
+        "c2",
+        "nr-events",
         "am-trc-events",
         "hk-trc-events"
     ],
     "cnames": [],
     "fingerprinting": 2,
     "resources": [
+        {
+            "rule": "taboola\\.com\\/libtrc\\/chatango-network\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "1eb20dc04f03db7c5e16307d8fdbab385ff856d1dd8fcc8c2b386721ed050c5b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onepiece-tube.com",
+                "www.nekopoi.web.id"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/libtrc\\/impl\\.20221222-8-RELEASE\\.js",
+            "cookies": 0.00171,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 57,
+                "window.devicePixelRatio": 57,
+                "window.sessionStorage": 57,
+                "Date.prototype.getTime": 57,
+                "window.localStorage": 57,
+                "Navigator.prototype.cookieEnabled": 19,
+                "Document.cookie getter": 19,
+                "Navigator.prototype.languages": 19,
+                "Navigator.prototype.connection": 19,
+                "Screen.prototype.availWidth": 19,
+                "Screen.prototype.availHeight": 19,
+                "window.innerWidth": 19,
+                "window.innerHeight": 19,
+                "Document.cookie setter": 17
+            },
+            "sites": 59,
+            "prevalence": 0.00592,
+            "cnames": [],
+            "responseHashes": [
+                "a16d627fccd0fadd4f02db9de6a07c4e7ca17abcf832a0cf87b0374cbff64b2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "trc_cookie_storage": {
+                    "ttl": 31536005,
+                    "length": 81,
+                    "prevalence": 0.0015051173991571343,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abcnews.go.com",
+                "www.nbcnews.com",
+                "www.esslinger-zeitung.de",
+                "forums.tomshardware.com",
+                "www.india.com",
+                "www.stuttgarter-zeitung.de",
+                "www.beziehungsweise-magazin.de",
+                "www.falstaff.de",
+                "www.briefeguru.de",
+                "de.ccm.net",
+                "www.stuttgarter-nachrichten.de",
+                "handwerkerratgeber.info",
+                "m.augsburger-allgemeine.de",
+                "raclette-rezepte.net",
+                "www.xxlmag.com",
+                "www.vermoegenmagazin.de",
+                "www.unwetterzentrale.de",
+                "www.aerotelegraph.com",
+                "www.news.com.au",
+                "www.sozcu.com.tr"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/chatango-chatango1\\/log\\/2\\/debug",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc-events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onepiece-tube.com",
+                "www.nekopoi.web.id"
+            ]
+        },
         {
             "rule": "taboola\\.com\\/libtrc\\/unip\\/1458865\\/tfa\\.js",
             "cookies": 0,
@@ -105,116 +215,6 @@
             ]
         },
         {
-            "rule": "taboola\\.com\\/libtrc\\/chatango-network\\/loader\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3,
-                "NavigatorUAData.prototype.getHighEntropyValues": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "1eb20dc04f03db7c5e16307d8fdbab385ff856d1dd8fcc8c2b386721ed050c5b"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onepiece-tube.com",
-                "www.nekopoi.web.id"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/libtrc\\/impl\\.20221222-8-RELEASE\\.js",
-            "cookies": 0.00171,
-            "fingerprinting": 2,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 56,
-                "window.devicePixelRatio": 56,
-                "window.sessionStorage": 56,
-                "Date.prototype.getTime": 56,
-                "window.localStorage": 56,
-                "Navigator.prototype.cookieEnabled": 19,
-                "Document.cookie getter": 19,
-                "Navigator.prototype.languages": 19,
-                "Navigator.prototype.connection": 19,
-                "Screen.prototype.availWidth": 19,
-                "Screen.prototype.availHeight": 19,
-                "window.innerWidth": 19,
-                "window.innerHeight": 19,
-                "Document.cookie setter": 17
-            },
-            "sites": 58,
-            "prevalence": 0.00583,
-            "cnames": [],
-            "responseHashes": [
-                "a16d627fccd0fadd4f02db9de6a07c4e7ca17abcf832a0cf87b0374cbff64b2c"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {
-                "trc_cookie_storage": {
-                    "ttl": 31536005,
-                    "length": 81,
-                    "prevalence": 0.0015064778547755348,
-                    "uniqueness": 1
-                }
-            },
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "abcnews.go.com",
-                "www.nbcnews.com",
-                "www.esslinger-zeitung.de",
-                "www.steadyhealth.com",
-                "www.tag24.de",
-                "www.dnaindia.com",
-                "www.tichyseinblick.de",
-                "www.today.com",
-                "www.beziehungsweise-magazin.de",
-                "handwerkerratgeber.info",
-                "www.express.de",
-                "www.fool.de",
-                "www.nekopoi.web.id",
-                "www.stuttgarter-zeitung.de",
-                "www.falstaff.at",
-                "www.sozcu.com.tr",
-                "www.timeout.com",
-                "www.androidkosmos.de",
-                "gedankenwelt.de",
-                "www.nameslook.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/chatango-chatango1\\/log\\/2\\/debug",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trc-events"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "onepiece-tube.com",
-                "www.nekopoi.web.id"
-            ]
-        },
-        {
             "rule": "taboola\\.com\\/libtrc\\/card-interference-detector\\.20221222-8-RELEASE\\.es6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -223,7 +223,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "089ed8581094552e8249795cd1968d6aa5e15d75e97e591eb139db81c7f73bb8"
@@ -249,7 +249,7 @@
             ],
             "apis": {},
             "sites": 14,
-            "prevalence": 0.00141,
+            "prevalence": 0.0014,
             "cnames": [],
             "responseHashes": [
                 "1802cb084d215bca8bd79b67cfa918356fae39b53928110692bf9d8ef4f14663"
@@ -283,7 +283,7 @@
             ],
             "apis": {},
             "sites": 7,
-            "prevalence": 0.000703,
+            "prevalence": 0.000702,
             "cnames": [],
             "responseHashes": [
                 "a230ebf9826acd19ee9c5e7d536e9380f854a177d91339a26cc3518caab59bae"
@@ -310,7 +310,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "40f2cbf093a45e567662df73a27b7a134caaa80847a4ccab159d4d6aeb5d9b6c"
@@ -336,7 +336,7 @@
             ],
             "apis": {},
             "sites": 13,
-            "prevalence": 0.00131,
+            "prevalence": 0.0013,
             "cnames": [],
             "responseHashes": [
                 "6f9567be98caeb6d30a610066fa7903bb4d8b9cf68d0d5c1548f0322f377f3bb"
@@ -441,6 +441,46 @@
             ]
         },
         {
+            "rule": "taboola\\.com\\/sg\\/criteortb-network\\/1\\/rtb-h\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-t1"
+            ],
+            "apis": {},
+            "sites": 36,
+            "prevalence": 0.00361,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "electronics.sony.com",
+                "www.giesswein.com",
+                "www.ischgl.com",
+                "www.taschenkaufhaus.de",
+                "de.myprotein.com",
+                "www.superprof.de",
+                "www.netgear.com",
+                "www.instant-gaming.com",
+                "www.flypgs.com",
+                "www.fluege.de",
+                "www.praktischarzt.de",
+                "www.medpets.de",
+                "www.fender.com",
+                "www.wunderkarten.de",
+                "de.aliexpress.com",
+                "www.mycare.de",
+                "de.anker.com",
+                "www.kinguin.net",
+                "carrera-toys.com",
+                "www.sweetwater.com"
+            ]
+        },
+        {
             "rule": "taboola\\.com\\/libtrc\\/grupomcontigo-germannetwork\\/loader\\.js",
             "cookies": 0,
             "fingerprinting": 1,
@@ -475,7 +515,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -485,11 +525,406 @@
             "firstPartyCookiesSent": {},
             "exampleSites": [
                 "brotwein.net",
-                "de-academic.com",
                 "cookpad.com",
+                "de-academic.com",
                 "essen-trinken.net",
                 "ratgeber.immowelt.de",
                 "www.today.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/ui-ab-tests\\/vignette-hooks\\/vignette-hooks\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "b599a2eabc64208062671263a28ba84853c282ddf2ac97fcb8c74e0c137928a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "newstral.com",
+                "www.dnaindia.com",
+                "www.india.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/ui-ab-tests\\/vignette-hooks\\/vignette-hooks\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "421c2ff2406c5d7fb7af315e9538ce2b118dfe7bdca49fac0593d7d42acd733f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "newstral.com",
+                "www.dnaindia.com",
+                "www.india.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/libtrc\\/cta-component\\.20221222-8-RELEASE\\.es6\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "CanvasRenderingContext2D.prototype.measureText": 7
+            },
+            "sites": 9,
+            "prevalence": 0.000903,
+            "cnames": [],
+            "responseHashes": [
+                "4bad2ad9152d0075fdc6390891f46df78da9e4d681d557f80554190fb3b119ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "newstral.com",
+                "www.dnaindia.com",
+                "www.india.com",
+                "www.nbcnews.com",
+                "www.today.com",
+                "www.vermoegenmagazin.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/lite-unit\\/3\\.9\\.8\\/UnitWidgetItemMobile\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vidstat"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 3,
+                "window.localStorage": 3,
+                "HTMLMediaElement.prototype.canPlayType": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "51d933fc6a34327628f36103fec406c3119b556a364a4aee394603700eab1279"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/libtrc\\/taboola-vignette-new-scanning\\.20221222-8-RELEASE\\.es6\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "58bca5b182c56862efbfedcc7195232ee27fcad72faf44c0bccb094943af179b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "newstral.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/st",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imprammp"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "f4461fdc5512d2915f67a2b761cfd5ce1166d1f8dd0f07a571bf31eb1c7d0855",
+                "878a2c6c7257a40f4bd4a98b8e865f1307fadd09a359b067f19049d6f096a4c3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cookies.js_dtest": 0.0002006823198876179,
+                "parsely_uuid": 0.0002006823198876179
+            },
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.dnaindia.com",
+                "www.india.com",
+                "www.naehrwertrechner.de",
+                "www.nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "am-match"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "f4461fdc5512d2915f67a2b761cfd5ce1166d1f8dd0f07a571bf31eb1c7d0855",
+                "878a2c6c7257a40f4bd4a98b8e865f1307fadd09a359b067f19049d6f096a4c3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.dnaindia.com",
+                "www.india.com",
+                "www.naehrwertrechner.de",
+                "www.nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/VideoBidRequestHandlerServlet",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wf"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "01442b63d82729cc79a208d29d27287189ae82a335bb6aad608cccea1b0e1346",
+                "3fa7b61e58396a73762366c711096fedf6bb9b95f8d989f9f6cbabfe3cd47879",
+                "8a1aa381dc1aa05613eef5eedd54fb142a404d91f14ca68f1ee57b5951fbc9f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/st",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "am-vid-events"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000602,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "www.dnaindia.com",
+                "www.naehrwertrechner.de",
+                "www.nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/vpaid\\/units\\/32_4_6\\/infra\\/cmTagWIDGET_ITEM\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vidstat"
+            ],
+            "apis": {
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [
+                "4a24cf4a8111cb115ac2fdce0497bd487aab120207b35a73082f48b9f51214ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/vpaid\\/units\\/32_4_6\\/assets\\/css\\/cmOsUnit\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vidstat"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "380c8dd7c2b23d5b7572ed28bb68013004e8b81fd50a43c631475afb9760f5c8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/vpaid\\/vPlayer\\/player\\/v14\\.9\\.0\\/OvaMediaPlayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vidstat"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.connection": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "9fdd4d779cda8d9db5fa564895e69b5b9c6956fa6480981dbe21e6ff9d837cd0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/sg\\/spotx-rtb-network\\/1\\/rtb-h",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-t1"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.000803,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "ffxiv.consolegameswiki.com",
+                "handwerkerratgeber.info",
+                "www.dnaindia.com",
+                "www.india.com",
+                "www.naehrwertrechner.de",
+                "www.nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/vid\\/blackScreen60\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vidstatb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000301,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "handwerkerratgeber.info",
+                "www.naehrwertrechner.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/sg\\/zeotap\\/1\\/cm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000401,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "camping-experten.de",
+                "wordlegame.org",
+                "www.agrarwetter.net",
+                "www.wikifeet.com"
             ]
         },
         {
@@ -637,7 +1072,7 @@
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ym_d": 0.00020086371397007131
+                "_ym_d": 0.0002006823198876179
             },
             "exampleSites": [
                 "rt.com",
@@ -705,7 +1140,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_ym_d": 0.00030129557095510696
+                "_ym_d": 0.00030102347983142685
             },
             "exampleSites": [
                 "rt.com",
@@ -714,271 +1149,92 @@
             ]
         },
         {
-            "rule": "taboola\\.com\\/sg\\/criteortb-network\\/1\\/rtb-h\\/",
+            "rule": "taboola\\.com\\/sg\\/amazon-a9-network\\/1\\/rtb",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "sync-t1"
+                "sync"
             ],
             "apis": {},
-            "sites": 36,
-            "prevalence": 0.00362,
+            "sites": 9,
+            "prevalence": 0.000903,
             "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
+            "responseHashes": [],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "aliexpress.com",
-                "de.anker.com",
-                "de.made-in-china.com",
-                "beilerei.com",
-                "www.justspices.de",
-                "www.sweetwater.com",
-                "www.kinguin.net",
-                "electronics.sony.com",
-                "www.mycare.de",
-                "www.auto.de",
-                "www.wunderkarten.de",
-                "www.hotelspecials.de",
+                "draxe.com",
+                "us.amazon.com",
+                "www.amazon.ca",
+                "www.amazon.com.au",
+                "www.dpreview.com",
                 "www.fender.com",
-                "www.giesswein.com",
-                "www.medpets.de",
-                "www.1stdibs.com",
-                "www.fluege.de",
-                "www.taschenkaufhaus.de",
-                "www.aliexpress.com",
-                "www.travelcircus.de"
+                "www.ugg.com",
+                "www.weightwatchers.com",
+                "www.zillow.com"
             ]
         },
         {
-            "rule": "taboola\\.com\\/ui-ab-tests\\/vignette-hooks\\/vignette-hooks\\.js",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "b599a2eabc64208062671263a28ba84853c282ddf2ac97fcb8c74e0c137928a9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "newstral.com",
-                "www.dnaindia.com",
-                "www.india.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/ui-ab-tests\\/vignette-hooks\\/vignette-hooks\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "cdn"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "421c2ff2406c5d7fb7af315e9538ce2b118dfe7bdca49fac0593d7d42acd733f"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "newstral.com",
-                "www.dnaindia.com",
-                "www.india.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/libtrc\\/cta-component\\.20221222-8-RELEASE\\.es6\\.js",
+            "rule": "taboola\\.com\\/nr\\/stroeer-sdpt-online2022\\/newsroom\\.js",
             "cookies": 0,
             "fingerprinting": 1,
             "subdomains": [
-                "cdn"
+                "c2"
             ],
             "apis": {
-                "CanvasRenderingContext2D.prototype.measureText": 7
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Document.cookie getter": 2
             },
-            "sites": 9,
-            "prevalence": 0.000904,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "4bad2ad9152d0075fdc6390891f46df78da9e4d681d557f80554190fb3b119ca"
+                "e46f7727df8d867eaa98aee112b04b0bbad60f382d16770d94da5425c67824f9"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "newstral.com",
-                "www.dnaindia.com",
-                "www.india.com",
-                "www.nbcnews.com",
-                "www.today.com",
-                "www.vermoegenmagazin.de"
+                "t-online.de",
+                "www.t-online.de"
             ]
         },
         {
-            "rule": "taboola\\.com\\/lite-unit\\/3\\.9\\.8\\/UnitWidgetItemMobile\\.min\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vidstat"
-            ],
-            "apis": {
-                "Date.prototype.getTimezoneOffset": 3,
-                "window.localStorage": 3,
-                "HTMLMediaElement.prototype.canPlayType": 3,
-                "Date.prototype.getTime": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "51d933fc6a34327628f36103fec406c3119b556a364a4aee394603700eab1279"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/libtrc\\/taboola-vignette-new-scanning\\.20221222-8-RELEASE\\.es6\\.js",
+            "rule": "taboola\\.com\\/newsroom\\/1\\.0\\/stroeer-sdpt-online2022\\/get-action",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "cdn"
+                "nr-events"
             ],
             "apis": {},
             "sites": 2,
             "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "58bca5b182c56862efbfedcc7195232ee27fcad72faf44c0bccb094943af179b"
+                "16e2a74d1ede895a9f603a41a9f8b12086b0e26ba7a814f2d2af68dc30ae3809"
             ],
             "type": "Script",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "camping-experten.de",
-                "newstral.com"
+                "t-online.de",
+                "www.t-online.de"
             ]
         },
         {
-            "rule": "taboola\\.com\\/st",
+            "rule": "taboola\\.com\\/newsroom\\/1\\.0\\/stroeer-sdpt-online2022\\/notify-impression",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "imprammp"
+                "nr-events"
             ],
             "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
-            "cnames": [],
-            "responseHashes": [
-                "f4461fdc5512d2915f67a2b761cfd5ce1166d1f8dd0f07a571bf31eb1c7d0855",
-                "878a2c6c7257a40f4bd4a98b8e865f1307fadd09a359b067f19049d6f096a4c3"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "cookies.js_dtest": 0.00020086371397007131,
-                "parsely_uuid": 0.00020086371397007131
-            },
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.dnaindia.com",
-                "www.india.com",
-                "www.naehrwertrechner.de",
-                "www.nbcnews.com",
-                "www.today.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/sync",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "am-match"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
-            "cnames": [],
-            "responseHashes": [
-                "f4461fdc5512d2915f67a2b761cfd5ce1166d1f8dd0f07a571bf31eb1c7d0855",
-                "878a2c6c7257a40f4bd4a98b8e865f1307fadd09a359b067f19049d6f096a4c3"
-            ],
-            "type": "Document",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.dnaindia.com",
-                "www.india.com",
-                "www.naehrwertrechner.de",
-                "www.nbcnews.com",
-                "www.today.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/VideoBidRequestHandlerServlet",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "wf"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "01442b63d82729cc79a208d29d27287189ae82a335bb6aad608cccea1b0e1346",
-                "3fa7b61e58396a73762366c711096fedf6bb9b95f8d989f9f6cbabfe3cd47879",
-                "8a1aa381dc1aa05613eef5eedd54fb142a404d91f14ca68f1ee57b5951fbc9f8"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/st",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "am-vid-events"
-            ],
-            "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
                 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
@@ -987,165 +1243,34 @@
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "www.dnaindia.com",
-                "www.naehrwertrechner.de",
-                "www.nbcnews.com",
-                "www.today.com"
+                "t-online.de",
+                "www.t-online.de"
             ]
         },
         {
-            "rule": "taboola\\.com\\/vpaid\\/units\\/32_4_6\\/infra\\/cmTagWIDGET_ITEM\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vidstat"
-            ],
-            "apis": {
-                "window.innerHeight": 3,
-                "window.innerWidth": 3,
-                "Navigator.prototype.userAgent": 3,
-                "Date.prototype.getTime": 3
-            },
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [
-                "4a24cf4a8111cb115ac2fdce0497bd487aab120207b35a73082f48b9f51214ca"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/vpaid\\/units\\/32_4_6\\/assets\\/css\\/cmOsUnit\\.css",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vidstat"
-            ],
-            "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "380c8dd7c2b23d5b7572ed28bb68013004e8b81fd50a43c631475afb9760f5c8"
-            ],
-            "type": "Stylesheet",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/vpaid\\/vPlayer\\/player\\/v14\\.9\\.0\\/OvaMediaPlayer\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "vidstat"
-            ],
-            "apis": {
-                "Navigator.prototype.userAgent": 4,
-                "Navigator.prototype.connection": 4,
-                "Date.prototype.getTime": 4
-            },
-            "sites": 4,
-            "prevalence": 0.000402,
-            "cnames": [],
-            "responseHashes": [
-                "9fdd4d779cda8d9db5fa564895e69b5b9c6956fa6480981dbe21e6ff9d837cd0"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/sg\\/spotx-rtb-network\\/1\\/rtb-h",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sync-t1"
-            ],
-            "apis": {},
-            "sites": 8,
-            "prevalence": 0.000803,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "ffxiv.consolegameswiki.com",
-                "handwerkerratgeber.info",
-                "www.dnaindia.com",
-                "www.india.com",
-                "www.naehrwertrechner.de",
-                "www.nbcnews.com",
-                "www.today.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/vid\\/blackScreen60\\.mp4",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "vidstatb"
-            ],
-            "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Media",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "camping-experten.de",
-                "handwerkerratgeber.info",
-                "www.naehrwertrechner.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/sg\\/zeotap\\/1\\/cm",
+            "rule": "taboola\\.com\\/sg\\/liveintent\\/1\\/cm\\/",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
                 "trc"
             ],
             "apis": {},
-            "sites": 4,
-            "prevalence": 0.000402,
+            "sites": 6,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "c37e5682407d07e7974304b5334721abfcaaf80533aa565ee3a2f66de1f6676f"
             ],
             "type": "Image",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "camping-experten.de",
-                "wordlegame.org",
-                "www.agrarwetter.net",
-                "www.wikifeet.com"
+                "ew.com",
+                "people.com",
+                "www.biblestudytools.com",
+                "www.marthastewart.com",
+                "www.newsweek.com",
+                "www.tasteofhome.com"
             ]
         },
         {
@@ -1240,7 +1365,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "39b076e4bb4fab9b8a142499cf6155f8c128464974691a04de7e764f71b72618"
@@ -1280,78 +1405,6 @@
             ]
         },
         {
-            "rule": "taboola\\.com\\/nr\\/stroeer-sdpt-online2022\\/newsroom\\.js",
-            "cookies": 0,
-            "fingerprinting": 1,
-            "subdomains": [
-                "c2"
-            ],
-            "apis": {
-                "Date.prototype.getTime": 2,
-                "Navigator.prototype.cookieEnabled": 2,
-                "window.localStorage": 2,
-                "Navigator.prototype.appName": 2,
-                "Document.cookie getter": 2
-            },
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e46f7727df8d867eaa98aee112b04b0bbad60f382d16770d94da5425c67824f9"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-online.de",
-                "www.t-online.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/newsroom\\/1\\.0\\/stroeer-sdpt-online2022\\/get-action",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nr-events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "16e2a74d1ede895a9f603a41a9f8b12086b0e26ba7a814f2d2af68dc30ae3809"
-            ],
-            "type": "Script",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-online.de",
-                "www.t-online.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/newsroom\\/1\\.0\\/stroeer-sdpt-online2022\\/notify-impression",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "nr-events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "t-online.de",
-                "www.t-online.de"
-            ]
-        },
-        {
             "rule": "taboola\\.com\\/stroeergamma-digitalfernsehen\\/log\\/2\\/debug",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1385,7 +1438,7 @@
                 "Navigator.prototype.userAgent": 3
             },
             "sites": 4,
-            "prevalence": 0.000402,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
                 "e7886c056eee83a95a7efeb59ff6428316b232c8042b8160a5d9324ea4830ba3"
@@ -1401,56 +1454,25 @@
             ]
         },
         {
-            "rule": "taboola\\.com\\/sg\\/liveintent\\/1\\/cm\\/",
+            "rule": "taboola\\.com\\/1319960\\/log\\/3\\/unip",
             "cookies": 0,
             "fingerprinting": 0,
             "subdomains": [
-                "trc"
+                "trc-events"
             ],
             "apis": {},
-            "sites": 6,
-            "prevalence": 0.000603,
+            "sites": 2,
+            "prevalence": 0.000201,
             "cnames": [],
             "responseHashes": [
-                "c37e5682407d07e7974304b5334721abfcaaf80533aa565ee3a2f66de1f6676f"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
             ],
-            "type": "Image",
+            "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {},
             "exampleSites": [
-                "ew.com",
-                "people.com",
-                "www.biblestudytools.com",
-                "www.marthastewart.com",
-                "www.newsweek.com",
-                "www.tasteofhome.com"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/sg\\/amazon-a9-network\\/1\\/rtb",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "sync"
-            ],
-            "apis": {},
-            "sites": 9,
-            "prevalence": 0.000904,
-            "cnames": [],
-            "responseHashes": [],
-            "type": "Image",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "draxe.com",
-                "us.amazon.com",
-                "www.amazon.ca",
-                "www.amazon.com.au",
-                "www.dpreview.com",
-                "www.fender.com",
-                "www.ugg.com",
-                "www.weightwatchers.com",
-                "www.zillow.com"
+                "businessinsider.com",
+                "markets.businessinsider.com"
             ]
         },
         {
@@ -1502,28 +1524,6 @@
             ]
         },
         {
-            "rule": "taboola\\.com\\/1319960\\/log\\/3\\/unip",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trc-events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "businessinsider.com",
-                "markets.businessinsider.com"
-            ]
-        },
-        {
             "rule": "taboola\\.com\\/libtrc\\/spa-detector\\.20221222-8-RELEASE\\.es6\\.js",
             "cookies": 0,
             "fingerprinting": 0,
@@ -1544,6 +1544,28 @@
                 "newstral.com",
                 "www.naehrwertrechner.de",
                 "www.vermoegenmagazin.de"
+            ]
+        },
+        {
+            "rule": "taboola\\.com\\/1083675\\/log\\/3\\/unip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bodybuilding.com",
+                "www.bodybuilding.com"
             ]
         },
         {
@@ -1571,28 +1593,6 @@
             "exampleSites": [
                 "dailystar.co.uk",
                 "www.mirror.co.uk"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/1083675\\/log\\/3\\/unip",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trc-events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "bodybuilding.com",
-                "www.bodybuilding.com"
             ]
         },
         {
@@ -1727,7 +1727,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_schn": 0.00020086371397007131
+                "_schn": 0.0002006823198876179
             },
             "exampleSites": [
                 "etoro.com",
@@ -1777,7 +1777,7 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_schn": 0.00020086371397007131
+                "_schn": 0.0002006823198876179
             },
             "exampleSites": [
                 "fender.com",
@@ -1985,6 +1985,30 @@
             ]
         },
         {
+            "rule": "taboola\\.com\\/1482916\\/log\\/3\\/unip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_schn": 0.0002006823198876179
+            },
+            "exampleSites": [
+                "kinguin.net",
+                "www.kinguin.net"
+            ]
+        },
+        {
             "rule": "taboola\\.com\\/1265998\\/log\\/3\\/unip",
             "cookies": 0,
             "fingerprinting": 0,
@@ -2004,30 +2028,6 @@
             "exampleSites": [
                 "kopp-verlag.de",
                 "www.kopp-verlag.de"
-            ]
-        },
-        {
-            "rule": "taboola\\.com\\/1482916\\/log\\/3\\/unip",
-            "cookies": 0,
-            "fingerprinting": 0,
-            "subdomains": [
-                "trc-events"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {
-                "_schn": 0.00020086371397007131
-            },
-            "exampleSites": [
-                "kinguin.net",
-                "www.kinguin.net"
             ]
         },
         {
@@ -2426,9 +2426,9 @@
             "type": "XHR",
             "firstPartyCookies": {},
             "firstPartyCookiesSent": {
-                "_li_dcdm_c": 0.00020086371397007131,
-                "_schn": 0.00020086371397007131,
-                "IR_gbd": 0.00020086371397007131
+                "_li_dcdm_c": 0.0002006823198876179,
+                "_schn": 0.0002006823198876179,
+                "IR_gbd": 0.0002006823198876179
             },
             "exampleSites": [
                 "sweetwater.com",
@@ -2610,6 +2610,28 @@
                 "vermoegenmagazin.de",
                 "www.vermoegenmagazin.de"
             ]
+        },
+        {
+            "rule": "taboola\\.com\\/townsquaremediatsm-xxlmag\\/log\\/2\\/debug",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "trc-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xxlmag.com",
+                "www.xxlmag.com"
+            ]
         }
     ],
     "categories": [
@@ -2623,62 +2645,62 @@
     "topInitiators": [
         {
             "domain": "first party",
-            "prevalence": 0.37669376693766937
+            "prevalence": 0.3763440860215054
         },
         {
             "domain": "steadycdn.com",
-            "prevalence": 0.10569105691056911
+            "prevalence": 0.10483870967741936
         },
         {
             "domain": "criteo.com",
-            "prevalence": 0.1002710027100271
+            "prevalence": 0.09946236559139784
         },
         {
             "domain": "googletagmanager.com",
-            "prevalence": 0.07588075880758807
+            "prevalence": 0.07526881720430108
         },
         {
             "domain": "zeenews.com",
-            "prevalence": 0.07588075880758807
+            "prevalence": 0.07526881720430108
         },
         {
             "domain": "go-mpulse.net",
-            "prevalence": 0.02710027100271003
+            "prevalence": 0.026881720430107527
         },
         {
             "domain": "amazon-adsystem.com",
-            "prevalence": 0.024390243902439025
+            "prevalence": 0.024193548387096774
         },
         {
             "domain": "akamaihd.net",
-            "prevalence": 0.02168021680216802
+            "prevalence": 0.021505376344086023
         },
         {
             "domain": "casalemedia.com",
-            "prevalence": 0.016260162601626018
+            "prevalence": 0.016129032258064516
         },
         {
             "domain": "liadm.com",
-            "prevalence": 0.016260162601626018
+            "prevalence": 0.016129032258064516
         }
     ],
     "types": {
-        "Script": 202,
+        "Script": 203,
+        "Image": 125,
         "XHR": 89,
-        "Image": 123,
         "Stylesheet": 8,
         "Document": 16,
         "Media": 5,
         "Ping": 2
     },
     "nameservers": [
-        "dns1.p05.nsone.net",
         "dns3.p05.nsone.net",
-        "ns04.dnsfaster.com",
         "ns02.dnsfaster.com",
-        "dns4.p05.nsone.net",
         "ns01.dnsfaster.com",
+        "dns2.p05.nsone.net",
         "ns03.dnsfaster.com",
-        "dns2.p05.nsone.net"
+        "dns1.p05.nsone.net",
+        "dns4.p05.nsone.net",
+        "ns04.dnsfaster.com"
     ]
 }

@@ -7,27 +7,30 @@
     "source": [
         "DuckDuckGo-DE"
     ],
-    "prevalence": 0.000301,
-    "sites": 3,
+    "prevalence": 0.000401,
+    "sites": 4,
     "subdomains": [
-        "e"
+        "e",
+        "sync",
+        "x"
     ],
     "cnames": [],
-    "fingerprinting": 0,
+    "fingerprinting": 1,
     "resources": [
         {
             "rule": "serverbid\\.com\\/api\\/v2",
-            "cookies": 0,
+            "cookies": 0.0001,
             "fingerprinting": 0,
             "subdomains": [
                 "e"
             ],
             "apis": {},
-            "sites": 3,
-            "prevalence": 0.000301,
+            "sites": 4,
+            "prevalence": 0.000401,
             "cnames": [],
             "responseHashes": [
-                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "903eb8f1cc364e01930ba03579f049a72794aa91d1a5842a2edb6365e436bb7c"
             ],
             "type": "XHR",
             "firstPartyCookies": {},
@@ -35,7 +38,8 @@
             "exampleSites": [
                 "minecraftskins.com",
                 "www.therichest.com",
-                "www.worldatlas.com"
+                "www.worldatlas.com",
+                "www.xxlmag.com"
             ]
         },
         {
@@ -58,24 +62,88 @@
                 "www.therichest.com",
                 "www.worldatlas.com"
             ]
+        },
+        {
+            "rule": "serverbid\\.com\\/ss\\/2000775\\.html",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sync"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "dc99a8df7b6ee1496ed732d875e0aee5ce128caded7686c8410e8b9d9368a821"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "sb_ss": {
+                    "ttl": 64824,
+                    "length": 2,
+                    "prevalence": 0.0002006823198876179,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xxlmag.com",
+                "www.xxlmag.com"
+            ]
+        },
+        {
+            "rule": "serverbid\\.com\\/usersync",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e",
+                "x"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xxlmag.com",
+                "www.xxlmag.com"
+            ]
         }
     ],
     "categories": [],
     "performance": {},
-    "cookies": 0,
+    "cookies": 0.0001,
     "topInitiators": [
         {
             "domain": "indexww.com",
-            "prevalence": 0.75
+            "prevalence": 0.3
+        },
+        {
+            "domain": "townsquareblogs.com",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "doi3unldljdx6.cloudfront.net",
+            "prevalence": 0.3
         },
         {
             "domain": "cpmstar.com",
-            "prevalence": 0.25
+            "prevalence": 0.1
         }
     ],
     "types": {
-        "XHR": 3,
-        "Preflight": 3
+        "XHR": 4,
+        "Preflight": 3,
+        "Document": 2,
+        "Image": 2
     },
     "nameservers": [
         "ns-1269.awsdns-30.org",

@@ -12,8 +12,8 @@
     "prevalence": 0.00221,
     "sites": 22,
     "subdomains": [
-        "aaaab5376f71745aead16628a4cb494f-0452ca34d48149fb.elb",
         "o9tt6h08li.execute-api",
+        "aaaab5376f71745aead16628a4cb494f-0452ca34d48149fb.elb",
         "cognito-identity",
         "sqs",
         "web-chat-tag-cdn.s3",
@@ -27,6 +27,28 @@
     ],
     "fingerprinting": 1,
     "resources": [
+        {
+            "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/event",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "o9tt6h08li.execute-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6253e6c2d077cfb6d1dce47e8aff5ab7da2dff23fde5757b72a20e58e9c507fc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sonos.com",
+                "hilfe.o2online.de"
+            ]
+        },
         {
             "rule": "eu-west-1\\.amazonaws\\.com\\/",
             "cookies": 0,
@@ -52,28 +74,6 @@
             "exampleSites": [
                 "journaldesfemmes.fr",
                 "cuisine.journaldesfemmes.fr"
-            ]
-        },
-        {
-            "rule": "eu-west-1\\.amazonaws\\.com\\/v1\\/event",
-            "cookies": 0.000201,
-            "fingerprinting": 0,
-            "subdomains": [
-                "o9tt6h08li.execute-api"
-            ],
-            "apis": {},
-            "sites": 2,
-            "prevalence": 0.000201,
-            "cnames": [],
-            "responseHashes": [
-                "6253e6c2d077cfb6d1dce47e8aff5ab7da2dff23fde5757b72a20e58e9c507fc"
-            ],
-            "type": "XHR",
-            "firstPartyCookies": {},
-            "firstPartyCookiesSent": {},
-            "exampleSites": [
-                "sonos.com",
-                "hilfe.o2online.de"
             ]
         },
         {
@@ -127,7 +127,7 @@
             ],
             "apis": {},
             "sites": 6,
-            "prevalence": 0.000603,
+            "prevalence": 0.000602,
             "cnames": [],
             "responseHashes": [
                 "4cab339af42b0c083f50296856d1729a0fc7a869ff49a8c302b986aa4b056e97",
@@ -309,12 +309,26 @@
         }
     ],
     "types": {
-        "Ping": 2,
         "XHR": 10,
+        "Ping": 2,
         "Preflight": 2,
         "Fetch": 2,
         "Script": 6,
         "Stylesheet": 2
     },
-    "nameservers": []
+    "nameservers": [
+        "ns2.p31.dynect.net",
+        "ns3.p31.dynect.net",
+        "ns1.p31.dynect.net",
+        "u3.amazonaws.com",
+        "u4.amazonaws.com",
+        "u6.amazonaws.com",
+        "ns4.p31.dynect.net",
+        "u5.amazonaws.com",
+        "pdns5.ultradns.info",
+        "pdns1.ultradns.net",
+        "u1.amazonaws.com",
+        "pdns3.ultradns.org",
+        "u2.amazonaws.com"
+    ]
 }
